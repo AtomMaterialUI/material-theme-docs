@@ -1,0 +1,16 @@
+.documentation-blog {
+  margin-top: 32px;
+
+  &.-centered {
+    background: darken($background-color, 2);
+
+    .content {
+      margin: auto;
+      width: 80vw;
+    }
+  }
+
+  .main {
+    padding-top: 50px;
+  }
+}

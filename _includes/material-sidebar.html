@@ -1,0 +1,84 @@
+<aside class="sidebar sidebar">
+
+  <!-- toggle link for responsive version -->
+  <span class="sidebar-toggle js-sidebar-toggle">
+    <i class="fa fa-plus"></i>
+  </span>
+
+  <div class="row sidebar-logo">
+    {% include logo-sidebar.html %}
+  </div>
+
+  <div class="search">
+    <div class="search-wrapper card">
+      <i class="fa fa-search search-button"></i>
+      <input class="search-input" id="search">
+      <div class="search-results" id="hits">
+      </div>
+    </div>
+  </div>
+
+  <nav class="sidebar-links">
+    {% assign page_slug = page.url | split: '/' | last %}
+    {% for group in site.data.nav %}
+    {% assign link = group.pages | first %}
+    {% assign link_slug = link.title | slugify %}
+
+    {% assign group_slug = group.title | slugify %}
+    {% assign active = nil %}
+
+    {% if page.group == group_slug %}
+    {% assign active = 'active' %}
+    {% endif %}
+
+    <ul data-collapsible="accordion"
+        class="sidebar-link-group collapsible {% unless active == nil %}{{ active }}{% endunless %}">
+      <li>
+        {% if group.separator %}
+        <hr>
+        {% endif %}
+        <a class="collapsible-header title
+          {% unless active == nil %}{{ active }}{% endunless %}
+          {% unless group.pages %}nav-link{% endunless %}"
+           {% unless group.pages %}href="{{ site.baseurl }}/docs/{{ group_slug }}" {% endunless %}>
+          {{ group.title }}
+        </a>
+
+        <ul class="nav sidebar-list collapsible-body">
+          {% for doc in group.pages %}
+          {% assign doc_slug = doc.title | slugify %}
+          {% assign active = nil %}
+
+          {% if page.group == group_slug and page_slug == doc_slug %}
+          {% assign active = 'active' %}
+          {% endif %}
+
+          <li class="link-section sidebar-section {% unless active == nil %}{{ active }}{% endunless %}">
+            <a href="{{ site.baseurl }}/docs/{{ group_slug }}/{{ doc_slug }}"
+               class="nav-link sidebar-list-item"
+               data-slug="{{ doc_slug }}">
+              {{ doc.title }}
+            </a>
+
+            {% comment %}
+            {% unless doc.sections == nil %}
+            <ul class="nav sidebar-group-list">
+              {% for section in doc.sections %}
+              <li class="sidebar-entry">
+                <a href="#{{ section.title | downcase | replace: ' ', '-' }}">
+                  {{ section.title }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endunless %}
+            {% endcomment %}
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+    {% endfor %}
+  </nav>
+
+</aside>

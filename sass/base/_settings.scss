@@ -1,0 +1,225 @@
+// Shortcuts
+//-----------
+$noborder: 0 solid transparent;
+$line: 1px solid rgba(160, 160, 160, 0.2);
+
+// SETTINGS FOR BASE-STYLE
+//-------------------
+// material palette base
+$primary-text-icon-color: $white;
+$primary-text: $black;
+$secondary-text: $gray;
+$divider-color: rgba(black, 0.87);
+$opacity: 0.5;
+
+// primary, secondary and accent
+$dark-primary-color: $darkindigo;
+$primary-color: $indigo;
+$light-primary-color: $lightindigo;
+$second-accent-color: var(--accent);
+$accent-text: var(--accent-text);
+$accent-color: $second-accent-color;
+
+// yes/no variables (use yes or no as values)
+//--------------------------------------------
+
+// if set to yes a background-color will be added to body
+$background-color-setting: yes;
+
+// if set to yes a transition will be applied to links
+$link-transition: yes;
+
+// if set to yes tables will be styled according to settings
+$include-table-style: no;
+
+// if set to yes, defintion lists will be styled
+$include-definition-list-style: yes;
+
+// color variables (use colors as values)
+//----------------------------------------
+
+$main-color: $primary-text;
+$link-hover-color: $accent-color;
+$link-color: var(--accent);
+
+// String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
+//------------------------------------------
+
+$main-font: 'Roboto', 'Calibri', 'Arial', sans-serif;
+
+// set to $main-font if you don't want your headings to use another font
+$headings-font: $main-font;
+
+// use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
+$headings-text-transform: none;
+
+$code-font: 'Source Code Pro', Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal, monospace;
+$code-border: #e1e4e5;
+$code-bg: white;
+
+// size variables (use numbers as values (units as indicated ))
+
+// font-weights, alternatively use: [light, normal, bold]
+$main-font-weight: 300;
+
+// set $main-font-weight if you don't want your headings to use another font-weight
+$headings-font-weight: 400;
+
+// use px here
+$root-font-size: 15px;
+
+// do not add a unit here
+$basic-line-height: 1.5;
+
+$header-size: 64px;
+$header-size-condensed: 56px;
+
+// yes/no-dependant
+//------------------
+// if the dependant variable is set to no,
+// the variables can be ignored
+
+// depends on: $background-color-setting
+$background-color: #f9f9f9;
+
+// depends on: $paragraph-gap
+$paragraph-gap-size: 1em;
+
+// depends on: $container-settings
+$container-background-color: transparent;
+$container-max-width: 1500px; // use px here
+$container-width: 90%; // use % here
+
+// depends on: $include-blockquote-style
+$blockquote-border: 1px solid rgba(black, 0.3);
+
+// depends on: $include-table-style
+$table-border: 1px solid rgba(black, 0.1);
+$even-rows-bg: rgba(black, 0.02);
+
+// depends on: $include-definition-list-style
+$definition-list-border: 1px solid rgba(black, 0.1);
+
+// PROJECT SETTINGS
+//------------------
+
+// new heading font sizes (these come from materializecss.com)
+$h1-fontsize: 4.2rem;
+$h2-fontsize: 3.56rem;
+$h3-fontsize: 2.92rem;
+$h4-fontsize: 2.28rem;
+$h5-fontsize: 1.64rem;
+$h6-fontsize: 1rem;
+
+// collapses
+$sidebarcollapse: 830px;
+
+// point at which the layout switch will no longer be visible
+$layoutswitch-hiding-point: 530px;
+$toc-hiding-point: 1130px;
+
+$mobile-size: 600px;
+$min-mobile-size: 330px;
+// Logo Collapses
+$from-full-to-noslogan: 935px;
+$from-noslogan-to-icon: 640px;
+
+// header
+$head-bg: $almost-white;
+$logo-pad: 20px;
+
+// search overlay
+$so-bg: rgba(white, 0.8);
+$so-color: black;
+
+// Menu
+$mainnav-collapse: 1068px;
+$mainnav-responsive-text-align: center;
+
+// Post Pages
+$title-color: $primary-color;
+
+// author box
+$avatar-width: 150px;
+$authorbox-collapse: 510px;
+
+// lightbox
+$lightbox-container-background: $almost-black;
+
+// Tables
+$table-border-color: #d0d0d0;
+$table-striped-color: #f2f2f2;
+$table-collapse: 700px;
+
+// shortcuts
+$line: 1px solid rgba(160, 160, 160, 0.2);
+
+// sidebar
+$sidebar-width: 260px;
+$margin-width: 30px;
+$material-sidebar-responsive-border-bg: $accent-color;
+$sidenav-line-height: 24px;
+
+// modals
+$modal-width-change: 900px;
+
+$card-max-width: 300px;
+
+// 13. Grid
+// ==========================================================================
+
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+// cards
+$card-padding: 24px !default;
+$card-bg-color: #fff !default;
+$card-link-color: $accent-color !default;
+$card-link-color-light: $card-link-color !default;
+
+// badges
+$badge-height: 22px !default;
+$badge-bg-color: $accent-color !default;
+
+$collection-line-height: 0.75rem !default;
+
+// Select
+$select-border: 1px solid #f2f2f2 !default;
+$select-background: rgba(255, 255, 255, 0.9) !default;
+$select-focus: 1px solid $second-accent-color !default;
+$select-option-hover: rgba(0, 0, 0, 0.08) !default;
+$select-option-focus: rgba(0, 0, 0, 0.08) !default;
+$select-option-selected: rgba(0, 0, 0, 0.03) !default;
+$select-padding: 5px !default;
+$select-radius: 2px !default;
+$select-disabled-color: rgba(0, 0, 0, 0.3) !default;
+
+// 9. Dropdown
+// ==========================================================================
+
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: $accent-color !default;
+$dropdown-item-height: 50px !default;
+
+// Forms
+$input-height: 3rem !default;
+$input-border-color: $gray !default;
+$input-border: 1px solid $input-border-color !default;
+$input-background: #fff !default;
+$input-error-color: $red !default;
+$input-success-color: $green !default;
+$input-focus-color: $accent-color !default;
+$input-font-size: 16px !default;
+$input-margin-bottom: 8px;
+$input-margin: 0 0 $input-margin-bottom 0 !default;
+$input-padding: 0 !default;
+$label-font-size: 0.8rem !default;
+$input-disabled-color: rgba(0, 0, 0, 0.42) !default;
+$input-disabled-solid-color: #949494 !default;
+$input-disabled-border: 1px dotted $input-disabled-color !default;
+$input-invalid-border: 1px solid $input-error-color !default;
+$input-icon-size: 2rem;
+$placeholder-text-color: lighten($input-border-color, 20%) !default;

@@ -1,0 +1,46 @@
+// modals
+.modal {
+  @include shadow(4);
+  background-color: $white;
+  border-radius: 2px;
+  display: none;
+  left: 0;
+  margin: auto;
+  max-height: 70%;
+  overflow-y: auto;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  transform: translate(0);
+  width: 55%;
+  will-change: top, opacity;
+  z-index: 1000;
+
+  @media screen and (max-width: $modal-width-change) {
+    width: 80%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
+
+  .modal-content {
+    padding: 24px;
+  }
+
+  .modal-footer {
+    border-radius: 0 0 2px 2px;
+    height: 56px;
+    padding: 4px 6px;
+    width: 100%;
+
+    .btn,
+    .btn-flat {
+      float: right;
+      margin: 6px 0;
+    }
+  }
+}

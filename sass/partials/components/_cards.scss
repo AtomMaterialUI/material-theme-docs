@@ -1,0 +1,215 @@
+.card-panel {
+  background-color: $card-bg-color;
+  border-radius: 2px;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  padding: $card-padding;
+  transition: box-shadow 0.25s;
+  @include shadow(1);
+
+  &.warn {
+    background-color: #fff8e1;
+  }
+
+  &.error {
+    background-color: #fda79a;
+  }
+}
+
+%card {
+  background-color: $card-bg-color;
+  border-radius: 2px;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  position: relative;
+  transition: box-shadow 0.25s;
+  @include shadow(1);
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 300;
+
+    &.activator {
+      cursor: pointer;
+    }
+  }
+
+  // Card Sizes
+  &.small,
+  &.medium,
+  &.large {
+    position: relative;
+
+    .card-image {
+      max-height: 60%;
+      overflow: hidden;
+    }
+
+    .card-image + .card-content {
+      max-height: 40%;
+    }
+
+    .card-content {
+      max-height: 100%;
+      overflow: hidden;
+    }
+
+    .card-action {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &.small {
+    height: 300px;
+  }
+
+  &.medium {
+    height: 400px;
+  }
+
+  &.large {
+    height: 500px;
+  }
+
+  // Horizontal Cards
+  &.horizontal {
+    &.small,
+    &.medium,
+    &.large {
+      .card-image {
+        height: 100%;
+        max-height: none;
+        overflow: visible;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    display: flex;
+
+    .card-image {
+      max-width: 50%;
+
+      img {
+        border-radius: 2px 0 0 2px;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+
+    .card-stacked {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      position: relative;
+
+      .card-content {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  // Sticky Action Section
+  &.sticky-action {
+    .card-action {
+      z-index: 2;
+    }
+
+    .card-reveal {
+      padding-bottom: 64px;
+      z-index: 1;
+    }
+  }
+
+  .card-image {
+    position: relative;
+
+    // Image background for content
+    img {
+      border-radius: 2px 2px 0 0;
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    .card-title {
+      bottom: 0;
+      color: $card-bg-color;
+      left: 0;
+      max-width: 100%;
+      padding: $card-padding;
+      position: absolute;
+    }
+  }
+
+  .card-content {
+    border-radius: 0 0 2px 2px;
+    padding: $card-padding;
+
+    p {
+      color: inherit;
+      margin: 0;
+    }
+
+    .card-title {
+      display: block;
+      line-height: 32px;
+      margin-bottom: 8px;
+
+      i {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .card-action {
+    &:last-child {
+      border-radius: 0 0 2px 2px;
+    }
+
+    background-color: inherit;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 16px $card-padding;
+    position: relative;
+
+    a:not(.btn):not(.btn-large):not(.btn-floating) {
+      color: $card-link-color;
+      margin-right: $card-padding;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $card-link-color-light;
+      }
+    }
+  }
+
+  .card-reveal {
+    background-color: $card-bg-color;
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    padding: $card-padding;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 3;
+
+    .card-title {
+      cursor: pointer;
+      display: block;
+    }
+  }
+}
+
+.card {
+  @extend %card;
+}

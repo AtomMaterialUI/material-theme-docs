@@ -1,0 +1,109 @@
+// FONT-FACE STUFF HERE
+//-----------------------
+
+// Roboto
+//--------
+
+// light
+@font-face {
+  $path-part: 'Light';
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoLight') format('svg');
+}
+
+// regular
+@font-face {
+  $path-part: 'Medium';
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoRegular') format('svg');
+}
+
+// bold
+@font-face {
+  $path-part: 'Black';
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoBold') format('svg');
+}
+
+// light italic
+@font-face {
+  $path-part: 'LightItalic';
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoLightItalic') format('svg');
+}
+
+// regular italic
+@font-face {
+  $path-part: 'MediumItalic';
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoItalic') format('svg');
+}
+
+// bold italic
+@font-face {
+  $path-part: 'BlackItalic';
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoBoldItalic') format('svg');
+}
+
+// Source Code Pro
+//-----------------
+@font-face {
+  $path-part: 'regular';
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.eot');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.svg#sourcecodeproregular') format('svg');
+}
+
+@font-face {
+  $path-part: 'bold';
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.eot');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.woff') format('woff');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.ttf') format('truetype');
+  src: url('../fonts/sourcecodepro-#{$path-part}-webfont.svg#sourcecodeprobold') format('svg');
+}

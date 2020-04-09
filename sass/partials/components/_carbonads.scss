@@ -1,0 +1,31 @@
+#carbonads {
+  @extend %card;
+  font-size: small;
+  line-height: 1.4;
+  margin-top: 3em;
+  max-width: 330px;
+  min-height: 126px;
+  padding: 1em 1em 1em 160px;
+  text-align: left;
+
+  .call-to-action & {
+    margin: 0 auto 2rem;
+  }
+
+  a,
+  a:hover {
+    color: inherit;
+  }
+
+  .carbon-img {
+    float: left;
+    margin-left: -150px;
+    margin-right: 1em;
+  }
+
+  .carbon-poweredby {
+    display: block;
+    font-size: smaller;
+    padding: 3em 0 0;
+  }
+}

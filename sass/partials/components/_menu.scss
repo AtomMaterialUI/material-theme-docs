@@ -1,0 +1,253 @@
+// Main Nav
+.menu {
+  background: $primary-color;
+  color: $primary-text-icon-color;
+  display: flex;
+  height: 100%;
+  z-index: 105;
+
+  .menu-toggle-link {
+    display: none;
+  }
+
+  .navbar {
+    @include flexbox(row, nowrap, start, center);
+    margin: 0;
+    padding: 0;
+
+    @media all and (max-width: $mainnav-collapse) {
+      @include flexbox(column, nowrap, start, center);
+    }
+  }
+
+  li {
+    display: inline-block;
+    height: 100%;
+    @include flexbox(row, nowrap, start, center);
+
+    &:hover,
+    &.active {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid $accent-color;
+    }
+
+    > a {
+      display: block;
+      font-size: 1em;
+      width: 100%;
+    }
+  }
+
+  // Responsive Version (Off-Canvas)
+  @media screen and (max-width: $mainnav-collapse) {
+    background: white;
+    color: $primary-text;
+    height: 100%;
+    line-height: 44px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    position: fixed;
+    right: -320px;
+    top: 0;
+    transform: translate(0, 0);
+    transition: 0.3s all ease;
+    width: 180px;
+    z-index: 108;
+    @include shadow(1 -half);
+
+    a {
+      color: $accent-color;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    &.active {
+      transform: translate(-320px, 0);
+      transition: 0.3s all ease;
+    }
+
+    .menu-toggle-link {
+      display: block;
+      padding-right: 0;
+      position: relative;
+      text-align: right;
+
+      &::after {
+        content: '';
+      }
+    }
+
+    .navbar {
+      position: relative;
+      text-align: $mainnav-responsive-text-align;
+      width: 100%;
+    }
+
+    li {
+      display: block;
+      flex: 1;
+
+      &:first-of-type {
+        border-top: $noborder;
+      }
+
+      &:hover {
+        transition: 0.3s all linear;
+        @include list-indicator;
+
+        &::before {
+          left: -8px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $mainnav-collapse) {
+    li {
+      flex: 0;
+      position: relative;
+
+      &:hover {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.main-menu {
+  background: $primary-color;
+  color: $primary-text-icon-color;
+  font-weight: 400;
+  height: 64px;
+  left: 0;
+  // line-height: 64px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  @include shadow(1);
+
+  a {
+    color: $primary-text-icon-color;
+    font-size: 1rem;
+    padding: 0 15px;
+
+    &:hover {
+      color: $primary-text-icon-color;
+    }
+  }
+
+  @media screen and (max-width: $from-noslogan-to-icon) {
+    .navbar li a {
+      padding: 0;
+    }
+  }
+
+  .content {
+    @include flexbox(row, nowrap, space-between, center);
+    height: inherit;
+    line-height: inherit;
+
+    .h-spacer {
+      flex: 1;
+    }
+  }
+}
+
+// Toggle
+.menu-toggle-link {
+  @media screen and (min-width: $mainnav-collapse) {
+    display: none;
+  }
+}
+
+.dropdown-content {
+  &:focus {
+    outline: 0;
+  }
+
+  background-color: $dropdown-bg-color;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  left: 0;
+  margin: 0;
+  min-width: 100px;
+  opacity: 0;
+  overflow-y: auto;
+
+  padding: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: 0 0;
+  z-index: 9999;
+
+  li {
+    clear: both;
+    color: $black;
+    cursor: pointer;
+    line-height: 1.5rem;
+    list-style-type: none;
+    min-height: $dropdown-item-height;
+    text-align: left;
+    width: 100%;
+
+    &:hover,
+    &.active {
+      background-color: $dropdown-hover-bg-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.divider {
+      height: 1px;
+      min-height: 0;
+    }
+
+    > a,
+    > span {
+      color: $dropdown-color;
+      display: block;
+      font-size: 16px;
+      line-height: 22px;
+      padding: (($dropdown-item-height - 22) / 2) 16px;
+    }
+
+    > span > label {
+      height: 18px;
+      left: 0;
+      top: 1px;
+    }
+
+    // Icon alignment override
+    > a > i {
+      float: left;
+      height: inherit;
+      line-height: inherit;
+      margin: 0 24px 0 0;
+      width: 24px;
+    }
+  }
+}
+
+body.keyboard-focused {
+  .dropdown-content li:focus {
+    background-color: darken($dropdown-hover-bg-color, 8%);
+  }
+}
+
+// Input field specificity bugfix
+.input-field.col .dropdown-content [type='checkbox'] + label {
+  height: 18px;
+  left: 0;
+  top: 1px;
+  transform: none;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.
+├── _data                            - Various lists of items
+├── _includes                        - Partials used throughout the docs
+├── _layouts                         - Layouts
+├── assets                           - Generated folder containing the built assets
+├── config                           - Config folder for the Javascript
+├── docs                             - Documentation pages
+├── img                              - Images
+│   ├── accents                             - Accent components
+│   ├── arrows                              - Arrow styles
+│   ├── brand                               - Logos
+│   ├── components                          - Components
+│   ├── fileIcons                           - File Icons
+│   ├── icons                               - Icons
+│   └── screens                             - Screenshots
+├── jekyllbuild                      - Generated folder for the Jekyll pages
+├── js                               - Generated folder for the Javascript app
+├── sass                             - Stylesheets
+├── vue                              - The Vue application (not yet built)
+├── index.html                       - Main index file
+└── _config.yml                      - The Jekyll config file

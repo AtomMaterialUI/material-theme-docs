@@ -1,0 +1,55 @@
+// TOOLBOX COLORS
+//---------------------------------------------------------------------
+$almost-white: #fdfdfd;
+$almost-black: #202020;
+$darkgray: #333;
+
+// PROJECT COLORS
+//---------------------------------------------------------------------
+$white: #fff;
+$black: #212121;
+$gray: #727272;
+
+// material colors, to create new palette check out: http://www.materialpalette.com/
+
+$green: #4caf50;
+$lightgreen: #c8e6c9;
+$darkgreen: #388e3c;
+
+$red: #ff5252;
+
+//----------------------------
+
+$indigo: #3f51b5;
+$darkindigo: #303f9f;
+$lightindigo: #c5cae9;
+
+$pink: #ff4081;
+$turquoise: #80cbc4;
+
+//----------------------------
+
+$teal: #009688;
+$darkteal: #00796b;
+$lightteal: #b2dfdb;
+
+$amber: #ffc107;
+
+//----------------------------
+
+$brown: #795548;
+$darkbrown: #5d4037;
+$lightbrown: #d7ccc8;
+
+$purple: #e040fb;
+
+$olivegray: #998;
+$palepink: #e3d2d2;
+$darkred: #a61717;
+$medgray: #999;
+
+:root {
+  --background: #666;
+  --foreground: #fff;
+  --contrast: #333;
+}

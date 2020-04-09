@@ -1,0 +1,232 @@
+pre {
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  font-size: 0.9em;
+  overflow-x: auto;
+  padding: 6px 10px;
+}
+
+.highlight {
+  pre,
+  .hll {
+    font-family: 'Source Code Pro', 'Courier New', monospace;
+  }
+
+  .c,
+  .cm,
+  .c1 {
+    color: $olivegray;
+  }
+
+  .err,
+  .gr,
+  .gt {
+    color: $darkred;
+  }
+
+  .k,
+  .o,
+  .cp,
+  .cs,
+  .gs,
+  .kc,
+  .kd,
+  .kn,
+  .kp,
+  .kr,
+  .gu,
+  .ne,
+  .nf,
+  .ow {
+    font-weight: bold;
+  }
+
+  .cp,
+  .cs,
+  .gh {
+    color: $medgray;
+  }
+
+  .gd,
+  .gd .x,
+  .gi,
+  .gi .x {
+    color: black;
+  }
+
+  .gd,
+  .err {
+    background-color: $palepink;
+  }
+
+  .gd .x {
+    background-color: #faa;
+  }
+
+  .gi {
+    background-color: #dfd;
+
+    .x {
+      background-color: #afa;
+    }
+  }
+
+  .go {
+    color: #888;
+  }
+
+  .gp {
+    color: #555;
+  }
+
+  .gu {
+    color: #800080;
+  }
+
+  .kt {
+    color: #458;
+    font-weight: bold;
+  }
+
+  .m {
+    color: #099;
+  }
+
+  .s {
+    color: #d14;
+  }
+
+  .n {
+    color: #333;
+  }
+
+  .na {
+    color: teal;
+  }
+
+  .nb {
+    color: #0086b3;
+  }
+
+  .nc {
+    color: #458;
+    font-weight: bold;
+  }
+
+  .no {
+    color: teal;
+  }
+
+  .ni {
+    color: purple;
+  }
+
+  .ne {
+    color: #900;
+  }
+
+  .nf {
+    color: #900;
+  }
+
+  .nn {
+    color: #555;
+  }
+
+  .nt {
+    color: navy;
+  }
+
+  .nv {
+    color: teal;
+  }
+
+  .w {
+    color: #bbb;
+  }
+
+  .mf {
+    color: #099;
+  }
+
+  .mh {
+    color: #099;
+  }
+
+  .mi {
+    color: #099;
+  }
+
+  .mo {
+    color: #099;
+  }
+
+  .sb {
+    color: #d14;
+  }
+
+  .sc {
+    color: #d14;
+  }
+
+  .sd {
+    color: #d14;
+  }
+
+  .s2 {
+    color: #d14;
+  }
+
+  .se {
+    color: #d14;
+  }
+
+  .sh {
+    color: #d14;
+  }
+
+  .si {
+    color: #d14;
+  }
+
+  .sx {
+    color: #d14;
+  }
+
+  .sr {
+    color: #009926;
+  }
+
+  .s1 {
+    color: #d14;
+  }
+
+  .ss {
+    color: #990073;
+  }
+
+  .bp {
+    color: $medgray;
+  }
+
+  .vc {
+    color: teal;
+  }
+
+  .vg {
+    color: teal;
+  }
+
+  .vi {
+    color: teal;
+  }
+
+  .il {
+    color: #099;
+  }
+
+  .gc {
+    background-color: #eaf2f5;
+    color: #999;
+  }
+}

@@ -1,0 +1,64 @@
+- name: red
+  dark: '#ff5370'
+  light: '#e53935'
+  tags: [invalid]
+
+- name: pink
+  dark: '#f07178'
+  light: '#ff5370'
+  tags: [tag]
+
+- name: orange
+  dark: '#f78c6c'
+  light: '#F76D47'
+  tags: [number, parameter, constant, enum, typeParameter]
+
+- name: yellow
+  dark: '#FFCB6B'
+  light: '#FFB62C'
+  tags: [class, identifier, struct, attribute, type, warning]
+
+- name: green
+  dark: '#C3E88D'
+  light: '#91B859'
+  tags: [string, interface, abstract, value, text, symbol]
+
+- name: paleblue
+  dark: '#b2ccd6'
+  light: '#8796B0'
+  tags: []
+
+- name: cyan
+  dark: '#89ddff'
+  light: '#39adb5'
+  tags: [operator, brace, bracket, comma, colon, semicolon, dot, separator]
+
+- name: turquoise
+  dark: '#80CBC4'
+  light: '#80cbc4'
+  tags: [link, active, cssProperty]
+
+- name: blue
+  dark: '#82aaff'
+  light: '#6182b8'
+  tags: [function, method, global, mixin, macro]
+
+- name: purple
+  dark: '#c792ea'
+  light: '#7C4DFF'
+  tags: [keyword, annotation, doc, jsonKey]
+
+- name: violet
+  dark: '#bb80b3'
+  light: '#945EB8'
+  tags: []
+
+- name: brown
+  dark: '#ab7967'
+  light: '#ab7967'
+  tags: []
+
+- name: white
+  dark: '#eeffe3'
+  light: '#80cbc4'
+  tags: [variable, entity, label, jsField]

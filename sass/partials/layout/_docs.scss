@@ -1,0 +1,131 @@
+.documentation {
+  @include flexbox(column, wrap, start, flex-start);
+  background: $background-color;
+  margin-top: 0;
+
+  .main {
+    min-height: calc(100vh - 64px);
+    padding-top: 0;
+  }
+
+  .docs-header {
+    //background: $container-background-color;
+    padding: 1rem 5% 2rem;
+    @media all and (max-width: $mobile-size) {
+      padding: 1rem 4px;
+    }
+
+    .docs-subtitle {
+      font-size: 2.28rem;
+      line-height: 2.508rem;
+      margin: 1.14rem 0 0.912rem;
+    }
+  }
+
+  .doc {
+    margin: 3rem 0;
+    width: 100%;
+
+    @media all and (min-width: $toc-hiding-point) {
+      width: 70%;
+    }
+
+    .title {
+      font-size: large;
+    }
+
+    .screenshot {
+      transform: scale(0.9);
+      width: 130%;
+    }
+
+    .promo-img {
+      background: $second-accent-color;
+      color: $accent-text;
+      padding: 3rem;
+      width: 30%;
+      transition: background-color 1s;
+    }
+
+    .avatar-img {
+      width: 30%;
+
+      &.-centered {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    a {
+      color: $accent-color;
+    }
+
+    h2 {
+      color: $second-accent-color;
+      transition: color 1s;
+    }
+
+    h5 {
+      color: $second-accent-color;
+      transition: color 1s;
+      font-weight: 400;
+      line-height: 32px;
+    }
+
+    .theme-cards {
+      @include flexbox(row, wrap, start, flex-start);
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .theme-cards .card {
+      @include grid-cards(4);
+
+      &.single {
+        @include grid-cards(1);
+      }
+    }
+
+    .figure {
+      display: block;
+      margin: 2em auto;
+      width: fit-content;
+
+      .card-content {
+        padding: 1em;
+      }
+
+      .card-title {
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 1em;
+        margin: 0;
+      }
+    }
+  }
+
+  .post-nav {
+    @include clearfix();
+    margin: 20px 0;
+
+    .prev {
+      float: left;
+    }
+
+    .next {
+      float: right;
+    }
+
+    @media screen and (max-width: 490px) {
+      .long {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 318px) {
+      .short {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+$input-radius: 3px;
+
+.search {
+  margin: 1em 0;
+
+  .search-wrapper {
+    border-radius: $input-radius;
+    margin: 0 1em;
+    transition: margin 0.25s ease;
+
+    @media all and (max-width: $mobile-size) {
+      margin: 0;
+      width: 50vw;
+
+      .sidebar & {
+        margin: 0 1em;
+        width: auto;
+      }
+    }
+
+    @media all and (max-width: $min-mobile-size) {
+      display: none;
+    }
+  }
+
+  .algolia-autocomplete {
+    width: 100%;
+  }
+
+  .search-input {
+    border: 2px solid white;
+    border-radius: $input-radius;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0;
+    outline: none;
+    padding-left: 2em;
+    width: 100%;
+
+    &:active,
+    &:focus {
+      border-bottom: 2px solid $accent-color;
+    }
+  }
+
+  .ais-search-box {
+    position: relative;
+  }
+
+  .search-button {
+    color: $primary-text;
+    cursor: pointer;
+    left: 0;
+    padding: 0 0.75em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+
+  .search-results {
+    background: white;
+    border-top: $line;
+    color: $primary-text;
+    position: absolute;
+    width: max-content;
+    z-index: 100;
+
+    .search-results-hits {
+      padding: 1em;
+    }
+
+    .search-results-item {
+      margin: 0.5em 0;
+
+      > p {
+        margin: 0;
+      }
+    }
+  }
+
+  .ds-dropdown-menu {
+    @media all and (max-width: $mobile-size) {
+      max-width: $mobile-size;
+      min-width: 300px;
+    }
+  }
+}

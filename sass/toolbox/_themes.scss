@@ -1,0 +1,139 @@
+body {
+  .front-page {
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: all 1s;
+  }
+
+  .header,
+  .footer {
+    background-color: var(--background);
+    transition: all 1s;
+  }
+
+  .main-menu,
+  .menu,
+  .footer {
+    background-color: var(--contrast);
+    color: var(--foreground);
+    transition: all 1s;
+
+    a {
+      color: var(--foreground);
+      transition: color 1s;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+  }
+
+  .navbar > li {
+    &:hover {
+      background: var(--background);
+      transition: all 1s;
+    }
+  }
+
+  .muted {
+    color: rgba(var(--foreground), $opacity);
+  }
+
+  .logo-caption,
+  .logo-description,
+  .section-title,
+  .feat-title,
+  .feat-caption {
+    color: var(--foreground);
+    fill: var(--foreground);
+    transition: all 1s;
+  }
+
+  .contents {
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: all 1s;
+  }
+
+  .screenshot {
+    background: var(--laptop) no-repeat 50% 30%, url('../../img/laptop.png') no-repeat top left;
+    background-size: 75%, contain;
+    display: none;
+  }
+
+  .logo-img {
+    background-image: var(--logo), url('../../img/logo/material-oceanic.svg');
+    margin: 1em auto;
+
+    &.-error {
+      filter: grayscale(100%);
+      transform: rotate(25deg) translateY(-10px);
+    }
+  }
+
+  .sidebar-toggle {
+    background: var(--background);
+    transition: background-color 0.25s;
+
+    &:hover {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), var(--background);
+    }
+
+    i {
+      color: var(--foreground);
+      transition: color 1s;
+    }
+  }
+
+  .sidebar {
+    background: var(--contrast);
+    color: var(--foreground);
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $second-accent-color;
+        transition: color 1s;
+      }
+    }
+  }
+
+  .sidebar-link-group a {
+    color: var(--foreground);
+    transition: color 1s;
+  }
+
+  .sidebar-link-group a:hover {
+    background-color: var(--background);
+    transition: background-color 1s;
+  }
+
+  .sidebar-link-group.active > a,
+  .link-section.active > a {
+    background-color: var(--background);
+    transition: background-color 1s;
+  }
+
+  .link-section.active > a {
+    color: $second-accent-color;
+    transition: color 1s;
+  }
+
+  .docs-header {
+    background: $second-accent-color;
+    color: $accent-text;
+    transition: all 1s;
+  }
+
+  .github-ribbon {
+    border: 0;
+    color: $accent-text;
+    fill: $accent-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 1s;
+  }
+}

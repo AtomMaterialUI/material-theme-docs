@@ -1,0 +1,13 @@
+// PROJECT FUNCTIONS
+//---------------------------------------------------
+
+// TOOLBOX FUNCTIONS
+//---------------------------------------------------
+
+@function adjust-color($color) {
+  @if lightness($color) < 50 {
+    @return $white;
+  } @else {
+    @return $black;
+  }
+}

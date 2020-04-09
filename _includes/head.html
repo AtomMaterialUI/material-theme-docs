@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<title>{{ site.name }}{% if page.title %} - {{ page.title }} {% endif %}</title>
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% else %}
+<meta name="description" content="{{ site.description }}">
+{% endif %}
+<meta name="author" content="{{ site.author }}">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32">
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+<!--<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/instantsearch.min.css">-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"/>
+
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500"/>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/grid.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/themes.css" type="text/css">
+
+{% if jekyll.environment == 'production' %}
+<script type="text/javascript" src="//cdn.dynamicyield.com/api/8772999/api_dynamic.js"></script>
+<script type="text/javascript" src="//cdn.dynamicyield.com/api/8772999/api_static.js"></script>
+{% endif %}
+<script src="https://www.google.com/recaptcha/api.js?render=6LetNpAUAAAAAPamFzSqTvqNaPdWgFyuJvfGRaGc"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: 'ca-pub-2446436191403231',
+    enable_page_level_ads: true,
+  });
+</script>
+{% include meta.html %}

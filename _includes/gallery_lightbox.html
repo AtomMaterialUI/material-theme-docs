@@ -1,0 +1,20 @@
+<!-- Gallery with lightbox -->
+<div class="masonry" markdown="0">
+  {% for gallery in page.gallery %}
+    {% for image in gallery.images %}
+      <figure class="card figure">
+        <a href="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/{{ image.filename }}"
+           target="_blank"
+           data-imagelightbox="f" class="card-image">
+          <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/{{ image.filename }}"
+               alt="{{ image.alttext }}">
+        </a>
+        <div class="card-content">
+          <figcaption class="card-title">
+            {{ image.alttext }}
+          </figcaption>
+        </div>
+      </figure>
+    {% endfor %}
+  {% endfor %}
+</div>

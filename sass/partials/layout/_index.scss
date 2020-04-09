@@ -1,0 +1,49 @@
+/**
+  Styles for index layout
+ */
+.index {
+  // Space up sections
+  .section {
+    margin: 4em auto;
+    text-align: center;
+
+    .call-to-action {
+      margin: auto;
+    }
+
+    @media screen and (max-width: $from-noslogan-to-icon) {
+      margin: 2em auto;
+    }
+  }
+
+  .section-title {
+    //color: $primary-text;
+    font-family: $main-font;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .feature,
+  .feat-content {
+    text-align: center;
+  }
+
+  .feat-title {
+    color: $title-color;
+    padding: 10px 0;
+  }
+
+  .featimg-svg {
+    padding: 0 30%;
+  }
+
+}
+

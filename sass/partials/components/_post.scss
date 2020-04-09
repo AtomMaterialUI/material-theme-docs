@@ -1,0 +1,34 @@
+.article-post {
+  a.post-url {
+    color: $title-color;
+  }
+
+  .post-title {
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .post-date {
+    color: $secondary-text;
+    font-style: oblique;
+  }
+
+  .post-content {
+    margin: 1em 0;
+  }
+
+  .catsandtags {
+    color: $secondary-text;
+    font-size: small;
+    font-style: oblique;
+    margin-top: 3em;
+
+    .cats {
+      margin-right: 0.25em;
+    }
+
+    .tags {
+      margin-left: 0.25em;
+    }
+  }
+}

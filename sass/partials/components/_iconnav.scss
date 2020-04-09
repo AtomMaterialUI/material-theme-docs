@@ -1,0 +1,23 @@
+.iconnav {
+  display: flex;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+
+      a {
+        padding: 0 3px;
+      }
+    }
+  }
+
+  @media all and (max-width: $mobile-size) {
+    .github-nav {
+      display: none;
+    }
+  }
+}

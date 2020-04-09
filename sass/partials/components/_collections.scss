@@ -1,0 +1,118 @@
+.collection {
+  margin: .5rem 0 1rem 0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  list-style-type: none !important;
+  padding: 0;
+}
+
+.official {
+  overflow: hidden;
+  position: relative;
+  list-style-type: none !important;
+  padding: 0;
+  @include flexbox(row, wrap, space-around, center);
+
+  .official-item {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+.collection .collection-item {
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+
+  a {
+    color: $accent-color !important;
+  }
+}
+
+.collection .collection-item.avatar {
+  min-height: 84px;
+  padding-left: 72px;
+  position: relative
+}
+
+.collection .collection-item.avatar:not(.circle-clipper) > .circle,
+.collection .collection-item.avatar :not(.circle-clipper) > .circle {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.collection .collection-item.avatar i.circle {
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #999;
+  text-align: center
+}
+
+.collection .collection-item.avatar .title {
+  font-size: 16px
+}
+
+.collection .collection-item.avatar p {
+  margin: 0
+}
+
+.collection .collection-item.avatar .secondary-content {
+  position: absolute;
+  top: 16px;
+  right: 16px
+}
+
+.collection .collection-item:last-child {
+  border-bottom: none
+}
+
+.collection .collection-item.active {
+  background-color: #26a69a;
+  color: #eafaf9
+}
+
+.collection .collection-item.active .secondary-content {
+  color: #fff
+}
+
+.collection a.collection-item {
+  display: block;
+  -webkit-transition: .25s;
+  transition: .25s;
+  color: #26a69a
+}
+
+.collection a.collection-item:not(.active):hover {
+  background-color: #ddd
+}
+
+.collection.with-header .collection-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px
+}
+
+.collection.with-header .collection-item {
+  padding-left: 30px
+}
+
+.collection.with-header .collection-item.avatar {
+  padding-left: 72px
+}
+
+.secondary-content {
+  float: right;
+  color: #26a69a
+}
+
+.collapsible .collection {
+  margin: 0;
+  border: none
+}

@@ -1,0 +1,258 @@
+// lighbox container in post
+.masonry {
+  @include flexbox(row, wrap, flex-start, flex-start);
+  box-sizing: border-box;
+  width: 100%;
+  //background: $lightbox-container-background;
+
+  a {
+    font-size: 0;
+    line-height: 0;
+    margin: 10px;
+    padding: 0;
+    width: calc((100% / 3) - 20px);
+
+    img {
+      opacity: 0.8;
+      width: 100%;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// actual lightbox styles
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anticlockwise {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#imagelightbox {
+  cursor: pointer;
+  position: fixed;
+  touch-action: none;
+  z-index: 10000;
+}
+
+#imagelightbox-loading {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 2.5em;
+  left: 50%;
+  margin: -1.25em 0 0 -1.25em;
+  padding: 0.625em;
+  position: fixed;
+  top: 50%;
+  width: 2.5em;
+  z-index: 10003;
+
+  div {
+    animation: clockwise 1.5s linear infinite;
+    display: block;
+    height: 2em;
+    position: relative;
+    width: 2em;
+
+    &,
+    &::before,
+    &::after {
+      border: 0.2em solid transparent;
+      border-radius: 50%;
+      border-top-color: $almost-white;
+      margin: auto;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      animation: anticlockwise 0.9s linear infinite;
+      bottom: -0.6em;
+      left: -0.6em;
+      right: -0.6em;
+      top: -0.6em;
+    }
+
+    &::after {
+      animation: anticlockwise 0.66s linear infinite;
+      bottom: 0.3em;
+      left: 0.3em;
+      right: 0.3em;
+      top: 0.3em;
+    }
+
+  }
+}
+
+#imagelightbox-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+}
+
+#imagelightbox-close {
+  background: transparent;
+  border: 0 solid transparent;
+  color: $almost-white;
+  font-size: 2em;
+  position: fixed;
+  right: 2em;
+  top: 2em;
+  transition: 0.3s ease;
+  z-index: 10002;
+
+  &:hover,
+  &:focus {
+    color: darken($almost-white, 20%);
+    cursor: pointer;
+  }
+}
+
+#imagelightbox-caption {
+  background-color: $almost-black;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 0.3em;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  z-index: 10001;
+}
+
+.imagelightbox-arrow {
+  background-color: transparent;
+  border: 0 solid transparent;
+  display: none;
+  height: 7.5em;
+  margin-top: -3.75em;
+  position: fixed;
+  top: 50%;
+  vertical-align: middle;
+  width: 3.75em;
+  z-index: 10001;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.imagelightbox-arrow-left {
+  left: 2.5em; /* 40 */
+
+  &::before {
+    border-bottom: 2px solid $almost-white;
+    border-left: 2px solid $almost-white;
+  }
+
+  &:hover {
+    &::before {
+      border-color: darken($almost-white, 30%);
+    }
+  }
+}
+
+.imagelightbox-arrow-right {
+  right: 2.5em; /* 40 */
+
+  &::before {
+    border-right: 2px solid $almost-white;
+    border-top: 2px solid $almost-white;
+  }
+
+  &:hover {
+    &::before {
+      border-color: darken($almost-white, 30%);
+    }
+  }
+}
+
+.imagelightbox-arrow::before {
+  content: '';
+  display: inline-block;
+  height: 3em;
+  margin-bottom: -0.125em; /* 2 */
+  transform: rotate(45deg);
+  width: 3em;
+}
+
+#imagelightbox-loading,
+#imagelightbox-overlay,
+#imagelightbox-close,
+#imagelightbox-caption,
+#imagelightbox-nav,
+.imagelightbox-arrow {
+  animation: fade-in 0.25s linear;
+}
+
+@media only screen and (max-width: 41.25em) {
+  #container {
+    width: 100%;
+  }
+
+  #imagelightbox-close {
+    right: 1.25em; /* 20 */
+    top: 1.25em; /* 20 */
+  }
+
+  #imagelightbox-nav {
+    bottom: 1.25em; /* 20 */
+  }
+
+  .imagelightbox-arrow {
+    height: 3.75em; /* 60 */
+    margin-top: -2.75em; /* 30 */
+    width: 2.5em; /* 40 */
+  }
+
+  .imagelightbox-arrow-left {
+    left: 1.25em; /* 20 */
+  }
+
+  .imagelightbox-arrow-right {
+    right: 1.25em; /* 20 */
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .imagelightbox-arrow-left {
+    left: 0;
+  }
+
+  .imagelightbox-arrow-right {
+    right: 0;
+  }
+}

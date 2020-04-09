@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+</head>
+
+<body class="documentation documentation-blog theme-oceanic -centered">
+<header class="header">
+  {% include nav.html %}
+</header>
+
+<div class="main">
+  <div class="content">
+    <div class="doc">
+      <article class="article-post card-panel">
+        <p class="actions">
+          <a href="{{ site.baseUrl }}/docs/blog">Go back to index ←</a>
+        </p>
+
+        <h4 class="post-title">
+          {{ page.title }}
+        </h4>
+        <div class="meta">
+          <span class="post-date">Published on {{ page.date | date: '%B %d, %Y' }}</span>
+        </div>
+        <div class="post-content">
+          {{ content }}
+        </div>
+
+        {% if page.category or page.tags %}
+        <div class="catsandtags">
+          {% if page.category %}
+          <span class="cats">
+            <span class="name">Categories: </span>
+            <span class="new badge">{{ page.categories | category_links }}</span>
+          </span>
+          {% endif %}
+
+          {% if page.category and page.tags %}&bull;{% endif %}
+
+          {% if page.tags %}
+          <span class="tags">
+            <span class="name">Tags:</span>
+            {% for tag in page.tags %}
+            <a class="tag"
+               href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ tag }}">
+              <span class="new badge">{{ tag }}</span>
+            </a>
+            {% endfor %}
+          </span>
+          {% endif %}
+        </div>
+        {% endif %}
+      </article>
+
+      <div class="post-nav">
+        {% if page.previous.url %}
+        <a class="btn prev" href="{{ page.previous.url | prepend: site.baseurl }}">
+          <i class="fa fa-angle-left">&nbsp;</i>{{ page.previous.title | truncateWords: 4 }}
+        </a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="btn next" href="{{ page.next.url | prepend: site.baseurl }}">
+          {{ page.next.title | truncateWords: 4 }}&nbsp;<i class="fa fa-angle-right"></i>
+
+        </a>
+        {% endif %}
+      </div>
+
+      {% if page.comments %}
+      <hr>
+      <div id="disqus_thread"></div>
+      <script>
+
+        var disqus_config = function () {
+          this.page.url = '{{ page.url | prepend:site.baseurl | absolute_url }}';
+          this.page.identifier = '{{ page.title | slugify }}';
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://material-theme.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+      {% endif %}
+
+
+    </div>
+
+    {% if page.toc %}
+    <div class="toc">
+      {% include toc.html html=content h_min=2 h_max=4 %}
+    </div>
+    {% endif %}
+
+
+  </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>

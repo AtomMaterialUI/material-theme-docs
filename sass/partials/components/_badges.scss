@@ -1,0 +1,49 @@
+span.badge {
+  box-sizing: border-box;
+  color: $primary-text;
+  font-size: 1rem;
+  height: $badge-height;
+  line-height: $badge-height;
+  margin-left: 4px;
+  min-width: 3rem;
+  padding: 2px 6px;
+  text-align: center;
+
+  &.new {
+    background-color: $badge-bg-color;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  &.-float {
+    float: right;
+  }
+
+  &[data-badge-caption]::after {
+    content: ' ' attr(data-badge-caption);
+  }
+}
+
+nav ul a span.badge {
+  display: inline-block;
+  float: none;
+  -webkit-font-smoothing: antialiased;
+  height: $badge-height;
+  line-height: $badge-height;
+  margin-left: 4px;
+}
+
+// Line height centering
+.collection-item span.badge {
+  margin-top: calc(#{$collection-line-height / 2} - #{$badge-height / 2});
+}
+
+.collapsible span.badge {
+  margin-left: auto;
+}
+
+.side-nav span.badge {
+  margin-top: calc(#{$sidenav-line-height / 2} - #{$badge-height / 2});
+}

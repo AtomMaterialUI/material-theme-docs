@@ -1,0 +1,158 @@
+---
+layout: index
+---
+<div class="content-container">
+  <div class="contents">
+    <!-- Theme -->
+    <section class="section theme-section">
+      <!-- Theme Chooser -->
+      <div class="theme-chooser">
+        <h3 class="theme-chooser-title section-title">Available Themes</h3>
+        <div class="theme-chooser-options">
+          {% for theme in site.data.themes.material %}
+          <div>
+            <a href="javascript:void(0)"
+               style="background: {{ theme.background }}"
+               class="theme {{ theme.className }} js-theme"
+               title="{{ theme.name }}"
+               data-theme-class="{{ theme.className }}">
+            </a>
+            <p class="theme-name">{{ theme.name }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Screen -->
+      {% for theme in site.data.themes.material %}
+      <a href="/img/themes/{{ theme.className }}.png" target="_blank"
+         class="screenshot -{{ theme.className }}"></a>
+      {% endfor %}
+
+      {% for theme in site.data.themes.other %}
+      <a href="/img/themes/oceanic.png" target="_blank"
+         class="screenshot -{{ theme.className }}"></a>
+      {% endfor %}
+
+      <div class="theme-chooser">
+        <h3 class="theme-chooser-title section-title">Check out the other themes:</h3>
+
+        <div class="theme-chooser-options">
+          {% for theme in site.data.themes.other %}
+          <div>
+            <a href="javascript:void(0)"
+               style="background: {{ theme.background }}"
+               class="theme {{ theme.className }} js-theme"
+               title="{{ theme.name }}"
+               data-theme-class="{{ theme.className }}">
+            </a>
+            <p class="theme-name">{{ theme.name }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features-section">
+      <h2 class="features-title section-title">Features</h2>
+      <div class="features articles">
+        {% for feat in site.features %}
+        {% include feature.html %}
+        {% endfor %}
+      </div>
+      <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui" class="call-to-action">
+        <button class="btn -large">
+          Download
+        </button>
+      </a>
+    </section>
+
+    <section class="section">
+      <h3 id="officials">Inspired by the official <a href="https://material-theme.site/">Material Theme</a></h3>
+      <ul class="official">
+        <li class="official-item"><a href="https://github.com/equinusocio/vsc-material-theme/">For VSCode</a></li>
+        <li class="official-item"><a href="https://github.com/equinusocio/material-theme/">For Sublime Text</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h4 id="other-portings" class="features-title section-title">Other Editions</h4>
+      <p>The Material Theme is so famous that it exists for many other IDEs, editors, applications, css themes and so
+        on.</p>
+      <ul class="collection">
+        <li class="collection-item"><a href="https://github.com/equinusocio/hyper-material-theme">Hyper</a> (by <a
+          href="https://github.com/equinusocio">@equinusocio</a>)
+        </li>
+        <li class="collection-item"><a href="https://github.com/silvestreh/atom-material-ui">Atom</a> (by <a
+          href="https://github.com/silvestreh">@silvestreh</a>)
+        </li>
+        <li class="collection-item"><a href="https://github.com/kristijanhusak/vim-hybrid-material">Vim</a> (by <a
+          href="https://github.com/kristijanhusak">@kristijanhusak</a>).
+        </li>
+        <li class="collection-item"><a href="https://gist.github.com/mvaneijgen/4c56701215847dd5ddcf">Terminal OSX</a>
+          (by <a
+            href="https://github.com/mvaneijgen">@mvaneijgen</a>).
+        </li>
+        <li class="collection-item"><a href="https://gist.github.com/Revod/3f3115f8d4b90fc986fd4b61441c2567">iTerm2</a>
+          (by <a
+            href="https://github.com/Revod">@Revod</a>) and <a href="https://github.com/JonathanSpeek/palenight-iterm2">iTerm2
+            Palenight</a> (by <a href="https://github.com/jonathanspeek">@jonathanspeek</a>).
+        </li>
+        <li class="collection-item"><a href="https://gist.github.com/rajadain/b306b2ba71bd58a1df41">ConEmu</a> (by <a
+          href="https://github.com/rajadain">@rajadain</a>).
+        </li>
+        <li class="collection-item"><a href="https://slack.com/">Slack</a> (
+          #263238,#2e3a40,#80CBC4,#FFFFFF,#13191C,#ffffff,#50fa7b,#FF5555 )
+        </li>
+        <li class="collection-item"><a href="https://github.com/jackiehluo/n1-material">Nylas N1</a> (thanks to <a
+          href="https://github.com/jackiehluo">@jackiehluo</a>)
+        </li>
+        <li class="collection-item"><a href="https://github.com/ntpeters/base16-materialtheme-scheme">Base16</a> (by <a
+          href="https://github.com/ntpeters">@ntpeters</a>)
+        </li>
+        <li class="collection-item"><a href="https://github.com/Codextor/npp-material-theme">Notepad++</a> (by <a
+          href="https://github.com/Codextor">@Codextor</a>)
+        </li>
+        <li class="collection-item"><a
+          href="https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo">Chrome
+          DevTools</a> (by <a href="https://github.com/mallowigi">@Mallowigi</a> and <a
+          href="https://github.com/jaysuz">@jaysuz</a>)
+        </li>
+        <li class="collection-item"><a
+          href="https://www.npmjs.com/package/@mallowigi/slack-themes">Slack Themes</a> (by <a
+          href="https://github.com/mallowigi">@Mallowigi</a>)
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="features-title section-title">Sponsors</h2>
+
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/0/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/0/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/1/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/1/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/2/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/2/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/3/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/3/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/4/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/4/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/5/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/5/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/6/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/6/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/7/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/7/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/8/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/8/avatar.svg"></a>
+      <a href="https://opencollective.com/material-theme-jetbrains/sponsor/9/website" target="_blank"><img
+        src="https://opencollective.com/material-theme-jetbrains/sponsor/9/avatar.svg"></a>
+
+    </section>
+
+  </div>
+</div>

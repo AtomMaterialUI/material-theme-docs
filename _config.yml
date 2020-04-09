@@ -1,0 +1,114 @@
+full_rebuild: true
+incremental: true
+source: "."
+destination: "./jekyllbuild"
+name: Material Theme UI Documentation
+description: |
+  The Material Theme plugin is a plugin for JetBrains IDEs (IntelliJ, PhpStorm, WebStorm, Android Studio, etc...) which completely redesigns
+  the UI with a beautiful and configurable Material Design UI.
+  This is the plugin's documentation page which presents and explains the different features provided by the plugin.
+
+author: "Elior Boukhobza (Mallowigi) and Chris Magnussen (ChrisRM)"
+url: https://www.material-theme.com
+baseurl: ""
+permalink: /blog/:title/
+paginate: 6
+paginate_path: /page/:num
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-toc
+  - jemoji
+infinite_scroll: false
+
+twitter: mallowigi
+twitter2: crmag
+tag_dir: /tag
+category_dir: /category
+author_dir: /author
+author_title_prefix: 'Posted by '
+media_folder: /img
+img_folder: /img
+author_default_avatar: /profile-pic.jpeg
+github: https://github.com/chrisrm/material-theme-jetbrains
+download: https://plugins.jetbrains.com/plugin/8006-material-theme-ui
+version: 5.0.0
+year: 2015-2019
+social_image_path:  /img/brand/logo.png
+social_logo_path:   /img/brand/logo.png
+
+encoding: utf-8
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "material-sidebar-left"
+      type: "standard"
+      homedisplay: "featimg"
+
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "material-sidebar-left"
+      author: "mallowigi"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
+
+relative_permalinks: false
+exclude:
+  - .git
+  - .gradle
+  - .idea
+  - config
+  - build
+  - js
+  - node_modules
+  - sass
+  - static
+  - vue
+  - .babelrc
+  - .editorconfig
+  - .eslintignore
+  - .eslintrc.js
+  - .gitignore
+  - .jekyll-metadata
+  - .postcssrc.js
+  - .travis.yml
+  - _algolia_api_key
+  - browser-sync.js
+  - Gemfile
+  - Gemfile.lock
+  - gruntfile.js
+  - LICENCE
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - yarn.lock
+sass:
+  style: compressed
+collections:
+  features:
+    permalink: /:collection/:title
+    output: true
+
+cdn:
+  # See https://www.srihash.org for info on how to generate the hashes
+  css:              ""
+  css_hash:         ""
+  js:               ""
+  js_hash:          ""
+  jquery:           "https://code.jquery.com/jquery-3.2.1.min.js"
+  jquery_hash:      "sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+  materialize:      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+  materialize_hash: "sha384-C5yXM3HiWa6a8kI2Jd4LuuwmOGAVgJw0YSmuRXN+PLT5Jln26ddUnPQxkInM/w2x"
+
+algolia:
+  application_id: 77GG697EBY
+  index_name: localhost
+  extensions_to_index: ['md']

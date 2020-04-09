@@ -1,0 +1,124 @@
+/**
+  Table styles
+ */
+table,
+th,
+td {
+  border: none;
+}
+
+table {
+  display: table;
+  width: 100%;
+
+  tbody tr:nth-child(odd) {
+    background-color: $table-striped-color;
+  }
+
+  tbody tr {
+    transition: background-color 0.25s ease;
+  }
+}
+
+thead {
+  border-bottom: 1px solid $table-border-color;
+  font-weight: bold;
+}
+
+td,
+th {
+  border-radius: 2px;
+  display: table-cell;
+  padding: 15px 5px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+// Responsive Table
+@media screen and (max-width: $table-collapse) {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+
+    th,
+    td {
+      margin: 0;
+      vertical-align: top;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    thead {
+      display: block;
+      float: left;
+
+      tr {
+        display: block;
+        padding: 0 10px 0 0;
+
+        th::before {
+          content: '\00a0';
+        }
+      }
+    }
+
+    tbody {
+      display: block;
+      overflow-x: auto;
+      position: relative;
+      white-space: nowrap;
+      width: auto;
+
+      tr {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    th {
+      display: block;
+      text-align: right;
+    }
+
+    td {
+      display: block;
+      min-height: 1.25em;
+      text-align: left;
+    }
+
+    tr {
+      padding: 0 10px;
+    }
+
+    /* sort out borders */
+
+    thead {
+      border: 0;
+      border-right: 1px solid $table-border-color;
+    }
+
+    th {
+      border-bottom: 0;
+      border-left: 0;
+    }
+
+    td {
+      border-bottom: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+
+    tr {
+      border: 0;
+    }
+
+    tbody tr {
+      border-right: 1px solid $table-border-color;
+    }
+  }
+}

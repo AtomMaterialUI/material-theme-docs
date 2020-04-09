@@ -1,0 +1,39 @@
+.toc {
+  display: none;
+  position: absolute;
+  right: -5%;
+  top: 0;
+  width: 24vw;
+
+  @media all and (min-width: $toc-hiding-point) {
+    display: block;
+  }
+
+  &.pinned {
+    position: fixed;
+    right: 0;
+    top: 64px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  li {
+    line-height: 2;
+    padding: 0 1em 0 2em;
+    position: relative;
+
+    a.active {
+      color: $accent-color;
+      font-weight: normal;
+      @include list-indicator;
+    }
+  }
+
+  .toc-entry.toc-h5 {
+    display: none;
+  }
+}

@@ -1,0 +1,120 @@
+.pageclip-form {
+  position: relative;
+}
+
+.pageclip-form__success {
+  background: hsla(0, 0%, 100%, 0.8);
+  bottom: -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: -1px;
+  position: absolute;
+  right: -1px;
+  text-align: center;
+  top: -1px;
+  z-index: 1;
+}
+
+.pageclip-form__success__message {
+  animation: 0.3s linear none a;
+  font-size: 2rem;
+  text-align: center;
+  transform-origin: center;
+}
+
+.pageclip-form__submit {
+  position: relative;
+}
+
+.pageclip-form__submit::after {
+  border: 3px solid hsla(0, 0%, 100%, 0.3);
+  border-left: 3px solid #fff;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  text-indent: -9999em;
+  top: 50%;
+  transform: scale(0.01) translateZ(0);
+  width: 20px;
+  z-index: 2;
+}
+
+.pageclip-form__submit.pageclip-form__submit--dark-loader::after {
+  border-color: rgba(0, 0, 0, 0.3);
+  border-left-color: #000;
+}
+
+.pageclip-form__submit.pageclip-form__submit--start-loading::after {
+  animation: 0.1s linear none a;
+}
+
+.pageclip-form__submit.pageclip-form__submit--start-loading > span {
+  animation: 0.1s linear none c;
+}
+
+.pageclip-form__submit.pageclip-form__submit--loading::after {
+  animation: 1.2s linear infinite d;
+  transform: translateZ(0);
+}
+
+.pageclip-form__submit.pageclip-form__submit--loading > span {
+  opacity: 0;
+}
+
+.pageclip-form__submit.pageclip-form__submit--end-loading::after {
+  animation: 0.1s linear none b;
+}
+
+.pageclip-form__submit.pageclip-form__submit--end-loading > span {
+  animation: 0.1s linear reverse c;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.01) translateZ(0);
+  }
+
+  50% {
+    transform: scale(1.2) translateZ(0);
+  }
+
+  to {
+    transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes b {
+  0% {
+    transform: scale(1) translateZ(0);
+  }
+
+  to {
+    transform: scale(0.01) translateZ(0);
+  }
+}
+
+@keyframes c {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes d {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

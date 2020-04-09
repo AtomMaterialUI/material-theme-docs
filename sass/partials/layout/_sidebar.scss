@@ -1,0 +1,111 @@
+// material sidebar styles
+.sidebar {
+  background: white;
+  height: 100%;
+  overflow: inherit;
+  position: fixed;
+  top: 0;
+  transition: 0.3s all ease;
+  width: $sidebar-width;
+  z-index: 111;
+  @include shadow(1);
+
+  .row {
+    padding: 20px;
+    //border-bottom: $line;
+
+    .ts-no-slogan,
+    .ts-icon {
+      display: none;
+    }
+  }
+
+  .sidebar-toggle {
+    display: none;
+    transition: 0.5s all ease-out;
+  }
+
+  .link-section {
+    line-height: 1.5;
+    list-style-type: none;
+
+    &.active {
+      a {
+        color: $second-accent-color;
+        transition: color 1s;
+      }
+    }
+  }
+
+  @media screen and (max-width: $sidebarcollapse) {
+    transform: translateX(-($sidebar-width - $margin-width));
+
+    &.open {
+      transform: translateX(0);
+      transition-delay: 0.5s;
+
+      .sidebar-toggle {
+        height: $margin-width;
+
+        i {
+          transform: translate(50%, -50%) rotate(45deg);
+        }
+      }
+    }
+
+    .sidebar-toggle {
+      display: block;
+      height: 100%;
+      left: $sidebar-width - $margin-width;
+      position: fixed;
+      top: 0;
+      width: $margin-width;
+      z-index: 99;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      i {
+        position: absolute;
+        right: $margin-width/2;
+        top: 50%;
+        transform: translate(50%, -50%);
+        transition: 1s all ease;
+      }
+    }
+  }
+}
+
+/**
+  When a parent has this class
+ */
+.-sidebar-left {
+  &,
+  .main-menu {
+    width: calc(100% - #{$sidebar-width});
+    @media screen and (max-width: $sidebarcollapse) {
+      width: calc(100% - #{$margin-width});
+    }
+  }
+}
+
+.-sidebar-left {
+  margin-left: $sidebar-width;
+
+  .main-menu {
+    margin-left: $sidebar-width;
+  }
+
+  .sidebar {
+    left: 0;
+  }
+
+  @media screen and (max-width: $sidebarcollapse) {
+    margin-left: $margin-width;
+
+    .main-menu {
+      margin-left: $margin-width;
+    }
+  }
+}

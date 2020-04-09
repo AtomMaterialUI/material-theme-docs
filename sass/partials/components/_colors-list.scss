@@ -1,0 +1,12 @@
+/**
+  Component that shows a list of colors
+ */
+.collection-item.color {
+  font-size: small;
+  font-weight: 500;
+  padding: 0.75em;
+
+  .color-tags {
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,12 @@
+<figure class="card figure" markdown="0">
+  <a href="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/{{ include.content }}" target="_blank"
+     class="card-image">
+    <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/{{ include.content }}"
+         alt="{{ include.caption }}">
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      {{ include.caption }}
+    </figcaption>
+  </div>
+</figure>

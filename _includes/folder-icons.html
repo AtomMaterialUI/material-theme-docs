@@ -1,0 +1,10 @@
+<div class="masonry file-icons" markdown="0">
+  {% for icon in site.static_files %}
+  {% if icon.path contains 'folderIcons' %}
+  <div class="item">
+    <img class="item-icon" src="{{ site.baseurl }}{{ icon.path }}" alt="{{ icon.name }}" width="32" height="32"/>
+    <small class="item-text">{{ icon.basename | capitalize }}</small>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

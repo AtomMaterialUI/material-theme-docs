@@ -1,0 +1,75 @@
+.contents {
+  background: $almost-white;
+  //@include shadow(1);
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative;
+
+  .content-container & {
+    padding: 20px;
+
+    p {
+      padding: 0;
+    }
+
+    @media screen and (max-width: $from-noslogan-to-icon) {
+      padding: 20px 0;
+    }
+  }
+
+  .index & h1,
+  .index & p,
+  .index & span {
+    padding: 0 20px;
+  }
+
+  img {
+    transition: 0.3s all ease;
+  }
+
+  a:hover {
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  ul,
+  ol {
+    list-style: circle;
+    padding: 0 35px;
+
+    li {
+      padding-left: 0;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+}
+
+.wrapper {
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+}
+
+.short {
+  width: 100%;
+
+  a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+
+    .shortdate {
+      border-right: $line;
+      font-size: 0.8em;
+      margin-right: 10px;
+      opacity: 0.8;
+      padding-right: 10px;
+    }
+  }
+}

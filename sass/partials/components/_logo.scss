@@ -1,0 +1,51 @@
+// Logo SVG styling you most probably will replace all of the below.
+
+.logo-caption {
+  color: $primary-text;
+  font-family: $main-font;
+  font-size: 3em;
+  font-weight: 100;
+  line-height: 125%;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+
+  @media screen and (max-width: $from-noslogan-to-icon) {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+.logo-slogan {
+  color: $accent-color;
+  font-family: $main-font;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 125%;
+  transition: 0.3s all ease;
+
+  @media screen and (max-width: $from-noslogan-to-icon) {
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+
+.logo-description {
+  color: $primary-text;
+  font-family: $main-font;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 65%;
+
+  @media screen and (max-width: $from-full-to-noslogan) {
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: $from-noslogan-to-icon) {
+    font-size: 1em;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+

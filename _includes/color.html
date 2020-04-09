@@ -1,0 +1,20 @@
+<div markdown="0">
+  {% if color.dark %}
+  <div class="collection-item color"
+       title="{{ color.dark }} - {{ color.light }}"
+       style="
+           background: -moz-linear-gradient(left, {{ color.dark }} 0%, {{ color.light }} 100%);
+           background: -webkit-linear-gradient(left, {{ color.dark }} 0%,{{ color.light }} 100%);
+           background: linear-gradient(to right, {{ color.dark }} 0%,{{ color.light }} 100%);">
+    <span class="color-name">{{ color.name | capitalize }}</span>
+    <p class="color-tags">Tags: {{ color.tags | join: ', ' }}
+    </p>
+  </div>
+  {% else if theme %}
+  <div class="collection-item color"
+       title="{{ theme[include.field] }}"
+       style="background: {{ theme[include.field] }};{% unless theme.light %}color: white;{% endunless %}">
+    <span class="color-name">{{ theme.name | capitalize }}</span>
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,312 @@
+// PROJECT MIXINS
+//---------------------------------------------------------------------
+
+// material shadows
+@mixin shadow($depth, $type: null) {
+  @if $type == null {
+    @if $depth == 1 {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    } @else if $depth == 1-half {
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    } @else if $depth == 2 {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    } @else if $depth == 3 {
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    } @else if $depth == 4 {
+      box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+    } @else if $depth == 5 {
+      box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+    }
+  }
+  @if $type == btn {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+
+    &:active,
+    &:focus {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  @if $type == link {
+    // box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.13), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: box-shadow 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+// button
+@mixin button($color, $prop) {
+  border: 0;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  @if $prop == btn {
+    @include shadow(1);
+    background-color: $color;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-align: center;
+    opacity: 0.95;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      @include shadow(1 -half);
+      background-color: $color;
+      opacity: 1;
+      color: white;
+    }
+
+    &.disabled {
+      background-color: #dfdfdf;
+      box-shadow: none;
+      color: #9f9f9f;
+      cursor: default;
+
+      * {
+        pointer-events: none;
+      }
+
+      &:hover {
+        background-color: #dfdfdf;
+        color: #9f9f9f;
+      }
+    }
+  }
+
+  @if $prop == flat {
+    background-color: transparent;
+    box-shadow: none;
+    color: $color;
+    cursor: pointer;
+
+    &.disabled {
+      color: lighten(#999, 10%) !important;
+      cursor: default;
+
+      &:hover {
+        color: lighten(#999, 10%) !important;
+        cursor: default;
+      }
+    }
+  }
+}
+
+// TOOLBOX MIXINS
+//---------------------------------------------------------------------
+
+// without variables
+//------------------
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// @include clearfix()
+// use on float parents
+
+@mixin center() {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+// @include center()
+// use to center elements
+
+// with variables
+//---------------
+@mixin flexbox($direction, $wrap, $justify, $align) {
+  align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+// @include flexbox(direction, wrap, justify, align)
+
+@mixin row-machine($itemsPerRow, $marginRight, $marginBottom:$marginRight) {
+  width: calc((100% - (#{$itemsPerRow} - 1) * #{$marginRight}) / #{$itemsPerRow});
+
+  &:nth-of-type(n) {
+    margin-bottom: $marginBottom;
+    margin-right: $marginRight;
+  }
+
+  &:nth-of-type(#{$itemsPerRow}n) {
+    margin-right: 0;
+  }
+}
+
+// @include row-machine(items per row, marginside, (marginbottom))
+// use for grids
+
+@mixin paddinghack($circleWidth, $radiusWidth, $radiusHeight, $childElement:null) {
+  display: block;
+  height: 0;
+  padding: (($radiusHeight / $radiusWidth) * $circleWidth) 0 0 0;
+  position: relative;
+  width: $circleWidth;
+  @if $childElement != null {
+    #{$childElement} {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+// @include paddinghack(width, ratiowidth, ratioheight, (childelement))
+// use for fixed aspect ratios
+
+@mixin triangle($borderWidth, $dir, $color) {
+  border-style: solid;
+  border-width: $borderWidth;
+  height: 0;
+  width: 0;
+  @if $dir == right {
+    border-color: transparent transparent transparent $color;
+  }
+  @if $dir == left {
+    border-color: transparent $color transparent transparent;
+  }
+  @if $dir == bottom or $dir == down {
+    border-color: $color transparent transparent transparent;
+  }
+  @if $dir == top or $dir == up {
+    border-color: transparent transparent $color transparent;
+  }
+}
+
+// @include triangle(border-width, direction[use: right, left, top/up, bottom/down], color);
+// basic triangle, best used on pseudo-elements
+
+@mixin triangle-rightangled($width, $height, $dir, $color) {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  @if $dir == bottom-left {
+    border-color: transparent transparent transparent $color;
+    border-width: $height 0 0 $width;
+  }
+  @if $dir == bottom-right {
+    border-color: transparent transparent $color transparent;
+    border-width: 0 0 $height $width;
+  }
+  @if $dir == top-left {
+    border-color: $color transparent transparent transparent;
+    border-width: $height $width 0 0;
+  }
+  @if $dir == top-right {
+    border-color: transparent $color transparent transparent;
+    border-width: 0 $width $height 0;
+  }
+}
+
+// @include triangle-ra(width, height, direction[use: bottom-left, bottom-right, top-left, top-right], color);
+// Right-Angled Triangle, best on pseudo-elements
+
+@mixin triangle-equi($sideLength, $dir, $color) {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  @if $dir == right {
+    border-color: transparent transparent transparent $color;
+  }
+  @if $dir == left {
+    border-color: transparent $color transparent transparent;
+  }
+  @if $dir == bottom or $dir == down {
+    border-color: $color transparent transparent transparent;
+  }
+  @if $dir == top or $dir == up {
+    border-color: transparent transparent $color transparent;
+  }
+  @if $dir == right or $dir == left {
+    border-width: ($sideLength/2) (1.73205*($sideLength/2));
+  }
+  @if $dir == top or $dir == down or $dir == bottom or $dir == up {
+    border-width: (1.73205*($sideLength/2)) ($sideLength/2);
+  }
+}
+
+// @include tirangle-eqla(sidelength, direction, color)
+// Equilateral Triangle, best on pseudo-elements
+
+@mixin flag($w, $h, $p, $dir, $c) {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  @if $dir == top or $dir == up {
+    border-color: transparent $c $c $c;
+    border-width: $p ($w / 2) ($h - $p);
+  }
+  @if $dir == right {
+    border-color: $c transparent $c $c;
+    border-width: ($h / 2) $p ($h / 2) ($w - $p);
+  }
+  @if $dir == bottom or $dir == down {
+    border-color: $c $c transparent $c;
+    border-width: ($h - $p) ($w / 2) $p;
+  }
+  @if $dir == left {
+    border-color: $c $c $c transparent;
+    border-width: ($h / 2) ($w - $p) ($h / 2) $p;
+  }
+}
+
+// @include flag(width, height, peak, direction, color)
+// flag, best on pseudo-elements, use for ribbons
+
+@mixin list-indicator($color: $accent-color) {
+  &::before {
+    background: $color;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.3s all linear;
+    width: 6px;
+  }
+}
+
+@mixin grid-cards($perRow: 3) {
+  @include row-machine($perRow, 1%, 25px);
+
+  @media screen and (max-width: $card-max-width * ($perRow - 0)) {
+    @include row-machine($perRow - 1, 1%, 25px);
+  }
+
+  @media screen and (max-width: $card-max-width * ($perRow - 1)) and (min-width: $card-max-width * ($perRow - 2)) {
+    @include row-machine($perRow - 2, 3%, 25px);
+  }
+
+  @media screen and (max-width: $card-max-width * ($perRow - 2)) {
+    margin-bottom: 25px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+

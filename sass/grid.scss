@@ -1,0 +1,35 @@
+@import 'toolbox/all';
+@import 'base/settings';
+//@import 'base/fontfaces';
+
+$fourtothree: 1460px;
+$threetotwo: 775px;
+$twotoone: 530px;
+
+.articles,
+.jscroll-inner {
+  @include flexbox(row, wrap, space-between, flex-start);
+  width: 100%;
+
+  @media screen and (max-width: $twotoone) {
+    justify-content: center;
+  }
+
+  .contents {
+    @include row-machine(3, 1%, 25px);
+
+    @media screen and (max-width: $fourtothree) {
+      @include row-machine(3, 1%, 25px);
+    }
+
+    @media screen and (max-width: $threetotwo) and (min-width: $twotoone + 1) {
+      @include row-machine(2, 3%, 25px);
+    }
+
+    @media screen and (max-width: $twotoone) {
+      margin-bottom: 25px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

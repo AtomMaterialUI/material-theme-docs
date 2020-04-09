@@ -1,0 +1,50 @@
+/**
+ Header layout global styles
+ */
+.header {
+  background: $head-bg;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+  .row {
+    box-sizing: border-box;
+    left: 0;
+    overflow: hidden;
+    padding: $logo-pad 10px 0; // adjust to change header height
+    position: relative;
+    text-align: center;
+    top: 0;
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+
+    .logo {
+      display: block;
+      transition: 0.3s all ease-in-out;
+    }
+
+    .title {
+      font-size: 0;
+      font-weight: bold;
+      left: 50%;
+      position: absolute;
+      text-transform: uppercase;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 0.3s all ease-in-out;
+    }
+
+    @media screen and (max-width: $from-noslogan-to-icon) {
+      padding-top: 30px;
+    }
+  }
+
+  .content {
+    @media screen and (max-width: $from-noslogan-to-icon) {
+      //padding-right: 1em;
+      width: 100%;
+    }
+  }
+}

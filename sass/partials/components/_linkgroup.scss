@@ -1,0 +1,51 @@
+.sidebar-links {
+  display: block;
+  height: 65vh;
+  overflow: auto;
+}
+
+.sidebar-link-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  hr {
+    margin: 0;
+    opacity: 0.2;
+  }
+
+  li a {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 15px 0 15px 22px;
+    transition: background-color 0.3s ease-out;
+  }
+
+  &.active > li > .nav-link,
+  .link-section.active > .nav-link {
+    color: $accent-color;
+    position: relative;
+    @include list-indicator($second-accent-color);
+  }
+
+  .title {
+    display: block;
+    font-weight: normal;
+  }
+
+  .sidebar-list {
+    padding: 0;
+
+    .link-section {
+      text-indent: 25px;
+    }
+
+    .sidebar-list-item {
+      padding: 0.5em;
+    }
+  }
+
+}

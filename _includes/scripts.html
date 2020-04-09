@@ -1,0 +1,44 @@
+<!-- Vendors -->
+{% if jekyll.environment == "production" %}
+<script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>
+{% else %}
+<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+{% endif %}
+
+{% if jekyll.environment == "production" %}
+<script src="{{ site.baseurl }}/assets/js/vendor/materialize.min.js"></script>
+{% else %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+{% endif %}
+
+<script src="{{ site.baseurl }}/assets/js/vendor/scrollspy.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>-->
+<!--<script src="{{ site.baseurl }}/assets/js/vendor/instantsearch.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+  apiKey: '0c2ef3a55b1f2b14c33326dcb167e886',
+  indexName: 'material-theme-jetbrains-eap',
+  inputSelector: '#search',
+  debug: false, // Set debug to true if you want to inspect the dropdown
+});
+</script>
+
+<!-- scripts -->
+{% if jekyll.environment == "production" %}
+<script src="{{ site.baseurl }}/assets/js/build/app.min.js"></script>
+{% else %}
+<script src="{{ site.baseurl }}/assets/js/app.js"></script>
+{% endif %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108120618-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108120618-1');
+</script>
+
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
