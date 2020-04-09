@@ -25,598 +25,483 @@ File Associations
 
 Files are sorted by priority.
 
-| Name | Pattern | Examples | Icon |
-| :---: | :---: | :---: | :---: |
-|  [Github CODE](#github-code) |  `^CODE_OF_CONDUCT\.(md\|txt)$ ` |  CODE_OF_CONDUCT.md<br>CODE_OF_CONDUCT.txt |  ![Github CODE](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/github.svg?sanitize=true) |
-|  [Github CONTRIBUTING](#github-contributing) |  `^CONTRIBUTING\.(md\|txt)$ ` |  CONTRIBUTING.md<br>CONTRIBUTING.txt |  ![Github CONTRIBUTING](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/github.svg?sanitize=true) |
-|  [Github COMMIT](#github-commit) |  `^COMMIT_MESSAGE_CONVENTION\.(md\|txt)$ ` |  COMMIT_MESSAGE_CONVENTION.md |  ![Github COMMIT](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/github.svg?sanitize=true) |
-|  [Github TEMPLATE](#github-template) |  `.*TEMPLATE\.(md\|txt)$ ` |  TEMPLATE.md<br>TEMPLATE.txt |  ![Github TEMPLATE](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/github.svg?sanitize=true) |
-|  [README](#readme) |  `^(README\|readme)(\.(md\|txt))?$ ` |  README.md<br>README.txt |  ![README](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/readme.svg?sanitize=true) |
-|  [Plugin](#plugin) |  `^plugin.xml$ ` |  plugin.xml |  ![Plugin](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/plugin.svg?sanitize=true) |
-|  [Prefs](#prefs) |  `.*\.(prefs?)$ ` |  &ast;.pref<br>&ast;.prefs |  ![Prefs](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/config.svg?sanitize=true) |
-|  [Images](#images) |  `.*\.(jpg\|png\|jpeg\|gif\|bmp) ` |  &ast;.jpg<br>&ast;.jpeg<br>&ast;.png<br>&ast;.gif<br>&ast;.bmp |  ![Images](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/image.svg?sanitize=true) |
-|  [webp](#webp) |  `.*\.webp$ ` |  &ast;.webp |  ![webp](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/image.svg?sanitize=true) |
-|  [SVG](#svg) |  `.*\.svg ` |  &ast;.svg |  ![SVG](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/svg.svg?sanitize=true) |
-|  [1C](#1c) |  `.*\.(bsl\|sdbl\|os\|mdo)$ ` |  &ast;.bsl<br>&ast;.mdo<br>&ast;.sbsl<br>&ast;.os |  ![1C](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/1c.svg?sanitize=true) |
-|  [3D](#3d) |  `.*\.(stl\|obj\|3ds\|dxf\|ac)$ ` |  &ast;.stl<br>&ast;.obj<br>&ast;.3ds<br>&ast;.dxf<br>&ast;.ac |  ![3D](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/3d.svg?sanitize=true) |
-|  [4D](#4d) |  `.*\.4d[mb]$ ` |  &ast;.4dm<br>&ast;.4db |  ![4D](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/4d.svg?sanitize=true) |
-|  [A+](#a+) |  `.*\.a\+$ ` |  &ast;.a+ |  ![A+](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/aplus.svg?sanitize=true) |
-|  [Access](#access) |  `.*\.(adn\|accdb\|accdr\|accdt\|accda\|mdw\|accde\|mam\|maq\|mar\|mat\|maf\|laccdb)$ ` |  &ast;.adn<br>&ast;.accdb<br>&ast;.accdr<br>&ast;.accdt<br>&ast;.accda<br>&ast;.mdw<br>&ast;.accde<br>&ast;.mam<br>&ast;.maq<br>&ast;.mar<br>&ast;.mat<br>&ast;.maf<br>&ast;.laccdb |  ![Access](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/access.svg?sanitize=true) |
-|  [ABAP](#abap) |  `.*\.(abp\|abap)$ ` |  &ast;.abp<br>&ast;.abap |  ![ABAP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/abap.svg?sanitize=true) |
-|  [ABIF](#abif) |  `.*\.(abif\|ab1\|fsa)$ ` |  &ast;.abif<br>&ast;.ab1<br>&ast;.fsa |  ![ABIF](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/abif.svg?sanitize=true) |
-|  [Acre](#acre) |  `^acre\.config$ ` |  acre.config |  ![Acre](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/acre.svg?sanitize=true) |
-|  [ActionScript](#actionscript) |  `.*\.(as3?\|jsfl)$ ` |  &ast;.as<br>&ast;.as3<br>&ast;.jsfl |  ![ActionScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/actionscript.svg?sanitize=true) |
-|  [Adobe Animate](#adobe-animate) |  `.*\.fla$ ` |  &ast;.fla |  ![Adobe Animate](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/animate.svg?sanitize=true) |
-|  [Adobe Elements](#adobe-elements) |  `.*\.ae[pt]$ ` |  &ast;.aep<br>&ast;.aet |  ![Adobe Elements](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ae.svg?sanitize=true) |
-|  [Adobe Illustrator](#adobe-illustrator) |  `.*\.(ait?)$ ` |  &ast;.ai<br>&ast;.ait |  ![Adobe Illustrator](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ai.svg?sanitize=true) |
-|  [Ada](#ada) |  `.*\.(ada\|adb\|ads)$ ` |  &ast;.ada<br>&ast;.adb<br>&ast;.ads |  ![Ada](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ada.svg?sanitize=true) |
-|  [AdvPL](#advpl) |  `.*\.(prw\|ahu\|aph\|tlpp)$ ` |  &ast;.prw<br>&ast;.ahu<br>&ast;.aph<br>&ast;.tlpp |  ![AdvPL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/advpl.svg?sanitize=true) |
-|  [AffectScript](#affectscript) |  `.*\.affect$ ` |  &ast;.affect |  ![AffectScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/affectscript.svg?sanitize=true) |
-|  [Affinity Designer](#affinity-designer) |  `.*\.(afdesign\|afphoto\|afpub)$ ` |  &ast;.afdesign<br>&ast;.afphoto<br>&ast;.afpub |  ![Affinity Designer](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/affinity.svg?sanitize=true) |
-|  [Agda](#agda) |  `.*\.l?agda$ ` |  &ast;.agda<br>&ast;.lagda |  ![Agda](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/agda.svg?sanitize=true) |
-|  [Akka](#akka) |  `.*\.akka$ ` |  &ast;.akka |  ![Akka](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/akka.svg?sanitize=true) |
-|  [Alacritty](#alacritty) |  `\.?alacritty\.yml$ ` |  alacritty.yml |  ![Alacritty](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/alacritty.svg?sanitize=true) |
-|  [Alex](#alex) |  `\.alex(rc\|ignore)$ ` |  .alexrc<br>.alexignore |  ![Alex](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/alex.svg?sanitize=true) |
-|  [Alloy](#alloy) |  `.*\.als$ ` |  &ast;.als |  ![Alloy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/alloy.svg?sanitize=true) |
-|  [Alpine Linux](#alpine-linux) |  `^\.?APKBUILD$ ` |  APKBUILD<br>.APKBUILD |  ![Alpine Linux](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/alpine.svg?sanitize=true) |
-|  [AMPL](#ampl) |  `.*\.ampl$ ` |  &ast;.ampl |  ![AMPL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ampl.svg?sanitize=true) |
-|  [AmuseWiki](#amusewiki) |  `.*\.muse ` |  &ast;.muse |  ![AmuseWiki](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/amusewiki.svg?sanitize=true) |
-|  [Analytica](#analytica) |  `.*\.ana$ ` |  &ast;.ana |  ![Analytica](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/analytica.svg?sanitize=true) |
-|  [Android Manifest](#android-manifest) |  `^AndroidManifest\.xml$ ` |  AndroidManifest.xml |  ![Android Manifest](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/android.svg?sanitize=true) |
-|  [Android Main](#android-main) |  `^MainActivity\.java$ ` |  MainActivity.java |  ![Android Main](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/android.svg?sanitize=true) |
-|  [Android Smali](#android-smali) |  `.*\.(smali\|rsh)$ ` |  &ast;.smali<br>&ast;.rsh |  ![Android Smali](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/android.svg?sanitize=true) |
-|  [AngelScript](#angelscript) |  `.*\.(acs\|angelscript)$ ` |  &ast;.acs<br>&ast;.angelscript |  ![AngelScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angelscript.svg?sanitize=true) |
-|  [Angular-CLI](#angular-cli) |  `^angular(-cli)?\.json$ ` |  angular.json<br>angular-cli.json |  ![Angular-CLI](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angular.svg?sanitize=true) |
-|  [AngularJS](#angularjs) |  `^angular\.(min\.)?js$ ` |  angular.js<br>angular.min.js |  ![AngularJS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angular.svg?sanitize=true) |
-|  [Angular](#angular) |  `.*\.(ng\.html\|ng\.js\|module\.[tj]s\|ng-template)$ ` |  &ast;.ng.html<br>&ast;.ng.js<br>&ast;.module.ts<br>&ast;.module.js<br>&ast;.ng-template |  ![Angular](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angular.svg?sanitize=true) |
-|  [Angular Component](#angular-component) |  `.*\.component\.[tj]s$ ` |  &ast;.component.js<br>&ast;.component.ts |  ![Angular Component](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularcomponent.svg?sanitize=true) |
-|  [Angular Controller](#angular-controller) |  `.*\.controller\.[tj]s$ ` |  &ast;.controller.js<br>&ast;.controller.ts |  ![Angular Controller](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularcomponent.svg?sanitize=true) |
-|  [Angular Directive](#angular-directive) |  `.*\.directive\.[tj]s$ ` |  &ast;.directive.js<br>&ast;.directive.ts |  ![Angular Directive](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angulardirective.svg?sanitize=true) |
-|  [Angular Guard](#angular-guard) |  `.*\.guard\.[tj]s$ ` |  &ast;.guard.js<br>&ast;.guard.ts |  ![Angular Guard](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularguard.svg?sanitize=true) |
-|  [Angular Service](#angular-service) |  `.*\.service\.[tj]s$ ` |  &ast;.service.js<br>&ast;.service.ts |  ![Angular Service](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularservice.svg?sanitize=true) |
-|  [Angular Pipe](#angular-pipe) |  `.*\.pipe\.[tj]s$ ` |  &ast;.pipe.js<br>&ast;.pipe.ts |  ![Angular Pipe](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularpipe.svg?sanitize=true) |
-|  [Angular Routing](#angular-routing) |  `.*\.routing\.[tj]s$ ` |  &ast;.routing.js<br>&ast;.routing.ts |  ![Angular Routing](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularrouting.svg?sanitize=true) |
-|  [Angular Resolver](#angular-resolver) |  `.*\.resolver\.[tj]s$ ` |  &ast;.resolver.js<br>&ast;.resolver.ts |  ![Angular Resolver](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularresolver.svg?sanitize=true) |
-|  [Anime Studio](#anime-studio) |  `.*\.anime.*$ ` |  &ast;.anime<br>&ast;.animestudio |  ![Anime Studio](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/animestudio.svg?sanitize=true) |
-|  [Ansible](#ansible) |  `^(ansible\|site\|webservers\|dbservers\|playbook)\.ya?ml$ ` |  ansible.yml<br>site.yml<br>webservers.yml<br>dbservers.yml<br>playbook.yml |  ![Ansible](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ansible.svg?sanitize=true) |
-|  [Ant](#ant) |  `(ant\.xml$\|\.ant) ` |  ant.xml<br>.ant |  ![Ant](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ant.svg?sanitize=true) |
-|  [ANTLR](#antlr) |  `.*\.g4?$ ` |  &ast;.g<br>&ast;.g4 |  ![ANTLR](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/antlr.svg?sanitize=true) |
-|  [Antwar.io](#antwar.io) |  `^\.?antwar\.conf(ig)?\.[cm]?js$ ` |  antwar.conf.js<br>antwar.config.js |  ![Antwar.io](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/antwar.svg?sanitize=true) |
-|  [AnyScript](#anyscript) |  `.*\.any ` |  &ast;.any |  ![AnyScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/any.svg?sanitize=true) |
-|  [Apache Conf](#apache-conf) |  `^(apache2?\|httpd).*\.conf$ ` |  apache.conf<br>apache2.conf<br>httpd.conf |  ![Apache Conf](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/apache.svg?sanitize=true) |
-|  [Apache Conf-](#apache-conf-) |  `^\.apacheconf$ ` |  .apacheconf |  ![Apache Conf-](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/apache.svg?sanitize=true) |
-|  [Apache](#apache) |  `.*\.(vhost\|thrift)$ ` |  &ast;.vhost<br>&ast;.thrift |  ![Apache](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/apache.svg?sanitize=true) |
-|  [API Blueprint](#api-blueprint) |  `.*\.apib$ ` |  &ast;.apib |  ![API Blueprint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/apib.svg?sanitize=true) |
-|  [APK](#apk) |  `.*\.apk$ ` |  &ast;.apk |  ![APK](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/android.svg?sanitize=true) |
-|  [APL](#apl) |  `.*\.apl[acfino]?$ ` |  &ast;.apl<br>&ast;.apla<br>&ast;.aplc<br>&ast;.aplf<br>&ast;.apli<br>&ast;.apln<br>&ast;.aplo |  ![APL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/apl.svg?sanitize=true) |
-|  [Appcelerator](#appcelerator) |  `^appcelerator\.(js\|ts)$ ` |  appcelerator.js<br>appcelerator.ts |  ![Appcelerator](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/appcelerator.svg?sanitize=true) |
-|  [Appveyor](#appveyor) |  `^\.?appveyor\.ya?ml$ ` |  .appveyor.yml |  ![Appveyor](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/appveyor.svg?sanitize=true) |
-|  [AppleScript](#applescript) |  `.*\.(applescript\|scpt)$ ` |  &ast;.applescript<br>&ast;.scpt |  ![AppleScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/applescript.svg?sanitize=true) |
-|  [Arc](#arc) |  `.*\.arc$ ` |  &ast;.arc |  ![Arc](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/arc.svg?sanitize=true) |
-|  [Arch Linux](#arch-linux) |  `(\.install\|\.SRCINFO\|PKGBUILD\|\.yaourtrc)$ ` |  .install<br>.SRCINFO<br>PKGBUILD<br>.yaourtrc |  ![Arch Linux](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/archlinux.svg?sanitize=true) |
-|  [Arch Linux Pacman](#arch-linux-pacman) |  `(pacman\.conf\|pamac\.conf)$ ` |  pacman.conf<br>pamac.conf |  ![Arch Linux Pacman](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/archlinux.svg?sanitize=true) |
-|  [Arduino](#arduino) |  `.*\.ino$ ` |  &ast;.ino |  ![Arduino](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/arduino.svg?sanitize=true) |
-|  [Asciidoc](#asciidoc) |  `.*\.(ad\|adoc\|asciidoc\|asc)$ ` |  &ast;.ad<br>&ast;.adoc<br>&ast;.asciidoc<br>&ast;.asc |  ![Asciidoc](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/asciidoc.svg?sanitize=true) |
-|  [AspectJ](#aspectj) |  `.*\.aj$ ` |  &ast;.aj |  ![AspectJ](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/eclipse.svg?sanitize=true) |
-|  [Assembly Pure](#assembly-pure) |  `.*\.[ais]$ ` |  &ast;.a<br>&ast;.i<br>&ast;.s |  ![Assembly Pure](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/asmpure.svg?sanitize=true) |
-|  [Assembly](#assembly) |  `.*\.(asm\|nasm\|inc\|ms\|agc\|aes\|aea\|arm\|avr\|argus\|mitigus)$ ` |  &ast;.asm<br>&ast;.nasm<br>&ast;.inc<br>&ast;.ms<br>&ast;.agc<br>&ast;.aes<br>&ast;.aea<br>&ast;.arm<br>&ast;.avr<br>&ast;.argus<br>&ast;.mitigus |  ![Assembly](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/asm.svg?sanitize=true) |
-|  [ASP](#asp) |  `.*\.(asp\|asa\|aspx\|asax\|ascx\|ashx\|asmx\|axd)$ ` |  &ast;.asp<br>&ast;.asa<br>&ast;.aspx<br>&ast;.asax<br>&ast;.ascx<br>&ast;.ashx<br>&ast;.asmx<br>&ast;.axd |  ![ASP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/asp.svg?sanitize=true) |
-|  [Asymptote](#asymptote) |  `.*\.asy$ ` |  &ast;.asy |  ![Asymptote](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/asymptote.svg?sanitize=true) |
-|  [Atom](#atom) |  `.*\.atomproject\.[jc]son$ ` |  &ast;.atomproject.json<br>&ast;.atomproject.cson |  ![Atom](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/atom.svg?sanitize=true) |
-|  [APM](#apm) |  `^\.apmrc$ ` |  .apmrc |  ![APM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/atom.svg?sanitize=true) |
-|  [Atoum](#atoum) |  `^.*\.?atoum(\.[^.]+)*\.php ` |  &ast;.atoum.php<br>atoum.config.php |  ![Atoum](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/atoum.svg?sanitize=true) |
-|  [ATS](#ats) |  `.*\.(dats\|hats\|sats)$ ` |  &ast;.dats<br>&ast;.hats<br>&ast;.sats |  ![ATS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ats.svg?sanitize=true) |
-|  [Audacity](#audacity) |  `.*\.aup$ ` |  &ast;.aup |  ![Audacity](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/audacity.svg?sanitize=true) |
-|  [Augeas](#augeas) |  `.*\.aug$ ` |  &ast;.aug |  ![Augeas](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/augeas.svg?sanitize=true) |
-|  [Aurelia](#aurelia) |  `^aurelia(file)?\.js(on)?$ ` |  aurelia.js<br>aurelia.json<br>aureliafile.json |  ![Aurelia](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/aurelia.svg?sanitize=true) |
-|  [Authors](#authors) |  `^(AUTHORS\|authors)(\.(md\|txt))? ` |  AUTHORS<br>AUTHORS.md<br>AUTHORS.txt |  ![Authors](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/authors.svg?sanitize=true) |
-|  [AutoHotKey](#autohotkey) |  `.*\.ahkl?$ ` |  &ast;.ahk<br>&ast;.ahkl |  ![AutoHotKey](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ahk.svg?sanitize=true) |
-|  [AutoIt](#autoit) |  `.*\.au3 ` |  &ast;.au3 |  ![AutoIt](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/autoit.svg?sanitize=true) |
-|  [Avro](#avro) |  `.*\.(avcs\|avsc\|avdl) ` |  &ast;.avcs<br>&ast;.avsc<br>&ast;.avdl |  ![Avro](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/avro.svg?sanitize=true) |
-|  [Azure](#azure) |  `.*\.azcli$ ` |  &ast;.azcli |  ![Azure](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/azure.svg?sanitize=true) |
-|  [Azure Pipelines](#azure-pipelines) |  `azure-pipelines\.ya?ml$ ` |  azure-pipelines.yml |  ![Azure Pipelines](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/azure.svg?sanitize=true) |
-|  [Babel](#babel) |  `^\.(babelrc(\.js)?\|languagebabel\|babel)$ ` |  .babelrc<br>.babelrc.js<br>.languagebabel<br>.babel |  ![Babel](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/babel.svg?sanitize=true) |
-|  [Babel Config](#babel-config) |  `^babel(\.[\w\-]+)?\.json$ ` |  babel.json<br>babel.config.json |  ![Babel Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/babel.svg?sanitize=true) |
-|  [Backbone](#backbone) |  `^backbone([-.]min)?\.js$ ` |  backbone.js<br>backbone.min.js |  ![Backbone](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/backbone.svg?sanitize=true) |
-|  [Backup](#backup) |  `.*\.(bak\|old\|orig)$ ` |  &ast;.bak<br>&ast;.old<br>&ast;.orig |  ![Backup](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/backup.svg?sanitize=true) |
-|  [Ballerina](#ballerina) |  `.*\.balx?$ ` |  &ast;.bal<br>&ast;.balx |  ![Ballerina](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ballerina.svg?sanitize=true) |
-|  [Basic](#basic) |  `.*\.(bas\|vb\|vbs)$ ` |  &ast;.bas<br>&ast;.vb<br>&ast;.vbs |  ![Basic](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vs.svg?sanitize=true) |
-|  [Bazel](#bazel) |  `.*\.(bzl\|bazel)$ ` |  &ast;.bzl<br>&ast;.bazel |  ![Bazel](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bazel.svg?sanitize=true) |
-|  [Bazel Config](#bazel-config) |  `(\.bazelrc\|bazel\.rc)$ ` |  .bazelrc<br>bazel.rc |  ![Bazel Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bazel.svg?sanitize=true) |
-|  [Bean](#bean) |  `.*(b\|B)ean\.java$ ` |  javaBean.java<br>javabean.java |  ![Bean](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bean.svg?sanitize=true) |
-|  [Behat](#behat) |  `.*\.feature(\.php)?$ ` |  &ast;.feature<br>&ast;.feature.php |  ![Behat](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/behat.svg?sanitize=true) |
-|  [Behat Config](#behat-config) |  `behat(\..*)*\.ya?ml$ ` |  behat.yml<br>behat.config.yml |  ![Behat Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/behat.svg?sanitize=true) |
-|  [BEM](#bem) |  `\.bemjson(\.js)?$ ` |  .bemjson<br>.bemjson.js |  ![BEM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bem.svg?sanitize=true) |
-|  [BibTex](#bibtex) |  `.*\.(cbx\|bbx\|bib\|bst)$ ` |  &ast;.cbx<br>&ast;.bbx<br>&ast;.bib<br>&ast;.bst |  ![BibTex](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bibtex.svg?sanitize=true) |
-|  [Biml](#biml) |  `.*\.biml$ ` |  &ast;.bim |  ![Biml](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/biml.svg?sanitize=true) |
-|  [BinTray](#bintray) |  `\.bintray\.json$ ` |  .bintray.json |  ![BinTray](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bintray.svg?sanitize=true) |
-|  [Bison](#bison) |  `.*\.(bison\|yy?\|yacc)$ ` |  &ast;.bison<br>&ast;.y<br>&ast;.yy<br>&ast;.yacc |  ![Bison](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gnu.svg?sanitize=true) |
-|  [BitHound](#bithound) |  `\.bithoundrc$ ` |  .bithoundrc |  ![BitHound](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bithound.svg?sanitize=true) |
-|  [Bitbucket Pipelines](#bitbucket-pipelines) |  `^bitbucket-pipelines\.ya?ml$ ` |  bitbucket-pipelines.yml |  ![Bitbucket Pipelines](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bitbucket.svg?sanitize=true) |
-|  [Blade](#blade) |  `.*\.blade(\.php)?$ ` |  &ast;.blade<br>&ast;.blade.php |  ![Blade](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/blade.svg?sanitize=true) |
-|  [Blender](#blender) |  `.*\.(blend\|bphys)$ ` |  &ast;.blend<br>&ast;.bphys |  ![Blender](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/blender.svg?sanitize=true) |
-|  [BlueSpec](#bluespec) |  `.*\.(bsv\|bspec)$ ` |  &ast;.bsv<br>&ast;.bspec |  ![BlueSpec](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bluespec.svg?sanitize=true) |
-|  [Blink](#blink) |  `.*\.blink$ ` |  &ast;.blink |  ![Blink](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/blink.svg?sanitize=true) |
-|  [BNF](#bnf) |  `.*\.(bnf\|abnf\|ebnf)$ ` |  &ast;.bnf<br>&ast;.ebnf<br>&ast;.abnf |  ![BNF](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bnf.svg?sanitize=true) |
-|  [Boo](#boo) |  `.*\.boo(\.unity)?$ ` |  &ast;.boo<br>&ast;.boo.unity |  ![Boo](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/boo.svg?sanitize=true) |
-|  [Build Boot](#build-boot) |  `.*\.boot$ ` |  &ast;.boot |  ![Build Boot](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/boot.svg?sanitize=true) |
-|  [Bootstrap](#bootstrap) |  `^(custom\.)?bootstrap\..+$ ` |  bootstrap.js<br>bootstrap.ts<br>bootstrap.css<br>bootstrap.scss<br>custom.bootstrap.js |  ![Bootstrap](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bootstrap.svg?sanitize=true) |
-|  [Bootstrap RC](#bootstrap-rc) |  `^\.bootstraprc$ ` |  .bootstraprc |  ![Bootstrap RC](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bootstrap.svg?sanitize=true) |
-|  [Bower](#bower) |  `^(\.bowerrc\|bower\.json)$ ` |  .bowerrc<br>bower.json |  ![Bower](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bower.svg?sanitize=true) |
-|  [Bowerfile](#bowerfile) |  `^[Bb]owerfile$ ` |  Bowerfile<br>bowerfile |  ![Bowerfile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bower.svg?sanitize=true) |
-|  [Brainfuck](#brainfuck) |  `.*\.bf?$ ` |  &ast;.bf<br>&ast;.b |  ![Brainfuck](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/brainfuck.svg?sanitize=true) |
-|  [Brakeman](#brakeman) |  `brakeman\.yml$ ` |  brakeman.yml |  ![Brakeman](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/brakeman.svg?sanitize=true) |
-|  [Bro](#bro) |  `.*\.bro$ ` |  &ast;.bro |  ![Bro](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bro.svg?sanitize=true) |
-|  [Broccoli](#broccoli) |  `^Brocfile$ ` |  Brocfile |  ![Broccoli](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/broccoli.svg?sanitize=true) |
-|  [Brotli](#brotli) |  `.*\.br$ ` |  &ast;.br |  ![Brotli](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/brotli.svg?sanitize=true) |
-|  [Browserslist](#browserslist) |  `\.browserslist(rc)?$ ` |  .browserslist<br>.browserslistrc |  ![Browserslist](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/browserslist.svg?sanitize=true) |
-|  [Browsersync](#browsersync) |  `^(bs-config\|browser-sync)\.(js\|json)$ ` |  bs-config.js<br>bs-config.json<br>browser-sync.js<br>browser-sync.json |  ![Browsersync](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/browsersync.svg?sanitize=true) |
-|  [Brunch](#brunch) |  `^brunch-config\.(js\|coffee\|ts)$ ` |  brunch-config.js<br>brunch-config.coffee<br>brunch-config.ts |  ![Brunch](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/brunch.svg?sanitize=true) |
-|  [Buck](#buck) |  `.*\.buckconfig$ ` |  &ast;.buckconfig |  ![Buck](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/buck.svg?sanitize=true) |
-|  [BuckleScript](#bucklescript) |  `.*\.cmj$ ` |  &ast;.cmj |  ![BuckleScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bucklescript.svg?sanitize=true) |
-|  [BuildKite](#buildkite) |  `^buildkite\.(yml\|yaml)$ ` |  buildkite.yml<br>buildkite.yaml |  ![BuildKite](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/buildkite.svg?sanitize=true) |
-|  [Bundler](#bundler) |  `^Gemfile$ ` |  Gemfile |  ![Bundler](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bundle.svg?sanitize=true) |
-|  [Byond](#byond) |  `.*\.dm$ ` |  &ast;.dm |  ![Byond](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/byond.svg?sanitize=true) |
-|  [C](#c) |  `.*\.(c\|objc\|idc\|w\|nc\|upc\|cats)$ ` |  &ast;.c<br>&ast;.objc<br>&ast;.idc<br>&ast;.w<br>&ast;.nc<br>&ast;.upc<br>&ast;.cats |  ![C](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/c.svg?sanitize=true) |
-|  [Cabal](#cabal) |  `.*\.cabal$ ` |  &ast;.cabal |  ![Cabal](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cabal.svg?sanitize=true) |
-|  [Cabal Project](#cabal-project) |  `^cabal\.(config\|project)$ ` |  cabal.project<br>cabal.config |  ![Cabal Project](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cabal.svg?sanitize=true) |
-|  [Caddy](#caddy) |  `^Caddyfile$ ` |  Caddyfile |  ![Caddy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/caddy.svg?sanitize=true) |
-|  [Caffe](#caffe) |  `.*\.(caffemodel\|solverstate)$ ` |  &ast;.caffemodel<br>&ast;.solverstate |  ![Caffe](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/caffe.svg?sanitize=true) |
-|  [Caffe2](#caffe2) |  `.*\.(caffe2model\|prototxt\|pb)$ ` |  &ast;.caffe2model<br>&ast;.prototxt<br>&ast;.pb |  ![Caffe2](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/caffe2.svg?sanitize=true) |
-|  [Cakefile](#cakefile) |  `^Cakefile$ ` |  Cakefile |  ![Cakefile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cakefile.svg?sanitize=true) |
-|  [CakePHP](#cakephp) |  `.*\.(cake\|ctp)$ ` |  &ast;.cake<br>&ast;.ctp |  ![CakePHP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cakephp.svg?sanitize=true) |
-|  [Cargo](#cargo) |  `cargo\.(toml\|lock)$ ` |  cargo.toml<br>cargo.lock |  ![Cargo](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cargo.svg?sanitize=true) |
-|  [Carthage](#carthage) |  `^Cartfile$ ` |  Cartfile |  ![Carthage](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/carthage.svg?sanitize=true) |
-|  [Certificate](#certificate) |  `.*\.(crt\|cert\|x509\|pks)$ ` |  &ast;.crt<br>&ast;.cert<br>&ast;.x509<br>&ast;.pks |  ![Certificate](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/certificate.svg?sanitize=true) |
-|  [Ceylon](#ceylon) |  `.*\.ceylon$ ` |  &ast;.ceylon |  ![Ceylon](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ceylon.svg?sanitize=true) |
-|  [CFC](#cfc) |  `.*\.(cfc\|cfm\|cfml\|lucee)$ ` |  &ast;.cfc<br>&ast;.cfm<br>&ast;.cfml<br>&ast;.lucee |  ![CFC](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cfc.svg?sanitize=true) |
-|  [Chai](#chai) |  `^chai\.([jt]sx?\|es6?\|coffee)$ ` |  chai.js<br>chai.ts<br>chai.es6<br>chai.coffee<br>chai.es6<br>chai.tsx |  ![Chai](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chai.svg?sanitize=true) |
-|  [Changelog](#changelog) |  `^(CHANGELOG\|changelog)(\.(md\|txt))? ` |  CHANGELOG<br>CHANGELOG.md<br>changelog.md<br>CHANGELOG.txt |  ![Changelog](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/log.svg?sanitize=true) |
-|  [Chapel](#chapel) |  `.*\.(chpl\|chapel)$ ` |  &ast;.chpl<br>&ast;.chapel |  ![Chapel](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chapel.svg?sanitize=true) |
-|  [ChartJS](#chartjs) |  `^[Cc]hart(\.bundle)?(\.min)?\.[cm]?js$ ` |  Chart.js<br>Chart.bundle<br>Chart.min.js |  ![ChartJS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chart.svg?sanitize=true) |
-|  [Cheetah 3D](#cheetah-3d) |  `.*\.jas$ ` |  &ast;.jas |  ![Cheetah 3D](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cheetah.svg?sanitize=true) |
-|  [Chef Knife](#chef-knife) |  `^knife.rb$ ` |  knife.rb |  ![Chef Knife](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chef.svg?sanitize=true) |
-|  [Chef Berksfile](#chef-berksfile) |  `^(Berks\|Policy)file$ ` |  Berksfile<br>Policyfile |  ![Chef Berksfile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chef.svg?sanitize=true) |
-|  [Chocolatey](#chocolatey) |  `^chocolatey.*\.ps1$ ` |  chocolatey.ps1 |  ![Chocolatey](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chocolatey.svg?sanitize=true) |
-|  [Chrome](#chrome) |  `.*\.crx$ ` |  &ast;.crx |  ![Chrome](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chrome.svg?sanitize=true) |
-|  [ChucK](#chuck) |  `.*\.ck$ ` |  &ast;.ck |  ![ChucK](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/chuck.svg?sanitize=true) |
-|  [CircleCI](#circleci) |  `^\.circleci$ ` |  .circleci |  ![CircleCI](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/circleci.svg?sanitize=true) |
-|  [CircleCI Conf](#circleci-conf) |  `^circle\.ya?ml$ ` |  circle.yml |  ![CircleCI Conf](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/circleci.svg?sanitize=true) |
-|  [Circuit Board](#circuit-board) |  `.*\.(brd\|sch\|pcb\|gb[rlsop]\|gt[losp]\|drl\|dsn)$ ` |  &ast;.brd<br>&ast;.sch<br>&ast;.pcb<br>&ast;.gbr<br>&ast;.gbo<br>&ast;.gbl<br>&ast;.gbs<br>&ast;.gbp<br>&ast;.gto<br>&ast;.gtl<br>&ast;.gtp<br>&ast;.gts<br>&ast;.drl<br>&ast;.dsn |  ![Circuit Board](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/circuit.svg?sanitize=true) |
-|  [Circuit Board (2)](#circuit-board-(2)) |  `.*\.(gko\|gpt\|gpb\|fab\|pho\|cir\|ckt\|gm?[0-9]+)$ ` |  &ast;.gko<br>&ast;.gpt<br>&ast;.gpb<br>&ast;.fab<br>&ast;.pho<br>&ast;.cir<br>&ast;.ckt<br>&ast;.g0<br>&ast;.g9<br>&ast;.gm0<br>&ast;.gm1<br>&ast;.g90 |  ![Circuit Board (2)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/circuit.svg?sanitize=true) |
-|  [Cirru](#cirru) |  `.*\.cirru$ ` |  &ast;.cirru |  ![Cirru](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cirru.svg?sanitize=true) |
-|  [Clarion](#clarion) |  `.*\.clw$ ` |  &ast;.clw |  ![Clarion](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/clarion.svg?sanitize=true) |
-|  [Class](#class) |  `.*\.(class\|o\|out\|ko\|py[oc])$ ` |  &ast;.class<br>&ast;.o<br>&ast;.out<br>&ast;.ko<br>&ast;.pyo<br>&ast;.pyc |  ![Class](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/class.svg?sanitize=true) |
-|  [Clean](#clean) |  `.*\.(icl\|dcl\|abc)$ ` |  &ast;.icl<br>&ast;.dcl<br>&ast;.abc |  ![Clean](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/clean.svg?sanitize=true) |
-|  [Click](#click) |  `.*\.click$ ` |  &ast;.click |  ![Click](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/click.svg?sanitize=true) |
-|  [CLIPS](#clips) |  `.*\.clp$ ` |  &ast;.clp |  ![CLIPS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/clips.svg?sanitize=true) |
-|  [Clojure](#clojure) |  `.*\.(clj[cxs]?\|clojure\|hic)$ ` |  &ast;.cljs<br>&ast;.clj<br>&ast;.cljc<br>&ast;.cljx<br>&ast;.clojure<br>&ast;.hic |  ![Clojure](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/clojure.svg?sanitize=true) |
-|  [Closure Templates](#closure-templates) |  `.*\.soy$ ` |  &ast;.soy |  ![Closure Templates](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/closuretpl.svg?sanitize=true) |
-|  [Cloud Foundry](#cloud-foundry) |  `.*\.cfignore$ ` |  &ast;.cfignore |  ![Cloud Foundry](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cloudfoundry.svg?sanitize=true) |
-|  [CMake](#cmake) |  `.*\.cmake$ ` |  &ast;.cmake |  ![CMake](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cmake.svg?sanitize=true) |
-|  [CMakelists](#cmakelists) |  `^CMakeLists(\.txt)? ` |  CMakeLists<br>CMakeLists.txt |  ![CMakelists](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cmake.svg?sanitize=true) |
-|  [CNAME](#cname) |  `^CNAME$ ` |  CNAME |  ![CNAME](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cname.svg?sanitize=true) |
-|  [COBOL](#cobol) |  `.*\.(cob\|cobol\|cbl\|ccp\|cpy)$ ` |  &ast;.cob<br>&ast;.ccp<br>&ast;.cobol<br>&ast;.cbl<br>&ast;.cpy |  ![COBOL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cobol.svg?sanitize=true) |
-|  [CocoaPods](#cocoapods) |  `.*\.podspec$ ` |  &ast;.podspec |  ![CocoaPods](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cocoapods.svg?sanitize=true) |
-|  [Codacy](#codacy) |  `^\.codacy\.ya?ml$ ` |  .codacy.yml |  ![Codacy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/codacy.svg?sanitize=true) |
-|  [CodeClimate](#codeclimate) |  `^\.codeclimate\.ya?ml$ ` |  .codeclimate.yml |  ![CodeClimate](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/codeclimate.svg?sanitize=true) |
-|  [Codecov](#codecov) |  `^codecov\.yml$ ` |  codecov.yml |  ![Codecov](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/codecov.svg?sanitize=true) |
-|  [CodeKit](#codekit) |  `^config\.codekit[23]$ ` |  config.codekit2<br>config.codekit3 |  ![CodeKit](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/codekit.svg?sanitize=true) |
-|  [Codeowners](#codeowners) |  `^codeowners$ ` |  codeowners |  ![Codeowners](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/codeowners.svg?sanitize=true) |
-|  [CodeShip](#codeship) |  `^codeship-[\w.-]+\.ya?ml$ ` |  codeship-services.yml<br>codeship-steps.yml |  ![CodeShip](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/codeship.svg?sanitize=true) |
-|  [CoffeeScript](#coffeescript) |  `.*\.(coffee\|iced\|litcoffee\|cjsx)$ ` |  &ast;.coffee<br>&ast;.iced<br>&ast;.litcoffee<br>&ast;.cjsx |  ![CoffeeScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/coffeescript.svg?sanitize=true) |
-|  [CoffeeLint](#coffeelint) |  `^coffeelint\.json$ ` |  coffeelint |  ![CoffeeLint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/coffeescript.svg?sanitize=true) |
-|  [ColdFusion](#coldfusion) |  `.*\.cf$ ` |  &ast;.cf |  ![ColdFusion](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cf.svg?sanitize=true) |
-|  [ColdFusion](#coldfusion) |  `.*\.cf$ ` |  &ast;.cf |  ![ColdFusion](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cf.svg?sanitize=true) |
-|  [Collada Khronos](#collada-khronos) |  `.*\.(dae\|collada)$ ` |  &ast;.dae<br>&ast;.collada |  ![Collada Khronos](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/khronos.svg?sanitize=true) |
-|  [Commitlint](#commitlint) |  `.*\.commitlintrc\.(js(on)?\|yml)$ ` |  .commitlintrc<br>.commitlintrc.js<br>.commitlintrc.json<br>.commitlintrc.yml |  ![Commitlint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/commitlint.svg?sanitize=true) |
-|  [Commitlint Config](#commitlint-config) |  `^commitlint\.config\.js$ ` |  commitlint.config.js |  ![Commitlint Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/commitlint.svg?sanitize=true) |
-|  [Compass](#compass) |  `^config\.rb$ ` |  config.rb |  ![Compass](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/compass.svg?sanitize=true) |
-|  [Compass (2)](#compass-(2)) |  `^_?(compass\|lemonade)\.scss$ ` |  compass.scss<br>_compass.scss<br>lemonade.scss |  ![Compass (2)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/compass.svg?sanitize=true) |
-|  [Component Pascal](#component-pascal) |  `.*\.cps?$ ` |  &ast;.cp<br>&ast;.cps |  ![Component Pascal](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cp.svg?sanitize=true) |
-|  [Composer](#composer) |  `^composer\.json$ ` |  composer.json |  ![Composer](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/composer.svg?sanitize=true) |
-|  [Composer Lock](#composer-lock) |  `^composer\.lock$ ` |  composer.lock |  ![Composer Lock](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lock.svg?sanitize=true) |
-|  [Composer Phar](#composer-phar) |  `^composer\.phar$ ` |  composer.phar |  ![Composer Phar](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/composer.svg?sanitize=true) |
-|  [Computable Document Format](#computable-document-format) |  `.*\.cdf$ ` |  &ast;.cdf |  ![Computable Document Format](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cdf.svg?sanitize=true) |
-|  [Conan](#conan) |  `^(conanfile\.(txt\|py)\|conan\.conf)$ ` |  conanfile.py<br>conanfile.txt<br>conan.conf |  ![Conan](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/conan.svg?sanitize=true) |
-|  [Conda](#conda) |  `^\.condarc$ ` |  .condarc |  ![Conda](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/conda.svg?sanitize=true) |
-|  [CoNLL](#conll) |  `^.*\.conllu?$ ` |  &ast;.conll<br>&ast;.conllu |  ![CoNLL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/conll.svg?sanitize=true) |
-|  [Cordova](#cordova) |  `^cordova([^.]*\.\|-(\d\.)+)[cm]?js$ ` |  cordova.js<br>cordova-config.js<br>cordova-2.js |  ![Cordova](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cordova.svg?sanitize=true) |
-|  [Coq](#coq) |  `^.*\.coq$ ` |  &ast;.coq |  ![Coq](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/coq.svg?sanitize=true) |
-|  [Corel DRAW](#corel-draw) |  `^.*\.(cmx\|ccx\|cdrx?\|cdt)$ ` |  &ast;.cmx<br>&ast;.ccx<br>&ast;.cdr<br>&ast;.cdrx<br>&ast;.cdt |  ![Corel DRAW](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/corel.svg?sanitize=true) |
-|  [Coveralls](#coveralls) |  `^\.coveralls\.ya?ml$ ` |  .coveralls.yml |  ![Coveralls](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/coveralls.svg?sanitize=true) |
-|  [CPAN](#cpan) |  `^(cpanfile\|META\.(yml\|json))$ ` |  cpanfile<br>META.yml<br>META.json |  ![CPAN](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cpan.svg?sanitize=true) |
-|  [Credits](#credits) |  `(CREDITS\|credits).* ` |  CREDITS<br>CREDITS.md<br>CREDITS.txt<br>credits |  ![Credits](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/credits.svg?sanitize=true) |
-|  [Creole](#creole) |  `^.*\.creole$ ` |  &ast;.creole |  ![Creole](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/creole.svg?sanitize=true) |
-|  [Crowdin](#crowdin) |  `^crowdin\.ya?ml$ ` |  crowdin.yml |  ![Crowdin](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/crowdin.svg?sanitize=true) |
-|  [Crystal](#crystal) |  `.*\.(cr\|ecr)$ ` |  &ast;.cr<br>&ast;.ecr |  ![Crystal](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/crystal.svg?sanitize=true) |
-|  [CSound](#csound) |  `^.*\.(orc\|udo\|csc\|sco)$ ` |  &ast;.orc<br>&ast;.udo<br>&ast;.csc<br>&ast;.sco |  ![CSound](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/csound.svg?sanitize=true) |
-|  [CSS](#css) |  `.*\.css$ ` |  &ast;.css |  ![CSS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/css.svg?sanitize=true) |
-|  [CSS Map](#css-map) |  `.*\.css\.map$ ` |  &ast;.css.map |  ![CSS Map](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cssmap.svg?sanitize=true) |
-|  [CSV](#csv) |  `.*\.(csv\|tsv)$ ` |  &ast;.csv<br>&ast;.tsv |  ![CSV](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/csv.svg?sanitize=true) |
-|  [Cucumber Features](#cucumber-features) |  `.*\.feature$ ` |  &ast;.feature<br>&ast;.feature |  ![Cucumber Features](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cucumber.svg?sanitize=true) |
-|  [Cucumber Config](#cucumber-config) |  `cucumber\.(js\|json\|ts\|ya?ml) ` |  cucumber.js<br>cucumber.json<br>cucumber.ts<br>cucumber.yml |  ![Cucumber Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cucumber.svg?sanitize=true) |
-|  [CUDA](#cuda) |  `.*\.cuh?$ ` |  &ast;.cu<br>&ast;.cuh |  ![CUDA](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nvidia.svg?sanitize=true) |
-|  [Cuneiform](#cuneiform) |  `.*\.cfl$ ` |  &ast;.cfl |  ![Cuneiform](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cuneiform.svg?sanitize=true) |
-|  [cURL](#curl) |  `^\.curlrc$ ` |  .curlrc |  ![cURL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/curl.svg?sanitize=true) |
-|  [Curry](#curry) |  `.*\.curry$ ` |  &ast;.curry |  ![Curry](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/curry.svg?sanitize=true) |
-|  [Common Workflow Language](#common-workflow-language) |  `.*\.cwl$ ` |  &ast;.cwl |  ![Common Workflow Language](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cwl.svg?sanitize=true) |
-|  [Cython](#cython) |  `^.*\.(pyx\|px[di])$ ` |  &ast;.pyx<br>&ast;.pxd<br>&ast;.pxi |  ![Cython](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cython.svg?sanitize=true) |
-|  [Cypress](#cypress) |  `^cypress\.json$ ` |  cypress.json |  ![Cypress](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cypress.svg?sanitize=true) |
-|  [C++](#c++) |  `.*\.(cpp\|c\+\+\|cc\|ii\|mii\|cxx\|ipp\|hpp)$ ` |  &ast;.cpp<br>&ast;.c++<br>&ast;.cc<br>&ast;.ii<br>&ast;.mii<br>&ast;.cxx<br>&ast;.ipp<br>&ast;.hpp |  ![C++](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/cpp.svg?sanitize=true) |
-|  [C#](#c#) |  `.*\.csx?$ ` |  &ast;.csx<br>&ast;.cs |  ![C#](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/csharp.svg?sanitize=true) |
-|  [Dart](#dart) |  `.*\.dart$ ` |  &ast;.dart |  ![Dart](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dart.svg?sanitize=true) |
-|  [DB](#db) |  `.*\.(db\|ddl)$ ` |  &ast;.db<br>&ast;.ddl |  ![DB](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/db.svg?sanitize=true) |
-|  [Delphi](#delphi) |  `.*\.delphi$ ` |  &ast;.delphi |  ![Delphi](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/delphi.svg?sanitize=true) |
-|  [DLang](#dlang) |  `.*\.d$ ` |  &ast;.d |  ![DLang](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dlang.svg?sanitize=true) |
-|  [Diff](#diff) |  `.*\.diff$ ` |  &ast;.diff |  ![Diff](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/diff.svg?sanitize=true) |
-|  [Django](#django) |  `.*\.(flake8\|djt)$ ` |  &ast;.flake8<br>&ast;.djt |  ![Django](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/django.svg?sanitize=true) |
-|  [DLL](#dll) |  `.*\.(dll\|dlc)$ ` |  &ast;.dll<br>&ast;.dlc |  ![DLL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dylib.svg?sanitize=true) |
-|  [Do](#do) |  `.*\.do$ ` |  &ast;.do |  ![Do](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tomcat.svg?sanitize=true) |
-|  [Docker](#docker) |  `.*\.?(d\|D)ockerfile$ ` |  Dockerfile<br>dockerfile<br>dev.dockerfile<br>prodDockerfile |  ![Docker](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/docker.svg?sanitize=true) |
-|  [DockerCompose](#dockercompose) |  `^docker-compose(.*)\.(yml\|yaml)$ ` |  docker-compose.yml<br>docker-compose.yaml<br>docker-compose.dev.yml |  ![DockerCompose](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/docker.svg?sanitize=true) |
-|  [Dot](#dot) |  `.*\.(def\|dot\|jst)$ ` |  &ast;.def<br>&ast;.dot<br>&ast;.jst |  ![Dot](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dotjs.svg?sanitize=true) |
-|  [DotNET](#dotnet) |  `.*\.(xaml\|csproj\|vbproj)$ ` |  &ast;.xaml<br>&ast;.csproj<br>&ast;.vbproj |  ![DotNET](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dotnet.svg?sanitize=true) |
-|  [Doxygen](#doxygen) |  `^(D\|d)oxyfile$ ` |  Doxyfile<br>doxyfile |  ![Doxygen](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/doxygen.svg?sanitize=true) |
-|  [Drupal](#drupal) |  `.*\.drupal$ ` |  &ast;.drupal |  ![Drupal](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/drupal.svg?sanitize=true) |
-|  [Dylib](#dylib) |  `.*\.dylib$ ` |  &ast;.dylib |  ![Dylib](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dylib.svg?sanitize=true) |
-|  [Eclipse](#eclipse) |  `.*\.eclipse ` |  &ast;.eclipse |  ![Eclipse](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/eclipse.svg?sanitize=true) |
-|  [Edge](#edge) |  `.*\.edge$ ` |  &ast;.edge |  ![Edge](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/adonis.svg?sanitize=true) |
-|  [EditorConfig](#editorconfig) |  `^\.editorconfig$ ` |  .editorconfig |  ![EditorConfig](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/editorconfig.svg?sanitize=true) |
-|  [Eiffel](#eiffel) |  `.*\.e$ ` |  &ast;.e |  ![Eiffel](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/eiffel.svg?sanitize=true) |
-|  [Emacs](#emacs) |  `^\.emacs.*$ ` |  .emacs.conf<br>.emacsconfig<br>.emacsrc |  ![Emacs](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/emacs.svg?sanitize=true) |
-|  [Emacs Lisp](#emacs-lisp) |  `^.*\.(el\|elc)$ ` |  &ast;.el<br>&ast;.elc |  ![Emacs Lisp](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/emacs.svg?sanitize=true) |
-|  [Ember CLI](#ember-cli) |  `^\.ember-cli$ ` |  .ember-cli |  ![Ember CLI](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ember.svg?sanitize=true) |
-|  [Ember](#ember) |  `^\.ember\.json$ ` |  .ember.json |  ![Ember](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ember.svg?sanitize=true) |
-|  [EJS](#ejs) |  `.*\.(ejs)$ ` |  &ast;.ejs |  ![EJS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ejs.svg?sanitize=true) |
-|  [Elixir](#elixir) |  `.*\.(ex\|eex\|exs\|elixir\|leex)$ ` |  &ast;.ex<br>&ast;.eex<br>&ast;.exs<br>&ast;.elixir<br>&ast;.leex |  ![Elixir](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ex.svg?sanitize=true) |
-|  [Elm](#elm) |  `.*\.elm$ ` |  &ast;.elm |  ![Elm](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/elm.svg?sanitize=true) |
-|  [ESLint](#eslint) |  `.*\.eslintrc(\.js(on)?\|\.y(a)?ml)?$ ` |  .eslintrc<br>.eslintrc.js<br>.eslintrc.json<br>.eslintrc.yml |  ![ESLint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/eslint.svg?sanitize=true) |
-|  [ERB](#erb) |  `.*\.(erb\|ru)$ ` |  &ast;.erb<br>&ast;.ru |  ![ERB](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/erb.svg?sanitize=true) |
-|  [ErLang](#erlang) |  `.*\.(erc\|erl\|erlang)$ ` |  &ast;.erc<br>&ast;.erl<br>&ast;.erlang |  ![ErLang](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/erlang.svg?sanitize=true) |
-|  [Excel](#excel) |  `.*\.(xls\|xlsx\|xlm\|xlt\|xlsb\|odx)$ ` |  &ast;.xls<br>&ast;.xlsx<br>&ast;.xlm<br>&ast;.xlt<br>&ast;.xlsb<br>&ast;.odx |  ![Excel](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/excel.svg?sanitize=true) |
-|  [Fabric](#fabric) |  `^fabfile\.py$ ` |  fabfile.py |  ![Fabric](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fabric.svg?sanitize=true) |
-|  [Factor](#factor) |  `^\.factor(-rc\|-boot-rc)?$ ` |  .factor<br>.factor-rc<br>.factor-boot-rc |  ![Factor](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/factor.svg?sanitize=true) |
-|  [Falcon](#falcon) |  `.*\.(fal\|falcon)$ ` |  &ast;.fal<br>&ast;.falcon |  ![Falcon](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/falcon.svg?sanitize=true) |
-|  [Fancy](#fancy) |  `.*\.(fy\|fancypack)$ ` |  &ast;.fy<br>&ast;.fancypack |  ![Fancy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fancy.svg?sanitize=true) |
-|  [Fakefile](#fakefile) |  `^Fakefile$ ` |  Fakefile |  ![Fakefile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fancy.svg?sanitize=true) |
-|  [Fantom](#fantom) |  `.*\.(fan\|fantom)$ ` |  &ast;.fan<br>&ast;.fantom |  ![Fantom](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fantom.svg?sanitize=true) |
-|  [Fasta](#fasta) |  `.*\.(fas\|fasta\|fastq\|faa\|mpfa\|fq\|seq\|fna\|ffn\|frn\|sam)$ ` |  &ast;.fas<br>&ast;.fasta<br>&ast;.fastq<br>&ast;.faa<br>&ast;.mpfa<br>&ast;.fq<br>&ast;.seq<br>&ast;.fna<br>&ast;.ffn<br>&ast;.frn<br>&ast;.sam |  ![Fasta](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fasta.svg?sanitize=true) |
-|  [Faust](#faust) |  `.*\.dsp$ ` |  &ast;.dsp |  ![Faust](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/faust.svg?sanitize=true) |
-|  [Favicon](#favicon) |  `^favicon\.(ico\|png\|jpg)$ ` |  favicon.ico<br>favicon.png<br>favicon.jpg |  ![Favicon](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/favicon.svg?sanitize=true) |
-|  [FBX](#fbx) |  `.*\.fbx$ ` |  &ast;.fbx |  ![FBX](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fbx.svg?sanitize=true) |
-|  [Fexl](#fexl) |  `.*\.(fxl\|fexl)$ ` |  &ast;.fexl<br>&ast;.fxl |  ![Fexl](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fexl.svg?sanitize=true) |
-|  [Final Draft](#final-draft) |  `.*\.fdx$ ` |  &ast;.fdx |  ![Final Draft](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/finaldraft.svg?sanitize=true) |
-|  [Finder](#finder) |  `^\.(_+(MACOSX)?\|DS_Store)$ ` |  ._MACOSX<br>.__MACOSX<br>._<br>.DS_Store |  ![Finder](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/finder.svg?sanitize=true) |
-|  [FirebaseRC](#firebaserc) |  `.*\.firebaserc$ ` |  &ast;.firebaserc |  ![FirebaseRC](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/firebase.svg?sanitize=true) |
-|  [Firestore](#firestore) |  `^firestore\.(indexes\.json\|rules)$ ` |  firestore.rules<br>firestore.indexes.json |  ![Firestore](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/firebase.svg?sanitize=true) |
-|  [Firebase](#firebase) |  `^firebase\.json$ ` |  firebase.json |  ![Firebase](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/firebase.svg?sanitize=true) |
-|  [Firebase Bolt](#firebase-bolt) |  `.*\.bolt$ ` |  &ast;.bolt |  ![Firebase Bolt](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/firebasebolt.svg?sanitize=true) |
-|  [Firefox](#firefox) |  `.*\.(webapp\|xpi)$ ` |  &ast;.webapp<br>&ast;.xpi |  ![Firefox](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/firefox.svg?sanitize=true) |
-|  [Flash](#flash) |  `.*\.(swf\|flash\|swc)$ ` |  &ast;.swf<br>&ast;.flash<br>&ast;.swc |  ![Flash](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/flash.svg?sanitize=true) |
-|  [Flask](#flask) |  `^flask\.py$ ` |  flask.py |  ![Flask](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/flask.svg?sanitize=true) |
-|  [Flow](#flow) |  `.*\.(flow\|flowconfig)$ ` |  &ast;.flow<br>&ast;.flowconfig |  ![Flow](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/flow.svg?sanitize=true) |
-|  [Flutter](#flutter) |  `^\.flutter-plugins$ ` |  .flutter-plugins |  ![Flutter](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/flutter.svg?sanitize=true) |
-|  [Flux](#flux) |  `.*\.(fx\|flux)$ ` |  &ast;.flux<br>&ast;.fx |  ![Flux](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/flux.svg?sanitize=true) |
-|  [Font Bitmap](#font-bitmap) |  `.*\.(pcf\|psf\|psftx\|bdf\|fnt\|fon\|snf\|flf\|tlf\|dwf\|bmf)$ ` |  &ast;.pcf<br>&ast;.psf<br>&ast;.psftx<br>&ast;.bdf<br>&ast;.fnt<br>&ast;.fon<br>&ast;.snf<br>&ast;.flf<br>&ast;.tlf<br>&ast;.dwf<br>&ast;.bmf |  ![Font Bitmap](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fontbitmap.svg?sanitize=true) |
-|  [FontForge](#fontforge) |  `.*\.(ff\|pe\|sfd)$ ` |  &ast;.ff<br>&ast;.pe<br>&ast;.sfd |  ![FontForge](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fontforge.svg?sanitize=true) |
-|  [Fortran](#fortran) |  `.*\.(f77\|f90\|f95\|for\|fpp)$ ` |  &ast;.f77<br>&ast;.f90<br>&ast;.f95<br>&ast;.for<br>&ast;.fpp |  ![Fortran](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fortran.svg?sanitize=true) |
-|  [FOSSA](#fossa) |  `^\.fossa(ignore\|\.ya?ml)$ ` |  .fossa.yml<br>.fossa.yaml<br>.fossaignore |  ![FOSSA](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fossa.svg?sanitize=true) |
-|  [Fountain](#fountain) |  `^.*\.fountain$ ` |  &ast;.fountain |  ![Fountain](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fountain.svg?sanitize=true) |
-|  [Franca IDL](#franca-idl) |  `^.*\.(fidl\|fdl\|fdepl)$ ` |  &ast;.fidl<br>&ast;.fdl<br>&ast;.fdepl |  ![Franca IDL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/franca.svg?sanitize=true) |
-|  [FreeMarker](#freemarker) |  `.*\.(ftl\|freemarker)$ ` |  &ast;.ftl<br>&ast;.freemarker |  ![FreeMarker](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/freemarker.svg?sanitize=true) |
-|  [Frege](#frege) |  `.*\.fr$ ` |  &ast;.fr |  ![Frege](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/frege.svg?sanitize=true) |
-|  [FSharp](#fsharp) |  `.*\.(fs\|fsi\|fsx\|fsproj)$ ` |  &ast;.fs<br>&ast;.fsi<br>&ast;.fsx<br>&ast;.fsproj |  ![FSharp](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fsharp.svg?sanitize=true) |
-|  [Fuel UX](#fuel-ux) |  `^fuelux\..* ` |  fuelux.css<br>fuelux.min.css<br>fuelux.js<br>fuelux.min.js |  ![Fuel UX](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fuelux.svg?sanitize=true) |
-|  [FuseBox](#fusebox) |  `^fuse\.(js\|mjs)$ ` |  fuse.js<br>fuse.mjs |  ![FuseBox](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/fusebox.svg?sanitize=true) |
-|  [Futhark](#futhark) |  `.*\.fut$ ` |  &ast;.fut |  ![Futhark](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/futhark.svg?sanitize=true) |
-|  [Gatsby](#gatsby) |  `^gatsby.*\.(js\|ts) ` |  gatsby.js<br>gatsby.config.js<br>gatsby.ts |  ![Gatsby](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gatsby.svg?sanitize=true) |
-|  [GhostScript](#ghostscript) |  `.*\.ghostscript$ ` |  &ast;.ghostscript |  ![GhostScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ghostscript.svg?sanitize=true) |
-|  [Gem](#gem) |  `.*\.gem$ ` |  &ast;.gem |  ![Gem](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gemfile.svg?sanitize=true) |
-|  [Gemfile](#gemfile) |  `^(G\|g)emfile\.lock$ ` |  Gemfile.lock<br>gemfile.lock |  ![Gemfile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gemfile.svg?sanitize=true) |
-|  [GitLab CI](#gitlab-ci) |  `^\.gitlab-ci\.yml$ ` |  .gitlab-ci.yml |  ![GitLab CI](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gitlab.svg?sanitize=true) |
-|  [Git](#git) |  `^\.git.* ` |  .git<br>.git-submodules<br>.gitignore<br>.gitrc |  ![Git](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/git.svg?sanitize=true) |
-|  [Go](#go) |  `.*\.(go\|gohtml)$ ` |  &ast;.go<br>&ast;.gohtml |  ![Go](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/go.svg?sanitize=true) |
-|  [Go Config](#go-config) |  `^go\.(mod\|sub)$ ` |  go.mod<br>go.sub |  ![Go Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/go.svg?sanitize=true) |
-|  [Godot](#godot) |  `.*\.(gd\|godot\|tres\|tscn)$ ` |  &ast;.gd<br>&ast;.godot<br>&ast;.tres<br>&ast;.tscn |  ![Godot](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/godot.svg?sanitize=true) |
-|  [Gradle](#gradle) |  `.*\.gradle$ ` |  &ast;.gradle |  ![Gradle](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gradle.svg?sanitize=true) |
-|  [Gradlew](#gradlew) |  `gradlew$ ` |  gradlew |  ![Gradlew](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gradle.svg?sanitize=true) |
-|  [Graphcool](#graphcool) |  `.*\.(graphcool)$ ` |  &ast;.graphcool |  ![Graphcool](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/graphcool.svg?sanitize=true) |
-|  [GraphQL](#graphql) |  `.*\.(gql\|graphql)$ ` |  &ast;.gql<br>&ast;.graphql |  ![GraphQL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/graphql.svg?sanitize=true) |
-|  [GraphQL Config](#graphql-config) |  `\.graphqlconfig$ ` |  .graphqlconfig |  ![GraphQL Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/graphql.svg?sanitize=true) |
-|  [Graphviz](#graphviz) |  `.*\.(dot\|graphviz)$ ` |  &ast;.dot<br>&ast;.graphviz |  ![Graphviz](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/graphviz.svg?sanitize=true) |
-|  [Gridsome](#gridsome) |  `^gridsome\.(config\|server)\.js$ ` |  gridsome.config.js<br>gridsome.server.js |  ![Gridsome](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gridsome.svg?sanitize=true) |
-|  [Groovy](#groovy) |  `.*\.(gy\|gdsl\|groovy)$ ` |  &ast;.gy<br>&ast;.gdsl<br>&ast;.groovy |  ![Groovy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/groovy.svg?sanitize=true) |
-|  [Grunt](#grunt) |  `(g\|G)runtfile.* ` |  gruntfile<br>Gruntfile<br>gruntfile.js<br>Gruntfile.ts |  ![Grunt](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gruntfile.svg?sanitize=true) |
-|  [Gulp](#gulp) |  `(g\|G)ulpfile.* ` |  gulpfile<br>Gulpfile<br>gulpfile.js<br>Gulpfile.ts |  ![Gulp](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gulpfile.svg?sanitize=true) |
-|  [H](#h) |  `.*\.(objh\|h\|hp\|hpp\|tcc\|hxx)$ ` |  &ast;.objh<br>&ast;.h<br>&ast;.hp<br>&ast;.hpp<br>&ast;.tcc<br>&ast;.hxx |  ![H](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/hh.svg?sanitize=true) |
-|  [Hack](#hack) |  `.*\.(hhconfig\|hh)$ ` |  &ast;.hhconfig<br>&ast;.hh |  ![Hack](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/hack.svg?sanitize=true) |
-|  [HAML](#haml) |  `.*\.haml$ ` |  &ast;.haml |  ![HAML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haml.svg?sanitize=true) |
-|  [Hashicorp](#hashicorp) |  `.*\.hcl$ ` |  &ast;.hcl |  ![Hashicorp](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/hcl.svg?sanitize=true) |
-|  [Haskell](#haskell) |  `.*\.(haskell\|hs)$ ` |  &ast;.haskell<br>&ast;.hs |  ![Haskell](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haskell.svg?sanitize=true) |
-|  [Haskell Config](#haskell-config) |  `^haskellconfig\.json$ ` |  haskellconfig.json |  ![Haskell Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haskell.svg?sanitize=true) |
-|  [Haxe](#haxe) |  `.*\.(haxe\|hx)$ ` |  &ast;.haxe<br>&ast;.hx |  ![Haxe](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haxe.svg?sanitize=true) |
-|  [Helm](#helm) |  `.*\.(helm\|helmignore) ` |  &ast;.helm<br>&ast;.helmignore |  ![Helm](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/helm.svg?sanitize=true) |
-|  [Heroku](#heroku) |  `^((P\|p)rocfile(\.windows)?\|\.slugignore)$ ` |  Procfile<br>Procfile.windows<br>.slugignore |  ![Heroku](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/heroku.svg?sanitize=true) |
-|  [History](#history) |  `history.*$ ` |  history<br>history.txt<br>historyfile |  ![History](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/history.svg?sanitize=true) |
-|  [Houdini](#houdini) |  `.*\.(vfl\|hip\|pic\|geo)$ ` |  &ast;.vfl<br>&ast;.hip<br>&ast;.pic<br>&ast;.geo |  ![Houdini](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/houdini.svg?sanitize=true) |
-|  [HTAccess](#htaccess) |  `.*\.(htaccess\|htpasswd)$ ` |  &ast;.htaccess<br>&ast;.htpasswd |  ![HTAccess](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/htaccess.svg?sanitize=true) |
-|  [HTML](#html) |  `.*\.(html\|htm)$ ` |  &ast;.html<br>&ast;.htm |  ![HTML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/html.svg?sanitize=true) |
-|  [HTTP](#http) |  `.*\.(http\|rest)$ ` |  &ast;.http<br>&ast;.rest |  ![HTTP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/http.svg?sanitize=true) |
-|  [Husky](#husky) |  `.*\.huskyrc(.js(on)?)?$ ` |  .huskyrc<br>.huskyrc.js<br>.huskyrc.json |  ![Husky](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/husky.svg?sanitize=true) |
-|  [i18n](#i18n) |  `.*\.(pot\|po\|mo)$ ` |  &ast;.pot<br>&ast;.po<br>&ast;.mo |  ![i18n](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/i18n.svg?sanitize=true) |
-|  [IDEA](#idea) |  `.*\.(iml\|icls)$ ` |  &ast;.iml<br>&ast;.icls |  ![IDEA](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/idea.svg?sanitize=true) |
-|  [Idris](#idris) |  `.*\.(idr\|idris)$ ` |  &ast;.idr<br>&ast;.idris |  ![Idris](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/idris.svg?sanitize=true) |
-|  [InDesign](#indesign) |  `.*\.(id\|indd\|indl\|indt\|indb\|idml)$ ` |  &ast;.id<br>&ast;.indd<br>&ast;.indl<br>&ast;.indt<br>&ast;.indb<br>&ast;.idml |  ![InDesign](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/indesign.svg?sanitize=true) |
-|  [Istanbul](#istanbul) |  `.*\.nycrc(\.json)?$ ` |  &ast;.nycrc.json<br>&ast;.nycrc |  ![Istanbul](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/istanbul.svg?sanitize=true) |
-|  [IO](#io) |  `.*\.(io)$ ` |  &ast;.io |  ![IO](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/io.svg?sanitize=true) |
-|  [Ionic](#ionic) |  `.*\.ionic\.config$ ` |  &ast;.ionic.config |  ![Ionic](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ionic.svg?sanitize=true) |
-|  [J](#j) |  `.*\.(ijs)$ ` |  &ast;.ijs |  ![J](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/j.svg?sanitize=true) |
-|  [Jade/Pug](#jade/pug) |  `.*\.(jade\|pug)$ ` |  &ast;.jade<br>&ast;.pug |  ![Jade/Pug](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/pug.svg?sanitize=true) |
-|  [Jekyll](#jekyll) |  `^_config\.yml$ ` |  _config.yml |  ![Jekyll](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jekyll.svg?sanitize=true) |
-|  [Jenkins](#jenkins) |  `^(j\|J)enkinsfile.* ` |  jenkinsfile<br>Jenkinsfile.groovy |  ![Jenkins](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jenkins.svg?sanitize=true) |
-|  [Jest](#jest) |  `^jest\.(config\|setup\|teardown).* ` |  jest.config.js<br>jest.setup.js<br>jest.teardown.js |  ![Jest](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jest.svg?sanitize=true) |
-|  [Jestrc](#jestrc) |  `^\.jestrc.* ` |  .jestrc<br>.jestrc.js<br>.jestrc.json |  ![Jestrc](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jest.svg?sanitize=true) |
-|  [JetBrains theme](#jetbrains-theme) |  `.*\.theme\.json ` |  &ast;.theme.json |  ![JetBrains theme](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/theme.svg?sanitize=true) |
-|  [Jinja](#jinja) |  `.*\.(jinja2?\|j2\|jnj2?)$ ` |  &ast;.jinja<br>&ast;.jinja2<br>&ast;.j2<br>&ast;.jnj<br>&ast;.jnj2 |  ![Jinja](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jinja.svg?sanitize=true) |
-|  [Joomla](#joomla) |  `.*\.smarty$ ` |  &ast;.smarty |  ![Joomla](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/joomla.svg?sanitize=true) |
-|  [jQuery](#jquery) |  `jquery.*\.js ` |  jquery.js<br>jquery.min.js |  ![jQuery](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jquery.svg?sanitize=true) |
-|  [JS Map](#js-map) |  `.*\.js\.map$ ` |  &ast;.js.map |  ![JS Map](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsmap.svg?sanitize=true) |
-|  [JSP](#jsp) |  `.*\.(jsp\|jsf\|jspx) ` |  &ast;.jsp<br>&ast;.jsf<br>&ast;.jspx |  ![JSP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsp.svg?sanitize=true) |
-|  [Julia](#julia) |  `.*\.(julia\|jl)$ ` |  &ast;.julia<br>&ast;.jl |  ![Julia](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/julia.svg?sanitize=true) |
-|  [Jupyter Notebook](#jupyter-notebook) |  `.*\.ipynb$ ` |  &ast;.ipynb |  ![Jupyter Notebook](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jupyter.svg?sanitize=true) |
-|  [Karma](#karma) |  `^karma\.conf.* ` |  karma.conf.js<br>karma.conf.ts |  ![Karma](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/karma.svg?sanitize=true) |
-|  [Key](#key) |  `.*\.(key\|pem\|gpg\|pub) ` |  &ast;.key<br>&ast;.pem<br>&ast;.gpg<br>&ast;.pub |  ![Key](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/key.svg?sanitize=true) |
-|  [Kivy](#kivy) |  `.*\.kv$ ` |  &ast;.kv |  ![Kivy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kivy.svg?sanitize=true) |
-|  [KL](#kl) |  `.*\.kl$ ` |  &ast;.kl |  ![KL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kl.svg?sanitize=true) |
-|  [Knockout](#knockout) |  `.*\.(knockout\|ko)$ ` |  &ast;.knockout<br>&ast;.ko |  ![Knockout](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/knockout.svg?sanitize=true) |
-|  [Kotlin](#kotlin) |  `.*\.(kt\|kts\|kotlin)$ ` |  &ast;.kt<br>&ast;.kts<br>&ast;.kotlin |  ![Kotlin](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kotlin.svg?sanitize=true) |
-|  [Lerna](#lerna) |  `^lerna\.json$ ` |  lerna.json |  ![Lerna](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lerna.svg?sanitize=true) |
-|  [Less](#less) |  `.*\.less$ ` |  &ast;.less |  ![Less](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/less.svg?sanitize=true) |
-|  [Lib](#lib) |  `.*\.(lib\|bib\|s)$ ` |  &ast;.lib<br>&ast;.bib<br>&ast;.s |  ![Lib](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lib.svg?sanitize=true) |
-|  [LICENSE](#license) |  `^(license\|LICENSE).* ` |  license<br>LICENSE<br>LICENSE.md<br>license.md |  ![LICENSE](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/license.svg?sanitize=true) |
-|  [LICENCE](#licence) |  `^(licence\|LICENCE).* ` |  licence<br>LICENCE<br>LICENCE.md<br>licence.md |  ![LICENCE](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/license.svg?sanitize=true) |
-|  [Lint Staged](#lint-staged) |  `.*\.lintstagedrc\.(json\|yml)$ ` |  &ast;.lintstagedrc.json<br>&ast;.lintstagedrc.yml |  ![Lint Staged](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lint-staged.svg?sanitize=true) |
-|  [Lint Staged Config](#lint-staged-config) |  `^lint-staged\.config\.js$ ` |  lint-staged.config.js |  ![Lint Staged Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lint-staged.svg?sanitize=true) |
-|  [LiveScript](#livescript) |  `.*\.ls$ ` |  &ast;.ls |  ![LiveScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/livescript.svg?sanitize=true) |
-|  [Liquid](#liquid) |  `.*\.liquid$ ` |  &ast;.liquid |  ![Liquid](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/liquid.svg?sanitize=true) |
-|  [LISP](#lisp) |  `.*\.(cl\|lisp)$ ` |  &ast;.cl<br>&ast;.lisp |  ![LISP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lisp.svg?sanitize=true) |
-|  [Log](#log) |  `.*\.log\.([0-9])? ` |  &ast;.log<br>&ast;.log.0<br>&ast;.log.9 |  ![Log](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/log.svg?sanitize=true) |
-|  [LSL](#lsl) |  `.*\.lsl ` |  &ast;.lsl |  ![LSL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lsl.svg?sanitize=true) |
-|  [Lua](#lua) |  `.*\.lua$ ` |  &ast;.lua |  ![Lua](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lua.svg?sanitize=true) |
-|  [Magento](#magento) |  `.*\.mage$ ` |  &ast;.mage |  ![Magento](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/magento.svg?sanitize=true) |
-|  [MarkoJS](#markojs) |  `.*\.marko$ ` |  &ast;.marko |  ![MarkoJS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/marko.svg?sanitize=true) |
-|  [Makefile](#makefile) |  `.*\.?(m\|M)akefile$ ` |  Makefile<br>&ast;.makefile |  ![Makefile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/makefile.svg?sanitize=true) |
-|  [Manpage](#manpage) |  `.*\.man([1-8])?$ ` |  &ast;.man<br>&ast;.man1<br>&ast;.man8 |  ![Manpage](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/manpage.svg?sanitize=true) |
-|  [Manifest](#manifest) |  `manifest\.json$ ` |  manifest.json |  ![Manifest](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/manifest.svg?sanitize=true) |
-|  [Markdown](#markdown) |  `.*\.(md\|markdown\|mson)$ ` |  &ast;.md<br>&ast;.markdown<br>&ast;.mson |  ![Markdown](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/markdown.svg?sanitize=true) |
-|  [Markup](#markup) |  `.*\.(shtml\|dhtml\|dtd)$ ` |  &ast;.shtml<br>&ast;.dhtml<br>&ast;.dtd |  ![Markup](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/markup.svg?sanitize=true) |
-|  [Mathematica](#mathematica) |  `.*\.(nb\|ma\|mb\|cdf)$ ` |  &ast;.ma<br>&ast;.mb<br>&ast;.cdf<br>&ast;.nb |  ![Mathematica](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mathematica.svg?sanitize=true) |
-|  [Matlab](#matlab) |  `.*\.matlab$ ` |  &ast;.matlab |  ![Matlab](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/matlab.svg?sanitize=true) |
-|  [Maven](#maven) |  `^pom\.xml$ ` |  pom.xml |  ![Maven](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/maven.svg?sanitize=true) |
-|  [Maya](#maya) |  `.*\.(maya\|mel)$ ` |  &ast;.maya<br>&ast;.mel |  ![Maya](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/maya.svg?sanitize=true) |
-|  [MDX](#mdx) |  `.*\.(mdx)$ ` |  &ast;.mdx |  ![MDX](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mdx.svg?sanitize=true) |
-|  [Mercurial](#mercurial) |  `.*\.hg$ ` |  &ast;.hg |  ![Mercurial](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mercurial.svg?sanitize=true) |
-|  [Merlin](#merlin) |  `.*\.merlin$ ` |  &ast;.merlin |  ![Merlin](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/merlin.svg?sanitize=true) |
-|  [Meteor](#meteor) |  `.*\.meteor$ ` |  &ast;.meteor |  ![Meteor](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/meteor.svg?sanitize=true) |
-|  [Mint](#mint) |  `.*\.mint ` |  &ast;.mint |  ![Mint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mint.svg?sanitize=true) |
-|  [MJML](#mjml) |  `.*\.mjml$ ` |  &ast;.mjml |  ![MJML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mjml.svg?sanitize=true) |
-|  [Moonscript](#moonscript) |  `.*\.moon$ ` |  &ast;.moon |  ![Moonscript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/moonscript.svg?sanitize=true) |
-|  [Mocha](#mocha) |  `^(mocha\.opts\|\.mocharc)$ ` |  mocha.opts<br>.mocharc |  ![Mocha](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mocha.svg?sanitize=true) |
-|  [Mocha JSON](#mocha-json) |  `^\.mocha\.(js\|json\|yml)$ ` |  .mocha.js<br>.mocha.json<br>.mocha.yml |  ![Mocha JSON](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mocha.svg?sanitize=true) |
-|  [Mongodb](#mongodb) |  `.*\.(mongodb\|bson)$ ` |  &ast;.mongodb<br>&ast;.bson |  ![Mongodb](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mongodb.svg?sanitize=true) |
-|  [Mustache](#mustache) |  `.*\.(mustache\|handlebars\|hbs\|hamlbars)$ ` |  &ast;.mustache<br>&ast;.handlebars<br>&ast;.hbs<br>&ast;.hamlbars |  ![Mustache](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mustache.svg?sanitize=true) |
-|  [MXML](#mxml) |  `.*\.mxml$ ` |  &ast;.mxml |  ![MXML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/mxml.svg?sanitize=true) |
-|  [Nest](#nest) |  `\.?nest-cli\.json ` |  .nest-cli.json |  ![Nest](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nest.svg?sanitize=true) |
-|  [Nest Config](#nest-config) |  `\.?nestconfig\.json ` |  .nestconfig.json |  ![Nest Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nest.svg?sanitize=true) |
-|  [Netlify](#netlify) |  `^netlify\.toml$ ` |  netlify.toml |  ![Netlify](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/netlify.svg?sanitize=true) |
-|  [Netlify headers](#netlify-headers) |  `^_headers$ ` |  _headers |  ![Netlify headers](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/netlify_headers.svg?sanitize=true) |
-|  [Netlify redirects](#netlify-redirects) |  `^_redirects$ ` |  _redirects |  ![Netlify redirects](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/netlify_redirects.svg?sanitize=true) |
-|  [nginx](#nginx) |  `.*\.(nginx\|conf)$ ` |  &ast;.nginx<br>&ast;.conf |  ![nginx](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nginx.svg?sanitize=true) |
-|  [Nib](#nib) |  `.*\.nib$ ` |  &ast;.nib |  ![Nib](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nib.svg?sanitize=true) |
-|  [Nimble](#nimble) |  `.*\.(nim\|nimble)$ ` |  &ast;.nim<br>&ast;.nimble |  ![Nimble](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nim.svg?sanitize=true) |
-|  [Node](#node) |  `^(server\|app)\.(js\|ts\|es6)$ ` |  server.js<br>server.ts<br>app.js<br>app.ts<br>app.es6 |  ![Node](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nodejs.svg?sanitize=true) |
-|  [Node Version](#node-version) |  `^\.node-version$ ` |  .node-version |  ![Node Version](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nodejs.svg?sanitize=true) |
-|  [Nodemon](#nodemon) |  `.*\.nodemon\.(js\|json)$ ` |  &ast;.nodemon.js<br>&ast;.nodemon.json |  ![Nodemon](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nodemon.svg?sanitize=true) |
-|  [Note](#note) |  `.*\.(scratch\|note)$ ` |  &ast;.scratch<br>&ast;.note |  ![Note](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/note.svg?sanitize=true) |
-|  [Now](#now) |  `now\.json$ ` |  now.json |  ![Now](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/now.svg?sanitize=true) |
-|  [Nowignore](#nowignore) |  `\.nowignore$ ` |  .nowignore |  ![Nowignore](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/now.svg?sanitize=true) |
-|  [NPM](#npm) |  `^package\.json$ ` |  package.json |  ![NPM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/npm.svg?sanitize=true) |
-|  [NPM lock](#npm-lock) |  `^package-lock\.json$ ` |  package-lock.json |  ![NPM lock](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lock.svg?sanitize=true) |
-|  [NPMFiles](#npmfiles) |  `^\.(npmignore\|npmrc)$ ` |  .npmignore<br>.npmrc |  ![NPMFiles](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/npm.svg?sanitize=true) |
-|  [NSIS](#nsis) |  `.*\.nsis?$ ` |  &ast;.nsis |  ![NSIS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nsis.svg?sanitize=true) |
-|  [NVM](#nvm) |  `.*\.(nvmrc\|esmrc)$ ` |  &ast;.nvmrc<br>&ast;.esmrc |  ![NVM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nodejs.svg?sanitize=true) |
-|  [Nuclide](#nuclide) |  `.*\.nuclide$ ` |  &ast;.nuclide |  ![Nuclide](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nuclide.svg?sanitize=true) |
-|  [NuGet](#nuget) |  `.*\.nuspec$ ` |  &ast;.nuspec |  ![NuGet](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nuget.svg?sanitize=true) |
-|  [Nunjucks](#nunjucks) |  `.*\.(njk\|nunjucks)$ ` |  &ast;.njk<br>&ast;.nunjucks |  ![Nunjucks](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nunjucks.svg?sanitize=true) |
-|  [Nuxt](#nuxt) |  `.*nuxt\.config\.(js\|ts) ` |  nuxt.config.js<br>nuxt.config.ts |  ![Nuxt](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/nuxt.svg?sanitize=true) |
-|  [Objective-C](#objective-c) |  `.*\.mm?$ ` |  &ast;.mm<br>&ast;.m |  ![Objective-C](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/objc.svg?sanitize=true) |
-|  [OCaml](#ocaml) |  `.*\.(ocaml\|ml\|mli\|cmx\|ocamllex\|ocamlyacc)$ ` |  &ast;.ocaml<br>&ast;.ml<br>&ast;.mli<br>&ast;.cmx<br>&ast;.ocamllex<br>&ast;.ocamlyacc |  ![OCaml](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ocaml.svg?sanitize=true) |
-|  [OneNote](#onenote) |  `.*\.(one\|onenote)$ ` |  &ast;.one<br>&ast;.onenote |  ![OneNote](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/onenote.svg?sanitize=true) |
-|  [OpenOffice](#openoffice) |  `.*\.(odf\|ods)$ ` |  &ast;.odf<br>&ast;.ods |  ![OpenOffice](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/openoffice.svg?sanitize=true) |
-|  [Pascal](#pascal) |  `.*\.(pas\|pascal)$ ` |  &ast;.pas<br>&ast;.pascal |  ![Pascal](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/pascal.svg?sanitize=true) |
-|  [Patch](#patch) |  `.*\.(patch\|meld)$ ` |  &ast;.patch<br>&ast;.meld |  ![Patch](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/patch.svg?sanitize=true) |
-|  [PDF](#pdf) |  `.*\.pdf$ ` |  &ast;.pdf |  ![PDF](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/pdf.svg?sanitize=true) |
-|  [Perl](#perl) |  `.*\.(perl\|pl\|pm)$ ` |  &ast;.perl<br>&ast;.pl<br>&ast;.pm |  ![Perl](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/perl.svg?sanitize=true) |
-|  [Perl Config](#perl-config) |  `^perl[56]?-?config\.json$ ` |  perlconfig.json<br>perl5config.json<br>perl6config.json |  ![Perl Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/perl.svg?sanitize=true) |
-|  [Perforce](#perforce) |  `^\.p4ignore$ ` |  .p4ignore |  ![Perforce](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/p4.svg?sanitize=true) |
-|  [Phalcon](#phalcon) |  `.*\.volt$ ` |  &ast;.volt |  ![Phalcon](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/phalcon.svg?sanitize=true) |
-|  [Photoshop](#photoshop) |  `.*\.(psb\|psd)$ ` |  &ast;.psb<br>&ast;.psd |  ![Photoshop](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/psd.svg?sanitize=true) |
-|  [PHPUnit](#phpunit) |  `.*(t\|T)est\.php$ ` |  my.test.php<br>myTest.php |  ![PHPUnit](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/phpunit.svg?sanitize=true) |
-|  [PHTML](#phtml) |  `.*\.phtml$ ` |  &ast;.phtml |  ![PHTML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/phtml.svg?sanitize=true) |
-|  [Pipfile](#pipfile) |  `Pipfile$ ` |  Pipfile |  ![Pipfile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/pipfile.svg?sanitize=true) |
-|  [Pipfile.lock](#pipfile.lock) |  `Pipfile\.lock$ ` |  Pipfile.lock |  ![Pipfile.lock](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lock.svg?sanitize=true) |
-|  [Play](#play) |  `.*\.play$ ` |  &ast;.play |  ![Play](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/play.svg?sanitize=true) |
-|  [PList](#plist) |  `.*\.plist$ ` |  &ast;.plist |  ![PList](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/plist.svg?sanitize=true) |
-|  [Pnpm](#pnpm) |  `^pnpm-(lock\|workspace\|debug)\.yaml ` |  pnpm-lock.yaml<br>pnpm-workspace.yaml<br>pnpm-debug.yaml |  ![Pnpm](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/pnpm.svg?sanitize=true) |
-|  [Pnpmfile](#pnpmfile) |  `^pnpmfile\.js ` |  pnpmfile.js |  ![Pnpmfile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/pnpm.svg?sanitize=true) |
-|  [PostCSS](#postcss) |  `.*\.(pcss\|postcss\|sss)$ ` |  &ast;.pcss<br>&ast;.postcss<br>&ast;.sss |  ![PostCSS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/postcss.svg?sanitize=true) |
-|  [PostCSS Config](#postcss-config) |  `^(\.postcssrc\|postcss\.config\.js(on)?)$ ` |  .postcssrc<br>postcss.config.js<br>postcss.config.json |  ![PostCSS Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/postcss.svg?sanitize=true) |
-|  [PostHTML](#posthtml) |  `^(\.posthtmlrc\|posthtml\.config\.(yml\|js\|json))$ ` |  .posthtmlrc<br>posthtml.config.yml<br>.posthtmlrc.json<br>posthtml.config.json |  ![PostHTML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/posthtml.svg?sanitize=true) |
-|  [PostScript](#postscript) |  `.*\.(ps\|eps)$ ` |  &ast;.ps<br>&ast;.eps |  ![PostScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/postscript.svg?sanitize=true) |
-|  [Polymer](#polymer) |  `^polymer\.json ` |  polymer.json |  ![Polymer](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/polymer.svg?sanitize=true) |
-|  [Powerpoint](#powerpoint) |  `.*\.(ppt\|pptx\|pps\|ppsx\|pot\|potx\|ppa\|ppam)$ ` |  &ast;.ppt<br>&ast;.pptx<br>&ast;.pps<br>&ast;.ppsx<br>&ast;.pot<br>&ast;.potx<br>&ast;.ppa<br>&ast;.ppam |  ![Powerpoint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/powerpoint.svg?sanitize=true) |
-|  [PowerShell](#powershell) |  `.*\.(powershell\|ps1\|psd1\|psc1\|pssc\|cmd)$ ` |  &ast;.powershell<br>&ast;.ps1<br>&ast;.psd1<br>&ast;.psc1<br>&ast;.pssc<br>&ast;.cmd |  ![PowerShell](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/powershell.svg?sanitize=true) |
-|  [Premiere](#premiere) |  `.*\.(prel\|prproj\|psq)$ ` |  &ast;.prel<br>&ast;.prproj<br>&ast;.psq |  ![Premiere](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/premiere.svg?sanitize=true) |
-|  [Prettier](#prettier) |  `^\.prettierrc(\.js(on)?\|\.y(a)?ml)?$ ` |  .prettierrc.js<br>.prettierrc.json<br>.prettierrc.yml |  ![Prettier](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/prettier.svg?sanitize=true) |
-|  [Prettier Config](#prettier-config) |  `^prettier\.config\.js$ ` |  prettier.config.js |  ![Prettier Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/prettier.svg?sanitize=true) |
-|  [Prisma](#prisma) |  `prisma\.yml ` |  prisma.yml |  ![Prisma](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/prisma.svg?sanitize=true) |
-|  [Processing](#processing) |  `.*\.pde$ ` |  &ast;.pde |  ![Processing](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/processing.svg?sanitize=true) |
-|  [Prolog](#prolog) |  `.*\.(pro\|prolog)$ ` |  &ast;.pro<br>&ast;.prolog |  ![Prolog](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/prolog.svg?sanitize=true) |
-|  [Properties](#properties) |  `.*\.properties$ ` |  &ast;.properties |  ![Properties](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/source.svg?sanitize=true) |
-|  [Protractor](#protractor) |  `^protractor\.js(on)?$ ` |  protractor.js<br>protractor.json |  ![Protractor](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/protractor.svg?sanitize=true) |
-|  [Puppet](#puppet) |  `.*\.(puppet\|pp\|epp)$ ` |  &ast;.puppet<br>&ast;.pp<br>&ast;.epp |  ![Puppet](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/puppet.svg?sanitize=true) |
-|  [PureScript](#purescript) |  `.*\.(purescript\|purs\|pure)$ ` |  &ast;.purescript<br>&ast;.purs<br>&ast;.pure |  ![PureScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/purescript.svg?sanitize=true) |
-|  [Python Config](#python-config) |  `^(python-?config\.json\|pyproject\.toml)$ ` |  python-config.json<br>pythonconfig.json<br>pyproject.toml |  ![Python Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/python.svg?sanitize=true) |
-|  [R](#r) |  `.*\.(r\|rmd)$ ` |  &ast;.r<br>&ast;.rmd |  ![R](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/r.svg?sanitize=true) |
-|  [Racket](#racket) |  `.*\.rkt ` |  &ast;.rkt |  ![Racket](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/racket.svg?sanitize=true) |
-|  [Raml](#raml) |  `.*\.raml$ ` |  &ast;.raml |  ![Raml](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/raml.svg?sanitize=true) |
-|  [Rails](#rails) |  `^rails$ ` |  rails |  ![Rails](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rails.svg?sanitize=true) |
-|  [Rake](#rake) |  `.*rake$ ` |  &ast;.rake |  ![Rake](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rake.svg?sanitize=true) |
-|  [Rakefile](#rakefile) |  `Rakefile ` |  Rakefile |  ![Rakefile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rake.svg?sanitize=true) |
-|  [Razor](#razor) |  `.*\.(cshtml\|vbhtml)$ ` |  &ast;.cshtml<br>&ast;.vbhtml |  ![Razor](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/razor.svg?sanitize=true) |
-|  [RDoc](#rdoc) |  `.*\.rdoc$ ` |  &ast;.rdoc |  ![RDoc](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rdoc.svg?sanitize=true) |
-|  [RestQL](#restql) |  `.*\.(rql\|restql)$ ` |  &ast;.rql<br>&ast;.restql |  ![RestQL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/restql.svg?sanitize=true) |
-|  [React](#react) |  `.*\.react-cli$ ` |  &ast;.react-cli |  ![React](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/react.svg?sanitize=true) |
-|  [ReasonML](#reasonml) |  `.*\.rei? ` |  &ast;.re<br>&ast;.rei |  ![ReasonML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/reason.svg?sanitize=true) |
-|  [Red](#red) |  `.*\.red ` |  &ast;.red |  ![Red](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/red.svg?sanitize=true) |
-|  [Redis](#redis) |  `^redis.* ` |  redis<br>redis-config.yml |  ![Redis](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/redis.svg?sanitize=true) |
-|  [Redux Action](#redux-action) |  `.*(a\|A)ctions?\.(js\|ts)$ ` |  action.js<br>actions.ts<br>myAction.js<br>myActions.js<br>my-actions.js |  ![Redux Action](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/redux-action.svg?sanitize=true) |
-|  [Redux Reducer](#redux-reducer) |  `.*(r\|R)educer\.(js\|ts)$ ` |  reducer.js<br>reducer.ts<br>myReducer.js<br>myReducers.js<br>my-reducers.js |  ![Redux Reducer](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/redux-reducer.svg?sanitize=true) |
-|  [Redux Store](#redux-store) |  `.*(s\|S)tore\.(js\|ts)$ ` |  store.js<br>store.ts<br>myStore.js<br>myStores.js<br>my-stores.js |  ![Redux Store](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/redux-store.svg?sanitize=true) |
-|  [Restructured](#restructured) |  `.*\.rst$ ` |  &ast;.rst |  ![Restructured](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rst.svg?sanitize=true) |
-|  [Riot](#riot) |  `.*\.(riot\|tag)$ ` |  &ast;.riot<br>&ast;.tag |  ![Riot](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/riot.svg?sanitize=true) |
-|  [Robot](#robot) |  `.*\.robot$ ` |  &ast;.robot |  ![Robot](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/robot.svg?sanitize=true) |
-|  [Rollup](#rollup) |  `^rollup.* ` |  rollup.js<br>rollup.conf.js<br>rollup.ts |  ![Rollup](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rollup.svg?sanitize=true) |
-|  [Routes](#routes) |  `(routing\|routes)\.(js\|jsx\|ts\|tsx)$ ` |  routing.js<br>routes.js<br>routes.jsx<br>routing.ts<br>routes.tsx |  ![Routes](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/angularrouting.svg?sanitize=true) |
-|  [RSpec](#rspec) |  `.*_spec\.rb$ ` |  controller_spec.rb<br>model_spec.rb |  ![RSpec](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rspec.svg?sanitize=true) |
-|  [RSpec Config](#rspec-config) |  `.*\.rspec$ ` |  &ast;.rspec |  ![RSpec Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rspec.svg?sanitize=true) |
-|  [Rubocop](#rubocop) |  `.*\.rubocop.*\.yml$ ` |  &ast;.rubocop.yml |  ![Rubocop](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rubocop.svg?sanitize=true) |
-|  [Ruby Gemset](#ruby-gemset) |  `^\.ruby-gemset$ ` |  .ruby-gemset |  ![Ruby Gemset](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/gemfile.svg?sanitize=true) |
-|  [Ruby Version](#ruby-version) |  `^\.ruby-version$ ` |  .ruby-version |  ![Ruby Version](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ruby.svg?sanitize=true) |
-|  [Rust](#rust) |  `.*\.(rs\|rust)$ ` |  &ast;.rs<br>&ast;.rust |  ![Rust](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/rust.svg?sanitize=true) |
-|  [RVM](#rvm) |  `^\.rvmrc$ ` |  .rvmrc |  ![RVM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ruby.svg?sanitize=true) |
-|  [San](#san) |  `.*\.san$ ` |  &ast;.san |  ![San](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/san.svg?sanitize=true) |
-|  [SASS](#sass) |  `.*\.sass$ ` |  &ast;.sass |  ![SASS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sass.svg?sanitize=true) |
-|  [Sapper](#sapper) |  `sapper\.js$ ` |  sapper.js |  ![Sapper](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sapper.svg?sanitize=true) |
-|  [SBT](#sbt) |  `.*\.sbt$ ` |  &ast;.sbt |  ![SBT](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sbt.svg?sanitize=true) |
-|  [Scala](#scala) |  `.*\.scala$ ` |  &ast;.scala |  ![Scala](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/scala.svg?sanitize=true) |
-|  [SCSS](#scss) |  `.*\.scss$ ` |  &ast;.scss |  ![SCSS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sass.svg?sanitize=true) |
-|  [Scheme](#scheme) |  `.*\.(scheme\|scm)$ ` |  &ast;.scheme<br>&ast;.scm |  ![Scheme](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/scheme.svg?sanitize=true) |
-|  [Semantic Release](#semantic-release) |  `.*\.releaserc(.js(on)?\|.y(a)?ml)?$ ` |  .releaserc<br>.releaserc.js<br>.releaserc.json<br>.releaserc.yml |  ![Semantic Release](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/semantic-release.svg?sanitize=true) |
-|  [Semantic Release Config](#semantic-release-config) |  `^release\.config\.js$ ` |  release.config.js |  ![Semantic Release Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/semantic-release.svg?sanitize=true) |
-|  [Settings](#settings) |  `.*\.(settings?\|options?\|opts?)$ ` |  &ast;.setting<br>&ast;.settings<br>&ast;.option<br>&ast;.options<br>&ast;.opt<br>&ast;.opts |  ![Settings](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/settings.svg?sanitize=true) |
-|  [Sequelize](#sequelize) |  `\.sequelizerc$ ` |  .sequelizerc |  ![Sequelize](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sequelize.svg?sanitize=true) |
-|  [Shell](#shell) |  `.*\.(sh\|zsh\|fish\|bash\|fishrc\|zshrc\|bashrc\|tcsh)$ ` |  &ast;.sh<br>&ast;.zsh<br>&ast;.fish<br>&ast;.bash<br>.fishrc<br>.zshrc<br>.bashrc<br>.tcsh |  ![Shell](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/shell.svg?sanitize=true) |
-|  [SilverStripe](#silverstripe) |  `.*\.ss$ ` |  &ast;.ss |  ![SilverStripe](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/silverstripe.svg?sanitize=true) |
-|  [Sketch](#sketch) |  `.*\.sketch$ ` |  &ast;.sketch |  ![Sketch](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sketch.svg?sanitize=true) |
-|  [Slim](#slim) |  `.*\.slim$ ` |  &ast;.slim |  ![Slim](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/slim.svg?sanitize=true) |
-|  [Smarty](#smarty) |  `.*\.tpl$ ` |  &ast;.tpl |  ![Smarty](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/smarty.svg?sanitize=true) |
-|  [Snapshots](#snapshots) |  `.*\.snap$ ` |  &ast;.snap |  ![Snapshots](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/snapshot.svg?sanitize=true) |
-|  [Solidity](#solidity) |  `.*\.sol$ ` |  &ast;.sol |  ![Solidity](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/solidity.svg?sanitize=true) |
-|  [Sonar](#sonar) |  `.*\.sonarrc$ ` |  &ast;.sonarrc |  ![Sonar](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sonar.svg?sanitize=true) |
-|  [Spring](#spring) |  `.*\.spring$ ` |  &ast;.spring |  ![Spring](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/spring.svg?sanitize=true) |
-|  [SQL](#sql) |  `.*\.(sql\|pdb\|pgsql\|mysql\|hql\|qml\|psql\|pkb)$ ` |  &ast;.sql<br>&ast;.pdb<br>&ast;.pgsql<br>&ast;.mysql<br>&ast;.hql<br>&ast;.qml<br>&ast;.psql<br>&ast;.pkb |  ![SQL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sql.svg?sanitize=true) |
-|  [SQLite](#sqlite) |  `.*\.sqlite3?$ ` |  &ast;.sqlite<br>&ast;.sqlite3 |  ![SQLite](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sqlite.svg?sanitize=true) |
-|  [Stata](#stata) |  `.*\.stata$ ` |  &ast;.stata |  ![Stata](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/stata.svg?sanitize=true) |
-|  [Stencil](#stencil) |  `^stencil\.config\.(js\|ts)$ ` |  stencil.config.js<br>stencil.config.ts |  ![Stencil](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/stencil.svg?sanitize=true) |
-|  [Storybook](#storybook) |  `.*\.(story\|stories)\.(jsx?\|tsx?)$ ` |  &ast;.story.js<br>&ast;.stories.js<br>&ast;.story.jsx<br>&ast;.stories.ts<br>&ast;.stories.tsx |  ![Storybook](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/storybook.svg?sanitize=true) |
-|  [Stylelint](#stylelint) |  `^(\.stylelintrc\|stylelint\.config\.js(on)?)$ ` |  .stylelintrc<br>stylelint.config.js<br>stylelint.config.json |  ![Stylelint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/stylelint.svg?sanitize=true) |
-|  [Stylus](#stylus) |  `.*\.styl$ ` |  &ast;.styl |  ![Stylus](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/stylus.svg?sanitize=true) |
-|  [Sublime](#sublime) |  `.*\.sublime-.* ` |  &ast;.sublime-workspace<br>&ast;.sublime-package |  ![Sublime](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/sublime.svg?sanitize=true) |
-|  [SuperCollider](#supercollider) |  `.*\.scd$ ` |  &ast;.scd |  ![SuperCollider](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/scd.svg?sanitize=true) |
-|  [Svelte](#svelte) |  `.*\.svelte ` |  &ast;.svelte |  ![Svelte](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/svelte.svg?sanitize=true) |
-|  [Svelte Config](#svelte-config) |  `svelte\.config\.js(on)? ` |  svelte.config.js<br>svelte.config.json |  ![Svelte Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/svelte.svg?sanitize=true) |
-|  [SVN](#svn) |  `^\.svn ` |  .svn |  ![SVN](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/svn.svg?sanitize=true) |
-|  [Swagger](#swagger) |  `.*\.(swagger\|swag)$ ` |  &ast;.swagger<br>&ast;.swag |  ![Swagger](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/swagger.svg?sanitize=true) |
-|  [Swagger Config](#swagger-config) |  `((swagger\|api)\.(yml\|yaml\|json))$ ` |  swagger.yml<br>swagger.yaml<br>swagger.json<br>api.yml<br>api.yaml<br>api.json |  ![Swagger Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/swagger.svg?sanitize=true) |
-|  [SWC](#swc) |  `.*\.swc$ ` |  &ast;.swc |  ![SWC](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/swc.svg?sanitize=true) |
-|  [Swift](#swift) |  `.*\.swift$ ` |  &ast;.swift |  ![Swift](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/swift.svg?sanitize=true) |
-|  [Swig](#swig) |  `.*\.swig$ ` |  &ast;.swig |  ![Swig](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/swig.svg?sanitize=true) |
-|  [Symfony](#symfony) |  `.*\.symfony ` |  &ast;.symfony |  ![Symfony](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/symfony.svg?sanitize=true) |
-|  [Tailwind CSS Config](#tailwind-css-config) |  `^tailwind.*\.[jt]s$ ` |  tailwind.js<br>tailwind.conf.js<br>tailwind.conf.ts |  ![Tailwind CSS Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tailwindcss.svg?sanitize=true) |
-|  [TCL](#tcl) |  `.*\.tcl$ ` |  &ast;.tcl |  ![TCL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tcl.svg?sanitize=true) |
-|  [TerraForm](#terraform) |  `.*\.(tf\|tfstate\|tfvars)$ ` |  &ast;.tf<br>&ast;.tfstate<br>&ast;.tfvars |  ![TerraForm](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/terraform.svg?sanitize=true) |
-|  [TeX](#tex) |  `.*\.(tex\|cls\|sty\|dtx\|ltx)$ ` |  &ast;.tex<br>&ast;.cls<br>&ast;.sty<br>&ast;.dtx<br>&ast;.ltx |  ![TeX](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tex.svg?sanitize=true) |
-|  [Tern](#tern) |  `.*\.tern-(config\|project)$ ` |  &ast;.tern-config<br>&ast;.tern-project |  ![Tern](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tern.svg?sanitize=true) |
-|  [Tern Config](#tern-config) |  `^\.ternconfig$ ` |  .ternconfig |  ![Tern Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tern.svg?sanitize=true) |
-|  [Test Java](#test-java) |  `(t\|T)est\.java$ ` |  MyTest.java<br>myTest.java<br>mytest.java |  ![Test Java](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testjava.svg?sanitize=true) |
-|  [Test JS](#test-js) |  `.*\.?(test\|spec)\.(js\|es6)$ ` |  &ast;.test.js<br>&ast;.spec.js<br>&ast;.test.es6<br>&ast;.spec.es6 |  ![Test JS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testjs.svg?sanitize=true) |
-|  [Test React](#test-react) |  `.*\.?(test\|spec)\.(jsx\|tsx)$ ` |  &ast;.test.jsx<br>&ast;.spec.jsx<br>&ast;.test.tsx<br>&ast;.spec.tsx |  ![Test React](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testreact.svg?sanitize=true) |
-|  [Test Python](#test-python) |  `.*\.(test\|spec)\.py$ ` |  &ast;.test.py<br>&ast;.spec.py |  ![Test Python](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testpy.svg?sanitize=true) |
-|  [Test Ruby](#test-ruby) |  `_(test\|spec)\.rb$ ` |  my_test.rb<br>controller_spec.rb |  ![Test Ruby](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testruby.svg?sanitize=true) |
-|  [Test TypeScript](#test-typescript) |  `.*\.?(test\|spec)\.ts$ ` |  &ast;.test.ts<br>&ast;.spec.ts |  ![Test TypeScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testts.svg?sanitize=true) |
-|  [Textile](#textile) |  `.*\.textile$ ` |  &ast;.textile |  ![Textile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/textile.svg?sanitize=true) |
-|  [Textmate](#textmate) |  `.*\.(tmPreferences\|tmTheme\|tmLanguage) ` |  &ast;.tmPreferences<br>&ast;.tmTheme<br>&ast;.tmLanguage |  ![Textmate](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/textmate.svg?sanitize=true) |
-|  [Tomcat](#tomcat) |  `^tomcat.* ` |  tomcat.conf<br>tomcat.java |  ![Tomcat](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tomcat.svg?sanitize=true) |
-|  [TOML](#toml) |  `.*\.toml$ ` |  &ast;.toml |  ![TOML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/toml.svg?sanitize=true) |
-|  [TODO](#todo) |  `^(TODO\|todo).* ` |  TODO<br>todo<br>TODO.md<br>todo.js<br>TODO.java |  ![TODO](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/todo.svg?sanitize=true) |
-|  [Todofile](#todofile) |  `.*\.(todo\|taskpaper)$ ` |  &ast;.todo<br>&ast;.taskpaper |  ![Todofile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/todo.svg?sanitize=true) |
-|  [TSConfig](#tsconfig) |  `\.?tsconfig.*\.(js\|json)$ ` |  tsconfig.js<br>tsconfig.json<br>.tsconfig.js<br>.tsconfig.json |  ![TSConfig](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tslint.svg?sanitize=true) |
-|  [TSLint](#tslint) |  `\.?tslint.*\.(js\|json)$ ` |  tslint.js<br>tslint.json<br>.tslint.js<br>.tslint.json |  ![TSLint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tslint.svg?sanitize=true) |
-|  [Travis](#travis) |  `.*\.travis\.yml$ ` |  &ast;.travis.yml |  ![Travis](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/travis.svg?sanitize=true) |
-|  [Turing](#turing) |  `.*\.t$ ` |  &ast;.t |  ![Turing](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/turing.svg?sanitize=true) |
-|  [Twig](#twig) |  `.*\.twig$ ` |  &ast;.twig |  ![Twig](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/twig.svg?sanitize=true) |
-|  [Typescript Defs](#typescript-defs) |  `.*\.d\.ts$ ` |  &ast;.d.ts |  ![Typescript Defs](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/dts.svg?sanitize=true) |
-|  [Typings](#typings) |  `^typings\.json$ ` |  typings.json |  ![Typings](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/typings.svg?sanitize=true) |
-|  [UML](#uml) |  `.*\.(uml\|iuml\|puml\|pu\|plantuml\|wsd) ` |  &ast;.uml<br>&ast;.iuml<br>&ast;.puml<br>&ast;.pu<br>&ast;.plantuml<br>&ast;.wsd |  ![UML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/uml.svg?sanitize=true) |
-|  [Unity](#unity) |  `.*\.(unity\|unity3d\|fbx) ` |  &ast;.unity<br>&ast;.unity3d<br>&ast;.fbx |  ![Unity](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/unity.svg?sanitize=true) |
-|  [Unreal](#unreal) |  `.*\.(u\|unr\|utx\|umx\|uax\|ukx\|uz\|upkg\|uc\|upl\|asc\|lwo)$ ` |  &ast;.u<br>&ast;.unr<br>&ast;.utx<br>&ast;.umx<br>&ast;.uax<br>&ast;.ukx<br>&ast;.uz<br>&ast;.upkg<br>&ast;.uc<br>&ast;.upl<br>&ast;.asc<br>&ast;.lwo |  ![Unreal](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/unreal.svg?sanitize=true) |
-|  [Vagrant](#vagrant) |  `^(V\|v)agrantfile$ ` |  Vagrantfile<br>vagrantfile |  ![Vagrant](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vagrant.svg?sanitize=true) |
-|  [Vala](#vala) |  `.*\.vala$ ` |  &ast;.vala |  ![Vala](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vala.svg?sanitize=true) |
-|  [Velocity](#velocity) |  `.*\.(vm\|vtl\|fhtml) ` |  &ast;.vm<br>&ast;.vtl<br>&ast;.fhtml |  ![Velocity](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/velocity.svg?sanitize=true) |
-|  [VERSION](#version) |  `^(VERSION\|version)$ ` |  VERSION<br>version |  ![VERSION](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/version.svg?sanitize=true) |
-|  [V](#v) |  `.*\.(v\|vh)$ ` |  &ast;.v<br>&ast;.vh |  ![V](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/v.svg?sanitize=true) |
-|  [VHDL](#vhdl) |  `.*\.(vhdl\|vhd\|sv)$ ` |  &ast;.vhdl<br>&ast;.vhd<br>&ast;.sv |  ![VHDL](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vhdl.svg?sanitize=true) |
-|  [Vim](#vim) |  `.*\.(vim\|viml\|vimrc\|gvimrc)$ ` |  &ast;.vim<br>&ast;.viml<br>&ast;.vimrc<br>&ast;.gvimrc |  ![Vim](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vim.svg?sanitize=true) |
-|  [Visio](#visio) |  `.*\.visio$ ` |  &ast;.visio |  ![Visio](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/visio.svg?sanitize=true) |
-|  [Visual Studio](#visual-studio) |  `.*\.(vscode\|vssettings\|vsix\|sln\|suo)$ ` |  &ast;.vscode<br>&ast;.vssettings<br>&ast;.vsix<br>&ast;.sln<br>&ast;.suo |  ![Visual Studio](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vs.svg?sanitize=true) |
-|  [VM](#vm) |  `.*\.(vbox\|vdi\|vmware)$ ` |  &ast;.vbox<br>&ast;.vdi<br>&ast;.vmware |  ![VM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vm.svg?sanitize=true) |
-|  [Vue](#vue) |  `.*\.vue$ ` |  &ast;.vue |  ![Vue](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vue.svg?sanitize=true) |
-|  [Vuex](#vuex) |  `.*\.vuex$ ` |  &ast;.vuex |  ![Vuex](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/vuex.svg?sanitize=true) |
-|  [Wallaby](#wallaby) |  `^wallaby.* ` |  wallaby.js<br>wallaby.ts |  ![Wallaby](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/wallaby.svg?sanitize=true) |
-|  [WebAssembly](#webassembly) |  `.*\.(wat\|wasm)$ ` |  &ast;.wat<br>&ast;.wasm |  ![WebAssembly](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/webassembly.svg?sanitize=true) |
-|  [Webpack](#webpack) |  `^webpack\.(common\|config\|dev\|prod)\.(js\|es\|es6\|coffee\|ts)$ ` |  webpack.common.js<br>webpack.config.js<br>webpack.dev.js<br>webpack.prod.js<br>webpack.config.ts<br>webpack.config.es6<br>webpack.dev.coffee |  ![Webpack](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/webpack.svg?sanitize=true) |
-|  [Webhint](#webhint) |  `.*\.hintrc$ ` |  &ast;.hintrc |  ![Webhint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/webhint.svg?sanitize=true) |
-|  [WePy](#wepy) |  `.*\.wpy$ ` |  &ast;.wpy |  ![WePy](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/wepy.svg?sanitize=true) |
-|  [Windows](#windows) |  `.*\.(bat\|exe\|dos\|ms\|msi)$ ` |  &ast;.bat<br>&ast;.exe<br>&ast;.dos<br>&ast;.ms<br>&ast;.msi |  ![Windows](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/windows.svg?sanitize=true) |
-|  [Word](#word) |  `.*\.(doc\|docx\|docm\|docxml\|dotm\|dotx\|wri\|odt\|odtx)$ ` |  &ast;.doc<br>&ast;.docx<br>&ast;.docm<br>&ast;.docxml<br>&ast;.dotm<br>&ast;.dotx<br>&ast;.wri<br>&ast;.odt<br>&ast;.odtx |  ![Word](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/word.svg?sanitize=true) |
-|  [Xamarin](#xamarin) |  `.*\.xamarin ` |  &ast;.xamarin |  ![Xamarin](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/xamarin.svg?sanitize=true) |
-|  [XCode](#xcode) |  `.*\.xcodeproj$ ` |  &ast;.xcodeproj |  ![XCode](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/appstore.svg?sanitize=true) |
-|  [XCode Playground](#xcode-playground) |  `.*\.xcplayground$ ` |  &ast;.xcplayground |  ![XCode Playground](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/appstore.svg?sanitize=true) |
-|  [XCode Workspace](#xcode-workspace) |  `.*\.xcworkspace$ ` |  &ast;.xcworkspace |  ![XCode Workspace](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/appstore.svg?sanitize=true) |
-|  [XCode Storyboard](#xcode-storyboard) |  `.*\.storyboard$ ` |  &ast;.storyboard |  ![XCode Storyboard](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/appstore.svg?sanitize=true) |
-|  [Yang](#yang) |  `.*\.yang$ ` |  &ast;.yang |  ![Yang](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/yang.svg?sanitize=true) |
-|  [Yarn](#yarn) |  `(\.yarnrc\|yarn.js(on)?) ` |  .yarnrc<br> yarn.json<br> yarn.js |  ![Yarn](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/yarn.svg?sanitize=true) |
-|  [Yarn Lock](#yarn-lock) |  `^yarn\.lock$ ` |  yarn.lock |  ![Yarn Lock](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lock.svg?sanitize=true) |
-|  [Yarn Clean](#yarn-clean) |  `^\.yarnclean$ ` |  .yarnclean |  ![Yarn Clean](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/yarn.svg?sanitize=true) |
-|  [YVM](#yvm) |  `^\.yvmrc ` |  .yvmrc |  ![YVM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/yvmrc.svg?sanitize=true) |
-|  [Preferences](#preferences) |  `.*\.(lds?\|ini\|cnf\|config\|cfg)$ ` |  &ast;.lds<br>&ast;.ld<br>&ast;.ini<br>&ast;.cnf<br>&ast;.config<br>&ast;.cfg |  ![Preferences](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/preferences.svg?sanitize=true) |
-|  [Envs](#envs) |  `.*\.env(\.\w+)?$ ` |  &ast;.env<br>&ast;.env.dev<br>&ast;.env.prod |  ![Envs](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/preferences.svg?sanitize=true) |
-|  [Configs](#configs) |  `^(config\|settings\|option\|pref)$ ` |  config<br>settings<br>option<br>pref |  ![Configs](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/preferences.svg?sanitize=true) |
-|  [Binary](#binary) |  `^[^.]+$ ` |  ls<br>cd<br>myapp<br>run |  ![Binary](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/binary.svg?sanitize=true) |
-|  [Binary (2)](#binary-(2)) |  `.*\.(axf\|elf\|la\|objdump\|bsdiff\|bin\|dat\|pak)$ ` |  &ast;.axf<br>&ast;.elf<br>&ast;.la<br>&ast;.objdump<br>&ast;.bsdiff<br>&ast;.bin<br>&ast;.dat<br>&ast;.pak |  ![Binary (2)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/binary.svg?sanitize=true) |
-|  [Binary (3)](#binary-(3)) |  `.*\.(gco?\|gcode\|[cdhk]nc\|prx\|swp\|rnd)$ ` |  &ast;.gc<br>&ast;.gco<br>&ast;.gcode<br>&ast;.cnc<br>&ast;.dnc<br>&ast;.hnc<br>&ast;.knc<br>&ast;.prx<br>&ast;.swp<br>&ast;.rnd |  ![Binary (3)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/binary.svg?sanitize=true) |
-|  [Font](#font) |  `.*\.(ttf\|ttc\|pfb\|pfm\|otf\|dfont\|pfa\|afm\|eot\|woff2?)$ ` |  &ast;.ttf<br>&ast;.ttc<br>&ast;.pfb<br>&ast;.pfm<br>&ast;.otf<br>&ast;.dfont<br>&ast;.pfa<br>&ast;.afm<br>&ast;.eot<br>&ast;.woff<br>&ast;.woff2 |  ![Font](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/font.svg?sanitize=true) |
-|  [Lockfiles](#lockfiles) |  `.*\.lock$ ` |  &ast;.lock |  ![Lockfiles](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lock.svg?sanitize=true) |
-|  [XML](#xml) |  `.*\.(xml\|xhtml\|fxml\|jrxml\|jnlp\|pom\|rng\|tld\|wsdl\|xsd\|xsl\|xslt\|xul)$ ` |  &ast;.xml<br>&ast;.xhtml<br>&ast;.fxml<br>&ast;.jrxml<br>&ast;.jnlp<br>&ast;.pom<br>&ast;.rng<br>&ast;.tld<br>&ast;.wsdl<br>&ast;.xsd<br>&ast;.xsl<br>&ast;.xslt<br>&ast;.xul |  ![XML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/xml.svg?sanitize=true) |
-|  [YAML](#yaml) |  `.*\.(yml\|yaml\|info)$ ` |  &ast;.yml<br>&ast;.yaml<br>&ast;.info |  ![YAML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/yaml.svg?sanitize=true) |
-|  [Archive](#archive) |  `.*\.(z\|xz\|7z\|7zip\|gzip\|zip\|rar\|tar)$ ` |  &ast;.z<br>&ast;.xz<br>&ast;.7z<br>&ast;.7zip<br>&ast;.gzip<br>&ast;.zip<br>&ast;.rar<br>&ast;.tar |  ![Archive](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/archive.svg?sanitize=true) |
-|  [Archive (2)](#archive-(2)) |  `.*\.(gz\|pzip\|saz\|tgz\|bz2\|xar\|egg\|sit)$ ` |  &ast;.gz<br>&ast;.pzip<br>&ast;.saz<br>&ast;.tgz<br>&ast;.bz2<br>&ast;.egg<br>&ast;.xar<br>&ast;.sit |  ![Archive (2)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/archive.svg?sanitize=true) |
-|  [Archive (3)](#archive-(3)) |  `.*\.(lzo?\|lzma\|tlz\|iso\|whl\|xar\|ear\|egg\|sit)$ ` |  &ast;.lz<br>&ast;.lzo<br>&ast;.lzma<br>&ast;.tlz<br>&ast;.iso<br>&ast;.whl<br>&ast;.xar<br>&ast;.ear<br>&ast;.egg<br>&ast;.sit |  ![Archive (3)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/archive.svg?sanitize=true) |
-|  [Audio](#audio) |  `.*\.(mp3\|aac\|aiff\|au\|flac\|m4a\|mpc\|mp\|mka)$ ` |  &ast;.mp3<br>&ast;.aac<br>&ast;.aiff<br>&ast;.au<br>&ast;.flac<br>&ast;.m4a<br>&ast;.mpc<br>&ast;.mp<br>&ast;.mka |  ![Audio](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/audio.svg?sanitize=true) |
-|  [Audio (2)](#audio-(2)) |  `.*\.(mpp\|ogg\|oga\|opus\|ra\|rm\|wav\|wma\|snd\|mid\|cda)$ ` |  &ast;.mpp<br>&ast;.ogg<br>&ast;.oga<br>&ast;.opus<br>&ast;.ra<br>&ast;.rm<br>&ast;.wav<br>&ast;.wma<br>&ast;.snd<br>&ast;.mid<br>&ast;.cda |  ![Audio (2)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/audio.svg?sanitize=true) |
-|  [Audio (3)](#audio-(3)) |  `.*\.(ac3\|m4p\|f4a\|f4b\|it\|s3m)$ ` |  &ast;.ac3<br>&ast;.m4p<br>&ast;.f4a<br>&ast;.f4b<br>&ast;.it<br>&ast;.s3m |  ![Audio (3)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/audio.svg?sanitize=true) |
-|  [Video](#video) |  `.*\.(avi\|mp4\|m4v\|mpg\|mpeg\|mov\|mkv\|flv\|h264)$ ` |  &ast;.avi<br>&ast;.mp4<br>&ast;.m4v<br>&ast;.mpg<br>&ast;.mpeg<br>&ast;.mov<br>&ast;.mkv<br>&ast;.flv<br>&ast;.h264 |  ![Video](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/video.svg?sanitize=true) |
-|  [Video (2)](#video-(2)) |  `.*\.(webm\|wmv\|ogv\|3gp\|m4v\|3gpp\|ogm\|dvd\|divx\|qt\|yuv)$ ` |  &ast;.webm<br>&ast;.wmv<br>&ast;.ogv<br>&ast;.3gp<br>&ast;.m4v<br>&ast;.3gpp<br>&ast;.ogm<br>&ast;.dvd<br>&ast;.divx<br>&ast;.qt<br>&ast;.yuv |  ![Video (2)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/video.svg?sanitize=true) |
-|  [Video (3)](#video-(3)) |  `.*\.(asx\|asf\|mks\|mk3d\|ogg)$ ` |  &ast;.asx<br>&ast;.asf<br>&ast;.mks<br>&ast;.mk3d<br>&ast;.ogg |  ![Video (3)](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/video.svg?sanitize=true) |
-|  [Text](#text) |  `.*\.(txt\|rtf)$ ` |  &ast;.txt<br>&ast;.rtf |  ![Text](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/text.svg?sanitize=true) |
-|  [Javascript Minified](#javascript-minified) |  `.*\.min\.(js\|es6\|es\|jsx\|ts)$ ` |  &ast;.min.js<br>&ast;.min.es6<br>&ast;.min.es<br>&ast;.min.jsx<br>&ast;.min.ts |  ![Javascript Minified](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsmin.svg?sanitize=true) |
-|  [Java](#java) |  `.*\.(java\|jar\|war)$ ` |  &ast;.java<br>&ast;.jar<br>&ast;.war |  ![Java](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/java.svg?sanitize=true) |
-|  [JSX](#jsx) |  `.*\.(jsx\|tsx)$ ` |  &ast;.jsx<br>&ast;.tsx |  ![JSX](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsx.svg?sanitize=true) |
-|  [TypeScript](#typescript) |  `.*\.(ts\|tslint)$ ` |  &ast;.ts<br>&ast;.tslint |  ![TypeScript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/typeScript.svg?sanitize=true) |
-|  [Javascript](#javascript) |  `.*\.(js\|es6\|es\|mjs)$ ` |  &ast;.js<br>&ast;.es6<br>&ast;.es<br>&ast;.mjs |  ![Javascript](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/js.svg?sanitize=true) |
-|  [Python](#python) |  `.*\.(py\|python\|pyc\|whl)$ ` |  &ast;.py<br>&ast;.python<br>&ast;.pyc<br>&ast;.whl |  ![Python](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/python.svg?sanitize=true) |
-|  [Ruby](#ruby) |  `.*\.rb$ ` |  &ast;.rb |  ![Ruby](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/ruby.svg?sanitize=true) |
-|  [PHP](#php) |  `.*\.(php\|phps)$ ` |  &ast;.php<br>&ast;.phps |  ![PHP](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/php.svg?sanitize=true) |
-|  [JSON](#json) |  `.*\.(json\|cson)$ ` |  &ast;.json<br>&ast;.cson |  ![JSON](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/json.svg?sanitize=true) |
+| Name                | File Pattern                                               | Icon              |
+|:--------------------|:-----------------------------------------------------------|:------------------|
+| Github Code         | CODE_OF_CONDUCT.(md,txt)                                   | github            |
+| Github Contributing | CONTRIBUTING.(md,txt)                                      | github            |
+| Github Commit       | COMMIT_MESSAGE_CONVENTION.md                               | github            |
+| Github Template     | TEMPLATE.md                                                | github            |
+| README              | README.(md,txt), readme.(md,txt)                           | readme            |
+| JetBrains Plugin    | plugin.xml                                                 | plugin            |
+| Preferences         | *.prefs                                                    | config            |
+| Images              | *.(gif,png,jpg,jpeg,bmp)                                   | image             |
+| SVG                 | *.svg                                                      | svg               |
+| Microsoft Access    | *.(adn,accdb,accdr,accda,mdw,                              | access            |
+|                     | accde,mam,maq,mar,mat,maf,laccdb)                          |                   |
+| 1C                  | *.bsl, *.sdbl, *.os, *.mdo                                 | 1c                |
+| 3D                  | *.stl, *.obj, *.dae, *.3ds, *.dxf, *.ac                    | 3d                |
+| ABAP                | *.abp                                                      | abap              |
+| abif                | *.abif *.ab1, *.fsa                                        | abip              |
+| acre                | acre.config                                                | acre              |
+| ActionScript        | *.as                                                       | actionscript      |
+| Adobe Elements      | *.aep, *.aet                                               | ae                |
+| Adobe Illustrator   | *.ai, *.ait                                                | ai                |
+| Ada                 | *.ada, *.adb, *.ads                                        | ada               |
+| AdvPL               | *.prw, *.ahu, *.aph, *.tlpp                                | advpl             |
+| AffectScript        | *.affect                                                   | affectscript      |
+| Affinity Designer   | *.afdesign, *.afphoto, *.afpub                             | affinity          |
+| Akka                | *.akka                                                     | akka              |
+| Alacritty           | alacritty.yml, .alacritty.yml                              | alacritty         |
+| Alex                | .alexrc, .alexignore                                       | alex              |
+| Alloy               | *.als                                                      | alloy             |
+| AMPL                | *.ampl                                                     | ampl              |
+| AmuseWiki           | *.muse                                                     | amusewiki         |
+| Android Manifest    | AndroidManifest.xml                                        | android           |
+| Android Main        | MainActivity.java                                          | android           |
+| Android Smali       | *.smali, *.rsh                                             | android           |
+| AngelScript         | *.acs, *.angelscript                                       | angelscript       |
+| Angular CLI         | angular-cli.json                                           | angular           |
+|                     | angular.json                                               |                   |
+| Angular             | *.ng.html, *.ng.js                                         | angular           |
+|                     | *.module.js                                                |                   |
+|                     | *.ng-template                                              |                   |
+| Angular Component   | *.component.js, *.component.ts                             | angular-component |
+| Angular Controller  | *.controller.js, *.controller.ts                           | angular-component |
+| Angular Directive   | *.directive.js, *.directive.ts                             | angular-directive |
+| Angular Guard       | *.guard.js, *.guard.ts                                     | angular-guard     |
+| Angular Service     | *.service.js, *.service.ts                                 | angular-service   |
+| Angular Pipe        | *.pipe.js, *.pipe.ts                                       | angular-pipe      |
+| Angular Routing     | *.routing.js, *.routing.ts                                 | angular-routing   |
+| Angular Resolver    | *.resolver.js, *.resolver.ts                               | angular-resolver  |
+| Anime Studio        | *.anime(.*)                                                | animestudio       |
+| Ansible             | site.yml, ansible.yml                                      | ansible           |
+| Ant                 | ant.xml, .ant                                              | ant               |
+| ANTLR               | *.g4                                                       | antlr             |
+| AnyScript           | *.any                                                      | any               |
+| Apache Config       | apache(.*).conf, apache2(.*).conf, httpd.conf, .apacheconf | apache            |
+| Apache              | *.vhost, *.thrift                                          | apache            |
+| API Blueprint       | *.apib                                                     | apib              |
+| APK                 | *.apk                                                      | android           |
+| APL                 | *.(apl,apla,aplc,aplf,apli,apln,aplo)                      | apl               |
+| Appcelerator        | appcelerator.js, appcelerator.ts                           | appcelerator      |
+| Appveyor            | .appveyor.yml, appveyor.yml                                | appveyor          |
+| Applescript         | *.applescript                                              | applescript       |
+| Arc                 | *.arc                                                      | arc               |
+| Arch Linux          | .install, .SRCINFO, PKGBUILD, .yaourtrc                    | archlinux         |
+| Arch Linux Pacman   | pacman.conf, pamac.conf                                    | archlinux         |
+| Arduino             | *.ino                                                      | arduino           |
+| Asciidoctor         | *.ad, *.adoc, *.asciidoc                                   | asciidoc          |
+| AspectJ             | *.aj                                                       | aspectj           |
+| ASM                 | *.(asm,nasm,s,ms,agc,aes.aea,inc)                          | asm               |
+|                     | *.(argus,mitigus)                                          |                   |
+| ASP                 | *.(asp,asa,aspx,asax,ascx,ashx,asmx,axd)                   | asp               |
+| Asymptote           | *.asy                                                      | asymptote         |
+| Atoum               | *.atoum.*.php                                              | atoum             |
+| ATS                 | *.dats, *.hats, *.sats                                     | ats               |
+| Atom                | *.atom, *.atom.*                                           | atom              |
+| Audacity            | *.aup                                                      | audacity          |
+| Augeas              | *.aug                                                      | augeas            |
+| Aurelia             | aurelia.(js,json), aureliafile.(js,json)                   | aurelia           |
+| Authors             | AUTHORS, AUTHORS.(md,txt), authors.(md,txt)                | authors           |
+| AutoHotkey          | *.ahk, *.ahkl                                              | ahk               |
+| AutoIt              | *.au3                                                      | autoit            |
+| Avro                | *.avcs, *.avsc, *.avdl                                     | avro              |
+| Azure               | *.azcli                                                    | azure             |
+| Azure Pipelines     | azure-pipelines.yml                                        | azure             |
+| Babel               | .babelrc, babel.json                                       | babel             |
+| Backbone            | backbone.js, backbone.min.js                               | backbone          |
+| Backup              | *.bak, *.old, *.orig                                       | backup            |
+| Ballerina           | *.bal, *.balx                                              | ballerina         |
+| Bazel               | *.bzl, *.bazel, .bazelrc, bazel.rc                         | bazel             |
+| Bean                | *bean.java, *Bean.java                                     | bean              |
+| Behat               | *.feature, *.feature.php, behat.conf.js, behat.yml         | behat             |
+| BEM                 | .bemjson.js, .bemjson                                      | bem               |
+| BibTex              | *.cbx, *.bbx, *.bib, *.bst                                 | bibtex            |
+| BIML                | *.biml                                                     | biml              |
+| BinTray             | .bintray.json                                              | bintray           |
+| Bison               | *.bison, *.yacc                                            | gnu               |
+| Bithound            | .bithoundrc                                                | bithound          |
+| Basic               | *.bas, *.vb, *.vbs                                         | vscode            |
+| Bitbucket           | bitbucket-pipelines.yml                                    | bitbucket         |
+| Blade               | *.blade, *.blade.php                                       | blade             |
+| Blender             | *.blend, *.bphys                                           | blender           |
+| BlueSpec            | *.bsv, *.bspec                                             | bluespec          |
+| Blink               | *.blink                                                    | blink             |
+| BNF                 | *.bnf, *.abnf, *.ebnf                                      | bnf               |
+| Boo                 | *.boo, *.boo.unity                                         | boo               |
+| Bootstrap           | bootstrap.(js,ts,css,scss,less)                            | bootstrap         |
+| Bower               | .bowerrc, bower.json                                       | bower             |
+| Brainfuck           | *.b, *.bf                                                  | brainfuck         |
+| Brakeman            | brakeman.yml                                               | brakeman          |
+| Bro                 | *.bro                                                      | bro               |
+| Broccoli            | Brocfile                                                   | broccoli          |
+| Brotli              | *.br                                                       | brotli            |
+| Browserslist        | .browserslist, .browserslistrc                             | browserslist      |
+| Browsersync         | bs-config.(js,json), browser-sync.(js,json)                | browsersync       |
+| Brunch              | brunch-config.(js,coffee,ts)                               | brunch            |
+| BuckleScript        | *.cmj                                                      | bucklescript      |
+| Buildkite           | buildkite.(yml,yaml)                                       | buildkite         |
+| Bundler             | Gemfile                                                    | bundle            |
+| Byond Dreamweaver   | *.dm                                                       | byond             |
+| C                   | *.c, *.objc                                                | c                 |
+| Cabal               | *.cabal, cabal.project                                     | cabal             |
+| CakePHP             | *.cake                                                     | cakephp           |
+| Cargo               | cargo.toml, cargo.lock                                     | cargo             |
+| Certificate         | *.crt, *.cert, *.x509, *.pks                               | certificate       |
+| CFC                 | *.cfc, *.cfm, *.cfml, *.lucee                              | cfc               |
+| Changelog           | CHANGELOG, CHANGELOG.(md,txt), changelog.(md,txt)          | log               |
+| Chef                | knife.rb                                                   | chef              |
+| Chef Berksfile      | Berksfile                                                  | chef              |
+| CircleCI            | .circleci, circle.yml, config.yml                          | circleci          |
+| Class               | *.class, *.o                                               | class             |
+| Clojure             | *.(clj,cljs,cljc,clojure)                                  | clojure           |
+| CMake               | *.cmake                                                    | cmake             |
+| CMakelists          | CMakeLists                                                 | cmake             |
+| CNAME               | CNAME                                                      | cname             |
+| Cobol               | *.cbl, *.cobol                                             | cobol             |
+| Codecov             | .codecov.yml                                               | codecov           |
+| Codeowners          | codeowners                                                 | codeowners        |
+| CoffeeScript        | *.coffee, *.iced                                           | coffeescript      |
+| ColdFusion          | *.cf                                                       | cf                |
+| Compass             | config.rb                                                  | compass           |
+| Composer            | composer.json, composer.phar                               | composer          |
+| CommitLint          | .*.commitlintrc.(js,json,yaml)                             | commitlint        |
+| CommitLint Config   | commitlint.config.js                                       | commitlint        |
+| Cordova             | cordova, cordova.json                                      | cordova           |
+| Credits             | CREDITS*, credits*                                         | credits           |
+| Crystal             | *.cr, *.ecr                                                | crystal           |
+| CSS                 | *.css                                                      | css               |
+| CSS Map             | *.css.map                                                  | cssmap            |
+| CSV                 | *.csv, *.tsv                                               | csv               |
+| C++                 | *.cpp, *.cc, *.cp, *.ii, *.mii, *.cxx                      | cpp               |
+| CSharp              | *.cs, *.csx                                                | csharp            |
+| Cucumber            | *.feature.rb                                               | cucumber          |
+| Cython              | *.pyx, *.pxd                                               | cython            |
+| Cypress             | cypress.json                                               | cypress           |
+| Dart                | *.dart                                                     | dart              |
+| DB                  | *.db, *.ddl                                                | db                |
+| D                   | *.d                                                        | dlang             |
+| Delphi              | *.delphi                                                   | delphi            |
+| Diff                | *.diff                                                     | diff              |
+| Django              | *.flake8, *.djt                                            | django            |
+| DLL                 | *.dll, *.dlc                                               | dylib             |
+| Do                  | *.do                                                       | tomcat            |
+| Docker              | .*dockerfile, Dockerfile, .dockerignore                    | docker            |
+| Docker Compose      | docker-compose.(yml,yaml)                                  | docker            |
+| DotJS               | *.def, *.dot, *.jst                                        | dotjs             |
+| DotNET              | *.xaml, *.csproj, *.vb                                     | dotnet            |
+| Doxygen             | doxyfile, Doxyfile                                         | doxygen           |
+| Drupal              | *.drupal                                                   | drupal            |
+| Dylib               | *.dylib                                                    | dylib             |
+| Eclipse             | *.eclipse, *.eclipseconfig                                 | eclipse           |
+| EditorConfig        | .editorconfig                                              | editorconfig      |
+| Edge                | *.edge                                                     | adonis            |
+| Eiffel              | *.e                                                        | eiffel            |
+| Emacs               | .emacs.*                                                   | emacs             |
+| Emacs Lisp          | *.el, *.elc                                                | emacs             |
+| Ember               | .ember-cli, .ember.json                                    | ember             |
+| EJS                 | *.ejs                                                      | ejs               |
+| Elixir              | *.ex, *.exs, *.elixir, *.eex, *.leex                       | elixir            |
+| Elm                 | *.elm                                                      | elm               |
+| ERB                 | *.erb, *.ru                                                | erb               |
+| Erlang              | *.erc, *.erl, *.erlang                                     | erlang            |
+| ESLint              | .eslintrc, .eslintrc.json, .eslintrc.yml                   | eslint            |
+| Excel               | *.(xls,xlsx,xlm,xlt,xlsb,odx)                              | excel             |
+| Favicon             | favicon.ico, favicon.png, favicon.jpg                      | favicon           |
+| Finder              | ._MACOSX                                                   | finder            |
+| Firebase            | .firebaserc, firebase.json                                 | firebase          |
+| Fortran             | *.f77, *.f90                                               | fortran           |
+| Flash               | *.swf, *.flash                                             | flash             |
+| Flow                | *.flow, *.flowconfig                                       | flow              |
+| FreeMarker          | *.ftl, *.freemarker                                        | freemarker        |
+| FSharp              | *.fs, *.fsi, *.fsx, *.fsproj                               | fsharp            |
+| Gatsby              | gatsby.*.js                                                | gatsby            |
+| GhostScript         | *.ghostscript                                              | ghostscript       |
+| Gemfile             | Gemfile.lock, Gemfile                                      | gemfile           |
+| Git                 | .git, .gitignore                                           | git               |
+| GitLab              | .gitlab-ci.yml                                             | gitlab            |
+| Go                  | *.go, *.gohtml                                             | go                |
+| Godot               | *.gd                                                       | godot             |
+| Gradle              | *.gradle, gradlew                                          | gradle            |
+| GraphCool           | *.graphcool                                                | graphcool         |
+| GraphQL             | *.gql, *.graphql                                           | graphql           |
+| GraphQL Config      | *.graphqlconfig                                            | graphql           |
+| Graphviz            | *.dot, *.graphviz                                          | graphviz          |
+| Gridsome            | gridsome.config.js, gridsome.server.js                     | gridsome          |
+| Groovy              | *.groovy, *.gy, *.gdsl                                     | groovy            |
+| Grunt               | gruntfile.(js,ts), Gruntfile.*                             | gruntfile         |
+| Gulp                | gulpfile.(js,ts), Gulpfile.*                               | gulpfile          |
+| H                   | *.h, *.objh, *.hpp, *.tcc, *.hh, *.hp, *.hxx               | hh                |
+| Hack                | *.hhconfig, *.hh                                           | hack              |
+| Haml                | *.haml                                                     | haml              |
+| HashiCorp           | *.hcl                                                      | hcl               |
+| Haskell             | *.haskell, *.hs                                            | haskell           |
+| Haxe                | *.haxe, *.hx                                               | haxe              |
+| Helm                | *.helm, *.helmignore                                       | helm              |
+| Heroku              | Procfile, Procfile.windows, .slugignore                    | heroku            |
+| History             | history.*                                                  | history           |
+| Houdini             | *.vfl, *.hip, *.pic, *.geo                                 | houdini           |
+| HTAccess            | .htaccess, .htpasswd                                       | htaccess          |
+| HTML                | *.html, *.htm                                              | html              |
+| HTTP                | *.http, *.rest                                             | http              |
+| Husky               | .huskyrc.(js,json)                                         | husky             |
+| i18n                | *.pot, *.po, *.mo                                          | i18n              |
+| IDEA                | *.iml, *.icls                                              | idea              |
+| Idris               | *.idr, *.idris                                             | idris             |
+| InDesign            | *.id, *.indl, *.indt, *.indb                               | indesign          |
+| IO                  | *.io                                                       | io                |
+| Ionic               | *.ionic.config                                             | ionic             |
+| Istanbul            | .nycrc, .nycrc.json                                        | istanbul          |
+| J                   | *.ijs                                                      | j                 |
+| Jade/Pug            | *.jade, *.pug                                              | pug               |
+| Jekyll              | _config.yml                                                | jekyll            |
+| Jenkins             | jenkinsfile, Jenkinsfile.(js,json,yml)                     | jenkins           |
+| Jest                | jest.config, jest.setup, jest.teardown                     | jest              |
+| Jestrc              | .jestrc, .jestrc.(js,json,ts,yml)                          | jest              |
+| Jinja               | *.jinja, *.jinja2, *.j2, *.jnj2                            | jinja             |
+| Joomla              | *.smarty                                                   | joomla            |
+| JQuery              | jquery.js, jquery.min.js                                   | jquery            |
+| JS Map              | *.js.map                                                   | jsmap             |
+| JSP                 | *.jsp, *.jsf, *.jspx                                       | jsp               |
+| Julia               | *.julia, *.jl                                              | julia             |
+| Jupyter             | *.ipynb                                                    | jupyter           |
+| Karma               | karma.conf.js, karma.conf.ts                               | karma             |
+| Key                 | *.key, *.pem, *.gpg, *.pub                                 | key               |
+| Kivy                | *.kv                                                       | kivy              |
+| KL                  | *.kl                                                       | kl                |
+| Knockout            | *.knockout, *.ko                                           | knockout          |
+| Kotlin              | *.kt, *.kts, *.kotlin                                      | kotlin            |
+| Lerna               | lerna.json                                                 | lerna             |
+| Less                | *.less                                                     | less              |
+| Lib                 | *.lib, *.bib, *.s                                          | lib               |
+| License             | LICENSE, LICENSE.md, LICENSE, LICENSE.md                   | license           |
+| Lint Staged         | .lintstagedrc.(json,yml)                                   | lint-staged       |
+| Lint Staged Config  | lint-staged.config.js                                      | lint-staged       |
+| LiveScript          | *.ls                                                       | livescript        |
+| Liquid              | *.liquid                                                   | liquid            |
+| Lisp                | *.lisp                                                     | lisp              |
+| Log                 | *.log, *.log.0, *.log.txt...                               | log               |
+| LSL                 | *.lsl                                                      | lsl               |
+| Lua                 | *.lua                                                      | lua               |
+| Magento             | *.mage                                                     | magento           |
+| Makefile            | *.makefile, Makefile                                       | makefile          |
+| Manpage             | *.man, *.man1, *.man8                                      | manpage           |
+| MarkoJS             | *.marko                                                    | marko             |
+| Manifest            | manifest.json                                              | manifest          |
+| Markdown            | *.md, *.markdown, *.mson                                   | markdown          |
+| Markup              | *.shtml, *.dhtml, *.dtd                                    | markup            |
+| Mathematica         | *.nb, *.ma, *.mb, *.cdf                                    | mathematica       |
+| Matlab              | *.matlab                                                   | matlab            |
+| Maven               | pom.xml                                                    | maven             |
+| Maya                | *.maya, *.mel                                              | maya              |
+| MDX                 | *.mdx                                                      | mdx               |
+| Mercurial           | *.hg                                                       | mercurial         |
+| Merlin              | *.merlin                                                   | merlin            |
+| Meteor              | *.meteor                                                   | meteor            |
+| Mint                | *.mint                                                     | mint              |
+| MJML                | *.mjml                                                     | mjml              |
+| Mocha               | mocha.opts, .mocharc, .mocha.(js,json,yml)                 | mocha             |
+| Mongodb             | *.mongodb, *.bson                                          | mongodb           |
+| MoonScript          | *.moon                                                     | moonscript        |
+| Mustache            | *.mustache, *.handlebars, *.hbs, *.hamlbars                | mustache          |
+| MXML                | *.mxml                                                     | mxml              |
+| Nest                | nest-cli.json                                              | nest              |
+| Nest Config         | .nestconfig.json                                           | nest              |
+| Netlify             | netlify.toml, _headers, _redirects                         | netlify           |
+| nginx               | *.nginx, *.conf                                            | nginx             |
+| Nib                 | *.nib                                                      | nib               |
+| Nimble              | *.nim, *.nimble                                            | nim               |
+| Node                | server.(js,es6,ts), app.(js,es6,ts)                        | nodejs            |
+| Nodemon             | .nodemon                                                   | nodemon           |
+| Note                | *.scratch, *.note                                          | note              |
+| Now                 | now.json, .nowignore                                       | now               |
+| NPM                 | package.json, package-lock.json                            | npm               |
+| NPMFiles            | .npmignore, .npmrc                                         | npm               |
+| NSIS                | *.nsi, *.nsis                                              | nsis              |
+| NVM                 | .nvmrc, *.esmrc                                            | nodejs            |
+| Nuclide             | *.nuclide                                                  | nuclide           |
+| NuGet               | *.nuspec                                                   | nuget             |
+| Nunjucks            | *.njk, *.nunjucks                                          | nunjucks          |
+| Nuxt                | *.nuxt.config.(js,ts)                                      | nuxt              |
+| Objective C         | *.m, *.mm                                                  | objc              |
+| OCaml               | *.(ocaml,ml,mli,cmx,ocamllex,ocamlyacc)                    | ocaml             |
+| OneNote             | *.onenote, *.one                                           | onenote           |
+| OpenOffice          | *.odf, *.ods                                               | openoffice        |
+| Pascal              | *.pas, *.pascal                                            | pascal            |
+| Patch               | *.patch, *.meld                                            | patch             |
+| PDF                 | *.pdf                                                      | pdf               |
+| Perl                | *.perl, *.pl, *.pm                                         | perl              |
+| Perforce            | .p4ignore                                                  | perforce          |
+| Phalcon             | *.volt                                                     | phalcon           |
+| Photoshop           | *.psb, *.psd                                               | photoshop         |
+| PHPUnit             | *test.php, *Test.php                                       | phpunit           |
+| PHTML               | *.phtml                                                    | phtml             |
+| Pipfile             | Pipfile, Pipfile.lock                                      | pipfile           |
+| Play                | *.play                                                     | play              |
+| PList               | *.plist                                                    | plist             |
+| PNPM                | pnpm-lock.yaml, pnpm-workspace.yaml, pnpm-debug.yaml       | pnpm              |
+| Pnpmfile            | pnpmfile.js                                                | pnpm              |
+| PostCSS             | *.pcss, *.postcss, *.sss                                   | postcss           |
+| PostCSS Config      | .postcssrc, postcss.config.(js,json)                       | postcss           |
+| PostHTML            | .posthtmlrc, posthtml.config.(js,json,yml)                 | posthtml          |
+| Polymer             | polymer.json                                               | polymer           |
+| PostScript          | *.ps, *.eps                                                | postscript        |
+| Powerpoint          | *.(ppt, pptx, pps, ppsx, pot, potx, ppa, ppam)             | powerpoint        |
+| PowerShell          | *.(powershell, ps1, psd1, psc1, pssc, cmd)                 | powershell        |
+| Adobe Premiere      | *.prel, *.prproj, *.psq                                    | premiere          |
+| Prettier            | .prettierrc, prettier.config.(js,json, yml)                | prettier          |
+| Prettier Config     | .prettier.js, .prettier.json                               | prettier          |
+| Prisma              | prisma.yml                                                 | prisma            |
+| Processing          | *.pde                                                      | processing        |
+| Procfile            | procfile, Procfile, Procfile.windows                       | heroku            |
+| Prolog              | *.pro, *.prolog                                            | prolog            |
+| Properties          | *.properties                                               | properties        |
+| Protractor          | protractor.js, protractor.json                             | protractor        |
+| Puppet              | *.pp, *.puppet, *.epp                                      | puppet            |
+| PureScript          | *.purescript, *.purs, *.pure                               | purescript        |
+| R                   | *.r, *.rmd                                                 | r                 |
+| Racket              | *.rkt                                                      | racket            |
+| Raml                | *.raml                                                     | raml              |
+| Rails               | rails                                                      | rails             |
+| Rake                | rake, *.rake, Rakefile                                     | rake              |
+| Razor               | *.cshtml, *.vbhtml                                         | razor             |
+| RDoc                | *.rdoc                                                     | rdoc              |
+| React               | .react-cli                                                 | react             |
+| ReasonML            | *.rei                                                      | reason            |
+| Red                 | *.red                                                      | red               |
+| Redis               | redis, redis.yml, redis.rb                                 | redis             |
+| Redux Action        | *.action.js, *Actions.ts...                                | redux-action      |
+| Redux Reducer       | *.reducer.js, *Reducer.ts...                               | redux-reducer     |
+| Redux Store         | *.store.js, *Store.ts...                                   | redux-store       |
+| RestQL              | *.rql, *.restql                                            | restql            |
+| Riot                | *.riot, *.tag                                              | riot              |
+| Robot               | *.robot                                                    | robot             |
+| Rollup              | rollup.json, rollup.yml                                    | rollup            |
+| Routing             | routing.(js,jsx,ts,tsx), routes.(js,jsx,ts,tsx)            | routing           |
+| RSpec               | *_spec.rb, *.rspec                                         | rspec             |
+| Rubocop             | .rubocop.yml                                               | rubocop           |
+| Ruby Gemset         | .ruby-gemset                                               | gemfile           |
+| Ruby Version        | .ruby-version                                              | ruby              |
+| Rust                | *.rs, *.rust                                               | rust              |
+| RVM                 | .rvmrc                                                     | ruby              |
+| San                 | *.san                                                      | san               |
+| Sapper              | sapper.js                                                  | sapper            |
+| SASS                | *.sass, *.scss                                             | scss              |
+| SBT                 | *.sbt                                                      | sbt               |
+| Scala               | *.scala                                                    | scala             |
+| Scheme              | *.scheme, *.scm                                            | scheme            |
+| Settings            | *.settings?, *.options?, *.opts?                                                 | settings          |
+| Semantic Release    | *.releaserc.(js,json,yaml)                                 | semantic-release  |
+|                     | release.config.js                                          |                   |
+| Sequelize           | .sequelizerc                                               | sequelize         |
+| Shell               | *.sh, *.zsh, *.fish, *.bash, *.tcsh                        | shell             |
+|                     | .bashrc, .zshrc, .fishrc                                   |                   |
+| SilverStripe        | *.ss                                                       | silverstripe      |
+| Sketch              | *.sketch                                                   | sketch            |
+| Slim                | *.slim                                                     | slim              |
+| Slugignore          | .slugignore                                                | heroku            |
+| Smarty              | *.tpl                                                      | smarty            |
+| Snapshot            | *.snap                                                     | snapshot          |
+| Solidity            | *.sol                                                      | solidity          |
+| Sonar               | .sonarrc                                                   | sonar             |
+| Spring              | *.spring                                                   | spring            |
+| SQL                 | *.(sql,pgsql,mysql,hql,psql,pkb)                       | sql               |
+| SQLite              | *.sqlite, *.sqlite3                                        | sqlite            |
+| Stata               | *.stata                                                    | stata             |
+| Stencil             | stencil.config.js, stencil.config.ts                       | stencil           |
+| Storybook           | *.story.(js,ts), *.stories.(jsx,tsx)                       | storybook         |
+| Stylelint           | .stylelintrc, stylelint.config.(js,json)                   | stylelint         |
+| Stylus              | *.styl                                                     | stylus            |
+| Sublime             | *.sublime, *.sublime-package, *.sublime-workspace          | sublime           |
+| SuperCollider       | *.scd                                                      | scd               |
+| Svelte              | *.svelte, svelte.config.(js,json)                          | svelte            |
+| SVN                 | .svn                                                       | svn               |
+| Swagger             | *.swagger, *.swag                                          | swagger           |
+| Swagger Config      | swagger.yml, swagger.json, api.yml, api.json               | swagger           |
+| SWC                 | *.swc                                                      | swc               |
+| Swift               | *.swift                                                    | swift             |
+| Swig                | *.swig                                                     | swig              |
+| Symfony             | symfony.yml, symfony.json, symfony.php                     | symfony           |
+| TailwindCSS         | tailwind.(.*).(js,ts)                                      | tailwindcss       |
+| TCL                 | *.tcl                                                      | tcl               |
+| Terraform           | *.tf, *.tfstate, *.tfvars                                  | terraform         |
+| Tern                | .ternconfig, .tern-config, .tern-project                   | tern              |
+| Test Java           | *test.java, *Test.java                                     | testjava          |
+| Test JS             | *.test.(js,es6), *.spec.(js,es6)                           | testjs            |
+| Test React          | *.test.(jsx,tsx), *.spec.(jsx,tsx)                         | testreact         |
+| Test Python         | *.test.py, *.spec.py                                       | testpy            |
+| Test Ruby           | *_test.rb, *_spec.rb                                       | testruby          |
+| Test Typescript     | *.test.(ts,tsx), *.spec.(ts,tsx)                           | testts            |
+| TeX                 | *.tex, *.cls, *.sty, *.dtx, *.ltx                          | tex               |
+| Textile             | *.textile                                                  | textile           |
+| Textmate            | *.tmPreferences, *.tmTheme, *.tmLanguage                   | textmate          |
+| Tomcat              | tomcat.properties, tomcat.ini                              | tomcat            |
+| TODO                | TODO, TODO.md, TODO.txt                                    | todo              |
+| TOML                | *.toml                                                     | toml              |
+| Travis              | *.travis.yml                                               | travis            |
+| TSConfig            | tsconfig.(js,json), .tsconfig.json                         | tslint            |
+| TSLint              | tslint.(js,json), .tslint.json                             | tslint            |
+| Turing              | *.t                                                        | turing            |
+| Twig                | *.twig                                                     | twig              |
+| TypeScript Defs     | *.d.ts                                                     | dts               |
+| Typings             | typings.json                                               | typings           |
+| UML                 | *.(uml,iuml,puml,pu,plantuml,wsd)                          | uml               |
+| Unity               | *.unity, *.unity3d, *.fbx                                  | unity             |
+| Unreal              | *.(u,unr,utx,umx,uax,ukx,uz,uc,upkg,upl)                   | unreal            |
+|                     | *.(asc,lwo)                                                |                   |
+| V                   | *.v, *.vh                                                  | v                 |
+| Vagrant             | vagrantfile, Vagrantfile                                   | vagrant           |
+| Vala                | *.vala                                                     | vala              |
+| Velocity            | *.vm, *.vtl, *.fhtml                                       | velocity          |
+| Version             | VERSION, version                                           | version           |
+| VHDL                | *.vhd, *.vhdl, *.sv                                        | vhdl              |
+| Vim                 | *.(vim,viml,vimrc,gvimrc)                                  | vim               |
+| Visio               | *.visio                                                    | visio             |
+| Visual Studio       | *.vscode, *.vssetings, *.vsix, *.sln, *.suo                | vs                |
+| VM                  | *.vbox, *.vdi, *.vmware                                    | vm                |
+| Vue                 | *.vue                                                      | vue               |
+| Vuex                | *.vuex                                                     | vuex              |
+| Wallaby             | wallaby.config.js, wallaby.js                              | wallaby           |
+| WebAssembly         | *.wat, *.wasm                                              | webassembly       |
+| WebHint             | .hintrc                                                    | webhint           |
+| WePy                | *.wpy                                                      | wepy              |
+| WebP                | *.webp                                                     | image             |
+| Webpack             | webpack.config.(js,es,es6,coffee,ts)                       | webpack           |
+|                     | webpack.(common,dev,prod).js                               | webpack           |
+| Windows             | *.bat, *.exe, *.dos, *.ms, *.msi                           | windows           |
+| Word                | *.(doc,docx,dotm,dotx,wri)                                 | word              |
+|                     | *.(docxml,dotx,odt,odtx)                                   |                   |
+| Xamarin             | *.xamarin.config                                           | xamarin           |
+| XCode               | *.xcodeproj, *.xcplayground                                | appstore          |
+|                     | *.xcworkspacedata, *.storyboard                            |                   |
+| Yang                | *.yang                                                     | yang              |
+| Yarn                | .yarnrc, yarn.js, yarn.json                                | yarn              |
+| Yarn Lock           | yarn.lock                                                  | yarn              |
+| Yarn Clean          | .yarnclean                                                 | yarn              |
+| YVM                 | .yvmrc                                                     | yvm               |
+|                     |                                                            |                   |
+| Preferences         | *.ini, *.config, *.env, *.cfg, *.ld, *.lds                              | preferences       |
+| Envs                | *.env.(prod,dev,test...)                                   | preferences       |
+| Binary              | anything with no extension                                 | binary            |
+| Font                | *.(ttf,ttc,pfb,pfm,otf,dfont,pfa,afm)                      | font              |
+|                     | *.(eot,woff,woff2)                                         |                   |
+| Lockfiles           | *.lock                                                     | lock              |
+| XML                 | *.(xml,xhtml,fxml,jrxml,jnlp,pom,rng,tld)                  | xml               |
+|                     | *.(wsdl,xsd,xsl,xslt,xul)                                  |                   |
+| YAML                | *.(yml,yaml,info)                                          | yaml              |
+| Archive             | *.(7z,7zip,gzip,zip,rar,tar,gz,pzip,saz,tgz,bz2,xar,egg,sit)               | archive           |
+| Audio               | *.(mp3,aac,aiff,au,flac,m4a,mpc,mp+,mpp)                   | audio             |
+|                     | *.(ogg,oga,opus,ra,rm,wav,wma,snd,mid,cda)                 |                   |
+| Video               | *.(avi,mp4,mpg,mpeg,mov,mkv,flv,h264,webm)                 | video             |
+|                     | *.(wmv,ogv,3gp,m4v,3gpp,ogm,dvd,divx,qt,yuv)               |                   |
+| Text                | *.txt, *.rtf                                               | text              |
+| JS Minified         | *.min.(js,es,es6,jsx,ts)                                   | jsmin             |
+| Java                | *.java, *.jar, *.war                                       | java              |
+| JSX                 | *.jsx, *.tsx                                               | jsx               |
+| TypeScript          | *.ts, *.tsx, *.tslint                                      | typeScript        |
+| JavaScript          | *.js, *.es6, *.es, *.mjs                                   | js                |
+| Python              | *.py, *.python, *.pyc, *.whl                               | python            |
+| Ruby                | *.rb                                                       | ruby              |
+| PHP                 | *.php, *,phps                                              | php               |
+| JSON                | *.json, *.cson                                             | json              |
+|                     |                                                            |                   |
