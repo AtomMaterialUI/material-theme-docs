@@ -9,10 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-          uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+      - uses: actions/checkout@v2
+
+      - name: Build Jekyll site.
+        uses: meitar/jekyll-builder-for-github-pages-action@v1
+        with:
+          secret_gh_pages_api_token: ${{ secrets.GITHUB_TOKEN }}
+          pre_build_commands: |
+            npm install
