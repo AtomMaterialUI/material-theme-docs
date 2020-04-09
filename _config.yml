@@ -1,7 +1,7 @@
 full_rebuild: true
 incremental: true
 source: "."
-destination: "./jekyllbuild"
+destination: "./build"
 name: Material Theme UI Documentation
 description: |
   The Material Theme plugin is a plugin for JetBrains IDEs (IntelliJ, PhpStorm, WebStorm, Android Studio, etc...) which completely redesigns
