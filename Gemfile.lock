@@ -18,7 +18,7 @@ GEM
     awesome_print (1.8.0)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
-    ffi (1.9.18)
+    ffi (1.12.2)
     filesize (0.1.1)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
