@@ -14,6 +14,6 @@ jobs:
       - name: Build Jekyll site.
         uses: meitar/jekyll-builder-for-github-pages-action@v1
         with:
-          secret_gh_pages_api_token: ${{ secrets.GITHUB_TOKEN }}
+          secret_gh_pages_api_token: ${{ secrets.ACCESS_TOKEN }}
           pre_build_commands: |
             npm install
