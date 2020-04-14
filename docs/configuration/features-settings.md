@@ -102,27 +102,7 @@ not, you can download it here: https://material.io/guidelines/resources/roboto-n
 {:class='card-panel'}
 
 ----
-### Material Theme
 
-**NOTE**: This feature has been disabled at the moment, since it's very hard to use Darcula/Light/Custom themes
-alongside the Material Theme. If you wish to use Darcula/Light/Custom Theme, please disable the plugin or use the [Material Theme Lite](https://plugins.jetbrains.com/plugin/12124-material-theme-ui-lite)
-{:class='card-panel warn'}
-
-This option simply disables the Material Theme Styling, e.g. leave components and icons intact but revert to the
-original Darcula/IntelliJ Look And Feel.
-
-{% include figure.html content="/screens/themeDisabled.png" caption="Material Theme Disabled" %}
-
-**Note**: The IDE will revert back to the most appropriated Look And Feel, e.g. if you were on Material Oceanic or
-Darker, you will revert back to **Darcula**. If you were on Material Lighter, you will be reverted to **IntelliJ**.
-
-**Note 2**: Some of the features depend on this setting to work, therefore disabling this will result to disabling those
-features as well. These are:
-- _Themes and Custom Themes_: You won't be able to switch themes (obviously)
-- _Contrast Mode_: There is no contrast mode for native themes
-Also, the experience will not be exactly the same as without the plugin.
-
-----
 ### Material File Status Colors
 
 This option enables Material File Status Colors, allowing customization of the file status colors from Color Schemes.
@@ -148,7 +128,18 @@ This is done thanks to the [Background Image feature](https://www.jetbrains.com/
 Attention: This setting will override any custom background image that you may have set!
 {:class='card-panel warn'}
 
-This feature is available since version 5.0.
+This feature is available since version 5.0.0
+
+-----
+
+### Project Frame Colors
+
+This feature has been inspired by the Visual Studio Code plugin [Unique Window Colors](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors).
+Its concept is to provide a better visualization of your opened projects by adding a colored stripe on top of each window, with an unique color automatically generated from the **project name**!
+
+{% include figure.html content="/screens/projectFrame.png" caption="Project Frame Colors" %}
+
+This feature is available since version 5.2.0
 
 -----
 ## FAQ/Troubleshooting

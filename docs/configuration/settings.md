@@ -146,13 +146,13 @@ Quick summary of all settings:
 - *Compact Dropdown Lists*: Reduce the size of the dropdowns
 - *Compact Menus*: Reduce the size of the menus
 
-**[Icons Settings](/docs/configuration/icons-settings)**:
-- *Material UI Icons*: Enable/Disable the Material UI icons
-- *Hide Icons*: Hide file icons (depends on the Material Icons option)
-- *Monochrome Icons*: Filter the IDE icons with a shade of the current theme's primary color
-- *File Icons*: Enable/Disable the Custom File Icons
-- *Folder decorators*: Decorate special folders with custom icons.
-- *PSI Icons*: Replace PSI Icons (class, interface, etc)
+> **[Icons Settings](/docs/configuration/icons-settings)**:
+> - *Material UI Icons*: Enable/Disable the Material UI icons
+> - *Hide Icons*: Hide file icons (depends on the Material Icons option)
+> - *Monochrome Icons*: Filter the IDE icons with a shade of the current theme's primary color
+> - *File Icons*: Enable/Disable the Custom File Icons
+> - *Folder decorators*: Decorate special folders with custom icons.
+> - *PSI Icons*: Replace PSI Icons (class, interface, etc)
 
 **NOTE**: Since 5.0, The Icons Settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
 {:class='card-panel warn'}
@@ -160,12 +160,12 @@ Quick summary of all settings:
 **[Project View Settings](/docs/configuration/project-view-settings)**:
 - *Custom Sidebar Height*: Set a custom line height in Project View (min: 18, max: 30)
 - *Custom Tree Indent*: Fine tune indent of Project View items (both left and right indent)
-- *Arrows Style*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** - Change the style of the arrows in trees. Choices:
-  - *Material*: Chevron arrows
-  - *Darcula*: Triangle arrows
-  - *Plus-Minus*: Plus and Minus symbols
-  - *Arrows*: Regular arrows
-  - *None*: Hide the arrows
+> - *Arrows Style*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** - Change the style of the arrows in trees. Choices:
+>  - *Material*: Chevron arrows
+>  - *Darcula*: Triangle arrows
+>  - *Plus-Minus*: Plus and Minus symbols
+>  - *Arrows*: Regular arrows
+>  - *None*: Hide the arrows
 - *Selected Indicator Style*: Change the style of the indicator of the selected item in trees
   - *Border*: Add a small border to the left
   - *Dot*: Add a dot on the selected item
@@ -183,14 +183,15 @@ Quick summary of all settings:
 **[Features Settings](/docs/configuration/features-settings)**:
 - *Material Fonts*: Enable/Disable Material fonts (Roboto)
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors)
+- *Material Wallpapers*: Add a custom wallpaper per theme for the empty frame window.
+- *Project Frame Colors*: Add a colored stripe on the top of each window for easier differentiation
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
-- *Hollow Folders*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** Enable/Disable the Hollow Folders in Project View.
-* *Theme in Statusbar*: Show the currently selected theme in the statusbar.
+> - *Hollow Folders*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** Enable/Disable the Hollow Folders in Project View.
+- *Theme in Statusbar*: Show the currently selected theme in the statusbar.
 - *Colored Open Directories*: Colorize open directories with the accent color
 - *Themed Title Bar*: Colorize the title bar of the whole OS with the current theme's background color (Mac-Windows only)
 - *Language Additions*: Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
-- *Material Wallpapers*: Add a custom wallpaper per theme for the empty frame window.
 
 #### Settings shortcuts
 
@@ -320,6 +321,10 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="upperCaseTabs" value="false" />
   <!-- Material fonts enabled -->
   <option name="useMaterialFont2" value="false" />
+  <!-- Material wallpapers enabled -->
+  <option name="useMaterialWallpapers" value="false" />
+  <!-- Project Frame Colors enabled -->
+  <option name="useProjectFrame" value="true" />
 </component>
 
 ```
