@@ -95,10 +95,10 @@ The Material Theme is so famous that it exists for many other IDEs, editors, app
 Check out my other projects:
 - [Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) - A previewer for small images and svgs directly in the Project View
 - [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) - A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
-- [Slack One Dark Theme](https://github.com/mallowigi/slack-one-dark-theme) - A One Dark theme for Slack
 - [Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) - Proof of concept for defining custom keywords highlighting.
 - [Material Theme for DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) - Port of the Material Theme in Chrome DevTools.
 - [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
+- [Atom File Icons for Web](https://drive.google.com/open?id=1UPjEXYVgdmv-ycvs8dC60IDE_Fztv9lv) - Porting of the Atom File Icons to GitHub and BitBucket
 
 
 #### Plugins and references
