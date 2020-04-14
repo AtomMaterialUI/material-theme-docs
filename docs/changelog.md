@@ -16,6 +16,27 @@ next:
 # Changelog
 ----
 
+# 5.2.0
+- New Feature: **Project Frame Color**: Add a colored stripe on top of each project for easier visualization. _Inspired by [Unique Window Colors for VSCode](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors)._
+- Fix Loading and Saving Custom Themes
+- **New**: The active tab color is now taken from the **color scheme** if the "Active Tab Color" is not enabled.
+- Add new actions to toggle Material Wallpapers and Project Frame Colors
+- Add new action to download the *Atom Material Icons* Plugin.
+- Fix Material Oceanic scrollbars color.
+- The Material Status Bar indicator is now togglable just like other Status Bar indicators.
+- Other fixes and improvements
+
+# 5.1.3
+- Fix Saving custom theme
+
+# 5.1.0
+- Refactor file status colors to not modify Darcula, therefore cleaning up after uninstall
+- Make the floating toolbars rounder and using the theme colors
+- Fix Theme not being persisted after restart
+- Add more visibility to the Atom Material Icons plugin
+- Add support for Rainbow Brackets, GitToolbox and Markdown Viewer in color schemes
+- Other fixes and improvements
+
 # 5.0.0
 - Built-in support for **native themes**! Supports Light, Darcula, High Contrast and user-defined themes!
     - Please note that this is a feature in its first steps, so please report any bugs you can find!

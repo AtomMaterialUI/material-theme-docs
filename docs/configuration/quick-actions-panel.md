@@ -62,7 +62,6 @@ This panel allows you to quickly toggle some of the most used Panel Settings:
 - _Toggle Monochrome Icons_
 - _Toggle Compact Status Bar_
 - _Toggle Uppercase Tabs_
-- _Arrow styles_
 - _Indicator Styles_
 - _Tab Highlight Position_
 
@@ -87,22 +86,17 @@ Note that these actions are one-time only and the accent color can be changed in
 
 ## Component Settings
 
-This panel as well allows you to rapidly toggle the most used Component Settings:
-- _Toggle Material Components_
-- _Toggle Material Icons_
-- _Toggle Material File Icons_
-- _Toggle Material PSI Icons_
+This panel as well allows you to rapidly toggle the most used Component/Features Settings:
 - _Toggle Material Fonts_
-- _Toggle Hollow Folders_
 - _Toggle Open Colored Directories_
 - _Toggle Status Bar Indicator_
+- _Toggle Material Wallpapers_
+- _Toggle Project Frame_
 - _Toggle Themed Title Bar_
 
 In addition, other one-time actions are available in this panel, which are:
 - _Material Theme Wizard_: Relaunch the Material Theme Wizard
-- _Install Material Wallpaper_: Set the
-  [IDE Background Image](https://www.jetbrains.com/help/idea/setting-background-image.html) to the one from the
-  repository.
+- _Atom Material Icons_: Open the **Atom Material Icons Plugin** page for installation.
 - _Remove Material Wallpaper_: Remove the [IDE Background Image](https://www.jetbrains.com/help/idea/setting-background-image.html).
 
 {% include figure.html content="/screens/customWallpaper.png" caption="Material Wallpaper" %}
