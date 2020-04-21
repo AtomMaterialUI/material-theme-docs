@@ -1,3 +1,4 @@
+
 ---
 layout: docs
 title: Additions
@@ -39,6 +40,7 @@ Currently the only supported languages are:
 - **TypeScript**
 - **Java**
 - **PHP**
+- **Kotlin**
 
 More will come in the future.
 
@@ -52,11 +54,14 @@ The following keywords are customizable:
 - `console`
 - `var`, `let`, `const`
 - `function`
+- `true`, `false`
 
 ### TypeScript
 
 TypeScript augments JavaScript additions with the following keywords:
 - `private`, `public`, `protected`
+- `declare`
+- `type`, `alias`
 
 ### Java
 
@@ -73,8 +78,24 @@ The following keywords are customizable:
 - `$this` and `self`
 - `function`
 - `private`, `public` and `protected`
-- `static` and `final`
-- `use` and `namespace`
+- `static`, `final`
+- `use`, `namespace`
+- `true`, `false`
+- `echo`
+- `exit`, `die`
+
+### Kotlin (since 5.3)
+
+The following keywords are customizable
+- `import`, `package`
+- `object`, `companion`
+- `operator`, `infix`
+- `data`
+- `private`, `public`, `protected`, `internal`
+- `sealed`, `override`, `open`
+- `this`, `super`
+- `null`, `Unit`
+- `true`, `false`
 
 ----
 

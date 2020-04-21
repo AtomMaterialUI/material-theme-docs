@@ -27,7 +27,7 @@ This setting controls the appearance of the little indicator under the current h
 
 {% include figure.html content="/screens/tabs.png" caption="Active Tab Indicator" %}
 
-- When the setting is **OFF**, the indicator color will be the [current accent color](/docs/configuration/accents).
+- When the setting is **OFF**, the indicator color will be either defined by the color scheme (from the `TAB_UNDERLINE` property), or the [current accent color](/docs/configuration/accents).
 - When the setting is **ON**, you can select your own custom color.
 
 
