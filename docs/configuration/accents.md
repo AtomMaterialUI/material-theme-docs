@@ -55,6 +55,8 @@ gallery:
       alttext: Search Term in Lists
     - filename: accents/branchNames.png
       alttext: Branch names in VCS Log
+    - filename: accents/runningIndicator.png
+      alttext: Running Indicator in Run Configurations
 ---
 
 This section describes the **Accent Colors** feature and how is it used by the plugin.
@@ -98,6 +100,7 @@ Here is a non-exhaustive list of components where accent color is used:
 - Navigation Bar Focused Item
 - Search terms in lists
 - Accent Mode color
+- Running Indicator in Run configurations
 
 ### IMPORTANT NOTE
 
