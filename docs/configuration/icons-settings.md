@@ -36,6 +36,9 @@ The plugin can be installed the same way the Material Theme can be installed, bu
 
 The UI is a bit different than the Material Theme UI, but provides the same functionality nonetheless. This operation has been done to decouple the Material Theme plugin from the _UI Icons_ feature, therefore allowing to use different *Icon Themes* from other authors alongside the Material Theme UI, and in the same time gives the ability to use the icons independently of the UI themes.
 
+Note: This plugin has been recently ported to Google Chrome! Go take a look: [Atom File Icons Web](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
+{:class='card-panel'}
+
 ----
 ### Material UI Icons
 

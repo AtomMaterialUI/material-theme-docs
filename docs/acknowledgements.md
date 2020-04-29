@@ -40,13 +40,21 @@ to the users.
 
 The original creator of the JetBrains plugin. Thanks to his ingeniosity we finally had an alternative to the
 bland native themes that are Darcula and IntelliJ.
- He was curious enough to dig into the code in order to find the settings that let plugin developers control the
+
+He was curious enough to dig into the code in order to find the settings that let plugin developers control the
  theme colors and replace icons. I learnt a lot from him.
 
 
-##### Ihor Oleksandrov ([@ihodev](https://github.com/ihodev))
+##### Philipp Kief ([@PKief](https://github.com/PKief))
 
-<img class="avatar-img" src="https://avatars0.githubusercontent.com/u/9801624?s=460&v=4">
+<img class="avatar-img" src="https://avatars2.githubusercontent.com/u/12248527?s=460"/>
+
+The maintainer of the great [VSCode Material Icon Themes](https://github.com/PKief/vscode-material-icon-theme). It was his idea
+to not only customize the file icons, as the Atom File Icons devs already did, but to customize folders as well! Big up to him, as
+he is currently very active and accepts a lot of Pull Requests!
+
+
+##### Ihor Oleksandrov ([@ihodev](https://github.com/ihodev))
 
 The main creator of the [*a-file-icon*](https://github.com/ihodev/a-file-icon) plugin for Sublime, which replaces
 the original file icons to their logo counterparts, making them easier to differentiate and greatly improving
@@ -54,13 +62,16 @@ the visibility in projects.
 He created a whole lot of icons that the Material Theme Plugins are using, and provided an easy way to create
 new icons, thus allowing further customization of the Material Theme.
 
-##### Elior Boukhobza ([@mallowigi](https://github.com/mallowigi))
+He is now retired from the Open Source community but the Sublime Text Community took the reins of the project and are now
+actively managing it in his stead.
 
-<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/5015756?v=4&s=460">
 
-The current maintainer of the Material Theme UI plugin and for the documentation site as well.
-He is the guy who took the project as awesome as it is and made it much awesomer, with settings, custom components,
-custom themes, external themes and many other cool features.
+##### Atom File Icons Devs ([@file-icons](https://github.com/file-icons?type=source))
+
+<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/24852839?s=200&v=4"/>
+
+The actual creators behind the A-File-Icon plugin for Sublime. They created icons for a plethora of languages and frameworks,
+supporting even the most obscure languages. They are still very active and my inspiration for the constant icon additions.
 
 ----
 #### Other Editions
@@ -98,7 +109,7 @@ Check out my other projects:
 - [Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) - Proof of concept for defining custom keywords highlighting.
 - [Material Theme for DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) - Port of the Material Theme in Chrome DevTools.
 - [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
-- [Atom File Icons for Web](https://drive.google.com/open?id=1UPjEXYVgdmv-ycvs8dC60IDE_Fztv9lv) - Porting of the Atom File Icons to GitHub and BitBucket
+- [Atom File Icons for Web](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc) - Porting of the Atom File Icons to GitHub and BitBucket
 
 
 #### Plugins and references
@@ -173,6 +184,24 @@ Unfortunately it is a paid theme and is not available to JetBrains products, so 
 
 Not a reference but a very nice theme good for the eyes, a mix between Palenight and Deep Ocean themes :)
 
+##### Auto Dark Mode
+
+[Auto Dark Mode](https://github.com/weisJ/auto-dark-mode/) by Jannis Weis
+
+Wonderful plugin allowing you to change the current theme according to your OS's Dark Mode. You can specify which theme
+to apply for Light and Dark modes and ti will change automatically.
+
+{% include figure.html content="/screens/autodarkmode.png" caption="Auto Dark Mode" %}
+
+##### Color Highlighter
+
+[Color Highlighter](https://plugins.jetbrains.com/plugin/13309-color-highlighter) by me (Elior Boukhobza)
+
+Another plugin of mine, which consists in highlighting colors directly in the IDE. Supports many popular languages such as
+Python, PHP, Scala, Kotlin, Go, Swift, Ruby, Yaml or JSON.
+
+![Example](https://plugins.jetbrains.com/files/13309/screenshot_21619.png)
+
 ----
 #### Acknowledgements
 
@@ -189,7 +218,7 @@ Thanks also to
 [@gidivigo](https://twitter.com/gidivigo) for helping me with the documentation design.
 
 I also want to thank the guys at
-[Gridster Digitalmind](http://gridster.digitalmind.ch/) with their **Material Jekyll template** which was a solid base for
+[Gridster Digitalmind (RIP)](http://gridster.digitalmind.ch/) with their **Material Jekyll template** which was a solid base for
 the documentation design.
 
 Thanks also for the guys at [Materialize CSS](http://materializecss.com) for the CSS and Javascript used in
