@@ -47,7 +47,7 @@ The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.
 
 #### Material Themes
 
-These themes are based on the Sublime plugin's, made by Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
+These themes are based on the original themes, made by Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.material %}
