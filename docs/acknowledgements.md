@@ -191,7 +191,7 @@ Not a reference but a very nice theme good for the eyes, a mix between Palenight
 Wonderful plugin allowing you to change the current theme according to your OS's Dark Mode. You can specify which theme
 to apply for Light and Dark modes and ti will change automatically.
 
-{% include figure.html content="/screens/autodarkmode.png" caption="Auto Dark Mode" %}
+{% include figure.html content="/screens/autoDarkMode.png" caption="Auto Dark Mode" %}
 
 ##### Color Highlighter
 
