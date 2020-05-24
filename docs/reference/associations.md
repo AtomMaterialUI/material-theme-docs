@@ -134,7 +134,7 @@ Files are sorted by priority.
 |  [Bazel](#bazel) |  `.*\.(bzl\|bazel)$ ` |  &ast;.bzl<br>&ast;.bazel |  ![Bazel](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bazel.svg?sanitize=true) |
 |  [Bazel Config](#bazel-config) |  `(\.bazelrc\|bazel\.rc)$ ` |  .bazelrc<br>bazel.rc |  ![Bazel Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bazel.svg?sanitize=true) |
 |  [Bean](#bean) |  `.*([bB])ean\.java$ ` |  javaBean.java<br>javabean.java |  ![Bean](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bean.svg?sanitize=true) |
-|  [Behat](#behat) |  `.*\.feature(\.php)?$ ` |  &ast;.feature<br>&ast;.feature.php |  ![Behat](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/behat.svg?sanitize=true) |
+|  [Behat](#behat) |  `.*\.feature(\.php)$ ` |  &ast;.feature.php |  ![Behat](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/behat.svg?sanitize=true) |
 |  [Behat Config](#behat-config) |  `behat(\..*)*\.ya?ml$ ` |  behat.yml<br>behat.config.yml |  ![Behat Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/behat.svg?sanitize=true) |
 |  [BEM](#bem) |  `\.bemjson(\.js)?$ ` |  .bemjson<br>.bemjson.js |  ![BEM](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bem.svg?sanitize=true) |
 |  [BibTex](#bibtex) |  `.*\.(cbx\|bbx\|bib\|bst)$ ` |  &ast;.cbx<br>&ast;.bbx<br>&ast;.bib<br>&ast;.bst |  ![BibTex](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/bibtex.svg?sanitize=true) |
@@ -349,7 +349,8 @@ Files are sorted by priority.
 |  [Haskell](#haskell) |  `.*\.(haskell\|hs)$ ` |  &ast;.haskell<br>&ast;.hs |  ![Haskell](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haskell.svg?sanitize=true) |
 |  [Haskell Config](#haskell-config) |  `^haskellconfig\.json$ ` |  haskellconfig.json |  ![Haskell Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haskell.svg?sanitize=true) |
 |  [Haxe](#haxe) |  `.*\.(haxe\|hx)$ ` |  &ast;.haxe<br>&ast;.hx |  ![Haxe](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/haxe.svg?sanitize=true) |
-|  [Helm](#helm) |  `.*\.(helm\|helmignore) ` |  &ast;.helm<br>&ast;.helmignore |  ![Helm](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/helm.svg?sanitize=true) |
+|  [Helm](#helm) |  `.*\.(helm\|helmignore)$ ` |  &ast;.helm<br>&ast;.helmignore |  ![Helm](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/helm.svg?sanitize=true) |
+|  [Helm Charts](#helm-charts) |  `^(Chart\|values\|helmfile)\.ya?ml$ ` |  Chart.yaml<br>helmfile.yml<br>values.yaml |  ![Helm Charts](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/helm.svg?sanitize=true) |
 |  [Heroku](#heroku) |  `^([Pp]rocfile(\.windows)?\|\.slugignore)$ ` |  Procfile<br>Procfile.windows<br>.slugignore |  ![Heroku](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/heroku.svg?sanitize=true) |
 |  [History](#history) |  `history.*$ ` |  history<br>history.txt<br>historyfile |  ![History](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/history.svg?sanitize=true) |
 |  [Houdini](#houdini) |  `.*\.(vfl\|hip\|pic\|geo)$ ` |  &ast;.vfl<br>&ast;.hip<br>&ast;.pic<br>&ast;.geo |  ![Houdini](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/houdini.svg?sanitize=true) |
@@ -391,6 +392,7 @@ Files are sorted by priority.
 |  [Joomla](#joomla) |  `.*\.smarty$ ` |  &ast;.smarty |  ![Joomla](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/joomla.svg?sanitize=true) |
 |  [jQuery](#jquery) |  `^jquery.*\.([jt]s\|coffee\|es6)$ ` |  jquery.js<br>jquery.min.js<br>jquery.latest.js<br>jquery.slim.js |  ![jQuery](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jquery.svg?sanitize=true) |
 |  [JS Map](#js-map) |  `.*\.js\.map$ ` |  &ast;.js.map |  ![JS Map](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsmap.svg?sanitize=true) |
+|  [JS Config](#js-config) |  `\.?jsconfig.*\.(js\|json)$ ` |  jsconfig.js<br>jsconfig.json<br>.jsconfig.js<br>.jsconfig.json |  ![JS Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsconfig.svg?sanitize=true) |
 |  [JSON5](#json5) |  `.*\.json5$ ` |  &ast;.json5 |  ![JSON5](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/json5.svg?sanitize=true) |
 |  [JSON LD](#json-ld) |  `.*\.jsonld$ ` |  &ast;.jsonld |  ![JSON LD](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsonld.svg?sanitize=true) |
 |  [Jsonnet](#jsonnet) |  `.*\.(jsonnet\|libsonnet)$ ` |  &ast;.jsonnet<br>&ast;.libsonnet |  ![Jsonnet](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/jsonnet.svg?sanitize=true) |
@@ -413,6 +415,7 @@ Files are sorted by priority.
 |  [Knockout](#knockout) |  `^knockout(.*)\.js$ ` |  knockout.js<br>knockout.min.js |  ![Knockout](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/knockout.svg?sanitize=true) |
 |  [Kotlin](#kotlin) |  `.*\.(kt\|kts\|ktm\|kotlin)$ ` |  &ast;.kt<br>&ast;.kts<br>&ast;.ktm<br>&ast;.kotlin |  ![Kotlin](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kotlin.svg?sanitize=true) |
 |  [Kubernetes](#kubernetes) |  `^kubernetes.*\.ya?ml$ ` |  kubernetes.yml<br>kubernetes.dev.yaml |  ![Kubernetes](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kubernetes.svg?sanitize=true) |
+|  [Kubernetes Deployments](#kubernetes-deployments) |  `^(deployment\|configmap\|service)\.ya?ml$ ` |  kubernetes.yml<br>kubernetes.dev.yaml<br>deployment.yaml<br>service.yml<br>configmap.yaml |  ![Kubernetes Deployments](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kubernetes.svg?sanitize=true) |
 |  [Kazel Config](#kazel-config) |  `^\.?kazelcfg\.json$ ` |  kazelcfg.json<br>.kazelcfg.json |  ![Kazel Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/kubernetes.svg?sanitize=true) |
 |  [Lerna](#lerna) |  `^lerna\.json$ ` |  lerna.json |  ![Lerna](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/lerna.svg?sanitize=true) |
 |  [Less](#less) |  `.*\.less$ ` |  &ast;.less |  ![Less](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/less.svg?sanitize=true) |
@@ -589,7 +592,7 @@ Files are sorted by priority.
 |  [Tern Config](#tern-config) |  `^\.ternconfig$ ` |  .ternconfig |  ![Tern Config](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tern.svg?sanitize=true) |
 |  [Test Coffee](#test-coffee) |  `.*\.?(test\|spec)\.coffee$ ` |  &ast;.test.coffee<br>&ast;.spec.coffee |  ![Test Coffee](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testcoffee.svg?sanitize=true) |
 |  [Test Dart](#test-dart) |  `.*\.?(test\|spec)\.dart$ ` |  &ast;.test.dart<br>&ast;.spec.dart |  ![Test Dart](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testdart.svg?sanitize=true) |
-|  [Test Go](#test-go) |  `.*\.?(test\|spec)\.go$ ` |  &ast;.test.go<br>&ast;.spec.go |  ![Test Go](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testgo.svg?sanitize=true) |
+|  [Test Go](#test-go) |  `.*([._])(test\|spec)\.go$ ` |  &ast;.test.go<br>&ast;.spec.go<br>&ast;_test.go<br>&ast;_spec.go |  ![Test Go](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testgo.svg?sanitize=true) |
 |  [Test Haskell](#test-haskell) |  `.*\.?(test\|spec)\.hs$ ` |  &ast;.test.hs<br>&ast;.spec.hs |  ![Test Haskell](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testhaskell.svg?sanitize=true) |
 |  [Test Java](#test-java) |  `([tT])est\.java$ ` |  MyTest.java<br>myTest.java<br>mytest.java |  ![Test Java](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testjava.svg?sanitize=true) |
 |  [Test JS](#test-js) |  `.*\.?(test\|spec)\.(js\|es6)$ ` |  &ast;.test.js<br>&ast;.spec.js<br>&ast;.test.es6<br>&ast;.spec.es6 |  ![Test JS](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/testjs.svg?sanitize=true) |
@@ -605,7 +608,7 @@ Files are sorted by priority.
 |  [TOML](#toml) |  `.*\.toml$ ` |  &ast;.toml |  ![TOML](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/toml.svg?sanitize=true) |
 |  [TODO](#todo) |  `^(TODO\|todo).* ` |  TODO<br>todo<br>TODO.md<br>todo.js<br>TODO.java |  ![TODO](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/todo.svg?sanitize=true) |
 |  [Todofile](#todofile) |  `.*\.(todo\|taskpaper)$ ` |  &ast;.todo<br>&ast;.taskpaper |  ![Todofile](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/todo.svg?sanitize=true) |
-|  [TSConfig](#tsconfig) |  `\.?tsconfig.*\.(js\|json)$ ` |  tsconfig.js<br>tsconfig.json<br>.tsconfig.js<br>.tsconfig.json |  ![TSConfig](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tslint.svg?sanitize=true) |
+|  [TSConfig](#tsconfig) |  `\.?tsconfig.*\.(js\|json)$ ` |  tsconfig.js<br>tsconfig.json<br>.tsconfig.js<br>.tsconfig.json |  ![TSConfig](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tsconfig.svg?sanitize=true) |
 |  [TSLint](#tslint) |  `\.?tslint.*\.(js\|json)$ ` |  tslint.js<br>tslint.json<br>.tslint.js<br>.tslint.json |  ![TSLint](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/tslint.svg?sanitize=true) |
 |  [Travis](#travis) |  `.*\.travis\.yml$ ` |  &ast;.travis.yml |  ![Travis](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/travis.svg?sanitize=true) |
 |  [Turing](#turing) |  `.*\.t$ ` |  &ast;.t |  ![Turing](https://raw.githubusercontent.com/mallowigi/iconGenerator/master/assets/icons/files/turing.svg?sanitize=true) |
