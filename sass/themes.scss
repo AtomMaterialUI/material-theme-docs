@@ -129,6 +129,16 @@
     --logo: url('../../img/logo/material-github.svg');
   }
 
+  &-githubdark {
+    --background: #24292e;
+    --foreground: #e1e4e8;
+    --contrast: #1e2428;
+    --accent: #f9826c;
+    --accent-text: #FFFFFF;
+    --laptop: url('../../img/themes/githubdark.png');
+    --logo: url('../../img/logo/material-githubdark.svg');
+  }
+
   &-nightowl {
     --background: #011627;
     --foreground: #d6deeb;
@@ -149,4 +159,13 @@
     --logo: url('../../img/logo/material-lightowl.svg');
   }
 
+  &-moonlight {
+    --background: #222436;
+    --foreground: #c8d3f5;
+    --contrast: #191a2a;
+    --accent: #74a0f1;
+    --accent-text: #FFFFFF;
+    --laptop: url('../../img/themes/moonlight.png');
+    --logo: url('../../img/logo/material-moonlight.svg');
+  }
 }
