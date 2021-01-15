@@ -34,3 +34,9 @@ You can find here a reference of all colors used in the themes.
 {% include theme.html theme=theme %}
 {% endfor %}
 </ul>
+
+<ul class="theme-cards">
+{% for theme in site.data.themes.other2 %}
+{% include theme.html theme=theme %}
+{% endfor %}
+</ul>

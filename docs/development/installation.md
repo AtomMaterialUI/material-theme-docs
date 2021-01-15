@@ -27,7 +27,7 @@ The Material Theme plugin is built using the
 for the different platforms.
 
 Plugins can be written either in Java, Groovy or Kotlin. You can use any editor to write plugins: Atom, Sublime, Visual
-Studio Code... though for obvious reasons, it's preferable to use a JetBrains IDE so you can debug easier. You can use
+Studio Code… though for obvious reasons, it's preferable to use a JetBrains IDE so you can debug easier. You can use
 either IntelliJ IDEA or the free
 [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/).
 
@@ -60,7 +60,7 @@ the Gradle devkit and wrapper and a new tool window will be available on the rig
 {% include figure.html content="/screens/gradleTasks.png" caption="Gradle IntelliJ Tasks" %}
 
 You can run tasks using the _CLI_ by using the gradle wrapper, like this: `gradlew <task_name>`. Or you can use the
-plugin and double click on a task to run it. The most important task is the **runIde** task which runs an instance of
+plugin and double-click on a task to run it. The most important task is the **runIde** task which runs an instance of
 the IDE with the plugin prebundled in it.
 
 Once you click on a gradle task, it will be added to the `Select/Run Debug Configuration` dropdown at the top, allowing

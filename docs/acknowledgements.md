@@ -104,12 +104,13 @@ The Material Theme is so famous that it exists for many other IDEs, editors, app
 #### Other Products by me (Elior Boukhobza)
 
 Check out my other projects:
-- [Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) - A previewer for small images and svgs directly in the Project View
-- [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) - A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
-- [Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) - Proof of concept for defining custom keywords highlighting.
-- [Material Theme for DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) - Port of the Material Theme in Chrome DevTools.
-- [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
-- [Atom File Icons for Web](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc) - Porting of the Atom File Icons to GitHub and BitBucket
+[Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) - A previewer for small images and svgs directly in the Project View
+[Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) - A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
+[Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) - Proof of concept for defining custom keywords highlighting.
+[Material Theme for DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) - Port of the Material Theme in Chrome DevTools.
+[Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
+[Atom File Icons for Web (Chrome)](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc) - Porting of the Atom File Icons to GitHub and BitBucket (Chrome)
+[Atom File Icons for Web (Firefox)](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web) - Porting of the Atom File Icons to GitHub and BitBucket (Firefox)
 
 
 #### Plugins and references

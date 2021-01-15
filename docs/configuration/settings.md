@@ -15,7 +15,7 @@ next:
 ---
 
 The Material Theme plugin comes with a bunch of features tailored for an optimal experience. However, it is also highly
-configurable to allow each and everyone to customize it to their hearts content.
+configurable to allow every one to customize it to their hearts content.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -30,20 +30,20 @@ The plugin comes prebundled with a set of themes interchangeables through the
 {% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
 
 There are many ways to invoke the *Theme Switcher*:
-- From the IDE menu `Tools -> Material Theme -> Material Theme Chooser`
+- From the IDE menu `Tools → Material Theme → Material Theme Chooser`
 - From the _Main Toolbar_
 - From the `Search Everything` dialog, type `Material Theme`
 - From the `Quick Switch` panel <kbd>(Ctrl + \`)</kbd> (Windows: <kbd>Ctrl + ~</kbd>)`
 
 {% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
 
-Or, since version 2.4.0, from the Settings at `Settings -> Appearance -> Material Theme`.
+Or, since version 2.4.0, from the Settings at `Settings → Appearance → Material Theme`.
 
 {% include figure.html content="/screens/switchSettings.png" caption="Switcher in Settings" %}
 
 **Note that this dropdown won't show the [External Themes](/docs/development/external-themes).**
 
-The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.other.size }} themes:
+The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.other.size | plus: site.data.themes.other2.size }} themes:
 
 #### Material Themes
 
@@ -57,17 +57,21 @@ These themes are based on the original themes, made by Mattia Astorino ([@equinu
 
 #### Other themes
 
-Besides the Material Themes, there are also other prebundled themes made by the community:
+Besides the Material Themes, there are other prebundled themes made by the community:
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.other %}
+  {% include theme-card.html %}
+{% endfor %}
+
+{% for theme in site.data.themes.other2 %}
   {% include theme-card.html %}
 {% endfor %}
 </ul>
 
 #### External Themes
 
-The plugin also defines an endpoint allowing plugin developers to create and bundle their own custom themes, just like
+The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, just like
 Color Schemes, Keymaps, Coding Styles and so on. To learn more about _External Themes_ or how to create your own plugin,
 head to the
 [External Themes section](/docs/development/external-themes).
@@ -80,7 +84,7 @@ Once the external theme has been downloaded and installed, it should appear at t
 
 #### Custom Theme
 
-Finally there are the **Custom Themes**, which is the placeholder for the Custom Theme Settings, allowing you set
+Finally, there are the **Custom Themes**, which is the placeholder for the Custom Theme Settings, allowing you set
 your own theme colors.
 
 There are two options available, *Custom Theme* for themes based off the *Darcula* LaF, and *Light Custom Theme* based
@@ -90,7 +94,7 @@ See [Custom Themes](/docs/configuration/custom-themes) for more information.
 
 #### Native Themes (since 5.0)
 
-From version 5.0 the plugin now supports **Native Themes** as well, e.g. themes using JetBrains theme API. When loading a native theme, the plugin will try to convert it into a Material Theme, thus allowing to use the theme colors while using the Material Theme features such as the components, accent mode and so on.
+From version 5.0 the plugin now supports **Native Themes** as well, that is, themes using JetBrains theme API. When loading a native theme, the plugin will try to convert it into a Material Theme, thus allowing you to use the theme colors while using the Material Theme features such as the components, accent mode and so on.
 
 You don't need to do anything to make it work, simply download a native theme and select it, it will be automatically converted to a theme format supported by the plugin.
 
@@ -108,7 +112,7 @@ Examples:
 ### Settings Page
 
 You can configure many parts of the plugin features from the **plugin settings**. They are accessible within `Settings
--> Appearance -> Material Theme`.
+→ Appearance → Material Theme`.
 
 {% include figure.html content="/screens/settings.png" caption="Material Theme Settings v1" %}
 
@@ -161,11 +165,11 @@ Quick summary of all settings:
 - *Custom Sidebar Height*: Set a custom line height in Project View (min: 18, max: 30)
 - *Custom Tree Indent*: Fine tune indent of Project View items (both left and right indent)
 > - *Arrows Style*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** - Change the style of the arrows in trees. Choices:
->  - *Material*: Chevron arrows
->  - *Darcula*: Triangle arrows
->  - *Plus-Minus*: Plus and Minus symbols
->  - *Arrows*: Regular arrows
->  - *None*: Hide the arrows
+>   - *Material*: Chevron arrows
+>   - *Darcula*: Triangle arrows
+>   - *Plus-Minus*: Plus and Minus symbols
+>   - *Arrows*: Regular arrows
+>   - *None*: Hide the arrows
 - *Selected Indicator Style*: Change the style of the indicator of the selected item in trees
   - *Border*: Add a small border to the left
   - *Dot*: Add a dot on the selected item
@@ -178,7 +182,7 @@ Quick summary of all settings:
 - *Uppercase buttons*: Set the buttons' texts to uppercase
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart)
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart)
-- *Accent Mode*: Make components stand out by setting them in the accent color (buttons, tabs, selections...)
+- *Accent Mode*: Make components stand out by setting them in the accent color (buttons, tabs, selections…)
 
 **[Features Settings](/docs/configuration/features-settings)**:
 - *Material Fonts*: Enable/Disable Material fonts (Roboto)
@@ -217,7 +221,7 @@ for more information.
 ## Material Custom Theme
 
 Aside from the bundled themes, you also have the ability to set up your own Material Theme. You can do so by selecting
-`Custom Theme` in the theme list, then customize the theme colors in the settings page at `Settings -> Appearance ->
+`Custom Theme` in the theme list, then customize the theme colors in the settings page at `Settings → Appearance →
 Material Custom Theme Settings`.
 
 {% include figure.html content="/screens/customsettings.png" caption="Material Custom Theme Settings" %}
@@ -350,7 +354,7 @@ persists, please report it in the Issues Section.
 **A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image`
 function from the IDE behind the curtains. Therefore, removing the plugin might not remove the set image completely. If
 that occurs, you can remove the image by opening the Command Panel (Cmd-Shift-A/Ctrl-Shift-A) and type `Set Background
-image` and then manually remove the image, or go into `Settings -> Appearance -> Background Image`.
+image` and then manually remove the image, or go into `Settings → Appearance → Background Image`.
 
 
 **Q**: The dark title bar on Mac sticks as well! **Update: since version 2.5.0, it doesn't!**
@@ -359,8 +363,7 @@ image` and then manually remove the image, or go into `Settings -> Appearance ->
 type `Registry`. Then you will see at the top the edited values. Simply press Revert to those you don't want. **Update
 2.5.0:** The Dark Title Bar option is now moved inside the Appearance panel of the IDE, named _Dark Window Headers_ (and
 currently contains the same problems as above). However, a new option `Themed Title Bar` have taken its place in the
-Material Theme Settings and allows to completely theme the title bar. However it also overrides the _Dark Window
-Headers_ setting.
+Material Theme Settings and allows you to completely theme the title bar.
 
 **Q**: What is that analytics option? What data are collected?
 
@@ -377,22 +380,22 @@ file. But you can reopen it by simply clicking on the action from the Material T
 
 **Q**: My settings are not persisted between my IDEs!
 
-**A**: Yes, this is because third-party plugins are not (yet) synchronizeable by the _Sync Settings_ feature. Therefore you need to configure each IDE independently. However, since Look and Feels ARE synchronized, this can lead to inconsistencies between the look and feels, like for instance having `Darcula` instead of your chosen theme.
+**A**: Yes, this is because third-party plugins are not (yet) synchronizeable by the _Sync Settings_ feature. Therefore, you need to configure each IDE independently. However, since Look and Feels ARE synchronized, this can lead to inconsistencies between the look and feels, like for instance having `Darcula` instead of your chosen theme.
 
 As a result, it is recommended to not rely too much on the Sync feature for now. Configure the two instances independently and try not to change settings too often.
 
 **NEW**
 
-**Q**: I use two computers and while everything is fine in the first one, when I check the second one it is completely messy, some windows are empty, or I am getting Darcula even though I configured Material Oceanic...
+**Q**: I use two computers and while everything is fine in the first one, when I check the second one it is completely messy, some windows are empty, or I am getting Darcula even though I configured Material Oceanic…
 
 **A**: This is probably because you are using JetBrains's **Sync Settings** feature. While this is a great feature when you have multiple computers, unfortunately it does not sync third party settings, and as a result settings from the plugin are not synchronized between machines. And since Themes/Look and Feels are indeed synchronized, this would cause some weird behaviors like the ones mentioned previously.
 
-If you need to use Sync Settings, then I'll suggest to disable synchronizing look and feels/themes. Or use the Lite version of the plugin which should be working fine.
+If you need to use Sync Settings, then I'll suggest disabling the synchronization of look and feels/themes. Or use the Lite version of the plugin which should be working fine.
 
 **Q**: Where have all the icons gone?
 
 **A**: Since 5.0.0 all icons related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), another plugin developed by the Material Theme team. This is in order to encourage developers to develop _Icon Themes_, since the plugin is now free of icons.
 
-**Q**: I've downloaded a theme from the Plugins Page and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc...
+**Q**: I've downloaded a theme from the Plugins Page and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…
 
-**A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes. Even though the plugin tries to convert it to its own format, it won't be as good as the originals. Still it should be as similar as possible, so there shouldn't be any critical issues. In that case, please report to the repository's issues.
+**A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes. Even though the plugin tries to convert it to its own format, it won't be as good as the originals. Still, it should be as similar as possible, so there shouldn't be any critical issues. In that case, please report to the repository's issues.

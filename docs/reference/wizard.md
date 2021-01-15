@@ -27,7 +27,7 @@ which are either:
   heard about accent color or even the Material Theme Switcher.
 
 As a result, we've started to wonder how to make users more aware of the different features of the plugin. Documentation
-helps, but clearly <strike>nobody</strike> not many people read the documentation, so we've ruled it out. Then I
+helps, but clearly <strike>nobody</strike> few people read the documentation, so we've ruled it out. Then I
 remembered that IntelliJ products show a wizard at the first start, helping people discover features and plugins. If
 there was a way to use it to display the plugin features, it would be great for new as well as existing users. And after
 a bit of investigation, I've figured it out and started building the **Material Theme Wizard**.

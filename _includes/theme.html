@@ -6,22 +6,31 @@
     <p>Background: {{ theme.background }}</p>
     <p>Foreground: {{ theme.foreground }}</p>
     <p style="color: {{theme.text}}">Text: {{ theme.text }}</p>
-    <p style="background-color: {{theme.selectBg}}; color: {{theme.selectFg}}">Selection Background: {{ theme.selectBg
-      }}</p>
-    <p style="background-color: {{theme.selectBg}}; color: {{theme.selectFg}}">Selection Foreground: {{ theme.selectFg
-      }}</p>
+    <p style="background-color: {{theme.selectBg}}; color: {{theme.selectFg}}">Selection Background: {{ theme.selectBg }}</p>
+    <p style="background-color: {{theme.selectBg}}; color: {{theme.selectFg}}">Selection Foreground: {{ theme.selectFg }}</p>
     <p style="background-color: {{theme.button}}; color: {{theme.text}}">Buttons: {{ theme.button }}</p>
     <p style="background-color: {{theme.second}}">Second Background: {{ theme.second }}</p>
     <p style="color: {{theme.disabled}}">Disabled: {{ theme.disabled }}</p>
     <p style="background-color: {{theme.contrast}};">Contrast: {{ theme.contrast }}</p>
     <p style="background: {{theme.table}};">Active: {{ theme.table }}</p>
-    <p style="border: 2px solid {{theme.misc1}}">Border: {{ theme.misc1 }}</p>
-    <p style="background: {{theme.misc2}};">Highlight: {{ theme.misc2 }}</p>
+    <p style="border: 2px solid {{theme.border:}}">Border: {{ theme.border }}</p>
+    <p style="background: {{theme.hl}};">Highlight: {{ theme.hl }}</p>
     <p style="background: {{theme.tree}}; color: {{theme.selectFg}}">Tree: {{ theme.tree }}</p>
     <p style="background: {{theme.notif}};">Notifications: {{ theme.notif }}</p>
     <p style="color: {{theme.accent}}">Accent Color: {{ theme.accent }}</p>
     <p style="background: {{theme.excluded}}">Excluded Files Color: {{ theme.excluded }}</p>
-
+    <hr>
+    <p style="color: {{theme.comments}}">Green Color: {{ theme.green }}</p>
+    <p style="color: {{theme.variables}}">Yellow Color: {{ theme.yellow }}</p>
+    <p style="color: {{theme.links}}">Blue Color: {{ theme.blue }}</p>
+    <p style="color: {{theme.functions}}">Red Color: {{ theme.red }}</p>
+    <p style="color: {{theme.keywords}}">Purple Color: {{ theme.purple }}</p>
+    <p style="color: {{theme.tags}}">Orange Color: {{ theme.orange }}</p>
+    <p style="color: {{theme.operators}}">Cyan Color: {{ theme.cyan }}</p>
+    <p style="color: {{theme.strings}}">Gray Color: {{ theme.gray }}</p>
+    <p style="color: {{theme.attributes}}">White/Black Color: {{ theme.white }}</p>
+    <p style="color: {{theme.parameters}}">Error Color: {{ theme.error }}</p>
+    <hr>
     <p style="color: {{theme.comments}}">Comments Color: {{ theme.comments }}</p>
     <p style="color: {{theme.variables}}">Variables Color: {{ theme.variables }}</p>
     <p style="color: {{theme.links}}">Links Color: {{ theme.links }}</p>

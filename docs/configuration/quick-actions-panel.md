@@ -23,7 +23,7 @@ Here you can find an explanation of the actions from the `Quick Actions Panel`.
 
 The Quick Actions Panel is a set of actions and toggles to quickly customize the plugin. You can find this panel in many
 places:
-- Inside the menu, under `Tools -> Material Theme`
+- Inside the menu, under `Tools → Material Theme`
 
 {% include figure.html content="/screens/toolsMenu.png" caption="Tools Menu" %}
 
@@ -35,8 +35,8 @@ places:
 
 {% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
 
-You can also set a shortcut to open each and every one of its submenus from the
-`Settings -> Appearance and Behavior -> Keymap -> Material Theme` settings.
+You can also set a shortcut to open every one of its submenus from the
+`Settings → Appearance and Behavior → Keymap → Material Theme` settings.
 
 ----
 
@@ -65,7 +65,7 @@ This panel allows you to quickly toggle some of the most used Panel Settings:
 - _Indicator Styles_
 - _Tab Highlight Position_
 
-Besides those are one-time actions that will change the plugin or the IDE configuration:
+In addition, those are one-time actions that will change the plugin or the IDE configuration:
 - _Set Recommended Tab Height_: Change the tab height to _42_
 
 -----
@@ -80,7 +80,7 @@ There are also more options to easily toggle the following modes:
 - _Override Accent Color from Theme_
 - _Set Action Mode_
 
-Note that these actions are one-time only and the accent color can be changed in the `Settings -> Custom Accent Color`.
+Note that these actions are one-time only and the accent color can be changed in the `Settings → Custom Accent Color`.
 
 -----
 
@@ -102,6 +102,6 @@ In addition, other one-time actions are available in this panel, which are:
 {% include figure.html content="/screens/customWallpaper.png" caption="Material Wallpaper" %}
 
 Please note that this is a setting that affects the whole IDE settings, so actions such as removing/disabling the plugin
-will not get rid of the background image. You can do so in `Settings -> Appearance -> Background Image`.
+will not get rid of the background image. You can do so in `Settings → Appearance → Background Image`.
 {:class='card-panel warn'}
 

@@ -23,7 +23,7 @@ them or applying a filter to them.
 
 ## Atom Material Icons plugin
 
-<img class="avatar-img -centered" src="https://plugins.jetbrains.com/files/10044/78336/icon/META-INF_pluginIcon.svg">
+<img class="avatar-img -centered" src="https://plugins.jetbrains.com/files/10044/78336/icon/META-INF_pluginIcon.svg" alt="Atom Material Icons Plugin">
 
 
 These features have all been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
@@ -34,13 +34,13 @@ The plugin can be installed the same way the Material Theme can be installed, bu
 
 {% include figure.html content="/screens/atomMaterialSettings.png" caption="Atom Material Settings" %}
 
-The UI is a bit different than the Material Theme UI, but provides the same functionality nonetheless. This operation has been done to decouple the Material Theme plugin from the _UI Icons_ feature, therefore allowing to use different *Icon Themes* from other authors alongside the Material Theme UI, and in the same time gives the ability to use the icons independently of the UI themes.
+The UI is a bit different from the Material Theme UI, but provides the same functionality nonetheless. This operation has been performed to decouple the Material Theme plugin from the _UI Icons_ feature, therefore allowing to use different *Icon Themes* from other authors alongside the Material Theme UI, and in the same time gives the ability to use the icons independently of the UI themes.
 
-Note: This plugin has been recently ported to Google Chrome! Go take a look: [Atom File Icons Web](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
+Note: This plugin has been recently ported to Google Chrome and Firefox! Go take a look: [Atom File Icons Web for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc) and [Atom File Icons Web for Firefox](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/)
 {:class='card-panel'}
 
 ----
-### Material UI Icons
+### UI Icons
 
 This setting toggles the replacement of the icons provided by the plugin. Specifically this disables:
 - Menu Icons
@@ -63,8 +63,8 @@ Dialogs and everything. This does not hide folders, though.
 
 {% include figure.html content="/screens/hideFileIcons.png" caption="Hide File Icons" %}
 
-**Note**: This feature takes precedence over default file icons providers and the plugin's own ones. However some
-plugins, may have an even greater precedence, meaning that you will still see icons from such plugins.
+**Note**: This feature takes precedence over default file icons providers and the plugin's own ones. However, some
+plugins might have an even greater precedence, meaning that you will still see icons from such plugins.
 {:class='card-panel'}
 
 ----
@@ -75,11 +75,28 @@ ideal for people who don't like the avalanche of colors provided by the differen
 
 {% include figure.html content="/screens/monochrome.png" caption="Monochrome Icons" %}
 
-By applying this filter, all icons will be filtered with a shade of the primary color (e.g. the color of the items in
+By applying this filter, all icons will be filtered with a shade of the primary color (i.e., the color of the items in
 the Project View) of the current theme.
 
-Note: This setting not only filters out the toolbar and file icons, but even tool window icons, debugger icons, etc...
+Note: This setting not only filters out the toolbar and file icons, but even tool window icons, debugger icons, etc…
 {:class='card-panel warn'}
+
+----
+### Arrows Style
+
+This setting allows you to change the style of the arrows in trees such as the Project Tree or ~~Settings Tree~~ (TODO).
+
+There are the available styles:
+
+| Style      | Screenshot                                                                                            |
+|:-----------|:------------------------------------------------------------------------------------------------------|
+| Material   | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/material.png">  |
+| Darcula    | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/darcula.png">   |
+| Plus-Minus | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/plusminus.png"> |
+| Arrows     | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/arrows.png">    |
+| None       | (no arrows)                                                                                           |
+
+You can also switch styles in the `Actions Panel`.
 
 ----
 ### File Icons
@@ -130,5 +147,5 @@ This option makes it look like the Visual Studio Code *Outline* Panel, as well a
 
 - Monochrome icons actually messes up some parts of the IDE, such as the SVG Image Viewer. If you need to use it, please
   disable the option temporarily.
-- Currently there is no option to specify the color used in the Monochrome filter, but there's a plan of implementing
+- Currently, there is no option to specify the color used in the Monochrome filter, but there's a plan of implementing
   it!

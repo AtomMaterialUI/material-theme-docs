@@ -34,7 +34,7 @@ the plugin augments its features by giving more highlighting options.
 
 ## Additions
 
-Currently the only supported languages are:
+At the moment the only supported languages are:
 - **JavaScript**
 - **TypeScript**
 - **Java**
@@ -113,14 +113,14 @@ You can find the setting under `Material Theme Settings > Other Tweaks tab`.
 using Darcula/IntelliJ/My custom scheme.
 
 **A**: Since these are *Additions*, of course other schemes are unaware of these new entries and willrevert back to the
-default keyword color. However color scheme designers can provide their own color definitions for the new entries if
+default keyword color. However, color scheme designers can provide their own color definitions for the new entries if
 they choose to *Export scheme* after having selected their colors, and it will work for people having the plugin
 installed.
 
 **Q**: What about Night Owl's own additions? Won't it clash with Material Theme's?
 
 **A**: The _Material Theme Additions_ are using the same keys as the _Night Owl Additions_, while adding new ones.
-Therefore assigning a color in the plugin's page will work for NightOwl and vice-versa.
+Therefore, assigning a color in the plugin's page will work for NightOwl and vice-versa.
 
 
 

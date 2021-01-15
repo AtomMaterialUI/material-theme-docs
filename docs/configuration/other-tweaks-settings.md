@@ -57,7 +57,7 @@ open the Material Theme Settings.
 
 {% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
 
-Since version 2.9.4/2.10.4 you can also see your current accent color.
+Starting from version 2.9.4/2.10.4 you can also see your current accent color.
 
 {% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
 
@@ -73,22 +73,19 @@ This setting also allows the theming of the application title bar in Windows 10.
 IDE/uninstall the plugin. Just follow the instructions at
 <https://www.howtogeek.com/225893/how-to-personalize-windows-10s-appearance/> to set it to another color of your choice.
 
-**Note:**: This feature has been has been removed since version 4.0
+**Note:**: This feature has been removed since version 4.0
 {:class='card-title warn'}
 
 ##### Mac OS with JRE 8
 
-From version 2.5.0 the option came back with support for Mac OS. And unlike in Windows, this does not change the
+From version 2.5.0 the option came back with support for macOS. And unlike in Windows, this does not change the
 Registry but actually applies the background color to the IDE title bar only!
-
-However it comes with a small price: by activating this option you are consenting to nullify the _Dark Window Headers_
-feature from the `Appearance` panel introduced since 2018.2.
 
 {% include figure.html content="/screens/titlebarThemed.png" caption="Themed Title Bar Mac" %}
 
 ##### Mac OS with JRE 11
 
-Since 2019.1 all IDEs are now bundled with JRE 11 by default. However the developers at JetBrains removed the ability to set the transparent title bar, instead they completely removed it! However instead of mourning the disparition of the title bar and removing the feature altogether, we found out a solution by implementing a _custom title bar_ and by delegating the events to the real, hidden title bar.
+Starting from 2019.1 all IDEs are now bundled with JRE 11 by default. But the developers at JetBrains removed the ability to set the transparent title bar, instead they completely removed it! However instead of mourning the disparition of the title bar and removing the feature altogether, we found out a solution by implementing a _custom title bar_ and by delegating the events to the real, hidden title bar.
 
 {% include figure.html content="/screens/customTitleBar.png" caption="Custom Title Bar" %}
 
@@ -103,8 +100,8 @@ We are still working on improving this feature by the time, until perhaps JetBra
 
 ##### Linux
 
-This feature is currently not available in Linux. Since I'm not a Linux user, I have no clue how to accomplish that.
-Besides there are many distributions/frameworks of Linux, being Ubuntu, Gentoo, KDE, Gnome etc...
+This feature is currently not available in Linux. Since I'm not a Linux user, I have no clue how to achieve that.
+Besides, there are many distributions/frameworks of Linux, being Ubuntu, Gentoo, KDE, Gnome etc…
 
 If someone is interested on a way to do so, please send me a PM by email or Slack, that would be awesome!
 
@@ -117,13 +114,13 @@ Take a look to the page [Language Additions](configuration/color-scheme-addition
 -----
 ## FAQ/Troubleshooting
 
-**Q**: **I've got two title bars! / My title bar is gone! / My title bar is ...**
+**Q**: **I've got two title bars! / My title bar is gone! / My title bar is …**
 
 **A**: This is due to the _Experimental Themed Title Bar_ implemented since 4.3.0. This feature is still in its experimental state so there could still be bugs. Please open an issue in the GitHub repository, and if it bothers you, you can either revert to the JRE 8, or disable the feature and restart the IDE to get back the real title bar.
 
 **Q**: **Somehow I've updated the plugin and now my window is empty!!!!!**
 
-**A**: This is a rare and weird case due to the custom title bar implementation. Reports have indicated that this issue happens only once and is fixed by... resizing the window! Theoretically it should be enough to fix the issue but if it's not the case, please disable the _Themed Title Bar_ until a fix is found.
+**A**: This is a rare and weird case due to the custom title bar implementation. Reports have indicated that this issue happens only once and can be fixed by… resizing the window! Theoretically it should be enough to fix the issue but if it's not the case, please disable the _Themed Title Bar_ until a fix is found.
 
 **Q**: **My Custom background image is gone!**
 

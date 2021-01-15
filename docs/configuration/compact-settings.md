@@ -24,7 +24,7 @@ These settings control some components' display, mainly about their compactness.
 ### Compact Statusbar
 
 The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and
-bottom. This setting allows you to revert back to the default "_compact_" design.
+bottom. This setting allows you to revert to the default "_compact_" design.
 
 
 {% include figure.html content="/screens/expandedStatusbar.png" caption="Padded Status Bar" %}
@@ -60,7 +60,7 @@ From version 2.10.2 Menus had also gained more padding just like dropdowns and t
 
 {% include figure.html content="/screens/paddedMenus.png" caption="Regular Menus" %}
 
-As a result, a setting have been added to revert back to the default menus size.
+As a result, a setting have been added to revert to the default menus size.
 
 ----
 ### Notes

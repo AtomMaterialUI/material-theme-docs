@@ -66,7 +66,7 @@ This section describes the **Accent Colors** feature and how is it used by the p
 
 ## Definition
 
-_Accent Color_ refers to a color used to accentuate key parts of the UI, such as the active tab, focused input texts,
+_Accent Color_ refers to a color used to emphasize key parts of the UI, such as the active tab, focused input texts,
 checked boxes and so on. The Material Theme plugin enables this feature in the IDE and gives the ability to customize it
 to your heart's content.
 
@@ -144,7 +144,7 @@ components will not get the change until next restart. Such examples of componen
 
 ### Override Accent Color
 
-Since version 2.6.0 there is the possibility to override the custom accent color with the default one bundled with the
+Starting from version 2.6.0 there is the possibility to override the custom accent color with the default one bundled with the
 theme. For instance, for _Oceanic_ the accent color will be `teal` while for _Darker_ it will be `orange` etc.
 
 This is especially useful for external themes, so that Theme designers can provide their own accent color.
