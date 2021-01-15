@@ -1,7 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
-build
+build/
 /npm-debug.log
 archive/
 img/galleries/
