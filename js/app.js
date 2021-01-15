@@ -1,14 +1,12 @@
 $.when($.ready).then(() => {
   const THEME_KEY = 'material-theme';
-  const themes = [];
   const jekyllApp = {
 
     setBodyClass(css) {
       $('body').removeClass((i, c) => (c.match(/\btheme-\S+/) || []).join(' '));
       $('body').addClass(`index theme-${css}`);
-      $(`.screenshot`).hide();
+      $('.screenshot').hide();
       $(`.screenshot.-${css}`).show();
-
     },
     setTheme(theme) {
       this.setBodyClass(theme.className);
@@ -25,13 +23,13 @@ $.when($.ready).then(() => {
     },
 
     init() {
-      let theme = localStorage.getItem(THEME_KEY) || 'oceanic';
+      const theme = localStorage.getItem(THEME_KEY) || 'oceanic';
       this.setBodyClass(theme);
 
       const $target = $('.doc');
       const $toc = $('.toc');
 
-      $(document).ready(function () {
+      $(document).ready(() => {
         $('select').formSelect();
         $('.fixed-action-btn').floatingActionButton({hoverEnabled: false});
         $('.tooltipped').tooltip();
@@ -59,7 +57,7 @@ $.when($.ready).then(() => {
      * Init Menu events
      */
     initMenu() {
-      $('.js-menu-toggle').on('click touch', (event) => {
+      $('.js-menu-toggle').on('click touch', () => {
         this.showMenu();
       });
     },
@@ -81,7 +79,7 @@ $.when($.ready).then(() => {
      * Init Sidebar events
      */
     initSidebar() {
-      $('.js-sidebar-toggle').on('click touch', (event) => {
+      $('.js-sidebar-toggle').on('click touch', () => {
         this.toggleSidebar();
       });
     },
@@ -138,23 +136,22 @@ $.when($.ready).then(() => {
           return;
         }
 
-        grecaptcha.execute('6LetNpAUAAAAAPamFzSqTvqNaPdWgFyuJvfGRaGc', {action: 'contactForm'}).then(function (token) {
+        grecaptcha.execute('6LetNpAUAAAAAPamFzSqTvqNaPdWgFyuJvfGRaGc', {action: 'contactForm'}).then((token) => {
           $('[name="g-recaptcha-response"]').val(token);
 
           // Submit form to pageclip
           Pageclip.form(document.getElementById('contact-us-form'), {
-            onSubmit: function (event) {
+            onSubmit() {
               return true;
             },
-            onResponse: function (error, response) {
+            onResponse() {
               return true;
             },
             successTemplate: '<span>Thank you!</span>',
           });
-        }, function (reason) {
+        }, () => {
           // todo
         });
-
       });
     },
   };
