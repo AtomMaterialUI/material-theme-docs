@@ -18,11 +18,11 @@ next:
 
 ## Introduction
 
-JetBrains editors are really great for all kind of projects, whatever big they are. However, once you've started working
+JetBrains editors are truly great for all kinds of projects, whatever big they are. However, once you've started working
 on big projects, you're beginning to notice that it's getting harder finding your way through open files, the project
 tree, the search results and so on.
 
-Therefore JetBrains introduced a nifty feature called **File Colors**. It allows developers to add custom colors to
+Therefore, the IDEs have a nifty feature called **File Colors**. It allows developers to add custom colors to
 specific groups of files according to a pattern. For example, it could be:
 - Excluded Files
 - Tests
@@ -39,21 +39,21 @@ These colors will be then displayed in different parts of the IDE, namely:
 - Find in Path Dialog
 - Search Everywhere dialog
 - Navigate to file/class/symbol dialog
-- And other places...
+- And other places…
 
 This will considerably reduce the time looking for a file and navigating thanks to *color grepping*.
 
 ## Configuration
 
 The JetBrains editors come prebundled with at least two File Colors:
-- **Excluded files**, e.g. files that are _Marked as Excluded_, and therefore excluded for indexing, searching and
-  navigation, resulting in huge performance boosts. Such examples are `node_modules`, `logs`, `vendors`, `gradle` etc...
-  You can mark a directory for exclusion by clicking right on the directory and select `Mark Directory as...`
-- **Tests**, which is the test directory in gradle/rails/symfony...
+- **Excluded files**, or files that are _Marked as Excluded_, and therefore excluded for indexing, searching and
+  navigation, resulting in huge performance boosts. Such examples are `node_modules`, `logs`, `vendors`, `gradle` etc…
+You can mark a directory for exclusion by clicking right on the directory and select `Mark Directory as…`
+- **Tests**, which is the test directory in gradle/rails/symfony…
 
 Specific IDEs might have other File Colors preinstalled.
 
-You can see them in `Settings -> Appearance & Behavior -> File Colors`.
+You can see them in `Settings → Appearance & Behavior → File Colors`.
 
 {% include figure.html content="/screens/fileColors.png" caption="File Colors" %}
 
@@ -63,11 +63,11 @@ rules.
 
 ### Scopes
 
-However these two options are pretty limited, but you can add your own file colors according to certain patterns. For
+These two options are pretty limited, but you can add your own file colors according to certain patterns. For
 example, differentiating between the `docs` directory than the rest of the source.
 
 To do so, one must create a **Scope**. There you can define your pattern rules, which directories are included in the
-scope, which are excluded, and so on. Finally add your new created scope in the File Colors list, and rise it up to the
+scope, which are excluded, and so on. Finally, add your new created scope in the File Colors list, and rise it up to the
 top so it won't be shrouded by previous file colors.
 
 {% include figure.html content="/screens/scopes.png" caption="Scopes" %}
@@ -80,12 +80,12 @@ See more at
 
 ### Excluded Files Theme Color
 
-File Colors are pretty neat, but the actual prebundled File Colors are adapted for the _Darcula/IntelliJ_ look and
+File Colors are pretty neat, but the current prebundled File Colors are adapted for the _Darcula/IntelliJ_ look and
 feels, not for the Material Themes.
 
 To remedy this, the Material Theme is also coming prebundled with File Colors, specifically for **Excluded files**.
 
-However, because the _File Colors_ are user settings, and because the user could very possibly have modified the default
+However, because the _File Colors_ are user settings, and because the user could quite possibly have modified the default
 Excluded Files' file colors, the plugin could not override this setting with a better suited color. Therefore, it is the
 responsibility of the user to change the color of the Excluded Files.
 
@@ -112,5 +112,9 @@ you switch to another theme you'll need a full restart to see the new colors app
 
 
 {% for theme in site.data.themes.other %}
+{% include color.html color=theme field="excluded" %}
+{% endfor %}
+
+{% for theme in site.data.themes.other2 %}
 {% include color.html color=theme field="excluded" %}
 {% endfor %}

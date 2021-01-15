@@ -74,23 +74,6 @@ application-wide. This is great though for applying different styles according t
 This feature is available from versions **2.9** and above.
 
 ----
-### Arrows Style
-
-This setting allows you to change the style of the arrows in trees such as the Project Tree or ~~Settings Tree~~ (TODO).
-
-There are the available styles:
-
-| Style      | Screenshot                                                                                            |
-|:-----------|:------------------------------------------------------------------------------------------------------|
-| Material   | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/material.png">  |
-| Darcula    | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/darcula.png">   |
-| Plus-Minus | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/plusminus.png"> |
-| Arrows     | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/arrows/arrows.png">    |
-| None       | (no arrows)                                                                                           |
-
-You can also switch styles in the `Actions Panel`.
-
-----
 ### Indicator Style and Thickness
 
 This setting allows you to customize the _Selected Tree Item Indicator_ (the left accentued border) for more flavors.

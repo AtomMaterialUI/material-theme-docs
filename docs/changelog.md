@@ -16,6 +16,56 @@ next:
 # Changelog
 ----
 
+# 5.6.0
+- **New Themes: Moonlight and Github Dark**
+- Fix issue where you can't change file colors
+- Fix #1622
+- Change unused identifier colors
+- Fix Welcome Screen left pane's selected color
+- Reproduce Accent Color Tint to make icons benefit from accent colors
+- Remove the native editor tabs underline, to use the Material one
+- Fix Refactor variable white color on select
+- Fix Checkboxes colors
+- Add Diagram Colors to color schemes
+- Fix issue where MTButton would make the GPU go over 50%
+
+# 5.5.0
+- Reworked MTCheckBoxUI to work with icons instead of graphics drawings
+- Fix issue where Solarized Themes were not persisted
+- Convert Custom Theme Settings to a striped table
+- Nest Custom Theme Settings under the Material Theme Settings
+- Add CodeWithMe resources and fix some other theme resources
+- Add new hack to make Atom Material Plugin work with latest EAP (thanks @Unthrottled)
+
+# 5.4.2
+- Fix menu popups' active indicator
+- Fix list and table hover background
+
+# 5.4.0-5.4.1
+- Basic support for 2020.3 EAP (Work in progress)
+
+# 5.3.4
+- Fix Transparent title bars appearing on dialogs
+- Fix deprecated new screen active link color
+- Update new color schemes keys: Inactive template and Regexp matching groups
+
+# 5.3.3
+- Support for 2020.2 EAP
+- Add Accent Color for Searchable Settings
+- Reduced opacity in project frame colors
+
+# 5.3.2
+- Add a button to stop showing the Atom Material Icons plugin notification
+- Improve colors schemes: Add better coloring to inline Java documentation renderer
+- Fix default highlighted reference color
+- Colorize local history labels
+- Colorize scopes and bookmarks colors
+- Replace global colors with colors from the themes (experimental)
+- Fix theme selection from the wizard not being persisted
+
+# 5.3.1
+- Fix NPE when opening file colors with a Native Theme
+
 # 5.3.0
 - New Language Addition: **Kotlin**!
     - Keywords: private, public, protected, internal
@@ -80,7 +130,7 @@ next:
 - Support for 2020.1
 
 # 4.11.5
-- Fixed the issue when double clicking on a tree item would not open the file
+- Fixed the issue when double-clicking on a tree item would not open the file
 - Restore the Themed Title Bar setting but disable it by default
 - Fixed (?, cannot reproduce) the "show more" in debugger tabs having a gray background
 
@@ -144,7 +194,7 @@ next:
 
 # 4.7
 - Convert Analytics notification to simple notification
-- Changed Matched Brace effect from border to bold underscore
+- Changed Matched Brace's effect from border to bold underscore
 - Performance Improvement by not calling urls in the main thread
 - Improve PHP Color Page Settings
 - Fix PHP Color Scheme
@@ -197,7 +247,7 @@ next:
 - Add new UI icons
 
 # 4.2
-- Remove "Themed Title Bar" for Mac OSXes with JRE 11 (follow up <https://youtrack.jetbrains.com/issue/IDEA-219015>)
+- Remove "Themed Title Bar" for Mac OSXes with JRE 11 (check <https://youtrack.jetbrains.com/issue/IDEA-219015>)
 - Fix File Colors not being applied to tabs
 - Fix "Show inherited members" having a gray color
 - Fix "Mark modified tabs with asterisk" to show the icon again
@@ -296,8 +346,8 @@ next:
 - Update Theme keys
 
 # 3.8.0
-- **New**: A new button allowing to import and export custom themes!!!
-- **New**: Custom Themes can now accept RGBA values, e.g. **colors with opacity!**
+- **New**: A new button allowing importing and exporting custom themes!!!
+- **New**: Custom Themes can now accept RGBA values, i.e., **colors with opacity!**
 - **New**: Default accent color (for the "Override accent color") and Excluded Files colors are now customizable in the
   Custom Theme settings!
 - Fix NavBar not applying the background image
@@ -347,7 +397,7 @@ next:
 - Add "VERSION" file type
 
 # 3.4.0
-- Add new setting: **Material PSI Icons**. Replaces the PSI Icons (class, interface, functions...) with Material Icons,
+- Add new setting: **Material PSI Icons**. Replaces the PSI Icons (class, interface, functions…) with Material Icons,
   inspired by Visual Studio Code.
 - Add new setting: **Tab highlight position**. Available options: Bottom, Top, Left, Right, Left-Right, Top-Bottom, Full
   and None
@@ -467,7 +517,7 @@ next:
 
 # 2.9.5.1
 - Fix plugin when Material Theme option is disabled to allow having MT features on Darcula/IntelliJ
-- Merge Project View Decorators with Folder Decorators - with open versions of decorated folders
+- Merge Project View Decorators with Folder Decorators — with open versions of decorated folders
 
 # 2.9.5
 - <strike>Bundle Roboto fonts (named _Roboto Material_) with the plugin fixing the issue with scrambled fonts once and
@@ -578,11 +628,11 @@ next:
 - SVGify the theme icons
 
 # 2.5
-- Return the **"Theme Title Bar"** option for macs... this time with fully theme support!
+- Return the **"Theme Title Bar"** option for macs… this time with fully theme support!
 - Add a new **Selected Item Indicator Style** for Project View
 - Add a new **High Contrast mode**
 - Theme the new **Plugins page**! (note: this is still in beta)
-- Rewrote StatusBar component to correct all issues with the Status Bar (borders, compactness...)
+- Rewrote StatusBar component to correct all issues with the Status Bar (borders, compactness…)
 - Refactor MTThemeManager and MTLaf
 - Added new VCS Icons
 - Added more tests
@@ -649,7 +699,7 @@ There could be other bugs though.
 
 # 2.3
 - Major overhaul of the icons: most icons have been converted to svg! Please note though:
-  - I couldn't find the originals of some icons, so some icons are now different or with different colors (sorry JSON...)
+  - I couldn't find the originals of some icons, so some icons are now different or with different colors (sorry JSON…)
   - Since this is a big update, there might be some further changes to those icons
   - I decided to keep some original icons made by JetBrains (such as Minimize Tool Window)
   - Please open issues about icons that you find not suited for their purpose.
@@ -662,7 +712,7 @@ There could be other bugs though.
 - Add angular.json association
 
 ## 2.2.2
-- Increase size of Material Arrows to 11x11
+- Increase size of Material Arrows to 11×11
 - Fix Active Tab Highlight color to take accent color
 - Increase left padding of tree rows
 - Change color of primary buttons for Monokai theme
@@ -691,7 +741,7 @@ There could be other bugs though.
 - Fix command line icons
 - Reenable Darcula components when Material Components are disabled
 - Apply monochrome filter on activate
-- Change "Modified on non active changelist" and "added on non-active changelist" colors
+- Change "Modified on non-active changelist" and "added on non-active changelist" colors
 
 ## 2.1.6
 - Improve Solarized Dark
@@ -961,7 +1011,7 @@ FIXES:
 - New action to install **Material File Colors** on demand instead of automatically at start
 
 ## 1.3.2
-- Fix Custom themes caret color
+- Fix Custom themes' caret color
 - Fix Custom themes TabbedPane color
 - Fix Groovy and Scala comment color scheme
 - Feature: Compact Table Cells
@@ -1058,7 +1108,7 @@ FIXES:
 
 ## 0.10.0 (alpha)
 - Two new themes: Monokai and Arc Dark
-- Custom Theme Support (alpha - please read README)
+- Custom Theme Support (alpha — please read README)
 
 ## 0.9.4
 - Improvements of Lighter Theme. Now Lighter Theme extends IntelliJ Look And Feel instead of Darcula.
@@ -1135,7 +1185,7 @@ FIXES:
 
 ## 0.7.1
 - Fix Hide File Icons
-- Fix Objective C and Coffeescript colors
+- Fix Objective-C and Coffeescript colors
 - Set TabsHeight as scalable for High DPI
 - Removing bold tabs support
 
@@ -1144,7 +1194,7 @@ FIXES:
 - VCS icons
 - Fix Status Indicator cut on Windows (h<ttps://github.com/mallowigi/material-theme-jetbrains-eap/issues/89>)
 - Fix Project Icon as accent hoverable (<https://github.com/mallowigi/material-theme-jetbrains-eap/issues/88>)
-- Revert default font to 12px since it makes the text too big (blur is okay i guess)
+- Revert default font to 12px since it makes the text too big (blur is okay I guess)
 - Fix unreadable font (<https://github.com/mallowigi/material-theme-jetbrains-eap/issues/98>)
 
 ## 0.7.0.2
@@ -1203,7 +1253,7 @@ Small update so I can have feedback about possible bugs
 This version is more focused on the UI:
 - Themed Scrollbars
 - Material Table Headers
-- Material Inputs (not applicable everywhere at the moment)
+- Material Inputs (not applicable everywhere)
 - Material Passwords (with option of showing passwords)
 - Material Tabs
 - Add option to disable Material Theme only (leaving components, tabs and other options on)
@@ -1224,7 +1274,7 @@ This version is more focused on the UI:
 
 # 0.4.3
 - Fix issue with Statusbar option not being saved
-- Add bigger file icons for original ones (sass, php, ruby...)
+- Add bigger file icons for original ones (sass, php, ruby…)
 - More file icons: Chef, Cucumber, EJS, Jinja, Freemarker, PHPunits, Typings, Visio, VS
 - Hide exceptions about IndexOutOfBounds
 - Show red icon for excluded open files
@@ -1251,7 +1301,7 @@ This version is more focused on the UI:
 - Fix #92
 - Fix: Do not try to replace all icons, if an icon is not provided use JetBrains one.
 - Refactor project: put the selected theme in the MTConfig + better folder structure
-- Add more icons: Access, Word, Powerpoint, Excel, Audio, Video, Elm, Go, Hack, Julia, Pug, Kotlin, Maya, Markup,
+- Add more icons: Access, Word, PowerPoint, Excel, Audio, Video, Elm, Go, Hack, Julia, Pug, Kotlin, Maya, Markup,
   Premiere, Powershell, Rake, Riot, Stata, Sublime, Vim
 - Fix PHP + JS Code Schemes
 - New: Background image for empty IDE with customization available in options
@@ -1293,7 +1343,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Add toggle options to Search Everything
 - Change trees collapse and expand icons
 - Themed IDE icons: Checkout, Project Structure, Back, Forward, History, Up, Down, Step Into, Step Out,
-  Compile, Jars, Library...
+  Compile, Jars, Library…
 - Other bug fixes and improvements
 - Fix button background not taking the full width
 - Themed Memory Indicator
@@ -1316,7 +1366,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Messages bundle for easy replacing texts
 - New Buttons! Now buttons look even more like the Sublime plugin!
 - Add simple implementation of disabling the Material Theme (only the colors)
-- Fix some colors again...
+- Fix some colors again…
 - Some colors were lost during the last update. This update should fix them.
 - Fix custom font issue.
 - Fix issue with theme switcher when some parts of the UI do not update
@@ -1324,7 +1374,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Updated color schemes to reflect the Sublime plugin's color schemes
 - New option: **Contrast mode**. This will allow you to apply a higher contrasted Look and feel
 - Allow resetting the Active Tab settings with the default ones
-- Updated file status colors: modified, added, ignored, conflicts...
+- Updated file status colors: modified, added, ignored, conflicts…
 - Replace the "asterisk" icon with an "*edit*" material icon
 - Set Open and closed folders according to open tabs (still buggy)
 - Now the active tab indicator is following the user's tabs placement settings!

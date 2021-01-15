@@ -36,15 +36,15 @@ Originally these color settings were found inside the `Color Schemes` section of
 designers to set their own file status colors, but at some point JetBrains decided to remove this ability, having judged
 that it doesn't make sense to have colors affecting the UI found inside settings affecting the editor.
 
-While it does make sense, it was still a good thing to let people change these colors according to their themes. Why
+While this makes sense, it was still a good thing to let people change these colors according to their themes. Why
 wouldn't the <u>Monokai theme</u> creator change the `Modified Files` color to his shade of cyan? Or the `Conflicted
 files` to his shade of magenta? A lot of scheme designers supplied those colors so why remove this feature?
 
 So after reconsideration, JetBrains decided to let people customize file colors anyway, but instead of a per-color
 scheme basis, it is now **per-application basis**, and not provided by color scheme designers.
 
-Therefore this ability has now moved under **Version Control** -> **File Status Colors**. But because these colors are
-related to the UI (e.g. IntelliJ or Darcula Look And Feel), these are not independant standalone settings but instead
+Therefore, this ability has now moved under **Version Control** → **File Status Colors**. But because these colors are
+related to the UI (namely IntelliJ or Darcula Look And Feel), these are not independant standalone settings but instead
 coupled to the relevant _look and feel_. That means that those colors are found inside **IntelliJ or Darcula Color
 Scheme** rather than inside application settings.
 
@@ -56,7 +56,7 @@ the list of available Look and Feels! And because of this decision, the File Sta
 again, so they added the ability to customize the File Colors via the Color Scheme:
 <http://www.jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes_extras.html#customizing-version-control-file-status-colors>
 
-But again, there's no settings page for that, so the _Material Theme File Status Colors_ settings still comes in handy!
+But again, there're no settings page for that, so the _Material Theme File Status Colors_ settings still comes in handy!
 
 ## Material File Colors
 
@@ -102,7 +102,7 @@ different colors, of course.
 
 Other statuses may come from 3rd-party plugins and will have the default color provided by the plugin.
 
-**Note**: Because this feature overrides the one from the IDE, changing colors via the regular screen (`VCS -> File
+**Note**: Because this feature overrides the one from the IDE, changing colors via the regular screen (`VCS → File
 Status Colors`) doesn't make sense and will be overriden the next time you change the color scheme. So please use the
 `Material File Colors` from now on, even if you are on Darcula or a custom color scheme.
 {:class='card-panel'}
@@ -159,7 +159,7 @@ feature was still working, it will work again when using the plugin.
 Because this feature modifies the original `VCS File Colors` feature, please bear in mind the following issues:
 - When switching to other scheme that do not define file status colors, some defaults will be applied which are not the
   defaults provided by Darcula/IntelliJ, and therefore look bad.
-- Uninstalling/Disabling the plugin will not revert back these settings, so you will still keep the last file colors
+- Uninstalling/Disabling the plugin will not revert these settings, so you will still keep the last file colors
   even after restarting.
 
 Thankfully there is an easy fix for that: in the `VCS File Colors` there is a button _Reset Default_ that will revert

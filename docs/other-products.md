@@ -19,9 +19,9 @@ Showcase of other products using the Material Theme assets
 
 # Introduction
 
-The Material Themes have been ported to many editors: VSCode, Atom, Sublime, Brackets, etc... This makes sense as the themes are very popular amongst developers, however it would be great to be able to use these themes in other uses, such as in Office Documents, Websites or other tools.
+The Material Themes have been ported to many editors: VSCode, Atom, Sublime, Brackets, etc… This makes sense as the themes are very popular amongst developers, however it would be great to be able to use these themes in other uses, such as in Office Documents, Websites or other tools.
 
-Therefore people have thought of many ways to export these beautiful themes to such other uses, using custom styles, configuring settings or even go to modify the apps to inject the colors in the app. Here is a showcase of these:
+Therefore, people have thought of many ways to export these beautiful themes to such other uses, using custom styles, configuring settings or even go to modify the apps to inject the colors in the app. Here is a showcase of these:
 
 ## Material Theme for Chrome DevTools
 
@@ -29,9 +29,9 @@ Therefore people have thought of many ways to export these beautiful themes to s
 
 {% include figure.html content="/chrome/brand.png" caption="Material DevTools Theme Collection" %}
 
-This makes use of an experimental feature of Google Chrome, `Developer Tools Experiments` to allow developers to customize the DevTools panels using custom styles.
+It makes use of an experimental feature of Google Chrome, `Developer Tools Experiments` to allow developers to customize the DevTools panels using custom styles.
 
-### Installation:
+### Installation
 
 To use this theme, you'll need first to enable Developer Tools experiments in chrome://flags:
 - Go to chrome://flags
@@ -75,7 +75,6 @@ To install the plugin, you need to:
 - Then run `npm install`
 - Run `npm run apply`
 - You will be prompted to enter your administrator password. This is necessary as it is writing on the disk.
-- Finally select which theme to apply and restart Slack.
 - Also make sure you are online.
 
 ### Screenshots
@@ -96,9 +95,9 @@ You can find the list of available themes in the GitHub repository as well as tr
 
 As a final note, let's list a bunch of projects using or implementing the Material Theme:
 
-- [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio)
-- [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio)
-- [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio).
+  [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio))
+  [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio))
+  [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio)).
 - [Atom](https://github.com/silvestreh/atom-material-ui) (by [@silvestreh](https://github.com/silvestreh))
 - [Vim](https://github.com/kristijanhusak/vim-hybrid-material) (by [@kristijanhusak](https://github.com/kristijanhusak)).
 - [Terminal OSX](https://gist.github.com/mvaneijgen/4c56701215847dd5ddcf) (by [@mvaneijgen](https://github.com/mvaneijgen)).

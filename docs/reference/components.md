@@ -6,8 +6,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/reference/associations'
-  title: Icon Associations
+  url: '/docs/reference/folder-associations'
+  title: Folder Associations
 
 next:
   url: '/docs/reference/wizard'

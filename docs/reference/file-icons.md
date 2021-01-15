@@ -50,9 +50,9 @@ The icons themselves were taken from one of these sources:
 ## How it works
 
 Icons are matched based on a specific pattern in the filename:
-- According to the file extension (ex: .png, .js, .yml ...)
-- According to the framework/library (ex: package.json, Gemfile, AndroidManifest.xml...)
-- According to certain keywords in the name (Redis, Cordova, Git...)
+- According to the file extension (ex: .png, .js, .yml…)
+- According to the framework/library (ex: package.json, Gemfile, AndroidManifest.xml…)
+- According to certain keywords in the name (Redis, Cordova, Git…)
 
 Finally, if the icon does not fall in any of the categories, it will either:
 - Get a generic category (Audio, Video, Archive, JSON)
@@ -68,7 +68,7 @@ To see the full associations list, see
 
 If you want to add an icon, or add/remove/modify an association pattern to/from the list, you can submit a PR with the
 requested icon/change. Your request must follow those guidelines:
-- The icon must be an **acknowledged icon**, e.g. from one of the
+- The icon must be an **acknowledged icon**, which means from one of the
   [aforementioned resources](#acknowledgements). If you cannot find your icon in these resources but want to create one
   anyway, you must:
   - Have your icon as close as the original language/framework logo
@@ -84,6 +84,4 @@ If you add an association, please bear in mind that:
 - Check that your association is not used or shadowed by another one.
 - Your association must make sense (e.g. not `Verizon`, `*.000` or `a.b`)
 
-Also please note that it's preferable that your icon is **actually of use**, e.g. do not submit requests for a private
-framework that you use only in your company or of a personal choice (like "_I prefer my html files to have the React
-icon_" or something of the sort.)
+Moreover, please note that it's preferable that your icon is **actually of use**, put another way do not submit requests for a private framework that you use only in your company or of a personal choice (like "_I prefer my html files to have the React icon_" or something of the sort.)

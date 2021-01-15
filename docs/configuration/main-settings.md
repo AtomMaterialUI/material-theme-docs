@@ -53,12 +53,15 @@ The parts that are affected by the contrast change are:
 {% for theme in site.data.themes.other  %}
 {% include color.html color=theme field='contrast' %}
 {% endfor %}
+{% for theme in site.data.themes.other2  %}
+{% include color.html color=theme field='contrast' %}
+{% endfor %}
 
 
 ----
 ### High Contrast
 
-This option increases the contrast between the editor and the IDE , just like other editors such as Visual Studio Code
+This option increases the contrast between the editor and the IDE, just like other editors such as Visual Studio Code
 or Atom.
 
 {% include figure.html content="/screens/highContrast.png" caption="High Contrast" %}
@@ -74,12 +77,6 @@ set High Contrast **when in Contrast Mode**!
 The High Contrast mode is setting the main background color and contrast color darker, while setting the "Text Color"
 brighter (and vice-versa for light themes), such as the color of the tree items. Other colors, such as the main
 foreground colors or button colors are left unchanged.
-
-The option has been activated by default, since this is a very requested feature from the premices of the plugin! But
-you can turn it on or off from the _Material Theme Toolbar_.
-
-**Note:**: This feature is not available for [Native Themes](https://plugins.jetbrains.com/contest/intellij-themes/2019).
-{:class='card-title warn'}
 
 ----
 ### Custom Accent Color
@@ -102,7 +99,7 @@ While a set of predefined accent colors are available in the
 
 ### Override Accent Color
 
-Since version 2.6.0 there is the possibility to override the custom accent color with the default one bundled with the
+From version 2.6.0 there exists the possibility to override the custom accent color with the default one bundled with the
 theme. For instance, for _Oceanic_ the accent color will be `teal` while for _Darker_ it will be `orange` etc.
 
 This is especially useful for external themes, so that Themes designers can provide their own accent color.

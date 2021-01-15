@@ -22,7 +22,7 @@ In this section you will learn how to create your own external themes and distri
 
 ## External Themes
 
-From version 2.3.0 the plugin has the ability to load custom themes from external plugins, just like Color Schemes,
+From version 2.3.0 the plugin can load custom themes from external plugins, just like Color Schemes,
 Keymaps or Live Templates. To do so, it exports a specific
 [extension point](https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_extensions_and_extension_points.html)
 to be used from other plugins wanting to extend the theme list.
@@ -48,7 +48,7 @@ If we get enough submissions we might even host a gallery!
 
 The best way to illustrate it is by doing a tutorial.
 
-First of all, you will need the Plugin DevKit. Please refer to the
+First, you will need the Plugin DevKit. Please refer to the
 [Getting Started section](/docs/development/installation#getting-started) to download the necessary dependencies.
 
 Next, go to _File > New Project_ and select _IntelliJ Plugin_

@@ -30,7 +30,7 @@ full-fledged Material Design Experience.
 ### Transparent Scrollbars and Accent Scrollbars
 
 These options control the appearance of the scrollbars. Note: This feature works completely on Windows and Linux, but on
-Mac it is only working for non-native scrollbars (e.g. scrollbars that appear only while scrolling).
+Mac it is only working for non-native scrollbars (i.e. scrollbars that appear only while scrolling).
 
 *Transparent scrollbars* will add more transparency to the scrollbars and set it as the same color as the current
 theme's background color. This is adding _50% opacity_ and there is no way to change it.

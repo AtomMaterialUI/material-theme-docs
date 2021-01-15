@@ -31,7 +31,7 @@ If on the other hand you like everything but prefer to use the default icons, ju
 
 ### Material Design Components
 
-**Note**: This feature have been removed since 5.0. If you desire to keep using the native look and feel, please disable this plugin or use the [Material Theme Lite](https://plugins.jetbrains.com/plugin/12124-material-theme-ui-lite)
+**Note**: This feature has been removed since 5.0. If you desire to keep using the native look and feel, please disable this plugin or use the [Material Theme Lite](https://plugins.jetbrains.com/plugin/12124-material-theme-ui-lite)
 {:class='card-panel warn'}
 
 This toggles the theming of components inside the IDE such as *buttons*, *text fields* and *checkboxes*. This is nice if
@@ -89,12 +89,12 @@ will continue to work. These are:
 This setting switches the default font used in the editor with the usual font used in Material Design,
 [Roboto](https://fonts.google.com/specimen/Roboto).
 
-This setting changes the font you see in *Settings -> Appearance and Behavior -> Appearance*. When unchecked, it will
-restore the original default font, e.g. `Tahoma` in Windows, `SF_Text` in Mac and `Lucida Sans` in Linux. When checked,
+This setting changes the font you see in *Settings → Appearance and Behavior → Appearance*. When unchecked, it will
+restore the original default font, namely `Tahoma` in Windows, `SF_Text` in Mac and `Lucida Sans` in Linux. When checked,
 it will replace it with `Roboto` (only if the font is already installed in the machine though).
 
-**Note**: This setting is requiring that **default fonts are not overriden**, e.g. that the setting at `Appearance and
-Behavior -> Appearance -> Override default font` is unchecked, in which case it will use the font set there.
+**Note**: This setting is requiring that **default fonts are not overriden**, meaning that the setting at `Appearance and
+Behavior → Appearance → Override default font` is unchecked, in which case it will use the font set there.
 {:class='card-panel'}
 
 **Note 2**: This setting will replace the font with Roboto only if that font is already installed in the machine. If
@@ -115,7 +115,7 @@ Check [Material File Status Colors](/docs/configuration/file-status-colors) for 
 
 The Material Theme plugin now comes prebundled with a list of "wallpapers" that are displayed when there are no files open in the editor.
 
-This is done thanks to the [Background Image feature](https://www.jetbrains.com/help/idea/setting-background-image.html) from JetBrains.
+This is performed in conjunction with the [Background Image feature](https://www.jetbrains.com/help/idea/setting-background-image.html) from JetBrains.
 
 {% include figure.html content="/screens/wallpapers/oceanic.png" caption="Oceanic Wallpaper" %}
 
@@ -135,7 +135,7 @@ This feature is available since version 5.0.0
 ### Project Frame Colors
 
 This feature has been inspired by the Visual Studio Code plugin [Unique Window Colors](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors).
-Its concept is to provide a better visualization of your opened projects by adding a colored stripe on top of each window, with an unique color automatically generated from the **project name**!
+Its concept is to provide a better visualization of your opened projects by adding a colored stripe on top of each window, with a unique color automatically generated from the **project name**!
 
 {% include figure.html content="/screens/projectFrame.png" caption="Project Frame Colors" %}
 
@@ -154,7 +154,5 @@ settings.
 **Q**: Why have you removed the Material Fonts?!
 
 **A**: Because of the previous Q&A. Many users were complaining that their IDE become scrambled all of a sudden,
-generally as a result of their installed Roboto font not in sync with new versions of the JDK. Even though there is an
-easy workaround, it is not serious for a plugin used by millions of users to have such critical issues, even though it's
-not the plugin's fault per se. Therefore, it's left at the discretion of the user to replace the fonts of their IDE.
-However we still recommend Roboto for the best experience!
+generally as a result of their installed Roboto font not in sync with new versions of the JDK.
+Even though there is an easy workaround, it is not serious for a plugin used by millions of users to have such critical issues, even though it's not the plugin's fault per se. Therefore, it's left at the discretion of the user to replace the fonts of their IDE. That being said we still recommend Roboto for the best experience!
