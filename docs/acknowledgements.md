@@ -78,9 +78,9 @@ supporting even the most obscure languages. They are still very active and my in
 
 The Material Theme is so famous that it exists for many other IDEs, editors, applications, css themes and so on.
 
-- [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio)
-- [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio)
-- [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio).
+- [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio))
+- [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio))
+- [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio)).
 - [Atom](https://github.com/silvestreh/atom-material-ui) (by [@silvestreh](https://github.com/silvestreh))
 - [Vim](https://github.com/kristijanhusak/vim-hybrid-material) (by [@kristijanhusak](https://github.com/kristijanhusak)).
 - [Terminal OSX](https://gist.github.com/mvaneijgen/4c56701215847dd5ddcf) (by [@mvaneijgen](https://github.com/mvaneijgen)).
@@ -249,6 +249,17 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 
 ##### Sponsors
+
+The Material Theme plugin is sponsored by [CodeStream](https://codestream.com/?utm_source=jbmarket&utm_medium=banner&utm_campaign=jbmaterialtheme) and [Codota](https://www.codota.com/?url=https://www.codota.com&device=c&keyword=codota&country={country}&campaign={campaign}&gclid=EAIaIQobChMI0MTRrsS55gIVQrDtCh2Reg7FEAAYASAAEgK0QfD_BwE).
+
+[![https://codestream.com](https://alt-images.codestream.com/codestream_logo_jbmaterialtheme.png)](https://sponsorlink.codestream.com/?utm_source=jbmarket&utm_campaign=jbmaterialtheme&utm_medium=banner)
+
+Eliminate context switching and costly distractions. Create and merge PRs and perform code reviews from inside your IDE while using jump-to-definition, your keybindings, and other IDE favorites. [Learn more](https://sponsorlink.codestream.com/?utm_source=jbmarket&utm_campaign=jbmaterialtheme&utm_medium=banner)!
+
+[![https://www.codota.com](https://d3ftmdkezac6rp.cloudfront.net/plugins/assets/logo.b81d20edb7ae4d8ff43b886ae5cde1dd.svg)](https://www.codota.com/?url=https://www.codota.com&device=c&keyword=codota&country={country}&campaign={campaign}&gclid=EAIaIQobChMI0MTRrsS55gIVQrDtCh2Reg7FEAAYASAAEgK0QfD_BwE)
+
+Code faster and smarter using code completions learned from millions of programs directly in IntelliJ, Android Studio or Eclipse. [Get Codota](https://www.codota.com/?url=https://www.codota.com&device=c&keyword=codota&country={country}&campaign={campaign}&gclid=EAIaIQobChMI0MTRrsS55gIVQrDtCh2Reg7FEAAYASAAEgK0QfD_BwE)
+
 
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [
 [Become a sponsor](https://opencollective.com/material-theme-jetbrains#sponsor)]

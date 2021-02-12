@@ -16,6 +16,14 @@ next:
 # Changelog
 ----
 
+# 6.0.0
+- New Versioning
+- Fix Double Title Bar
+
+# 5.7.0
+- Support for 2021.1
+- Fix Material Wallpapers
+
 # 5.6.0
 - **New Themes: Moonlight and Github Dark**
 - Fix issue where you can't change file colors
