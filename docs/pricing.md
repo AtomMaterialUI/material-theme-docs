@@ -27,13 +27,13 @@ Previous versions are still available for free, but further updates will only be
 
 | Individual License | Monthly subscription | Annual Subscription   |
 |:-------------------|:---------------------|:----------------------|
-| 1st year           | 5.00$                | 50.00$ (10% discount) |
+| 1st year           | 5.00$                | 50.00$ (20% discount) |
 | 2nd year           | 4.00$                | 40.00$                |
 | 3rd year onwards   | 3.00$                | 30.00$                |
 
 | Enterprise License | Monthly subscription | Annual Subscription    |
 |:-------------------|:---------------------|:-----------------------|
-| 1st year           | 30.00$               | 300.00$ (10% discount) |
+| 1st year           | 30.00$               | 300.00$ (20% discount) |
 | 2nd year           | 24.00$               | 240.00$                |
 | 3rd year onwards   | 18.00$               | 180.00$                |
 
