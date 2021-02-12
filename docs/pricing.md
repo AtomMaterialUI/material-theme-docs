@@ -11,7 +11,7 @@ previous:
 
 {% include carbonads.html %}
 
-Here you can find more information about the Pricing
+Here you can find more information about the Pricing.
 {:class='title'}
 
 ## Disclaimer
