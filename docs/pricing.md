@@ -42,11 +42,11 @@ Previous versions are still available for free, but further updates will only be
 
 ### Discounts and Free Licenses
 
-Academics, open-source and user groups can download the plugin ++free of charge++.
+Academics, open-source and user groups can download the plugin **free of charge**.
 
-Non-profit organizations, educational organizations and students can get a ++50% discount++.
+Non-profit organizations, educational organizations and students can get a **50% discount**.
 
-However, people that have contributed more than $1.00 in the past, before 12/02/21, be it from PayPal or CodeCollective, can be eligible to a **free lifetime license**!
+However, people that have contributed more than $1.00 in the past (before 12/02/21), be it from PayPal or CodeCollective, can be eligible to a **free lifetime license**!
 Same for people that contributed to **one or more plugins of the family**, and plugin developers.
 
 Contact me with your contact information at <elior@material-theme.com> to apply.
