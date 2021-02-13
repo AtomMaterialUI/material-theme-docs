@@ -29,3 +29,5 @@ vue/bundle.js
 assets/media
 /_algolia_api_key
 /package-lock.json
+
+contributors.csv
