@@ -59,24 +59,24 @@ You can also find a lite version available for free here but with limited featur
 
 #### Feature Comparison:
 
-| Feature               | Premium Version | Lite Version           |
-|:----------------------|:----------------|:-----------------------|
-| Built-in Themes       | Yes             | Yes                    |
-| Color Schemes         | Yes             | Yes                    |
-| Fonts                 | Yes             | Yes                    |
-| Wallpapers            | Yes             | Yes                    |
-| File Status Colors    | Yes             | Yes                    |
-| Accent Colors         | Yes             | Yes (not configurable) |
-| Material Components   | Yes             | Yes (partial support)  |
-| Support               | Yes             | Yes (limited)          |
-| Custom Themes         | Yes             | No                     |
-| Tab Settings          | Yes             | No                     |
-| Compact Settings      | Yes             | No                     |
-| Project View Settings | Yes             | No                     |
-| Component Settings    | Yes             | No                     |
-| Language Additions    | Yes             | No                     |
-| External Themes       | Yes             | No                     |
-| Update rate           | High            | Low                    |
+| Feature                    | Premium Version | Lite Version           |
+|:---------------------------|:----------------|:-----------------------|
+| Built-in Themes            | Yes             | Yes                    |
+| Color Schemes              | Yes             | Yes                    |
+| Fonts                      | Yes             | Yes                    |
+| Wallpapers                 | Yes             | Yes                    |
+| File Status Colors         | Yes             | Yes                    |
+| Accent Colors              | Yes             | Yes (not configurable) |
+| Material Components        | Yes             | Yes (partial support)  |
+| Support                    | Yes             | Yes (limited)          |
+| Custom Themes              | Yes             | No                     |
+| Tab Customization          | Yes             | No                     |
+| Compactness Customization  | Yes             | No                     |
+| Project View Customization | Yes             | No                     |
+| Components Customization   | Yes             | No                     |
+| Language Additions         | Yes             | No                     |
+| External Themes            | Yes             | No                     |
+| Update rate                | High            | Medium                 |
 
 
 

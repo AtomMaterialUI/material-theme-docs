@@ -5,7 +5,7 @@ group: contact-us
 comments: true
 ---
 
-Want to contribute to the plugin? Feel free to open issues at the Github repository, or use the form below to submit feature requests.
+Want to contribute to the plugin? Feel free to open issues at the GitHub repository, or use the form below to submit feature requests.
 
 
 <form id="contact-us-form" action="https://send.pageclip.co/qRYPR9l3tBKru2vEFibJfvBVuUWlzhPa" method="post" markdown="0">
