@@ -44,18 +44,19 @@ Previous versions are still available for free, but further updates will only be
 
 Although there are no tiers, there are many **discount community programs**:
 
-| Title                                          | Discount |
-|:-----------------------------------------------|:---------|
-| Students and Teachers                          | Free     |
-| Classroom Assistance                           | Free     |
-| Open Source Projects                           | Free     |
-| Plugin Developers                              | Free     |
-| Startups                                       | 50% off  |
-| Training courses, coding schools and bootcamps | Free     |
-| Non-profit Organizations                       | 50% off  |
-| JetBrains User Groups                          | Free     |
-| **Backers and Contributors**                   | Free     |
+| Title                                          | Discount                              |
+|:-----------------------------------------------|:--------------------------------------|
+| Students and Teachers                          | <span style="color:green">Free</span> |
+| Classroom Assistance                           | <span style="color:green">Free</span> |
+| Open Source Projects                           | <span style="color:green">Free</span> |
+| Plugin Developers                              | <span style="color:green">Free</span> |
+| Startups                                       | 50% off                               |
+| Training courses, coding schools and bootcamps | <span style="color:green">Free</span> |
+| Non-profit Organizations                       | 50% off                               |
+| JetBrains User Groups                          | <span style="color:green">Free</span> |
+| **Backers and Contributors**                   | <span style="color:green">Free</span> |
 
+----
 
 People that have contributed more than $1.00 in the past (before 12/02/21), be it from PayPal or OpenCollective,
 can be eligible to a **free lifetime license**!
