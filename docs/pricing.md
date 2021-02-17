@@ -42,15 +42,25 @@ Previous versions are still available for free, but further updates will only be
 
 ### Discounts and Free Licenses
 
-Academics, open-source and user groups can download the plugin **free of charge**.
+Although there are no tiers, there are many **discount community programs**:
 
-Non-profit organizations, educational organizations and students can get a **50% discount**.
+| Title                                          | Discount |
+|:-----------------------------------------------|:---------|
+| Students and Teachers                          | Free     |
+| Classroom Assistance                           | Free     |
+| Open Source Projects                           | Free     |
+| Plugin Developers                              | Free     |
+| Startups                                       | 50% off  |
+| Training courses, coding schools and bootcamps | Free     |
+| Non-profit Organizations                       | 50% off  |
+| JetBrains User Groups                          | Free     |
+| **Backers and Contributors**                   | Free     |
 
-However, people that have contributed more than $1.00 in the past (before 12/02/21), be it from PayPal or CodeCollective,
+
+People that have contributed more than $1.00 in the past (before 12/02/21), be it from PayPal or OpenCollective,
 can be eligible to a **free lifetime license**!
-Same for people that contributed to **one or more plugins of the family**, and plugin developers.
 
-Contact me with your contact information at <elior@material-theme.com> to apply.
+Don't hesitate to contact me with your contact information at <elior@material-theme.com> to apply.
 
 
 ### Lite Version
