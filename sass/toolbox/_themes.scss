@@ -5,8 +5,8 @@ body {
     transition: all 1s;
   }
 
-  .documentation {
-    background-color: var(--contrast);
+  &.documentation {
+    background-color: var(--background);
     color: var(--foreground);
   }
 
@@ -96,7 +96,7 @@ body {
     color: var(--foreground);
 
     a {
-      color: #fff;
+      color: #ffffff;
 
       &:hover {
         color: $second-accent-color;
@@ -140,5 +140,32 @@ body {
     right: 0;
     top: 0;
     transition: all 1s;
+  }
+
+
+  code {
+    background: var(--second);
+  }
+
+  table tbody tr:nth-child(odd),
+  .card-panel,
+  .card {
+    background: var(--contrast);
+    color: var(--foreground);
+  }
+
+  .card-panel.warn {
+    background: var(--accent);
+    color: $almost-white;
+  }
+
+  .search .search-input,
+  .search .search-button {
+    color: var(--foreground);
+    background: $almost-white;
+  }
+
+  .collection-item.color {
+    color: $primary-text;
   }
 }

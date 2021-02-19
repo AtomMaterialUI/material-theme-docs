@@ -1,6 +1,5 @@
 .documentation {
   @include flexbox(column, wrap, start, flex-start);
-  background: $background-color;
   margin-top: 0;
 
   .main {

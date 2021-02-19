@@ -3,8 +3,9 @@
     --background: #263238;
     --foreground: #b0bec5;
     --contrast: #1e272c;
+    --second: #32424a;
     --accent: #009688;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/oceanic.png');
     --logo: url('../../img/logo/material-oceanic.svg');
   }
@@ -13,8 +14,9 @@
     --background: #212121;
     --foreground: #b0bec5;
     --contrast: #1a1a1a;
-    --accent: #FF9800;
-    --accent-text: #FFFFFF;
+    --second: #292929;
+    --accent: #ff9800;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/darker.png');
     --logo: url('../../img/logo/material-darker.svg');
   }
@@ -23,6 +25,7 @@
     --background: #fafafa;
     --foreground: #a7adb0;
     --contrast: #f4f4f4;
+    --second: #ffffff;
     --accent: #80cbc4;
     --accent-text: #222222;
     --laptop: url('../../img/themes/lighter.png');
@@ -33,8 +36,9 @@
     --background: #292d3e;
     --foreground: #b0bec5;
     --contrast: #202331;
+    --second: #34324a;
     --accent: #ab47bc;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/palenight.png');
     --logo: url('../../img/logo/material-palenight.svg');
   }
@@ -43,6 +47,7 @@
     --background: #0f111a;
     --foreground: #8f93a2;
     --contrast: #090b10;
+    --second: #181a1f;
     --accent: #84ffff;
     --accent-text: #222222;
     --laptop: url('../../img/themes/deepocean.png');
@@ -53,6 +58,7 @@
     --background: #2d2a2e;
     --foreground: #c1c0c0;
     --contrast: #221f22;
+    --second: #403e41;
     --accent: #ffd866;
     --accent-text: #222222;
     --laptop: url('../../img/themes/monokai.png');
@@ -63,7 +69,8 @@
     --background: #282a36;
     --foreground: #f8f8f2;
     --contrast: #191a21;
-    --accent: #FF79C5;
+    --second: #282a36;
+    --accent: #ff79c5;
     --accent-text: #222222;
     --laptop: url('../../img/themes/dracula.png');
     --logo: url('../../img/logo/material-dracula.svg');
@@ -73,8 +80,9 @@
     --background: #2f343f;
     --foreground: #d3dae3;
     --contrast: #262b33;
-    --accent: #42A5F5;
-    --accent-text: #FFFFFF;
+    --second: #393f4c;
+    --accent: #42a5f5;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/arcdark.png');
     --logo: url('../../img/logo/material-arcdark.svg');
   }
@@ -83,8 +91,9 @@
     --background: #282c34;
     --foreground: #979fad;
     --contrast: #21252b;
+    --second: #2f333d;
     --accent: #2979ff;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/onedark.png');
     --logo: url('../../img/logo/material-onedark.svg');
   }
@@ -93,8 +102,9 @@
     --background: #fafafa;
     --foreground: #232324;
     --contrast: #d3d4d5;
+    --second: #eaeaeb;
     --accent: #2979ff;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/onelight.png');
     --logo: url('../../img/logo/material-onelight.svg');
   }
@@ -103,8 +113,9 @@
     --background: #002b36;
     --foreground: #839496;
     --contrast: #00252e;
+    --second: #003745;
     --accent: #d33682;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/solardark.png');
     --logo: url('../../img/logo/material-solardark.svg');
   }
@@ -113,18 +124,20 @@
     --background: #fdf4df;
     --foreground: #586e75;
     --contrast: #fcf4dc;
+    --second: #f6f0de;
     --accent: #d33682;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/solarlight.png');
     --logo: url('../../img/logo/material-solarlight.svg');
   }
 
   &-github {
-    --background: #F7F8FA;
-    --foreground: #5B6168;
-    --contrast: #FFFFFF;
-    --accent: #79CB60;
-    --accent-text: #FFFFFF;
+    --background: #f7f8fa;
+    --foreground: #5b6168;
+    --contrast: #ffffff;
+    --second: #f3f3f3;
+    --accent: #79cb60;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/github.png');
     --logo: url('../../img/logo/material-github.svg');
   }
@@ -133,8 +146,9 @@
     --background: #24292e;
     --foreground: #e1e4e8;
     --contrast: #1e2428;
+    --second: #2f363d;
     --accent: #f9826c;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/githubdark.png');
     --logo: url('../../img/logo/material-githubdark.svg');
   }
@@ -143,18 +157,20 @@
     --background: #011627;
     --foreground: #d6deeb;
     --contrast: #010e1a;
+    --second: #0b2942;
     --accent: #7e57c2;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/nightowl.png');
     --logo: url('../../img/logo/material-nightowl.svg');
   }
 
   &-lightowl {
-    --background: #F0F0F0;
+    --background: #f0f0f0;
     --foreground: #403f53;
-    --contrast: #D0D0D0;
-    --accent: #2AA298;
-    --accent-text: #FFFFFF;
+    --contrast: #d0d0d0;
+    --second: #fbfbfb;
+    --accent: #2aa298;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/lightowl.png');
     --logo: url('../../img/logo/material-lightowl.svg');
   }
@@ -163,8 +179,9 @@
     --background: #222436;
     --foreground: #c8d3f5;
     --contrast: #191a2a;
+    --second: #2f334d;
     --accent: #74a0f1;
-    --accent-text: #FFFFFF;
+    --accent-text: #ffffff;
     --laptop: url('../../img/themes/moonlight.png');
     --logo: url('../../img/logo/material-moonlight.svg');
   }
