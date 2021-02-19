@@ -7,6 +7,10 @@ previous:
   url: '/docs/support-us'
   title: Support Us
 
+next:
+  url: '/docs/about-subscription-model
+  title: About the Subscription Model
+
 ---
 
 {% include carbonads.html %}
