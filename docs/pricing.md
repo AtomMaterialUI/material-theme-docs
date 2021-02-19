@@ -74,12 +74,12 @@ You can also find a lite version available for free here but with limited featur
 |:---------------------------|:----------------|:-----------------------|
 | Built-in Themes            | Yes             | Yes                    |
 | Color Schemes              | Yes             | Yes                    |
-| Fonts                      | Yes             | Yes                    |
-| Wallpapers                 | Yes             | Yes                    |
-| File Status Colors         | Yes             | Yes                    |
+| File Status Colors         | Yes             | Yes (not configurable) |
 | Accent Colors              | Yes             | Yes (not configurable) |
 | Material Components        | Yes             | Yes (partial support)  |
 | Support                    | Yes             | Yes (limited)          |
+| Wallpapers                 | Yes             | No                     |
+| Fonts                      | Yes             | No                     |
 | Custom Themes              | Yes             | No                     |
 | Tab Customization          | Yes             | No                     |
 | Compactness Customization  | Yes             | No                     |
