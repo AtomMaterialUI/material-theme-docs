@@ -5,6 +5,11 @@ body {
     transition: all 1s;
   }
 
+  .documentation {
+    background-color: var(--contrast);
+    color: var(--foreground);
+  }
+
   .header,
   .footer {
     background-color: var(--background);
