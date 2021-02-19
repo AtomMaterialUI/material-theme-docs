@@ -159,6 +159,10 @@ body {
     color: $almost-white;
   }
 
+  .card-panel.error {
+    color: $almost-white;
+  }
+
   .search .search-input,
   .search .search-button {
     color: var(--foreground);
