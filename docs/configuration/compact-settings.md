@@ -15,12 +15,14 @@ next:
 
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 These settings control some components' display, mainly about their compactness.
 {:class='title'}
 
 {% include carbonads.html %}
 
-----
 ### Compact Statusbar
 
 The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and

@@ -74,8 +74,8 @@ requested icon/change. Your request must follow those guidelines:
   - Have your icon as close as the original language/framework logo
   - Only use one color
   - The color must be one of those mentioned in [Color Schemes](/docs/configuration/color-schemes#color-palette)
-- The icon must be in `SVG` format and its width and height must be `16x16`.
-- The icon must not weigh too much (it rarely exceeds 5KB)
+- The icon must be in `SVG` format and its width and height must be `16×16`.
+- The icon must not weigh too much (it rarely exceeds 5 KB)
 - Add the icon in the `src/resources/icons/files` folder.
 
 If you add an association, please bear in mind that:

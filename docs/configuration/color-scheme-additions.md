@@ -15,6 +15,9 @@ next:
 
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 Augment languages highlighting capabilities.
 {:class='title'}
 

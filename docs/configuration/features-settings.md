@@ -14,6 +14,9 @@ next:
   title: Other Tweaks
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 Here you can turn on and off specific features of the Material Theme for even further customization.
 {:class='title'}
 

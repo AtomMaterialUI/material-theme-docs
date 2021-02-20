@@ -31,7 +31,7 @@ You see, unlike operating systems that change once every two years or so, IDEs a
 JetBrains IDEs (but VSCode, Sublime, etc as well).
 
 Therefore, it requires constant maintenance, constantly checking what's new and what's broken and fix it accordingly.
-If you check the state of the plugin a few years ago you'd see that it is completely different to what it is today.
+If you check the state of the plugin a few years ago, you'd see that it is completely different to what it is today.
 Perhaps the core have stayed the same, but it has a lot of new features, improvements etc.
 
 So paying up one-time would only be good if you never update your IDE. If that's your case, well then it's another story.
@@ -48,12 +48,10 @@ AND paid products.
 Working on the Material Theme and Atom Material Plugins is a wonderful experience! I am in charge of my own products, deciding
 what features will be and need to be fixed, all the while listening to user feedback to constantly try to improve.
 
-But all of this has a price, and it is at the cost of many many days and nights, with only myself and JetBrains's source code to figure
-out how to make stuff how I want. And all of this is the work of one-guy only, myself.
-Not a company, not a group of devs, but just one man that worked during his free time only to make beautiful things for himself and for others.
+But all of this has a price, and it is at the cost of many, many days and nights, with only myself and JetBrains's source code to figure out how to make stuff how I want.
+And all of this is the work of one-guy only, myself. Not a company, not a group of devs, but just one man that worked during his free time only to make beautiful things for himself and for others.
 
-So, I pondered for a while, but could never do it, because I was afraid of the users' reaction. But after 4 years, I think I should
-be allowed to think about myself for a bit.
+So, I pondered for a while, but could never do it, because I was afraid of the users' reaction. But after 4 years, I think I should be allowed to think about myself for a bit.
 
 So here we are today, I'm asking of you, if you like or liked the Material Theme, see this as a token of appreciation for all the work done,
 not only as a capitalist, lucrative move.
@@ -69,13 +67,13 @@ stop now that I'm asking money from users.
 
 **Q**: *So is the plugin going to be closed-source?*
 
-**A**: Well, yeah. Since it is now copyrighted it has gone away from the OpenSource ecosystem. But all work done so far will stay accessible
+**A**: Well, yeah. Since it is now copyrighted, it has gone away from the OpenSource ecosystem. But all work done so far will stay accessible
 on GitHub so that plugin developers can still use my knowledge to come up with solutions to their issues. And I'm still available
 on Slack and YouTrack to be able to answer people's questions
 
 **Q**: *Hey by the way! I supported you before when you had nothing! And now I have to pay?!*
 
-**A**: Ok first of all let me tell you that I'm truly grateful for all the support you guys gave me!!! When I took the reins of this
+**A**: Okay, first of all let me tell you that I'm truly grateful for all the support you guys gave me!!! When I took the reins of this
 project I would have never imagined that it would become so popular, and that people would even support me financially!!!
 
 For that I am eternelly indebted to all of you, therefore all people that *donated more than $1.00* are entitled to a **free lifetime license**.
@@ -86,11 +84,9 @@ If you had donated in the past, or have contributed to the project(s), email me 
 And again, **thank you**. I could never have done it without you guys!!!
 
 
-**Q**: *But 15$ a year is too much for a theme!!!*
+**Q**: *But $15 a year is too much for a theme!!!*
 
-**A**: Is it? 15$ is roughly the price of about 10 coffees, 4 sandwiches or 6 subway tickets. Is working on a beautiful IDE with many
-different customization options, many features, constant updates worth that price? If the price is really the issue, don't hesitate to contact me,
-perhaps I can give you a discount, or a trial extension if you want.
+**A**: Is it? $15 is roughly the price of about 10 coffees, 4 sandwiches or 6 subway tickets. Is working on a beautiful IDE with many customization options, many features, constant updates worth that price? If the price is really the issue, don't hesitate to contact me, perhaps I can give you a discount, or a trial extension if you want.
 
 Also, if you are a student, a classroom, a non-profit organization, an open-source contributor or a plugin developer, you
 can use the plugin **for free**.
@@ -101,8 +97,7 @@ You just need to talk, I'm here, and listening to everyone :)
 
 **A**: Sure, there are tons of other free themes, but none other push the customization as much as the Material Theme UI.
 
-This plugin is not just a theme, or just themes (because there are actually 15 themes bundled as of today 19.02.21), but it's a set
-of features that give you a greater control of your IDE's appearance.
+This plugin is not just a theme, or just themes (because there are actually 15 themes bundled as of today 19.02.21), but it's a set of features that give you a greater control of your IDE's appearance.
 
 I suppose you know it already but with this plugin you can:
 - **Customize your theme colors without the need to make a plugin!**

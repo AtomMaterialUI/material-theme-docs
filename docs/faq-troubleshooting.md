@@ -21,7 +21,7 @@ Here you can find all the Troubleshooting FAQs.
 **A**: The Theme Switcher is only replacing the theme of the whole IDE, not the editor itself. You can therefore have a
 separate theme for the IDE and the Editor, for instance _Palenight_ and _Darker_ or even a custom Color Scheme.
 
-**Q**: I've updated the IDE/plugin to a new version and now I get an error about the plugin failing to initialize?
+**Q**: I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?
 
 **A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible to the
 new version. In that case, simply make a copy of the settings file, then delete the original file, and restart the IDE.
@@ -76,7 +76,7 @@ If you need to use Sync Settings, then I'll suggest disabling synchronizing look
 
 **A**: Since 5.0.0 all icons related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), another plugin developed by the Material Theme team. This is in order to encourage developers to develop _Icon Themes_, since the plugin is now free of icons.
 
-**Q**: **I've downloaded a theme from the Plugins Page and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…**
+**Q**: **I've downloaded a theme from the Plugins Page, and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…**
 
 **A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes. Even though the plugin tries to convert it to its own format, it won't be as good as the originals. Still, it should be as similar as possible, so there shouldn't be any critical issues. In that case, please report to the repository's issues.
 
@@ -99,12 +99,12 @@ Maybe in the future if JetBrains agrees to allow more customization natively.
 **Q**: Why limiting the thickness or the tab height? I want to have 10 in thickness and 100 in tabs!!!
 
 **A**: Because allowing values past these limits would make the UI ugly or worse, crash it.
-If you have a good reason to want it anyway, you can open an issue on Github with why you would want that.
+If you have a good reason to want it anyway, you can open an issue on GitHub with why you would want that.
 At most, you can still fork the plugin and tweak it to whatever you want.
 
 **Q**: The uppercase tabs feature is so useless! Editor Tabs !== Material Design Tabs!
 
-**A**: While I might agree with this statement, Personally, I think that this is a cool feature and it doesn't bother me.
+**A**: While I might agree with this statement, Personally, I think that this is a cool feature, and it doesn't bother me.
 It is not allowed by default, so new users will not be startled by it, and if you don't like it you can simply turn it off.
 
 **Q**: My settings are not persisted between my IDEs!
@@ -179,9 +179,9 @@ your theme as a predefined theme, or submit your theme in the form (not availabl
 a dark theme to a light theme and vice-versa.
 But sometimes, like for instance when you install the plugin or reset your settings,
 because it doesn't know which theme you came from, it will ask even though you didn't ask for it.
-Simply press ok and it will not bother you anymore.
+Simply press ok, and it will not bother you anymore.
 
-**Q**: I changed the colors but it doesn't look as good as the default themes.
+**Q**: I changed the colors, but it doesn't look as good as the default themes.
 
 **A**: Creating a theme is not an easy task, and the Material ones are the result of a long thought process about
 which colors are best suited for a UI. However, you can check out other famous Sublime/Atom/Visual Studio themes
@@ -212,3 +212,15 @@ Because this feature modifies the original `VCS File Colors` feature, please bea
 Thankfully there is an easy fix for that: in the `VCS File Colors` there is a button _Reset Default_ that will
 revert the value back to the Darcula/IntelliJ default.
 **Note however that as soon as you change a color scheme the values will change back again.**
+
+----
+## License Activation
+
+**Q**: I've bought a license, but I am still identified as a Free User!
+
+**A**: That means that you didn't activate your license yet. At the moment the only way to do it is to run the action to open the _Registration Modal_.
+
+{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+
+{% include figure.html content="/screens/license.png" caption="License" %}
+

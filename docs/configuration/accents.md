@@ -112,6 +112,9 @@ simply preselect one from the `Accent Chooser` and restart the IDE.
 
 ## Customization
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 There are two ways of customizing the current accent color:
 - By selecting a color from the list of available colors
 - By setting a custom color in the settings

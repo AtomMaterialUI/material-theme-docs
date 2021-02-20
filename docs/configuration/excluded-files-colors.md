@@ -68,7 +68,7 @@ example, differentiating between the `docs` directory than the rest of the sourc
 
 To do so, one must create a **Scope**. There you can define your pattern rules, which directories are included in the
 scope, which are excluded, and so on. Finally, add your new created scope in the File Colors list, and rise it up to the
-top so it won't be shrouded by previous file colors.
+top, so it won't be shrouded by previous file colors.
 
 {% include figure.html content="/screens/scopes.png" caption="Scopes" %}
 

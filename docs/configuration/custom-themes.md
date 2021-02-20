@@ -14,6 +14,9 @@ next:
   title: Color Palette
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 This section explains how you can customize the themes colors using Custom Themes.
 {:class='title'}
 
@@ -225,7 +228,7 @@ theme as a predefined theme, or create a plugin extending the Material Theme UI 
 [config directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs),
 just like the Material settings, named `material_custom_theme.xml`
 
-**Q**: I changed the colors but it doesn't look as good as the default themes.
+**Q**: I changed the colors, but it doesn't look as good as the default themes.
 
 **A**: Creating a theme is not an easy task, and the Material ones are the result of a long thought process about which
 colors are best suited for a UI. However, you can check out other famous Sublime/Atom/Visual Studio themes as an

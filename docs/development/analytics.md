@@ -18,8 +18,7 @@ next:
 
 ## Analytics
 
-Starting from 2.4.0 analytics have been added to the plugin. Just like other plugins' analytics, these analytics are here to
-analyze feature usage and users' audiences.
+Starting from 2.4.0 analytics have been added to the plugin. Just like other plugins' analytics, these analytics are here to analyze feature usage and users' audiences.
 
 This step would provide us useful data for prioritizing development of highly requested features, while scrapping others
 rarely in use. This could also be a good opportunity to make people aware of specific features via push notifications or
