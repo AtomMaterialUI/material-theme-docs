@@ -14,6 +14,9 @@ next:
   title: Compact Settings
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 This page displays the features and settings that customize the appearance of the Editor Tabs and IDE Tabbed Panes.
 {:class='title'}
 
@@ -166,9 +169,9 @@ customization natively.
 **Q**: Why limiting the thickness or the tab height? I want to have 10 in thickness and 100 in tabs!!!
 
 **A**: Because allowing values past these limits would make the UI ugly or worse, crash it. If you have a good reason to
-want it anyway, you can open an issue on Github with why you would want that. At most, you can still fork the plugin and
+want it anyway, you can open an issue on GitHub with why you would want that. At most, you can still fork the plugin and
 tweak it to whatever you want.
 
 **Q**: The uppercase tabs feature is so useless! Editor Tabs !== Material Design Tabs!
 
-**A**: While I might agree with this statement, Personally, I think this is a cool feature and it doesn't bother me. It is not allowed by default, so new users will not be startled by it, and if you don't like it you can simply turn it off.
+**A**: While I might agree with this statement, Personally, I think this is a cool feature, and it doesn't bother me. It is not allowed by default, so new users will not be startled by it, and if you don't like it you can simply turn it off.

@@ -14,6 +14,9 @@ next:
   title: Accents
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 Customize the editor scrollbars from the Color Scheme.
 {:class='title'}
 
@@ -38,11 +41,10 @@ Such examples are:
 - Gutter modified lines
 - ...
 
-However up until 2019.1 scrollbars were still controlled by the UI Theme. This was fine but if the color scheme was using,
-let's say, a dark purple shade, why would the scrollbar still _Darcula Gray_ based?
+However, up until 2019.1 scrollbars were still controlled by the UI Theme. This was fine but if the color scheme was using, let's say, a dark purple shade, why would the scrollbar still _Darcula Gray_ based?
 
 As a result they started refactoring the Scrollbars to allow color scheme designers to control the color and opacity of
-the scrollbars when their scheme is applied. However this setting is nowhere to be found as of today! The only way to
+the scrollbars when their scheme is applied. However, this setting is nowhere to be found as of today! The only way to
 change the Scrollbar colors was from the XML file directly.
 
 I'm sure this is bound to happen sooner or later, but in the meantime the plugin is adding a new section in the Color
@@ -59,7 +61,7 @@ setting, each color scheme has its own, with a default value of gray if not defi
 
 {% include figure.html content="/screens/scrollbarSettings.png" caption="Scrollbar Settings" %}
 
-By default in the provided themes all these properties will have the same value. But you can easily have a different
+By default, in the provided themes all these properties will have the same value. But you can easily have a different
 border color, or a different color when hovered.
 
 ### System Scrolling Settings

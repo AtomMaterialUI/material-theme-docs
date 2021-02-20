@@ -61,6 +61,9 @@ The parts that are affected by the contrast change are:
 ----
 ### High Contrast
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 This option increases the contrast between the editor and the IDE, just like other editors such as Visual Studio Code
 or Atom.
 
@@ -80,6 +83,9 @@ foreground colors or button colors are left unchanged.
 
 ----
 ### Custom Accent Color
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 This setting controls the [current accent color](/docs/configuration/accents) used throughout the app.
 

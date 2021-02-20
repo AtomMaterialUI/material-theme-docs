@@ -19,7 +19,9 @@ Showcase of other products using the Material Theme assets
 
 # Introduction
 
-The Material Themes have been ported to many editors: VSCode, Atom, Sublime, Brackets, etc… This makes sense as the themes are very popular amongst developers, however it would be great to be able to use these themes in other uses, such as in Office Documents, Websites or other tools.
+The Material Themes exist in many editors: [VSCode](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme), [Atom](https://atom.io/themes/atom-material-ui), [Sublime Text](http://equinusocio.github.io/material-theme/#/default), [Brackets](https://github.com/adhirajsinghchauhan/Material-Theme-Brackets), etc…
+
+This makes sense as the themes are very popular amongst developers, however it would be great to be able to use these themes in other uses, such as in Office Documents, Websites or other tools.
 
 Therefore, people have thought of many ways to export these beautiful themes to such other uses, using custom styles, configuring settings or even go to modify the apps to inject the colors in the app. Here is a showcase of these:
 
@@ -95,9 +97,9 @@ You can find the list of available themes in the GitHub repository as well as tr
 
 As a final note, let's list a bunch of projects using or implementing the Material Theme:
 
-  [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio))
-  [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio))
-  [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio)).
+- [Visual Studio Code](https://github.com/equinusocio/vsc-material-theme/) (by [@equinusocio](https://github.com/equinusocio))
+- [Sublime Text](https://github.com/equinusocio/material-theme/) (also by [@equinusocio](https://github.com/equinusocio))
+- [Hyper](https://github.com/equinusocio/hyper-material-theme) (also by [@equinusocio](https://github.com/equinusocio)).
 - [Atom](https://github.com/silvestreh/atom-material-ui) (by [@silvestreh](https://github.com/silvestreh))
 - [Vim](https://github.com/kristijanhusak/vim-hybrid-material) (by [@kristijanhusak](https://github.com/kristijanhusak)).
 - [Terminal OSX](https://gist.github.com/mvaneijgen/4c56701215847dd5ddcf) (by [@mvaneijgen](https://github.com/mvaneijgen)).
@@ -108,7 +110,7 @@ As a final note, let's list a bunch of projects using or implementing the Materi
 - [Base16](https://github.com/ntpeters/base16-materialtheme-scheme) (by [@ntpeters](https://github.com/ntpeters))
 - [Notepad++](https://github.com/Codextor/npp-material-theme) (by [@Codextor](https://github.com/Codextor))
 - [Chrome DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) (by [@Mallowigi](https://github.com/mallowigi) and [@jaysuz](https://github.com/jaysuz))
-- [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
+- [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) — Porting of the Material Theme to Slack
 - [Gmail](https://userstyles.org/styles/174257/material-dark-gmail) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
 - [Google Calendar](https://userstyles.org/styles/174228/material-dark-google-calendar) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
 - [Google Keep](https://userstyles.org/styles/174291/material-dark-google-keep) (by [@Charlie Etienne](https://github.com/CharlieEtienne))

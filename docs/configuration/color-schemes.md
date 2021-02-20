@@ -56,7 +56,7 @@ you want.
 
 {% include figure.html content="/screens/colorschemes.png" caption="Color Scheme Editor" %}
 
-You can also directly modify the original color schemes and it will create a copy in the colors' folder with the name
+You can also directly modify the original color schemes, and it will create a copy in the colors' folder with the name
 `_@user_<schemeName>.icls`. The color scheme will then appear in *blue* in the list.
 
 However, this is not recommended doing so because the IDE will use the copy from then on, meaning that you won't be able

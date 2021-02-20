@@ -27,7 +27,7 @@ The Material Theme plugin is built using the
 for the different platforms.
 
 Plugins can be written either in Java, Groovy or Kotlin. You can use any editor to write plugins: Atom, Sublime, Visual
-Studio Code… though for obvious reasons, it's preferable to use a JetBrains IDE so you can debug easier. You can use
+Studio Code… though for obvious reasons, it's preferable to use a JetBrains IDE, so you can debug easier. You can use
 either IntelliJ IDEA or the free
 [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/).
 

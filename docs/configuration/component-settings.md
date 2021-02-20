@@ -14,6 +14,9 @@ next:
   title: Features Settings
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 This page controls the components used throughout the IDE, like buttons, scrollbars, etc.
 {:class='title'}
 

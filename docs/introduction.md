@@ -11,7 +11,7 @@ next:
   title: Settings
 ---
 
-**Material Theme** is a *plugin* for JetBrains IDEs providing a [Material Design](https://material.io/guidelines/) experience for JetBrains products.
+**Material Theme UI** is a *plugin* for JetBrains IDEs providing a [Material Design](https://material.io/guidelines/) experience for JetBrains products.
 {:class='title'}
 
 It is based on the [Material Theme for Sublime](https://github.com/equinusocio/material-theme) plugin while trying to bring its own lot of features.
@@ -73,6 +73,15 @@ In addition to all these wonderful features, the plugin is also easy to extend a
 
 #### The Creators
 
+
+##### Elior Boukhobza ([@mallowigi](https://github.com/mallowigi))
+
+<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/5015756?v=4&s=460" alt="mallowigi">
+
+Software engineer and developer based in Israel, he is the one who took the reins of the project after being left for a long time with no successor in sight.
+
+He took where Chris left off and expanded the already successful Material Theme by customizing it even more, adding customization features, changing the appearance of the components and even giving the ability to set custom themes. He is currently the sole maintainer of the project.
+
 ##### Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
 
 <img class="avatar-img" src="https://avatars1.githubusercontent.com/u/10454741?v=4&s=460" alt="equinusocio">
@@ -91,10 +100,3 @@ Web developer and designer based in Norway, he is the original creator of the Je
 
 The project got famous very quickly, being referenced on Laracasts, blogs and tutorial videos.
 
-##### Elior Boukhobza ([@mallowigi](https://github.com/mallowigi))
-
-<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/5015756?v=4&s=460" alt="mallowigi">
-
-Software engineer and developer based in Israel, he is the one who took the reins of the project after being left for a long time with no successor in sight.
-
-He took where Chris left off and expanded the already successful Material Theme by customizing it even more, adding customization features, changing the appearance of the components and even giving the ability to set custom themes. He is currently the sole maintainer of the project.

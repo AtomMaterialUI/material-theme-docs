@@ -71,6 +71,9 @@ Besides the Material Themes, there are other prebundled themes made by the commu
 
 #### External Themes
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, just like
 Color Schemes, Keymaps, Coding Styles and so on. To learn more about _External Themes_ or how to create your own plugin,
 head to the
@@ -83,6 +86,9 @@ Once the external theme has been downloaded and installed, it should appear at t
 {% include figure.html content="/tutorial/externalList.png" caption="External Themes List" %}
 
 #### Custom Theme
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 Finally, there are the **Custom Themes**, which is the placeholder for the Custom Theme Settings, allowing you set
 your own theme colors.
@@ -111,8 +117,11 @@ Examples:
 
 ### Settings Page
 
+Some settings are only available for premium users.
+{:class='card-panel warn'}
+
 You can configure many parts of the plugin features from the **plugin settings**. They are accessible within `Settings
-→ Appearance → Material Theme`.
+→ Appearance → Material Theme → Settings`.
 
 {% include figure.html content="/screens/settings.png" caption="Material Theme Settings v1" %}
 
@@ -210,7 +219,7 @@ You can also use the `Keymap Editor` to assign your own custom shortcuts to thes
 #### Settings File
 
 Your current configuration is stored inside the IDE settings' directory under the filename `material_theme.xml`. If for
-some reason there are issues with the plugin or you don't manage to reset to a stable state, just delete this file and
+some reason there are issues with the plugin, or you don't manage to reset to a stable state, just delete this file and
 restart the IDE.
 
 See [IDE Settings](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)
@@ -219,6 +228,9 @@ for more information.
 
 ----------
 ## Material Custom Theme
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 Aside from the bundled themes, you also have the ability to set up your own Material Theme. You can do so by selecting
 `Custom Theme` in the theme list, then customize the theme colors in the settings page at `Settings → Appearance →
@@ -341,7 +353,7 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
 separate theme for the IDE and the Editor, for instance _Palenight_ and _Darker_ or even a custom Color Scheme.
 
 
-**Q**: I've updated the IDE/plugin to a new version and now I get an error about the plugin failing to initialize?
+**Q**: I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?
 
 **A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible to the
 new version. In that case, simply make a copy of the settings file, then delete the original file, and restart the IDE.
@@ -396,6 +408,16 @@ If you need to use Sync Settings, then I'll suggest disabling the synchronizatio
 
 **A**: Since 5.0.0 all icons related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), another plugin developed by the Material Theme team. This is in order to encourage developers to develop _Icon Themes_, since the plugin is now free of icons.
 
-**Q**: I've downloaded a theme from the Plugins Page and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…
+**Q**: I've downloaded a theme from the Plugins Page, and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…
 
 **A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes. Even though the plugin tries to convert it to its own format, it won't be as good as the originals. Still, it should be as similar as possible, so there shouldn't be any critical issues. In that case, please report to the repository's issues.
+
+**Q**: I've bought a license, but I am still identified as a Free User!
+
+**A**: That means that you didn't activate your license yet. At the moment the only way to do it is to run the action to open the _Registration Modal_.
+
+
+{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+
+{% include figure.html content="/screens/license.png" caption="License" %}
+

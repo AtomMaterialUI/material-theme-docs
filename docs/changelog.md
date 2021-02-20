@@ -16,6 +16,18 @@ next:
 # Changelog
 ----
 
+# 6.1.0
+- Support for the new *Freemium* system:
+  - Themes, Color Schemes and UI Components are **FREE**
+  - Custom Themes, External Themes, Tweaks and Customization Settings are **PAID**
+  - Please note that future themes will also only be available for Premium users.
+
+- New action: **Activate License**
+- Fix $this color in PHP
+- Fix breakpoint line color in lighter themes
+- Fix Title Bar font
+
+
 # 6.0.0
 - New Versioning
 - Fix Double Title Bar
@@ -25,7 +37,7 @@ next:
 - Fix Material Wallpapers
 
 # 5.6.0
-- **New Themes: Moonlight and Github Dark**
+- **New Themes: Moonlight and GitHub Dark**
 - Fix issue where you can't change file colors
 - Fix #1622
 - Change unused identifier colors
@@ -291,11 +303,11 @@ next:
 # 4.0.0
 - Support for 2019.2
 - Removing the Tab Shadow option
-- Adding Github theme to wizard themes
-- Fix some Github colors
+- Adding GitHub theme to wizard themes
+- Fix some GitHub colors
 
 # 3.10.0
-- New theme: Github
+- New theme: GitHub
 - Fix Kotlin icons (thanks @cyclic-dependency)
 - Partial support for 2019.2
 
@@ -915,7 +927,7 @@ FIXES:
       still be set. (see
       <https://www.howtogeek.com/222831/how-to-get-colored-window-title-bars-on-windows-10-instead-of-white/>) for setting
       it.
-- Added more other file icons: Atom, Appveyor, Bean, Cabal, Compass, Doxygen, Dylib, Ghostscript, Github, Jquery, JS
+- Added more other file icons: Atom, Appveyor, Bean, Cabal, Compass, Doxygen, Dylib, Ghostscript, GitHub, Jquery, JS
   Minified, Makefile, Manpage, Nib, Godot, Openoffice, Patch, Phalcon, Redme
 - Fix the inactive selection background color in trees
 - Fix Status Bar Indicator height in HiDPi screens
@@ -1105,7 +1117,7 @@ FIXES:
 
 ## 0.10.2
 - Atom One Dark Theme
-- Move icons outside of fileIcons for better "disable Material Icons"
+- Move icons outside fileIcons for better "disable Material Icons"
 
 ## 0.10.1
 - Fix issue with module directories taking the default icon in PyCharm
@@ -1321,7 +1333,7 @@ This version is more focused on the UI:
 - New UI Icons
 - Progress indicators
 - Set light version of contrast mode (though it needs to be in IntelliJ LAF)
-- Revert better contrast as it breaks theme switching :'(
+- Revert better contrast as it breaks theme switching
 - Code coverage colors
 - Notification, Information and Documentation popups
 - Quick info theming
@@ -1392,17 +1404,17 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Fixed issue with tabs in last EAP
 - Update file icons to use the latest icons from the original Sublime theme repository.
 - Added a new theme, the **Palenight** theme, that is a violet shade of the Default theme.
-- Prevent file icons from being assigned to classes, methods, etc. - #285  @mjdetullio
-- Separate psd icons from the images group - #292 @Freezystem
-- Set parent scheme for dark themes to Darcula - #289 @vsch
-- Load MT file icons before anything else - #292 @mallowigi
-- Fix font overriding - #279 @mallowigi
-- Context and menu lighter border - #281
-- Add file association for `.yaml` files - #297 @thaffenden
-- Add Dart icon - #296 @seanjohnite
-- Add `htpasswd` to htaccess group - @Freezystem
-- Add icons for `package.json, gruntfile, gulpfile` and `webpack` - @mallowigi
-- Set better color for Parameter hints - @mallowigi
+- Prevent file icons from being assigned to classes, methods, etc. — #285 @mjdetullio
+- Separate psd icons from the images group — #292 @Freezystem
+- Set parent scheme for dark themes to Darcula — #289 @vsch
+- Load MT file icons before anything else — #292 @mallowigi
+- Fix font overriding — #279 @mallowigi
+- Context and menu lighter border — #281
+- Add file association for `.yaml` files — #297 @thaffenden
+- Add Dart icon — #296 @seanjohnite
+- Add `htpasswd` to htaccess group — @Freezystem
+- Add icons for `package.json, gruntfile, gulpfile` and `webpack` — @mallowigi
+- Set better color for Parameter hints — @mallowigi
 
 ## 0.2.3
 
@@ -1410,7 +1422,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Updated Gradle wrapper
 
 ### Added
-- File icon: Rust `*.rs` - #240
+- File icon: Rust `*.rs` — #240
 - File icon: ES/ES6 `*.es|*.es6` - #240
 
 ## 0.2.2
@@ -1424,7 +1436,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Hopefully a final fix for issue #205, IDEA-157843 and IDEA-156327
 
 ## 0.2.0
-- Improved visibility for diffs on default color scheme. Thanks @marvhock - #208
+- Improved visibility for diffs on default color scheme. @marvhock — #208
 - Hopefully fixed issue #205,
   [IDEA-157843](https://youtrack.jetbrains.com/issue/IDEA-157843) and
   [IDEA-156327](https://youtrack.jetbrains.com/issue/IDEA-156327)
@@ -1432,16 +1444,16 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - SidePanel background color (Preferences)
 
 ## 0.1.9
-- Fails to launch when using Darker or Lighter theme. Thanks @robertfreund - #187
-- Kotlin syntax highlighting - #153
+- Fails to launch when using Darker or Lighter theme. @robertfreund — #187
+— Kotlin syntax highlighting — #153
 - File icon: Kotlin - `*.kt`
 - File icon: Liquid - Shopify templating language - `*.liquid`
 - File icon: Lua - `*.lua`
 - File icon: LICENSE files
 
 ## 0.1.8
-- In some cases getVirtualFile() for psi elements can be null. Fixes #172, #175 - @anstarovoyt
-- Vertical tabs highlight - @Cyberdelia1987
+- In some cases getVirtualFile() for psi elements can be null. Fixes #172, #175 — @anstarovoyt
+- Vertical tabs highlight — @Cyberdelia1987
 - Fixes an error which caused the plugin to misbehave in non-java ide's. See #177
 - File icon: React `*.jsx` - #162
 - File icon: PHTML `*.phtml`

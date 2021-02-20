@@ -29,7 +29,7 @@ Steps:
 2. On the left, select **Plugins**
 3. Click on the button `Browse repositories`
 4. In the search field, type `Material Theme`
-5. Double click on `Material Theme UI` to install it. You can also decide to install `Atom Material Icons` to get the icons customization feature.
+5. Double-click on `Material Theme UI` to install it. You can also decide to install `Atom Material Icons` to get the icons' customization feature.
 6. Click the `OK` button and restart the IDE.
 
 <img src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/screens/listplugin.png" alt="Plugins List">
@@ -60,19 +60,20 @@ color! But the Material Plugin is much more than that.
 
 ### Setting the color scheme
 
-The first thing to set is to change the color scheme to fit your current _UI Theme_.
+The first thing to set is to change the color scheme to fit your current _UI Theme_. It is usually done automatically
+when selecting a theme, but if for some reason it doesn't, here's how you do it:
 
 To do so, open the `Quick Switch Panel` by typing `Ctrl + ``/Cmd + ~` and select `Color Scheme`. Alongside the color
 schemes provided by the IDE and your own custom color schemes, you will find the color schemes provided by the
 plugin:
 
-Material Themes:
+#### Material Themes:
 
 {% for theme in site.data.themes.material %}
 - {{theme.name}}
 {% endfor %}
 
-Other Themes:
+#### Other Themes:
 
 {% for theme in site.data.themes.other %}
 - {{theme.name}}
@@ -92,7 +93,7 @@ You can see more in the [Color Schemes](/docs/configuration/color-schemes) secti
 The plugin also comes with a bunch of configurable settings to suit all flavors. There you can disable certain features,
 change the colors, sizes and appearance of the elements and so on.
 
-These settings are found inside `Settings → Appearance and Behavior → Material Theme Settings`.
+These settings are found inside `Settings → Appearance and Behavior → Material Theme`.
 
 {% include figure.html content="/screens/settings.png" caption="Material Theme Settings V1" %}
 
@@ -131,3 +132,11 @@ The plugin is supported on all IDEs, but because of changes of the SDK specific 
 - IDE versions 2020.2 > from version `5.3.0`
 - IDE versions 2020.3 > from version `5.6.0` up to `5.7.0`
 - IDE versions 2021.1 > from version `6.0.0`
+
+## Premium Support
+
+From version 6.0.0 the plugin has become a freemium plugin.
+
+Please refer [here]({{ site.baseurl }}/docs/pricing) for more details and [this blog post]({{ site.baseurl }}/docs/about-subscription-model) to better understand the reasons behind this choice.
+
+*[freemium]: The plugin is free but some functionalities are under a paywall.

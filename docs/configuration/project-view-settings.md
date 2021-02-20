@@ -15,6 +15,9 @@ next:
 
 ---
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 Customize the Project View's appearance: indent, items' height, font size and so on.
 {:class='title'}
 
