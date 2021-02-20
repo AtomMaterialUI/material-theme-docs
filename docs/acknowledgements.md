@@ -24,7 +24,7 @@ First of all I want to thank the original creators of the theme and its derived 
 
 ##### Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
 
-<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/10454741?v=4&s=460">
+<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/10454741?v=4&s=460" alt="equinusocio">
 
 The original creator of the Material Theme, and developer of the Material Theme for Sublime and for Visual Studio Code.
 He found the perfect color balance in his themes and followed the Material Design guidelines perfectly for a
@@ -36,7 +36,7 @@ to the users.
 
 ##### Chris Magnussen ([@ChrisRM](https://github.com/chrisrm))
 
-<img class="avatar-img" src="https://avatars3.githubusercontent.com/u/309292?v=4&s=460">
+<img class="avatar-img" src="https://avatars3.githubusercontent.com/u/309292?v=4&s=460" alt="ChrisRM">
 
 The original creator of the JetBrains plugin. Thanks to his ingeniosity we finally had an alternative to the
 bland native themes that are Darcula and IntelliJ.
@@ -47,7 +47,7 @@ He was curious enough to dig into the code in order to find the settings that le
 
 ##### Philipp Kief ([@PKief](https://github.com/PKief))
 
-<img class="avatar-img" src="https://avatars2.githubusercontent.com/u/12248527?s=460"/>
+<img class="avatar-img" src="https://avatars2.githubusercontent.com/u/12248527?s=460" alt="PKief"/>
 
 The maintainer of the great [VSCode Material Icon Themes](https://github.com/PKief/vscode-material-icon-theme). It was his idea
 to not only customize the file icons, as the Atom File Icons devs already did, but to customize folders as well! Big up to him, as
@@ -59,7 +59,7 @@ he is currently very active and accepts a lot of Pull Requests!
 The main creator of the [*a-file-icon*](https://github.com/ihodev/a-file-icon) plugin for Sublime, which replaces
 the original file icons to their logo counterparts, making them easier to differentiate and greatly improving
 the visibility in projects.
-He created a whole lot of icons that the Material Theme Plugins are using, and provided an easy way to create
+He created a lot of icons that the Material Theme Plugins are using, and provided an easy way to create
 new icons, thus allowing further customization of the Material Theme.
 
 He is now retired from the Open Source community but the Sublime Text Community took the reins of the project and are now
@@ -68,7 +68,7 @@ actively managing it in his stead.
 
 ##### Atom File Icons Devs ([@file-icons](https://github.com/file-icons?type=source))
 
-<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/24852839?s=200&v=4"/>
+<img class="avatar-img" src="https://avatars1.githubusercontent.com/u/24852839?s=200&v=4" alt="file-icons"/>
 
 The actual creators behind the A-File-Icon plugin for Sublime. They created icons for a plethora of languages and frameworks,
 supporting even the most obscure languages. They are still very active and my inspiration for the constant icon additions.
@@ -91,7 +91,7 @@ The Material Theme is so famous that it exists for many other IDEs, editors, app
 - [Base16](https://github.com/ntpeters/base16-materialtheme-scheme) (by [@ntpeters](https://github.com/ntpeters))
 - [Notepad++](https://github.com/Codextor/npp-material-theme) (by [@Codextor](https://github.com/Codextor))
 - [Chrome DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) (by [@Mallowigi](https://github.com/mallowigi) and [@jaysuz](https://github.com/jaysuz))
-- [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
+- [Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) — Porting of the Material Theme to Slack
 - [Gmail](https://userstyles.org/styles/174257/material-dark-gmail) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
 - [Google Calendar](https://userstyles.org/styles/174228/material-dark-google-calendar) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
 - [Google Keep](https://userstyles.org/styles/174291/material-dark-google-keep) (by [@Charlie Etienne](https://github.com/CharlieEtienne))
@@ -104,13 +104,13 @@ The Material Theme is so famous that it exists for many other IDEs, editors, app
 #### Other Products by me (Elior Boukhobza)
 
 Check out my other projects:
-[Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) - A previewer for small images and svgs directly in the Project View
-[Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) - A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
-[Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) - Proof of concept for defining custom keywords highlighting.
-[Material Theme for DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) - Port of the Material Theme in Chrome DevTools.
-[Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) - Porting of the Material Theme to Slack
-[Atom File Icons for Web (Chrome)](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc) - Porting of the Atom File Icons to GitHub and BitBucket (Chrome)
-[Atom File Icons for Web (Firefox)](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web) - Porting of the Atom File Icons to GitHub and BitBucket (Firefox)
+[Image Icon Plugin](https://plugins.jetbrains.com/plugin/11096-image-icon-viewer) — A previewer for small images and svgs directly in the Project View
+[Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) — A mix of the Atom File Icons and the Material Icons, or if you prefer, the Icons component of this plugin :)
+[Custom Syntax Highlighter](https://github.com/mallowigi/Custom-Syntax-Highlighter) — Proof of concept for defining custom keywords highlighting.
+[Material Theme for DevTools](https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo) — Port of the Material Theme in Chrome DevTools.
+[Slack Themes](https://www.npmjs.com/package/@mallowigi/slack-themes) — Porting of the Material Theme to Slack
+[Atom File Icons for Web (Chrome)](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc) — Porting of the Atom File Icons to GitHub and BitBucket (Chrome)
+[Atom File Icons for Web (Firefox)](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web) — Porting of the Atom File Icons to GitHub and BitBucket (Firefox)
 
 
 #### Plugins and references
@@ -206,7 +206,7 @@ Python, PHP, Scala, Kotlin, Go, Swift, Ruby, Yaml or JSON.
 ----
 #### Acknowledgements
 
-First of all I want to thank all icon designers who designed all the icons used by the theme:
+First I want to thank all icon designers who designed all the icons used by the theme:
 * [File-Icons](https://github.com/file-icons/source/blob/master/charmap.md)
 * [FontAwesome 4.7.0](http://fontawesome.io/cheatsheet/)
 * [MFixx](https://github.com/file-icons/MFixx/blob/master/charmap.md)
@@ -231,7 +231,7 @@ its easy installation.
 Thanks also to all the [contributors](https://github.com/ChrisRM/material-theme-jetbrains/graphs/contributors) that
 helped in the development!
 
-And of course thanks to JetBrains for their IDEs, Google for their Material Design, Disqus for the comments plugin,
+And of course thanks to JetBrains for their IDEs, Google for their Material Design, Disqus for the comments' plugin,
 Travis CI, JFormDesigner for the UI Designer plugin, [Vladsch](http://vladsch.com/product/markdown-navigator) for
 his Markdown navigator plugin, and of course all the other plugin creators for the plugins I use for development.
 

@@ -20,11 +20,14 @@ Here you can find more information about the Pricing.
 
 ## Disclaimer
 
-Since version 6.0.0 the plugin is now a paid plugin.
-Previous versions are still available for free, but further updates will only be available on the Paid Version. There's also a 30-day free trial.
+Since version 6.0.0 the plugin is now a freemium plugin.
+
+That means that the plugin is completely free to use, but some functionalities and extra features are only available for subscribed users.
+
+There is also a free trial to test out those features before subscribing.
 
 **Thanks for your support for all these years, I couldn't have done it without you!!!**
-{:class='card-panel error'}
+{:class='card-panel warn'}
 
 
 ### Price Lists
@@ -95,3 +98,4 @@ You can also find a lite version available for free here but with limited featur
 
 
 
+*[freemium]: free plugin but with some functionalities under a paywall.

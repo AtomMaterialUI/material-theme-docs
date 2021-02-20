@@ -30,9 +30,9 @@ But first let me address some points in the form of Q & A:
 You see, unlike operating systems that change once every two years or so, IDEs and Editors evolve all the time, especially
 JetBrains IDEs (but VSCode, Sublime, etc as well).
 
-Therefore it requires constant maintenance, constantly checking what's new and what's broken and fix it accordingly.
+Therefore, it requires constant maintenance, constantly checking what's new and what's broken and fix it accordingly.
 If you check the state of the plugin a few years ago you'd see that it is completely different to what it is today.
-Perhaps the core have stayed the same but it has a lot of new features, improvements etc.
+Perhaps the core have stayed the same, but it has a lot of new features, improvements etc.
 
 So paying up one-time would only be good if you never update your IDE. If that's your case, well then it's another story.
 If there is enough demand I can try to make support for "specific builds" which would cost less than the annual license since it
@@ -48,7 +48,7 @@ AND paid products.
 Working on the Material Theme and Atom Material Plugins is a wonderful experience! I am in charge of my own products, deciding
 what features will be and need to be fixed, all the while listening to user feedback to constantly try to improve.
 
-But all of this has a price and it is at the cost of many many days and nights, with only myself and JetBrains's source code to figure
+But all of this has a price, and it is at the cost of many many days and nights, with only myself and JetBrains's source code to figure
 out how to make stuff how I want. And all of this is the work of one-guy only, myself.
 Not a company, not a group of devs, but just one man that worked during his free time only to make beautiful things for himself and for others.
 
@@ -78,10 +78,10 @@ on Slack and YouTrack to be able to answer people's questions
 **A**: Ok first of all let me tell you that I'm truly grateful for all the support you guys gave me!!! When I took the reins of this
 project I would have never imagined that it would become so popular, and that people would even support me financially!!!
 
-For that I am eternelly indebted to all of you, therefore all people that *donated more than 1.00$* are entitled to a **free lifetime license**.
-And that is also true for companies that *donated more than 75$*.
+For that I am eternelly indebted to all of you, therefore all people that *donated more than $1.00* are entitled to a **free lifetime license**.
+And that is also true for companies that *donated more than $75*.
 
-If you had donated in the past, or have contributed to the project(s), send me an email at <elior@material-theme.com> so I can send you your free license.
+If you had donated in the past, or have contributed to the project(s), email me at <elior@material-theme.com> so I can send you your free license.
 
 And again, **thank you**. I could never have done it without you guys!!!
 
@@ -119,9 +119,9 @@ you can still use this plugin for free, or pick from a selection from other them
 
 -----
 
-## Your Feeback
+## Your Feedback
 
-I hope this answers most of the questions. If anything is unclear, don't hesitate to send me an email or come say hello
+I hope this answers most of the questions. If anything is unclear, don't hesitate to email me or come say hello
 in the [Slack Channel](https://join.slack.com/t/material-theme-ui/shared_invite/zt-4w78iblt-cHXYRYERpuGNbD~TqsD8rg).
 
 And, last but not least, if you like this plugin, please give it a [5-star review](https://plugins.jetbrains.com/plugin/8006-material-theme-ui/reviews)!

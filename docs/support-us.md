@@ -15,9 +15,13 @@ next:
 
 {% include carbonads.html %}
 
-Material Theme for JetBrains is an open-source plugin. It is made with love by people that love good design and want the world to be a better place.
-If you like this plugin and appreciate the work done for it to exist, you can support the developers by donating.
-Any amount is appreciated and would greatly help support and interest on this project.
+Up until 2021, Material Theme UI was an open-source plugin. It is made with love by people that love good design and want the world to be a better place.
+{:class='title'}
+
+Although it has become a paid/freemium plugin, if you like this plugin or the other plugins made by the developers, and appreciate the work done for it to exist, you can still support the developers by donating.
+{:class='title'}
+
+Any amount is appreciated and would greatly help support and interest on these projects.
 {:class='title'}
 
 ## PayPal Donation
@@ -28,13 +32,16 @@ The simplest way to donate is through PayPal with a one-time donation.
 
 ## OpenCollective
 
-The project is also available on [OpenCollective](https://opencollective.com/atom-material-themes-and-plugins), a
+The projects are also available on [OpenCollective](https://opencollective.com/atom-material-themes-and-plugins), a
 non-profit website to allow contributors and other people to know what's going on and closely participate
-on the plugin's roadmap and actions.
+on the plugins' roadmap and actions.
+
+<script src="https://opencollective.com/atom-material-themes-and-plugins/banner.js"></script>
+
 
 ## Contributors
 
-This project exists thanks to all the people who contribute.
+These projects exist thanks to all the people who contribute.
 <a href="graphs/contributors"><img src="https://opencollective.com/atom-material-themes-and-plugins/contributors.svg?width=890&button=false" /></a>
 
 
@@ -52,11 +59,11 @@ The Material Theme plugin is sponsored by [CodeStream](https://codestream.com/?u
 
 [![https://codestream.com](https://alt-images.codestream.com/codestream_logo_jbmaterialtheme.png)](https://sponsorlink.codestream.com/?utm_source=jbmarket&utm_campaign=jbmaterialtheme&utm_medium=banner)
 
-Eliminate context switching and costly distractions. Create and merge PRs and perform code reviews from inside your IDE while using jump-to-definition, your keybindings, and other IDE favorites. [Learn more](https://sponsorlink.codestream.com/?utm_source=jbmarket&utm_campaign=jbmaterialtheme&utm_medium=banner)!
+> Eliminate context switching and costly distractions. Create and merge PRs and perform code reviews from inside your IDE while using jump-to-definition, your keybindings, and other IDE favorites. [Learn more](https://sponsorlink.codestream.com/?utm_source=jbmarket&utm_campaign=jbmaterialtheme&utm_medium=banner)!
 
 [![https://www.codota.com](https://d3ftmdkezac6rp.cloudfront.net/plugins/assets/logo.b81d20edb7ae4d8ff43b886ae5cde1dd.svg)](https://www.codota.com/?url=https://www.codota.com&device=c&keyword=codota&country={country}&campaign={campaign}&gclid=EAIaIQobChMI0MTRrsS55gIVQrDtCh2Reg7FEAAYASAAEgK0QfD_BwE)
 
-Code faster and smarter using code completions learned from millions of programs directly in IntelliJ, Android Studio or Eclipse. [Get Codota](https://www.codota.com/?url=https://www.codota.com&device=c&keyword=codota&country={country}&campaign={campaign}&gclid=EAIaIQobChMI0MTRrsS55gIVQrDtCh2Reg7FEAAYASAAEgK0QfD_BwE)
+> Code faster and smarter using code completions learned from millions of programs directly in IntelliJ, Android Studio or Eclipse. [Get Codota](https://www.codota.com/?url=https://www.codota.com&device=c&keyword=codota&country={country}&campaign={campaign}&gclid=EAIaIQobChMI0MTRrsS55gIVQrDtCh2Reg7FEAAYASAAEgK0QfD_BwE)
 
 ----
 
