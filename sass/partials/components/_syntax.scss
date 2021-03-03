@@ -1,5 +1,5 @@
 pre {
-  background-color: #f8f8f8;
+  background-color: var(--contrast);
   border-radius: 2px;
   font-size: 0.9em;
   overflow-x: auto;
@@ -9,19 +9,19 @@ pre {
 .highlight {
   pre,
   .hll {
-    font-family: 'Source Code Pro', 'Courier New', monospace;
+    font-family: $code-font;
   }
 
-  .c,
-  .cm,
-  .c1 {
-    color: $olivegray;
+  .c, // comment
+  .cm, // comment multiline
+  .c1 { // comment single
+    color: var(--comments);
   }
 
-  .err,
-  .gr,
-  .gt {
-    color: $darkred;
+  .err, //error
+  .gr, // generic error
+  .gt { // generic trace
+    color: var(--error);
   }
 
   .k,
@@ -41,20 +41,20 @@ pre {
     font-weight: bold;
   }
 
-  .cp,
-  .cs,
-  .gh {
-    color: $medgray;
+  .cp, // comment preproc
+  .cs, // comment special
+  .gh { // generic heading
+    color: var(--comments);
   }
 
-  .gd,
+  .gd, // deleted
   .gd .x,
-  .gi,
+  .gi, // inserted
   .gi .x {
-    color: black;
+    color: var(--foreground);
   }
 
-  .gd,
+  .gd, //deleted
   .err {
     background-color: $palepink;
   }
@@ -63,7 +63,7 @@ pre {
     background-color: #faa;
   }
 
-  .gi {
+  .gi { // inserted
     background-color: #dfd;
 
     .x {
@@ -71,162 +71,162 @@ pre {
     }
   }
 
-  .go {
-    color: #888;
+  .go { // generic output
+    color: var(--vars);
   }
 
-  .gp {
-    color: #555;
+  .gp { // generic prompt
+    color: var(--links);
   }
 
-  .gu {
-    color: #800080;
+  .gu { // generic subheading
+    color: var(--parameters);
   }
 
-  .kt {
-    color: #458;
+  .kt { // keyword type
+    color: var(--keywords);
     font-weight: bold;
   }
 
-  .m {
-    color: #099;
+  .m { // number
+    color: var(--numbers);
   }
 
-  .s {
-    color: #d14;
+  .s { // string
+    color: var(--strings);
   }
 
   .n {
-    color: #333;
+    color: var(--comments);
   }
 
-  .na {
-    color: teal;
+  .na { //attributes
+    color: var(--attributes);
   }
 
-  .nb {
-    color: #0086b3;
+  .nb { // builtin
+    color: var(--functions);
   }
 
-  .nc {
-    color: #458;
+  .nc { // class
+    color: var(--classes);
     font-weight: bold;
   }
 
-  .no {
-    color: teal;
+  .no { // constant
+    color: var(--numbers);
   }
 
-  .ni {
-    color: purple;
+  .ni { // entity
+    color: var(--operators);
   }
 
-  .ne {
-    color: #900;
+  .ne { // exception
+    color: var(--error);
   }
 
-  .nf {
-    color: #900;
+  .nf { // function
+    color: var(--functions);
   }
 
-  .nn {
-    color: #555;
+  .nn { //namespace
+    color: var(--classes);
   }
 
-  .nt {
-    color: navy;
+  .nt { //tags
+    color: var(--tags);
   }
 
-  .nv {
-    color: teal;
+  .nv { // variables
+    color: var(--vars);
   }
 
-  .w {
-    color: #bbb;
+  .w { // whitespace
+    color: var(--silver);
   }
 
-  .mf {
-    color: #099;
+  .mf { // float
+    color: var(--numbers);
   }
 
-  .mh {
-    color: #099;
+  .mh { // hex
+    color: var(--numbers);
   }
 
-  .mi {
-    color: #099;
+  .mi { // number
+    color: var(--numbers);
   }
 
-  .mo {
-    color: #099;
+  .mo { //octal
+    color: var(--numbers);
   }
 
-  .sb {
-    color: #d14;
+  .sb { // backtick
+    color: var(--strings);
   }
 
-  .sc {
-    color: #d14;
+  .sc { //char
+    color: var(--strings);
   }
 
-  .sd {
-    color: #d14;
+  .sd { //doc
+    color: var(--strings);
   }
 
-  .s2 {
-    color: #d14;
+  .s2 { //double quotes
+    color: var(--strings);
   }
 
-  .se {
-    color: #d14;
+  .se { //escape
+    color: var(--strings);
   }
 
-  .sh {
-    color: #d14;
+  .sh { //heredoc
+    color: var(--strings);
   }
 
-  .si {
-    color: #d14;
+  .si { //interpolation
+    color: var(--strings);
   }
 
-  .sx {
-    color: #d14;
+  .sx { //other
+    color: var(--strings);
   }
 
-  .sr {
-    color: #009926;
+  .sr { // regex
+    color: var(--strings);
   }
 
-  .s1 {
-    color: #d14;
+  .s1 {  // single quotes
+    color: var(--strings);
   }
 
-  .ss {
-    color: #990073;
+  .ss { //symbols
+    color: var(--keywords);
   }
 
-  .bp {
-    color: $medgray;
+  .bp { // builtin
+    color: var(--functions);
   }
 
-  .vc {
-    color: teal;
+  .vc { // variable class
+    color: var(--variables);
   }
 
-  .vg {
-    color: teal;
+  .vg { // variable global
+    color: var(--variables);
   }
 
-  .vi {
-    color: teal;
+  .vi { // variable instance
+    color: var(--variables);
   }
 
-  .il {
-    color: #099;
+  .il { // literal number
+    color: var(--numbers);
   }
 
   .gc {
-    background-color: #eaf2f5;
-    color: #999;
+    background-color: var(--contrast);
+    color: var(--comments);
   }
 }

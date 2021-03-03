@@ -123,6 +123,8 @@ const generateCSS = (theme) => {
   --vars: ${theme.vars};
   --parameters: ${theme.parameters};
   --links: ${theme.links};
+  --error: ${theme.error};
+  --classes: ${theme.classes};
 
 
   --yellow: ${theme.yellow};
@@ -132,7 +134,7 @@ const generateCSS = (theme) => {
   --purple: ${theme.purple};
   --red: ${theme.red};
   --orange: ${theme.orange};
-  --gray: ${theme.comments};
+  --gray: ${theme.gray};
   --silver: ${theme.white};
 
   --laptop: url('../../img/themes/${theme.id}.png');

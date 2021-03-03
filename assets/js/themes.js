@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #eeffff;
   --parameters: #f78c6c;
   --links: #80cbc4;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffcb6b;
@@ -90,6 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #eeffff;
   --parameters: #f78c6c;
   --links: #80cbc4;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffcb6b;
@@ -139,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #272727;
   --parameters: #F76D47;
   --links: #39ADB5;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #f6a434;
@@ -188,6 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #eeffff;
   --parameters: #f78c6c;
   --links: #80cbc4;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffcb6b;
@@ -237,6 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #eeffff;
   --parameters: #f78c6c;
   --links: #80cbc4;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffcb6b;
@@ -286,6 +296,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #FCFCFA;
   --parameters: #F59762;
   --links: #78DCE8;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffd866;
@@ -335,6 +347,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #F8F8F2;
   --parameters: #f89580;
   --links: #feff80;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #feff80;
@@ -384,6 +398,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #24292E;
   --parameters: #E36209;
   --links: #005CC5;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #e36209;
@@ -433,6 +449,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #d1d5da;
   --parameters: #ffab70;
   --links: #79b8ff;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffab70;
@@ -482,6 +500,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #CF6A4C;
   --parameters: #CDA869;
   --links: #7587A6;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #f9ee98;
@@ -531,6 +551,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #D19A66;
   --parameters: #ABB2BF;
   --links: #56B6C2;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #e5c17c;
@@ -580,6 +602,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #986801;
   --parameters: #383A42;
   --links: #0184BC;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #c18401;
@@ -629,6 +653,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #268BD2;
   --parameters: #93A1A1;
   --links: #268BD2;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #b58900;
@@ -678,6 +704,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #268BD2;
   --parameters: #657B83;
   --links: #268BD2;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #b58900;
@@ -727,6 +755,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #addb67;
   --parameters: #d6deeb;
   --links: #ecc48d;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ecc48d;
@@ -776,6 +806,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #4876d6;
   --parameters: #0c969b;
   --links: #ff869a;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #e0af02;
@@ -825,6 +857,8 @@ document.addEventListener('DOMContentLoaded', () => {
   --vars: #c8d3f5;
   --parameters: #f3c1ff;
   --links: #34d3fb;
+  --error: undefined;
+  --classes: undefined;
 
 
   --yellow: #ffdb8e;
