@@ -49,7 +49,41 @@ $darkred: #a61717;
 $medgray: #999;
 
 :root {
-  --background: #666;
-  --foreground: #fff;
-  --contrast: #333;
+  --primary: #ffcb6b;
+  --primaryT: #ffcb6b70;
+  --accent: #009688;
+  --accentT: #00968870;
+  --accent2: #c792ea;
+  --accent2T: #c792ea70;
+  --background: #263238;
+  --foreground: #B0BEC5;
+  --text: #607D8B;
+  --selectBg: #546E7A;
+  --selectFg: #FFFFFF;
+  --accent-text: #FFFFFF;
+  --button: #2E3C43;
+  --second: #32424A;
+  --disabled: #415967;
+  --contrast: #1E272C;
+  --active: #314549;
+  --border: #2A373E;
+  --hl: #425B67;
+  --tree: #546E7A70;
+  --notif: #1E272C;
+  --excluded: #2E3C43;
+
+  --yellow: #ffcb6b;
+  --green: #c3e88d;
+  --cyan: #89ddff;
+  --blue: #82aaff;
+  --purple: #c792ea;
+  --red: #f07178;
+  --red2: #f07178;
+  --orange: #f78c6c;
+  --orange2: #f78c6c;
+  --gray: #546e7a;
+  --silver: #eeffff;
+  --black: #1E272C;
+  --laptop: url('../../img/themes/oceanic.png');
+  --logo: url('../../img/logo/material-oceanic.svg');
 }

@@ -40,6 +40,7 @@ material:
   strings: '#c3e88d'
   operators: '#89ddff'
   attributes: '#ffcb6b'
+  classes: '#ffcb6b'
   numbers: '#f78c6c'
   parameters: '#f78c6c'
 
@@ -84,6 +85,7 @@ material:
   strings: '#c3e88d'
   operators: '#89ddff'
   attributes: '#ffcb6b'
+  classes: '#ffcb6b'
   numbers: '#f78c6c'
   parameters: '#f78c6c'
 
@@ -128,6 +130,7 @@ material:
   strings: '#91B859'
   operators: '#39ADB5'
   attributes: '#F6A434'
+  classes: '#F6A434'
   numbers: '#F76D47'
   parameters: '#F76D47'
 
@@ -172,6 +175,7 @@ material:
   strings: '#c3e88d'
   operators: '#89ddff'
   attributes: '#ffcb6b'
+  classes: '#ffcb6b'
   numbers: '#f78c6c'
   parameters: '#f78c6c'
 
@@ -216,6 +220,7 @@ material:
   strings: '#c3e88d'
   operators: '#89ddff'
   attributes: '#ffcb6b'
+  classes: '#ffcb6b'
   numbers: '#f78c6c'
   parameters: '#f78c6c'
 
@@ -261,6 +266,7 @@ other:
   strings: '#FFD866'
   operators: '#FF6188'
   attributes: '#78DCE8'
+  classes: '#78DCE8'
   numbers: '#AB9DF2'
   parameters: '#F59762'
 
@@ -305,6 +311,7 @@ other:
   strings: '#feff80'
   operators: '#f780bf'
   attributes: '#8aff80'
+  classes: '#8aff80'
   numbers: '#9580ff'
   parameters: '#f89580'
 
@@ -350,6 +357,7 @@ other:
   strings: '#032F62'
   operators: '#D73A49'
   attributes: '#6F42C1'
+  classes: '#6F42C1'
   numbers: '#005CC5'
   parameters: '#E36209'
 
@@ -396,6 +404,7 @@ other:
   strings: '#79b8ff'
   operators: '#f97583'
   attributes: '#b392f0'
+  classes: '#b392f0'
   numbers: '#79b8ff'
   parameters: '#ffab70'
 
@@ -441,6 +450,7 @@ other:
   strings: '#8F9D6A'
   operators: '#A7A7A7'
   attributes: '#F9EE98'
+  classes: '#F9EE98'
   numbers: '#CDA869'
   parameters: '#CDA869'
 
@@ -485,6 +495,7 @@ other:
   strings: '#98C379'
   operators: '#61AFEF'
   attributes: '#E5C17C'
+  classes: '#E5C17C'
   numbers: '#D19A66'
   parameters: '#ABB2BF'
 
@@ -529,6 +540,7 @@ other:
   strings: '#50A14E'
   operators: '#4078F2'
   attributes: '#C18401'
+  classes: '#C18401'
   numbers: '#986801'
   parameters: '#383A42'
 
@@ -574,6 +586,7 @@ other2:
   strings: '#2AA198'
   operators: '#93A1A1'
   attributes: '#B58900'
+  classes: '#B58900'
   numbers: '#D33682'
   parameters: '#93A1A1'
 
@@ -618,6 +631,7 @@ other2:
   strings: '#2AA198'
   operators: '#657B83'
   attributes: '#657B83'
+  classes: '#657B83'
   numbers: '#D33682'
   parameters: '#657B83'
 
@@ -662,6 +676,7 @@ other2:
   strings: '#ecc48d'
   operators: '#c792ea'
   attributes: '#addb67'
+  classes: '#addb67'
   numbers: '#f78c6c'
   parameters: '#d6deeb'
 
@@ -706,6 +721,7 @@ other2:
   strings: '#c96765'
   operators: '#994cc3'
   attributes: '#0c969b'
+  classes: '#0c969b'
   numbers: '#aa0982'
   parameters: '#0c969b'
 
@@ -750,5 +766,6 @@ other2:
   strings: '#7af8ca'
   operators: '#baacff'
   attributes: '#ffbd76'
+  classes: '#ffbd76'
   numbers: '#ff9668'
   parameters: '#f3c1ff'

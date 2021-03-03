@@ -24,8 +24,9 @@
  *
  */
 
-module.exports = function (grunt) {
+const themes = require('./gruntfile.themes');
 
+module.exports = (grunt) => {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -78,7 +79,6 @@ module.exports = function (grunt) {
         files: {
           'assets/css/main.css': 'sass/main.scss',
           'assets/css/grid.css': 'sass/grid.scss',
-          'assets/css/themes.css': 'sass/themes.scss',
         },
       },
     },
@@ -123,19 +123,25 @@ module.exports = function (grunt) {
           '**/*.yml',
           '!jekyllbuild/{,*/}{,*/}*.*',
           '!node_modules/{,*/}*.*'],
-        tasks: ['exec:jekyllBuild', 'copy'],
+        tasks: ['exec:jekyllBuild',
+          'copy'],
       },
       js: {
         files: ['js/{,*/}{,*/}*.js'],
-        tasks: ['newer:babel', 'copy:js'],
+        tasks: ['newer:babel',
+          'copy:js'],
       },
       css: {
         files: ['sass/{,*/}{,*/}{,*/}*.scss'],
-        tasks: ['sass', 'autoprefixer', 'copy:css'],
+        tasks: ['sass',
+          'autoprefixer',
+          'copy:css'],
       },
       images: {
         files: ['assets/img/{,*/}{,*/}*.{png,jpg,svg}'],
-        tasks: ['newer:imagemin', 'exec:jekyllBuild', 'copy'],
+        tasks: ['newer:imagemin',
+          'exec:jekyllBuild',
+          'copy'],
       },
     },
 
@@ -147,12 +153,30 @@ module.exports = function (grunt) {
         command: 'jekyll build',
       },
     },
+
+    'string-replace': {
+      dist: {
+        files: {
+          'assets/js/themes.js': 'js/themes.template.js',
+        },
+        options: {
+          replacements: [
+            {
+              pattern: '{{themes}}',
+              replacement: themes.getThemesCSS(),
+            },
+          ],
+        },
+      },
+    },
   });
 
+  // eslint-disable-next-line global-require
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('default', [
     'newer:imagemin',
+    'string-replace',
     'sass',
     'autoprefixer',
     'newer:babel',
@@ -161,6 +185,7 @@ module.exports = function (grunt) {
     'watch']);
   grunt.registerTask('build', [
     'imagemin',
+    'string-replace',
     'sass',
     'autoprefixer',
     'babel',
