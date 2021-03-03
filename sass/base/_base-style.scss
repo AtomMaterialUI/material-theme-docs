@@ -96,7 +96,7 @@ iframe {
 code,
 kbd,
 pre {
-  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-family: $code-font;
 }
 
 // Add gap size between paragraphs

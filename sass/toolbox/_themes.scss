@@ -28,7 +28,7 @@ body {
       transition: color 1s;
 
       &:hover {
-        color: $accent-color;
+        color: var(--accent);
       }
     }
 
@@ -122,29 +122,40 @@ body {
   }
 
   .link-section.active > a {
-    color: $second-accent-color;
+    color: var(--accent);
     transition: color 1s;
   }
 
   .docs-header {
-    background: $second-accent-color;
-    color: $accent-text;
+    background: var(--accent);
+    color: var(--selectFg);
     transition: all 1s;
   }
 
   .github-ribbon {
     border: 0;
-    color: $accent-text;
-    fill: $accent-color;
+    color: var(--selectFg);
+    fill: var(--accent);
     position: absolute;
     right: 0;
     top: 0;
     transition: all 1s;
   }
 
+  hr {
+    border-color: var(--hl);
+  }
 
+  pre,
   code {
     background: var(--second);
+    border-color: var(--border);
+  }
+
+  blockquote {
+    background: var(--second);
+    border-color: var(--border);
+    color: var(--foreground);
   }
 
   table tbody tr:nth-child(odd),
@@ -156,20 +167,29 @@ body {
 
   .card-panel.warn {
     background: var(--accent);
-    color: $almost-white;
+    color: var(--selectFg);
   }
 
   .card-panel.error {
-    color: $almost-white;
+    color: var(--selectFg);
+  }
+
+  .card-panel a {
+    color: var(--accent2) !important;
   }
 
   .search .search-input,
   .search .search-button {
     color: var(--foreground);
-    background: $almost-white;
+    background: var(--selectFg);
   }
 
   .collection-item.color {
     color: $primary-text;
+  }
+
+  .card, #carbonads {
+    background-color: var(--notif);
+    color: var(--foreground);
   }
 }
