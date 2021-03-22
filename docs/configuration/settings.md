@@ -189,6 +189,7 @@ Quick summary of all settings:
 
 **[Component Settings](/docs/configuration/component-settings)**:
 - *Uppercase buttons*: Set the buttons' texts to uppercase
+- *Outlined buttons*: Use outline buttons instead of full buttons.
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart)
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart)
 - *Accent Mode*: Make components stand out by setting them in the accent color (buttons, tabs, selections…)

@@ -29,6 +29,12 @@ full-fledged Material Design Experience.
 
 {% include figure.html content="/screens/uppercaseButtons.png" caption="Uppercase Buttons" %}
 
+### Outline buttons
+
+Starting from version 6.2 this new setting replaces buttons with **outlined buttons**.
+
+{% include figure.html content="/screens/outlinedButtons.png" caption="Outlined Buttons" %}
+
 -----
 ### Transparent Scrollbars and Accent Scrollbars
 

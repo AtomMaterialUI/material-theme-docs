@@ -32,17 +32,15 @@ There is also a free trial to test out those features before subscribing.
 
 ### Price Lists
 
+The plugin is delivered with a [perpetual license](https://sales.jetbrains.com/hc/en-gb/articles/207240845-What-is-a-perpetual-fallback-license-). It means that after 12 months it is free to use until the next major release, if there is one.
+
 | Individual License | Monthly subscription | Annual Subscription   |
 |:-------------------|:---------------------|:----------------------|
-| 1st year           | 1.50$                | 15.00$ (20% discount) |
-| 2nd year           | 1.20$                | 12.00$                |
-| 3rd year onwards   | 0.90$                | 9.00$                 |
+| Price              | $1.50                | $15.00 (20% discount) |
 
 | Enterprise License | Monthly subscription | Annual Subscription   |
 |:-------------------|:---------------------|:----------------------|
-| 1st year           | 7.50$                | 75.00$ (20% discount) |
-| 2nd year           | 6.00$                | 60.00$                |
-| 3rd year onwards   | 4.50$                | 45.00$                |
+| Price              | $7.50                | $75.00 (20% discount) |
 
 *Note*: Sales tax might be added depending on your location.
 {:class='card-panel warn'}
