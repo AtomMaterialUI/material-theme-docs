@@ -7,8 +7,8 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/file-status-colors'
-  title: File Status Colors
+  url: '/docs/configuration/scrollbars'
+  title: Scrollbars
 next:
   url: '/docs/configuration/color-scheme-additions'
   title: Color Scheme Additions
