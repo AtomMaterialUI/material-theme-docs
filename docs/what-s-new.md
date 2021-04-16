@@ -82,6 +82,16 @@ This, of course, has the side effect of adding a lot of "fake errors", therefore
 
 ----
 
+### Scrollbars Color Settings
+
+The **Scrollbars Color Settings** are back! Although they are available in the _General Color Scheme Colors_, not all values are available there.
+
+This update restores this setting page so people can comfortably tweak their scrollbar colors.
+
+More info at the [Scrollbars Page]({{ site.baseurl }}/docs/configuration/scrollbars)
+
+----
+
 ### Other fixes and improvements
 
 - Outlined buttons have been slightly expanded to be more similar to their normal counterpart.

@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/excluded-files-colors'
   title: Excluded Files Colors
 next:
-  url: '/docs/configuration/accents'
-  title: Accents
+  url: '/docs/configuration/scrollbars'
+  title: Scrollbars
 ---
 
 This feature is only available for premium users.
