@@ -58,12 +58,44 @@ The following keywords are customizable:
 - `function`
 - `true`, `false`
 
+New from 6.3.0:
+
+- Globals: `window`, `document`, `global`
+- Primitives: `NaN`
+- Keywords:
+  - `abstract`, `class`, `extends`, `implements`
+  - `async`, `await`
+  - `constructor`
+  - `static`
+  - `get`, `set`
+  - `if`, `else`, `for`, `while`, `do`
+  - `in`, `of`, `instanceof`, `typeof`, `as`
+  - `default`
+  - `new`, `throw`
+  - `return`, `yield`
+  - `try`, `catch`, `finally`
+- Other: `prototype`
+
+
 ### TypeScript
 
 TypeScript augments JavaScript additions with the following keywords:
 - `private`, `public`, `protected`
 - `declare`
 - `type`, `alias`
+
+New from 6.3.0:
+
+
+- Keywords:
+  - `declare`, `namespace`
+  - `enum`
+  - `keyof`
+  - `readonly`
+  - `type`, `interface`, `alias`
+- Types:
+  - `any`, `unknown`, `never`
+  - `string`, `boolean`, `number`, `object`, `symbol`, `bigint`, `void`
 
 ### Java
 
@@ -98,6 +130,16 @@ The following keywords are customizable
 - `this`, `super`
 - `null`, `Unit`
 - `true`, `false`
+
+----
+
+#### Enforce Highlighting
+
+Due to a limitation in JetBrains' syntax highlighting, some additions might not be highlighted as expected, as the language's highlighting will take precedence over the additions. To remedy that, a setting has been added in the Material Theme Settings, **Enforce Highlighting**, which would give the language additions higher precedence by making them appear as _Weak Warnings_.
+
+{% include figure.html content="/screens/enforceHighlighting.png" caption="Enforce Highlighting" %}
+
+This, of course, has the side effect of adding a lot of "fake errors", therefore, it's disabled by default.
 
 ----
 

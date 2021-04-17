@@ -199,10 +199,10 @@ Quick summary of all settings:
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors)
 - *Material Wallpapers*: Add a custom wallpaper per theme for the empty frame window.
 - *Project Frame Colors*: Add a colored stripe on the top of each window for easier differentiation
+- *Striped Tool Windows*: Set the new Striped Tool Windows Layout
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
 > - *Hollow Folders*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** Enable/Disable the Hollow Folders in Project View.
-- *Theme in Statusbar*: Show the currently selected theme in the statusbar.
 - *Colored Open Directories*: Colorize open directories with the accent color
 - *Themed Title Bar*: Colorize the title bar of the whole OS with the current theme's background color (Mac-Windows only)
 - *Language Additions*: Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)

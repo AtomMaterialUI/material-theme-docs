@@ -144,6 +144,26 @@ Its concept is to provide a better visualization of your opened projects by addi
 
 This feature is available since version 5.2.0
 
+----
+
+### Striped Tool Windows Layout
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
+The new version of the Material Theme UI makes use of the new experimental feature in progress by JetBrains: The **Striped Tool Windows**.
+
+This new layout, heavily reminding of VSCode, replaces the tool windows by larger stripes on the left and right side of the screen. It also strips the buttons of all texts, making the IDE feeling less cluttered.
+
+{% include figure.html content="/screens/stripedToolWindows.png" caption="Striped Tool Windows" %}
+
+This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
+
+{% include figure.html content="/screens/quickActionsPanel.png" caption="Quick Actions Panel" %}
+
+This feature is available since version 6.3.0 and is still experimental at this point, so there could be bugs.
+
+
 -----
 ## FAQ/Troubleshooting
 

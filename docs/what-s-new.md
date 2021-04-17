@@ -22,7 +22,7 @@ This new layout, heavily reminding of VSCode, replaces the tool windows by large
 
 {% include figure.html content="/screens/stripedToolWindows.png" caption="Striped Tool Windows" %}
 
-This feature is enabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
+This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
 
 {% include figure.html content="/screens/quickActionsPanel.png" caption="Quick Actions Panel" %}
 
