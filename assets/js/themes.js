@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/oceanic.png');
-  --logo: url('../../img/logo/material-oceanic.svg');
+  --logo: url('../../../img/logo/material-oceanic.svg');
 }
 
 .theme-darker {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/darker.png');
-  --logo: url('../../img/logo/material-darker.svg');
+  --logo: url('../../../img/logo/material-darker.svg');
 }
 
 .theme-lighter {
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/lighter.png');
-  --logo: url('../../img/logo/material-lighter.svg');
+  --logo: url('../../../img/logo/material-lighter.svg');
 }
 
 .theme-palenight {
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/palenight.png');
-  --logo: url('../../img/logo/material-palenight.svg');
+  --logo: url('../../../img/logo/material-palenight.svg');
 }
 
 .theme-deepocean {
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/deepocean.png');
-  --logo: url('../../img/logo/material-deepocean.svg');
+  --logo: url('../../../img/logo/material-deepocean.svg');
 }
 
 .theme-monokai {
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/monokai.png');
-  --logo: url('../../img/logo/material-monokai.svg');
+  --logo: url('../../../img/logo/material-monokai.svg');
 }
 
 .theme-dracula {
@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/dracula.png');
-  --logo: url('../../img/logo/material-dracula.svg');
+  --logo: url('../../../img/logo/material-dracula.svg');
 }
 
 .theme-github {
@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/github.png');
-  --logo: url('../../img/logo/material-github.svg');
+  --logo: url('../../../img/logo/material-github.svg');
 }
 
 .theme-githubdark {
@@ -473,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/githubdark.png');
-  --logo: url('../../img/logo/material-githubdark.svg');
+  --logo: url('../../../img/logo/material-githubdark.svg');
 }
 
 .theme-arcdark {
@@ -525,7 +525,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/arcdark.png');
-  --logo: url('../../img/logo/material-arcdark.svg');
+  --logo: url('../../../img/logo/material-arcdark.svg');
 }
 
 .theme-onedark {
@@ -577,7 +577,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/onedark.png');
-  --logo: url('../../img/logo/material-onedark.svg');
+  --logo: url('../../../img/logo/material-onedark.svg');
 }
 
 .theme-onelight {
@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/onelight.png');
-  --logo: url('../../img/logo/material-onelight.svg');
+  --logo: url('../../../img/logo/material-onelight.svg');
 }
 
 .theme-solardark {
@@ -681,7 +681,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/solardark.png');
-  --logo: url('../../img/logo/material-solardark.svg');
+  --logo: url('../../../img/logo/material-solardark.svg');
 }
 
 .theme-solarlight {
@@ -733,7 +733,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/solarlight.png');
-  --logo: url('../../img/logo/material-solarlight.svg');
+  --logo: url('../../../img/logo/material-solarlight.svg');
 }
 
 .theme-nightowl {
@@ -785,7 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/nightowl.png');
-  --logo: url('../../img/logo/material-nightowl.svg');
+  --logo: url('../../../img/logo/material-nightowl.svg');
 }
 
 .theme-lightowl {
@@ -837,7 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/lightowl.png');
-  --logo: url('../../img/logo/material-lightowl.svg');
+  --logo: url('../../../img/logo/material-lightowl.svg');
 }
 
 .theme-moonlight {
@@ -889,7 +889,7 @@ document.addEventListener('DOMContentLoaded', () => {
   --silver: undefined;
 
   --laptop: url('../../img/themes/moonlight.png');
-  --logo: url('../../img/logo/material-moonlight.svg');
+  --logo: url('../../../img/logo/material-moonlight.svg');
 }
 `;
   s.id = 'themes';

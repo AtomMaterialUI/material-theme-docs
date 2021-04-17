@@ -1,0 +1,175 @@
+.crisp-client .cc-kv6t {
+  color: var(--foreground) !important;
+  z-index: 100 !important;
+
+  a {
+    color: var(--accent2) !important;
+  }
+
+  button,
+  input[type=submit] {
+    color: var(--foreground) !important;
+    background: var(--button) !important;
+    background-image: linear-gradient(to bottom, var(--button) 0, var(--button) 100%, var(--button) 100%, var(--button) 100%) !important;
+
+    &:active {
+      background: var(--accent) !important;
+      background-image: linear-gradient(to bottom, var(--accent) 0, var(--accent) 9 50%, var(--accent) 51%, var(--accent) 100%) !important;
+      border-color: var(--accent) !important;
+    }
+  }
+
+  ins, mark {
+    background: var(--second) !important;
+    color: var(--foreground) !important;
+  }
+
+  hr {
+    border-top-color: var(--hl) !important;
+  }
+
+  input[type=text] {
+    background: var(--contrast) !important;
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    border: 1px solid var(--hl) !important;
+  }
+
+  input, select, textarea {
+    border-color: var(--hl) !important;
+    color: var(--fg) !important;
+  }
+
+  .cc-rxbq.cc-i0y3 {
+    border-color: var(--hl) !important;
+  }
+
+  .cc-rxbq.cc-12z0 {
+    background: var(--active) !important;
+  }
+
+  .cc-rxbq.cc-11yu {
+    background: var(--active) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-7bf0 .cc-12zj .cc-w6n9 .cc-b3wa .cc-xfpr .cc-1yfu .cc-xtol .cc-1lj6 .cc-hp1x {
+    background: var(--contrast) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-14ou .cc-sel9[data-type=warn_reply] .cc-1mtf {
+    background: var(--hl) !important;
+  }
+
+  .cc-ge4v .cc-qqzz,
+  .cc-1xry .cc-ge4v .cc-qqzz,
+  .cc-1xry .cc-ge4v {
+    background: var(--background) !important;
+  }
+
+  .cc-1ada,
+  .cc-ew5j:before,
+  .cc-ew5j:after {
+    background:  var(--hl) !important;
+    color: var(--foreground) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-1v5j {
+    background-image: linear-gradient(-180deg, var(--background) 85%, var(--background) 100%) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-g7iw {
+    background: var(--contrast) !important;
+    color: var(--foreground) !important;
+  }
+
+  .cc-ve3u,
+  .cc-1nmg:hover {
+    border-color: var(--hl) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-19cg {
+    background: var(--background) !important;
+
+    .cc-z2iy .cc-13dp {
+      color: var(--text) !important;
+    }
+  }
+
+  .cc-1xry .cc-ge4v,
+  .cc-1xry .cc-unoo {
+    right: 80px !important;
+  }
+
+  .cc-1oxy {
+    &.cc-11vl[data-variant=inactive] .cc-7ebe .cc-kpmf:after,
+    &.cc-11vl[data-variant=active] .cc-7ebe .cc-nqfv:after,
+    &.cc-11vl[data-variant=active] .cc-7ebe .cc-nqfv:before {
+      background: var(--contrast) !important;
+    }
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn,
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-5ftt,
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-h39l {
+    background: var(--second) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-gif=true] .cc-5b24 .cc-1tha,
+  .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-smiley=true] .cc-5b24 .cc-1tha {
+    background: #00000080 !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-gif=true] .cc-5b24 .cc-1tha .cc-batn .cc-h39l .cc-mxq4[data-type=gif],
+  .cc-1xry .cc-ge4v .cc-qqzz[data-has-picker-smiley=true] .cc-5b24 .cc-1tha .cc-batn .cc-h39l .cc-mxq4[data-type=smiley] {
+    color: var(--selectFg) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-h39l .cc-mxq4 {
+    color: var(--foreground) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-7bf0 .cc-1pll .cc-1p79 {
+    color: var(--text) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-7bf0 .cc-12zj .cc-w6n9 .cc-b3wa[data-from=operator] .cc-xfpr .cc-1yfu .cc-xtol .cc-1mx4 .cc-1u43 {
+    background: var(--button) !important;
+    color: var(--foreground) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-bdff .cc-x32x {
+    background: var(--second) !important;
+    color: var(--selectFg) !important;
+  }
+
+  .cc-6zjc,  .cc-1mk2:hover {
+    color: var(--foreground) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-7bf0 .cc-12zj .cc-w6n9 .cc-b3wa[data-from=visitor] .cc-xfpr .cc-1yfu .cc-xtol,
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1pvj .cc-7bf0 .cc-12zj .cc-w6n9 .cc-b3wa[data-from=visitor] .cc-xfpr .cc-1yfu {
+    background: var(--second) !important;
+    color: var(--foreground) !important;
+  }
+
+
+  .cc-vuur,
+  .cc-7rgf[data-active="true"],
+  .cc-4xbu, .cc-caj5:hover {
+    background: var(--accent) !important;
+  }
+
+
+  .cc-clw4::placeholder,
+  .cc-2n8m::placeholder,
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-1tha .cc-batn .cc-vcjp .cc-5ftt[data-type=gif] .cc-r00v .cc-z5zp[data-action=search] .cc-19m8::placeholder {
+    color: var(--disabled) !important;
+    -webkit-text-fill-color: var(--disabled) !important;
+  }
+
+  .cc-1xry .cc-ge4v .cc-qqzz .cc-5b24 .cc-14ou .cc-sel9 .cc-1691 {
+    color: var(--foreground)!important;
+  }
+}
