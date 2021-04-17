@@ -23,7 +23,13 @@ $.when($.ready).then(() => {
     },
 
     init() {
-      const theme = localStorage.getItem(THEME_KEY) || 'oceanic';
+      let theme = localStorage.getItem(THEME_KEY) || 'oceanic';
+      const urlParams = new URLSearchParams(window.location.search);
+      const themeParam = urlParams.get('theme');
+
+      if (themeParam) {
+        theme = themeParam || 'oceanic';
+      }
       this.setBodyClass(theme);
 
       const $target = $('.doc');
