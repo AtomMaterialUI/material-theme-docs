@@ -37,6 +37,7 @@ const themes = [...allThemes.material,
 
 const toTheme = theme => ({
   name: theme.name,
+  docId: theme.id,
   id: theme.className,
   primary: theme.attributes,
   primaryT: `${theme.attributes}70`,
@@ -91,6 +92,7 @@ const generateCSS = (theme) => {
   }
   return `
 .theme-${theme.id} {
+  --docId: ${theme.docId};
   --primary: ${theme.primary};
   --accent: ${theme.accent};
   --accent2: ${theme.accent2};
@@ -150,6 +152,9 @@ const getThemesCSS = () => themes.reduce((acc, item) => {
   return acc + generateCSS(toTheme(item));
 }, '');
 
+const getThemes = () => themes.map(theme => toTheme(theme));
+
 module.exports = {
   getThemesCSS,
+  getThemes,
 };

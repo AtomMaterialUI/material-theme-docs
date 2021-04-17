@@ -1,5 +1,6 @@
 material:
 - oceanic:
+  id: mt.oceanic
   name: Oceanic
   className: oceanic
   desc: An oceanic blue flat theme
@@ -45,6 +46,7 @@ material:
   parameters: '#f78c6c'
 
 - darker:
+  id: mt.darker
   name: Darker
   className: darker
   desc: A pitch-black flat theme
@@ -90,6 +92,7 @@ material:
   parameters: '#f78c6c'
 
 - lighter:
+  id: mt.lighter
   name: Lighter
   className: lighter
   desc: A bright light flat theme
@@ -135,6 +138,7 @@ material:
   parameters: '#F76D47'
 
 - palenight:
+  id: mt.palenight
   name: Palenight
   className: palenight
   desc: A purplish flat theme
@@ -180,6 +184,7 @@ material:
   parameters: '#f78c6c'
 
 - deepocean:
+  id: mt.deepocean
   name: Deep Ocean
   className: deepocean
   desc: A deep sea black flat theme
@@ -226,6 +231,7 @@ material:
 
 other:
 - monokai:
+  id: monokai
   name: Monokai Pro
   className: monokai
   desc: Theme based on the Monokai Pro Theme
@@ -271,6 +277,7 @@ other:
   parameters: '#F59762'
 
 - dracula:
+  id: dracula
   name: Dracula
   className: dracula
   desc: Theme based on the Dracula Theme
@@ -316,6 +323,7 @@ other:
   parameters: '#f89580'
 
 - github:
+  id: github
   name: GitHub
   className: github
   desc: Theme based on the GitHub UI
@@ -363,6 +371,7 @@ other:
 
 
 - githubdark:
+  id: github_dark
   name: GitHub Dark
   className: githubdark
   desc: Theme based on the GitHub Dark UI
@@ -410,6 +419,7 @@ other:
 
 
 - arcdark:
+  id: arc.dark
   name: Arc Dark
   className: arcdark
   desc: Theme based on the Arc Dark GTK Theme
@@ -455,6 +465,7 @@ other:
   parameters: '#CDA869'
 
 - onedark:
+  id: one.dark
   name: One Dark
   className: onedark
   desc: Theme based on the Atom One Dark theme
@@ -500,6 +511,7 @@ other:
   parameters: '#ABB2BF'
 
 - onelight:
+  id: one.light
   name: One Light
   className: onelight
   desc: Theme based on the Atom One Light theme
@@ -546,6 +558,7 @@ other:
 
 other2:
 - solardark:
+  id: solarized.dark
   name: Solarized Dark
   className: solardark
   desc: Solarized Dark Theme
@@ -591,6 +604,7 @@ other2:
   parameters: '#93A1A1'
 
 - solarlight:
+  id: solarized.light
   name: Solarized Light
   className: solarlight
   desc: Solarized Light Theme
@@ -636,6 +650,7 @@ other2:
   parameters: '#657B83'
 
 - nightowl:
+  id: nightowl
   name: Night Owl
   className: nightowl
   desc: Theme based on Night Owl by Sarah Drasner
@@ -681,6 +696,7 @@ other2:
   parameters: '#d6deeb'
 
 - lightowl:
+  id: lightowl
   name: Light Owl
   className: lightowl
   desc: Theme based on Light Owl by Sarah Drasner
@@ -726,6 +742,7 @@ other2:
   parameters: '#0c969b'
 
 - moonlight:
+  id: moonlight
   name: Moonlight
   className: moonlight
   desc: Theme based on the Moonlight Theme by Atomiks

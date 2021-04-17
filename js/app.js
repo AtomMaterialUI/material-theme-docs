@@ -27,8 +27,11 @@ $.when($.ready).then(() => {
       const urlParams = new URLSearchParams(window.location.search);
       const themeParam = urlParams.get('theme');
 
-      if (themeParam) {
-        theme = themeParam || 'oceanic';
+      if (themeParam && window.jekyllAppThemes) {
+        const foundTheme = window.jekyllAppThemes.find(t => t.docId === themeParam);
+        if (foundTheme) {
+          theme = foundTheme.id;
+        }
       }
       this.setBodyClass(theme);
 
