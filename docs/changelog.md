@@ -16,6 +16,73 @@ next:
 # Changelog
 ----
 
+
+# 6.3.1
+- Disable Striped Tool Windows until it's more stable
+
+# 6.3.0
+- New feature: **Striped Tool Windows**
+- New Color Scheme configuration screen: **Scrollbars**.
+- New language additions for _JavaScript_:
+  - Globals: `window`, `document`, `global`
+  - Primitives: `NaN`
+  - Keywords:
+    - `abstract`, `class`, `extends`, `implements`
+    - `async`, `await`
+    - `constructor`
+    - `static`
+    - `get`, `set`
+    - `if`, `else`, `for`, `while`, `do`
+    - `in`, `of`, `instanceof`, `typeof`, `as`
+    - `default`
+    - `new`, `throw`
+    - `return`, `yield`
+    - `try`, `catch`, `finally`
+  - Other: `prototype`
+- New language additions for _TypeScript_:
+  - Keywords:
+    - `declare`, `namespace`
+    - `enum`
+    - `keyof`
+    - `readonly`
+    - `type`, `interface`, `alias`
+  - Types:
+    - `any`, `unknown`, `never`
+    - `string`, `boolean`, `number`, `object`, `symbol`, `bigint`, `void`
+- **Enforce highlighting*** setting to enforce language additions by making them look like weak warnings
+- Outlined buttons have been slightly expanded to be more similar to their normal counterpart.
+- The button highlighters have been slightly improved
+- A new action have been added to the Quick Action Panels: _Outline Buttons_.
+- Fix for [#1720](https://github.com/ChrisRM/material-theme-jetbrains/issues/1720)
+- Fix for [#1725](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
+
+
+# 6.2.3
+- I've listened to complaints and decided to extend the transition period until the end of April
+
+# 6.2.2
+- Fix the issue where there were too much tooltips on the settings home screen
+- Add back **Tab Height**, **Compact Settings**, **Scrollbar Settings** and **Uppercase buttons** in the free plan.
+- Fix Readme, add more information about License activation
+
+# 6.2.1
+- Fix alignment with Status Bar widget and remove option from settings
+- Fix default font for console to be JetBrains Mono
+- Fix hover color for outlined buttons
+
+# 6.2.0
+- New Setting: **Outlined Buttons**. Now buttons can have the more recent Material Design style.
+- Improve the **Material Settings License Info** to contain more information, and a button to activate the license.
+- Improve support for external native themes
+- Prevents Color Scheme being reset to the theme's color scheme at start
+- Prevents conflicts with other themes by adding the `(Material)` suffix to bundled themes.
+- Add new UI properties support: Android ML, JetBrains Space, Got It Tooltip, Mnemonic Manager
+
+# 6.1.2
+- Fix https://github.com/ChrisRM/material-theme-jetbrains/issues/1697
+
+# 6.1.1
+- Fix settings being overriden by migration to paid model
 # 6.1.0
 - Support for the new *Freemium* system:
   - Themes, Color Schemes and UI Components are **FREE**
