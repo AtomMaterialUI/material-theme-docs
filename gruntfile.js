@@ -66,7 +66,7 @@ module.exports = (grunt) => {
 
     uglify: {
       global: {
-        src: ['assets/js/*.js'],
+        src: ['assets/js/app.js'],
         dest: 'assets/js/build/app.min.js',
       },
     },
