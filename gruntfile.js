@@ -162,10 +162,26 @@ module.exports = (grunt) => {
         options: {
           replacements: [
             {
-              pattern: '{{themes}}',
+              pattern: '{{themesCSS}}',
               replacement: themes.getThemesCSS(),
             },
           ],
+        },
+      },
+    },
+
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'themes',
+              replacement: themes.getThemes(),
+            },
+          ],
+        },
+        files: {
+          'assets/js/themes.js': 'assets/js/themes.js',
         },
       },
     },
@@ -177,6 +193,7 @@ module.exports = (grunt) => {
   grunt.registerTask('default', [
     'newer:imagemin',
     'string-replace',
+    'replace',
     'sass',
     'autoprefixer',
     'newer:babel',
@@ -184,8 +201,9 @@ module.exports = (grunt) => {
     'copy',
     'watch']);
   grunt.registerTask('build', [
-    'imagemin',
+    'newer:imagemin',
     'string-replace',
+    'replace',
     'sass',
     'autoprefixer',
     'babel',
