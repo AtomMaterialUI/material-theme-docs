@@ -140,7 +140,7 @@ const generateCSS = (theme) => {
   --silver: ${theme.white};
 
   --laptop: url('../../img/themes/${theme.id}.png');
-  --logo: url('../../img/logo/material-${theme.id}.svg');
+  --logo: url('../../../img/logo/material-${theme.id}.svg');
 }
 `;
 };

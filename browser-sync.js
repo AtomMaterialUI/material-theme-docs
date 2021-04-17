@@ -6,6 +6,7 @@ module.exports = {
       '/': 'build',
     },
   },
+  https: true,
   port: '8080',
   open: false,
   notify: false,
