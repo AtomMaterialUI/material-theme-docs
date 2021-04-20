@@ -1,12 +1,47 @@
 ---
 layout: docs
-title: What's new in Material Theme UI v6.3.0
+title: What's new in Material Theme UI v6.3.3
 group: whatsnew
 toc: true
 
 ---
 
-What's new in Material Theme UI v6.3.0? New JavaScript and TypeScript additions, Outline Buttons improvements and a brand new **Striped Tool Windows layout**. Here's a quick glance of the new features.
+# What's new in Material Theme UI v6.3.3?
+
+Bug fixes, improvements, and more information about the Subscription Model in the Plugin Page. Hopefully this will put a stop to users uninstalling the plugin! 😣
+{:class='title'}
+
+
+### More info about the Subscription Model
+
+Since the new model has been implemented, many users started complaining about the change thinking that the plugin will be no longer free and that they will be left with nothing but to pay in order to continue using the plugin. Or that the plugin using a subscription model means that they will need to pay for it every year.
+
+But that is not the case. In fact, there is a long article explaining [the reasons behind the change](about-subscription-model.md#about-material-themes-new-pricing-model). Unfortunately, people were unaware of this, and the first thing they saw is that the plugin is suddenly paid, and of course being left with incomprehension.
+
+As a result, I've added more information in the plugin page as well, so that hopefully people will be able to better understand the circumstances of the change as well as the many options available.
+
+### Bug Fixes
+
+- The __[Outline buttons](configuration/component-settings.md#outline-buttons)__ are no longer transparent as transparency is not really supported in the IDE. Instead, the buttons use color mixing to simulate transparency. This should make the outlined buttons feature more comfortable to use.
+- __[Language Additions](configuration/color-scheme-additions.md)__ are no longer appearing inside comments or JSX Tags. Hope this will be the last of it!
+- Now when changing settings without changing the theme, the color scheme will **NOT BE RESET**.
+- Same for executing actions such as the _Striped Tool Windows_, _Language Additions_, etc.
+
+### Additions
+
+- Two new actions have been added to the Quick Action Panels: _Outline Buttons_ and _Language Additions_.
+- JavaScript and TypeScript additions requiring the __[Enforced Highlighting](configuration/color-scheme-additions.md#enforce-highlighting)__ are now annotated as such in the _Color Scheme Setting Pages_.
+
+
+That's it! And as JetBrains say,
+
+__Happy Developing!__
+
+-----
+
+# What's new in Material Theme UI v6.3.0?
+
+New JavaScript and TypeScript additions, Outline Buttons improvements and a brand new **Striped Tool Windows layout**. Here's a quick glance of the new features.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -96,6 +131,8 @@ More info at the [Scrollbars Page]({{ site.baseurl }}/docs/configuration/scrollb
 
 - Outlined buttons have been slightly expanded to be more similar to their normal counterpart.
 - The button highlighters have been slightly improved
-- A new action have been added to the Quick Action Panels: _Outline Buttons_.
 - Fix for [#1720](https://github.com/ChrisRM/material-theme-jetbrains/issues/1720)
+- Fix for [#1722](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
 - Fix for [#1725](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
+- Fix for [#1727](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
+- Fix for [#1728](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
