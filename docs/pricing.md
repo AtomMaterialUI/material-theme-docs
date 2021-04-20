@@ -75,24 +75,25 @@ You can also find a lite version available for free here but with limited featur
 
 #### Feature Comparison:
 
-| Feature                    | Premium Version | Lite Version           |
-|:---------------------------|:----------------|:-----------------------|
-| Built-in Themes            | Yes             | Yes                    |
-| Color Schemes              | Yes             | Yes                    |
-| File Status Colors         | Yes             | Yes (not configurable) |
-| Accent Colors              | Yes             | Yes (not configurable) |
-| Material Components        | Yes             | Yes (partial support)  |
-| Support                    | Yes             | Yes (limited)          |
-| Wallpapers                 | Yes             | No                     |
-| Fonts                      | Yes             | No                     |
-| Custom Themes              | Yes             | No                     |
-| Tab Customization          | Yes             | No                     |
-| Compactness Customization  | Yes             | No                     |
-| Project View Customization | Yes             | No                     |
-| Components Customization   | Yes             | No                     |
-| Language Additions         | Yes             | No                     |
-| External Themes            | Yes             | No                     |
-| Update rate                | High            | Medium                 |
+| Feature                    | Free Version | Premium Version | Lite Version           |
+|:---------------------------|:-------------|:----------------|:-----------------------|
+| Built-in Themes            | Yes          | Yes             | Yes                    |
+| Color Schemes              | Yes          | Yes             | Yes                    |
+| File Status Colors         | Yes          | Yes             | Yes (not configurable) |
+| Accent Colors              | Yes          | Yes             | Yes (not configurable) |
+| Support                    | Yes          | Yes             | Yes (limited)          |
+| Wallpapers                 | Yes          | Yes             | Yes                    |
+| Compactness Customization  | Yes          | Yes             | No                     |
+| Material Components        | Partial      | Yes             | No                     |
+| Components Customization   | Partial      | Yes             | No                     |
+| Premium Themes             | No           | Yes             | No                     |
+| Fonts                      | No           | Yes             | No                     |
+| Custom Themes              | No           | Yes             | No                     |
+| Tab Customization          | No           | Yes             | No                     |
+| Project View Customization | No           | Yes             | No                     |
+| Language Additions         | No           | Yes             | No                     |
+| External Themes            | Partial      | Yes             | No                     |
+| Update rate                | High         | High            | Medium                 |
 
 
 
