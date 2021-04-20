@@ -132,7 +132,7 @@ More info at the [Scrollbars Page]({{ site.baseurl }}/docs/configuration/scrollb
 - Outlined buttons have been slightly expanded to be more similar to their normal counterpart.
 - The button highlighters have been slightly improved
 - Fix for [#1720](https://github.com/ChrisRM/material-theme-jetbrains/issues/1720)
-- Fix for [#1722](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
+- Fix for [#1722](https://github.com/ChrisRM/material-theme-jetbrains/issues/1722)
 - Fix for [#1725](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
-- Fix for [#1727](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
-- Fix for [#1728](https://github.com/ChrisRM/material-theme-jetbrains/issues/1725)
+- Fix for [#1727](https://github.com/ChrisRM/material-theme-jetbrains/issues/1727)
+- Fix for [#1728](https://github.com/ChrisRM/material-theme-jetbrains/issues/1728)
