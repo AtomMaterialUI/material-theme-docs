@@ -86,7 +86,8 @@ And again, **thank you**. I could never have done it without you guys!!!
 
 **Q**: *But $15 a year is too much for a theme!!!*
 
-**A**: Is it? $15 is roughly the price of about 10 coffees, 4 sandwiches or 6 subway tickets. Is working on a beautiful IDE with many customization options, many features, constant updates worth that price? If the price is really the issue, don't hesitate to contact me, perhaps I can give you a discount, or a trial extension if you want.
+**A**: Well, maybe, it all depends on how much you think this is worth it. To me, from someone who had been pouring a lot of days and weekends into this in order to have a slick and customizable IDE, $15 is but a small contribution.
+But of course it can depend on a lot of factors. $15 here might be a lot in other parts of the world or even for some households. I'm not trying to be condescending or anything. If anything, if the price is the issue, don't hesitate to contact me, perhaps I can give you a discount, or a trial extension if you want.
 
 Also, if you are a student, a classroom, a non-profit organization, an open-source contributor or a plugin developer, you
 can use the plugin **for free**.
