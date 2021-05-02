@@ -15,7 +15,30 @@ next:
 
 # Changelog
 ----
+# 6.4.0
+- Features:
+  - Add _Track Colors_ to the _Scrollbars_ page.
+  - Add missing Android Studio color keys
+  - Theme the **Learn IDE** plugin's panes
+  - Theme the _Inlay Hints_
+  - Theme the _Inline refactoring_ toolbars
+  - Theme the Editor's _Problems_ Toolbar
+  - Theme the _blinking element_ in Color Scheme Pages
+- Fixes:
+  - Restore the _Activate License_ and _Buy License_ buttons
+  - Switching the _Striped Tool Windows_ ON will now ask for restart (but not the opposite action).
+  - Fix issue where applying the same theme as the current one would revert to Darcula
+  - Fix the duplicate elements when opening a project with the _Striped Tool Windows_ active.
+  - Fix NullPointerException in Rider (#1734)
+  - Fix Moonlight's identifier under caret color
 
+# 6.3.3
+- Fix #1722, #1727 and #1728
+- New action in the Quick Actions Panel to toggle _language additions_
+- More details about the new subscription model.
+
+# 6.3.2
+- Fix What's new Window not showing
 
 # 6.3.1
 - Disable Striped Tool Windows until it's more stable
