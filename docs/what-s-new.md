@@ -1,10 +1,101 @@
 ---
 layout: docs
-title: What's new in Material Theme UI v6.3.3
+title: What's new
 group: whatsnew
 toc: true
 
 ---
+
+# What's new in Material Theme UI v6.4.0
+
+This version closes the gap with some leftover tasks, mainly about **UI Theme Properties** and **Color Scheme Properties**, while continuing to improve the _Striped Tool Windows_ feature.
+{:class='title'}
+
+----
+
+## UI Theme Additions
+
+### Learn IDE Features Theming
+
+The plugin continues its process to theme all parts of the IDE, even those that are currently non-themable. And one of those is the **Learn IDE** plugin's pane.
+
+{% include figure.html content="/screens/learnIDEunthemed.png" caption="Learn IDE Unthemed" %}
+
+{% include figure.html content="/screens/learnIDEthemed.png" caption="Learn IDE Unthemed" %}
+
+----
+
+## Color Scheme Additions
+
+### Inlay Hints
+
+Another non-themed part were the _inlay hints_ that can be displayed in different places of the editor.
+
+{% include figure.html content="/screens/inlayUnthemed.png" caption="Inlay Hints Unthemed" %}
+
+{% include figure.html content="/screens/inlayThemed.png" caption="Inlay Hints Themed" %}
+
+{% include figure.html content="/screens/inlayParamsUnthemed.png" caption="Inlay Parameters Unhemed" %}
+
+{% include figure.html content="/screens/inlayParamsThemed.png" caption="Inlay Parameters Themed" %}
+
+
+### Problems Toolbar
+
+This is the small transparent toolbar that appears on the top right of the editor window to display the current file's problems. Although it looked like it was themed, the hovered buttons were not.
+
+{% include figure.html content="/screens/problemsUnthemed.png" caption="Problems Toolbar Unthemed" %}
+
+{% include figure.html content="/screens/problemsThemed.png" caption="Problems Toolbar Themed" %}
+
+### Inline refactoring toolbar
+
+Last but not least, the _inline refactoring toolbar_ was themed as well.
+
+{% include figure.html content="/screens/inlineUnthemed.png" caption="Inline Refactoring Unthemed" %}
+
+{% include figure.html content="/screens/inlineThemed.png" caption="Inline Refactoring Themed" %}
+
+
+
+**NOTE:** Because these additions are on the color schemes, you will need to _Restore Color Schemes to default_ in case you edited them.
+{:class='card-panel warn'}
+
+
+---
+
+## Scrollbars Track Colors
+
+New settings have been added to the **Scrollbars** Color Scheme page to allow changing the color of the scrollbar track.
+
+{% include figure.html content="/screens/scrollbarsTrack.png" caption="Scrollbars Track Colors" %}
+
+---
+
+## Improved Material Theme UI Landing Page Settings
+
+The Material Theme UI Landing Page have been improved to simplify __accessing the Marketplace__ to buy the plugin and __activating your License__.
+
+{% include figure.html content="/screens/landingPage.png" caption="Material Theme UI Landing Page" %}
+
+---
+
+## Other fixes and improvements
+
+- Now, enabling the _Striped Tool Windows_ will require a restart if it wasn't enabled before
+- Fix the _Striped Tool Windows_ issue where opening a project on the same window would cause the closed project icons to remain on the toolbars.
+- Fix `NullPointerExcpetion` in Rider.
+- Fix _Moonlight_ identifier under caret's color
+- Add missing Android Studio Theme Keys (which will only be available once Android Studio migrates to 2021.1)
+
+----
+
+That's it! And as JetBrains say,
+
+__Happy Developing!__
+
+
+----------------
 
 # What's new in Material Theme UI v6.3.3?
 
