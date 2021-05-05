@@ -15,18 +15,13 @@
 
 - name: yellow
   dark: '#FFCB6B'
-  light: '#FFB62C'
+  light: '#E2931D'
   tags: [class, identifier, struct, attribute, type, warning]
 
 - name: green
   dark: '#C3E88D'
   light: '#91B859'
   tags: [string, interface, abstract, value, text, symbol]
-
-- name: paleblue
-  dark: '#b2ccd6'
-  light: '#8796B0'
-  tags: []
 
 - name: cyan
   dark: '#89ddff'
@@ -35,7 +30,7 @@
 
 - name: turquoise
   dark: '#80CBC4'
-  light: '#80cbc4'
+  light: '#8796b0'
   tags: [link, active, cssProperty]
 
 - name: blue
@@ -45,20 +40,15 @@
 
 - name: purple
   dark: '#c792ea'
-  light: '#7C4DFF'
-  tags: [keyword, annotation, doc, jsonKey]
-
-- name: violet
-  dark: '#bb80b3'
   light: '#945EB8'
-  tags: []
+  tags: [keyword, annotation, doc, jsonKey]
 
 - name: brown
   dark: '#ab7967'
   light: '#ab7967'
   tags: []
 
-- name: white
+- name: white/dark
   dark: '#eeffe3'
-  light: '#80cbc4'
+  light: '#272727'
   tags: [variable, entity, label, jsField]
