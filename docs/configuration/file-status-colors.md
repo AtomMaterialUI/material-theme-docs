@@ -14,9 +14,6 @@ next:
   title: Scrollbars
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
 These settings allow you to customize the file status colors on a per color scheme basis.
 {:class='title'}
 
