@@ -84,9 +84,6 @@ foreground colors or button colors are left unchanged.
 ----
 ### Custom Accent Color
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
 This setting controls the [current accent color](/docs/configuration/accents) used throughout the app.
 
 Accent color is used in many places such as:

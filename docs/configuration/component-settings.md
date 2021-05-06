@@ -14,9 +14,6 @@ next:
   title: Features Settings
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
 This page controls the components used throughout the IDE, like buttons, scrollbars, etc.
 {:class='title'}
 
@@ -30,6 +27,9 @@ full-fledged Material Design Experience.
 {% include figure.html content="/screens/uppercaseButtons.png" caption="Uppercase Buttons" %}
 
 ### Outline buttons
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 Starting from version 6.2 this new setting replaces buttons with **outlined buttons**.
 
@@ -60,6 +60,9 @@ _Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](configurat
 ---
 ### Tabs Shadow
 
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
 This option enables/disables the shadow under the tabs.
 
 {% include figure.html content="/screens/tabShadow.png" caption="Tabs Shadow" %}
@@ -68,6 +71,9 @@ This option enables/disables the shadow under the tabs.
 ---
 
 ### Accent Mode
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 This feature makes components stand out more by coloring them with the current accent color. The affected components are:
 - The Editor Tabs
