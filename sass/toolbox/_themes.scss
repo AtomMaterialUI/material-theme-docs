@@ -1,4 +1,36 @@
 body {
+  input:not([type]),
+  input[type=text]:not(.browser-default),
+  input[type=password]:not(.browser-default),
+  input[type=email]:not(.browser-default),
+  input[type=url]:not(.browser-default),
+  input[type=time]:not(.browser-default),
+  input[type=date]:not(.browser-default),
+  input[type=datetime]:not(.browser-default),
+  input[type=datetime-local]:not(.browser-default),
+  input[type=tel]:not(.browser-default),
+  input[type=number]:not(.browser-default),
+  input[type=search]:not(.browser-default),
+  textarea.materialize-textarea {
+    color: var(--foreground);
+  }
+
+  .dropdown-content li {
+    background: var(--second);
+    color: var(--foreground);
+  }
+
+  .select-dropdown.dropdown-content li.selected,
+  .select-dropdown.dropdown-content li:focus {
+    background: var(--selectBg) !important;
+    color: var(--selectFg) !important;
+  }
+
+  .select-dropdown.dropdown-content li:hover {
+    background: var(--hl) !important;
+    color: var(--selectFg) !important;
+  }
+
   .front-page {
     background-color: var(--background);
     color: var(--foreground);

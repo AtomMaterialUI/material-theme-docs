@@ -23,6 +23,8 @@ input[type=tel]:not(.browser-default),
 input[type=number]:not(.browser-default),
 input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
+  color: $input-color;
+  font-family: $main-font;
 
   // General Styles
   background-color: transparent;
@@ -157,6 +159,7 @@ textarea.materialize-textarea {
   &.inline {
     display: inline-block;
     vertical-align: middle;
+    min-width: 400px;
 
     input,
     .select-dropdown {
