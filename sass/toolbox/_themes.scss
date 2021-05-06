@@ -225,5 +225,9 @@ body {
     color: var(--foreground);
   }
 
+  .pageclip-form__success {
+    background: var(--background);
+  }
+
   @import 'crisp';
 }
