@@ -6,6 +6,27 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.4.1
+
+Yet another bug fixes version.
+{:class='title'}
+
+- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1739>
+- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1743>
+
+This fixes the issue where changing the theme from the _Material Theme Settings_ caused the theme to not be saved.
+
+- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1745>
+
+Fixes a threading error caused when switching color schemes.
+
+- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1747>
+
+[accents](configuration/accents.md) and [file-status-colors](configuration/file-status-colors.md) are part of the [pricing](pricing.md#feature-comparison) but appears requiring the Premium Version.
+
+
+
+
 # What's new in Material Theme UI v6.4.0
 
 This version closes the gap with some leftover tasks, mainly about **UI Theme Properties** and **Color Scheme Properties**, while continuing to improve the _Striped Tool Windows_ feature.
