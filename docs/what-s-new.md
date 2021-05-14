@@ -6,6 +6,53 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.4.2
+
+This version improves the themes colors to provide better contrasts, as well as fixing the issue with some settings remaining locked despite being in the free plan. And some new features too:
+{:class='title'}
+
+## Display the What's new page on each update
+
+Since 2021.1 JetBrains introduced the capabitilty to display a webpage in the editor, and this has been used to show, well, this page actually. However, while it's nice to know what has been updated, it can be a bit annoying to see this popping up at every update.
+
+Therefore, a new switch has been added in the [Other Settings](configuration/other-tweaks-settings.md) tab, to let users control whether they want this page to show up.
+
+----
+
+## Theme improvements
+
+Some theme colors have been improved to have better contrasts. Such themes are:
+- Arc Dark
+- Github
+- Github Dark
+- Night Owl
+- Palenight
+- Lighter
+- Deep Ocean
+
+Moreover, the **selected background color** is no longer transparent, as it was causing some rendering issues.
+
+**Note**: Some of the aforementioned changes are reflected in the Color Schemes, not only on the UI Themes. Therefore, you would need to **Restore Color Schemes** for the changes to be applied.
+{:class='card-panel warn'}
+
+----
+
+## Other improvements
+
+- Fix Wizards and Menus to not lock settings that are part of the free plan.
+- Remove border color for tool windows
+- Do not reset the registry's value `transparentTitleBarAppearance` when in the free plan.
+- Fix the Settings search to return the Material Theme UI Settings.
+
+
+That's it. And as always,
+
+Happy coding!
+{:class='title'}
+
+
+----
+
 # What's new in Material Theme UI v6.4.1
 
 Yet another bug fixes version.
