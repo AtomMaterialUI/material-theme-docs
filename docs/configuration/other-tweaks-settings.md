@@ -23,47 +23,6 @@ for the IDE.
 
 {% include carbonads.html %}
 
-### Hollow Folders
-
-
-**Note:**: These features have all been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
-{:class='card-title warn'}
-
-This feature is adding decorations to the Project View to mimic the original Material Sublime Theme decorations.
-
-###### Open and closed directories
-
-When this option is on, files that are _opened_ in the editor and that are _edited_ will have their containing
-directories have a __hollow directory icon__ (or outline directory) instead of the original icon.
-
-{% include figure.html content="/screens/folderDecorators.png" caption="Opened folder decorators" %}
-
-**Note**: This feature requires *Material Icons* feature to work.
-
-**Note 2**: If the **Folder decorators** option is set, the icon will match the decorator, but outlined.
-
-**Note:**: This feature has been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
-{:class='card-title warn'}
-
-----
-### Open Colored Directories
-
-When this feature is on, the directories that have files open in the editor will be colored with the accent color
-
-{% include figure.html content="/screens/boldDirectories.png" caption="Open Colored Directories" %}
-
-----
-### Theme in Status Bar
-
-This setting adds a "widget" to the status bar to indicate which theme you are currently on. You can also click on it to
-open the Material Theme Settings.
-
-{% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
-
-Starting from version 2.9.4/2.10.4 you can also see your current accent color.
-
-{% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
-
 ----
 ### Themed Title Bar
 
@@ -110,9 +69,65 @@ If someone is interested on a way to do so, please send me a PM by email or Slac
 
 -----
 
+### Open Colored Directories
+
+When this feature is on, the directories that have files open in the editor will be colored with the accent color.
+
+{% include figure.html content="/screens/boldDirectories.png" caption="Open Colored Directories" %}
+
+-----
+
 ### Language Additions
 
 Take a look to the page [Language Additions](configuration/color-scheme-additions.md) for more details.
+
+----
+
+### Show What's New page on each update
+
+This setting allows you to toggle whether the [What's New](what-s-new.md) page would show up on each update.
+
+-----
+
+### Hollow Folders
+
+**Note:**: These features have all been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
+{:class='card-title warn'}
+
+This feature is adding decorations to the Project View to mimic the original Material Sublime Theme decorations.
+
+----
+
+### Open and closed directories
+
+When this option is on, files that are _opened_ in the editor and that are _edited_ will have their containing
+directories have a __hollow directory icon__ (or outline directory) instead of the original icon.
+
+{% include figure.html content="/screens/folderDecorators.png" caption="Opened folder decorators" %}
+
+**Note**: This feature requires *Material Icons* feature to work.
+
+**Note 2**: If the **Folder decorators** option is set, the icon will match the decorator, but outlined.
+
+**Note:**: This feature has been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
+{:class='card-title warn'}
+
+----
+### Theme in Status Bar
+
+This setting adds a "widget" to the status bar to indicate which theme you are currently on. You can also click on it to
+open the Material Theme Settings.
+
+{% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
+
+Starting from version 2.9.4/2.10.4 you can also see your current accent color.
+
+{% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
+
+**Note:**: This feature has been moved to the status bar directly, by right-clicking on it.
+{:class='card-title warn'}
+
+{% include figure.html content="/screens/statusbar.png" caption="Status Bar Toggles" %}
 
 -----
 ## FAQ/Troubleshooting
