@@ -29,9 +29,6 @@ This feature is much more oriented development than the others as it provides ne
 than the UI. Basically it adds more customization to the Color Schemes by providing more syntax highlighting options
 than the original bundled ones, thus enhancing visual grepping.
 
-Originally introduced by the [Night Owl Theme](https://github.com/xdrop/night-owl-jetbrains),
-the plugin augments its features by giving more highlighting options.
-
 {% include figure.html content="/screens/jsExtensions.png" caption="JavaScript Additions" %}
 
 

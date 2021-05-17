@@ -51,7 +51,7 @@ the two custom themes.
 
 ## Panel Options
 
-This feature is only available for premium users.
+Some features are only available for premium users.
 {:class='card-panel warn'}
 
 This panel allows you to quickly toggle some of the most used Panel Settings:
@@ -75,16 +75,13 @@ In addition, those are one-time actions that will change the plugin or the IDE c
 
 ## Accent Color Chooser
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
 This panel provides a set of predefined colors to set up your [accent color](/docs/configuration/accents).
 
 {% include figure.html content="/screens/accentChooser.png" caption="Accent Chooser" %}
 
 There are also more options to easily toggle the following modes:
 - _Override Accent Color from Theme_
-- _Set Action Mode_
+- _Set Accent Mode_
 
 Note that these actions are one-time only and the accent color can be changed in the `Settings → Custom Accent Color`.
 
@@ -92,21 +89,24 @@ Note that these actions are one-time only and the accent color can be changed in
 
 ## Component Settings
 
-This feature is only available for premium users.
+Some features are only available for premium users.
 {:class='card-panel warn'}
 
 This panel as well allows you to rapidly toggle the most used Component/Features Settings:
 - _Toggle Material Fonts_
-- _Toggle Open Colored Directories_
-- _Toggle Status Bar Indicator_
+- _Toggle Colored Directories_
+- _Toggle Language Additions_
 - _Toggle Material Wallpapers_
-- _Toggle Project Frame_
+- _Toggle Outline Buttons_
+- _Toggle Project Frame Colors_
 - _Toggle Themed Title Bar_
+- _Toggle Striped Tool Windows_
 
 In addition, other one-time actions are available in this panel, which are:
 - _Material Theme Wizard_: Relaunch the Material Theme Wizard
 - _Atom Material Icons_: Open the **Atom Material Icons Plugin** page for installation.
 - _Activate License_: **Use this action to activate your Premium License.**
+- _Show What's New_: Display the **What's new** page.
 
 {% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
 

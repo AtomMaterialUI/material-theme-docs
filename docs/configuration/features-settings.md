@@ -146,6 +146,24 @@ This feature is available since version 5.2.0
 
 ----
 
+### Accent Mode
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
+This feature makes components stand out more by coloring them with the current accent color. The affected components are:
+- The Editor Tabs
+- The Primary Buttons
+- The selection color for Lists, Tables and Trees
+
+{% include figure.html content="/screens/accentMode.png" caption="Accent Mode" %}
+
+You can also specify a _second accent color_ to contrast with the now prominent accent color.
+
+This feature is available since 4.1.0.
+
+----
+
 ### Striped Tool Windows Layout
 
 This feature is available in the free plan.

@@ -25,7 +25,7 @@ It is based on the [Material Theme for Sublime](https://github.com/equinusocio/m
 
 ##### A new look and feel(s)
 
-<img class="promo-img" src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/features/lookandfeel.svg" alt="Look And Feels">
+<img class="promo-img" src="/img/features/lookandfeel.svg" alt="Look And Feels">
 
 This plugin installs fresh, modern and beautiful Look and Feels for the Intellij platform. Up until mid-2019, the JetBrains engineers did not provide an API for creating custom Look and Feels, leaving users stuck with the prebundled *Darcula* and *IntelliJ*.
 However, this plugin is exploiting the Java Swing theming capabilities to override those set up by Darcula in order to provide more custom look and feels based on the Material Design principles. It was inspired by the
@@ -35,7 +35,7 @@ Nowadays, even though a theme API has become available by JetBrains, this plugin
 
 ##### Colorful Color Schemes
 
-<img class="promo-img" src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/features/colorschemes.svg" alt="Color Schemes">
+<img class="promo-img" src="/img/features/colorschemes.svg" alt="Color Schemes">
 
 Along with the Look and Feels, the plugin also comes with prebundled color schemes taken from the [Sublime Material Theme](https://github.com/equinusocio/material-theme).
 
@@ -43,21 +43,21 @@ Each one of the color schemes is adapted to the Theme of the same name, giving t
 
 ##### Beautiful icons
 
-<img class="promo-img" src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/features/icons-folder.svg" alt="Icons">
+<img class="promo-img" src="/img/features/icons-folder.svg" alt="Icons">
 
 Now part of the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), the plugin also replaces all IDE icons with [**Material Design Icons**](https://materialdesignicons.com/) in order to provide a seamless experience with other Material Design products.
 Moreover, the plugin is also replacing file icons according to their extension/framework/library for a better visual grepping, according to the principles from [Atom File Icons](https://atom.io/packages/file-icons).
 
 ##### Material Design Components
 
-<img class="promo-img" src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/features/background.svg" alt="Components">
+<img class="promo-img" src="/img/features/background.svg" alt="Components">
 
 
 Aside from the Look and Feels, Colors and Icons, the plugin is also the first to completely customize the appearance of the IDE by replacing the original components with [Material Design Components](https://material.io/components/) such as: *buttons*, *text fields*, *checkboxes*, *tabs* and so on.
 
 ##### Customizable
 
-<img class="promo-img" src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/features/customizable.svg" alt="Customizable">
+<img class="promo-img" src="/img/features/customizable.svg" alt="Customizable">
 
 
 Providing such a large set of features and customizations does not go without options to enable or disable particular features.
@@ -65,7 +65,7 @@ The plugin comes with a large panel of settings for customizing almost everythin
 
 ##### Easily extensible
 
-<img class="promo-img" src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/features/extensible.svg" alt="Extensible">
+<img class="promo-img" src="/img/features/extensible.svg" alt="Extensible">
 
 
 In addition to all these wonderful features, the plugin is also easy to extend and modify for your own purposes. Since we cannot satisfy everyone's requests, giving the ability for everyone to tweak the plugin to their needs is the best course of action. Themes, Colors, Icons… each of these are pretty easy to tweak.

@@ -200,7 +200,7 @@ fork the project and create a brand-new theme.
 
 **Q**: Is there a way to change the text color?
 
-**A**: The color of the text is controlled by another setting. See [File Status Colors]({{site.baseurl}}/docs/configuration/file-status-colors) for more info.
+**A**: The color of the text is controlled by another setting. See [File Status Colors](/docs/configuration/file-status-colors) for more info.
 
 ----
 ## File Status Colors

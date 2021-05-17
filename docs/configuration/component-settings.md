@@ -38,6 +38,9 @@ Starting from version 6.2 this new setting replaces buttons with **outlined butt
 -----
 ### Transparent Scrollbars and Accent Scrollbars
 
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
 These options control the appearance of the scrollbars. Note: This feature works completely on Windows and Linux, but on
 Mac it is only working for non-native scrollbars (i.e. scrollbars that appear only while scrolling).
 
@@ -50,12 +53,15 @@ theme's background color. This is adding _50% opacity_ and there is no way to ch
 
 #### Editor Scrollbars
 
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
 Since 2019.1 the scrollbars enter into two categories:
 * _UI Scrollbars_: These are the scrollbars found throughout the UI (lists, trees and so on)
 * _Editor Scrollbars_: These are the scrollbars inside editors
 
 Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the
-_Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](configuration/scrollbars.md#important-information).
+_Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars.md#important-information).
 
 ---
 ### Tabs Shadow
@@ -67,21 +73,16 @@ This option enables/disables the shadow under the tabs.
 
 {% include figure.html content="/screens/tabShadow.png" caption="Tabs Shadow" %}
 
-
 ---
 
-### Accent Mode
+### Inverted Selection Color
 
-This feature is only available for premium users.
+This feature is available in the free plan.
 {:class='card-panel warn'}
 
-This feature makes components stand out more by coloring them with the current accent color. The affected components are:
-- The Editor Tabs
-- The Primary Buttons
-- The selection color for Lists, Tables and Trees
+This setting allows you to choose between two styles for the **selected option** in the *Autocomplete Panel*:
 
-{% include figure.html content="/screens/accentMode.png" caption="Accent Mode" %}
+{% include figure.html content="/screens/normalSelection.png" caption="Normal selection" %}
 
-You can also specify a _second accent color_ to contrast with the now prominent accent color.
+{% include figure.html content="/screens/invertedSelection.png" caption="Inverted selection" %}
 
-This feature is available since 4.1.0.

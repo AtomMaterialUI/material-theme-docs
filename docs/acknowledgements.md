@@ -130,7 +130,7 @@ while and would probably not work with current versions.
 [Nyan Progress Bar](https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar)
 
 A funny plugin which replaces the Progress Bar with a _Nyan Cat_. The inspiration for the
-[Material Components]({{site.baseurl}}/docs/reference/components) customization.
+[Material Components](/docs/reference/components) customization.
 
 ##### .ignore
 

@@ -56,7 +56,7 @@ The wizard consists of only four steps that showcase the most important features
 {% include figure.html content="/screens/wizard/themesStep.png" caption="Theme Selection" %}
 
 This step will showcase the different
-[themes]({{site.baseurl}}/docs/configuration/settings#material-themes) offered by the plugin, along with a screenshot of
+[themes](/docs/configuration/settings#material-themes) offered by the plugin, along with a screenshot of
 what the IDE will look like.
 
 #### Contrast
@@ -64,7 +64,7 @@ what the IDE will look like.
 {% include figure.html content="/screens/wizard/contrastStep.png" caption="Contrast Modes" %}
 
 This step displays the different
-[contrast modes]({{site.baseurl}}/docs/configuration/main-settings#contrast-mode) of the plugin. You can select either
+[contrast modes](/docs/configuration/main-settings#contrast-mode) of the plugin. You can select either
 of them or both of them.
 
 #### Accent Color
@@ -72,7 +72,7 @@ of them or both of them.
 {% include figure.html content="/screens/wizard/accentStep.png" caption="Accent Color" %}
 
 Here you can select the
-[accent color]({{site.baseurl}}/docs/configuration/accents) used by the components of the IDE. A preview of some
+[accent color](/docs/configuration/accents) used by the components of the IDE. A preview of some
 components is available to see how they will display with the selected color.
 
 #### Plugin Settings

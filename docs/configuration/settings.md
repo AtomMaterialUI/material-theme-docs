@@ -25,7 +25,7 @@ configurable to allow every one to customize it to their hearts content.
 ### Theme Switcher
 
 The plugin comes prebundled with a set of themes interchangeables through the
-![Theme Switcher]({{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/icons/switcher.png) *Theme Switcher*.
+![Theme Switcher](/img/icons/switcher.png) *Theme Switcher*.
 
 {% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
 
@@ -76,8 +76,7 @@ This feature is only available for premium users.
 
 The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, just like
 Color Schemes, Keymaps, Coding Styles and so on. To learn more about _External Themes_ or how to create your own plugin,
-head to the
-[External Themes section](/docs/development/external-themes).
+head to the [External Themes section](/docs/development/external-themes).
 
 Once the external theme has been downloaded and installed, it should appear at the bottom of the Switcher
 
@@ -192,13 +191,14 @@ Quick summary of all settings:
 - *Outlined buttons*: Use outline buttons instead of full buttons.
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart)
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart)
-- *Accent Mode*: Make components stand out by setting them in the accent color (buttons, tabs, selections…)
+- *Inverted Selection Color*: Switch the Autocomplete selected item color between the selection color and contrast color.
 
 **[Features Settings](/docs/configuration/features-settings)**:
 - *Material Fonts*: Enable/Disable Material fonts (Roboto)
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors)
 - *Material Wallpapers*: Add a custom wallpaper per theme for the empty frame window.
 - *Project Frame Colors*: Add a colored stripe on the top of each window for easier differentiation
+- *Accent Mode*: Make components stand out by setting them in the accent color (buttons, tabs, selections…)
 - *Striped Tool Windows*: Set the new Striped Tool Windows Layout
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
@@ -206,6 +206,7 @@ Quick summary of all settings:
 - *Colored Open Directories*: Colorize open directories with the accent color
 - *Themed Title Bar*: Colorize the title bar of the whole OS with the current theme's background color (Mac-Windows only)
 - *Language Additions*: Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
+- *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) on each update.
 
 #### Settings shortcuts
 

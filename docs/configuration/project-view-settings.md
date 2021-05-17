@@ -15,9 +15,6 @@ next:
 
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
 Customize the Project View's appearance: indent, items' height, font size and so on.
 {:class='title'}
 
@@ -25,6 +22,9 @@ Customize the Project View's appearance: indent, items' height, font size and so
 
 ----
 ### Custom sidebar height
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
 
 Following Material Design principles, this plugin is adding more padding to many of the components used in the IDE, such
 as Tables, Lists and Tree. This setting will allow you to override this behavior and specify a custom line height in
@@ -44,6 +44,9 @@ when unchecked is **28**.
 ----
 ### Custom tree indent
 
+These feature is only available for premium users.
+{:class='card-panel warn'}
+
 Another tree views' feature is the ability to customize the indentation of the items. This might be useful for projects
 that have a lot of nesting levels and do not want unnecessary scrolling.
 
@@ -62,6 +65,9 @@ The allowed values vary between **0** and **40**, with the default being **6**.
 ----
 ### Styled Directories
 
+These feature is only available for premium users.
+{:class='card-panel warn'}
+
 This setting allows you to set a custom style for directories in the _Project View_. This could be useful to immediately
 differentiate between files and directories (default off).
 
@@ -79,14 +85,17 @@ This feature is available from versions **2.9** and above.
 ----
 ### Indicator Style and Thickness
 
+These feature is only available for premium users.
+{:class='card-panel warn'}
+
 This setting allows you to customize the _Selected Tree Item Indicator_ (the left accentued border) for more flavors.
 
 These are the available styles:
 
 | Style  | Screenshot                                                                                                         |
 |:-------|:-------------------------------------------------------------------------------------------------------------------|
-| Border | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/screens/selectedTreeIndicator.png"> |
-| Dot    | <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/screens/dotTreeIndicator.png">      |
+| Border | <img src="/img/screens/selectedTreeIndicator.png"> |
+| Dot    | <img src="/img/screens/dotTreeIndicator.png">      |
 | None   | (no indicator)                                                                                                     |
 
 You can also customize the thickness of the said indicator with a value between `1` and `5`.

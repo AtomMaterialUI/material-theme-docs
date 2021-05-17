@@ -3,10 +3,10 @@
   {% for gallery in page.gallery %}
     {% for image in gallery.images %}
       <figure class="card figure">
-        <a href="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/{{ image.filename }}"
+        <a href="/img/{{ image.filename }}"
            target="_blank"
            data-imagelightbox="f" class="card-image">
-          <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/' }}/{{ image.filename }}"
+          <img src="/img/{{ image.filename }}"
                alt="{{ image.alttext }}">
         </a>
         <div class="card-content">

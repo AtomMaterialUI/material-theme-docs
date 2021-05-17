@@ -38,7 +38,7 @@ most of the colors used by the themes!
 ### Settings
 
 To use a custom theme, first you'll need to configure its colors. To do so open the Settings and navigate to
-**Appearance & Behavior** → **Material Custom Theme**.
+**Appearance & Behavior** → **Material Theme UI** → **Custom Theme**.
 
 {% include figure.html content="/screens/customTheme.png" caption="Custom Theme Colors" %}
 
@@ -69,7 +69,7 @@ scheme to associate with (useful if you want to write a theme for a color scheme
 repository or from the internet).
 
 From this point, you can easily distribute it between your IDEs/computers/peers, or follow the
-[Tutorial](/docs/development/external-themed#tutorial) and create your own plugin extending the Material Theme.
+[Tutorial](/docs/development/external-themes#tutorial) and create your own plugin extending the Material Theme.
 
 ----
 ### Colors Explanation
@@ -219,29 +219,17 @@ This is the color that is going to be added in the
 **Q**: Can I use more than one custom theme?
 
 **A**: No you can't. If you're confident with your theme, you can fork the project and submit a pull request with your
-theme as a predefined theme, or create a plugin extending the Material Theme UI (see
-[External Themes](/docs/development/external-themes#tutorial))
+theme as a predefined theme, or create a plugin extending the Material Theme UI (see [External Themes](/docs/development/external-themes#tutorial))
 
 **Q**: Where are stored my custom theme's settings?
 
-**A**: You can find your custom colors inside the
-[config directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs),
+**A**: You can find your custom colors inside the [config directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs),
 just like the Material settings, named `material_custom_theme.xml`
 
 **Q**: I changed the colors, but it doesn't look as good as the default themes.
 
-**A**: Creating a theme is not an easy task, and the Material ones are the result of a long thought process about which
-colors are best suited for a UI. However, you can check out other famous Sublime/Atom/Visual Studio themes as an
-inspiration and start from it.
+**A**: Creating a theme is not an easy task, and the Material ones are the result of a long thought process about which colors are best suited for a UI. However, you can check out other famous Sublime/Atom/Visual Studio themes as an inspiration and start from it.
 
 **Q**: OK I have an idea of a theme, but there is not enough options in the settings for me to make it.
 
-**A**: It's true that those settings are for color palettes of a few colors only, and regroup components of the same
-purpose under the same color group. However, if you'd like to have a different color for checkboxes and radio buttons, or
-between lists and tables, or set the tree color different as the main background color, etc. — for you have multiple
-options. You can simply use the
-[JetBrains Theme API](http://www.jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes.html) to create a
-custom theme, or for the more advanced developers, create a **brand-new plugin** based off the Material Theme SDK, like
-the
-[Doki Doki Literature Club Theme](https://github.com/cyclic-reference/ddlc-jetbrains-theme) or the
-[Night Owl Theme](https://github.com/xdrop/night-owl-jetbrains)
+**A**: It's true that those settings are for color palettes of a few colors only, and regroup components of the same purpose under the same color group. However, if you'd like to have a different color for checkboxes and radio buttons, or between lists and tables, or set the tree color different as the main background color, etc. — for you have multiple options. You can simply use the [JetBrains Theme API](http://www.jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes.html) to create a custom theme, or for the more advanced developers, create a **brand-new plugin** based off the Material Theme SDK, like the [Doki Doki Literature Club Theme](https://github.com/cyclic-reference/ddlc-jetbrains-theme) or the [Night Owl Theme](https://github.com/xdrop/night-owl-jetbrains)
