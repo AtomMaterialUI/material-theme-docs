@@ -22,7 +22,7 @@ This section describes how to download and use the Material Theme UI plugin in y
 The easiest way to install the Material Theme plugin is through IntelliJ's **plugin manager**. The plugin manager usually contains stable releases that made it through testing and feedback.
 {:class='title'}
 
-<img src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/screens/plugins.png" alt="Plugins">
+<img src="/img/screens/plugins.png" alt="Plugins">
 
 Steps:
 1. Open Settings/Preferences (Windows/Linux: `Ctrl-S`, Mac: `Cmd-,`)
@@ -32,7 +32,7 @@ Steps:
 5. Double-click on `Material Theme UI` to install it. You can also decide to install `Atom Material Icons` to get the icons' customization feature.
 6. Click the `OK` button and restart the IDE.
 
-<img src="{{ site.img_folder | prepend: site.baseurl | replace: '//', '/' }}/screens/listplugin.png" alt="Plugins List">
+<img src="/img/screens/listplugin.png" alt="Plugins List">
 
 ### Manual Installation
 

@@ -17,6 +17,9 @@ next:
 These settings allow you to customize the file status colors on a per color scheme basis.
 {:class='title'}
 
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
 {% include carbonads.html %}
 
 ## Introduction

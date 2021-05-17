@@ -79,13 +79,13 @@ When this feature is on, the directories that have files open in the editor will
 
 ### Language Additions
 
-Take a look to the page [Language Additions](configuration/color-scheme-additions.md) for more details.
+Take a look to the page [Language Additions](/docs/configuration/color-scheme-additions.md) for more details.
 
 ----
 
 ### Show What's New page on each update
 
-This setting allows you to toggle whether the [What's New](what-s-new.md) page would show up on each update.
+This setting allows you to toggle whether the [What's New](/docs/what-s-new.md) page would show up on each update.
 
 -----
 
