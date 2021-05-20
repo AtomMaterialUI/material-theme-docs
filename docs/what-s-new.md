@@ -6,6 +6,56 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.5.0
+
+This version finally implements the so long waited **Sync Settings**!!! Now you can finally sync your Material Theme Settings across your environments! And of course a new set of features and bug fixes.
+{:class='title'}
+
+## Sync Material Theme UI Settings
+
+This was one of our most waited features since… forever, and it is finally here! You can finally share your Material Theme Settings and Custom Theme using the **Sync Settings** plugin.
+
+{% include figure.html content="/screens/syncSettings.png" caption="Sync Settings" %}
+
+Please note however that this is highly depending on the Sync Settings implementation. There are still some discrepencies with how the Sync Settings should work, as you can show in this [YouTrack issue](https://youtrack.jetbrains.com/issue/IDEA-219788). But theoretically your Material Theme Settings should be shared across your stations.
+
+**Important note**: This feature has been tested between two stations having the same premium model i.e., both being with the free plan and both being with the premium plan. There's no guarantee of what would happen if settings were shared between a free and premium plan!
+{:class='card-panel warn'}
+
+----
+
+## Inverted Selection Color
+
+Latest releases drastically changed a day-one feature from the Material Theme plugin, the auto complete list's selected option color. This has been done after running a quick poll with some Material Theme users to determine which option was better in terms of contrast.
+
+However, this change might have caused some disagreements with the previous behaviour. Some users, like me, prefer the old style.
+
+Therefore, I've decided to include a new setting to select your preferred style, **Inverted Selection Color**.
+
+{% include figure.html content="/screens/invertedSelectionColor.png" caption="Inverted Selection Color" %}
+
+More information in the [Component Settings documentation](/docs/configuration/component-settings.md#inverted-selection-color)
+
+----
+
+### Other fixes and improvements
+
+- Fix issue with Language Additions being applied to object keys and methods (<https://github.com/ChrisRM/material-theme-jetbrains/issues/1742>)
+- Fix issue with Language Additions not being applied to JSX and Vue files (<https://github.com/ChrisRM/material-theme-jetbrains/issues/1744>)
+- Fix the fatal error preventing **CodeWithMe** to be run when Material Theme UI is enabled.
+- Complete _Github_ and _Github Dark_ color schemes to include missing styles already existing in other schemes (such as Rust, ReSharper, Osmorc and so on).
+- Also, the **Accent Mode** settings moved to the **Features Tab** rather than **Components Tab**.
+
+----
+
+That's it. And as always,
+
+Happy coding!
+{:class='title'}
+
+
+----
+
 # What's new in Material Theme UI v6.4.2
 
 This version improves the themes colors to provide better contrasts, as well as fixing the issue with some settings remaining locked despite being in the free plan. And some new features too:
