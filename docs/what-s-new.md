@@ -45,6 +45,7 @@ More information in the [Component Settings documentation](/docs/configuration/c
 - Fix the fatal error preventing **CodeWithMe** to be run when Material Theme UI is enabled.
 - Complete _Github_ and _Github Dark_ color schemes to include missing styles already existing in other schemes (such as Rust, ReSharper, Osmorc and so on).
 - Also, the **Accent Mode** settings moved to the **Features Tab** rather than **Components Tab**.
+- Add a new action to display the **What's new Page** in the toolbar.
 
 ----
 
