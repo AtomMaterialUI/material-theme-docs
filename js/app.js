@@ -5,7 +5,7 @@ $.when($.ready).then(() => {
     setBodyClass(css) {
       $('body').removeClass((i, c) => (c.match(/\btheme-\S+/) || []).join(' '));
       $('body').addClass(`index theme-${css}`);
-      window.jekyllApp.currentTheme = css;
+      window.currentTheme = css;
       $('.screenshot').hide();
       $(`.screenshot.-${css}`).show();
     },
