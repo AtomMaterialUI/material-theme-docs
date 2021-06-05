@@ -6,6 +6,65 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.6.0
+
+This version brings out the first **per-project settings**, alongside new settings for the **Project Frame**. Now you can even more customize your IDE on a per-project basis!
+{:class='title'}
+
+## Project Frame Customizations
+
+One of the latest updates of the Material Theme was a feature allowing you to add a "custom frame", or "toolbar", at the top of the window with a different color per project.
+
+This feature, named [Project Frame Colors](/docs/configuration/features-settings.md#project-frame-colors), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
+
+As a result, new customization capabilities were added to that feature to stand out even more.
+
+Previously inside the **Features** tab, these settings are now located under a new tab, **Project Frame**
+
+{% include figure.html content="/screens/projectFrameTab.png" caption="Project Frame Settings" %}
+
+Here's a quick recap of the new settings:
+
+- **Show Project Name**: Whether to display the project name on the frame
+- **Customize Text**: Replace the project name with a custom text
+
+These are not much, but they signalize the beginning of a new set of improvements for this feature!
+
+## Per-Project Settings
+
+This is the second highlight of this release: the ability to override the global settings **on a per-project basis**.
+
+{% include figure.html content="/screens/perProject.png" caption="Per-Project Settings" %}
+
+As you can see in this screenshot, the two projects have different settings for the **Active Tab** and the **Project Frame**. This will allow you to customize even more your IDE, now having different settings for each project.
+
+At this time, the only available settings are:
+- Active Tab Highlight and Thickness
+- Uppercase Tabs
+- Tab highlight position
+- Project Frame Color
+- Project Frame's Project Title's Display
+- Project Frame's custom text
+
+Other settings, such as the current theme, the accent color or the compact settings, are much harder to implement since they use the same underlying UI for all windows, but maybe in the future we'll find a way to make it work.
+
+## Other fixes and improvements
+
+And like always, this release also has its lot of bug fixes:
+- Improve Light themes by setting black borders to white
+- Fixes the {0} in the "What's new" menu
+- Change the _Highlight Color_ for the **Arc Dark Theme**
+
+----
+
+That's it. And as always,
+
+Happy coding!
+{:class='title'}
+
+
+----
+
 # What's new in Material Theme UI v6.5.0
 
 This version finally implements the so long waited **Sync Settings**!!! Now you can finally sync your Material Theme Settings across your environments! And of course a new set of features and bug fixes.
