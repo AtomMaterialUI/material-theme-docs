@@ -7,8 +7,8 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/features-settings'
-  title: Features Settings
+  url: '/docs/configuration/project-frame-settings'
+  title: Project Frame Settings
 next:
   url: '/docs/configuration/quick-actions-panel'
   title: Quick Actions Panel
