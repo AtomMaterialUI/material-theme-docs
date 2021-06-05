@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Component Settings
+title: Feature Settings
 description: Enable or disable Material Theme features
 group: configuration
 comments: true
@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/component-settings'
   title: Component Settings
 next:
-  url: '/docs/configuration/other-tweaks-settings'
-  title: Other Tweaks
+  url: '/docs/configuration/project-frame-settings'
+  title: Project Frame Settings
 ---
 
 This feature is only available for premium users.
@@ -132,17 +132,6 @@ Attention: This setting will override any custom background image that you may h
 {:class='card-panel warn'}
 
 This feature is available since version 5.0.0
-
------
-
-### Project Frame Colors
-
-This feature has been inspired by the Visual Studio Code plugin [Unique Window Colors](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors).
-Its concept is to provide a better visualization of your opened projects by adding a colored stripe on top of each window, with a unique color automatically generated from the **project name**!
-
-{% include figure.html content="/screens/projectFrame.png" caption="Project Frame Colors" %}
-
-This feature is available since version 5.2.0
 
 ----
 

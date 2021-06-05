@@ -15,11 +15,11 @@ This version brings out the first **per-project settings**, alongside new settin
 
 One of the latest updates of the Material Theme was a feature allowing you to add a "custom frame", or "toolbar", at the top of the window with a different color per project.
 
-This feature, named [Project Frame Colors](/docs/configuration/features-settings.md#project-frame-colors), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
+This feature, named [Project Frame Colors](/docs/configuration/project-frame-settings.md), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
 
 As a result, new customization capabilities were added to that feature to stand out even more.
 
-Previously inside the **Features** tab, these settings are now located under a new tab, **Project Frame**
+Previously inside the **Features** tab, these settings are now located under a new tab, **Project Frame**.
 
 {% include figure.html content="/screens/projectFrameTab.png" caption="Project Frame Settings" %}
 
