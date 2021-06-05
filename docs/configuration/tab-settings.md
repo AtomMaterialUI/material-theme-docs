@@ -133,6 +133,20 @@ global IDE font size and requires a restart.
 {% include figure.html content="/screens/tabFontSize.png" caption="Tab Font Size" %}
 
 ----
+
+## Per-Project Settings
+
+Since version 6.6.0, you can also override specific tab settings on a per project basis.
+
+Such settings include:
+- Active Tab Highlighter color and thickness
+- Uppercase tabs
+- Tab Highlighter Position
+
+{% include figure.html content="/screens/perProject.png" caption="Per-Project Settings" %}
+
+
+----
 ## Other Tweaks
 
 #### Edited files icon

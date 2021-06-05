@@ -37,7 +37,7 @@ This feature is available since version 5.2.0. Previously available under the _F
 {% include figure.html content="/screens/projectFrameTab.png" caption="Project Frame Settings" %}
 
 
-### Enable/Disable Project Frmae Colors
+### Enable/Disable Project Frame Colors
 
 This setting simply enables or disables the Project Frame. When enabled, a new stripe is added on the top of the IDE, just below the title bar, displaying the Project name in a randomly generated background color.
 
