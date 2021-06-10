@@ -27,7 +27,7 @@
     "eslint": "7.28.0",
     "eslint-config-airbnb-base": "11.3.2",
     "eslint-friendly-formatter": "4.0.1",
-    "eslint-loader": "1.9.0",
+    "eslint-loader": "4.0.2",
     "eslint-plugin-html": "6.1.2",
     "eslint-plugin-import": "2.23.4",
     "eventsource-polyfill": "0.9.6",
