@@ -24,7 +24,7 @@
     "copy-webpack-plugin": "9.0.0",
     "css-loader": "5.2.6",
     "cssnano": "3.10.0",
-    "eslint": "4.19.1",
+    "eslint": "7.28.0",
     "eslint-config-airbnb-base": "11.3.2",
     "eslint-friendly-formatter": "3.0.0",
     "eslint-loader": "1.9.0",
