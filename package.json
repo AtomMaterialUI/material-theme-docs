@@ -47,7 +47,7 @@
     "semver": "5.7.1",
     "shelljs": "0.8.4",
     "stylelint": "13.13.1",
-    "stylelint-config-sass-guidelines": "5.4.0",
+    "stylelint-config-sass-guidelines": "8.0.0",
     "stylelint-config-standard": "22.0.0",
     "stylelint-order": "2.2.1",
     "url-loader": "4.1.1"
