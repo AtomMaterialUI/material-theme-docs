@@ -42,7 +42,7 @@
     "js-yaml": "4.1.0",
     "load-grunt-tasks": "3.5.2",
     "opn": "5.5.0",
-    "ora": "1.4.0",
+    "ora": "5.4.1",
     "rimraf": "2.7.1",
     "semver": "5.7.1",
     "shelljs": "0.8.4",
