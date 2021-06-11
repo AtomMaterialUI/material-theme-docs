@@ -44,7 +44,7 @@
     "opn": "5.5.0",
     "ora": "1.4.0",
     "rimraf": "2.7.1",
-    "semver": "5.7.1",
+    "semver": "7.3.5",
     "shelljs": "0.8.4",
     "stylelint": "13.13.1",
     "stylelint-config-sass-guidelines": "5.4.0",
