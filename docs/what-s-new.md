@@ -6,6 +6,57 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.7.0
+
+This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) to the [Project Frame Colors](/docs/configuration/project-frame-settings.md), as well as fixing many issues as usual.
+{:class='title'}
+
+
+
+## Project Icon in the Project Frame
+
+In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-frame-settings.md), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
+
+{% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
+
+This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per project basis as well!
+
+**Note**: This feature is only available for 2021.2 versions and later unfortunately, as support for project icons wasn't complete in the 2021.1 versions. This could still change though, depending on JetBrains' progress.
+{:class='card-panel warn'}
+
+----
+
+## Better support for the XPathView plugin
+
+This version improves support for the XPathView plugin by providing better colors to the highlighted results.
+
+{% include figure.html content="https://user-images.githubusercontent.com/15972415/124044227-8bfe7200-d9d2-11eb-88f8-f9b9551c1626.mp4" caption="Before" %}
+
+{% include figure.html content="https://user-images.githubusercontent.com/15972415/124044244-96207080-d9d2-11eb-8abd-9eb58e604bb4.mp4" caption="After" %}
+
+Thanks for [Unthrottled](https://github.com/Unthrottled) for the implementation!
+
+----
+
+## Other fixes
+
+- **Language Additions**: Fix back `console`, `window`, `global` not being colored correctly. ([#1780](https://github.com/ChrisRM/material-theme-jetbrains/issues/1780))
+- Refactor [File Status Colors](/docs/configuration/file-status-colors.md), allowing to restore the file status colors when resetting the color scheme ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
+- Fix [#1773](https://github.com/ChrisRM/material-theme-jetbrains/issues/1773)
+- Fix [#1764](https://github.com/ChrisRM/material-theme-jetbrains/issues/1764)
+- Fix [#1776](https://github.com/ChrisRM/material-theme-jetbrains/issues/1776)
+- Improve unused variables contrast ([#1775](https://github.com/ChrisRM/material-theme-jetbrains/issues/1775))
+
+----
+
+That's it. And as always,
+
+Happy coding!
+{:class='title'}
+
+
+---
+
 # What's new in Material Theme UI v6.6.0
 
 This version brings out the first **per-project settings**, alongside new settings for the **Project Frame**. Now you can even more customize your IDE on a per-project basis!
