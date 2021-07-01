@@ -30,9 +30,9 @@ This can prove very useful when having multiple projects open at once. Moreover,
 
 This version improves support for the XPathView plugin by providing better colors to the highlighted results.
 
-{% include figure.html content="https://user-images.githubusercontent.com/15972415/124044227-8bfe7200-d9d2-11eb-88f8-f9b9551c1626.mp4" caption="Before" %}
+[![Before](https://res.cloudinary.com/marcomontalbano/image/upload/v1625167906/video_to_markdown/images/google-drive--1YwoBfUORJHvXBllobVi-WfzzXHjj1Rv0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1YwoBfUORJHvXBllobVi-WfzzXHjj1Rv0/view?usp=sharing "Before")
 
-{% include figure.html content="https://user-images.githubusercontent.com/15972415/124044244-96207080-d9d2-11eb-8abd-9eb58e604bb4.mp4" caption="After" %}
+[![After](https://res.cloudinary.com/marcomontalbano/image/upload/v1625167959/video_to_markdown/images/google-drive--10c9XMjeW2Ka_xtzuAAYt4r8PtuKD6MQp-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/10c9XMjeW2Ka_xtzuAAYt4r8PtuKD6MQp/view?usp=sharing "After")
 
 Thanks for [Unthrottled](https://github.com/Unthrottled) for the implementation!
 
