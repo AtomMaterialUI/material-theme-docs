@@ -73,6 +73,3 @@ contributors.csv
 # .idea/modules
 # *.iml
 # *.ipr
-
-build
-!build/assets
