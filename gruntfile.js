@@ -1,29 +1,4 @@
-/*
- * The MIT License (MIT)
- *
- * Copyright (c) 2017 Chris Magnussen and Elior Boukhobza
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- *
- */
-
+const sass = require('node-sass');
 const themes = require('./gruntfile.themes');
 
 module.exports = (grunt) => {
@@ -73,6 +48,7 @@ module.exports = (grunt) => {
 
     sass: {
       options: {
+        implementation: sass,
         outputStyle: 'compressed',
       },
       dist: {
@@ -123,25 +99,19 @@ module.exports = (grunt) => {
           '**/*.yml',
           '!jekyllbuild/{,*/}{,*/}*.*',
           '!node_modules/{,*/}*.*'],
-        tasks: ['exec:jekyllBuild',
-          'copy'],
+        tasks: ['exec:jekyllBuild', 'copy'],
       },
       js: {
         files: ['js/{,*/}{,*/}*.js'],
-        tasks: ['newer:babel',
-          'copy:js'],
+        tasks: ['newer:babel', 'copy:js'],
       },
       css: {
         files: ['sass/{,*/}{,*/}{,*/}*.scss'],
-        tasks: ['sass',
-          'autoprefixer',
-          'copy:css'],
+        tasks: ['sass', 'autoprefixer', 'copy:css'],
       },
       images: {
         files: ['assets/img/{,*/}{,*/}*.{png,jpg,svg}'],
-        tasks: ['newer:imagemin',
-          'exec:jekyllBuild',
-          'copy'],
+        tasks: ['newer:imagemin', 'exec:jekyllBuild', 'copy'],
       },
     },
 
