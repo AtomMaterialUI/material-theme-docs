@@ -75,3 +75,4 @@ contributors.csv
 # *.ipr
 
 build
+!build/assets
