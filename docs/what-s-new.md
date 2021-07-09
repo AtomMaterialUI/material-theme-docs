@@ -30,10 +30,6 @@ This can prove very useful when having multiple projects open at once. Moreover,
 
 This version improves support for the XPathView plugin by providing better colors to the highlighted results.
 
-[![Before](https://res.cloudinary.com/marcomontalbano/image/upload/v1625167906/video_to_markdown/images/google-drive--1YwoBfUORJHvXBllobVi-WfzzXHjj1Rv0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1YwoBfUORJHvXBllobVi-WfzzXHjj1Rv0/view?usp=sharing "Before")
-
-[![After](https://res.cloudinary.com/marcomontalbano/image/upload/v1625167959/video_to_markdown/images/google-drive--10c9XMjeW2Ka_xtzuAAYt4r8PtuKD6MQp-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/10c9XMjeW2Ka_xtzuAAYt4r8PtuKD6MQp/view?usp=sharing "After")
-
 Thanks for [Unthrottled](https://github.com/Unthrottled) for the implementation!
 
 ----
