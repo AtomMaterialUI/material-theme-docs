@@ -20,7 +20,7 @@
     "browser-sync": "2.27.4",
     "chalk": "4.1.1",
     "connect-history-api-fallback": "1.6.0",
-    "css-loader": "5.2.7",
+    "css-loader": "6.0.0",
     "eslint": "7.30.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-friendly-formatter": "4.0.1",
