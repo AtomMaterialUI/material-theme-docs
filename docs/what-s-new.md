@@ -8,8 +8,17 @@ toc: true
 
 # What's new in Material Theme UI v6.8.0
 
-This version's features include the ability to [show an overlay]() when modals are open, to view the [active tab as bold](), showing notifications when actions are executed, and adding a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
+This version's features include the ability to [show an overlay]() when modals are open, to view the [Bold Active Tab](/docs/configuration/tab-settings.md#bold-active-tab), showing notifications when actions are executed, and adding a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
 {:class='title'}
+
+
+## Bold Active Tab
+
+A new option made its way to the tab settings section, which is the ability to make the current tab as bold.
+
+{% include figure.html content="/screens/activeTabBold.png" caption="Active Tab as Bold" %}
+
+Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings.md#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
 
 ----
 

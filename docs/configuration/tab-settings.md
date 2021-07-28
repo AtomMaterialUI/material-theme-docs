@@ -58,18 +58,27 @@ In that case, the active tab indicator will be placed accordingly to the tab pos
 -----
 ## Other Tab Options
 
-### Uppercase Bold Tabs
+### Uppercase Tabs
 
 This feature allows you to set the tabs to look even more like usual
-[Material Design Tabs](https://material.io/guidelines/components/tabs.html#tabs-usage), that is in _Uppercase_ and _bold_.
+[Material Design Tabs](https://material.io/guidelines/components/tabs.html#tabs-usage), that is in _Uppercase_.
 
-{% include figure.html content="/screens/uppercasebold.png" caption="Uppercase Bold Tabs" %}
+{% include figure.html content="/screens/uppercasebold.png" caption="Uppercase Tabs" %}
 
 This setting gets rid of special characters such as hyphens or underscores and replace them with ++spaces++. It also
 converts from camel case to "Spaced Uppercase".
 
-Note: Because of the highly experimental status of this feature, it contains some bugs. For instance, the uppercasing
-is not set until the tab is selected.
+-----
+
+### Bold Active Tab
+
+Previously, this setting was set via the **Uppercase _Bold_ Tabs**, but was rather flaky, and not very useful since it made all tabs bolder.
+
+Now, this setting controls the boldness of only the active, selected tab, making it more prominent.
+
+{% include figure.html content="/screens/activeTabBold.png" caption="Active Tab as Bold" %}
+
+-----
 
 ### Tab Height
 
