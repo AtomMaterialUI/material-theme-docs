@@ -296,8 +296,8 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="isContrastMode" value="false" />
   <!-- Custom tree indent enabled -->
   <option name="isCustomTreeIndentEnabled" value="false" />
-  <!-- Decorated folders enabled-->
-  <option name="isDecoratedFolders" value="true" />
+  <!-- Decorated folders enabled (moved to Atom Icons Plugin)-->
+  <!-- <option name="isDecoratedFolders" value="true" /> -->
   <!-- High Contrast -->
   <option name="isHighContrast" value="true" />
    <!-- Inverted Selection Color -->
