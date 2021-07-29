@@ -25,12 +25,9 @@ This section explains how you can customize the themes colors using Custom Theme
 ## Introduction
 
 The Material Theme plugin comes with a set of beautiful prebundled themes, suited for a good development experience.
-However, not everyone can be content with the choices made by the theme creator, and while the plugin offers a lot of
-customization, still, the ability to customize the themes themselves was one of the most requested features.
+However, not everyone can be content with the choices made by the theme creator, and while the plugin offers a lot of customization, still, the ability to customize the themes themselves was one of the most requested features.
 
-As of version 0.10.0, the plugin is giving the ability to do so by offering two "_boilerplate themes_", `Custom Theme`
-and `Light Custom Theme`, respectively based on `Material Oceanic` and `Material Lighter`, with the ability to customize
-most of the colors used by the themes!
+As of version 0.10.0, the plugin is giving the ability to do so by offering two "_boilerplate themes_", `Custom Theme` and `Light Custom Theme`, respectively based on `Material Oceanic` and `Material Lighter`, with the ability to customize most of the colors used by the themes!
 
 
 ## Configuration
@@ -44,8 +41,7 @@ To use a custom theme, first you'll need to configure its colors. To do so open 
 
 {% include figure.html content="/screens/lightCustomTheme.png" caption="Light Custom Theme Colors" %}
 
-Once you're done customizing your colors, you'll need to select **Custom Theme** or **Light Custom Theme** from the
-_Theme Switcher_ to see your colors in action. Enjoy!
+Once you're done customizing your colors, you'll need to select **Custom Theme** or **Light Custom Theme** from the _Theme Switcher_ to see your colors in action. Enjoy!
 
 ----
 ## Importing and Exporting Custom Themes
@@ -54,19 +50,15 @@ From version 3.8.0 a new button has been added to allow you to import colors fro
 
 {% include figure.html content="/screens/importTheme.png" caption="Import Themes" %}
 
-You can set colors from the predefined themes to have a better starting point, or you can import your own theme in the
-form of an XML file (see [External Themes](/docs/development/external-themes))
+You can set colors from the predefined themes to have a better starting point, or you can import your own theme in the form of an XML file (see [External Themes](/docs/development/external-themes))
 
-Lastly, you can export your current set of colors into your own External Theme so that you can share it or, even better,
-bundle and release it as a plugin!
+Lastly, you can export your current set of colors into your own External Theme so that you can share it or, even better, bundle and release it as a plugin!
 
 Just select `Save current theme as…` to be presented with a screen to enter your theme details:
 
 {% include figure.html content="/screens/customThemeDetails.png" caption="Custom Theme Details" %}
 
-Here you can specify the name of your theme, a unique identifier, whether it's a dark theme and optionally a color
-scheme to associate with (useful if you want to write a theme for a color scheme such as the ones found in the plugin
-repository or from the internet).
+Here you can specify the name of your theme, a unique identifier, whether it's a dark theme and optionally a color scheme to associate with (useful if you want to write a theme for a color scheme such as the ones found in the plugin repository or from the internet).
 
 From this point, you can easily distribute it between your IDEs/computers/peers, or follow the
 [Tutorial](/docs/development/external-themes#tutorial) and create your own plugin extending the Material Theme.
@@ -74,8 +66,7 @@ From this point, you can easily distribute it between your IDEs/computers/peers,
 ----
 ### Colors Explanation
 
-Here's a non-exhaustive list of all the settings and what components they are affecting. Please note that this is a
-non-fixed list, as in every version new components are added, some components are updated, deleted etc…
+Here's a non-exhaustive list of all the settings and what components they are affecting. Please note that this is a non-fixed list, as in every version new components are added, some components are updated, deleted etc…
 
 ##### Background color
 
@@ -204,13 +195,11 @@ Color used in the notification popups.
 
 ##### Accent Color
 
-This is the color that will replace the _Accent Color_ if the
-[Override Accent color from theme](/docs/configuration/main-settings#override-accent-color) setting is set.
+This is the color that will replace the _Accent Color_ if the [Override Accent color from theme](/docs/configuration/main-settings#override-accent-color) setting is set.
 
 ##### Excluded Files Color
 
-This is the color that is going to be added in the
-[File Colors](/docs/configuration/excluded-files-colors#excluded-files-theme-color), named "_Theme_".
+This is the color that is going to be added in the [File Colors](/docs/configuration/excluded-files-colors#excluded-files-theme-color), named "_Theme_".
 
 -----
 
@@ -218,8 +207,7 @@ This is the color that is going to be added in the
 
 **Q**: Can I use more than one custom theme?
 
-**A**: No you can't. If you're confident with your theme, you can fork the project and submit a pull request with your
-theme as a predefined theme, or create a plugin extending the Material Theme UI (see [External Themes](/docs/development/external-themes#tutorial))
+**A**: No you can't. If you're confident with your theme, you can fork the project and submit a pull request with your theme as a predefined theme, or create a plugin extending the Material Theme UI (see [External Themes](/docs/development/external-themes#tutorial))
 
 **Q**: Where are stored my custom theme's settings?
 

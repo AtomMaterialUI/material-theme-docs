@@ -52,6 +52,13 @@ This setting allows you to reduce the size of the dropdowns used in the UI to be
 
 {% include figure.html content="/screens/compactDropdowns.png" caption="Compact Dropdowns" %}
 
+Also, since version 6.8.0, the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) are affected as well:
+
+{% include figure.html content="/screens/paddedRunConf.png" caption="Padded Run Configuration" %}
+
+{% include figure.html content="/screens/compactRunConf.png" caption="Compact Run Configuration" %}
+
+
 ----
 ### Compact Menus
 

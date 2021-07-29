@@ -38,8 +38,6 @@ I
 Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579
 8
 .babelrc,b/c/bcac7464521b8c19a2372c739f6dc9e9ab7dfc80
-X
-(docs/configuration/component-settings.md,1/1/11cf583523cbfa64755c85d5be7630f05ab53eaf
 @
 _data/themes.yml,e/f/efa7b9a4eeb83f91ea72c56685d6cb28c4bdbe16
 <

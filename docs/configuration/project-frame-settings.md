@@ -85,6 +85,7 @@ That means that you can customize what's displayed on the bar with unicode chara
 Since version 6.6.0, you can also override the global settings on a per-project basis:
 - Select a custom color
 - Show/Hide the project title
+- Show/Hide the project icon
 - Set a custom text per project
 
 **Note**: You would still need to **Enable** the Global Project Frame Colors setting, so that the frame is added to the IDE. This cannot be enabled/disabled per-project.

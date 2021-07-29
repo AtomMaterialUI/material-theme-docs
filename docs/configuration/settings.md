@@ -74,11 +74,9 @@ Besides the Material Themes, there are other prebundled themes made by the commu
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, just like
-Color Schemes, Keymaps, Coding Styles and so on. To learn more about _External Themes_ or how to create your own plugin,
-head to the [External Themes section](/docs/development/external-themes).
+The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, just like Color Schemes, Keymaps, Coding Styles and so on. To learn more about _External Themes_ or how to create your own plugin, head to the [External Themes section](/docs/development/external-themes).
 
-Once the external theme has been downloaded and installed, it should appear at the bottom of the Switcher
+Once the external theme has been downloaded and installed, it should appear at the bottom of the Switcher.
 
 {% include figure.html content="/screens/external.png" caption="External Themes" %}
 
@@ -89,11 +87,9 @@ Once the external theme has been downloaded and installed, it should appear at t
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Finally, there are the **Custom Themes**, which is the placeholder for the Custom Theme Settings, allowing you set
-your own theme colors.
+Finally, there are the **Custom Themes**, which is the placeholder for the Custom Theme Settings, allowing you set your own theme colors.
 
-There are two options available, *Custom Theme* for themes based off the *Darcula* LaF, and *Light Custom Theme* based
-off the *IntelliJ* LaF.
+There are two options available, *Custom Theme* for themes based off the *Darcula* LaF, and *Light Custom Theme* based off the *Light* LaF.
 
 See [Custom Themes](/docs/configuration/custom-themes) for more information.
 
@@ -119,16 +115,13 @@ Examples:
 Some settings are only available for premium users.
 {:class='card-panel warn'}
 
-You can configure many parts of the plugin features from the **plugin settings**. They are accessible within `Settings
-→ Appearance → Material Theme → Settings`.
+You can configure many parts of the plugin features from the **plugin settings**. They are accessible within `Settings → Appearance → Material Theme → Settings`.
 
 {% include figure.html content="/screens/settings.png" caption="Material Theme Settings v1" %}
 
-Since version 2.4.0, the settings page has been remade to prevent overwhelming the user from the abundance of
-customization options.
+Since version 2.4.0, the settings page has been remade to prevent overwhelming the user from the abundance of customization options.
 
-Now settings are differentiated between basic and advanced settings, they are grouped within _tabs_, and a *Reset
-Settings* button has been added for easy factory resetting.
+Now settings are differentiated between basic and advanced settings, they are grouped within _tabs_, and a *Reset Settings* button has been added for easy factory resetting.
 
 {% include figure.html content="/screens/settingsV2.png" caption="Material Theme Settings V2" %}
 
@@ -139,18 +132,19 @@ Quick summary of all settings:
 **[Main Settings](/docs/configuration/main-settings)**:
 - *Selected Theme*: Select a _Material Theme skin_ (will not display External Themes)
 - *Contrast Mode*: Add contrast to specific panels and components.
-- *High Contrast*: Set a darker color of the backgrounds and lighter color of texts for more contrast
+- *High Contrast* ![premium](/img/icons/premium.png): Set a darker color of the backgrounds and lighter color of texts for more contrast
 - *Custom Accent Color*: Set a custom accent color.
 - *Override Accent Color*: Change the accent color accordingly to the selected theme
 - *Configure Custom Theme Colors*: Open the settings page for the _Custom Theme Colors_.
 
 **[Tab Settings](/docs/configuration/tab-settings)**:
-- *Active Tab Highlight Color*: Customize the active tab's indicator color
-- *Thickness*: Set the active tab's indicator thickness (works also for the Project View selected row)
-- *Uppercase Bold Tabs*: Set the Editor Tabs in Bold Upper Case
 - *Tabs Height*: Set a custom height for tabs (between 25 and 60 pixels)
-- *Tab Position*: Customize the position of the tab highlighter
-- *Font Size*: Control the size of the Editor Tabs (requires restart)
+- *Active Tab Highlight Color* ![premium](/img/icons/premium.png): Customize the active tab's indicator color
+- *Thickness* ![premium](/img/icons/premium.png): Set the active tab's indicator thickness (works also for the Project View selected row)
+- *Uppercase Tabs* ![premium](/img/icons/premium.png): Set the Editor Tabs in Uppercase
+- *Bold Active Tab* ![premium](/img/icons/premium.png): Make the Active Tab Bold
+- *Tab Position* ![premium](/img/icons/premium.png): Customize the position of the tab highlighter
+- *Font Size* ![premium](/img/icons/premium.png): Control the size of the Editor Tabs (requires restart)
 
 **[Compact Settings](/docs/configuration/compact-settings)**:
 - *Compact Status Bar*: Reduce the height of the status bar (this is the default height)
@@ -164,48 +158,56 @@ Quick summary of all settings:
 > - *Monochrome Icons*: Filter the IDE icons with a shade of the current theme's primary color
 > - *File Icons*: Enable/Disable the Custom File Icons
 > - *Folder decorators*: Decorate special folders with custom icons.
-> - *PSI Icons*: Replace PSI Icons (class, interface, etc)
+> - *PSI Icons*: Replace PSI Icons (class, interface, etc.)
 
 **NOTE**: Since 5.0, The Icons Settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
 {:class='card-panel warn'}
 
 **[Project View Settings](/docs/configuration/project-view-settings)**:
-- *Custom Sidebar Height*: Set a custom line height in Project View (min: 18, max: 30)
-- *Custom Tree Indent*: Fine tune indent of Project View items (both left and right indent)
+- *Custom Sidebar Height* ![premium](/img/icons/premium.png): Set a custom line height in Project View (min: 18, max: 30)
+- *Custom Tree Indent* ![premium](/img/icons/premium.png): Fine tune indent of Project View items (both left and right indent)
 > - *Arrows Style*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** - Change the style of the arrows in trees. Choices:
 >   - *Material*: Chevron arrows
 >   - *Darcula*: Triangle arrows
 >   - *Plus-Minus*: Plus and Minus symbols
 >   - *Arrows*: Regular arrows
 >   - *None*: Hide the arrows
-- *Selected Indicator Style*: Change the style of the indicator of the selected item in trees
+- *Selected Indicator Style* ![premium](/img/icons/premium.png): Change the style of the indicator of the selected item in trees
   - *Border*: Add a small border to the left
   - *Dot*: Add a dot on the selected item
   - *None*: Remove the indicator
-- *Thickness*: Control the thickness of the indicator
-- *Custom Directories Style*: Assign a specific style to directories. Can be configured from the *Material File Colors* settings page.
-- *Font Size*: Fine tune the font size of the project trees (requires restart)
+- *Thickness* ![premium](/img/icons/premium.png): Control the thickness of the indicator
+- *Custom Directories Style* ![premium](/img/icons/premium.png): Assign a specific style to directories. Can be configured from the *Material File Colors* settings page.
+- *Font Size* ![premium](/img/icons/premium.png): Fine tune the font size of the project trees (requires restart)
 
 **[Component Settings](/docs/configuration/component-settings)**:
 - *Uppercase buttons*: Set the buttons' texts to uppercase
-- *Outlined buttons*: Use outline buttons instead of full buttons.
+- *Outlined buttons* ![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart)
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart)
+- *Tab Shadows* ![premium](/img/icons/premium.png): Add a subtle shadow under the tabs
 - *Inverted Selection Color*: Switch the Autocomplete selected item color between the selection color and contrast color.
 
 **[Features Settings](/docs/configuration/features-settings)**:
-- *Material Fonts*: Enable/Disable Material fonts (Roboto)
+- *Material Fonts* ![premium](/img/icons/premium.png): Enable/Disable Material fonts (Roboto)
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors)
-- *Material Wallpapers*: Add a custom wallpaper per theme for the empty frame window.
-- *Project Frame Colors*: Add a colored stripe on the top of each window for easier differentiation
-- *Accent Mode*: Make components stand out by setting them in the accent color (buttons, tabs, selections…)
+- *Material Wallpapers* ![premium](/img/icons/premium.png): Add a custom wallpaper per theme for the empty frame window.
+- *Show Overlays*: Displays an overlay when modals are open.
+- *Accent Mode* ![premium](/img/icons/premium.png): Make components stand out by setting them in the accent color (buttons, tabs, selections…)
 - *Striped Tool Windows*: Set the new Striped Tool Windows Layout
+
+**[Project Frame Settings](/docs/configuration/project-frame-settings)**:
+- *Project Frame Colors* ![premium](/img/icons/premium.png): Add a colored stripe on the top of each window for easier differentiation
+- *Show Project Name* ![premium](/img/icons/premium.png): Show or hide the project frame on the stripe
+- *Show Project Icon* ![premium](/img/icons/premium.png): Display the project's custom icon on the stripe
+- *Customize Text* ![premium](/img/icons/premium.png): Customize the text displayed
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
 > - *Hollow Folders*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** Enable/Disable the Hollow Folders in Project View.
-- *Colored Open Directories*: Colorize open directories with the accent color
-- *Themed Title Bar*: Colorize the title bar of the whole OS with the current theme's background color (Mac-Windows only)
-- *Language Additions*: Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
+~~- *Themed Title Bar*: Colorize the title bar of the whole OS with the current theme's background color (Mac-Windows only)~~ (integrated into the main product since 2021.2)
+- *Colored Open Directories* ![premium](/img/icons/premium.png): Colorize open directories with the accent color
+- *Language Additions* ![premium](/img/icons/premium.png): Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
+  - *Enforce Highlighting*: Enforce highlighting of keywords by making them appear as "Weak Warnings"
 - *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) on each update.
 
 #### Settings shortcuts
@@ -220,12 +222,9 @@ You can also use the `Keymap Editor` to assign your own custom shortcuts to thes
 
 #### Settings File
 
-Your current configuration is stored inside the IDE settings' directory under the filename `material_theme.xml`. If for
-some reason there are issues with the plugin, or you don't manage to reset to a stable state, just delete this file and
-restart the IDE.
+Your current configuration is stored inside the IDE settings' directory under the filename `material_theme.xml`. If for some reason there are issues with the plugin, or you don't manage to reset to a stable state, just delete this file and restart the IDE.
 
-See [IDE Settings](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)
-for more information.
+See [IDE Settings](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) for more information.
 
 
 ----------
@@ -234,9 +233,7 @@ for more information.
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Aside from the bundled themes, you also have the ability to set up your own Material Theme. You can do so by selecting
-`Custom Theme` in the theme list, then customize the theme colors in the settings page at `Settings → Appearance →
-Material Custom Theme Settings`.
+Aside from the bundled themes, you also have the ability to set up your own Material Theme. You can do so by selecting `Custom Theme` in the theme list, then customize the theme colors in the settings page at `Settings → Appearance → Material Custom Theme Settings`.
 
 {% include figure.html content="/screens/customsettings.png" caption="Material Custom Theme Settings" %}
 
@@ -357,54 +354,29 @@ separate theme for the IDE and the Editor, for instance _Palenight_ and _Darker_
 
 **Q**: I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?
 
-**A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible to the
-new version. In that case, simply make a copy of the settings file, then delete the original file, and restart the IDE.
+**A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible to the new version. In that case, simply make a copy of the settings file, then delete the original file, and restart the IDE.
 
-If the issue is gone, simply go back to the settings and go back to your previous configuration manually. If the issue
-persists, please report it in the Issues Section.
+If the issue is gone, simply go back to the settings and go back to your previous configuration manually. If the issue persists, please report it in the Issues Section.
 
 **Q**: I've removed the plugin, and still the background image persists!
 
-**A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image`
-function from the IDE behind the curtains. Therefore, removing the plugin might not remove the set image completely. If
-that occurs, you can remove the image by opening the Command Panel (Cmd-Shift-A/Ctrl-Shift-A) and type `Set Background
-image` and then manually remove the image, or go into `Settings → Appearance → Background Image`.
+**A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image` function from the IDE behind the curtains. Therefore, removing the plugin might not remove the set image completely. If that occurs, you can remove the image by opening the Command Panel (Cmd-Shift-A/Ctrl-Shift-A) and type `Set Background image` and then manually remove the image, or go into `Settings → Appearance → Background Image`.
 
-
-**Q**: The dark title bar on Mac sticks as well! **Update: since version 2.5.0, it doesn't!**
-
-**A**: As for the Mac Title bar, it is triggered using the IDE Registry. Just open the Command Palette (Cmd-Shift-A) and
-type `Registry`. Then you will see at the top the edited values. Simply press Revert to those you don't want. **Update
-2.5.0:** The Dark Title Bar option is now moved inside the Appearance panel of the IDE, named _Dark Window Headers_ (and
-currently contains the same problems as above). However, a new option `Themed Title Bar` have taken its place in the
-Material Theme Settings and allows you to completely theme the title bar.
 
 **Q**: What is that analytics option? What data are collected?
 
 **A**: This is an option to allow sending data to Material Theme servers about users' configuration, usage and trends.
-These analytics will allow us to see which features are most used or least used, in order to prioritize development of
-features, or maybe notify users about specific features, to provide a better satisfaction. These data are completely
-anonymous, and are not shared/sold to any third parties. If you want to stop sending data, simply turn off the option in
-the material_theme.xml.
+These analytics will allow us to see which features are most used or least used, in order to prioritize development of features, or maybe notify users about specific features, to provide a better satisfaction. These data are completely anonymous, and are not shared/sold to any third parties. If you want to stop sending data, simply turn off the option in the material_theme.xml.
 
 **Q**: The wizard idea was great! But I've made an error and the wizard won't show up anymore!
 
-**A**: The wizard will show only once and only when you don't have the `isWizardShown` option set to true in the config
-file. But you can reopen it by simply clicking on the action from the Material Theme Toolbar, in the Features menu.
+**A**: The wizard will show only once and only when you don't have the `isWizardShown` option set to true in the config file. But you can reopen it by simply clicking on the action from the Material Theme Toolbar, in the Features menu.
 
 **Q**: My settings are not persisted between my IDEs!
 
 **A**: Yes, this is because third-party plugins are not (yet) synchronizeable by the _Sync Settings_ feature. Therefore, you need to configure each IDE independently. However, since Look and Feels ARE synchronized, this can lead to inconsistencies between the look and feels, like for instance having `Darcula` instead of your chosen theme.
 
 As a result, it is recommended to not rely too much on the Sync feature for now. Configure the two instances independently and try not to change settings too often.
-
-**NEW**
-
-**Q**: I use two computers and while everything is fine in the first one, when I check the second one it is completely messy, some windows are empty, or I am getting Darcula even though I configured Material Oceanic…
-
-**A**: This is probably because you are using JetBrains's **Sync Settings** feature. While this is a great feature when you have multiple computers, unfortunately it does not sync third party settings, and as a result settings from the plugin are not synchronized between machines. And since Themes/Look and Feels are indeed synchronized, this would cause some weird behaviors like the ones mentioned previously.
-
-If you need to use Sync Settings, then I'll suggest disabling the synchronization of look and feels/themes. Or use the Lite version of the plugin which should be working fine.
 
 **Q**: Where have all the icons gone?
 

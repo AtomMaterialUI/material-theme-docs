@@ -14,7 +14,7 @@ next:
   title: Compact Settings
 ---
 
-This feature is only available for premium users.
+Some features are only available for premium users.
 {:class='card-panel warn'}
 
 This page displays the features and settings that customize the appearance of the Editor Tabs and IDE Tabbed Panes.
@@ -45,8 +45,7 @@ To avoid crazy values that could ruin the UI, the values are limited between `1`
 
 #### About Tabs Placement
 
-While most people set their tabs to be on the top, JetBrains IDE also give the possibility to place your tabs to the
-bottom, left or right side.
+While most people set their tabs to be on the top, JetBrains IDE also give the possibility to place your tabs to the bottom, left or right side.
 
 In that case, the active tab indicator will be placed accordingly to the tab position:
 - At the top for _bottom placement_
@@ -65,8 +64,7 @@ This feature allows you to set the tabs to look even more like usual
 
 {% include figure.html content="/screens/uppercasebold.png" caption="Uppercase Tabs" %}
 
-This setting gets rid of special characters such as hyphens or underscores and replace them with ++spaces++. It also
-converts from camel case to "Spaced Uppercase".
+This setting gets rid of special characters such as hyphens or underscores and replace them with ++spaces++. It also converts from camel case to "Spaced Uppercase".
 
 -----
 
@@ -82,12 +80,9 @@ Now, this setting controls the boldness of only the active, selected tab, making
 
 ### Tab Height
 
-This setting will allow you to customize the height of the different tabs of the IDE (that is, not only the editor tabs but
-also _debugger tabs_, _code style tabs_, etc.). This will allow you to have the ultimate Material Design Tabs
-experience.
+This setting will allow you to customize the height of the different tabs of the IDE (that is, not only the editor tabs but also _debugger tabs_, _code style tabs_, etc.). This will allow you to have the ultimate Material Design Tabs experience.
 
-The allowed values are between `18` to `60` pixels, where the default recommended value for horizontal tabs is `50`. If
-you use vertical tabs though, my personal recommended value would be `25` so you can place more opened tabs at the side.
+The allowed values are between `18` to `60` pixels, where the default recommended value for horizontal tabs is `50`. If you use vertical tabs though, my personal recommended value would be `25` so you can place more opened tabs at the side.
 
 {% include figure.html content="/screens/leftSideHeight.png" caption="Left Side Tab Height" %}
 
@@ -96,8 +91,7 @@ There is no reset button, but there is an action in the `Material Toolbar` that 
 ----
 ## Material Tabbed Panes
 
-Since version 3.0.0 the Tab Settings control not only the appearance of the Editor Tabs but for all tabbed panes as well
-(except for JBTabbedPanes such as the Tabs inside the Debugger Tool Window or Code Style Settings).
+Since version 3.0.0 the Tab Settings control not only the appearance of the Editor Tabs but for all tabbed panes as well (except for JBTabbedPanes such as the Tabs inside the Debugger Tool Window or Code Style Settings).
 
 {% include figure.html content="/screens/materialTabbedPanes.png" caption="Material Tabbed Panes" %}
 
@@ -136,8 +130,7 @@ A new setting has been added in 3.4.0 which allows tweak the position of the tab
 ----
 ## Tab Font Size
 
-Last but not least, the tab size option allows you to override the Tab Font Size. Please note that this overrides the
-global IDE font size and requires a restart.
+Last but not least, the tab size option allows you to override the Tab Font Size. Please note that this overrides the global IDE font size and requires a restart.
 
 {% include figure.html content="/screens/tabFontSize.png" caption="Tab Font Size" %}
 
@@ -145,11 +138,12 @@ global IDE font size and requires a restart.
 
 ## Per-Project Settings
 
-Since version 6.6.0, you can also override specific tab settings on a per project basis.
+Since version 6.6.0, you can also override specific tab settings on a per-project basis.
 
 Such settings include:
 - Active Tab Highlighter color and thickness
 - Uppercase tabs
+- Bold Active Tab
 - Tab Highlighter Position
 
 {% include figure.html content="/screens/perProject.png" caption="Per-Project Settings" %}
@@ -180,20 +174,15 @@ The close icon didn't change, but it will be colored to the accent color on hove
 
 **Q**: Is there a way to completely remove the Active Tab Indicator?
 
-**A**: Not Currently. Even disabling the feature in the IDE will still display the indicator provided by the plugin. If
-there is enough demand to add this functionality, we will add it.
+**A**: Not Currently. Even disabling the feature in the IDE will still display the indicator provided by the plugin. If there is enough demand to add this functionality, we will add it.
 
 **Q**: The Tab Height feature is cool in the editor, but I'd rather leave other tabs untouched.
 
-**A**: Me as well. Unfortunately currently the setting that sets the tab height is shared between all tabs in the SDK,
-and there is no way to distinguish between them currently. Maybe in the future if JetBrains agrees to allow more
-customization natively.
+**A**: Me as well. Unfortunately currently the setting that sets the tab height is shared between all tabs in the SDK, and there is no way to distinguish between them currently. Maybe in the future if JetBrains agrees to allow more customization natively.
 
 **Q**: Why limiting the thickness or the tab height? I want to have 10 in thickness and 100 in tabs!!!
 
-**A**: Because allowing values past these limits would make the UI ugly or worse, crash it. If you have a good reason to
-want it anyway, you can open an issue on GitHub with why you would want that. At most, you can still fork the plugin and
-tweak it to whatever you want.
+**A**: Because allowing values past these limits would make the UI ugly or worse, crash it. If you have a good reason to want it anyway, you can open an issue on GitHub with why you would want that. At most, you can still fork the plugin and tweak it to whatever you want.
 
 **Q**: The uppercase tabs feature is so useless! Editor Tabs !== Material Design Tabs!
 

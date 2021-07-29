@@ -42,10 +42,12 @@ You can also set a shortcut to open every one of its submenus from the
 
 ## Material Theme Switcher
 
-The first subpanel is a switcher to rapidly switch between the themes. There you can find all the available themes plus
-the two custom themes.
+The first subpanel is a switcher to rapidly switch between the themes. There you can find all the available themes plus the two custom themes.
 
 {% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
+
+**Note**: Custom Themes are only available for premium users.
+{:class='card-panel warn'}
 
 -----
 
@@ -61,8 +63,6 @@ This panel allows you to quickly toggle some of the most used Panel Settings:
 - _Toggle Compact Dropdowns_
 - _Toggle Compact Table Cells_
 - _Toggle Compact Menus_
-- _Toggle Hide File Icons_
-- _Toggle Monochrome Icons_
 - _Toggle Compact Status Bar_
 - _Toggle Uppercase Tabs_
 - _Indicator Styles_
@@ -87,7 +87,7 @@ Note that these actions are one-time only and the accent color can be changed in
 
 -----
 
-## Component Settings
+## Material Theme Features
 
 Some features are only available for premium users.
 {:class='card-panel warn'}
@@ -98,15 +98,15 @@ This panel as well allows you to rapidly toggle the most used Component/Features
 - _Toggle Language Additions_
 - _Toggle Material Wallpapers_
 - _Toggle Outline Buttons_
+- _Toggle Overlays_
 - _Toggle Project Frame Colors_
-- _Toggle Themed Title Bar_
 - _Toggle Striped Tool Windows_
 
 In addition, other one-time actions are available in this panel, which are:
 - _Material Theme Wizard_: Relaunch the Material Theme Wizard
 - _Atom Material Icons_: Open the **Atom Material Icons Plugin** page for installation.
-- _Activate License_: **Use this action to activate your Premium License.**
 - _Show What's New_: Display the **What's new** page.
+- _Activate License_: **Use this action to activate your Premium License.**
 
 {% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
 

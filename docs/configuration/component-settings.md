@@ -21,8 +21,7 @@ This page controls the components used throughout the IDE, like buttons, scrollb
 
 ### Uppercase buttons
 
-This setting sets the text of the buttons to be uppercase, just like the Material Design buttons. This is optimal for a
-full-fledged Material Design Experience.
+This setting sets the text of the buttons to be uppercase, just like the Material Design buttons. This is optimal for a full-fledged Material Design Experience.
 
 {% include figure.html content="/screens/uppercaseButtons.png" caption="Uppercase Buttons" %}
 
@@ -41,11 +40,9 @@ Starting from version 6.2 this new setting replaces buttons with **outlined butt
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
-These options control the appearance of the scrollbars. Note: This feature works completely on Windows and Linux, but on
-Mac it is only working for non-native scrollbars (i.e. scrollbars that appear only while scrolling).
+These options control the appearance of the scrollbars. Note: This feature works completely on Windows and Linux, but on Mac it is only working for non-native scrollbars (i.e. scrollbars that appear only while scrolling).
 
-*Transparent scrollbars* will add more transparency to the scrollbars and set it as the same color as the current
-theme's background color. This is adding _50% opacity_ and there is no way to change it.
+*Transparent scrollbars* will add more transparency to the scrollbars and set it as the same color as the current theme's background color. This is adding _50% opacity_ and there is no way to change it.
 
 *Accent scrollbars* will replace the scrollbar color with the _current accent color_.
 
@@ -60,8 +57,7 @@ Since 2019.1 the scrollbars enter into two categories:
 * _UI Scrollbars_: These are the scrollbars found throughout the UI (lists, trees and so on)
 * _Editor Scrollbars_: These are the scrollbars inside editors
 
-Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the
-_Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars.md#important-information).
+Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the _Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars.md#important-information).
 
 ---
 ### Tabs Shadow

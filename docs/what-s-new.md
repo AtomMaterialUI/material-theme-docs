@@ -74,7 +74,6 @@ This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/
 {:class='title'}
 
 
-
 ## Project Icon in the Project Frame
 
 In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-frame-settings.md), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
