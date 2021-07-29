@@ -15,6 +15,49 @@ next:
 
 # Changelog
 ----
+
+
+## 6.8.0
+
+### Features
+- New Setting: **Overlays**: Add an overlay on the root pane that shows when popups are opened!
+- New Setting: **Bold Active tab**: Make active tab bold (also available in per project settings)
+- Add more recent settings to the Wizard: *Tab Highlight Position*, *Overlays*, *Project View Font Size*
+
+### Fixes
+- Refactor the *Learning* plugin's theming
+- Fixes the notifications not showing up
+- Fixes Wizard's initial dimensions and initial theme
+
+### Other
+- Convert resource lists to Kotlin
+- Convert Tab Highlight Positions to Kotlin
+- Convert Tab Shadows to Kotlin
+- Rearrange settings classes, and also convert to Kotlin
+
+## 6.7.2
+
+### Fixes
+- Fix issue with notification showing all the time when the what's new window is disabled
+
+## 6.7.1
+
+### Fixes
+- Fix titlebar issue in Windows
+
+## 6.7.0
+
+### Features
+- Add **Project Icon** to the **Project Frame**
+- Added themed [XPathView Plugin](https://plugins.jetbrains.com/plugin/12478-xpathview--xslt) configurations.
+- **Language Additions**: Fix back `console`, `window`, `global` not being colored correctly. ([#1780](https://github.com/ChrisRM/material-theme-jetbrains/issues/1780))
+- Refactor **File Status Colors**, allowing to restore the file status colors when resetting the color scheme ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
+- Fix [#1773](https://github.com/ChrisRM/material-theme-jetbrains/issues/1773)
+- Fix [#1764](https://github.com/ChrisRM/material-theme-jetbrains/issues/1764)
+- Fix [#1776](https://github.com/ChrisRM/material-theme-jetbrains/issues/1776)
+- Improve unused variables contrast ([#1775](https://github.com/ChrisRM/material-theme-jetbrains/issues/1775))
+
+
 ## 6.6.0
 ### Features
 - New Set of Settings for the **Project Frame**:
