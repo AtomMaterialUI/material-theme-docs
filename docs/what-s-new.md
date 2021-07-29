@@ -34,7 +34,7 @@ Please open issues in the repository if you wish for more modals to be affected!
 
 A new option made its way to the tab settings section, which is the ability to make the current tab as bold.
 
-{% include figure.html content="/screens/activeTabBold.png" caption="Active Tab as Bold" %}
+{% include figure.html content="/screens/activeBoldTab.png" caption="Active Tab as Bold" %}
 
 Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings.md#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
 
