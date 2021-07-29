@@ -26,6 +26,10 @@ for the IDE.
 ----
 ### Themed Title Bar
 
+**Note**: This feature has been incorporated into the main product as of version 2021.2. As a result, it has been removed from the plugin.
+{:class='card-panel warn'}
+
+
 ##### Windows 10
 
 This setting also allows the theming of the application title bar in Windows 10. To do so, it is actually setting the
@@ -124,8 +128,8 @@ Starting from version 2.9.4/2.10.4 you can also see your current accent color.
 
 {% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
 
-**Note:**: This feature has been moved to the status bar directly, by right-clicking on it.
-{:class='card-title warn'}
+**Note**: This feature has been merged into the Status bar's context menu as of version 2020.3. As a result, it has been removed from the plugin.
+{:class='card-panel warn'}
 
 {% include figure.html content="/screens/statusbar.png" caption="Status Bar Toggles" %}
 
