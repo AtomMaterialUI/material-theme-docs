@@ -8,9 +8,27 @@ toc: true
 
 # What's new in Material Theme UI v6.8.0
 
-This version's features include the ability to [show an overlay]() when modals are open, to view the [Bold Active Tab](/docs/configuration/tab-settings.md#bold-active-tab), showing notifications when actions are executed, and adding a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
+This version's features consists in the ability to [display an overlay](/docs/configuration/features-settings.md#overlays) when modals are open, make the [Active Tab Bold](/docs/configuration/tab-settings.md#bold-active-tab), show notifications when actions are executed, and add a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
 {:class='title'}
 
+## Overlays
+
+Your IDE can now display **overlays** when modals are open, providing better focus to the information at hand.
+
+{% include figure.html content="/screens/modalOverlay.png" caption="Modals Overlay" %}
+
+{% include figure.html content="/screens/settingsOverlay.png" caption="Settings Overlay" %}
+
+These overlays show up in the following modal windows:
+- Alerts
+- Dialogs
+- New File Window
+- Search Everything
+- Run Anything
+
+Please open issues in the repository if you wish for more modals to be affected!
+
+-----
 
 ## Bold Active Tab
 
@@ -63,7 +81,7 @@ In the continuity in the development of the [Project Frame Feature](/docs/config
 
 {% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
 
-This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per project basis as well!
+This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per-project basis as well!
 
 **Note**: This feature is only available for 2021.2 versions and later unfortunately, as support for project icons wasn't complete in the 2021.1 versions. This could still change though, depending on JetBrains' progress.
 {:class='card-panel warn'}

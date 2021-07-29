@@ -14,7 +14,7 @@ next:
   title: Project Frame Settings
 ---
 
-This feature is only available for premium users.
+Some of these features are only available for premium users.
 {:class='card-panel warn'}
 
 Here you can turn on and off specific features of the Material Theme for even further customization.
@@ -134,6 +134,38 @@ Attention: This setting will override any custom background image that you may h
 This feature is available since version 5.0.0
 
 ----
+
+### Overlays
+
+This feature is available for all users.
+{:class='card-panel warn'}
+
+One of the features I've always wanted to implement since day one, was the ability to **display an overlay** when modals are open. This is one of the main concepts of _Material Design_ and somewhat missing in our editors.
+
+Now with a bit more experience, this feature has finally been implemented and is available for all users, just like the Material Components.
+
+{% include figure.html content="/screens/modalOverlay.png" caption="Modals Overlay" %}
+
+{% include figure.html content="/screens/settingsOverlay.png" caption="Settings Overlay" %}
+
+Overlays greatly enhance the focus on the important information on the screen by making the rest of the screen, the "noise", less prominent, without hiding it completely.
+
+However, these should not apply in all cases, as in some instances, the background information is useful to the modal window. For example, the *Evaluate* window during debugging, or the _Find in Files_ window.
+
+Therefore, the overlays will only display for the following modals:
+- Alerts
+- Dialogs
+- New File Window
+- Search Everything
+- Run Anything
+
+As usual, a setting is available to toggle this behaviour on or off in the Features Settings.
+
+This feature is available since version 6.8.0.
+
+Please open issues in the repository if you wish for more modals to be affected!
+{:class='card-panel warn'}
+
 
 ### Accent Mode
 

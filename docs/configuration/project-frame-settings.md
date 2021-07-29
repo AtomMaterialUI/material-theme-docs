@@ -55,6 +55,20 @@ Since version 6.6.0, you can now decide to hide the Project Name displayed on th
 
 Since the project name is already displayed on the title bar, it can be a little jarring to have it on both the title bar and the Project Frame, therefore this setting can be useful for limiting the information displayed on screen.
 
+### Show Project Icon
+
+As of 2021.2, a pretty unknown feature has been put up to the spotlight by JetBrains, which is the ability to [set an icon to projects](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons). This setting makes use of this feature to directly display the said icon to the Project Frame Toolbar.
+
+{% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
+
+This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per-project basis as well!
+
+This feature is available since 6.7.0.
+
+**Note**: At that moment, only SVG icons are supported.
+{:class='card-panel warn'}
+
+
 ### Customize Text
 
 Another option, rather than hiding the Project Name, would be to actually replace it with a text of your choice.
