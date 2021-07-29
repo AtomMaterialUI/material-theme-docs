@@ -74,7 +74,7 @@ Previously, this setting was set via the **Uppercase _Bold_ Tabs**, but was rath
 
 Now, this setting controls the boldness of only the active, selected tab, making it more prominent.
 
-{% include figure.html content="/screens/activeTabBold.png" caption="Active Tab as Bold" %}
+{% include figure.html content="/screens/activeBoldTab.png" caption="Active Tab as Bold" %}
 
 -----
 
