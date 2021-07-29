@@ -79,7 +79,7 @@ When this feature is on, the directories that have files open in the editor will
 
 ### Language Additions
 
-Take a look to the page [Language Additions](/docs/configuration/color-scheme-additions.md) for more details.
+Take a look at the page [Language Additions](/docs/configuration/color-scheme-additions.md) for more details.
 
 ----
 

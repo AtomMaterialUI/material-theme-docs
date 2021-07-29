@@ -13,18 +13,10 @@ K
 sass/partials/_general.scss,b/7/b7df84e33d26aa424ed3010e04e8a0c41eb87d79
 N
 sass/partials/layout/_all.scss,1/3/1393796fefff37b23e58f5020c08e9f5fb8a48ab
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
-<
-gruntfile.js,4/4/445a3ddd305fa81b021a24dd542e47daea1514f9
 7
 LICENCE,6/e/6e0ad2b047414107e8ce2f294fa40d216b5b68f9
-7
-Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579
 C
 _includes/head.html,c/5/c58923d48aa9504a82e1a3191cf50bb8c51ad4de
-@
-_data/themes.yml,e/f/efa7b9a4eeb83f91ea72c56685d6cb28c4bdbe16
 ;
 _config.yml,c/d/cd089ae45ce870c45e434019e8f1ed4f066cd425
 @
@@ -35,3 +27,18 @@ C
 assets/css/main.css,5/7/571c5f6808a15ac11d765304c218b17e31deb704
 ?
 browser-sync.js,f/6/f6a0edbd37d8a149924922acda6f944418223b91
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+I
+sass/toolbox/_themes.scss,4/a/4ae4e2c027b26d223eb68e5944321054ad0e6487
+<
+gruntfile.js,4/4/445a3ddd305fa81b021a24dd542e47daea1514f9
+7
+Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579
+8
+.babelrc,b/c/bcac7464521b8c19a2372c739f6dc9e9ab7dfc80
+@
+_data/themes.yml,e/f/efa7b9a4eeb83f91ea72c56685d6cb28c4bdbe16
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a

@@ -131,8 +131,7 @@ Note that excluded/resource root/test root/package folders will not be decorated
 ----
 ### PSI Icons
 
-From version 3.4.0 you can also replace the PSI icons (e.g. Class, Interface, Enums, functions and so on) with Material
-icons.
+From version 3.4.0 you can also replace the PSI icons (e.g. Class, Interface, Enums, functions and so on) with Material icons.
 
 {% include figure.html content="/screens/psiIcons.png" caption="PSI Icons" %}
 
@@ -145,7 +144,4 @@ This option makes it look like the Visual Studio Code *Outline* Panel, as well a
 ----
 ### Notes
 
-- Monochrome icons actually messes up some parts of the IDE, such as the SVG Image Viewer. If you need to use it, please
-  disable the option temporarily.
-- Currently, there is no option to specify the color used in the Monochrome filter, but there's a plan of implementing
-  it!
+- Monochrome icons actually messes up some parts of the IDE, such as the SVG Image Viewer. If you need to use it, please disable the option temporarily.

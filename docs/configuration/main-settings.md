@@ -64,22 +64,17 @@ The parts that are affected by the contrast change are:
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-This option increases the contrast between the editor and the IDE, just like other editors such as Visual Studio Code
-or Atom.
+This option increases the contrast between the editor and the IDE, just like other editors such as Visual Studio Code or Atom.
 
 {% include figure.html content="/screens/highContrast.png" caption="High Contrast" %}
 
-There is already a *Contrast Mode* which is providing contrast between different panes of the editor, such as the Trees
-or the inputs, but this feature actually increases the contrast between the _IDE itself_ and the editor. You can even
-set High Contrast **when in Contrast Mode**!
+There is already a *Contrast Mode* which is providing contrast between different panes of the editor, such as the Trees or the inputs, but this feature actually increases the contrast between the _IDE itself_ and the editor. You can even set High Contrast **when in Contrast Mode**!
 
 {% include figure.html content="/screens/noHighContrast.png" caption="Regular" %}
 
 {% include figure.html content="/screens/veryHighContrast.png" caption="Very High Contrast" %}
 
-The High Contrast mode is setting the main background color and contrast color darker, while setting the "Text Color"
-brighter (and vice-versa for light themes), such as the color of the tree items. Other colors, such as the main
-foreground colors or button colors are left unchanged.
+The High Contrast mode is setting the main background color and contrast color darker, while setting the "Text Color" brighter (and vice-versa for light themes), such as the color of the tree items. Other colors, such as the main foreground colors or button colors are left unchanged.
 
 ----
 ### Custom Accent Color
@@ -102,8 +97,7 @@ While a set of predefined accent colors are available in the
 
 ### Override Accent Color
 
-From version 2.6.0 there exists the possibility to override the custom accent color with the default one bundled with the
-theme. For instance, for _Oceanic_ the accent color will be `teal` while for _Darker_ it will be `orange` etc.
+From version 2.6.0 there exists the possibility to override the custom accent color with the default one bundled with the theme. For instance, for _Oceanic_ the accent color will be `teal` while for _Darker_ it will be `orange` etc.
 
 This is especially useful for external themes, so that Themes designers can provide their own accent color.
 
