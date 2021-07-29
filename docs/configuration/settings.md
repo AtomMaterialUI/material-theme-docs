@@ -250,44 +250,48 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
 <component>
   <!-- Accent color -->
   <option name="accentColor" value="E91E63" />
-  <!-- Arrows style -->
-  <option name="arrowsStyle" value="Material" />
+  <!-- Arrows style (moved to Atom Icons Plugin) -->
+  <!-- <option name="arrowsStyle" value="Material" /> -->
   <!-- Accent scrollbars -->
   <option name="accentScrollbars" value="true" />
   <!-- Accent Mode -->
   <option name="accentMode" value="true" />
   <!-- Whether or not to send data analytics -->
   <option name="allowDataCollection" value="false" />
+   <!-- Outlined Buttons -->
+  <option name="borderedButtons" value="false" />
   <!-- Language Additions -->
   <option name="codeAdditionsEnabled" value="true" />
-   <!-- Colored Open Directories -->
-  <option name="coloredOpenDirectories" value="true" />
   <!-- Compact dropdowns enabled -->
   <option name="compactDropdowns" value="false" />
   <!-- Custom sidebar line height enabled -->
   <option name="compactSidebar" value="false" />
   <!-- Sidebar line height if enabled -->
   <option name="customSidebarHeight" value="28" />
-  <!-- Themed Title Bar -->
-  <option name="darkTitleBar" value="false" />
+  <!-- Themed Title Bar (deprecated since 2021.2) -->
+  <!-- <option name="darkTitleBar" value="false" /> -->
+  <!-- Enforced Language Additions -->
+  <option name="enforcedLanguageAdditions" value="fale" />
   <!-- File Status Colors enabled-->
   <option name="fileStatusColorsEnabled" value="false" />
   <!-- Tab highlight color -->
   <option name="highlightColor" value="E91E63" />
-  <!-- Tab highlight color enabled -->
-  <option name="highlightColorEnabled" value="false" />
   <!-- Tab highlight thickness -->
   <option name="highlightThickness" value="2" />
   <!-- Indicator Style -->
   <option name="indicatorStyle" value="Border" />
   <!-- Indicator Thickness -->
   <option name="indicatorThickness" value="2" />
+  <!-- Bold Active Tab-->
+  <option name="isActiveBoldTab" value="false" />
+  <!-- Tab highlight color enabled -->
+  <option name="isHighlightColorEnabled" value="false" />
   <!-- Compact menus -->
   <option name="isCompactMenus" value="false" />
   <!-- Compact status bar enabled -->
   <option name="isCompactStatusBar" value="false" />
   <!-- Compact table cells enabled -->
-  <option name="isCompactTableCells" value="false" />
+  <option name="isCompactTables" value="false" />
   <!-- Contrast mode enabled -->
   <option name="isContrastMode" value="false" />
   <!-- Custom tree indent enabled -->
@@ -296,6 +300,8 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="isDecoratedFolders" value="true" />
   <!-- High Contrast -->
   <option name="isHighContrast" value="true" />
+   <!-- Inverted Selection Color -->
+  <option name="isInvertedSelectionColor" value="fale" />
    <!-- Custom Wallpapers -->
   <option name="isMaterialWallpapers" value="true" />
   <!-- Styled folders enabled -->
@@ -305,21 +311,29 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <!-- Left tree indent  -->
   <option name="leftTreeIndent" value="6" />
   <!-- Override accent color enabled -->
-  <option name="overrideAccentColor" value="false" />
+  <option name="overrideAccentColor" value="true" />
   <!-- Right tree indent  -->
   <option name="rightTreeIndent" value="6" />
+  <!-- Second Accent Color when in Accent Mode -->
+  <option name="secondAccentColor" value="80CBC4" />
   <!-- Selected Theme -->
   <option name="selectedTheme" value="OCEANIC" />
   <!-- Last selected tab in the settings -->
   <option name="settingsSelectedTab" value="0" />
-  <!-- Status bar indicator -->
-  <option name="statusBarTheme" value="true" />
+  <!-- Show Overlays -->
+  <option name="showOverlays" value="true" />
+  <!-- Striped Tool Windows -->
+  <option name="stripedToolWindowsEnabled" value="true" />
+  <!-- Show What's New Window on updates -->
+  <option name="showWhatsNew" value="true" />
+  <!-- Status bar indicator (moved to status bar context menu) -->
+  <!-- <option name="statusBarTheme" value="true" /> -->
   <!-- Tab Highlight Position -->
   <option name="tabHighlightPosition" value="Default" />
-  <!-- Tab Opacity -->
-  <option name="tabOpacity" value="50" />
+  <!-- Tab Opacity (deprecated) -->
+  <!-- <option name="tabOpacity" value="50" /> -->
   <!-- Transparent scrollbars -->
-  <option name="themedScrollbars" value="false" />
+  <option name="themedScrollbars" value="true" />
   <!-- Project View Font Size -->
   <option name="treeFontSize" value="12" />
   <!-- Project View Font Size Enabled -->
@@ -329,17 +343,25 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <!-- Tab Font Size Enabled -->
   <option name="tabFontSizeEnabled" value="false" />
   <!-- Tab height -->
-  <option name="tabsHeight" value="50" />
+  <option name="tabsHeight" value="42" />
   <!-- Uppercase buttons -->
   <option name="uppercaseButtons" value="true" />
   <!-- Bold and uppercase tabs enabled -->
   <option name="upperCaseTabs" value="false" />
+  <!-- Colored Open Directories -->
+  <option name="useColoredDirectories" value="true" />
+  <!-- Project Frame Custom Title -->
+  <option name="useCustomTitle" value="false" />
+  <!-- Project Frame -->
+  <option name="useProjectFrame" value="false" />
+  <!-- Show Project Title in Project Frame -->
+  <option name="useProjectTitle" value="true" />
+  <!-- Show Project Icon in Project Frame -->
+  <option name="useProjectIcon" value="true" />
   <!-- Material fonts enabled -->
   <option name="useMaterialFont2" value="false" />
   <!-- Material wallpapers enabled -->
   <option name="useMaterialWallpapers" value="false" />
-  <!-- Project Frame Colors enabled -->
-  <option name="useProjectFrame" value="true" />
 </component>
 
 ```
@@ -348,8 +370,7 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
 
 **Q**: I've installed the Material Theme, but the editor still shows me the `Darcula` theme?
 
-**A**: The Theme Switcher is only replacing the theme of the whole IDE, not the editor itself. You can therefore have a
-separate theme for the IDE and the Editor, for instance _Palenight_ and _Darker_ or even a custom Color Scheme.
+**A**: The Theme Switcher is only replacing the theme of the whole IDE, not the editor itself. You can therefore have a separate theme for the IDE and the Editor, for instance _Palenight_ and _Darker_ or even a custom Color Scheme.
 
 
 **Q**: I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?

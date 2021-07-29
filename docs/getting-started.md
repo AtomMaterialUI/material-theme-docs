@@ -131,7 +131,8 @@ The plugin is supported on all IDEs, but because of changes of the SDK specific 
 - IDE versions 2020.1 > from version `4.11.0`
 - IDE versions 2020.2 > from version `5.3.0`
 - IDE versions 2020.3 > from version `5.6.0` up to `5.7.0`
-- IDE versions 2021.1 > from version `6.0.0`
+- IDE versions 2021.1 > from version `6.0.0` up to `6.7.0`
+- IDE versions 2021.2 > from version `6.8.0`
 
 ## Premium Support
 
