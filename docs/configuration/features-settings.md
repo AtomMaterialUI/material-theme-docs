@@ -152,6 +152,7 @@ This feature is available since version 6.8.0.
 Please open issues in the repository if you wish for more modals to be affected!
 {:class='card-panel warn'}
 
+----- 
 
 ### Accent Mode
 
