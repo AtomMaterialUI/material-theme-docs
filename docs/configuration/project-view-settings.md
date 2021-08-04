@@ -67,7 +67,7 @@ This feature is only available for premium users.
 This setting allows you to set a custom style for directories in the _Project View_. This could be useful to immediately differentiate between files and directories (default off).
 
 The options for configuring the style of directories can be found inside the
-[Material File Colors Settings](/docs/configuration/file-status-colors#directories)
+[Custom File Colors Settings](/docs/configuration/file-status-colors#directories)
 
 {% include figure.html content="/screens/boldDirectories.png" caption="Styled directories" %}
 

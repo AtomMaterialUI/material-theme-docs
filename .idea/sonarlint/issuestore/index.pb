@@ -15,8 +15,6 @@ N
 LICENCE,6/e/6e0ad2b047414107e8ce2f294fa40d216b5b68f9
 C
 _includes/head.html,c/5/c58923d48aa9504a82e1a3191cf50bb8c51ad4de
-;
-_config.yml,c/d/cd089ae45ce870c45e434019e8f1ed4f066cd425
 @
 .jekyll-metadata,1/a/1a82a3c1a6e74adf7b2de5363f22679c3d7362f0
 B
@@ -40,3 +38,29 @@ I
 _data/themes.yml,e/f/efa7b9a4eeb83f91ea72c56685d6cb28c4bdbe16
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+S
+#docs/configuration/color-schemes.md,1/8/18ed5c57b4ddf42637cb888b661dac13b40b1b01
+V
+&docs/configuration/compact-settings.md,3/6/36744f43d4421ebd546a97aa990a5ba9006fa1f6
+X
+(docs/configuration/component-settings.md,1/1/11cf583523cbfa64755c85d5be7630f05ab53eaf
+S
+#docs/configuration/custom-themes.md,1/d/1d2c46c2f58458f40ef70ea5019381983e3c5e72
+[
++docs/configuration/excluded-files-colors.md,d/f/df5366aa524aa5b6b4c201327b9a3cf3d5f8dd84
+T
+$docs/configuration/icons-settings.md,2/e/2e0f8eb97469916b6973ec0f03df5665c5ee849b
+S
+#docs/configuration/main-settings.md,9/c/9cc292ac9456e3e5ffa00f7acc3febda7a0c3af6
+\
+,docs/configuration/project-frame-settings.md,5/1/51fbed706618a5751155778ba4b2c7fd7bde6ace
+Y
+)docs/configuration/quick-actions-panel.md,9/6/96d55964c56c02377c8186c7592a2af92fdd8a1d
+P
+ docs/configuration/scrollbars.md,2/2/22c3194ca93f82d24fdb200a31afa709313a10df
+P
+ docs/about-subscription-model.md,d/3/d3a29b3acaae2d2b66f242fbe2db4e608322c344
+H
+docs/acknowledgements.md,e/e/eedf9fbfe1b239ff8907733c3930a0b9f71c7cbe
+Q
+!docs/development/installation_.md,5/1/51e5d4489b5de07c9eedb333108dbcc38eb53bcb

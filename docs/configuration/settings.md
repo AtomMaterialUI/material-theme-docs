@@ -177,7 +177,7 @@ Quick summary of all settings:
   - *Dot*: Add a dot on the selected item
   - *None*: Remove the indicator
 - *Thickness* ![premium](/img/icons/premium.png): Control the thickness of the indicator
-- *Custom Directories Style* ![premium](/img/icons/premium.png): Assign a specific style to directories. Can be configured from the *Material File Colors* settings page.
+- *Custom Directories Style* ![premium](/img/icons/premium.png): Assign a specific style to directories. Can be configured from the *Custom File Colors* settings page.
 - *Font Size* ![premium](/img/icons/premium.png): Fine tune the font size of the project trees (requires restart)
 
 **[Component Settings](/docs/configuration/component-settings)**:

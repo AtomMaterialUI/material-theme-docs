@@ -48,7 +48,7 @@ But here, at Material Theme, decided to restore that feature to again allow colo
 
 But again, there're no settings page for that, so the _Material Theme File Status Colors_ settings still comes in handy!
 
-## Material File Colors
+## Custom File Colors
 
 These settings are not found inside the `Material Theme Settings` but instead in a specific section of the `Color Schemes`, just like before.
 
@@ -89,7 +89,7 @@ Note: These colors are only relevant for Material Dark themes. Other themes such
 
 Other statuses may come from 3rd-party plugins and will have the default color provided by the plugin.
 
-**Note**: Because this feature overrides the one from the IDE, changing colors via the regular screen (`VCS → File Status Colors`) doesn't make sense and will be overriden the next time you change the color scheme. So please use the `Material File Colors` from now on, even if you are on Darcula or a custom color scheme.
+**Note**: Because this feature overrides the one from the IDE, changing colors via the regular screen (`VCS → File Status Colors`) doesn't make sense and will be overriden the next time you change the color scheme. So please use the `Custom File Colors` from now on, even if you are on Darcula or a custom color scheme.
 {:class='card-panel'}
 
 ## Directories
