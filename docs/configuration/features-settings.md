@@ -152,7 +152,7 @@ This feature is available since version 6.8.0.
 Please open issues in the repository if you wish for more modals to be affected!
 {:class='card-panel warn'}
 
------ 
+-----
 
 ### Accent Mode
 
@@ -172,16 +172,16 @@ This feature is available since 4.1.0.
 
 ----
 
-### Striped Tool Windows Layout
+### Large Tool Windows Layout
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
-The new version of the Material Theme UI makes use of the new experimental feature in progress by JetBrains: The **Striped Tool Windows**.
+The new version of the Material Theme UI makes use of the new experimental feature in progress by JetBrains: The **Large Tool Windows**.
 
 This new layout, heavily reminding of VSCode, replaces the tool windows by larger stripes on the left and right side of the screen. It also strips the buttons of all texts, making the IDE feeling less cluttered.
 
-{% include figure.html content="/screens/stripedToolWindows.png" caption="Striped Tool Windows" %}
+{% include figure.html content="/screens/stripedToolWindows.png" caption="Large Tool Windows" %}
 
 This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
 
