@@ -100,7 +100,7 @@ This panel as well allows you to rapidly toggle the most used Component/Features
 - _Toggle Outline Buttons_
 - _Toggle Overlays_
 - _Toggle Project Frame Colors_
-- _Toggle Striped Tool Windows_
+- _Toggle Large Tool Windows_
 
 In addition, other one-time actions are available in this panel, which are:
 - _Material Theme Wizard_: Relaunch the Material Theme Wizard

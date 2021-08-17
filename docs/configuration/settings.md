@@ -177,7 +177,7 @@ Quick summary of all settings:
   - *Dot*: Add a dot on the selected item
   - *None*: Remove the indicator
 - *Thickness* ![premium](/img/icons/premium.png): Control the thickness of the indicator
-- *Custom Directories Style* ![premium](/img/icons/premium.png): Assign a specific style to directories. Can be configured from the *Material File Colors* settings page.
+- *Custom Directories Style* ![premium](/img/icons/premium.png): Assign a specific style to directories. Can be configured from the *Custom File Colors* settings page.
 - *Font Size* ![premium](/img/icons/premium.png): Fine tune the font size of the project trees (requires restart)
 
 **[Component Settings](/docs/configuration/component-settings)**:
@@ -194,7 +194,7 @@ Quick summary of all settings:
 - *Material Wallpapers* ![premium](/img/icons/premium.png): Add a custom wallpaper per theme for the empty frame window.
 - *Show Overlays*: Displays an overlay when modals are open.
 - *Accent Mode* ![premium](/img/icons/premium.png): Make components stand out by setting them in the accent color (buttons, tabs, selections…)
-- *Striped Tool Windows*: Set the new Striped Tool Windows Layout
+- *Large Tool Windows*: Set the new Large Tool Windows Layout
 
 **[Project Frame Settings](/docs/configuration/project-frame-settings)**:
 - *Project Frame Colors* ![premium](/img/icons/premium.png): Add a colored stripe on the top of each window for easier differentiation
@@ -322,7 +322,7 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="settingsSelectedTab" value="0" />
   <!-- Show Overlays -->
   <option name="showOverlays" value="true" />
-  <!-- Striped Tool Windows -->
+  <!-- Large Tool Windows -->
   <option name="stripedToolWindowsEnabled" value="true" />
   <!-- Show What's New Window on updates -->
   <option name="showWhatsNew" value="true" />

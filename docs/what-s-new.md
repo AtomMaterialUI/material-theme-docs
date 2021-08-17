@@ -6,6 +6,23 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.8.1
+
+This new release is a bug-fix version, principally to rename and disable by default the experimental feature of _Large Tool Windows_ (previously named _Striped Tool Windows_).
+{:class='title'}
+
+### Fixes
+- Restore the JetBrains layout as the default one
+- Fix error when switching themes when inside a modal
+- Fix transparency during drag and drop
+- Fix _Show What's new_ option not being respected
+
+### Other
+- Renamed "_Striped Tool Windows_" to "_Large Tool Windows_" to be clearer.
+- Upgrade gradle to 7.2
+
+
+
 # What's new in Material Theme UI v6.8.0
 
 This version's features consists in the ability to [display an overlay](/docs/configuration/features-settings.md#overlays) when modals are open, make the [Active Tab Bold](/docs/configuration/tab-settings.md#bold-active-tab), show notifications when actions are executed, and add a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
