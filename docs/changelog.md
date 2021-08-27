@@ -21,6 +21,7 @@ next:
 - Add two new keywords for the custom project frame title text: `{module}` and `{file}`
 
 ### Fixes
+- Fix [#1823](https://github.com/ChrisRM/material-theme-jetbrains/issues/1823)
 - Fix [#1772](https://github.com/ChrisRM/material-theme-jetbrains/issues/1772)
 - Fix [#1808](https://github.com/ChrisRM/material-theme-jetbrains/issues/1808)
 - Fix [#1790](https://github.com/ChrisRM/material-theme-jetbrains/issues/1790)
