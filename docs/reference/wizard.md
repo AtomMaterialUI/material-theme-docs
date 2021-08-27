@@ -9,9 +9,6 @@ previous:
   url: '/docs/reference/file-icons'
   title: File Icons
 
-next:
-  url: '/docs/development/installation'
-  title: Installation
 ---
 
 The version 2.7 hasn't brought a lot of changes, but instead was more focused on bringing new and existing users to
