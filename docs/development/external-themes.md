@@ -6,10 +6,6 @@ group: development
 toc: true
 comments: true
 
-previous:
-  url: '/docs/development/installation'
-  title: Installation
-
 next:
   url: '/docs/development/analytics'
   title: Analytics
@@ -48,8 +44,7 @@ If we get enough submissions we might even host a gallery!
 
 The best way to illustrate it is by doing a tutorial.
 
-First, you will need the Plugin DevKit. Please refer to the
-[Getting Started section](/docs/development/installation#getting-started) to download the necessary dependencies.
+First, you will need the Plugin DevKit. Please refer to the JetBrains documentation to download the necessary dependencies.
 
 Next, go to _File > New Project_ and select _IntelliJ Plugin_
 
