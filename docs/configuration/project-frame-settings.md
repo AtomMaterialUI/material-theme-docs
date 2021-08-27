@@ -77,8 +77,10 @@ Another option, rather than hiding the Project Name, would be to actually replac
 
 That means that you can customize what's displayed on the bar with unicode characters, emojis, etc. This, coupled with the ability to set settings per-project, can be quite useful as well for better recognizing between windows :)
 
-**Note**: You can add the current project's name to the custom text by using the `{project}` keyword.
-{:class='card-panel warn'}
+**Hint**: There are a few keywords available to use:
+- `{project}`: the current project's name
+- `{module}`: the current module name (for projects supporting modules, such as Java or Rider)
+- `{file}`: the current filename
 
 ### Per-Project Settings
 
