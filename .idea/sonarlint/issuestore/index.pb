@@ -3,8 +3,6 @@ R
 "docs/configuration/tab-settings.md,a/c/ac2f0caad123f84e95721999adc1961d3f681575
 [
 +docs/configuration/other-tweaks-settings.md,9/6/96d2b0275de31256e4160d926fdf10cec94ebfe0
-=
-_data/nav.yml,6/d/6d66ba61d4419bcd008c979f82af299c8fe20b11
 M
 docs/configuration/accents.md,0/c/0cdf5ea9883de603c7ab179450d33b618cf61a66
 G
