@@ -6,25 +6,6 @@ toc: true
 
 ---
 
-# What's new in Material Theme UI v6.8.2
-
-Yet another bug-fix release, alongside small features and an overgoing refactor.
-{:class='title'}
-
-### Features
-- Add two new keywords for the [Project Frame Custom Text](/docs/configuration/project-frame-settings.md#customize-text): `{module}` and `{file}`
-
-### Fixes
-- Fix [#1823](https://github.com/ChrisRM/material-theme-jetbrains/issues/1823)
-- Fix [#1772](https://github.com/ChrisRM/material-theme-jetbrains/issues/1772)
-- Fix [#1808](https://github.com/ChrisRM/material-theme-jetbrains/issues/1808)
-- Fix [#1790](https://github.com/ChrisRM/material-theme-jetbrains/issues/1790)
-- Fix [#1825](https://github.com/ChrisRM/material-theme-jetbrains/issues/1825)
-
-### Other
-- More and more classes converted to Kotlin
-
----
 
 # What's new in Material Theme UI v6.8.1
 
