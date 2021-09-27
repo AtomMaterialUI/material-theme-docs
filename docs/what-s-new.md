@@ -6,6 +6,25 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.9.0
+
+### Features
+- Make **External Themes** as a dynamic extension point
+- Increase the number of windows/popups that are under an **overlay**:
+  - Recent Files
+  - Quick Switchers
+  - Branch Chooser``
+  - and others
+
+### Fixes
+- Fix issue where checkboxes were invisible
+- Fix issue where local history information was unreadable
+
+### Other
+- More and more classes converted to Kotlin
+
+---
+
 # What's new in Material Theme UI v6.8.2
 
 Yet another bug-fix release, alongside small features and an overgoing refactor.
