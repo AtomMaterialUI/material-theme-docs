@@ -18,8 +18,7 @@ next:
 
 ## Introduction
 
-Aside from themes and color schemes, the plugin provides also a complete reskin to the projects' file icons, making them
-prettier and easier to distinguish.
+Aside from themes and color schemes, the plugin provides also a complete reskin to the projects' file icons, making them prettier and easier to distinguish.
 
 It's heavily inspired by the
 [A File Icon](https://github.com/SublimeText/AFileIcon) plugin for Sublime, which itself is inspired by
@@ -60,6 +59,12 @@ Finally, if the icon does not fall in any of the categories, it will either:
 
 To see the full associations list, see
 [Associations](/docs/reference/associations) and [Folder Associations](/docs/reference/folder-associations)
+
+### Exhaustive List
+
+{% include figure.html content="/icons/files.png" caption="File Icons" %}
+
+{% include figure.html content="/icons/folders.png" caption="Folder Icons" %}
 
 
 ## Customization
