@@ -7,11 +7,7 @@ comments: true
 
 Want to contribute to the plugin? Feel free to open issues at the GitHub repository, or use the form below to submit feature requests.
 
-You can also use this form to request a free license if you belong to one of the categories listed [here](https://www.material-theme.com/docs/pricing/), alongside the relevant information:
-- If you're a student/teacher/non-profit organization, a screenshot of your JetBrains account (don't forget to blur sensitive information)
-- If you're an open-source contributor or plugin developer, a link to your GitHub/GitLab account
-- If you're a past donator, a copy of the receipt of your donation
-- Or anything that you think might be relevant
+Also, if you belong to one of the categories listed [here](https://www.material-theme.com/docs/pricing/), you can get the plugin for free. Please read the follwing link to see how to apply: <https://blog.jetbrains.com/platform/2021/06/community-offers-on-marketplace/>
 
 
 

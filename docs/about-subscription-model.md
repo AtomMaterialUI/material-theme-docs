@@ -89,8 +89,11 @@ And again, **thank you**. I could never have done it without you guys!!!
 **A**: Well, maybe, it all depends on how much you think this is worth it. To me, from someone who had been pouring a lot of days and weekends into this in order to have a slick and customizable IDE, $15 is but a small contribution.
 But of course it can depend on a lot of factors. $15 here might be a lot in other parts of the world or even for some households. I'm not trying to be condescending or anything. If anything, if the price is the issue, don't hesitate to contact me, perhaps I can give you a discount, or a trial extension if you want.
 
-Also, if you are a student, a classroom, a non-profit organization, an open-source contributor or a plugin developer, you
-can use the plugin **for free**.
+Also, if you are a student, a classroom, a non-profit organization, an open-source contributor or a plugin developer, you can use the plugin **for free**.
+
+To do so, please follow the instructions at the following link:
+
+<https://blog.jetbrains.com/platform/2021/06/community-offers-on-marketplace/>
 
 You just need to talk, I'm here, and listening to everyone :)
 
