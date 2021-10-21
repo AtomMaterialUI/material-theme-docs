@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/tab-settings'
   title: Tab Settings
 next:
-  url: '/docs/configuration/icons-settings'
-  title: Icons Settings
+  url: '/docs/configuration/project-view-settings'
+  title: Project View Settings
 
 ---
 
@@ -22,8 +22,7 @@ These settings control some components' display, mainly about their compactness.
 
 ### Compact Statusbar
 
-The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and
-bottom. This setting allows you to revert to the default "_compact_" design.
+The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and bottom. This setting allows you to revert to the default "_compact_" design.
 
 
 {% include figure.html content="/screens/expandedStatusbar.png" caption="Padded Status Bar" %}

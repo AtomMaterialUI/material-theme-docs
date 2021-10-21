@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/icons-settings'
-  title: Icons Settings
+  url: '/docs/configuration/compact-settings'
+  title: Compact Settings
 next:
   url: '/docs/configuration/component-settings'
   title: Component Settings

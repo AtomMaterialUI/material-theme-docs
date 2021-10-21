@@ -297,9 +297,13 @@ them or applying a filter to them.</p>
 
 <p><img class="avatar-img -centered" src="https://plugins.jetbrains.com/files/10044/78336/icon/META-INF_pluginIcon.svg" alt="Atom Material Icons Plugin" /></p>
 
-<p>These features have all been moved to the <a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons Plugin</a> since version 5.0.</p>
+<p>The <a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons Plugin</a> is a complementary
+plugin of the Material Theme whose purpose is to customize all IDE icons. It was originally part of the Material Theme
+but has been extracted from it since version 2.9.0, in order to tend to users who don’t need the themes but do need the
+icons, the same way it is done in Atom or Visual Studio.</p>
 
-<p>The plugin can be installed the same way the Material Theme can be installed, but with one important twist: <strong>it doesn’t require the IDE to restart!</strong></p>
+<p>The plugin can be installed the same way the Material Theme can be installed, but with one important twist: <strong>it doesn’t
+require the IDE to restart!</strong></p>
 
 <figure class="card figure">
   <a href="/img//screens/atomMaterial.png" target="_blank" class="card-image">
@@ -323,14 +327,63 @@ them or applying a filter to them.</p>
   </div>
 </figure>
 
-<p>The UI is a bit different from the Material Theme UI, but provides the same functionality nonetheless. This operation has been performed to decouple the Material Theme plugin from the <em>UI Icons</em> feature, therefore allowing to use different <em>Icon Themes</em> from other authors alongside the Material Theme UI, and in the same time gives the ability to use the icons independently of the UI themes.</p>
+<p>The UI is a bit different from the Material Theme UI, but provides the same functionality nonetheless. This operation
+has been performed to decouple the Material Theme plugin from the <em>UI Icons</em> feature, therefore allowing to use
+different <em>Icon Themes</em> from other authors alongside the Material Theme UI, and in the same time gives the ability to
+use the icons independently of the UI themes.</p>
 
-<p class="card-panel">Note: This plugin has been recently ported to Google Chrome and Firefox! Go take a look: <a href="https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc">Atom File Icons Web for Chrome</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/">Atom File Icons Web for Firefox</a></p>
+<p class="card-panel">Note: This plugin has been recently ported to Google Chrome and Firefox! Go take a
+look: <a href="https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc">Atom File Icons Web for Chrome</a>
+and <a href="https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/">Atom File Icons Web for Firefox</a></p>
 
 <hr />
+
+<h3 id="file-icons">File Icons</h3>
+
+<p>This setting changes the icons for project files according to specific file patterns. Usually it is based off the
+extension of the file (*.js, *.scss, *.php) but it also identifies specific commonly used patterns and replace them with
+the relevant icon, such as:</p>
+
+<ul>
+  <li>package.json</li>
+  <li>build.gradle</li>
+  <li>README.md</li>
+  <li>composer.json</li>
+  <li>etc…</li>
+</ul>
+
+<p>You can find more information at the <a href="/docs/reference/associations">Associations</a>.</p>
+
+<hr />
+
+<h3 id="directory-icons">Directory Icons</h3>
+
+<p>Assign specific folder icons to folders with commonly used names to add yet more visual grepping than with file icons.
+For instance, <code class="language-plaintext highlighter-rouge">tmp</code>, <code class="language-plaintext highlighter-rouge">logs</code>, <code class="language-plaintext highlighter-rouge">src</code>, <code class="language-plaintext highlighter-rouge">lib</code> or <code class="language-plaintext highlighter-rouge">test</code> are folders found within most projects.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/decoFolders.png" target="_blank" class="card-image">
+    <img src="/img//screens/decoFolders.png" alt="Decorated Folders" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Decorated Folders
+    </figcaption>
+  </div>
+</figure>
+
+<p>Note that excluded/resource root/test root/package folders will not be decorated.</p>
+
+<p>You can find more information at the <a href="/docs/reference/folder-associations">Folder Associations</a>.</p>
+
+<p class="card-panel warn"><strong>Important note</strong>: Because of the way it is implemented, this feature is not yet available in <strong>Rider</strong>.</p>
+
+<hr />
+
 <h3 id="ui-icons">UI Icons</h3>
 
 <p>This setting toggles the replacement of the icons provided by the plugin. Specifically this disables:</p>
+
 <ul>
   <li>Menu Icons</li>
   <li>Toolbar Icons</li>
@@ -355,6 +408,39 @@ documentation panels.</p>
 <p><strong>Note</strong>: This setting does not affect icons being changed by other plugins.</p>
 
 <hr />
+
+<h3 id="psi-icons">PSI Icons</h3>
+
+<p>This toggle lets you replace the PSI icons (e.g. Class, Interface, Enums, functions and so on) with Material icons.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/psiIcons.png" target="_blank" class="card-image">
+    <img src="/img//screens/psiIcons.png" alt="PSI Icons" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      PSI Icons
+    </figcaption>
+  </div>
+</figure>
+
+<p>The Structure Panel icons are also changed:</p>
+
+<figure class="card figure">
+  <a href="/img//screens/psiStructure.png" target="_blank" class="card-image">
+    <img src="/img//screens/psiStructure.png" alt="PSI Icons" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      PSI Icons
+    </figcaption>
+  </div>
+</figure>
+
+<p>This option makes it look like the Visual Studio Code <em>Outline</em> Panel, as well as Rider or Resharper structure panels.</p>
+
+<hr />
+
 <h3 id="hide-file-icons">Hide File Icons</h3>
 
 <p>This option allows you to <em>completely hide</em> the <strong>file</strong> icons from the IDE. This means from the <em>Project Tree</em>, Tabs,
@@ -375,6 +461,24 @@ Dialogs and everything. This does not hide folders, though.</p>
 plugins might have an even greater precedence, meaning that you will still see icons from such plugins.</p>
 
 <hr />
+
+<h3 id="hide-folder-icons">Hide Folder Icons</h3>
+
+<p>Same setting as the <em>Hide File Icons</em> except that it works for folders.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/hideFolderIcons.png" target="_blank" class="card-image">
+    <img src="/img//screens/hideFolderIcons.png" alt="Hide Folder Icons" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Hide Folder Icons
+    </figcaption>
+  </div>
+</figure>
+
+<hr />
+
 <h3 id="monochrome-icons">Monochrome Icons</h3>
 
 <p>This option allows you to apply a monochrome filter to the whole IDE, just like the color blindness filter. This is
@@ -397,6 +501,60 @@ the Project View) of the current theme.</p>
 <p class="card-panel warn">Note: This setting not only filters out the toolbar and file icons, but even tool window icons, debugger icons, etc…</p>
 
 <hr />
+
+<h3 id="hollow-folders">Hollow Folders</h3>
+
+<p>This feature further decorates the <em>Project View</em> by emphasizing the folders which contain files that are currently open
+in the editor, making them appear as “<strong>hollow</strong>”.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/hollowFolders.png" target="_blank" class="card-image">
+    <img src="/img//screens/hollowFolders.png" alt="Hollow Folders" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Hollow Folders
+    </figcaption>
+  </div>
+</figure>
+
+<p>Not only regular folders, but also excluded folders, resource folders or even decorated folders have a hollow
+counterpart.</p>
+
+<hr />
+
+<h3 id="bigger-icons">Bigger Icons</h3>
+
+<p>This option increases the size of the icons from 16px to 24px, making them slightly larger.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/normalIcons.png" target="_blank" class="card-image">
+    <img src="/img//screens/normalIcons.png" alt="Normal Icons" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Normal Icons
+    </figcaption>
+  </div>
+</figure>
+
+<figure class="card figure">
+  <a href="/img//screens/biggerIcons.png" target="_blank" class="card-image">
+    <img src="/img//screens/biggerIcons.png" alt="Bigger Icons" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Bigger Icons
+    </figcaption>
+  </div>
+</figure>
+
+<p class="card-panel warn"><strong>Note</strong>: The IDEs are not optimized to handle bigger icons, so there could be parts of the IDE that are missing icons,
+or that the containers will appear larger/wider/bigger. Please be aware of such issues and use this mode with
+precaution.</p>
+
+<hr />
+
 <h3 id="arrows-style">Arrows Style</h3>
 
 <p>This setting allows you to change the style of the arrows in trees such as the Project Tree or <del>Settings Tree</del> (TODO).</p>
@@ -437,86 +595,20 @@ the Project View) of the current theme.</p>
 <p>You can also switch styles in the <code class="language-plaintext highlighter-rouge">Actions Panel</code>.</p>
 
 <hr />
-<h3 id="file-icons">File Icons</h3>
 
-<p>This setting changes the icons for project files according to specific file patterns. Usually it is based off the
-extension of the file (*.js, *.scss, *.php) but it also identifies specific commonly used patterns and replace them with
-the relevant icon, such as:</p>
-<ul>
-  <li>package.json</li>
-  <li>build.gradle</li>
-  <li>README.md</li>
-  <li>composer.json</li>
-  <li>etc…</li>
-</ul>
+<h3 id="custom-accent-color">Custom Accent Color</h3>
 
-<p>You can find more information at the <a href="/docs/reference/file-icons">File Icons Reference</a>.</p>
+<p>This option will let you override the <em>Accent Color</em> that is set for some icons, such as the <em>Checkboxes</em>.</p>
 
-<p>From version 2.9.0 it has been completely separated from the <em>Material UI Icons</em> setting, meaning that you can set File
-Icons without activating the UI Icons at all.</p>
+<p class="card-panel warn"><strong>Note</strong>: This custom color will be overriden by the Accent Color set by the <em>Material Theme UI</em> plugin.</p>
 
 <hr />
-<h3 id="folder-decorators">Folder Decorators</h3>
 
-<p>Assign specific folder icons to folders with commonly used names to add yet more visual grepping than with file icons.
-For instance, <code class="language-plaintext highlighter-rouge">tmp</code>, <code class="language-plaintext highlighter-rouge">logs</code>, <code class="language-plaintext highlighter-rouge">src</code>, <code class="language-plaintext highlighter-rouge">lib</code> or <code class="language-plaintext highlighter-rouge">test</code> are folders found within most projects.</p>
+<h3 id="custom-folder-color">Custom Folder Color</h3>
 
-<figure class="card figure">
-  <a href="/img//screens/decoFolders.png" target="_blank" class="card-image">
-    <img src="/img//screens/decoFolders.png" alt="Decorated Folders" />
-  </a>
-  <div class="card-content">
-    <figcaption class="card-title">
-      Decorated Folders
-    </figcaption>
-  </div>
-</figure>
+<p>This option will let you override the <em>Folder Color</em> with the color of your choice.</p>
 
-<p>Note that excluded/resource root/test root/package folders will not be decorated.</p>
-
-<p class="card-panel warn"><strong>Important note</strong>: Because of the way it is implemented, this feature is not available in <strong>Rider</strong>.</p>
-
-<hr />
-<h3 id="psi-icons">PSI Icons</h3>
-
-<p>From version 3.4.0 you can also replace the PSI icons (e.g. Class, Interface, Enums, functions and so on) with Material
-icons.</p>
-
-<figure class="card figure">
-  <a href="/img//screens/psiIcons.png" target="_blank" class="card-image">
-    <img src="/img//screens/psiIcons.png" alt="PSI Icons" />
-  </a>
-  <div class="card-content">
-    <figcaption class="card-title">
-      PSI Icons
-    </figcaption>
-  </div>
-</figure>
-
-<p>The Structure Panel icons are also changed:</p>
-
-<figure class="card figure">
-  <a href="/img//screens/psiStructure.png" target="_blank" class="card-image">
-    <img src="/img//screens/psiStructure.png" alt="PSI Icons" />
-  </a>
-  <div class="card-content">
-    <figcaption class="card-title">
-      PSI Icons
-    </figcaption>
-  </div>
-</figure>
-
-<p>This option makes it look like the Visual Studio Code <em>Outline</em> Panel, as well as Rider or Resharper structure panels.</p>
-
-<hr />
-<h3 id="notes">Notes</h3>
-
-<ul>
-  <li>Monochrome icons actually messes up some parts of the IDE, such as the SVG Image Viewer. If you need to use it, please
-disable the option temporarily.</li>
-  <li>Currently, there is no option to specify the color used in the Monochrome filter, but there’s a plan of implementing
-it!</li>
-</ul>
+<p>Obviously, it only affects the regular folders. Packages, Excluded Folders, Resource Folders or Decorated Folders will not be affected.</p>
 
 
       <div class="post-nav">
@@ -1069,21 +1161,6 @@ it!</li>
           
 
           <li class="link-section sidebar-section ">
-            <a href="/docs/development/installation"
-               class="nav-link sidebar-list-item"
-               data-slug="installation">
-              Installation
-            </a>
-
-            
-          </li>
-          
-          
-          
-
-          
-
-          <li class="link-section sidebar-section ">
             <a href="/docs/development/external-themes"
                class="nav-link sidebar-list-item"
                data-slug="external-themes">
@@ -1324,14 +1401,18 @@ it!</li>
 <ul>
   <li><a href="#atom-material-icons-plugin">Atom Material Icons plugin</a>
     <ul>
-      <li><a href="#ui-icons">UI Icons</a></li>
-      <li><a href="#hide-file-icons">Hide File Icons</a></li>
-      <li><a href="#monochrome-icons">Monochrome Icons</a></li>
-      <li><a href="#arrows-style">Arrows Style</a></li>
       <li><a href="#file-icons">File Icons</a></li>
-      <li><a href="#folder-decorators">Folder Decorators</a></li>
+      <li><a href="#directory-icons">Directory Icons</a></li>
+      <li><a href="#ui-icons">UI Icons</a></li>
       <li><a href="#psi-icons">PSI Icons</a></li>
-      <li><a href="#notes">Notes</a></li>
+      <li><a href="#hide-file-icons">Hide File Icons</a></li>
+      <li><a href="#hide-folder-icons">Hide Folder Icons</a></li>
+      <li><a href="#monochrome-icons">Monochrome Icons</a></li>
+      <li><a href="#hollow-folders">Hollow Folders</a></li>
+      <li><a href="#bigger-icons">Bigger Icons</a></li>
+      <li><a href="#arrows-style">Arrows Style</a></li>
+      <li><a href="#custom-accent-color">Custom Accent Color</a></li>
+      <li><a href="#custom-folder-color">Custom Folder Color</a></li>
     </ul>
   </li>
 </ul>
@@ -1370,7 +1451,7 @@ it!</li>
 
   <!-- Copyright -->
   <div class="content copyright">
-    <span>Material Theme v6.7.0 &copy; 2015-2021 </span>
+    <span>Material Theme v6.9.0 &copy; 2015-2021 </span>
     <span class="copyright-authors">
       <a href="https://twitter.com/mallowigi" target="_blank">Elior Boukhobza</a> &
       <a href="https://twitter.com/crmag" target="_blank">Chris Magnussen</a> </span>

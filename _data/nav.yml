@@ -22,6 +22,11 @@
   - title: Color Scheme Additions
   - title: Custom Themes
 
+- title: Icons
+  pages:
+  - title: Atom Material Icons Plugin
+  - title: Associations Editor
+
 - title: Reference
   pages:
   - title: Color Palette
