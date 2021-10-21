@@ -6,8 +6,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/custom-themes'
-  title: Custom Themes
+  url: '/docs/icons/associations-editor'
+  title: Icon Associations Editor
 next:
   url: '/docs/reference/file-icons'
   title: File Icons

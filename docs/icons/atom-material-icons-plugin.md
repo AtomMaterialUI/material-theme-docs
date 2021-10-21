@@ -10,7 +10,7 @@ previous:
   url: '/docs/configuration/custom-themes'
   title: Custom Themes
 next:
-  url: '/docs/atom/associations-editor'
+  url: '/docs/icons/associations-editor'
   title: Icon Associations Editor
 
 ---

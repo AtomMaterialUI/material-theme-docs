@@ -10,7 +10,7 @@ previous:
   url: '/docs/configuration/color-scheme-additions'
   title: Color Scheme Additions
 next:
-  url: '/docs/atom/atom-material-icons-plugin'
+  url: '/docs/icons/atom-material-icons-plugin'
   title: Atom Material Icons Plugin
 ---
 

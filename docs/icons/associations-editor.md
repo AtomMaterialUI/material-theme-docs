@@ -7,7 +7,7 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/atom/atom-material-icons-plugin'
+  url: '/docs/icons/atom-material-icons-plugin'
   title: Atom Material Icons Plugin
 next:
   url: '/docs/reference/color-palette'
