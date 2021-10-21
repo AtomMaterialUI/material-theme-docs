@@ -59,9 +59,7 @@ Finally, if the icon does not fall in any of the categories, it will either:
 - Fallback to the original icon provided by JetBrains
 
 To see the full associations list, see
-[Associations](/docs/reference/associations)
-
-## Reference
+[Associations](/docs/reference/associations) and [Folder Associations](/docs/reference/folder-associations)
 
 
 ## Customization

@@ -17,8 +17,7 @@ next:
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-These features are additional extras to the plugin, not related to the themes nor Material Design but simply nice addons
-for the IDE.
+These features are additional extras to the plugin, not related to the themes nor Material Design but simply nice addons for the IDE.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -90,31 +89,6 @@ Take a look at the page [Language Additions](/docs/configuration/color-scheme-ad
 ### Show What's New page on each update
 
 This setting allows you to toggle whether the [What's New](/docs/what-s-new.md) page would show up on each update.
-
------
-
-### Hollow Folders
-
-**Note:**: These features have all been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
-{:class='card-title warn'}
-
-This feature is adding decorations to the Project View to mimic the original Material Sublime Theme decorations.
-
-----
-
-### Open and closed directories
-
-When this option is on, files that are _opened_ in the editor and that are _edited_ will have their containing
-directories have a __hollow directory icon__ (or outline directory) instead of the original icon.
-
-{% include figure.html content="/screens/folderDecorators.png" caption="Opened folder decorators" %}
-
-**Note**: This feature requires *Material Icons* feature to work.
-
-**Note 2**: If the **Folder decorators** option is set, the icon will match the decorator, but outlined.
-
-**Note:**: This feature has been moved to the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) since version 5.0.
-{:class='card-title warn'}
 
 ----
 ### Theme in Status Bar

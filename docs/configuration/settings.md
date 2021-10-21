@@ -14,8 +14,7 @@ next:
   title: Color Schemes
 ---
 
-The Material Theme plugin comes with a bunch of features tailored for an optimal experience. However, it is also highly
-configurable to allow every one to customize it to their hearts content.
+The Material Theme plugin comes with a bunch of features tailored for an optimal experience. However, it is also highly configurable to allow every one to customize it to their hearts content.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -152,26 +151,9 @@ Quick summary of all settings:
 - *Compact Dropdown Lists*: Reduce the size of the dropdowns
 - *Compact Menus*: Reduce the size of the menus
 
-> **[Icons Settings](/docs/configuration/icons-settings)**:
-> - *Material UI Icons*: Enable/Disable the Material UI icons
-> - *Hide Icons*: Hide file icons (depends on the Material Icons option)
-> - *Monochrome Icons*: Filter the IDE icons with a shade of the current theme's primary color
-> - *File Icons*: Enable/Disable the Custom File Icons
-> - *Folder decorators*: Decorate special folders with custom icons.
-> - *PSI Icons*: Replace PSI Icons (class, interface, etc.)
-
-**NOTE**: Since 5.0, The Icons Settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
-{:class='card-panel warn'}
-
 **[Project View Settings](/docs/configuration/project-view-settings)**:
 - *Custom Sidebar Height* ![premium](/img/icons/premium.png): Set a custom line height in Project View (min: 18, max: 30)
 - *Custom Tree Indent* ![premium](/img/icons/premium.png): Fine tune indent of Project View items (both left and right indent)
-> - *Arrows Style*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** - Change the style of the arrows in trees. Choices:
->   - *Material*: Chevron arrows
->   - *Darcula*: Triangle arrows
->   - *Plus-Minus*: Plus and Minus symbols
->   - *Arrows*: Regular arrows
->   - *None*: Hide the arrows
 - *Selected Indicator Style* ![premium](/img/icons/premium.png): Change the style of the indicator of the selected item in trees
   - *Border*: Add a small border to the left
   - *Dot*: Add a dot on the selected item
@@ -203,8 +185,6 @@ Quick summary of all settings:
 - *Customize Text* ![premium](/img/icons/premium.png): Customize the text displayed
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
-> - *Hollow Folders*: **(This setting has been moved to the Atom Material Icons plugin since 5.0)** Enable/Disable the Hollow Folders in Project View.
-~~- *Themed Title Bar*: Colorize the title bar of the whole OS with the current theme's background color (Mac-Windows only)~~ (integrated into the main product since 2021.2)
 - *Colored Open Directories* ![premium](/img/icons/premium.png): Colorize open directories with the accent color
 - *Language Additions* ![premium](/img/icons/premium.png): Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
   - *Enforce Highlighting*: Enforce highlighting of keywords by making them appear as "Weak Warnings"
@@ -250,8 +230,6 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
 <component>
   <!-- Accent color -->
   <option name="accentColor" value="E91E63" />
-  <!-- Arrows style (moved to Atom Icons Plugin) -->
-  <!-- <option name="arrowsStyle" value="Material" /> -->
   <!-- Accent scrollbars -->
   <option name="accentScrollbars" value="true" />
   <!-- Accent Mode -->
@@ -296,8 +274,6 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="isContrastMode" value="false" />
   <!-- Custom tree indent enabled -->
   <option name="isCustomTreeIndentEnabled" value="false" />
-  <!-- Decorated folders enabled (moved to Atom Icons Plugin)-->
-  <!-- <option name="isDecoratedFolders" value="true" /> -->
   <!-- High Contrast -->
   <option name="isHighContrast" value="true" />
    <!-- Inverted Selection Color -->
