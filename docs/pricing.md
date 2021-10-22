@@ -61,9 +61,12 @@ Although there are no tiers, there are many **discount community programs**:
 | JetBrains User Groups                          | <span style="color:green">Free</span> |
 | **Backers and Contributors**                   | <span style="color:green">Free</span> |
 
+To apply, simply follow the instructions given on this link: <https://blog.jetbrains.com/platform/2021/06/community-offers-on-marketplace/>.
+
+
 ----
 
-People that have contributed more than $1.00 in the past (before 12/02/21), be it from PayPal or OpenCollective,
+Besides, people that have contributed more than $1.00 in the past (before February 12, 2021), be it from PayPal or OpenCollective,
 can be eligible to a **free lifetime license**!
 
 Don't hesitate to contact me with your contact information at <elior@material-theme.com> to apply.
