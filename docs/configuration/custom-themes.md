@@ -68,15 +68,24 @@ From this point, you can easily distribute it between your IDEs/computers/peers,
 
 Here's a non-exhaustive list of all the settings and what components they are affecting. Please note that this is a non-fixed list, as in every version new components are added, some components are updated, deleted etc…
 
+**New**: Since version 6.10.0, you can add support for the Material Theme plugin in your native themes' json using the **properties** specified in the following section.
+{:class='card-panel warn'}
+
 ##### Background color
+
+**Property**: `material.background`
 
 Affects the main _background_ color of the IDE's panels, popups, controls…
 
 ##### Foreground color
 
+**Property**: `material.foreground`
+
 Affects the main _foreground_ color of the IDE's panels, popups, controls…
 
 ##### Secondary Text color
+
+**Property**: `material.primaryColor`
 
 A secondary color used in some controls:
 - Buttons Text
@@ -89,6 +98,8 @@ A secondary color used in some controls:
 
 ##### Selection Background Color
 
+**Property**: `material.selectionBackground`
+
 The background color of selections in controls:
 - Menu and Menu Items selected items
 - Selected List Items and Table Cells
@@ -98,6 +109,8 @@ The background color of selections in controls:
 - Selected text in documentation panels
 
 ##### Selection Foreground Color
+
+**Property**: `material.selectionForeground`
 
 The foreground color of selections in controls:
 - Menu and Menu Items selected items
@@ -112,6 +125,8 @@ The foreground color of selections in controls:
 
 ##### Button Colors
 
+**Property**: `material.button`
+
 Buttons colors and others:
 - Buttons background color
 - Merge commits text
@@ -119,6 +134,8 @@ Buttons colors and others:
 - More Buttons
 
 ##### Secondary background color
+
+**Property**: `material.second`
 
 A secondary color used to contrast with the background color.
 - Lists background color
@@ -131,6 +148,9 @@ A secondary color used to contrast with the background color.
 
 ##### Disabled color
 
+**Property**: `material.disabled`
+
+
 A color used principally inside disabled items:
 - Disabled menu and menu items' text
 - Disabled text fields and password fields
@@ -140,6 +160,9 @@ A color used principally inside disabled items:
 - Disabled items in Parameter info
 
 ##### Contrast color
+
+**Property**: `material.contrast`
+
 
 The color used when contrast mode is enabled:
 - Contrast mode affected controls (Tree, Text fields, Tabs…)
@@ -153,6 +176,8 @@ The color used when contrast mode is enabled:
 
 ##### Selected Text color
 
+**Property**: `material.active`
+
 Another color to use for selected texts/active component colors:
 - Selected cells in tables
 - Selected text in text fields and documentation panes
@@ -162,6 +187,8 @@ Another color to use for selected texts/active component colors:
 - Active Tab in Tabbed Panes
 
 ##### Border Color
+
+**Property**: `material.border`
 
 Color that affect the following components:
 - Menu bar border
@@ -176,6 +203,8 @@ Color that affect the following components:
 
 ##### Highlight color
 
+**Property**: `material.highlight`
+
 Color that affect the following components:
 - Text fields and dropdowns border
 - Checkboxes' sign in disabled checkboxes
@@ -187,17 +216,27 @@ Color that affect the following components:
 
 ##### Tree Selection color
 
+**Property**: `material.tree`
+
 Specific color used for selected items in trees and autocompletion lists.
 
 ##### Notifications color
+
+**Property**: `material.notifications`
+
 
 Color used in the notification popups.
 
 ##### Accent Color
 
+**Property**: `material.accent`
+
+
 This is the color that will replace the _Accent Color_ if the [Override Accent color from theme](/docs/configuration/main-settings#override-accent-color) setting is set.
 
 ##### Excluded Files Color
+
+**Property**: `material.excluded`
 
 This is the color that is going to be added in the [File Colors](/docs/configuration/excluded-files-colors#excluded-files-theme-color), named "_Theme_".
 

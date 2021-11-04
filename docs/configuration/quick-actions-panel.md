@@ -46,7 +46,7 @@ The first subpanel is a switcher to rapidly switch between the themes. There you
 
 {% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
 
-**Note**: Custom Themes are only available for premium users.
+**Note**: Custom Themes and some themes are only available for premium users.
 {:class='card-panel warn'}
 
 -----
@@ -65,6 +65,7 @@ This panel allows you to quickly toggle some of the most used Panel Settings:
 - _Toggle Compact Menus_
 - _Toggle Compact Status Bar_
 - _Toggle Uppercase Tabs_
+- _Toggle Custom Tab Font_
 - _Indicator Styles_
 - _Tab Highlight Position_
 
@@ -93,6 +94,7 @@ Some features are only available for premium users.
 {:class='card-panel warn'}
 
 This panel as well allows you to rapidly toggle the most used Component/Features Settings:
+- _Toggle Custom Tree Fonts_
 - _Toggle Material Fonts_
 - _Toggle Colored Directories_
 - _Toggle Language Additions_
@@ -106,12 +108,16 @@ In addition, other one-time actions are available in this panel, which are:
 - _Material Theme Wizard_: Relaunch the Material Theme Wizard
 - _Atom Material Icons_: Open the **Atom Material Icons Plugin** page for installation.
 - _Show What's New_: Display the **What's new** page.
+- _Reset Color Scheme_: Reset the current color scheme, removing all user (and non-user) changes.
+
+---
 - _Activate License_: **Use this action to activate your Premium License.**
 
 {% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
 
 {% include figure.html content="/screens/license.png" caption="License" %}
 
+---
 - _Remove Material Wallpaper_: Remove the [IDE Background Image](https://www.jetbrains.com/help/idea/setting-background-image.html).
 
 {% include figure.html content="/screens/customWallpaper.png" caption="Material Wallpaper" %}

@@ -7,7 +7,7 @@ toc: true
 comments: true
 
 next:
-  url: '/docs/development/analytics'
+  url: '/docs/analytics'
   title: Analytics
 ---
 
@@ -15,6 +15,11 @@ In this section you will learn how to create your own external themes and distri
 {:class='title'}
 
 {% include carbonads.html %}
+
+**Important note**: Since JetBrains had given the ability for users to create their own themes, and since the plugin supports such themes, the _External Themes_ feature has been deprecated since version 6.10.0, giving more room for adding new features and fixing existing bugs.
+{:class='card-panel warn'}
+
+---
 
 ## External Themes
 

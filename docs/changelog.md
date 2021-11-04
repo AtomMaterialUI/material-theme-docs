@@ -5,8 +5,8 @@ group: changelog
 comments: true
 
 previous:
-  url: '/docs/acknowledgements'
-  title: Acknowledgements
+  url: '/docs/analytics'
+  title: Analytics
 
 next:
   url: '/docs/support-us'

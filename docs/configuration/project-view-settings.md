@@ -98,14 +98,21 @@ You can also customize the thickness of the said indicator with a value between 
 You can also switch styles in the `Actions Panel`.
 
 ----
-### Font Size
+### Custom Font
 
 These feature is only available for premium users.
 {:class='card-panel warn'}
 
-Here you can fine tune the font size of the Project View Panes without changing the Font Size of the whole IDE.
+Since version 6.10.0 you will be able to customize the Project Tree's _font family_ and _size_.
 
-Note that you need to restart the IDE for it to be applied.
+{% include figure.html content="/screens/customTreeFont.png" caption="Tree Font Settings" %}
+
+{% include figure.html content="/screens/treeFont.png" caption="Custom Tree Font" %}
+
+It also affects other trees as well, such as the _Find Usages_, _Settings_… (but not all).
+
+**Note**: While changing the font affects most trees right away, for the Project View specifically you will need to close and reopen the Project to see the changes.
+{:class='card-panel warn'}
 
 ----
 ### Notes
