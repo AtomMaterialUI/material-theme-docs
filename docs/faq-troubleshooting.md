@@ -5,6 +5,10 @@ group: troubleshooting
 toc: true
 comments: true
 
+previous:
+  url: '/docs/analytics'
+  title: Analytics
+
 next:
   url: '/docs/other-products'
   title: Other Products

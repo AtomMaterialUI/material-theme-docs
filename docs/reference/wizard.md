@@ -6,8 +6,12 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/reference/file-icons'
-  title: File Icons
+  url: '/docs/reference/components'
+  title: Components
+
+next:
+  url: '/docs/analytics'
+  title: Analytics
 
 ---
 

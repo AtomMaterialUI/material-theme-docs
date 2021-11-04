@@ -128,9 +128,13 @@ A new setting has been added in 3.4.0 which allows tweak the position of the tab
 {% include figure.html content="/screens/positions/none.png" caption="None" %}
 
 ----
-## Tab Font Size
+## Custom Tab Font
 
-Last but not least, the tab size option allows you to override the Tab Font Size. Please note that this overrides the global IDE font size and requires a restart.
+Since version 6.10.0 you will now be able to customize both __font family__ and __size__ of the Editor tabs.
+
+{% include figure.html content="/screens/customTabFont.png" caption="Tab Font Settings" %}
+
+{% include figure.html content="/screens/tabFont.png" caption="Tab Font" %}
 
 {% include figure.html content="/screens/tabFontSize.png" caption="Tab Font Size" %}
 

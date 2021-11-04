@@ -6,12 +6,12 @@ group: development
 comments: true
 
 previous:
-  url: '/docs/reference/external-themes'
-  title: External Themes
+  url: '/docs/reference/wizard'
+  title: Wizard
 
 next:
-  url: '/docs/changelog'
-  title: Changelog
+  url: '/docs/faq-troubleshooting'
+  title: FAQ/Troubleshooting
 ---
 
 {% include carbonads.html %}

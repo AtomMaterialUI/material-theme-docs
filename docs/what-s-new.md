@@ -6,6 +6,117 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.10.0
+
+This release brings a lot of new features, mostly related to font customization.
+{:class='title'}
+
+## Features
+
+### Tabs Custom Font
+
+Continuing from the *Tab Font Size* feature, you will now be able to customize the font displayed in the editor tabs.
+
+{% include figure.html content="/screens/customTabFont.png" caption="Tab Font Settings" %}
+
+{% include figure.html content="/screens/tabFont.png" caption="Custom Tab Font" %}
+
+This font will be different from the one used for the whole IDE.
+
+You can find the setting in the [_Tab Settings_](/docs/configuration/tab-settings.md#custom-tab-font) panel.
+
+
+### Tree Custom Font
+
+Just like the tabs, you will now be able to customize the Trees' Font Family as well.
+
+{% include figure.html content="/screens/customTreeFont.png" caption="Tree Font Settings" %}
+
+{% include figure.html content="/screens/treeFont.png" caption="Custom Tree Font" %}
+
+Just like the _Tree Font Size_, you will need to close and reopen the project (or restart) to see the changes.
+
+You can find the setting in the [_Project View Settings_](/docs/configuration/project-view-settings.md#custom-font) panel.
+
+
+### Use Editor Default Font
+
+Another long awaited feature is the ability to override the current scheme's Editor Font with the default font.
+
+While this can be done via the [Color Scheme settings](https://www.jetbrains.com/help/idea/configuring-colors-and-fonts.html#fonts), it can become a bit
+daunting to have to do this manually for every color scheme. Moreso when switching between color schemes many times a day!
+
+This setting provides a way to undo this by turning off the color schemes' defined font and use the Default Font instead.
+
+{% include figure.html content="/screens/useEditorDefaultFont.png" caption="Use Editor Default Font" %}
+
+**Note**: Turning on this setting will immediately cause the current color scheme to be edited, as if you changed the color scheme font with the default one.
+Even if you turn it back on, the original color scheme font will not be restored, you will need to [restore the color scheme](https://www.jetbrains.com/help/idea/settings-code-style.html#scheme) to do so.
+{:class='card-panel warn'}
+
+
+### Reset Color Scheme Action
+
+A new action has been added to the [Quick Actions Panel](/docs/configuration/quick-actions-panel.md), giving you the ability to [restore the color scheme](https://www.jetbrains.com/help/idea/settings-code-style.html#scheme) easily, rather than going to the settings.
+
+You can find the action in the [Material Theme Features](/docs/configuration/quick-actions-panel.md#material-theme-features) menu.
+
+### Support for DataSpell
+
+Last but not least, JetBrains' DataSpell support has finally been added to the color schemes. This fixes the issue: <https://github.com/mallowigi/material-theme-issues/issues/25>.
+
+You will need to reset your color schemes to get this change
+
+----
+
+## Other
+
+### Deprecation of the External Themes
+
+After a long consideration, starting this version, the [External Themes](/docs/development/external-themes.md) feature has been deprecated, and be no longer working.
+
+For that, I'd like to give a proper eulogy to the feature, how it started, and what are the plans for the future.
+
+In the beginning, there were no way of having themes in the IDE, aside from IntelliJ Light and Darcula. Then this plugin came out and with it, a few themes were available out of the box. Soon enough, other themes joined the fray, as well as the very popular **Custom Theme** feature, letting people define their own themes from a simple easy to use UI.
+
+This was great and all, but unfortunately these custom themes weren't exportable, except from the xml config file. People started exporting their custom theme xml file for people to see, and other people had to import these colors one by one manually. Wouldn't it be better if people were allowed to install such custom themes via the plugin marketplace?
+
+There was the main idea of the External Themes feature. By exposing an _Extension Point_, plugin developers would now be able to add their own custom theme xml file, the same way they were able to add their color schemes or code styles. The plugin would then be able to import such custom themes and add them to the list of themes on the fly. An example plugin, the famous **Dracula Theme** was used to showcase that feature, followed by the **Night Owl Theme** soon after.
+
+However, the adoption of such a feature was very low. Even though a tutorial was available on the docs, people were mostly unaware of it. Moreover, in 2019 JetBrains finally released an API to allow people to create theme using JSON, with much more flexibility in terms of customization than the Material Theme External Themes.
+
+As a result, people starting making themes using JetBrains' API rather than the Material Theme one, and rightfully so. At the start, these themes were incompatible with the Material Theme API, but soon enough the plugin started supporting them as well, to the detriment of the external themes. Even people that have written external themes have long removed that support in favor of the native themes. In the meantime, bugs regarding the external themes were piling up, and such issues were affected to the back of the backlog. Everytime we tried fixing those issues, we were met with more issues, since they are very incompatible with the native themes support.
+
+So it was time to pull the plug, and let this feature sink in. From version 6.10.0, the extension point will be **unavailable**, so themes that were still using that extension point will need to remove the extension. Hopefully, most of the themes in the market have done that long ago, but otherwise they will need to update a fix removing that extension point.
+
+**So what happens for external themes then?**
+
+Rather than investing on the external themes, resources will be shifted to the native themes support, and their integration with the Material Theme. Currently, the plugin uses specific properties of the native themes to find out what color to use in the Material Theme API (i.e., which color to use for the _excluded color_, the _accent color_, etc.). Starting this version, themes can also define `material` based properties that the plugin will parse to figure out which color to assign to which resource.
+
+These colors are the following:
+- `material.background`
+- `material.foreground`
+- `material.primaryColor`
+- `material.selectionBackground`
+- `material.selectionForeground`
+- `material.button`
+- `material.second`
+- `material.disabled`
+- `material.contrast`
+- `material.active`
+- `material.border`
+- `material.highlight`
+- `material.tree`
+- `material.notifications`
+- `material.accent`
+- `material.excluded`
+
+More information on the [Custom Themes](/docs/configuration/custom-themes.md#colors-explanation)
+
+In the future, a new settings page will be available to allow users to customize such properties from the UI directly. Stay tuned!
+
+---
+
 # What's new in Material Theme UI v6.9.0
 
 ### Features
