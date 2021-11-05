@@ -15,8 +15,6 @@ N
 +docs/configuration/other-tweaks-settings.md,9/6/96d2b0275de31256e4160d926fdf10cec94ebfe0
 V
 &docs/configuration/compact-settings.md,3/6/36744f43d4421ebd546a97aa990a5ba9006fa1f6
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 B
 docs/contact-us.md,2/8/288db4ab2ee7c0707f0ccd88868cb881392c808b
 Q
