@@ -55,11 +55,45 @@ H
 docs/reference/wizard.md,e/a/ea4eef3f6d75a4e9b0baef888e2369b99f9ef107
 R
 "docs/configuration/tab-settings.md,a/c/ac2f0caad123f84e95721999adc1961d3f681575
-Y
-)docs/configuration/quick-actions-panel.md,9/6/96d55964c56c02377c8186c7592a2af92fdd8a1d
 S
 #docs/development/external-themes.md,d/f/dfb9aade7ca0819cf212f5d794ff91561ccc8f2d
 =
 _data/nav.yml,6/d/6d66ba61d4419bcd008c979f82af299c8fe20b11
 W
 'docs/configuration/features-settings.md,1/f/1f57967a014444e0cc042a41c2260f9c8d0c77d4
+S
+#docs/configuration/custom-themes.md,1/d/1d2c46c2f58458f40ef70ea5019381983e3c5e72
+=
+renovate.json,d/c/dc6f0bbca55a3ed08e5a507be2cc18dcdc034386
+?
+browser-sync.js,f/6/f6a0edbd37d8a149924922acda6f944418223b91
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+<
+gruntfile.js,4/4/445a3ddd305fa81b021a24dd542e47daea1514f9
+9
+	js/app.js,6/a/6a8c4f5b402710f76cce388c383349b4b0e4319c
+8
+.babelrc,b/c/bcac7464521b8c19a2372c739f6dc9e9ab7dfc80
+C
+gruntfile.themes.js,e/8/e8d06df3f06d38ae5c722af598a138e5aeeeea50
+7
+LICENCE,6/e/6e0ad2b047414107e8ce2f294fa40d216b5b68f9
+Q
+!docs/icons/associations-editor.md,3/e/3eb00da76fb2280ea11b274e42c1fe74369f6814
+O
+docs/reference/color-palette.md,b/6/b6163abf45d0015efd5334475e007f461ed68014
+A
+docs/analytics.md,c/4/c49c8058f0e514471f40799afe5dddeca9e302b3
+A
+docs/changelog.md,b/c/bcfdc22744cc9eb77943b9b58aed3b1a36720c35
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+>
+dependabot.yml,5/f/5fcb6ebf1543c14aebe8815326ad26b6f27487f2
+K
+docs/faq-troubleshooting.md,9/9/99535d79c523c4a76a9b192d82c90ab4330dd33b
+I
+sass/toolbox/_colors.scss,4/3/43b5b95203bde101e9fb1cc675002852ece4b8fa
+L
+sass/toolbox/_functions.scss,8/9/89778a523f681f171fa1d65f0cabd037eced4e0a
