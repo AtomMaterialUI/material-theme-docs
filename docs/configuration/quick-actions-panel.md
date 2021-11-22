@@ -109,6 +109,7 @@ In addition, other one-time actions are available in this panel, which are:
 - _Atom Material Icons_: Open the **Atom Material Icons Plugin** page for installation.
 - _Show What's New_: Display the **What's new** page.
 - _Reset Color Scheme_: Reset the current color scheme, removing all user (and non-user) changes.
+- _Clean Overlays_: Manually remove any lingering overlays
 
 ---
 - _Activate License_: **Use this action to activate your Premium License.**

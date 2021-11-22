@@ -6,6 +6,21 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.11.1
+
+## Features
+
+- Add new action to manually remove lingering overlays in the rare case it happens
+- Added more notifications when triggering actions 
+
+## Fixes
+
+- Fix Plugin not loading Premium features at start
+- Fix Large Tool Windows not working in latest EAP/RC
+- Fix Material Oceanic scrollbars' colors (you need to reset the color scheme) ([#34](https://github.com/mallowigi/material-theme-issues/issues/34))
+- Fix Color Scheme Font resetted to Default Font even when the checkbox is unchecked ([#37](https://github.com/mallowigi/material-theme-issues/issues/37))
+- Fix Fatal Error when using Darcula Theme ([#33](https://github.com/mallowigi/material-theme-issues/issues/33))
+
 # What's new in Material Theme UI v6.10.0
 
 This release brings a lot of new features, mostly related to font customization.
