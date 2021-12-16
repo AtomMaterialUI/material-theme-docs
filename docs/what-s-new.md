@@ -6,14 +6,76 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.12.0
+
+This version is less about new features but more about project consolidation, bug squashing, code deprecation, documentation and migration to Kotlin. It's part of a long process to make the project more stable and maintainable.
+{:class='title'}
+
+Here are a few new features though:
+
+## Automatically Reset Color Scheme
+
+One of the main complaints of the plugin is that it constantly asks the user to **reset their color schemes**, but in actuality most users have no idea how to nor do want to do so. 
+Even though a lot of documentation is available regarding the subject, since the plugin relies a lot on the color schemes, relying on user interaction means that there is a high chance they are going to miss new updates. 
+
+Therefore, from version 6.12.0 users can now decide to let the plugin **automatically reset the color scheme** during theme activation, i.e., at startup and whenever the theme is changed.
+
+{% include figure.html content="/screens/autoResetSettings.png" caption="Auto Reset Color Scheme" %}
+
+This setting only affects the bundled themes, excluding the *Custom theme*.
+
+**Note**: This feature is **opt-in**, meaning that it is **disabled by default**, to prevent accidental erasure of user custom modifications. Make sure to backup your custom changes before enabling the feature!
+{:class='card-panel warn'}
+
+This feature is available in the free plan.
+{:class='card-panel'}
+
+## Python Additions
+
+Another small addition to the list of [Language Additions](configuration/color-scheme-additions.md): **Python Additions**
+
+PyCharm users and Python plugin users are now able to customize specific keywords of the Python language:
+
+- `if`, `elif`, `else`, `for`, `while`, `do`
+- `import`, `from`
+- `class`
+- `def`
+- `as`
+- `return`, `yield`
+- `try`, `except`, `finally`
+- `with`
+- `raise`
+- `print`
+- `True`, `False` and `None`
+
+## Many bug fixes, improvements and deprecations
+
+- Fix Premium features not being loaded at start
+- Fix Custom Theme not being applied at start
+- Add initial support for Material Theme internal plugins
+- Remove Custom Theme opacity support for many colors except *buttons*, *tree highlight* and *notifications*
+- Fix issue with Buttons keeping the color of the previous theme when switching themes.
+- Fix Red color being too dark in dark themes (and too bright in light themes)
+- Support for new color keys for the whole UI
+- Fix loading in JetBrains Gateway
+- Support for new color keys for the diagrams
+- Fix Load and Save Custom Themes
+- Fix *Colored Open Folders* feature
+- Converted 70% of the plugin in Kotlin, and fixed all detekt issues
+
+
+This is a huge refactoring release, so there might be some regressions here and there. Please report any issues you find, thanks!
+
+----
+
 # What's new in Material Theme UI v6.11.1
 
-## Features
+### Features
 
 - Add new action to manually remove lingering overlays in the rare case it happens
 - Added more notifications when triggering actions 
 
-## Fixes
+### Fixes
 
 - Fix Plugin not loading Premium features at start
 - Fix Large Tool Windows not working in latest EAP/RC
@@ -21,12 +83,13 @@ toc: true
 - Fix Color Scheme Font resetted to Default Font even when the checkbox is unchecked ([#37](https://github.com/mallowigi/material-theme-issues/issues/37))
 - Fix Fatal Error when using Darcula Theme ([#33](https://github.com/mallowigi/material-theme-issues/issues/33))
 
+
+-----
+
 # What's new in Material Theme UI v6.10.0
 
 This release brings a lot of new features, mostly related to font customization.
 {:class='title'}
-
-## Features
 
 ### Tabs Custom Font
 
@@ -83,8 +146,6 @@ Last but not least, JetBrains' DataSpell support has finally been added to the c
 You will need to reset your color schemes to get this change
 
 ----
-
-## Other
 
 ### Deprecation of the External Themes
 
