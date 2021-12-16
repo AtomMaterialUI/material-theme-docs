@@ -40,8 +40,6 @@ Or, since version 2.4.0, from the Settings at `Settings → Appearance → Mater
 
 {% include figure.html content="/screens/switchSettings.png" caption="Switcher in Settings" %}
 
-**Note that this dropdown won't show the [External Themes](/docs/development/external-themes).**
-
 The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.other.size | plus: site.data.themes.other2.size }} themes:
 
 #### Material Themes
@@ -68,9 +66,9 @@ Besides the Material Themes, there are other prebundled themes made by the commu
 {% endfor %}
 </ul>
 
-#### External Themes
+#### External Themes (deprecated)
 
-This feature is only available for premium users.
+This feature is deprecated since version 6.10.0!
 {:class='card-panel warn'}
 
 The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, just like Color Schemes, Keymaps, Coding Styles and so on. To learn more about _External Themes_ or how to create your own plugin, head to the [External Themes section](/docs/development/external-themes).
@@ -142,8 +140,8 @@ Quick summary of all settings:
 - *Thickness* ![premium](/img/icons/premium.png): Set the active tab's indicator thickness (works also for the Project View selected row)
 - *Uppercase Tabs* ![premium](/img/icons/premium.png): Set the Editor Tabs in Uppercase
 - *Bold Active Tab* ![premium](/img/icons/premium.png): Make the Active Tab Bold
-- *Tab Position* ![premium](/img/icons/premium.png): Customize the position of the tab highlighter
-- *Font Size* ![premium](/img/icons/premium.png): Control the size of the Editor Tabs (requires restart)
+- *Tab Highlight Position* ![premium](/img/icons/premium.png): Customize the position of the tab highlighter
+- *Custom Tab Font* ![premium](/img/icons/premium.png): Control the font and size of the Editor Tabs
 
 **[Compact Settings](/docs/configuration/compact-settings)**:
 - *Compact Status Bar*: Reduce the height of the status bar (this is the default height)
@@ -152,7 +150,7 @@ Quick summary of all settings:
 - *Compact Menus*: Reduce the size of the menus
 
 **[Project View Settings](/docs/configuration/project-view-settings)**:
-- *Custom Sidebar Height* ![premium](/img/icons/premium.png): Set a custom line height in Project View (min: 18, max: 30)
+- *Custom Item Line Height* ![premium](/img/icons/premium.png): Set a custom line height in Project View (min: 18, max: 44)
 - *Custom Tree Indent* ![premium](/img/icons/premium.png): Fine tune indent of Project View items (both left and right indent)
 - *Selected Indicator Style* ![premium](/img/icons/premium.png): Change the style of the indicator of the selected item in trees
   - *Border*: Add a small border to the left
@@ -160,35 +158,64 @@ Quick summary of all settings:
   - *None*: Remove the indicator
 - *Thickness* ![premium](/img/icons/premium.png): Control the thickness of the indicator
 - *Custom Directories Style* ![premium](/img/icons/premium.png): Assign a specific style to directories. Can be configured from the *Custom File Colors* settings page.
-- *Font Size* ![premium](/img/icons/premium.png): Fine tune the font size of the project trees (requires restart)
+- *Custom Tree Font* ![premium](/img/icons/premium.png): Fine tune the font and size of the project trees (requires restart)
 
 **[Component Settings](/docs/configuration/component-settings)**:
 - *Uppercase buttons*: Set the buttons' texts to uppercase
 - *Outlined buttons* ![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart)
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart)
-- *Tab Shadows* ![premium](/img/icons/premium.png): Add a subtle shadow under the tabs
-- *Inverted Selection Color*: Switch the Autocomplete selected item color between the selection color and contrast color.
+- *Tabs Shadow* ![premium](/img/icons/premium.png): Add a subtle shadow under the tabs
+- *Inverted Completion Selection Color*: Switch the Autocomplete selected item color between the selection color and contrast color.
 
 **[Features Settings](/docs/configuration/features-settings)**:
 - *Material Fonts* ![premium](/img/icons/premium.png): Enable/Disable Material fonts (Roboto)
+- *Use Editor Default Font* ![premium](/img/icons/premium.png): Automatically update color schemes to use the default font of your choice
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors)
 - *Material Wallpapers* ![premium](/img/icons/premium.png): Add a custom wallpaper per theme for the empty frame window.
 - *Show Overlays*: Displays an overlay when modals are open.
 - *Accent Mode* ![premium](/img/icons/premium.png): Make components stand out by setting them in the accent color (buttons, tabs, selections…)
-- *Large Tool Windows*: Set the new Large Tool Windows Layout
+- *Large Tool Windows*: Set the new Large Tool Windows Layout (Experimental)
 
 **[Project Frame Settings](/docs/configuration/project-frame-settings)**:
 - *Project Frame Colors* ![premium](/img/icons/premium.png): Add a colored stripe on the top of each window for easier differentiation
 - *Show Project Name* ![premium](/img/icons/premium.png): Show or hide the project frame on the stripe
 - *Show Project Icon* ![premium](/img/icons/premium.png): Display the project's custom icon on the stripe
 - *Customize Text* ![premium](/img/icons/premium.png): Customize the text displayed
+  - You can use the keywords `{project}`, `{module}` and `{file}` to refer to the current project, module and/or file.
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
-- *Colored Open Directories* ![premium](/img/icons/premium.png): Colorize open directories with the accent color
 - *Language Additions* ![premium](/img/icons/premium.png): Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
   - *Enforce Highlighting*: Enforce highlighting of keywords by making them appear as "Weak Warnings"
+- *Colored Open Directories* ![premium](/img/icons/premium.png): Colorize open directories with the accent color
 - *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) on each update.
+- *Automatically reset Color Scheme*: Automatically reset the color scheme on theme activation (only for Material Themes/Color Schemes)
+
+----
+
+#### Project-Specific Settings
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
+These settings allow you to assign specific settings on a per-project basis:
+
+
+**[Tab Settings](/docs/configuration/tab-settings)**:
+- *Active Tab Highlight Color* ![premium](/img/icons/premium.png): Customize the active tab's indicator color
+- *Thickness* ![premium](/img/icons/premium.png): Set the active tab's indicator thickness (works also for the Project View selected row)
+- *Uppercase Tabs* ![premium](/img/icons/premium.png): Set the Editor Tabs in Uppercase
+- *Bold Active Tab* ![premium](/img/icons/premium.png): Make the Active Tab Bold
+- *Tab Highlight Position* ![premium](/img/icons/premium.png): Customize the position of the tab highlighter
+
+**[Project Frame Settings](/docs/configuration/project-frame-settings)**:
+- *Project Frame Colors* ![premium](/img/icons/premium.png): Add a colored stripe on the top of each window for easier differentiation
+- *Show Project Name* ![premium](/img/icons/premium.png): Show or hide the project frame on the stripe
+- *Show Project Icon* ![premium](/img/icons/premium.png): Display the project's custom icon on the stripe
+- *Customize Text* ![premium](/img/icons/premium.png): Customize the text displayed
+  - You can use the keywords `{project}`, `{module}` and `{file}` to refer to the current project, module and/or file.
+
+-----
 
 #### Settings shortcuts
 
@@ -228,6 +255,8 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
 
 ```xml
 <component>
+  <!-- Automatically reset color scheme -->
+  <option name="autoResetColorScheme" value="false" />
   <!-- Accent color -->
   <option name="accentColor" value="E91E63" />
   <!-- Accent scrollbars -->
@@ -336,6 +365,8 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="useProjectIcon" value="true" />
   <!-- Material fonts enabled -->
   <option name="useMaterialFont2" value="false" />
+  <!-- Use Editor Default fonts enabled -->
+  <option name="useDefaultFont" value="false" />
   <!-- Material wallpapers enabled -->
   <option name="useMaterialWallpapers" value="false" />
 </component>

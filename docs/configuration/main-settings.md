@@ -26,10 +26,14 @@ This dropdown will allow you to change the currently selected theme just like th
 
 {% include figure.html content="/screens/switchSettings.png" caption="Switch Theme in Settings" %}
 
-Note that
-[External Themes](/docs/development/external-themes) and [Native Themes](https://plugins.jetbrains.com/contest/intellij-themes/2019) won't show up in this list.
+Note that [Native Themes](https://plugins.jetbrains.com/contest/intellij-themes/2019) won't show up in this list.
+
+----
 
 ### Contrast Mode
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
 
 The contrast mode allows you to add more contrast between the IDE's panels and components for better visualization.
 
@@ -78,6 +82,9 @@ The High Contrast mode is setting the main background color and contrast color d
 
 ----
 ### Custom Accent Color
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
 
 This setting controls the [current accent color](/docs/configuration/accents) used throughout the app.
 

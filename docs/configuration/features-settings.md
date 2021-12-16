@@ -24,7 +24,27 @@ Here you can turn on and off specific features of the Material Theme for even fu
 
 ## Features
 
+### Material Fonts
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
+This setting switches the default font used in the editor with the usual font used in Material Design, [Roboto](https://fonts.google.com/specimen/Roboto).
+
+This setting changes the font you see in *Settings → Appearance and Behavior → Appearance*. When unchecked, it will restore the original default font, namely `Tahoma` in Windows, `SF_Text` in Mac and `Lucida Sans` in Linux (at the time of writing). When checked, it will replace it with `Roboto` (only if the font is already installed in the machine though).
+
+**Note**: This setting is requiring that **default fonts are not overriden**, meaning that the setting at `Appearance and Behavior → Appearance → Override default font` is unchecked, in which case it will use the font set there.
+{:class='card-panel'}
+
+**Note 2**: This setting will replace the font with Roboto only if that font is already installed in the machine. If not, you can download it here: <https://material.io/guidelines/resources/roboto-noto-fonts.html>
+{:class='card-panel'}
+
+----
+
 ### Use Editor Default Font
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 This setting will give you the ability to override the current scheme's Editor Font with the [default font](https://www.jetbrains.com/help/idea/configuring-colors-and-fonts.html).
 
@@ -43,21 +63,10 @@ This setting is available since version 6.10.0.
 
 ---
 
-### Material Fonts
-
-This setting switches the default font used in the editor with the usual font used in Material Design, [Roboto](https://fonts.google.com/specimen/Roboto).
-
-This setting changes the font you see in *Settings → Appearance and Behavior → Appearance*. When unchecked, it will restore the original default font, namely `Tahoma` in Windows, `SF_Text` in Mac and `Lucida Sans` in Linux (at the time of writing). When checked, it will replace it with `Roboto` (only if the font is already installed in the machine though).
-
-**Note**: This setting is requiring that **default fonts are not overriden**, meaning that the setting at `Appearance and Behavior → Appearance → Override default font` is unchecked, in which case it will use the font set there.
-{:class='card-panel'}
-
-**Note 2**: This setting will replace the font with Roboto only if that font is already installed in the machine. If not, you can download it here: <https://material.io/guidelines/resources/roboto-noto-fonts.html>
-{:class='card-panel'}
-
-----
-
 ### Material File Status Colors
+
+This feature is available for all users.
+{:class='card-panel warn'}
 
 This option enables Material File Status Colors, allowing customization of the file status colors from Color Schemes.
 
@@ -66,6 +75,9 @@ Check [Material File Status Colors](/docs/configuration/file-status-colors.md) f
 -----
 
 ### Material Wallpapers
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
 
 The Material Theme plugin now comes prebundled with a list of "wallpapers" that are displayed when there are no files open in the editor.
 

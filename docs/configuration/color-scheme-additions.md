@@ -126,6 +126,19 @@ The following keywords are customizable
 - `null`, `Unit`
 - `true`, `false`
 
+### Python (since 6.12)
+
+The following keywords are customizable:
+- `if`, `elif`, `else`, `while`, `for` and `do`
+- `def` and `class`
+- `with`
+- `import`, `from` and `as`
+- `try`, `except`, and `finally`
+- `return` and `yield`
+- `raise`
+- `True`, `False` and `None
+- `print`
+
 ----
 
 #### Enforce Highlighting

@@ -16,6 +16,76 @@ next:
 # Changelog
 ----
 
+
+# 6.12.0
+
+### Features
+
+- New Setting: **Automatically Reset Color Schemes**
+- New Language Addition: **Python**
+
+### Fixes
+
+- Fix Premium features not being loaded at start [#1850](https://github.com/ChrisRM/material-theme-jetbrains/issues/1850)
+- Fix Custom Theme not being applied at start [#41](https://github.com/mallowigi/material-theme-issues/issues/41)
+- Fix issue with Buttons keeping the color of the previous theme when switching themes. [#1848](https://github.com/ChrisRM/material-theme-jetbrains/issues/1848)
+- Fix _Enforce Highlighting_ Slider clipping [#43](https://github.com/mallowigi/material-theme-issues/issues/43)
+- Fix _Overlay_ staying on Magento New Module [#26](https://github.com/mallowigi/material-theme-issues/issues/26)
+- Fix _Language Additions_ being added in comments in JS/TS [#44](https://github.com/mallowigi/material-theme-issues/issues/44)
+- Fix _Custom Tree Font_ not being loaded at start [#45](https://github.com/mallowigi/material-theme-issues/issues/45)
+- Fix loading error in JetBrains Gateway [#38](https://github.com/mallowigi/material-theme-issues/issues/38)
+- Support for new color keys for the diagrams [#1847](https://github.com/ChrisRM/material-theme-jetbrains/issues/1847)
+- Fix UI Red color being too dark in dark themes (and too bright in light themes)
+- Support for new color keys for the whole UI
+- Remove Custom Theme opacity support for many colors except for *buttons*, *tree highlight* and *notifications*
+- Fix Load and Save Custom Themes
+- Fix *Colored Open Folders* not working
+
+### Other
+- Migration to Java 11 and to the latest Gradle Plugin Template
+- Rename _Custom Sidebar Height_ to _Custom Item Line Height_
+- Add documentation
+- Convert 70% of the project to Kotlin
+- Fix Detekt and Sonarlint issues for 80% of the project
+- Add initial support for Material Theme internal plugins
+
+# 6.11.0
+
+### Features
+
+- Add new action to manually remove lingering overlays in the rare case it happens
+- Added more notifications when triggering actions
+
+### Fixes
+
+- Fix Plugin not loading Premium features at start
+- Fix Large Tool Windows not working in latest EAP/RC
+- Fix Material Oceanic scrollbars' colors (you need to reset the color scheme) ([#34](https://github.com/mallowigi/material-theme-issues/issues/34))
+- Fix Color Scheme Font resetted to Default Font even when the checkbox is unchecked ([#37](https://github.com/mallowigi/material-theme-issues/issues/37))
+- Fix Fatal Error when using Darcula Theme ([#33](https://github.com/mallowigi/material-theme-issues/issues/33))
+
+
+# 6.10.0
+
+### Features
+- **Custom Tab Font**: Customize the tabs font
+- **Custom Tree Font**: Customize Project View and other trees' font
+- **Override Editor font with Default Font**: Automatically change the color schemes font to use the default font
+- Reset color scheme action
+- Support for DataSpell
+
+### Fixes
+- Fix weird key icon on Windows
+
+### Other
+- Add support for `material.` properties in JSON Themes
+- Deprecation of thee _External Themes_ feature
+
+# 6.9.1
+
+### Fixes
+- Fix the JGoodies issue in PHPStorm
+
 ## 6.9.0
 
 ### Features
