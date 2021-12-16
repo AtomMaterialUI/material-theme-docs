@@ -14,15 +14,72 @@ next:
   title: Quick Actions Panel
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
-These features are additional extras to the plugin, not related to the themes nor Material Design but simply nice addons for the IDE.
+These features are additional extras to the plugin, not related to the themes nor Material Design but simply nice addons to the IDE experience.
 {:class='title'}
 
 {% include carbonads.html %}
 
+-----
+
+### Language Additions
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
+This feature adds new highlighting capabilities to popular languages, making possible to highlight specific keywords or function names separately from the language color scheme.
+
+{% include language-additions.html %}
+
+Take a look at the page [Language Additions](/docs/configuration/color-scheme-additions.md) for more details.
+
+
 ----
+
+### Colored Open Directories
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
+When this feature is on, the directories that have files open in the editor will be colored with the accent color.
+
+{% include figure.html content="/screens/boldDirectories.png" caption="Open Colored Directories" %}
+
+----
+
+### Show What's New page on each update
+
+This feature is available for all users.
+{:class='card-panel warn'}
+
+This setting allows you to toggle whether the [What's New](/docs/what-s-new.md) page would show up on each update.
+
+-----
+
+### Automatically Reset Color Schemes
+
+This feature is available for all users.
+{:class='card-panel warn'}
+
+One of the main complaints of the plugin is that it constantly asks the user to **reset their color schemes**, but in actuality most users have no idea how to nor do want to do so.
+Even though a lot of documentation is available regarding the subject, since the plugin relies a lot on the color schemes, relying on user interaction means that there is a high chance they are going to miss new updates.
+
+Therefore, from version **6.12.0** users can now decide to let the plugin **automatically reset the color scheme** during theme activation, i.e., at startup and whenever the theme is changed.
+
+{% include figure.html content="/screens/autoResetSettings.png" caption="Auto Reset Color Scheme" %}
+
+This setting only affects the **bundled themes**, excluding the *Custom themes*.
+{:class='card-panel'}
+
+**Note**: This feature is **opt-in**, meaning that it is **disabled by default**, to prevent accidental erasure of user custom modifications. 
+Make sure to backup your custom changes before enabling the feature!
+{:class='card-panel warn'}
+
+
+
+---------
+
+## Deprecated features
+
 ### Themed Title Bar
 
 **Note**: This feature has been incorporated into the main product as of version 2021.2. As a result, it has been removed from the plugin.
@@ -72,25 +129,6 @@ If someone is interested on a way to do so, please send me a PM by email or Slac
 
 -----
 
-### Open Colored Directories
-
-When this feature is on, the directories that have files open in the editor will be colored with the accent color.
-
-{% include figure.html content="/screens/boldDirectories.png" caption="Open Colored Directories" %}
-
------
-
-### Language Additions
-
-Take a look at the page [Language Additions](/docs/configuration/color-scheme-additions.md) for more details.
-
-----
-
-### Show What's New page on each update
-
-This setting allows you to toggle whether the [What's New](/docs/what-s-new.md) page would show up on each update.
-
-----
 ### Theme in Status Bar
 
 This setting adds a "widget" to the status bar to indicate which theme you are currently on. You can also click on it to

@@ -21,9 +21,14 @@ This page controls the components used throughout the IDE, like buttons, scrollb
 
 ### Uppercase buttons
 
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
 This setting sets the text of the buttons to be uppercase, just like the Material Design buttons. This is optimal for a full-fledged Material Design Experience.
 
 {% include figure.html content="/screens/uppercaseButtons.png" caption="Uppercase Buttons" %}
+
+-----
 
 ### Outline buttons
 
@@ -60,6 +65,7 @@ Since 2019.1 the scrollbars enter into two categories:
 Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the _Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars.md#important-information).
 
 ---
+
 ### Tabs Shadow
 
 This feature is only available for premium users.
@@ -71,7 +77,7 @@ This option enables/disables the shadow under the tabs.
 
 ---
 
-### Inverted Selection Color
+### Inverted Completion Selection Color
 
 This feature is available in the free plan.
 {:class='card-panel warn'}

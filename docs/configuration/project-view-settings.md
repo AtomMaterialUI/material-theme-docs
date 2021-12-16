@@ -21,7 +21,7 @@ Customize the Project View's appearance: indent, items' height, font size and so
 {% include carbonads.html %}
 
 ----
-### Custom sidebar height
+### Custom Item Line Height
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
@@ -87,11 +87,11 @@ This setting allows you to customize the _Selected Tree Item Indicator_ (the lef
 
 These are the available styles:
 
-| Style  | Screenshot                                                                                                         |
-|:-------|:-------------------------------------------------------------------------------------------------------------------|
+| Style  | Screenshot                                         |
+|:-------|:---------------------------------------------------|
 | Border | <img src="/img/screens/selectedTreeIndicator.png"> |
 | Dot    | <img src="/img/screens/dotTreeIndicator.png">      |
-| None   | (no indicator)                                                                                                     |
+| None   | (no indicator)                                     |
 
 You can also customize the thickness of the said indicator with a value between `1` and `5`.
 

@@ -15,6 +15,9 @@ next:
 
 ---
 
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
 These settings control some components' display, mainly about their compactness.
 {:class='title'}
 
