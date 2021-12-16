@@ -50,6 +50,8 @@ PyCharm users and Python plugin users are now able to customize specific keyword
 
 ## Many bug fixes, improvements and deprecations
 
+- Migration to Java 11
+- Converted 70% of the plugin in Kotlin, and fixed all detekt issues
 - Fix Premium features not being loaded at start
 - Fix Custom Theme not being applied at start
 - Add initial support for Material Theme internal plugins
@@ -60,11 +62,11 @@ PyCharm users and Python plugin users are now able to customize specific keyword
 - Fix loading in JetBrains Gateway
 - Support for new color keys for the diagrams
 - Fix Load and Save Custom Themes
-- Fix *Colored Open Folders* feature
-- Converted 70% of the plugin in Kotlin, and fixed all detekt issues
+- Fix *Colored Open Folders* not working
 
 
 This is a huge refactoring release, so there might be some regressions here and there. Please report any issues you find, thanks!
+{:class='title'}
 
 ----
 
