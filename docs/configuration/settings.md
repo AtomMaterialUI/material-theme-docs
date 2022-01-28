@@ -40,7 +40,7 @@ Or, since version 2.4.0, from the Settings at `Settings → Appearance → Mater
 
 {% include figure.html content="/screens/switchSettings.png" caption="Switcher in Settings" %}
 
-The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.other.size | plus: site.data.themes.other2.size }} themes:
+The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.material2.size | plus: site.data.themes.other.size | plus: site.data.themes.other2.size }} themes:
 
 #### Material Themes
 
@@ -48,6 +48,10 @@ These themes are based on the original themes, made by Mattia Astorino ([@equinu
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.material %}
+  {% include theme-card.html %}
+{% endfor %}
+
+{% for theme in site.data.themes.material2 %}
   {% include theme-card.html %}
 {% endfor %}
 </ul>

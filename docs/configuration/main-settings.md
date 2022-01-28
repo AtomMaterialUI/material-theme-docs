@@ -54,6 +54,9 @@ The parts that are affected by the contrast change are:
 {% for theme in site.data.themes.material  %}
 {% include color.html color=theme field='contrast' %}
 {% endfor %}
+{% for theme in site.data.themes.material2  %}
+{% include color.html color=theme field='contrast' %}
+{% endfor %}
 {% for theme in site.data.themes.other  %}
 {% include color.html color=theme field='contrast' %}
 {% endfor %}
