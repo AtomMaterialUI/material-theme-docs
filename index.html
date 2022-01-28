@@ -21,6 +21,19 @@ layout: index
           </div>
           {% endfor %}
         </div>
+        <div class="theme-chooser-options">
+          {% for theme in site.data.themes.material2 %}
+          <div>
+            <a href="javascript:void(0)"
+               style="background: {{ theme.background }}"
+               class="theme {{ theme.className }} js-theme"
+               title="{{ theme.name }}"
+               data-theme-class="{{ theme.className }}">
+            </a>
+            <p class="theme-name">{{ theme.name }}</p>
+          </div>
+          {% endfor %}
+        </div>
       </div>
 
       <!-- Screen -->
