@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<title>Material Theme UI Documentation - Other Tweaks </title>
+<title> Other Tweaks - Material Theme UI Documentation</title>
 
 <meta name="description" content="Other Material Theme plugin tweaks">
 
 <meta name="author" content="Elior Boukhobza (Mallowigi) and Chris Magnussen (ChrisRM)">
 <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="preconnect" href="https://6LPFESP50M-dsn.algolia.net" crossorigin />
+
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
 <!--<link rel="stylesheet" href="/assets/css/instantsearch.min.css">-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
 
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500" />
@@ -128,6 +130,50 @@ window.CRISP_WEBSITE_ID = '0c16816a-53c6-429c-a144-5da10f5d065e';
              data-tooltip="Deep Ocean"
              data-theme-class="deepocean"
              style="background: #0F111A"></a>
+        </li>
+        
+      </ul>
+
+      <ul class="themes mt-themes">
+        
+        <li>
+          <a class="btn-floating tooltipped js-theme theme forest"
+             href="javascript:void(0)"
+             data-position="left"
+             title="Forest"
+             data-tooltip="Forest"
+             data-theme-class="forest"
+             style="background: #002626"></a>
+        </li>
+        
+        <li>
+          <a class="btn-floating tooltipped js-theme theme skyblue"
+             href="javascript:void(0)"
+             data-position="left"
+             title="Sky Blue"
+             data-tooltip="Sky Blue"
+             data-theme-class="skyblue"
+             style="background: #F5F5F5"></a>
+        </li>
+        
+        <li>
+          <a class="btn-floating tooltipped js-theme theme sandybeach"
+             href="javascript:void(0)"
+             data-position="left"
+             title="Sandy Beach"
+             data-tooltip="Sandy Beach"
+             data-theme-class="sandybeach"
+             style="background: #FFF8ED"></a>
+        </li>
+        
+        <li>
+          <a class="btn-floating tooltipped js-theme theme volcano"
+             href="javascript:void(0)"
+             data-position="left"
+             title="Volcano"
+             data-tooltip="Volcano"
+             data-theme-class="volcano"
+             style="background: #390000"></a>
         </li>
         
       </ul>
@@ -258,12 +304,22 @@ window.CRISP_WEBSITE_ID = '0c16816a-53c6-429c-a144-5da10f5d065e';
              style="background: #222436"></a>
         </li>
         
+        <li>
+          <a class="btn-floating tooltipped js-theme theme synthwave"
+             href="javascript:void(0)"
+             data-position="left"
+             title="SynthWave '84"
+             data-tooltip="SynthWave '84"
+             data-theme-class="synthwave"
+             style="background: #2a2139"></a>
+        </li>
+        
       </ul>
     </div>
 
     <div class="github-corner-wrapper">
       <div class="code version-section">
-        <a href="https://github.com/chrisrm/material-theme-jetbrains" class="github-corner"
+        <a href="https://github.com/mallowigi/material-theme-issues" class="github-corner"
            target="_blank"
            aria-label="View source on GitHub"
            title="View source on Github">
@@ -288,14 +344,89 @@ window.CRISP_WEBSITE_ID = '0c16816a-53c6-429c-a144-5da10f5d065e';
 
   <div class="content">
     <div class="doc">
-      <p class="card-panel warn">This feature is only available for premium users.</p>
-
-<p class="title">These features are additional extras to the plugin, not related to the themes nor Material Design but simply nice addons
-for the IDE.</p>
+      <p class="title">These features are additional extras to the plugin, not related to the themes nor Material Design but simply nice addons to the IDE experience.</p>
 
 <script async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=materialthemecom" id="_carbonads_js"></script>
 
 <hr />
+
+<h3 id="language-additions">Language Additions</h3>
+
+<p class="card-panel warn">This feature is only available for premium users.</p>
+
+<p>This feature adds new highlighting capabilities to popular languages, making possible to highlight specific keywords or function names separately from the language color scheme.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/javaScriptAdditions.png" target="_blank" class="card-image">
+    <img src="/img//screens/javaScriptAdditions.png" alt="Language Additions" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Language Additions
+    </figcaption>
+  </div>
+</figure>
+
+<p>Refer to the <a href="/docs/configuration/color-scheme-additions.md">Language Additions</a> page for more details.</p>
+
+<hr />
+
+<h3 id="colored-open-directories">Colored Open Directories</h3>
+
+<p class="card-panel warn">This feature is only available for premium users.</p>
+
+<p>When this feature is on, the directories that have files open in the editor will be colored with the accent color.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/boldDirectories.png" target="_blank" class="card-image">
+    <img src="/img//screens/boldDirectories.png" alt="Open Colored Directories" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Open Colored Directories
+    </figcaption>
+  </div>
+</figure>
+
+<hr />
+
+<h3 id="show-whats-new-page-on-each-update">Show What’s New page on each update</h3>
+
+<p class="card-panel warn">This feature is available for all users.</p>
+
+<p>This setting allows you to toggle whether the <a href="/docs/what-s-new.md">What’s New</a> page would show up on each update.</p>
+
+<hr />
+
+<h3 id="automatically-reset-color-schemes">Automatically Reset Color Schemes</h3>
+
+<p class="card-panel warn">This feature is available for all users.</p>
+
+<p>One of the main complaints of the plugin is that it constantly asks the user to <strong>reset their color schemes</strong>, but in actuality most users have no idea how to nor do want to do so.
+Even though a lot of documentation is available regarding the subject, since the plugin relies a lot on the color schemes, relying on user interaction means that there is a high chance they are going to miss new updates.</p>
+
+<p>Therefore, from version <strong>6.12.0</strong> users can now decide to let the plugin <strong>automatically reset the color scheme</strong> during theme activation, i.e., at startup and whenever the theme is changed.</p>
+
+<figure class="card figure">
+  <a href="/img//screens/autoResetSettings.png" target="_blank" class="card-image">
+    <img src="/img//screens/autoResetSettings.png" alt="Auto Reset Color Scheme" />
+  </a>
+  <div class="card-content">
+    <figcaption class="card-title">
+      Auto Reset Color Scheme
+    </figcaption>
+  </div>
+</figure>
+
+<p class="card-panel">This setting only affects the <strong>bundled themes</strong>, excluding the <em>Custom themes</em>.</p>
+
+<p class="card-panel warn"><strong>Note</strong>: This feature is <strong>opt-in</strong>, meaning that it is <strong>disabled by default</strong>, to prevent accidental erasure of user custom modifications.
+Make sure to backup your custom changes before enabling the feature!</p>
+
+<hr />
+
+<h2 id="deprecated-features">Deprecated features</h2>
+
 <h3 id="themed-title-bar">Themed Title Bar</h3>
 
 <p class="card-panel warn"><strong>Note</strong>: This feature has been incorporated into the main product as of version 2021.2. As a result, it has been removed from the plugin.</p>
@@ -359,58 +490,6 @@ Besides, there are many distributions/frameworks of Linux, being Ubuntu, Gentoo,
 
 <hr />
 
-<h3 id="open-colored-directories">Open Colored Directories</h3>
-
-<p>When this feature is on, the directories that have files open in the editor will be colored with the accent color.</p>
-
-<figure class="card figure">
-  <a href="/img//screens/boldDirectories.png" target="_blank" class="card-image">
-    <img src="/img//screens/boldDirectories.png" alt="Open Colored Directories" />
-  </a>
-  <div class="card-content">
-    <figcaption class="card-title">
-      Open Colored Directories
-    </figcaption>
-  </div>
-</figure>
-
-<hr />
-
-<h3 id="language-additions">Language Additions</h3>
-
-<p>Take a look at the page <a href="/docs/configuration/color-scheme-additions.md">Language Additions</a> for more details.</p>
-
-<hr />
-
-<h3 id="show-whats-new-page-on-each-update">Show What’s New page on each update</h3>
-
-<p>This setting allows you to toggle whether the <a href="/docs/what-s-new.md">What’s New</a> page would show up on each update.</p>
-
-<hr />
-
-<h3 id="open-and-closed-directories">Open and closed directories</h3>
-
-<p>When this option is on, files that are <em>opened</em> in the editor and that are <em>edited</em> will have their containing
-directories have a <strong>hollow directory icon</strong> (or outline directory) instead of the original icon.</p>
-
-<figure class="card figure">
-  <a href="/img//screens/folderDecorators.png" target="_blank" class="card-image">
-    <img src="/img//screens/folderDecorators.png" alt="Opened folder decorators" />
-  </a>
-  <div class="card-content">
-    <figcaption class="card-title">
-      Opened folder decorators
-    </figcaption>
-  </div>
-</figure>
-
-<p><strong>Note</strong>: This feature requires <em>Material Icons</em> feature to work.</p>
-
-<p><strong>Note 2</strong>: If the <strong>Folder decorators</strong> option is set, the icon will match the decorator, but outlined.</p>
-
-<p class="card-title warn"><strong>Note:</strong>: This feature has been moved to the <a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons Plugin</a> since version 5.0.</p>
-
-<hr />
 <h3 id="theme-in-status-bar">Theme in Status Bar</h3>
 
 <p>This setting adds a “widget” to the status bar to indicate which theme you are currently on. You can also click on it to
@@ -684,21 +763,6 @@ open the Material Theme Settings.</p>
           
 
           <li class="link-section sidebar-section ">
-            <a href="/docs/configuration/icons-settings"
-               class="nav-link sidebar-list-item"
-               data-slug="icons-settings">
-              Icons Settings
-            </a>
-
-            
-          </li>
-          
-          
-          
-
-          
-
-          <li class="link-section sidebar-section ">
             <a href="/docs/configuration/project-view-settings"
                class="nav-link sidebar-list-item"
                data-slug="project-view-settings">
@@ -893,6 +957,61 @@ open the Material Theme Settings.</p>
           
           "
            >
+          Icons
+        </a>
+
+        <ul class="nav sidebar-list collapsible-body">
+          
+          
+          
+
+          
+
+          <li class="link-section sidebar-section ">
+            <a href="/docs/icons/atom-material-icons-plugin"
+               class="nav-link sidebar-list-item"
+               data-slug="atom-material-icons-plugin">
+              Atom Material Icons Plugin
+            </a>
+
+            
+          </li>
+          
+          
+          
+
+          
+
+          <li class="link-section sidebar-section ">
+            <a href="/docs/icons/associations-editor"
+               class="nav-link sidebar-list-item"
+               data-slug="associations-editor">
+              Associations Editor
+            </a>
+
+            
+          </li>
+          
+        </ul>
+      </li>
+    </ul>
+    
+    
+    
+
+    
+    
+
+    
+
+    <ul data-collapsible="accordion"
+        class="sidebar-link-group collapsible ">
+      <li>
+        
+        <a class="collapsible-header title
+          
+          "
+           >
           Reference
         </a>
 
@@ -1006,42 +1125,12 @@ open the Material Theme Settings.</p>
         
         <a class="collapsible-header title
           
-          "
-           >
-          Development
+          nav-link"
+           href="/docs/analytics" >
+          Analytics
         </a>
 
         <ul class="nav sidebar-list collapsible-body">
-          
-          
-          
-
-          
-
-          <li class="link-section sidebar-section ">
-            <a href="/docs/development/external-themes"
-               class="nav-link sidebar-list-item"
-               data-slug="external-themes">
-              External Themes
-            </a>
-
-            
-          </li>
-          
-          
-          
-
-          
-
-          <li class="link-section sidebar-section ">
-            <a href="/docs/development/analytics"
-               class="nav-link sidebar-list-item"
-               data-slug="analytics">
-              Analytics
-            </a>
-
-            
-          </li>
           
         </ul>
       </li>
@@ -1257,13 +1346,14 @@ open the Material Theme Settings.</p>
       
 
 <ul>
-  <li><a href="#themed-title-bar">Themed Title Bar</a></li>
-  <li><a href="#open-colored-directories">Open Colored Directories</a></li>
   <li><a href="#language-additions">Language Additions</a></li>
+  <li><a href="#colored-open-directories">Colored Open Directories</a></li>
   <li><a href="#show-whats-new-page-on-each-update">Show What’s New page on each update</a></li>
-  <li><a href="#open-and-closed-directories">Open and closed directories</a></li>
+  <li><a href="#automatically-reset-color-schemes">Automatically Reset Color Schemes</a></li>
+  <li><a href="#themed-title-bar">Themed Title Bar</a></li>
   <li><a href="#theme-in-status-bar">Theme in Status Bar</a></li>
 </ul>
+
 
     </div>
     
@@ -1299,7 +1389,7 @@ open the Material Theme Settings.</p>
 
   <!-- Copyright -->
   <div class="content copyright">
-    <span>Material Theme v6.9.0 &copy; 2015-2021 </span>
+    <span>Material Theme v6.13.0 &copy; 2015-2022 </span>
     <span class="copyright-authors">
       <a href="https://twitter.com/mallowigi" target="_blank">Elior Boukhobza</a> &
       <a href="https://twitter.com/crmag" target="_blank">Chris Magnussen</a> </span>
@@ -1319,11 +1409,12 @@ open the Material Theme Settings.</p>
 <script src="/assets/js/vendor/scrollspy.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>-->
 <!--<script src="/assets/js/vendor/instantsearch.min.js"></script>-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
 <script type="text/javascript"> docsearch({
-  apiKey: '0c2ef3a55b1f2b14c33326dcb167e886',
+  appId: '6LPFESP50M',
+  apiKey: '3c142565f80429418a86aaf4614a0115',
   indexName: 'material-theme-jetbrains-eap',
-  inputSelector: '#search',
+  container: '#search',
   debug: false, // Set debug to true if you want to inspect the dropdown
 });
 </script>
