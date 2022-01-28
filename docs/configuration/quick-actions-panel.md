@@ -46,6 +46,13 @@ The first subpanel is a switcher to rapidly switch between the themes. There you
 
 {% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
 
+**TIP**:
+
+Since version 6.13, Light and Dark themes are grouped together.
+
+{% include figure.html content="/screens/themeGroups.png" caption="Light and Dark Theme Groups" %}
+
+
 **Note**: Custom Themes and some themes are only available for premium users.
 {:class='card-panel warn'}
 

@@ -423,3 +423,4 @@ As a result, it is recommended to not rely too much on the Sync feature for now.
 
 {% include figure.html content="/screens/license.png" caption="License" %}
 
+**Important note**: Android Studio users, in order to activate the plugin (or any paid plugin), you need to install a plugin first: <https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support>.

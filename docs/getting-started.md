@@ -141,4 +141,12 @@ From version 6.0.0 the plugin has become a freemium plugin.
 
 Please refer [here]({{ site.baseurl }}/docs/pricing) for more details and [this blog post]({{ site.baseurl }}/docs/about-subscription-model) to better understand the reasons behind this choice.
 
+
+## Android Studio
+
+The plugin should be compatible with Android Studio just fine,
+but since _Android Studio Bumblebee_ you will need to install [another plugin](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) to be able to **Activate Your License**)
+
+
+
 *[freemium]: The plugin is free but some functionalities are under a paywall.

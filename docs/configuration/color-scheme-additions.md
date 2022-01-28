@@ -38,6 +38,8 @@ At the moment the only supported languages are:
 - **Java**
 - **PHP**
 - **Kotlin**
+- **Python**
+- **Ruby**
 
 More will come in the future.
 
@@ -138,6 +140,36 @@ The following keywords are customizable:
 - `raise`
 - `True`, `False` and `None
 - `print`
+
+### Ruby (since 6.13)
+
+**Keywords**:
+- `begin`, `rescue`, `finally`
+- `case`
+- `when`
+- `class`
+- `def`
+- `do`
+- `if`, `elsif`, `else`, `unless`
+- `module`, `namespace`
+- `not`, `and`, `or`
+- `private`, `protected`, `public`
+- `raise`
+- `require`, `require_self`, `require_relative`
+- `return`, `yield`
+- `self`
+- `while`, `until`, `loop`
+
+**Primitives**:
+- `nil`
+- `true`, `false`
+
+**Methods**:
+- `attr_reader`, `attr_writer`, `attr_accessor`
+- `initialize`
+- `new`
+- `puts`
+
 
 ----
 

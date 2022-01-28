@@ -45,7 +45,7 @@ Others will follow, depending on the demand. Currently, the planned ones for 202
 
 **PLEASE NOTE
 THAT THESE BUNDLES MUST NOT BE BOUGHT IF YOU ALREADY HAVE A PREMIUM LICENSE.** They only provide access to the paid features to people on the free plan,
-so buying them when you have a paid plan would only result on paying twice for the same thing.
+so buying them when you have a paid plan would only result in paying twice for the same thing.
 {:class='card-panel warn'}
 
 ----
