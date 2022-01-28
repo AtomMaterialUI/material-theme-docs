@@ -28,9 +28,9 @@ This feature is only available for premium users.
 
 This feature adds new highlighting capabilities to popular languages, making possible to highlight specific keywords or function names separately from the language color scheme.
 
-{% include language-additions.html %}
+{% include figure.html content="/screens/javaScriptAdditions.png" caption="Language Additions" %}
 
-Take a look at the page [Language Additions](/docs/configuration/color-scheme-additions.md) for more details.
+Refer to the [Language Additions](/docs/configuration/color-scheme-additions.md) page for more details.
 
 
 ----
@@ -70,7 +70,7 @@ Therefore, from version **6.12.0** users can now decide to let the plugin **auto
 This setting only affects the **bundled themes**, excluding the *Custom themes*.
 {:class='card-panel'}
 
-**Note**: This feature is **opt-in**, meaning that it is **disabled by default**, to prevent accidental erasure of user custom modifications. 
+**Note**: This feature is **opt-in**, meaning that it is **disabled by default**, to prevent accidental erasure of user custom modifications.
 Make sure to backup your custom changes before enabling the feature!
 {:class='card-panel warn'}
 
