@@ -228,3 +228,4 @@ revert the value back to the Darcula/IntelliJ default.
 
 {% include figure.html content="/screens/license.png" caption="License" %}
 
+**Important note**: Android Studio users, in order to activate the plugin (or any paid plugin), you need to install a plugin first: <https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support>.

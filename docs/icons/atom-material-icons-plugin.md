@@ -182,13 +182,13 @@ This setting allows you to change the style of the arrows in trees such as the P
 
 There are the available styles:
 
-| Style      | Screenshot                                                                                            |
-|:-----------|:------------------------------------------------------------------------------------------------------|
+| Style      | Screenshot                            |
+|:-----------|:--------------------------------------|
 | Material   | <img src="/img/arrows/material.png">  |
 | Darcula    | <img src="/img/arrows/darcula.png">   |
 | Plus-Minus | <img src="/img/arrows/plusminus.png"> |
 | Arrows     | <img src="/img/arrows/arrows.png">    |
-| None       | (no arrows)                                                                                           |
+| None       | (no arrows)                           |
 
 You can also switch styles in the `Actions Panel`.
 
