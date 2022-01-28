@@ -29,6 +29,11 @@ layout: index
          class="screenshot -{{ theme.className }}"></a>
       {% endfor %}
 
+      {% for theme in site.data.themes.material2 %}
+      <a href="/img/themes/{{ theme.className }}.png" target="_blank"
+         class="screenshot -{{ theme.className }}"></a>
+      {% endfor %}
+
       {% for theme in site.data.themes.other %}
       <a href="/img/themes/oceanic.png" target="_blank"
          class="screenshot -{{ theme.className }}"></a>

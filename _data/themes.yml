@@ -229,6 +229,7 @@ material:
   numbers: '#f78c6c'
   parameters: '#f78c6c'
 
+material2:
 - forest:
   id: mt.forest
   name: Forest

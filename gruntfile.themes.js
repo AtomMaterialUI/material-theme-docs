@@ -5,6 +5,7 @@ const path = require('path');
 const themesYml = fs.readFileSync(path.resolve(__dirname, './_data/themes.yml'), {flag: 'r'});
 const allThemes = yaml.load(themesYml);
 const themes = [...allThemes.material,
+  ...allThemes.material2,
   ...allThemes.other,
   ...allThemes.other2];
 

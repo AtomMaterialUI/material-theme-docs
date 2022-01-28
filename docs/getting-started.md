@@ -73,6 +73,10 @@ plugin:
 - {{theme.name}}
 {% endfor %}
 
+{% for theme in site.data.themes.material2 %}
+- {{theme.name}}
+{% endfor %}
+
 #### Other Themes:
 
 {% for theme in site.data.themes.other %}
@@ -145,7 +149,7 @@ Please refer [here]({{ site.baseurl }}/docs/pricing) for more details and [this 
 ## Android Studio
 
 The plugin should be compatible with Android Studio just fine,
-but since _Android Studio Bumblebee_ you will need to install [another plugin](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) to be able to **Activate Your License**)
+but since _Android Studio Bumblebee_ you will need to install [another plugin](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) to be able to **Activate Your License**
 
 
 

@@ -35,6 +35,10 @@ In this list you'll find all your installed color schemes alongside those provid
     <li>Material {{ theme.name }}</li>
 {% endfor %}
 
+{% for theme in site.data.themes.material2 %}
+    <li>Material {{ theme.name }}</li>
+{% endfor %}
+
 {% for theme in site.data.themes.other %}
     <li>{{ theme.name }}</li>
 {% endfor %}
