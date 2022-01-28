@@ -16,6 +16,24 @@ next:
 # Changelog
 ----
 
+# 6.13.0
+
+### Features
+- New Themes:
+  - **Material Forest**
+  - **Material Volcano**
+  - **Material Sky Blue**
+  - **Material Sandy Beach**
+  - **SynthWave '84**
+- New Language Addition: **Ruby**
+- Reorganization of the color themes
+
+### Fixes
+- Fixed Kotlin Language Addition not working
+- Fix write thread error on start
+
+### Other
+- Updated Wizard screens
 
 # 6.12.0
 
