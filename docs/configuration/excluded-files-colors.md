@@ -94,6 +94,10 @@ However, just like many of the features of the plugin, this color option is set 
 {% include color.html color=theme field="excluded" %}
 {% endfor %}
 
+{% for theme in site.data.themes.material2 %}
+{% include color.html color=theme field="excluded" %}
+{% endfor %}
+
 
 {% for theme in site.data.themes.other %}
 {% include color.html color=theme field="excluded" %}
