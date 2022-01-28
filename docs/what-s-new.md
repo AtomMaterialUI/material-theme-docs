@@ -6,6 +6,133 @@ toc: true
 
 ---
 
+# What's new in Material Theme UI v6.13.0
+
+The first version of 2022 introduces a new set of **Material Themes**,
+expanding the current collection with new themes that are not available elsewhere,
+as well as new **language additions** for Ruby and initial support for **Material Theme bundles**
+{:class='title'}
+
+----
+
+## Material Theme Bundles
+
+Material Theme "**Bundles**" (or "plugins", or "addons") are a way to benefit of Material Theme's paid features separately,
+without having to pay for the core plugin.
+
+Since the plugin became paid, a lot of users were left disappointed by suddenly having to pay for features they have been enjoying for free,
+leading to a lot of frustrations.
+Although I've been trying to alleviate the frustration by giving more transparency about the reasons of the move,
+or through free plans and vouchers, still, for some users, the loss of their favourite feature was unacceptable.
+
+In fact, for some, they couldn't care less about the whole package, but THAT specific feature being unavailable was a true loss.
+
+Introducing **Material Theme Bundles**: these are separate plugins that provide alternative access to the paid features.
+For example, let's say you are only interested in the [Custom Theme](/docs/configuration/custom-themes.md) feature but don't need the [Tab Settings](/docs/configuration/tab-settings.md),
+[Project Frame](/docs/configuration/project-frame-settings.md) or [Language Additions](configuration/color-scheme-additions.md), you would be able to purchase it separately and benefit from it without having to buy a premium license.
+
+Of course, these bundles would not be free; otherwise there would be no point of having to purchase a premium license.
+But they will be at a lesser price than the whole package.
+
+At the moment,
+the only bundle available is the [High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast) feature for an annual cost of $3 only.
+
+Others will follow, depending on the demand. Currently, the planned ones for 2022 are:
+- Custom Theme
+- Language Additions
+- Project Frame Colors
+- Project View Settings
+
+**PLEASE NOTE
+THAT THESE BUNDLES MUST NOT BE BOUGHT IF YOU ALREADY HAVE A PREMIUM LICENSE.** They only provide access to the paid features to people on the free plan,
+so buying them when you have a paid plan would only result on paying twice for the same thing.
+{:class='card-panel warn'}
+
+----
+
+## New Material Themes
+
+You might be aware that the original Material Themes from [@equinusocio](https://github.com/equinusocio) have not had changes for a long time.
+It's fine, these themes are awesome and a personal favorite too.
+However, the Material Theme color scheme is great on its own, and can easily live in different _environments_ than the ocean and the night. Therefore, we've decided to run our imagination run wild and started working on new "environmental themes".
+
+##### Introducing Nature Material Themes!!!
+
+{% include figure.html content="/screens/wizard/forest.png" caption="Forest Theme" %}
+
+{% include figure.html content="/screens/wizard/skyblue.png" caption="Sky Blue Theme" %}
+
+{% include figure.html content="/screens/wizard/volcano.png" caption="Volcano Theme" %}
+
+{% include figure.html content="/screens/wizard/sandybeach.png" caption="Sandy Beach Theme" %}
+
+As said previously, these themes are completely new, and thus can be subject to a few modifications in the future, especially regarding contrast.
+
+**Let me know what you think of them!**
+
+----
+
+## SynthWave '84
+
+Another theme we've been working on is the implementation of the famous [SynthWave '84](https://github.com/robb0wen/synthwave-vscode) from Robb Owen.
+
+{% include figure.html content="/screens/wizard/synthwave.png" caption="SynthWave '84 Theme" %}
+
+This theme is one of the most popular VSCode themes, especially thanks to it's _"Glowing Neons"_ feature,
+and I thought it would make a great theme for JetBrains products as well.
+
+Unfortunately, there is no way to get the "Glowing Neons" to work in our favourite IDEs, but be sure that we are looking for ways to make it possible!
+
+----
+
+## Theme Reorganization
+
+As part of the newest additions, the theme selection menus have been reorganized to group light and dark themes together.
+
+{% include figure.html content="/screens/themeGroups.png" caption="Theme Groups" %}
+
+----
+
+## Ruby Additions
+
+And last but not least, a new [Language Addition](/docs/configuration/color-scheme-additions.md) made its way alongside the others: **Ruby**.
+
+Just like _Python_, **Ruby Additions** are now available for Ruby-based IDEs, and provide additional coloring for the following keywords:
+
+**Keywords**:
+- `begin`, `rescue`, `finally`
+- `case`
+- `when`
+- `class`
+- `def`
+- `do`
+- `if`, `elsif`, `else`, `unless`
+- `module`, `namespace`
+- `not`, `and`, `or`
+- `private`, `protected`, `public`
+- `raise`
+- `require`, `require_self`, `require_relative`
+- `return`, `yield`
+- `self`
+- `while`, `until`, `loop`
+
+**Primitives**:
+- `nil`
+- `true`, `false`
+
+**Methods**:
+- `attr_reader`, `attr_writer`, `attr_accessor`
+- `initialize`
+- `new`
+- `puts`
+
+{% include figure.html content="/screens/ruby-additions.png" caption="Ruby Additions" %}
+
+**Note**: As usual, this feature is only available for premium users.
+{:class='card-panel warn'}
+
+---
+
 # What's new in Material Theme UI v6.12.0
 
 This version is less about new features but more about project consolidation, bug squashing, code deprecation, documentation and migration to Kotlin. It's part of a long process to make the project more stable and maintainable.
@@ -15,8 +142,8 @@ Here are a few new features though:
 
 ## Automatically Reset Color Scheme
 
-One of the main complaints of the plugin is that it constantly asks the user to **reset their color schemes**, but in actuality most users have no idea how to nor do want to do so. 
-Even though a lot of documentation is available regarding the subject, since the plugin relies a lot on the color schemes, relying on user interaction means that there is a high chance they are going to miss new updates. 
+One of the main complaints of the plugin is that it constantly asks the user to **reset their color schemes**, but in actuality most users have no idea how to nor do want to do so.
+Even though a lot of documentation is available regarding the subject, since the plugin relies a lot on the color schemes, relying on user interaction means that there is a high chance they are going to miss new updates.
 
 Therefore, from version 6.12.0 users can now decide to let the plugin **automatically reset the color scheme** during theme activation, i.e., at startup and whenever the theme is changed.
 
@@ -75,7 +202,7 @@ This is a huge refactoring release, so there might be some regressions here and 
 ### Features
 
 - Add new action to manually remove lingering overlays in the rare case it happens
-- Added more notifications when triggering actions 
+- Added more notifications when triggering actions
 
 ### Fixes
 
@@ -194,344 +321,3 @@ More information on the [Custom Themes](/docs/configuration/custom-themes.md#col
 In the future, a new settings page will be available to allow users to customize such properties from the UI directly. Stay tuned!
 
 ---
-
-# What's new in Material Theme UI v6.9.0
-
-### Features
-- Make **External Themes** as a dynamic extension point
-- Increase the number of windows/popups that are under an **overlay**:
-  - Recent Files
-  - Quick Switchers
-  - Branch Chooser``
-  - and others
-
-### Fixes
-- Fix issue where checkboxes were invisible
-- Fix issue where local history information was unreadable
-
-### Other
-- More and more classes converted to Kotlin
-
----
-
-# What's new in Material Theme UI v6.8.2
-
-Yet another bug-fix release, alongside small features and an overgoing refactor.
-{:class='title'}
-
-### Features
-- Add two new keywords for the [Project Frame Custom Text](/docs/configuration/project-frame-settings.md#customize-text): `{module}` and `{file}`
-
-### Fixes
-- Fix [#1823](https://github.com/ChrisRM/material-theme-jetbrains/issues/1823)
-- Fix [#1772](https://github.com/ChrisRM/material-theme-jetbrains/issues/1772)
-- Fix [#1808](https://github.com/ChrisRM/material-theme-jetbrains/issues/1808)
-- Fix [#1790](https://github.com/ChrisRM/material-theme-jetbrains/issues/1790)
-- Fix [#1825](https://github.com/ChrisRM/material-theme-jetbrains/issues/1825)
-
-### Other
-- More and more classes converted to Kotlin
-
----
-
-# What's new in Material Theme UI v6.8.1
-
-This new release is a bug-fix version, principally to rename and disable by default the experimental feature of _Large Tool Windows_ (previously named _Striped Tool Windows_).
-{:class='title'}
-
-### Fixes
-- Restore the JetBrains layout as the default one
-- Fix error when switching themes when inside a modal
-- Fix transparency during drag and drop
-- Fix _Show What's new_ option not being respected
-
-### Other
-- Renamed "_Striped Tool Windows_" to "_Large Tool Windows_" to be clearer.
-- Upgrade gradle to 7.2
-
-
-
-# What's new in Material Theme UI v6.8.0
-
-This version's features consists in the ability to [display an overlay](/docs/configuration/features-settings.md#overlays) when modals are open, make the [Active Tab Bold](/docs/configuration/tab-settings.md#bold-active-tab), show notifications when actions are executed, and add a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
-{:class='title'}
-
-## Overlays
-
-Your IDE can now display **overlays** when modals are open, providing better focus to the information at hand.
-
-{% include figure.html content="/screens/modalOverlay.png" caption="Modals Overlay" %}
-
-{% include figure.html content="/screens/settingsOverlay.png" caption="Settings Overlay" %}
-
-These overlays show up in the following modal windows:
-- Alerts
-- Dialogs
-- New File Window
-- Search Everything
-- Run Anything
-
-Please open issues in the repository if you wish for more modals to be affected!
-
------
-
-## Bold Active Tab
-
-A new option made its way to the tab settings section, which is the ability to make the current tab as bold.
-
-{% include figure.html content="/screens/activeBoldTab.png" caption="Active Tab as Bold" %}
-
-Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings.md#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
-
-----
-
-## Make Run Configurations using the Compact Settings
-
-A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/compact-settings.md#compact-dropdown-lists) setting, the same way the other dropdowns do.
-
-{% include figure.html content="/screens/paddedRunConf.png" caption="Padded Run Configuration" %}
-
-{% include figure.html content="/screens/compactRunConf.png" caption="Compact Run Configuration" %}
-
------
-
-## Show notifications upon executing actions
-
-Another small but great improvement is the display of notifications ("toasts") after executing actions. This makes it easier to notice what exactly happened at a glance.
-
-{% include figure.html content="/screens/notification.png" caption="Example Notification" %}
-
-----
-
-## Add newer settings to the Wizards
-
-Last but not least, a few of the latest settings have been added to the [Wizard](/docs/reference/wizard.md), in order to better showcase them. These include:
-- Latest **Show Overlays** feature
-- Latest **Bold Active Tab** feature
-- **Tab Font Size**
-- **Project Frame Colors**
-
-
----------
-# What's new in Material Theme UI v6.7.0
-
-This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) to the [Project Frame Colors](/docs/configuration/project-frame-settings.md), as well as fixing many issues as usual.
-{:class='title'}
-
-
-## Project Icon in the Project Frame
-
-In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-frame-settings.md), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
-
-{% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
-
-This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per-project basis as well!
-
-**Note**: This feature is only available for 2021.2 versions and later unfortunately, as support for project icons wasn't complete in the 2021.1 versions. This could still change though, depending on JetBrains' progress.
-{:class='card-panel warn'}
-
-----
-
-## Better support for the XPathView plugin
-
-This version improves support for the XPathView plugin by providing better colors to the highlighted results.
-
-Thanks for [Unthrottled](https://github.com/Unthrottled) for the implementation!
-
-----
-
-## Other fixes
-
-- **Language Additions**: Fix back `console`, `window`, `global` not being colored correctly. ([#1780](https://github.com/ChrisRM/material-theme-jetbrains/issues/1780))
-- Refactor [File Status Colors](/docs/configuration/file-status-colors.md), allowing to restore the file status colors when resetting the color scheme ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
-- Fix [#1773](https://github.com/ChrisRM/material-theme-jetbrains/issues/1773)
-- Fix [#1764](https://github.com/ChrisRM/material-theme-jetbrains/issues/1764)
-- Fix [#1776](https://github.com/ChrisRM/material-theme-jetbrains/issues/1776)
-- Improve unused variables contrast ([#1775](https://github.com/ChrisRM/material-theme-jetbrains/issues/1775))
-
-----
-
-That's it. And as always,
-
-Happy coding!
-{:class='title'}
-
-
----
-
-# What's new in Material Theme UI v6.6.0
-
-This version brings out the first **per-project settings**, alongside new settings for the **Project Frame**. Now you can even more customize your IDE on a per-project basis!
-{:class='title'}
-
-## Project Frame Customizations
-
-One of the latest updates of the Material Theme was a feature allowing you to add a "custom frame", or "toolbar", at the top of the window with a different color per project.
-
-This feature, named [Project Frame Colors](/docs/configuration/project-frame-settings.md), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
-
-As a result, new customization capabilities were added to that feature to stand out even more.
-
-Previously inside the **Features** tab, these settings are now located under a new tab, **Project Frame**.
-
-{% include figure.html content="/screens/projectFrameTab.png" caption="Project Frame Settings" %}
-
-Here's a quick recap of the new settings:
-
-- **Show Project Name**: Whether to display the project name on the frame
-- **Customize Text**: Replace the project name with a custom text
-
-These are not much, but they signalize the beginning of a new set of improvements for this feature!
-
-## Per-Project Settings
-
-This is the second highlight of this release: the ability to override the global settings **on a per-project basis**.
-
-{% include figure.html content="/screens/perProject.png" caption="Per-Project Settings" %}
-
-As you can see in this screenshot, the two projects have different settings for the **Active Tab** and the **Project Frame**. This will allow you to customize even more your IDE, now having different settings for each project.
-
-At this time, the only available settings are:
-- Active Tab Highlight and Thickness
-- Uppercase Tabs
-- Tab highlight position
-- Project Frame Color
-- Project Frame's Project Title's Display
-- Project Frame's custom text
-
-Other settings, such as the current theme, the accent color or the compact settings, are much harder to implement since they use the same underlying UI for all windows, but maybe in the future we'll find a way to make it work.
-
-## Other fixes and improvements
-
-And like always, this release also has its lot of bug fixes:
-- Improve Light themes by setting black borders to white
-- Fixes the {0} in the "What's new" menu
-- Change the _Highlight Color_ for the **Arc Dark Theme**
-
-----
-
-That's it. And as always,
-
-Happy coding!
-{:class='title'}
-
-
-----
-
-# What's new in Material Theme UI v6.5.0
-
-This version finally implements the so long waited **Sync Settings**!!! Now you can finally sync your Material Theme Settings across your environments! And of course a new set of features and bug fixes.
-{:class='title'}
-
-## Sync Material Theme UI Settings
-
-This was one of our most waited features since… forever, and it is finally here! You can finally share your Material Theme Settings and Custom Theme using the **Sync Settings** plugin.
-
-{% include figure.html content="/screens/syncSettings.png" caption="Sync Settings" %}
-
-Please note however that this is highly depending on the Sync Settings implementation. There are still some discrepencies with how the Sync Settings should work, as you can show in this [YouTrack issue](https://youtrack.jetbrains.com/issue/IDEA-219788). But theoretically your Material Theme Settings should be shared across your stations.
-
-**Important note**: This feature has been tested between two stations having the same premium model i.e., both being with the free plan and both being with the premium plan. There's no guarantee of what would happen if settings were shared between a free and premium plan!
-{:class='card-panel warn'}
-
-----
-
-## Inverted Selection Color
-
-Latest releases drastically changed a day-one feature from the Material Theme plugin, the auto complete list's selected option color. This has been done after running a quick poll with some Material Theme users to determine which option was better in terms of contrast.
-
-However, this change might have caused some disagreements with the previous behaviour. Some users, like me, prefer the old style.
-
-Therefore, I've decided to include a new setting to select your preferred style, **Inverted Selection Color**.
-
-{% include figure.html content="/screens/invertedSelectionColor.png" caption="Inverted Selection Color" %}
-
-More information in the [Component Settings documentation](/docs/configuration/component-settings.md#inverted-selection-color)
-
-----
-
-### Other fixes and improvements
-
-- Fix issue with Language Additions being applied to object keys and methods (<https://github.com/ChrisRM/material-theme-jetbrains/issues/1742>)
-- Fix issue with Language Additions not being applied to JSX and Vue files (<https://github.com/ChrisRM/material-theme-jetbrains/issues/1744>)
-- Fix the fatal error preventing **CodeWithMe** to be run when Material Theme UI is enabled.
-- Complete _Github_ and _Github Dark_ color schemes to include missing styles already existing in other schemes (such as Rust, ReSharper, Osmorc and so on).
-- Also, the **Accent Mode** settings moved to the **Features Tab** rather than **Components Tab**.
-- Add a new action to display the **What's new Page** in the toolbar.
-
-----
-
-That's it. And as always,
-
-Happy coding!
-{:class='title'}
-
-
-----
-
-# What's new in Material Theme UI v6.4.2
-
-This version improves the themes colors to provide better contrasts, as well as fixing the issue with some settings remaining locked despite being in the free plan. And some new features too:
-{:class='title'}
-
-## Display the What's new page on each update
-
-Since 2021.1 JetBrains introduced the capabitilty to display a webpage in the editor, and this has been used to show, well, this page actually. However, while it's nice to know what has been updated, it can be a bit annoying to see this popping up at every update.
-
-Therefore, a new switch has been added in the [Other Settings](configuration/other-tweaks-settings.md) tab, to let users control whether they want this page to show up.
-
-----
-
-## Theme improvements
-
-Some theme colors have been improved to have better contrasts. Such themes are:
-- Arc Dark
-- Github
-- Github Dark
-- Night Owl
-- Palenight
-- Lighter
-- Deep Ocean
-
-Moreover, the **selected background color** is no longer transparent, as it was causing some rendering issues.
-
-**Note**: Some of the aforementioned changes are reflected in the Color Schemes, not only on the UI Themes. Therefore, you would need to **Restore Color Schemes** for the changes to be applied.
-{:class='card-panel warn'}
-
-----
-
-## Other improvements
-
-- Fix Wizards and Menus to not lock settings that are part of the free plan.
-- Remove border color for tool windows
-- Do not reset the registry's value `transparentTitleBarAppearance` when in the free plan.
-- Fix the Settings search to return the Material Theme UI Settings.
-
-
-That's it. And as always,
-
-Happy coding!
-{:class='title'}
-
-
-----
-
-# What's new in Material Theme UI v6.4.1
-
-Yet another bug fixes version.
-{:class='title'}
-
-- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1739>
-- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1743>
-
-This fixes the issue where changing the theme from the _Material Theme Settings_ caused the theme to not be saved.
-
-- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1745>
-
-Fixes a threading error caused when switching color schemes.
-
-- Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1747>
-
-[accents](configuration/accents.md) and [file-status-colors](configuration/file-status-colors.md) are part of the [pricing](pricing.md#feature-comparison) but appears requiring the Premium Version.
-
-
