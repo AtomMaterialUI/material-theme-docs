@@ -35,6 +35,20 @@
         {% endfor %}
       </ul>
 
+      <ul class="themes mt-themes">
+        {% for theme in site.data.themes.material2 %}
+        <li>
+          <a class="btn-floating tooltipped js-theme theme {{ theme.className }}"
+             href="javascript:void(0)"
+             data-position="left"
+             title="{{ theme.name }}"
+             data-tooltip="{{theme.name}}"
+             data-theme-class="{{ theme.className }}"
+             style="background: {{ theme.background }}"></a>
+        </li>
+        {% endfor %}
+      </ul>
+
       <ul class="themes other-themes -left">
         {% for theme in site.data.themes.other %}
         <li>
