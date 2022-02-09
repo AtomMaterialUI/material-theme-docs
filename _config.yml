@@ -1,14 +1,14 @@
 full_rebuild: true
 incremental: true
 source: "."
-destination: "./build"
+destination: "./jekyllbuild"
 name: Material Theme UI Documentation
 description: |
   The Material Theme plugin is a plugin for JetBrains IDEs (IntelliJ, PhpStorm, WebStorm, Android Studio, etc...) which completely redesigns
   the UI with a beautiful and configurable Material Design UI.
   This is the plugin's documentation page which presents and explains the different features provided by the plugin.
 
-author: "Elior Boukhobza (Mallowigi) and Chris Magnussen (ChrisRM)"
+author: "Elior Boukhobza (Mallowigi)"
 url: https://www.material-theme.com
 baseurl: ""
 permalink: /blog/:title/

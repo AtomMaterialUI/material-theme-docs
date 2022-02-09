@@ -73,3 +73,7 @@ contributors.csv
 # .idea/modules
 # *.iml
 # *.ipr
+.idea/sonarlint
+
+.jekyll-cache
+.
