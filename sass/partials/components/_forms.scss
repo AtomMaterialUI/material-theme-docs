@@ -11,17 +11,17 @@
 /* Text inputs */
 
 input:not([type]),
-input[type=text]:not(.browser-default),
-input[type=password]:not(.browser-default),
-input[type=email]:not(.browser-default),
-input[type=url]:not(.browser-default),
-input[type=time]:not(.browser-default),
-input[type=date]:not(.browser-default),
-input[type=datetime]:not(.browser-default),
-input[type=datetime-local]:not(.browser-default),
-input[type=tel]:not(.browser-default),
-input[type=number]:not(.browser-default),
-input[type=search]:not(.browser-default),
+input[type=text]:not(.browser-default):not(.DocSearch-Input),
+input[type=password]:not(.browser-default):not(.DocSearch-Input),
+input[type=email]:not(.browser-default):not(.DocSearch-Input),
+input[type=url]:not(.browser-default):not(.DocSearch-Input),
+input[type=time]:not(.browser-default):not(.DocSearch-Input),
+input[type=date]:not(.browser-default):not(.DocSearch-Input),
+input[type=datetime]:not(.browser-default):not(.DocSearch-Input),
+input[type=datetime-local]:not(.browser-default):not(.DocSearch-Input),
+input[type=tel]:not(.browser-default):not(.DocSearch-Input),
+input[type=number]:not(.browser-default):not(.DocSearch-Input),
+input[type=search]:not(.browser-default):not(.DocSearch-Input),
 textarea.materialize-textarea {
   color: $input-color;
   font-family: $main-font;
