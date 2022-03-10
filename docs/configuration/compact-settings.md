@@ -71,6 +71,19 @@ From version 2.10.2 Menus had also gained more padding just like dropdowns and t
 As a result, a setting have been added to revert to the default menus size.
 
 ----
+### Compact Fields
+
+This setting allows you to reduce the size of the fields, that have become larger since the version 6.14.
+
+This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**.
+
+----
+
+### Custom List Items Height
+
+This setting will allow you to customize the items' height in lists, such as regular lists, dropdown options, and many others.
+
+
 ### Notes
 
 - Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display
