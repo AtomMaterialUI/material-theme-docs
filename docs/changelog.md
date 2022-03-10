@@ -16,6 +16,40 @@ next:
 # Changelog
 ----
 
+
+# 6.14.0
+
+### Features
+- **New Material Design UI!!!**
+  - Text Fields
+  - Password Fields
+  - Number Fields
+  - Search Fields
+  - Text Areas
+  - Buttons
+  - Comboboxes (dropdowns)
+  - Menus
+  - Trees
+  - Lists
+  - Color Pickers
+  - Table Headers
+- New Compact Settings
+  - Compact Fields
+  - Custom List Items Height
+
+### Fixes
+- Refactor and rewrite of all components, including the ones not cited above:
+  - Checkboxes
+  - Radio Buttons
+  - Switches (OnOff)
+  - Sliders
+  - Progress Bars
+  - Tabs
+  - NavBar
+  - Labels
+  - Action Buttons
+  - Separators
+
 # 6.13.0
 
 ### Features
