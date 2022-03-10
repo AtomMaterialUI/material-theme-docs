@@ -1,5 +1,8 @@
 ---
-layout: docs title: What's new group: whatsnew toc: true
+layout: docs
+title: What's new
+group: whatsnew
+toc: true
 
 ---
 
