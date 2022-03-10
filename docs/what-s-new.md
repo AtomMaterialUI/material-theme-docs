@@ -6,9 +6,9 @@ toc: true
 
 ---
 
-# What's new in Material Theme UI v6.14.0
+## What's new in Material Theme UI v6.14.0
 
-## New UI!!!
+### New UI!!!
 
 The Material Design components experienced a major overhaul to conform to the latest [Material Design specification](https://material.io/components).
 
@@ -16,7 +16,7 @@ The Material Design components experienced a major overhaul to conform to the la
 
 Here's a brief overview of the new components:
 
-### Text Fields, Password Fields and Number Fields
+#### Text Fields, Password Fields and Number Fields
 
 Input Fields have become larger, with a rounded border, losing their Material Design 2017 style of having a single bottom border. The reasoning behind this,
 according to Material Design principles, is to make them more discoverable and interactable.
@@ -27,11 +27,11 @@ to allow you to have smaller fields.
 
 More info: <https://material.io/components/text-fields#anatomy>
 
-### Text Areas
+#### Text Areas
 
 Text Areas underwent the same process and will now sport a rounded border, just like the text fields, making them more discoverable as well.
 
-### ComboBoxes and Menus
+#### ComboBoxes and Menus
 
 ComboBoxes (or dropdowns) got the same border style as well, and their options are now showing up under the text field, instead of over it. The caret icon (the
 arrow) also changed to the usual Material Design chevron.
@@ -41,13 +41,13 @@ the [Compact Settings](/docs/configuration/compact-settings.md#custom-list-items
 
 More info: <https://material.io/components/menus#usage>
 
-### Buttons
+#### Buttons
 
 Buttons got rounder, smaller and now sport a small shadow under them, making them stand out more, like regular buttons. The other options (uppercase, outlined, etc.) are still available.
 
 More info: <https://material.io/components/buttons#anatomy>
 
-### Search Fields
+#### Search Fields
 
 The search fields also underwent a redesign, becoming larger and bordered, but with a sharp border. The reason for this is that they are usually encapsulated in a more complex UI, such as the "_Search Everywhere_" or "_Find in Files_" popups.
 
@@ -55,7 +55,7 @@ The search fields also underwent a redesign, becoming larger and bordered, but w
 
 They are also affected by the "*Compact Fields*" setting.
 
-### Trees
+#### Trees
 
 Trees got their selected item design changed to sport a rounded border just like the other components. They look like the design of the navigation drawer's
 selected items from <https://material.io/components/navigation-drawer#usage>.
@@ -65,7 +65,7 @@ the current one. You can still use the old one from the options though, renamed 
 
 Of course, the previous options (List Items Height, Indentation, etc.) are still available.
 
-### Other updates
+#### Other updates
 
 Other updated elements include:
 
@@ -83,7 +83,7 @@ This was a lot of hard work, but I hope you'll like it :)
 
 -----
 
-# What's new in Material Theme UI v6.13.0
+## What's new in Material Theme UI v6.13.0
 
 The first version of 2022 introduces a new set of **Material Themes**, expanding the current collection with new themes that are not available elsewhere, as
 well as new **language additions** for Ruby and initial support for **Material Theme bundles**
@@ -91,7 +91,7 @@ well as new **language additions** for Ruby and initial support for **Material T
 
 ----
 
-## Material Theme Bundles
+### Material Theme Bundles
 
 Material Theme "**Bundles**" (or "plugins", or "addons") are a way to benefit of Material Theme's paid features separately, without having to pay for the core
 plugin.
@@ -125,7 +125,7 @@ plan, so buying them when you have a paid plan would only result in paying twice
 
 ----
 
-## New Material Themes
+### New Material Themes
 
 You might be aware that the original Material Themes from [@equinusocio](https://github.com/equinusocio) have not had changes for a long time. It's fine, these
 themes are awesome and a personal favorite too. However, the Material Theme color scheme is great on its own, and can easily live in different _environments_
@@ -147,7 +147,7 @@ As said previously, these themes are completely new, and thus can be subject to 
 
 ----
 
-## SynthWave '84
+### SynthWave '84
 
 Another theme we've been working on is the implementation of the famous [SynthWave '84](https://github.com/robb0wen/synthwave-vscode) from Robb Owen.
 
@@ -160,7 +160,7 @@ Unfortunately, there is no way to get the "Glowing Neons" to work in our favouri
 
 ----
 
-## Theme Reorganization
+### Theme Reorganization
 
 As part of the newest additions, the theme selection menus have been reorganized to group light and dark themes together.
 
@@ -168,7 +168,7 @@ As part of the newest additions, the theme selection menus have been reorganized
 
 ----
 
-## Ruby Additions
+### Ruby Additions
 
 And last but not least, a new [Language Addition](/docs/configuration/color-scheme-additions.md) made its way alongside the others: **Ruby**.
 
@@ -210,14 +210,14 @@ Just like _Python_, **Ruby Additions** are now available for Ruby-based IDEs, an
 
 ---
 
-# What's new in Material Theme UI v6.12.0
+## What's new in Material Theme UI v6.12.0
 
 This version is less about new features but more about project consolidation, bug squashing, code deprecation, documentation and migration to Kotlin. It's part
 of a long process to make the project more stable and maintainable. {:class='title'}
 
 Here are a few new features though:
 
-## Automatically Reset Color Scheme
+### Automatically Reset Color Scheme
 
 One of the main complaints of the plugin is that it constantly asks the user to **reset their color schemes**, but in actuality most users have no idea how to
 nor do want to do so. Even though a lot of documentation is available regarding the subject, since the plugin relies a lot on the color schemes, relying on user
@@ -236,7 +236,7 @@ backup your custom changes before enabling the feature!
 
 This feature is available in the free plan. {:class='card-panel'}
 
-## Python Additions
+### Python Additions
 
 Another small addition to the list of [Language Additions](configuration/color-scheme-additions.md): **Python Additions**
 
@@ -254,7 +254,7 @@ PyCharm users and Python plugin users are now able to customize specific keyword
 - `print`
 - `True`, `False` and `None`
 
-## Many bug fixes, improvements and deprecations
+### Many bug fixes, improvements and deprecations
 
 - Migration to Java 11
 - Converted 70% of the plugin in Kotlin, and fixed all detekt issues
@@ -275,7 +275,7 @@ This is a huge refactoring release, so there might be some regressions here and 
 
 ----
 
-# What's new in Material Theme UI v6.11.1
+## What's new in Material Theme UI v6.11.1
 
 ### Features
 
@@ -292,7 +292,7 @@ This is a huge refactoring release, so there might be some regressions here and 
 
 -----
 
-# What's new in Material Theme UI v6.10.0
+## What's new in Material Theme UI v6.10.0
 
 This release brings a lot of new features, mostly related to font customization. {:class='title'}
 
