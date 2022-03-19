@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "mallowigi <heliosaian@gmail.com>",
   "scripts": {
@@ -35,7 +35,7 @@
     "http-proxy-middleware": "2.0.1",
     "js-yaml": "4.1.0",
     "load-grunt-tasks": "5.1.0",
-    "node-sass": "7.0.0",
+    "node-sass": "7.0.1",
     "rimraf": "3.0.2",
     "semver": "7.3.5",
     "url-loader": "4.1.1"
