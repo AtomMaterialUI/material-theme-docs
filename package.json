@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "mallowigi <heliosaian@gmail.com>",
   "scripts": {
@@ -17,7 +17,7 @@
     "babel-loader": "8.2.3",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
-    "browser-sync": "2.27.7",
+    "browser-sync": "2.27.9",
     "grunt": "1.4.1",
     "grunt-autoprefixer": "3.0.4",
     "grunt-babel": "8.0.0",
