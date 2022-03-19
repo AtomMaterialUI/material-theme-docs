@@ -19,6 +19,14 @@ This is a reference of all the components customized by the plugin.
 
 {% include carbonads.html %}
 
+**Note**: This page concerns the old Material Design, which was the style from 2015 to 2022. Since then, the UI has been redesigned to comply to the new Material Design guidelines.
+{:class='card-panel warn'}
+
+
+{% include figure.html content="/screens/dslShowcase.png" caption="New Material Design 2020" %}
+
+----
+
 ## Introduction
 
 The original idea of the _Material Theme plugin_ was to be able to customize the UI and Editor colors to look like the

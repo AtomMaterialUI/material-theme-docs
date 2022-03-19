@@ -1,10 +1,28 @@
 ---
 layout: docs
-title: What's new
+title: What's new?
 group: whatsnew
 toc: true
 
 ---
+
+## What's new in Material Theme UI v6.15.0
+
+### Legacy Material Design
+
+The latest version introduced a new UI with a lot of changes: broader components, rounder buttons and so on. However, not all people were happy with the changes, be it because they didn't like the new style, or simply because they were used to the old, sharper design and the signature of the legacy Material Design of 2016.
+
+Therefore, in order to not drive people away, we decided to add it back! Disabled by default, you can find it inside the **Components** tab, in the Material Theme settings.
+
+Please note however that this style remains **deprecated**. It means, we're not planning to remove it for the moment, but we won't be adding any new features nor fix any bugs that might occur in the future.
+
+### Fixes
+
+- Add a bit more spacing between buttons.
+- Remove the glitch that happened during selection in lists.
+
+----
+
 
 ## What's new in Material Theme UI v6.14.0
 
