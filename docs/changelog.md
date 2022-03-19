@@ -16,6 +16,16 @@ next:
 # Changelog
 ----
 
+# 6.15.0
+
+### Features
+- New Setting: **Old Material Design Style**: allows you to go back to the legacy material design style (2016-2022).
+  - You can find it in the *Components* Tab.
+
+### Fixes
+- Add some spacing between buttons.
+- Remove the glitch showing in the new lists when selecting the top element.
+
 
 # 6.14.0
 

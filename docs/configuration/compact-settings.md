@@ -75,13 +75,30 @@ As a result, a setting have been added to revert to the default menus size.
 
 This setting allows you to reduce the size of the fields, that have become larger since the version 6.14.
 
-This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**.
+This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**, as well as **Search Everywhere**. **Find In Files**, **New File**, etc.
+
+{% include figure.html content="/screens/compactField.png" caption="Compact Fields" %}
+
+{% include figure.html content="/screens/paddedField.png" caption="Padded Fields" %}
+
+{% include figure.html content="/screens/compactSearch.png" caption="Compact Search Everywhere" %}
+
+{% include figure.html content="/screens/paddedSearch.png" caption="Padded Search Everywhere" %}
+
 
 ----
 
 ### Custom List Items Height
 
 This setting will allow you to customize the items' height in lists, such as regular lists, dropdown options, and many others.
+
+Note: This also affects *Autocompletion choices**.
+
+{% include figure.html content="/screens/highestHeight.png" caption="Custom List Item Size: 48" %}
+
+{% include figure.html content="/screens/paddedComplete.png" caption="Large Autocomplete" %}
+
+{% include figure.html content="/screens/compactComplete.png" caption="Compact Autocomplete" %}
 
 
 ### Notes

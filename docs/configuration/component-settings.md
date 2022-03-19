@@ -19,6 +19,20 @@ This page controls the components used throughout the IDE, like buttons, scrollb
 
 {% include carbonads.html %}
 
+### Old Material Design Style
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
+This setting will revert to the old 2016's Material Design style, for those who prefer it over the new Material Design style.
+
+Please note: This style remains deprecated, e.g., we won't be adding any new features nor fix any issues that can occur within this design.
+{:class='card-panel warn'}
+
+This feature is available since 6.15.0
+
+----
+
 ### Uppercase buttons
 
 This feature is available in the free plan.
