@@ -6,6 +6,32 @@ toc: true
 
 ---
 
+## What's new in Material Theme UI v6.16.0
+
+### New Feature: **Custom UI Font**
+
+A new setting has been added to the Material UI Settings Features: **Custom UI Font**. This font replaces (or rather, expands on) the original [Material Fonts](/docs/configuration/features-settings.md#material-fonts) to provide the ability to choose your own font.
+
+Actually, this feature supplements the _Custom Font_ feature provided by JetBrains, so this is just another way to change the IDE font.
+
+This feature is available to all users.
+
+### Fixes:
+
+- Added back missing properties from legacy Material Design style (selected items, color panels etc)
+- Remove need for restart when applying legacy _Material Design style_
+- Fix **Scrollbars Color Settings** non-translated texts on Linux
+- Align new comboboxes with other fields
+- Fix buttons text vertical and horizontal alignments
+- Add accent color to focused fields
+- Add new Material UI Border to fields that removed it (_Find in Files_, _Plugins Search_ and others)
+- Fix text not showing when editing table cells
+- Fix Option button arrow
+
+
+
+----
+
 ## What's new in Material Theme UI v6.15.0
 
 ### Legacy Material Design

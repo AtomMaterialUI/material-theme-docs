@@ -24,22 +24,19 @@ Here you can turn on and off specific features of the Material Theme for even fu
 
 ## Features
 
-### Material Fonts
+### Custom UI Font
 
-This feature is only available for premium users.
+This feature is only available to all users.
 {:class='card-panel warn'}
 
-This setting switches the default font used in the editor with the usual font used in Material Design, [Roboto](https://fonts.google.com/specimen/Roboto).
+This setting replaces the previous [Material Fonts](/docs/configuration/features-settings.md#material-fonts) setting, by allowing you to specify your own UI Font.
 
-This setting changes the font you see in *Settings → Appearance and Behavior → Appearance*. When unchecked, it will restore the original default font, namely `Tahoma` in Windows, `SF_Text` in Mac and `Lucida Sans` in Linux (at the time of writing). When checked, it will replace it with `Roboto` (only if the font is already installed in the machine though).
+In fact, this setting supplements the original [Custom Font](https://www.jetbrains.com/help/idea/user-interface-themes.html) provided by the IDE in *Appearance and Behavior*, so this is just another way to set up your own IDE font.
 
-**Note**: This setting is requiring that **default fonts are not overriden**, meaning that the setting at `Appearance and Behavior → Appearance → Override default font` is unchecked, in which case it will use the font set there.
-{:class='card-panel'}
+**Tip**: For an optimal experience, either use the **Roboto** or **Inter** font family!
+{:class='card-panel warn'}
 
-**Note 2**: This setting will replace the font with Roboto only if that font is already installed in the machine. If not, you can download it here: <https://material.io/guidelines/resources/roboto-noto-fonts.html>
-{:class='card-panel'}
-
-----
+---
 
 ### Use Editor Default Font
 
@@ -169,6 +166,24 @@ This feature is available since version 6.3.0 and is still experimental at this 
 ---
 
 ## Deprecated features
+
+### Material Fonts
+
+This feature is only available for premium users.
+{:class='card-panel warn'}
+
+This setting switches the default font used in the editor with the usual font used in Material Design, [Roboto](https://fonts.google.com/specimen/Roboto).
+
+This setting changes the font you see in *Settings → Appearance and Behavior → Appearance*. When unchecked, it will restore the original default font, namely `Tahoma` in Windows, `SF_Text` in Mac and `Lucida Sans` in Linux (at the time of writing). When checked, it will replace it with `Roboto` (only if the font is already installed in the machine though).
+
+**Note**: This setting is requiring that **default fonts are not overriden**, meaning that the setting at `Appearance and Behavior → Appearance → Override default font` is unchecked, in which case it will use the font set there.
+{:class='card-panel'}
+
+**Note 2**: This setting will replace the font with Roboto only if that font is already installed in the machine. If not, you can download it here: <https://material.io/guidelines/resources/roboto-noto-fonts.html>
+{:class='card-panel'}
+
+----
+
 
 ### Material Design Components
 
