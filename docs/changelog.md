@@ -16,6 +16,23 @@ next:
 # Changelog
 ----
 
+
+# 6.16.0
+
+### Features
+- New Setting: **Custom UI Font**: replaces the previous **Material Fonts** to provide a configurable font for the UI.
+
+### Fixes
+- Added back missing properties from legacy Material Design style (selected items, color panels etc)
+- Remove need for restart when applying legacy _Material Design style_
+- Fix **Scrollbars Color Settings** non-translated texts on Linux
+- Align new comboboxes with other fields
+- Fix buttons text vertical and horizontal alignments
+- Add accent color to focused fields
+- Add new Material UI Border to fields that removed it (_Find in Files_, _Plugins Search_ and others)
+- Fix text not showing when editing table cells
+- Fix Option button arrow
+
 # 6.15.0
 
 ### Features
