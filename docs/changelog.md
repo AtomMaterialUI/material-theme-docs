@@ -16,6 +16,16 @@ next:
 # Changelog
 ----
 
+# 6.16.1
+
+### Fixes
+- Improve the UI of the tag buttons: alignment, close button, color, etc
+- Add exclusions to replacing specific text fields: Plugins pages, New File popup, JFormDesigner inline edit, Prettier options etc
+- Fix outlined buttons disabled border color
+- Limit the minimum left and right indent at 4 as it wouldn't work below it.
+- Synthwave color scheme improvements: Kotlin instance field color
+- Prevent showing the "what's new" popup when the setting is disabled
+
 
 # 6.16.0
 

@@ -59,8 +59,6 @@ S
 #docs/development/external-themes.md,d/f/dfb9aade7ca0819cf212f5d794ff91561ccc8f2d
 =
 _data/nav.yml,6/d/6d66ba61d4419bcd008c979f82af299c8fe20b11
-W
-'docs/configuration/features-settings.md,1/f/1f57967a014444e0cc042a41c2260f9c8d0c77d4
 S
 #docs/configuration/custom-themes.md,1/d/1d2c46c2f58458f40ef70ea5019381983e3c5e72
 =
@@ -85,8 +83,6 @@ O
 docs/reference/color-palette.md,b/6/b6163abf45d0015efd5334475e007f461ed68014
 A
 docs/analytics.md,c/4/c49c8058f0e514471f40799afe5dddeca9e302b3
-A
-docs/changelog.md,b/c/bcfdc22744cc9eb77943b9b58aed3b1a36720c35
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 >
