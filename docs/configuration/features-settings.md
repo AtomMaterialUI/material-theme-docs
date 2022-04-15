@@ -146,25 +146,6 @@ This feature is available since 4.1.0.
 
 ----
 
-### Large Tool Windows Layout
-
-This feature is available in the free plan.
-{:class='card-panel warn'}
-
-The new version of the Material Theme UI makes use of the new experimental feature in progress by JetBrains: The **Large Tool Windows**.
-
-This new layout, heavily reminding of VSCode, replaces the tool windows by larger stripes on the left and right side of the screen. It also strips the buttons of all texts, making the IDE feeling less cluttered.
-
-{% include figure.html content="/screens/stripedToolWindows.png" caption="Large Tool Windows" %}
-
-This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
-
-{% include figure.html content="/screens/quickActionsPanel.png" caption="Quick Actions Panel" %}
-
-This feature is available since version 6.3.0 and is still experimental at this point, so there could be bugs.
-
----
-
 ## Deprecated features
 
 ### Material Fonts
@@ -229,6 +210,22 @@ What it doesn't disable however, albeit Material Design components, are:
 - Font size
 
 ----
+
+
+### Large Tool Windows Layout
+
+
+The new version of the Material Theme UI makes use of the new experimental feature in progress by JetBrains: The **Large Tool Windows**.
+
+This new layout, heavily reminding of VSCode, replaces the tool windows by larger stripes on the left and right side of the screen. It also strips the buttons of all texts, making the IDE feeling less cluttered.
+
+{% include figure.html content="/screens/stripedToolWindows.png" caption="Large Tool Windows" %}
+
+This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
+
+{% include figure.html content="/screens/quickActionsPanel.png" caption="Quick Actions Panel" %}
+
+This feature is available since version 6.3.0 and is still experimental at this point, so there could be bugs.
 
 
 -----
