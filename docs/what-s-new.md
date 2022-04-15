@@ -6,6 +6,21 @@ toc: true
 
 ---
 
+## What's new in Material Theme UI v7.0.0-7.3.2
+
+The 7.X.X versions up to 7.3.2 contained mainly the same changes than of the 6.14.X up to 6.16.X, but for the 2022.1 IDEs. However, there are some changes that need to be mentioned:
+
+### Large Tool Windows deprecation and Experimental UI
+
+As with every major IDE updates, a lot of work needed to be done to support the newest releases, alongside their breaking changes and deprecations.
+
+One of the features that got the cut was the very famous **Large Tool Windows**, which was sometimes buggy but nonetheless a very awaited redesign. Since this wasn't a feature made by the plugin, it was very difficult to open the feature to the public despite the barriers, but this time it became utterly impossible, because it got merged with the complete redesign of the IDE.
+
+As a result, the old setting has been removed, and temporarily replaced with a new setting to open this **Experimental UI** instead. However, we do **NOT** recommend using this UI as this is a **largely buggy and highly suspect to change between new releases of the IDE**. If you're aware of the risks, you can try it, but don't come complaining if there are issues.
+
+----
+
+
 ## What's new in Material Theme UI v6.16.1
 
 This is a bugfix update for many issues related to the new UI.
