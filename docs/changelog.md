@@ -16,6 +16,78 @@ next:
 # Changelog
 ----
 
+
+# 7.3.2
+
+### Fixes
+
+- Migrated the **Experimental UI** to a new setting, to prevent it from having to be enabled for people using the deprecated **Large Tool Windows** setting.
+
+# 7.3.0 - 7.3.1
+
+### Features
+
+- Introduction of the new **Experimental UI** (please use with caution, this is still hugely experimental).
+
+### Other
+
+- Migrated the notifications to the new SDK
+
+# 7.2.3 - 7.2.2
+
+### Fixes
+
+- New UI bug fixes
+
+# 7.2.1
+
+### Features
+
+- Incorporate changes from 6.14 and 6.15
+
+# 7.2.0
+
+### Features
+
+- New option in *Components*: **Old Material Style**: Allows you to use the previous Material Design style
+
+### Fixes
+
+- Add some spacing between buttons
+
+# 7.1.1
+
+### Fixes
+
+- Fix #87
+- Fix #93
+- Fix #92
+- Fix #91
+- Fix #88
+- Fix #68
+- Fix #83
+- Fix #80
+- Fix #58
+- Fix #61
+- Fix #77
+- Fix #54
+- Fix #94
+
+
+# 7.1.0
+
+### Fixes
+- Import new UI from 2021.3
+
+### Other
+- Make EAP users work with premium features for free!
+- Removed the Large Tool Windows setting, as JetBrains removed the functionality in preparation of their new UI :'(
+
+# 7.0.0
+
+### Fixes
+- Initial Support for 2022.1
+
 # 6.16.1
 
 ### Fixes
