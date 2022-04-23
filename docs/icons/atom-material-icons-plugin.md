@@ -162,16 +162,17 @@ counterpart.
 
 ----
 
-### Bigger Icons
+### Custom Icon Size (replace Bigger Icons as of v64.0)
 
-This option increases the size of the icons from 16px to 24px, making them slightly larger.
+This option allows you to change the size of the icons from 12px to 24px.
+
+Moreover, it adapts the Project View Items' height to the new size.
 
 {% include figure.html content="/screens/normalIcons.png" caption="Normal Icons" %}
 
 {% include figure.html content="/screens/biggerIcons.png" caption="Bigger Icons" %}
 
-**Note**: The IDEs are not optimized to handle bigger icons, so there could be parts of the IDE that are missing icons, or that the containers will appear larger/wider/bigger. Please be aware of such issues and use this mode with
-precaution.
+**Note**: The IDEs are not optimized to handle bigger icons, so there could be parts of the IDE that are missing icons, or that the containers will appear larger/wider/bigger. Please be aware of such issues and use this mode with precaution.
 {:class='card-panel warn'}
 
 ----
