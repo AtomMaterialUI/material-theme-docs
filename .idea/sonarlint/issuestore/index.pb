@@ -29,14 +29,8 @@ M
 docs/configuration/accents.md,0/c/0cdf5ea9883de603c7ab179450d33b618cf61a66
 \
 ,docs/configuration/color-scheme-additions.md,0/8/08f2fe0caa5ca20ea8f78a6705920eee58918ca2
-X
-(docs/icons/atom-material-icons-plugin.md,6/2/6273e15cca1f9dc94dcd657b69ac96760d85dbd3
 L
 docs/reference/file-icons.md,5/c/5cd5e25f4b9292af97e40ff8a7fb0adcf12c2856
-N
-docs/reference/associations.md,8/2/826b2f0b8d7da81d43e20dc7a0cae1c8952f9ae9
-U
-%docs/reference/folder-associations.md,6/8/6806f34ab85ef5da99de13cba1716a7f160fe185
 L
 docs/reference/components.md,a/7/a73d6692f37ee0652f0203ca5faf7058ced55438
 B
@@ -101,3 +95,7 @@ I
 sass/toolbox/_themes.scss,4/a/4ae4e2c027b26d223eb68e5944321054ad0e6487
 N
 sass/assets/_font-awesome.scss,5/1/51c123d6f1f9757f7ec9adc0f5058a29d26e73d1
+N
+docs/reference/associations.md,8/2/826b2f0b8d7da81d43e20dc7a0cae1c8952f9ae9
+U
+%docs/reference/folder-associations.md,6/8/6806f34ab85ef5da99de13cba1716a7f160fe185
