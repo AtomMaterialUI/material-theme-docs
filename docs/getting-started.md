@@ -19,7 +19,8 @@ This section describes how to download and use the Material Theme UI plugin in y
 
 ### Plugin Manager
 
-The easiest way to install the Material Theme plugin is through IntelliJ's **plugin manager**. The plugin manager usually contains stable releases that made it through testing and feedback.
+The easiest way to install the Material Theme plugin is through IntelliJ's **plugin manager**.
+The plugin manager usually contains stable releases that made it through testing and feedback.
 {:class='title'}
 
 <img src="/img/screens/plugins.png" alt="Plugins">
@@ -29,14 +30,14 @@ Steps:
 2. On the left, select **Plugins**
 3. Click on the button `Browse repositories`
 4. In the search field, type `Material Theme`
-5. Double-click on `Material Theme UI` to install it. You can also decide to install `Atom Material Icons` to get the icons' customization feature.
+5. Double-click `Material Theme UI` to install it. You can also decide to install `Atom Material Icons` to get the icons' customization feature.
 6. Click the `OK` button and restart the IDE.
 
 <img src="/img/screens/listplugin.png" alt="Plugins List">
 
-### Manual Installation
+### Manual installation
 
-If for some reason you don't want to use the plugin repository, or if you want to run your fork of the plugin, you can
+If, for some reason, you don't want to use the plugin repository, or if you want to run your fork of the plugin, you can
 decide to install it manually.
 
 <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">
@@ -44,8 +45,7 @@ decide to install it manually.
 </a>
 
 Steps:
-1. Select the version you want to install. Please note the _Compatible Builds_ column to ensure that your IDE is
-   compatible with the selected version.
+1. Select the version you want to install. Please note the _Compatible Builds_ column to ensure that your IDE is compatible with the selected version.
 2. Download the zip archive of the plugin.
 3. Open Plugins settings (`Preferences → Plugins`)
 4. Instead of selecting `Browse repositories`, select **Install plugin from disk** and select the zip file.
@@ -55,19 +55,20 @@ Steps:
 
 ## Usage
 
-Once the plugin is installed, you will immediately notice that the color of your IDE changed to a nice oceanic blue
-color! But the Material Plugin is much more than that.
+Once the plugin is installed, you should immediately notice that the color of your IDE changed to a nice oceanic blue
+color!
+But the Material Theme Plugin is much more than that.
 
 ### Setting the color scheme
 
-The first thing to set is to change the color scheme to fit your current _UI Theme_. It is usually done automatically
-when selecting a theme, but if for some reason it doesn't, here's how you do it:
+The first thing to set is to change the color scheme to fit your current _UI Theme_. It's usually done automatically
+when selecting a theme, but if it doesn't for some reason, here's how you do it:
 
-To do so, open the `Quick Switch Panel` by typing `Ctrl + ``/Cmd + ~` and select `Color Scheme`. Alongside the color
-schemes provided by the IDE and your own custom color schemes, you will find the color schemes provided by the
+To do so, open the `Quick Switch Panel` by typing `Ctrl + ``/Cmd + ~` and select `Color Scheme`.
+Alongside the color schemes provided by the IDE, and your own custom color schemes, you should find the color schemes provided by the
 plugin:
 
-#### Material Themes:
+#### Material themes:
 
 {% for theme in site.data.themes.material %}
 - {{theme.name}}
@@ -77,7 +78,7 @@ plugin:
 - {{theme.name}}
 {% endfor %}
 
-#### Other Themes:
+#### Other themes:
 
 {% for theme in site.data.themes.other %}
 - {{theme.name}}
@@ -94,8 +95,8 @@ You can see more in the [Color Schemes](/docs/configuration/color-schemes) secti
 
 ### Configuring the plugin
 
-The plugin also comes with a bunch of configurable settings to suit all flavors. There you can disable certain features,
-change the colors, sizes and appearance of the elements and so on.
+The plugin also comes with a bunch of configurable settings to suit all flavors. 
+There you can turn off certain features, change the sizes, appearance of the elements and colors, etc.
 
 These settings are found inside `Settings → Appearance and Behavior → Material Theme`.
 
@@ -106,21 +107,21 @@ These settings are found inside `Settings → Appearance and Behavior → Materi
 
 Check [Settings](/docs/configuration/settings) for more info.
 
-### Material Theme Quick Panel
+### Material Theme quick panel
 
-Last but not least, the plugin is also providing action groups to quickly customize the theme. These action groups are
-found in:
+Last but not least, the plugin is also providing action groups to quickly customize the theme.
+These action groups are found in:
 - The IDE menu, under `Tools → Material Theme`
 - The main toolbar, at the end of the toolbar
 - By invoking the `Quick Switch Panel`
 
 {% include figure.html content="/screens/toolbar.png" caption="Material Theme Toolbar" %}
 
-Check [Actions](/docs/configuration/quick-actions-panel}}) for more info
+Check [Actions](/docs/configuration/quick-actions-panel) for more info
 
-## Support
+## Supported versions
 
-The plugin is supported on all IDEs, but because of changes of the SDK specific versions are available only on latest builds:
+The plugin is supported on all IDEs, but because of changes of the SDK specific versions are available only on the latest builds:
 
 - IDE versions 2016.X and lower > up until version `0.2.3`
 - IDE versions 2017.1-2 > up until version `0.10.6`
@@ -138,19 +139,21 @@ The plugin is supported on all IDEs, but because of changes of the SDK specific 
 - IDE versions 2021.1 > from version `6.0.0` up to `6.7.0`
 - IDE versions 2021.2 > from version `6.8.0`
 - IDE versions 2021.3 > from version `6.11.0`
+- IDE versions 2022.1 > from version `7.0.0`
 
 ## Premium Support
 
 From version 6.0.0 the plugin has become a freemium plugin.
 
-Please refer [here]({{ site.baseurl }}/docs/pricing) for more details and [this blog post]({{ site.baseurl }}/docs/about-subscription-model) to better understand the reasons behind this choice.
+Please refer [here](/docs/pricing) for more details and [this blog post](/docs/about-subscription-model) to better understand the reasons behind this choice.
 
 
 ## Android Studio
 
 The plugin should be compatible with Android Studio just fine,
-but since _Android Studio Bumblebee_ you will need to install [another plugin](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) to be able to **Activate Your License**
+but since _Android Studio Bumblebee_ you would need to 
+install [another plugin](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) to be able to **Activate your license**.
 
 
 
-*[freemium]: The plugin is free but some functionalities are under a paywall.
+*[freemium]: The plugin is free, but some functionalities are under a paywall.
