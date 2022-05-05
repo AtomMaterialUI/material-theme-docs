@@ -212,6 +212,22 @@ Thankfully there is an easy fix for that: in the `VCS File Colors` there is a bu
 revert the value back to the Darcula/IntelliJ default.
 **Note however that as soon as you change a color scheme the values will change back again.**
 
+-----
+
+## Scrollbars
+
+
+**Q**: **I've set the `Accent Scrollbars` setting off, but my scrollbar is still blue/orange/whatever!**
+
+**A**: The `Accent Scrollbars` and `Transparent Scrollbars` feature control the appearance of the IDE Scrollbars, not the editor scrollbars.
+For the editor scrollbars, unfortunately, the only way to do so is to use this _Color Scheme Panel_.
+
+**Q**: **I've uninstalled the theme, but the scrollbar colors persist!**
+
+**A**: Since these colors are color scheme based, removing the plugin doesn't revert them back, just like with the [File Status Colors](/docs/configuration/file-status-colors).
+The only way to do so would be to restore the color scheme.
+
+
 ----
 ## License Activation
 
