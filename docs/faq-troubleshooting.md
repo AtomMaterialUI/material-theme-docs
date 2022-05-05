@@ -20,76 +20,71 @@ Here you can find all the Troubleshooting FAQs.
 
 ## Settings
 
-**Q**: I've installed the Material Theme, but the editor still shows me the `Darcula` theme?
+**Q**: **I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?**
 
-**A**: The Theme Switcher is only replacing the theme of the whole IDE, not the editor itself. You can therefore have a
-separate theme for the IDE and the Editor, for instance _Palenight_ and _Darker_ or even a custom Color Scheme.
+**A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible to the new version.
+In that case, simply make a copy of the settings file, then delete the original file, and restart the IDE.
 
-**Q**: I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?
+If the issue is gone, simply go back to the settings and go back to your previous configuration manually.
+If the issue persists, please report it in the Issues Section.
 
-**A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible to the
-new version. In that case, simply make a copy of the settings file, then delete the original file, and restart the IDE.
+**Q**: **I've removed the plugin, and still the background image persists!**
 
-If the issue is gone, simply go back to the settings and go back to your previous configuration manually. If the issue
-persists, please report it in the Issues Section.
+**A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image` function from the IDE behind the curtains.
+Therefore, removing the plugin might not remove the set image completely.
+If that occurs, you can remove the image by opening the Command Panel (Cmd-Shift-A/Ctrl-Shift-A)
+and type `Set Background image` and then manually remove the image, or go into `Settings → Appearance → Background Image`.
 
-**Q**: I've removed the plugin, and still the background image persists!
-
-**A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image`
-function from the IDE behind the curtains. Therefore, removing the plugin might not remove the set image completely. If
-that occurs, you can remove the image by opening the Command Panel (Cmd-Shift-A/Ctrl-Shift-A) and type `Set Background
-image` and then manually remove the image, or go into `Settings → Appearance → Background Image`.
-
-**Q**: The dark title bar on Mac sticks as well! **Update: since version 2.5.0, it doesn't!**
-
-**A**: As for the Mac Title bar, it is triggered using the IDE Registry. Just open the Command Palette (Cmd-Shift-A)
-and type `Registry`.
-Then you will see at the top the edited values. Simply press Revert to those you don't want.
-
-**Update 2.5.0:** The Dark Title Bar option is now moved inside the Appearance panel of the IDE, named _Dark Window Headers_ (and currently contains the same problems as above). However, a new option `Themed Title Bar` have taken its place in the Material Theme Settings and allows to completely theme the title bar.
-
-**Q**: **I've got two title bars! / My title bar is gone! / My title bar is …**
-
-**A**: This is due to the _Experimental Themed Title Bar_ implemented since 4.3.0. This feature is still in its experimental state so there could still be bugs. Please open an issue in the GitHub repository, and if it bothers you, you can either revert to the JRE 8, or disable the feature and restart the IDE to get back the real title bar.
-
-**Q**: **Somehow I've updated the plugin and now my window is empty!!!!!**
-
-**A**: This is a rare and weird case due to the custom title bar implementation. Reports have indicated that this issue happens only once and is fixed by… resizing the window! Theoretically it should be enough to fix the issue but if it's not the case, please disable the _Themed Title Bar_ until a fix is found.
 
 **Q**: **What is that analytics option? What data are collected?**
 
 **A**: This is an option to allow sending data to Material Theme servers about users' configuration, usage and trends.
-These analytics will allow us to see which features are most used or least used, in order to prioritize
-development of features, or maybe notify users about specific features, to provide a better satisfaction.
-These data are completely anonymous, and are not shared/sold to any third parties.
-If you want to stop sending data, simply turn off the option in the material_theme.xml.
+These analytics will allow us to see which features are most used or least used,
+in order to prioritize development of features, or maybe notify users about specific features, to provide better satisfaction.
 
-**Q**: **The wizard idea was great! But I've made an error and the wizard won't show up anymore!**
+These data are completely anonymous, and are not shared/sold to any third parties.
+If you want to stop sending data, simply turn off the option in the `material_theme.xml`.
+
+**Q**: **My settings are lost/jumbled up!**
+
+**A**: As the plugin evolves, sometimes settings are modified or removed, and as a result it can jumble your configuration files.
+We're trying our best to limit such issues, but they can happen nonetheless.
+
+If you find yourself being unable to use the plugin or even run the IDE, try to delete your configuration files,
+or at least try to delete specific properties until the IDE launches again.
+
+**Q**: **The wizard idea was great! But I've made a mistake, and the wizard won't show up anymore!**
 
 **A**: The wizard will show only once and only when you don't have the `isWizardShown` option set to true in the config file.
-But you can reopen it by simply clicking on the action from the Material Theme Toolbar, in the Features menu.
-
-
-**Q**: **I use two computers and while everything is fine in the first one, when I check the second one it is completely messy, some windows are empty, or I am getting Darcula even though I configured Material Oceanic…**
-
-**A**: This is probably because you are using JetBrains's **Sync Settings** feature. While this is a great feature when you have multiple computers, unfortunately it does not sync third party settings, and as a result settings from the plugin are not synchronized between machines. And since Themes/Look and Feels are indeed synchronized, this would cause some weird behaviors like the ones mentioned previously.
-
-If you need to use Sync Settings, then I'll suggest disabling synchronizing look and feels/themes. Or use the Lite version of the plugin which should be working fine.
+But you can reopen it by simply clicking on the action from the Material Theme Toolbar, on the Features menu.
 
 **Q**: **Where have all the icons gone?**
 
-**A**: Since 5.0.0 all icons related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), another plugin developed by the Material Theme team. This is in order to encourage developers to develop _Icon Themes_, since the plugin is now free of icons.
+**A**:
+Since 5.0.0, the icons related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons),
+another plugin developed by the Material Theme team.
+This is in order to encourage developers to develop _Icon Themes_, as the plugin is now free of icons.
 
 **Q**: **I've downloaded a theme from the Plugins Page, and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…**
 
-**A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes. Even though the plugin tries to convert it to its own format, it won't be as good as the originals. Still, it should be as similar as possible, so there shouldn't be any critical issues. In that case, please report to the repository's issues.
+**A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes.
+Even though the plugin tries to convert it to its own format, it won't be as good as the originals.
+Still, it should be as similar as possible, so there shouldn't be any critical issues.
+In that case, please report to the repository's issues.
+
+**Q**: **I've bought a license, but I am still identified as a Free User!**
+
+**A**: That means that you haven't activated your license yet. At the moment, the only way to do it is to run the action to open the _Registration Modal_.
 
 
-----
-## Main Settings
+{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
 
-- Contrast color is also used inside "striped tables", independently of the setting.
-- Some resources, such as the scrollbar, will not get the new custom accent color until next restart.
+{% include figure.html content="/screens/license.png" caption="License" %}
+
+**Important note**: Android Studio users, in order to activate the plugin (or any paid plugin),
+you need to install a plugin first:<https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support>.
+
+
 
 -----
 ## Tab Settings
