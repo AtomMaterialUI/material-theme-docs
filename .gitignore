@@ -74,6 +74,7 @@ contributors.csv
 # *.iml
 # *.ipr
 .idea/sonarlint
+.idea/sonarlint/issuestore
 
 .jekyll-cache
 .
