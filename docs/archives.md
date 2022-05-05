@@ -8,13 +8,13 @@ toc: true
 
 # What's new in Material Theme UI v6.7.0
 
-This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) to the [Project Frame Colors](/docs/configuration/project-frame-settings.md), as well as fixing many issues as usual.
+This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) to the [Project Frame Colors](/docs/configuration/project-frame-settings), as well as fixing many issues as usual.
 {:class='title'}
 
 
 ## Project Icon in the Project Frame
 
-In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-frame-settings.md), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
+In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-frame-settings), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
 
 {% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
 
@@ -36,7 +36,7 @@ Thanks for [Unthrottled](https://github.com/Unthrottled) for the implementation!
 ## Other fixes
 
 - **Language Additions**: Fix back `console`, `window`, `global` not being colored correctly. ([#1780](https://github.com/ChrisRM/material-theme-jetbrains/issues/1780))
-- Refactor [File Status Colors](/docs/configuration/file-status-colors.md), allowing to restore the file status colors when resetting the color scheme ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
+- Refactor [File Status Colors](/docs/configuration/file-status-colors), allowing to restore the file status colors when resetting the color scheme ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
 - Fix [#1773](https://github.com/ChrisRM/material-theme-jetbrains/issues/1773)
 - Fix [#1764](https://github.com/ChrisRM/material-theme-jetbrains/issues/1764)
 - Fix [#1776](https://github.com/ChrisRM/material-theme-jetbrains/issues/1776)
@@ -61,7 +61,7 @@ This version brings out the first **per-project settings**, alongside new settin
 
 One of the latest updates of the Material Theme was a feature allowing you to add a "custom frame", or "toolbar", at the top of the window with a different color per project.
 
-This feature, named [Project Frame Colors](/docs/configuration/project-frame-settings.md), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
+This feature, named [Project Frame Colors](/docs/configuration/project-frame-settings), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
 
 As a result, new customization capabilities were added to that feature to stand out even more.
 
@@ -139,7 +139,7 @@ Therefore, I've decided to include a new setting to select your preferred style,
 
 {% include figure.html content="/screens/invertedSelectionColor.png" caption="Inverted Selection Color" %}
 
-More information in the [Component Settings documentation](/docs/configuration/component-settings.md#inverted-selection-color)
+More information in the [Component Settings documentation](/docs/configuration/component-settings#inverted-selection-color)
 
 ----
 
@@ -171,7 +171,7 @@ This version improves the themes colors to provide better contrasts, as well as 
 
 Since 2021.1 JetBrains introduced the capabitilty to display a webpage in the editor, and this has been used to show, well, this page actually. However, while it's nice to know what has been updated, it can be a bit annoying to see this popping up at every update.
 
-Therefore, a new switch has been added in the [Other Settings](configuration/other-tweaks-settings.md) tab, to let users control whether they want this page to show up.
+Therefore, a new switch has been added in the [Other Settings](configuration/other-tweaks-settings) tab, to let users control whether they want this page to show up.
 
 ----
 
@@ -235,7 +235,7 @@ Yet another bug-fix release, alongside small features and an overgoing refactor.
 {:class='title'}
 
 ### Features
-- Add two new keywords for the [Project Frame Custom Text](/docs/configuration/project-frame-settings.md#customize-text): `{module}` and `{file}`
+- Add two new keywords for the [Project Frame Custom Text](/docs/configuration/project-frame-settings#customize-text): `{module}` and `{file}`
 
 ### Fixes
 - Fix [#1823](https://github.com/ChrisRM/material-theme-jetbrains/issues/1823)
@@ -268,7 +268,7 @@ This new release is a bug-fix version, principally to rename and disable by defa
 
 # What's new in Material Theme UI v6.8.0
 
-This version's features consists in the ability to [display an overlay](/docs/configuration/features-settings.md#overlays) when modals are open, make the [Active Tab Bold](/docs/configuration/tab-settings.md#bold-active-tab), show notifications when actions are executed, and add a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
+This version's features consists in the ability to [display an overlay](/docs/configuration/features-settings#overlays) when modals are open, make the [Active Tab Bold](/docs/configuration/tab-settings#bold-active-tab), show notifications when actions are executed, and add a few more settings to the bundled wizards. And of course, a few improvements along the way. Oh, and the project is slowly converting into Kotlin :)
 {:class='title'}
 
 ## Overlays
@@ -296,13 +296,13 @@ A new option made its way to the tab settings section, which is the ability to m
 
 {% include figure.html content="/screens/activeBoldTab.png" caption="Active Tab as Bold" %}
 
-Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings.md#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
+Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
 
 ----
 
 ## Make Run Configurations using the Compact Settings
 
-A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/compact-settings.md#compact-dropdown-lists) setting, the same way the other dropdowns do.
+A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/compact-settings#compact-dropdown-lists) setting, the same way the other dropdowns do.
 
 {% include figure.html content="/screens/paddedRunConf.png" caption="Padded Run Configuration" %}
 
@@ -320,7 +320,7 @@ Another small but great improvement is the display of notifications ("toasts") a
 
 ## Add newer settings to the Wizards
 
-Last but not least, a few of the latest settings have been added to the [Wizard](/docs/reference/wizard.md), in order to better showcase them. These include:
+Last but not least, a few of the latest settings have been added to the [Wizard](/docs/reference/wizard), in order to better showcase them. These include:
 - Latest **Show Overlays** feature
 - Latest **Bold Active Tab** feature
 - **Tab Font Size**
@@ -346,7 +346,7 @@ Fixes a threading error caused when switching color schemes.
 
 - Fixes <https://github.com/ChrisRM/material-theme-jetbrains/issues/1747>
 
-[accents](configuration/accents.md) and [file-status-colors](configuration/file-status-colors.md) are part of the [pricing](pricing.md#feature-comparison) but appears requiring the Premium Version.
+[accents](configuration/accents) and [file-status-colors](configuration/file-status-colors) are part of the [pricing](pricing#feature-comparison) but appears requiring the Premium Version.
 
 
 ----
@@ -452,21 +452,21 @@ Bug fixes, improvements, and more information about the Subscription Model in th
 
 Since the new model has been implemented, many users started complaining about the change thinking that the plugin will be no longer free and that they will be left with nothing but to pay in order to continue using the plugin. Or that the plugin using a subscription model means that they will need to pay for it every year.
 
-But that is not the case. In fact, there is a long article explaining [the reasons behind the change](about-subscription-model.md#about-material-themes-new-pricing-model). Unfortunately, people were unaware of this, and the first thing they saw is that the plugin is suddenly paid, and of course being left with incomprehension.
+But that is not the case. In fact, there is a long article explaining [the reasons behind the change](about-subscription-model#about-material-themes-new-pricing-model). Unfortunately, people were unaware of this, and the first thing they saw is that the plugin is suddenly paid, and of course being left with incomprehension.
 
 As a result, I've added more information in the plugin page as well, so that hopefully people will be able to better understand the circumstances of the change as well as the many options available.
 
 ### Bug Fixes
 
-- The __[Outline buttons](configuration/component-settings.md#outline-buttons)__ are no longer transparent as transparency is not really supported in the IDE. Instead, the buttons use color mixing to simulate transparency. This should make the outlined buttons feature more comfortable to use.
-- __[Language Additions](configuration/color-scheme-additions.md)__ are no longer appearing inside comments or JSX Tags. Hope this will be the last of it!
+- The __[Outline buttons](configuration/component-settings#outline-buttons)__ are no longer transparent as transparency is not really supported in the IDE. Instead, the buttons use color mixing to simulate transparency. This should make the outlined buttons feature more comfortable to use.
+- __[Language Additions](configuration/color-scheme-additions)__ are no longer appearing inside comments or JSX Tags. Hope this will be the last of it!
 - Now when changing settings without changing the theme, the color scheme will **NOT BE RESET**.
 - Same for executing actions such as the _Striped Tool Windows_, _Language Additions_, etc.
 
 ### Additions
 
 - Two new actions have been added to the Quick Action Panels: _Outline Buttons_ and _Language Additions_.
-- JavaScript and TypeScript additions requiring the __[Enforced Highlighting](configuration/color-scheme-additions.md#enforce-highlighting)__ are now annotated as such in the _Color Scheme Setting Pages_.
+- JavaScript and TypeScript additions requiring the __[Enforced Highlighting](configuration/color-scheme-additions#enforce-highlighting)__ are now annotated as such in the _Color Scheme Setting Pages_.
 
 
 That's it! And as JetBrains say,

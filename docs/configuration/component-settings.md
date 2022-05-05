@@ -76,7 +76,7 @@ Since 2019.1 the scrollbars enter into two categories:
 * _UI Scrollbars_: These are the scrollbars found throughout the UI (lists, trees and so on)
 * _Editor Scrollbars_: These are the scrollbars inside editors
 
-Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the _Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars.md#important-information).
+Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the _Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars#important-information).
 
 ---
 

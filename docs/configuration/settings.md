@@ -14,14 +14,15 @@ next:
   title: Color Schemes
 ---
 
-The Material Theme plugin comes with a bunch of features tailored for an optimal experience. However, it is also highly configurable to allow every one to customize it to their hearts content.
+The Material Theme plugin comes with a bunch of features tailored for an optimal experience.
+However, it's also highly configurable to allow every one to customize it to their hearts content.
 {:class='title'}
 
 {% include carbonads.html %}
 
-## Themes and Color Schemes
+## Themes and color schemes
 
-### Theme Switcher
+### Theme switcher
 
 The plugin comes prebundled with a set of themes interchangeables through the
 ![Theme Switcher](/img/icons/switcher.png) *Theme Switcher*.
@@ -43,7 +44,7 @@ Or, since version 2.4.0, from the Settings at `Settings → Appearance → Mater
 
 The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.material2.size | plus: site.data.themes.other.size | plus: site.data.themes.other2.size }} themes:
 
-#### Material Themes
+#### Material themes
 
 These themes are based on the original themes, made by Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
 
@@ -71,25 +72,25 @@ Besides the Material Themes, there are other prebundled themes made by the commu
 {% endfor %}
 </ul>
 
-#### Custom Theme
+#### Custom theme
 
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
 Finally, there are the **Custom Themes**, which are the placeholder for the Custom Theme Settings, allowing you to set your own theme colors.
 
-There are two options available, *Custom Theme* for dark themes, and *Light Custom Theme* for light themes.
+There are two options available, *Custom Theme* for dark themes and *Light Custom Theme* for light themes.
 
 See [Custom Themes](/docs/configuration/custom-themes) for more information.
 
 #### Native Themes (since 5.0)
 
 From version 5.0 the plugin now supports **Native Themes** as well, that is, themes using JetBrains theme API.
-When loading a native theme, the plugin will try to convert it into a Material Theme, 
-thus allowing you to use the theme colors while using the Material Theme features such as the components, accent mode and so on.
+When loading a native theme, the plugin would try to convert it into a Material Theme, 
+thus allowing you to use the theme colors while using the Material Theme features such as the components, accent mode, etc.
 
-You don't need to do anything to make it work, simply download a native theme and select it; 
-it will be automatically converted to a theme format supported by the plugin.
+You don't need to do anything to make it work, simply download a native theme and select it. 
+It will be automatically converted to a theme format supported by the plugin.
 
 Examples:
 
@@ -106,8 +107,9 @@ This feature is deprecated since version 6.10.0 in favor of the [native themes](
 {:class='card-panel warn'}
 
 The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes, 
-just like Color Schemes, Keymaps, Coding Styles and so on. 
-To learn more about _External Themes_ or how to create your own plugin, head to the [External Themes section](/docs/development/external-themes).
+just like Color Schemes, Keymaps, Coding Styles, etc. 
+To learn more about _External Themes_ or how to create your own plugin, 
+head to the [External Themes section](/docs/development/external-themes).
 
 Once the external theme has been downloaded and installed, it should appear at the bottom of the Switcher.
 
@@ -116,7 +118,7 @@ Once the external theme has been downloaded and installed, it should appear at t
 {% include figure.html content="/tutorial/externalList.png" caption="External Themes List" %}
 
 ----------
-## Material Theme Settings
+## Material theme settings
 
 ### Settings Page
 
@@ -124,13 +126,13 @@ Some settings are only available for premium users.
 {:class='card-panel warn'}
 
 You can configure many parts of the plugin features from the **plugin settings**.
-They are accessible within `Settings → Appearance → Material Theme → Settings`.
+They're available within the `Settings → Appearance → Material Theme → Settings`.
 
 {% include figure.html content="/screens/settings.png" caption="Material Theme Settings v1" %}
 
 Since version 2.4.0, the settings page has been remade to prevent overwhelming the user from the abundance of customization options.
 
-Now settings are differentiated between basic and advanced settings, they are grouped within _tabs_,
+Now settings are differentiated between basic and advanced settings, they're grouped within _tabs_, 
 and a *Reset Settings* button has been added for easy factory resetting.
 
 {% include figure.html content="/screens/settingsV2.png" caption="Material Theme Settings V2" %}
@@ -140,7 +142,7 @@ and a *Reset Settings* button has been added for easy factory resetting.
 Quick explanation of all settings:
 
 **[Main Settings](/docs/configuration/main-settings)**:
-- *Selected Theme*: Select a _Material Theme skin_ (will not display External Themes)
+- *Selected Theme*: Select a _Theme_ from the prebundled themes.
 - *Contrast Mode*: Add contrast to specific panels and components.
 - *High Contrast*![premium](/img/icons/premium.png): Set a more pronounced contrast, by making the texts more prominent.
 - *Custom Accent Color*: Set a custom accent color.
@@ -150,23 +152,24 @@ Quick explanation of all settings:
 **[Tab Settings](/docs/configuration/tab-settings)**:
 - *Tabs Height*: Customize the tabs' height (between `25` and `60` pixels).
 - *Active Tab Highlight Color*![premium](/img/icons/premium.png): Customize the active tab's indicator color.
-- *Thickness*![premium](/img/icons/premium.png): Set the active tab's indicator thickness (works also for the Project View selected row).
+- *Thickness*![premium](/img/icons/premium.png): Set the active tab's indicator thickness.
 - *Uppercase Tabs*![premium](/img/icons/premium.png): Set the Editor Tabs in Uppercase.
 - *Bold Active Tab*![premium](/img/icons/premium.png): Make the Active Tab Bold.
 - *Tab Highlight Position*![premium](/img/icons/premium.png): Customize the position of the tab highlighter.
 - *Custom Tab Font*![premium](/img/icons/premium.png): Control the font and size of the Editor Tabs.
 
 **[Compact Settings](/docs/configuration/compact-settings)**:
-- *Compact Status Bar*: Reduce the height of the status bar (this is the default height).
+- *Compact Status Bar*: Reduce the height of the status bar.
 - *Compact Table Cells*: Reduce the height of table headers and table cells.
 - *Compact Dropdowns*: Reduce the size of dropdowns.
 - *Compact Menus*: Reduce the size of the menus.
 - *Custom List Items Height*: Control the size of items in lists and dropdowns (min: `18`, max: `48`).
-- *Compact Fields*: Reduce the size of fields (text, numeric and passwords).
+- *Compact Fields*: Reduce the size of fields, such as input, numeric and passwords.
 
 **[Project View Settings](/docs/configuration/project-view-settings)**:
 - *Custom Tree Items Height*![premium](/img/icons/premium.png): Set custom line height in trees (min: `18`, max: `44`).
-- *Custom Tree Indent*![premium](/img/icons/premium.png): Fine tune indent of tree items (both left and right indent).
+- *Custom Tree Indent*![premium](/img/icons/premium.png): Fine tune indent of tree items.
+  - You can configure both the *Left* and *Right* indents. 
 - *Selected Indicator Style*![premium](/img/icons/premium.png): Change the style of the indicator for selected item in trees.
   - *Border*: Add a small rounded border to the left
   - *Dot*: Add a dot on the selected item
@@ -177,7 +180,7 @@ Quick explanation of all settings:
 - *Custom Tree Font*![premium](/img/icons/premium.png): Fine tune the font and size of the project trees (requires restart).
 
 **[Component Settings](/docs/configuration/component-settings)**:
-- *Old Material Design Style*: Reverts to the old Material Design style of 2016-2021.
+- *Old Material Design Style*: Reverts to the old Material Design style of 2016–2021.
 - *Uppercase buttons*: Set the buttons' texts to uppercase.
 - *Outlined buttons*![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart).
@@ -186,7 +189,7 @@ Quick explanation of all settings:
 - *Inverted Completion Selection Color*: Switch the Autocomplete selected item color between the selection color and contrast color.
 
 **[Features Settings](/docs/configuration/features-settings)**:
-- *Custom UI Font*: Set your own custom UI Font. Supplements JetBrains' [_Custom Font_](https://www.jetbrains.com/help/idea/settings-appearance.html).
+- *Custom UI Font*: Set your own custom UI Font. Supplements the IDE's [_Custom Font_](https://www.jetbrains.com/help/idea/settings-appearance.html).
 - *Use Editor Default Font*![premium](/img/icons/premium.png): Automatically update color schemes to use the default font of your choice.
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors).
 - *Material Wallpapers*![premium](/img/icons/premium.png): Add a custom wallpaper per theme for the empty frame window.
@@ -211,7 +214,7 @@ Quick explanation of all settings:
 
 ----
 
-#### Project-Specific Settings
+#### Project-specific settings
 
 This feature is only available for premium users.
 {:class='card-panel warn'}
@@ -221,7 +224,7 @@ These settings allow you to assign specific settings on a per-project basis:
 
 **[Tab Settings](/docs/configuration/tab-settings)**:
 - *Active Tab Highlight Color*![premium](/img/icons/premium.png): Customize the active tab's indicator color.
-- *Thickness*![premium](/img/icons/premium.png): Set the active tab's indicator thickness (works also for the Project View selected row).
+- *Thickness*![premium](/img/icons/premium.png): Set the active tab's indicator thickness.
 - *Uppercase Tabs*![premium](/img/icons/premium.png): Set the Editor Tabs in Uppercase.
 - *Bold Active Tab*![premium](/img/icons/premium.png): Make the Active Tab Bold.
 - *Tab Highlight Position*![premium](/img/icons/premium.png): Customize the position of the tab highlighter.
@@ -266,7 +269,7 @@ The files in question should be located in the following directories:
 
 
 ----------
-## Material Custom Theme
+## Custom theme
 
 This feature is only available for premium users.
 {:class='card-panel warn'}
@@ -282,9 +285,10 @@ Once you set these colors, simply select the `Custom Theme` in the _Material The
 See [Custom Theme](/docs/configuration/custom-themes) for more details.
 
 -----
-## Advanced Configuration
+## Advanced configuration
 
-Here's a list of the keys used in the configuration file (`material_theme.xml`) with their default values. If a key isn't in your file, it means that it uses the default value.
+Here's a list of the keys used in the configuration file (`material_theme.xml`) with their default values.
+If a key isn't in your file, it means that it uses the default value.
 
 ```xml
 <component>
@@ -442,17 +446,17 @@ If the issue persists, please report it in the Issues Section.
 
 **A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image` function from the IDE behind the curtains. 
 Therefore, removing the plugin might not remove the set image completely.
-If that occurs, you can remove the image by opening the Command Panel (Cmd-Shift-A/Ctrl-Shift-A) 
+If that occurs, you can remove the image by opening the Command Panel (`Cmd-Shift-A/Ctrl-Shift-A`) 
 and type `Set Background image` and then manually remove the image, or go into `Settings → Appearance → Background Image`.
 
 
 **Q**: **What is that analytics option? What data are collected?**
 
 **A**: This is an option to allow sending data to Material Theme servers about users' configuration, usage and trends.
-These analytics will allow us to see which features are most used or least used,
+These metrics allow us to find out which features are most used or least used,
 in order to prioritize development of features, or maybe notify users about specific features, to provide better satisfaction.
 
-These data are completely anonymous, and are not shared/sold to any third parties.
+These data are completely anonymous, and aren't shared/sold to any third parties.
 If you want to stop sending data, simply turn off the option in the `material_theme.xml`.
 
 **Q**: **My settings are lost/jumbled up!**
@@ -465,8 +469,8 @@ or at least try to delete specific properties until the IDE launches again.
 
 **Q**: **The wizard idea was great! But I've made a mistake, and the wizard won't show up anymore!**
 
-**A**: The wizard will show only once and only when you don't have the `isWizardShown` option set to true in the config file. 
-But you can reopen it by simply clicking on the action from the Material Theme Toolbar, on the Features menu.
+**A**: The wizard shows only once and only when you don't have the `isWizardShown` option set to true in the config file. 
+But you can reopen it by simply clicking on the action from the [Material Theme Toolbar](/docs/configuration/quick-actions-panel), in the Features menu.
 
 **Q**: **Where have all the icons gone?**
 
@@ -475,7 +479,7 @@ Since 5.0.0, the icons related settings have been moved to the [Atom Material Ic
 another plugin developed by the Material Theme team. 
 This is in order to encourage developers to develop _Icon Themes_, as the plugin is now free of icons.
 
-**Q**: **I've downloaded a theme from the Plugins Page, and now I'm seeing texts that are not themed, or checkboxes that are wrongly colored, etc…**
+**Q**: **I've downloaded a theme from the Plugins Page, and now I'm seeing texts that aren't themed, or checkboxes that are wrongly colored, etc…**
 
 **A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes. 
 Even though the plugin tries to convert it to its own format, it won't be as good as the originals.
@@ -484,7 +488,7 @@ In that case, please report to the repository's issues.
 
 **Q**: **I've bought a license, but I am still identified as a Free User!**
 
-**A**: That means that you haven't activated your license yet. At the moment, the only way to do it is to run the action to open the _Registration Modal_.
+**A**: That means that you haven't activated your license yet. At the moment, the only way to do it, is to run the action to open the _Registration Modal_.
 
 
 {% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}

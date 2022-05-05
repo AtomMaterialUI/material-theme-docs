@@ -97,8 +97,8 @@ In fact, for some, they couldn't care less about the whole package, but having a
 
 Introducing **Material Theme Bundles**: these are separate plugins that provide alternative access to the paid features.
 For example, say you are only interested in the [Custom Theme](/docs/configuration/custom-themes) feature 
-but don't need the [Tab Settings](/docs/configuration/tab-settings.md),
-[Project Frame](/docs/configuration/project-frame-settings.md) or [Language Additions](configuration/color-scheme-additions), 
+but don't need the [Tab Settings](/docs/configuration/tab-settings),
+[Project Frame](/docs/configuration/project-frame-settings) or [Language Additions](configuration/color-scheme-additions), 
 you would be able to purchase it separately and benefit from it without having to buy the full package.
 
 Of course, these bundles would not be free, otherwise there would be no incentive of having to purchase a premium license.

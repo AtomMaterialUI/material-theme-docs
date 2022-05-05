@@ -15,14 +15,14 @@ next:
 
 ---
 
-Configure the main settings of the plugin: Theme, Contrast mode and Accent Color.
+Configure the main settings of the plugin, such as the theme, contrast mode and accent color.
 {:class='title'}
 
 {% include carbonads.html %}
 
-### Selected Theme
+### Selected theme
 
-This dropdown will allow you to change the currently selected theme just like the Quick Switcher.
+This dropdown allows you to change the currently selected theme just like the Quick Switcher.
 
 {% include figure.html content="/screens/switchSettings.png" caption="Switch Theme in Settings" %}
 
@@ -30,7 +30,7 @@ Note that [Native Themes](https://plugins.jetbrains.com/contest/intellij-themes/
 
 ----
 
-### Contrast Mode
+### Contrast mode
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
@@ -49,7 +49,7 @@ The parts that are affected by the contrast change are:
 - Lists and Tables
 - etc...
 
-#### Color Palette
+#### Color palette
 
 {% for theme in site.data.themes.material  %}
 {% include color.html color=theme field='contrast' %}
@@ -66,7 +66,7 @@ The parts that are affected by the contrast change are:
 
 
 ----
-### High Contrast
+### High contrast
 
 This feature is only available for premium users.
 {:class='card-panel warn'}
@@ -75,23 +75,27 @@ This option increases the contrast between the editor and the IDE, just like oth
 
 {% include figure.html content="/screens/highContrast.png" caption="High Contrast" %}
 
-There is already a *Contrast Mode* which is providing contrast between different panes of the editor, such as the Trees or the inputs, but this feature actually increases the contrast between the _IDE itself_ and the editor. You can even set High Contrast **when in Contrast Mode**!
+There is already a *Contrast Mode*, which is providing contrast between different panes of the editor, such as the Trees or the inputs, 
+but this feature increases the contrast between the _IDE itself_ and the editor. 
+You can even set High Contrast **when in Contrast Mode**!
 
 {% include figure.html content="/screens/noHighContrast.png" caption="Regular" %}
 
 {% include figure.html content="/screens/veryHighContrast.png" caption="Very High Contrast" %}
 
-The High Contrast mode is setting the main background color and contrast color darker, while setting the "Text Color" brighter (and vice-versa for light themes), such as the color of the tree items. Other colors, such as the main foreground colors or button colors are left unchanged.
+The High Contrast mode is setting the main background color and contrast color darker,
+while setting the primary text color brighter, and vice-versa for light themes.
+Other colors, such as the main foreground colors or button colors are left unchanged.
 
 ----
-### Custom Accent Color
+### Custom accent color
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
 This setting controls the [current accent color](/docs/configuration/accents) used throughout the app.
 
-Accent color is used in many places such as:
+Accent color is used in many components, such as:
 - Quick documentation
 - Parameter Info
 - Links and bold texts in documentation panels
@@ -100,21 +104,21 @@ Accent color is used in many places such as:
 - Checkboxes and Radio Buttons fill color
 - etc...
 
-While a set of predefined accent colors are available in the
+While a set of predefined accent colors is available in the
 [Accent Color Chooser](/docs/configuration/accents), this setting allows you to set your own custom color.
 
 {% include figure.html content="/screens/accentChooser.png" caption="Accent Color Chooser" %}
 
 ### Override Accent Color
 
-From version 2.6.0 there exists the possibility to override the custom accent color with the default one bundled with the theme. For instance, for _Oceanic_ the accent color will be `teal` while for _Darker_ it will be `orange` etc.
+From version 2.6.0 there is a possibility to override the custom accent color with the default one bundled with the theme. 
+For instance, _Material Oceanic's_ accent color is a kind of teal, whereas _Material Darker's_ is orange.
 
 This is especially useful for external themes, so that Themes designers can provide their own accent color.
 
 ----
 ### Notes
 
-- Contrast color is also used inside "striped tables", independently of the setting.
-- Some resources, such as the scrollbar, will not get the new custom accent color until next restart.
-- The *Override Accent Color from Theme* setting will take precedence over the selected accent color.
+- Contrast color is also used inside the striped tables.
+- The *Override Accent Color from Theme* setting takes precedence over the selected accent color.
 

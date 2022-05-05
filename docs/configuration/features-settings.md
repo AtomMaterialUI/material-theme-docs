@@ -29,7 +29,7 @@ Here you can turn on and off specific features of the Material Theme for even fu
 This feature is only available to all users.
 {:class='card-panel warn'}
 
-This setting replaces the previous [Material Fonts](/docs/configuration/features-settings.md#material-fonts) setting, by allowing you to specify your own UI Font.
+This setting replaces the previous [Material Fonts](/docs/configuration/features-settings#material-fonts) setting, by allowing you to specify your own UI Font.
 
 In fact, this setting supplements the original [Custom Font](https://www.jetbrains.com/help/idea/user-interface-themes.html) provided by the IDE in *Appearance and Behavior*, so this is just another way to set up your own IDE font.
 
@@ -67,7 +67,7 @@ This feature is available for all users.
 
 This option enables Material File Status Colors, allowing customization of the file status colors from Color Schemes.
 
-Check [Material File Status Colors](/docs/configuration/file-status-colors.md) for more information.
+Check [Material File Status Colors](/docs/configuration/file-status-colors) for more information.
 
 -----
 
