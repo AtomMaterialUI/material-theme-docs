@@ -50,17 +50,28 @@ In this list you'll find all your installed color schemes alongside those provid
 
 ## Customization
 
-Though the color schemes have been made for an optimal day-to-day usage, if there are colors you don't like, you can create your own configuration and select which colors or fonts are best suited for you.
+Though the color schemes have been made for an optimal day-to-day usage, if there are colors you don't like,
+you can create your own configuration and select which colors or fonts are best suited for you.
 
-To do so, open the `Colors and Fonts` editor at `Settings → Editor → Color Scheme`, there click on the small icon next to the scheme selector and select `Duplicate`. This will create a copy of the color scheme that you can customize however you want.
+To do so, open the `Colors and Fonts` editor at `Settings → Editor → Color Scheme`,
+then click on the small icon next to the scheme selector and select `Duplicate`.
+This will create a copy of the color scheme that you can customize at your own will.
 
 {% include figure.html content="/screens/colorschemes.png" caption="Color Scheme Editor" %}
 
-You can also directly modify the original color schemes, and it will create a copy in the colors' folder with the name `_@user_<schemeName>.icls`. The color scheme will then appear in *blue* in the list.
 
-However, this is not recommended doing so because the IDE will use the copy from then on, meaning that you won't be able to get the updates from further versions of the plugin.
+You can also directly modify the original color schemes, and it will create a copy in the colors' folder with the name `_@user_<schemeName>.icls`.
+The color scheme will then appear in *accent color* in the list.
 
-To revert the copies to their original state, in the previous menu select `Restore Defaults`. Be careful however, as that means that __all the changes you've made will be lost__. Therefore, I would suggest you to make a copy (of the copy) using the `Duplicate` function, this way you can go back to your changes one by one.
+However, if you enabled the
+[Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option (which is recommended),
+your changes will not be persisted, so _duplicate_ is a better option.
+
+To revert the copies to their original state, in the previous menu select `Restore Defaults`.
+Or, you can run the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action from the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
+
+Be careful, though, as that means that __all the changes you've made will be lost__.
+Therefore, it is preferable that you make a copy (of the copy) using the `Duplicate` function, this way you can always go back to your changes one by one.
 
 ----------
 ## Supported languages
@@ -89,7 +100,7 @@ To revert the copies to their original state, in the previous menu select `Resto
 ----------
 ## Color Palette
 
-These are only for Material Themes:
+These are relevant only for _Material Themes_ (hover to see the hex value):
 
 <span style="float:none">Dark variant</span>
 <span style="float:right">Light variant</span>

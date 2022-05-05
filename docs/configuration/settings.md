@@ -412,18 +412,18 @@ Here's a list of the keys used in the configuration file (`material_theme.xml`) 
   <option name="useColoredDirectories" value="false" />
   <!-- Project Frame Custom Title -->
   <option name="useCustomTitle" value="false" />
+  <!-- Use Editor Default fonts enabled -->
+  <option name="useGlobalFont" value="false" />
+  <!-- Custom UI Font enabled -->
+  <option name="useMaterialFont2" value="false" />
+  <!-- Material wallpapers enabled -->
+  <option name="useMaterialWallpapers" value="false" />
   <!-- Project Frame -->
   <option name="useProjectFrame" value="false" />
   <!-- Show Project Title in Project Frame -->
   <option name="useProjectTitle" value="true" />
   <!-- Show Project Icon in Project Frame -->
   <option name="useProjectIcon" value="true" />
-  <!-- Custom UI Font enabled -->
-  <option name="useMaterialFont2" value="false" />
-  <!-- Use Editor Default fonts enabled -->
-  <option name="useGlobalFont" value="false" />
-  <!-- Material wallpapers enabled -->
-  <option name="useMaterialWallpapers" value="false" />
 </component>
 
 ```

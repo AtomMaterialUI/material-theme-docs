@@ -710,7 +710,7 @@ other:
   button: '#DBDBDC'
   second: '#EAEAEB'
   disabled: '#b8b8b9'
-  contrast: '#eaeae'
+  contrast: '#eaeaea'
   table: '#DBDBDC'
   border: '#DBDBDC'
   hl: '#FFFFFF'
@@ -976,7 +976,7 @@ other2:
   id: synthwave
   name: SynthWave '84
   className: synthwave
-  desc: Theme based on the SynthWave'84 theme by Robb Owen
+  desc: Theme based on the SynthWave' 84 theme by Robb Owen
   light: false
   background: '#2a2139'
   foreground: '#ffffff'

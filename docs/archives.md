@@ -148,7 +148,7 @@ More information in the [Component Settings documentation](/docs/configuration/c
 - Fix issue with Language Additions being applied to object keys and methods (<https://github.com/ChrisRM/material-theme-jetbrains/issues/1742>)
 - Fix issue with Language Additions not being applied to JSX and Vue files (<https://github.com/ChrisRM/material-theme-jetbrains/issues/1744>)
 - Fix the fatal error preventing **CodeWithMe** to be run when Material Theme UI is enabled.
-- Complete _Github_ and _Github Dark_ color schemes to include missing styles already existing in other schemes (such as Rust, ReSharper, Osmorc and so on).
+- Complete _GitHub_ and _GitHub Dark_ color schemes to include missing styles already existing in other schemes (such as Rust, ReSharper, Osmorc and so on).
 - Also, the **Accent Mode** settings moved to the **Features Tab** rather than **Components Tab**.
 - Add a new action to display the **What's new Page** in the toolbar.
 
@@ -179,8 +179,8 @@ Therefore, a new switch has been added in the [Other Settings](configuration/oth
 
 Some theme colors have been improved to have better contrasts. Such themes are:
 - Arc Dark
-- Github
-- Github Dark
+- GitHub
+- GitHub Dark
 - Night Owl
 - Palenight
 - Lighter
