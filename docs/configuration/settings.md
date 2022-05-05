@@ -19,9 +19,9 @@ The Material Theme plugin comes with a bunch of features tailored for an optimal
 
 {% include carbonads.html %}
 
-## Themes and Color Schemes
+## Themes and color schemes
 
-### Theme Switcher
+### Theme switcher
 
 The plugin comes prebundled with a set of themes interchangeables through the
 ![Theme Switcher](/img/icons/switcher.png) *Theme Switcher*.
@@ -43,7 +43,7 @@ Or, since version 2.4.0, from the Settings at `Settings → Appearance → Mater
 
 The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.material2.size | plus: site.data.themes.other.size | plus: site.data.themes.other2.size }} themes:
 
-#### Material Themes
+#### Material themes
 
 These themes are based on the original themes, made by Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
 
@@ -71,7 +71,7 @@ Besides the Material Themes, there are other prebundled themes made by the commu
 {% endfor %}
 </ul>
 
-#### Custom Theme
+#### Custom theme
 
 This feature is only available for premium users.
 {:class='card-panel warn'}

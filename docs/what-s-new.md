@@ -41,7 +41,7 @@ This is a bugfix update for many issues related to the new UI.
 
 ### New Feature: **Custom UI Font**
 
-A new setting has been added to the Material UI Settings Features: **Custom UI Font**. This font replaces (or rather, expands on) the original [Material Fonts](/docs/configuration/features-settings.md#material-fonts) to provide the ability to choose your own font.
+A new setting has been added to the Material UI Settings Features: **Custom UI Font**. This font replaces (or rather, expands on) the original [Material Fonts](/docs/configuration/features-settings#material-fonts) to provide the ability to choose your own font.
 
 Actually, this feature supplements the _Custom Font_ feature provided by JetBrains, so this is just another way to change the IDE font.
 
@@ -97,7 +97,7 @@ Input Fields have become larger, with a rounded border, losing their Material De
 according to Material Design principles, is to make them more discoverable and interactable.
 
 Moreover, since these larger components can take a lot of space, a new setting has been added to
-the [Compact Settings](/docs/configuration/compact-settings.md#compact-fields)
+the [Compact Settings](/docs/configuration/compact-settings#compact-fields)
 to allow you to have smaller fields.
 
 More info: <https://material.io/components/text-fields#anatomy>
@@ -112,7 +112,7 @@ ComboBoxes (or dropdowns) got the same border style as well, and their options a
 arrow) also changed to the usual Material Design chevron.
 
 Menus have too undergone some changes and became larger as well, with the option to tweak up the items size through
-the [Compact Settings](/docs/configuration/compact-settings.md#custom-list-items-height).
+the [Compact Settings](/docs/configuration/compact-settings#custom-list-items-height).
 
 More info: <https://material.io/components/menus#usage>
 
@@ -135,7 +135,7 @@ They are also affected by the "*Compact Fields*" setting.
 Trees got their selected item design changed to sport a rounded border just like the other components. They look like the design of the navigation drawer's
 selected items from <https://material.io/components/navigation-drawer#usage>.
 
-Moreover, a new style of [Selected Tree Indicators](/docs/configuration/project-view-settings.md#indicator-style-and-thickness), bolder and rounder, replaces
+Moreover, a new style of [Selected Tree Indicators](/docs/configuration/project-view-settings#indicator-style-and-thickness), bolder and rounder, replaces
 the current one. You can still use the old one from the options though, renamed "_Sharp_".
 
 Of course, the previous options (List Items Height, Indentation, etc.) are still available.
@@ -178,8 +178,8 @@ vouchers, still, for some users, the loss of their favourite feature was unaccep
 In fact, for some, they couldn't care less about the whole package, but THAT specific feature being unavailable was a true loss.
 
 Introducing **Material Theme Bundles**: these are separate plugins that provide alternative access to the paid features. For example, let's say you are only
-interested in the [Custom Theme](/docs/configuration/custom-themes.md) feature but don't need the [Tab Settings](/docs/configuration/tab-settings.md),
-[Project Frame](/docs/configuration/project-frame-settings.md) or [Language Additions](configuration/color-scheme-additions.md), you would be able to purchase
+interested in the [Custom Theme](/docs/configuration/custom-themes) feature but don't need the [Tab Settings](/docs/configuration/tab-settings),
+[Project Frame](/docs/configuration/project-frame-settings) or [Language Additions](configuration/color-scheme-additions), you would be able to purchase
 it separately and benefit from it without having to buy a premium license.
 
 Of course, these bundles would not be free; otherwise there would be no point of having to purchase a premium license. But they will be at a lesser price than
@@ -245,7 +245,7 @@ As part of the newest additions, the theme selection menus have been reorganized
 
 ### Ruby Additions
 
-And last but not least, a new [Language Addition](/docs/configuration/color-scheme-additions.md) made its way alongside the others: **Ruby**.
+And last but not least, a new [Language Addition](/docs/configuration/color-scheme-additions) made its way alongside the others: **Ruby**.
 
 Just like _Python_, **Ruby Additions** are now available for Ruby-based IDEs, and provide additional coloring for the following keywords:
 
@@ -313,7 +313,7 @@ This feature is available in the free plan. {:class='card-panel'}
 
 ### Python Additions
 
-Another small addition to the list of [Language Additions](configuration/color-scheme-additions.md): **Python Additions**
+Another small addition to the list of [Language Additions](configuration/color-scheme-additions): **Python Additions**
 
 PyCharm users and Python plugin users are now able to customize specific keywords of the Python language:
 
@@ -381,7 +381,7 @@ Continuing from the *Tab Font Size* feature, you will now be able to customize t
 
 This font will be different from the one used for the whole IDE.
 
-You can find the setting in the [_Tab Settings_](/docs/configuration/tab-settings.md#custom-tab-font) panel.
+You can find the setting in the [_Tab Settings_](/docs/configuration/tab-settings#custom-tab-font) panel.
 
 ### Tree Custom Font
 
@@ -393,7 +393,7 @@ Just like the tabs, you will now be able to customize the Trees' Font Family as 
 
 Just like the _Tree Font Size_, you will need to close and reopen the project (or restart) to see the changes.
 
-You can find the setting in the [_Project View Settings_](/docs/configuration/project-view-settings.md#custom-font) panel.
+You can find the setting in the [_Project View Settings_](/docs/configuration/project-view-settings#custom-font) panel.
 
 ### Use Editor Default Font
 
@@ -412,10 +412,10 @@ to [restore the color scheme](https://www.jetbrains.com/help/idea/settings-code-
 
 ### Reset Color Scheme Action
 
-A new action has been added to the [Quick Actions Panel](/docs/configuration/quick-actions-panel.md), giving you the ability
+A new action has been added to the [Quick Actions Panel](/docs/configuration/quick-actions-panel), giving you the ability
 to [restore the color scheme](https://www.jetbrains.com/help/idea/settings-code-style.html#scheme) easily, rather than going to the settings.
 
-You can find the action in the [Material Theme Features](/docs/configuration/quick-actions-panel.md#material-theme-features) menu.
+You can find the action in the [Material Theme Features](/docs/configuration/quick-actions-panel#material-theme-features) menu.
 
 ### Support for DataSpell
 
@@ -428,7 +428,7 @@ You will need to reset your color schemes to get this change
 
 ### Deprecation of the External Themes
 
-After a long consideration, starting this version, the [External Themes](/docs/development/external-themes.md) feature has been deprecated, and be no longer
+After a long consideration, starting this version, the [External Themes](/docs/development/external-themes) feature has been deprecated, and be no longer
 working.
 
 For that, I'd like to give a proper eulogy to the feature, how it started, and what are the plans for the future.
@@ -485,7 +485,7 @@ These colors are the following:
 - `material.accent`
 - `material.excluded`
 
-More information on the [Custom Themes](/docs/configuration/custom-themes.md#colors-explanation)
+More information on the [Custom Themes](/docs/configuration/custom-themes#colors-explanation)
 
 In the future, a new settings page will be available to allow users to customize such properties from the UI directly. Stay tuned!
 

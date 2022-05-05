@@ -30,7 +30,7 @@ This feature adds new highlighting capabilities to popular languages, making pos
 
 {% include figure.html content="/screens/javaScriptAdditions.png" caption="Language Additions" %}
 
-Refer to the [Language Additions](/docs/configuration/color-scheme-additions.md) page for more details.
+Refer to the [Language Additions](/docs/configuration/color-scheme-additions) page for more details.
 
 
 ----
@@ -51,7 +51,7 @@ When this feature is on, the directories that have files open in the editor will
 This feature is available for all users.
 {:class='card-panel warn'}
 
-This setting allows you to toggle whether the [What's New](/docs/what-s-new.md) page would show up on each update.
+This setting allows you to toggle whether the [What's New](/docs/what-s-new) page would show up on each update.
 
 -----
 
