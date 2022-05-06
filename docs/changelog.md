@@ -17,6 +17,31 @@ next:
 ----
 
 
+
+# 7.4.0
+
+### Features
+
+- Rewrite of the _Material Theme Widgets_, to better blend with other widgets
+  - Displays the current theme name and icon, and the current accent color
+  - Open the theme selection menu when clicking on the theme
+  - Open the accent selection menu when clicking on the accent icon
+- Deprecation of the legacy _Material Theme widget_
+
+### Fixes
+
+- Fix visual issue when Menus weren't highlighted in the _Legacy Material Design_
+- Fix fatal error when opening the wizard
+- Fix fatal error when opening the Command Palette
+- Fix issue where the Project Tree being colored in _Accent Mode_
+- Fix minimum size of fields when using _Compact Fields_
+- Fix minimum size of table headers when using _Compact Table Cells_
+
+### Other
+
+- Make _Tab Shadows_ feature free
+
+
 # 7.3.2
 
 ### Fixes
