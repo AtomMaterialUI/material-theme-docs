@@ -19,17 +19,18 @@ This page controls the components used throughout the IDE, like buttons, scrollb
 
 {% include carbonads.html %}
 
-### Old Material Design Style
+### Old Material Design style
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
-This setting will revert to the old 2016's Material Design style, for those who prefer it over the new Material Design style.
+This setting reverts the components to the previous _Material Design_ style of 2016, 
+for those who prefer it over the new Material Design style.
 
-Please note: This style remains deprecated, e.g., we won't be adding any new features nor fix any issues that can occur within this design.
+Please note: this style remains deprecated, e.g., it won't be getting any new features neither fixes for issues that can occur within this design.
 {:class='card-panel warn'}
 
-This feature is available since 6.15.0
+This feature has been available since 6.15.0
 
 ----
 
@@ -38,7 +39,8 @@ This feature is available since 6.15.0
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
-This setting sets the text of the buttons to be uppercase, just like the Material Design buttons. This is optimal for a full-fledged Material Design Experience.
+This setting sets the text of the buttons to be uppercase, just like the Material Design buttons. 
+It's optimal for a full-fledged _Material Design_ experience.
 
 {% include figure.html content="/screens/uppercaseButtons.png" caption="Uppercase Buttons" %}
 
@@ -49,40 +51,47 @@ This setting sets the text of the buttons to be uppercase, just like the Materia
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Starting from version 6.2 this new setting replaces buttons with **outlined buttons**.
+Starting from version 6.2, this setting replaces regular buttons with **outlined buttons**.
 
 {% include figure.html content="/screens/outlinedButtons.png" caption="Outlined Buttons" %}
 
 -----
-### Transparent Scrollbars and Accent Scrollbars
+### Transparent scrollbars and accent scrollbars
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
-These options control the appearance of the scrollbars. Note: This feature works completely on Windows and Linux, but on Mac it is only working for non-native scrollbars (i.e. scrollbars that appear only while scrolling).
+These options control the appearance of the scrollbars.
 
-*Transparent scrollbars* will add more transparency to the scrollbars and set it as the same color as the current theme's background color. This is adding _50% opacity_ and there is no way to change it.
+**Note**: this feature works natively on Windows and Linux, but on macOS it's dependent on the "_System Scrollbars_" setting.
 
-*Accent scrollbars* will replace the scrollbar color with the _current accent color_.
+{% include figure.html content="/screens/macScrollSettings.png" caption="Scrollbar Settings macOS" %}
+
+- *Transparent scrollbars* adds more transparency to the scrollbars and set it as the same color as the current theme's background color. 
+It's adding _50% opacity_, and there is no way to change it.
+
+- *Accent scrollbars* replaces the scrollbar color with the _current accent color_.
 
 {% include figure.html content="/screens/scrollbars.png" caption="Accent Scrollbars" %}
 
-#### Editor Scrollbars
+#### Editor scrollbars
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
 Since 2019.1 the scrollbars enter into two categories:
-* _UI Scrollbars_: These are the scrollbars found throughout the UI (lists, trees and so on)
-* _Editor Scrollbars_: These are the scrollbars inside editors
+* _UI Scrollbars_: these are the scrollbars found throughout the UI, such as lists and trees.
+* _Editor Scrollbars_: these are scrollbars for the editor.
 
-Thanks/Because of this separation, the aforementioned settings is now controlling only the _UI Scrollbars_. Instead, the _Editor Scrollbars_ are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars#important-information).
+Due to this separation, this setting only affects the _UI Scrollbars_. 
+
+The _Editor Scrollbars_, in turn, are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars).
 
 ---
 
-### Tabs Shadow
+### Tabs shadow
 
-This feature is only available for premium users.
+This feature is available in the free plan.
 {:class='card-panel warn'}
 
 This option enables/disables the shadow under the tabs.
@@ -91,7 +100,7 @@ This option enables/disables the shadow under the tabs.
 
 ---
 
-### Inverted Completion Selection Color
+### Inverted completion selection color
 
 This feature is available in the free plan.
 {:class='card-panel warn'}
