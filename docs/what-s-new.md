@@ -6,6 +6,66 @@ toc: true
 
 ---
 
+## What's new in Material Theme UI v7.4.0
+
+### New Material Theme Widgets
+
+
+#### Material theme widget
+
+The old _Material Theme widget_ has been redone to better blend with the other widgets.
+It sports the current theme name and icon, and you can open a menu with the list of available themes.
+
+<div class="masonry">
+
+{% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widget" %}
+
+{% include figure.html content="/screens/widgetsMenu.png" caption="Theme Selection Widget" %}
+
+</div>
+
+#### Accent color widget
+
+Just besides the theme widget, you can also display the _Accent Color Widget_.
+It sports the current accent color, and displays the list of available predefined accent colors when clicked.
+
+<div class="masonry">
+
+{% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widgets" %}
+
+{% include figure.html content="/screens/accentColorWidget.png" caption="Accent Color Widget" %}
+
+</div>
+
+#### Deprecation of the old Material theme widget
+
+You can still find the previous legacy widget:
+
+<div class="masonry">
+
+{% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
+
+{% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
+
+</div>
+
+---
+
+### Other fixes
+
+As usual, this version also comes with its bug fixes and improvements:
+
+- Fix visual issue when Menus weren't highlighted in the _Legacy Material Design_
+- Fix fatal error when opening the wizard
+- Fix fatal error when opening the Command Palette
+- Fix issue where the Project Tree being colored in _Accent Mode_
+- Fix minimum size of fields when using _Compact Fields_
+- Fix minimum size of table headers when using _Compact Table Cells_
+- Make _Tab Shadows_ feature free
+
+
+----
+
 ## What's new in Material Theme UI v7.0.0-7.3.2
 
 The 7.X.X versions up to 7.3.2 contained mainly the same changes than of the 6.14.X up to 6.16.X, but for the 2022.1 IDEs. However, there are some changes that need to be mentioned:

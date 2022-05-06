@@ -23,9 +23,10 @@ These settings control some components' display, mainly about their compactness.
 
 {% include carbonads.html %}
 
-### Compact Statusbar
+### Compact statusbar
 
-The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and bottom. This setting allows you to revert to the default "_compact_" design.
+The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and bottom.
+This setting allows you to revert to the default "_compact_" design.
 
 
 {% include figure.html content="/screens/expandedStatusbar.png" caption="Padded Status Bar" %}
@@ -33,7 +34,7 @@ The IDE's Status Bar went through a redesign as well, removing all borders and g
 {% include figure.html content="/screens/compactStatusbar.png" caption="Compact Status Bar" %}
 
 ----
-### Compact Table Cells
+### Compact table cells
 
 Just like the status bar, table cells, table headers and list views were also given more padding to resemble more like
 Material Design's equivalents.
@@ -46,7 +47,7 @@ want to scroll endlessly.
 {% include figure.html content="/screens/compactTableHeaders.png" caption="Compact Table Cells" %}
 
 ----
-### Compact Dropdown Lists
+### Compact dropdowns
 
 This setting allows you to reduce the size of the dropdowns used in the UI to be more compact.
 
@@ -54,28 +55,23 @@ This setting allows you to reduce the size of the dropdowns used in the UI to be
 
 {% include figure.html content="/screens/compactDropdowns.png" caption="Compact Dropdowns" %}
 
-Also, since version 6.8.0, the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) are affected as well:
-
-{% include figure.html content="/screens/paddedRunConf.png" caption="Padded Run Configuration" %}
-
-{% include figure.html content="/screens/compactRunConf.png" caption="Compact Run Configuration" %}
-
-
 ----
-### Compact Menus
+### Compact menus
 
 From version 2.10.2 Menus had also gained more padding just like dropdowns and tables.
 
+As a result, a setting has been added to revert to the default menus size.
+
 {% include figure.html content="/screens/paddedMenus.png" caption="Regular Menus" %}
 
-As a result, a setting have been added to revert to the default menus size.
 
 ----
-### Compact Fields
+### Compact fields
 
-This setting allows you to reduce the size of the fields, that have become larger since the version 6.14.
+This setting allows you to reduce the size of the fields, that has become larger since version 6.14.
 
-This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**, as well as **Search Everywhere**. **Find In Files**, **New File**, etc.
+This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**, 
+as well as **Search Everywhere**, **Find In Files**, **New File**, etc.
 
 {% include figure.html content="/screens/compactField.png" caption="Compact Fields" %}
 
@@ -88,11 +84,11 @@ This option concerns **Text Fields**, **Password Fields**, **Number Fields** and
 
 ----
 
-### Custom List Items Height
+### Custom list items height
 
-This setting will allow you to customize the items' height in lists, such as regular lists, dropdown options, and many others.
+This setting allows you to customize the items' height in lists, such as regular lists, dropdown options, etc.
 
-Note: This also affects *Autocompletion choices**.
+Note: this also affects *Autocompletion choices**.
 
 {% include figure.html content="/screens/highestHeight.png" caption="Custom List Item Size: 48" %}
 
@@ -100,11 +96,11 @@ Note: This also affects *Autocompletion choices**.
 
 {% include figure.html content="/screens/compactComplete.png" caption="Compact Autocomplete" %}
 
+---
 
 ### Notes
 
-- Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display
-  artifacts in some components. One example is the *Python DataView*
-  (<https://github.com/ChrisRM/material-theme-jetbrains/issues/485>). If you are using such features a lot, just enable
-  the "Compact Table Cells" option to solve that problem.
+- Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display issues in some components.
+  One example is the *Python DataView* (<https://github.com/ChrisRM/material-theme-jetbrains/issues/485>).
+  If you are using such features a lot, just enable the "Compact Table Cells" option to solve that problem.
 
