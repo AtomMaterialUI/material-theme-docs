@@ -3,6 +3,7 @@ layout: docs
 title: What's new?
 group: whatsnew
 toc: true
+---
 
 ## What's new in Material Theme UI v7.5.0
 
