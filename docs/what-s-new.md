@@ -4,6 +4,31 @@ title: What's new?
 group: whatsnew
 toc: true
 
+## What's new in Material Theme UI v7.5.0
+
+### Japanese, Chinese and Korean support
+
+This version adds support for three additional languages: **Japanese**, **Chinese (simplified)** and **Korean**.
+
+Thanks to machine learning and external translators, we've been finally able to translate the plugin into the three popular asian languages.
+To enable it, you'll need to [install the IDE language packs](https://blog.jetbrains.com/idea/2021/04/use-updated-language-packs-for-intellij-based-ides-with-translation-plugin/), and the plugin will be automatically translated to the corresponding language.
+
+{% include figure.html content="/screens/langs/japanese.png" caption="Settings - Japanese" %}
+
+{% include figure.html content="/screens/langs/korean.png" caption="Custom Theme - Korean" %}
+
+{% include figure.html content="/screens/langs/chinese.png" caption="Actions - Chinese" %}
+
+{% include figure.html content="/screens/langs/japanese.png" caption="Wizard - Chinese" %}
+
+
+Of course, there could be some inconsistencies between the english texts and their asian counterparts.
+In such cases, we'd appreciate if you could report such inconsistencies, and perhaps provide better translations!
+
+Note: You can only use one language pack at a time!
+Please make sure to **remove** the languages you don't use, or you would end up with mixed translations!
+{:class='card-panel warn'}
+
 ---
 
 ## What's new in Material Theme UI v7.4.0
