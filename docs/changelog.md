@@ -16,6 +16,23 @@ next:
 # Changelog
 ----
 
+# 7.5.0
+
+### Features
+
+- Support for Japanese, Korean and Chinese (Simplified)
+
+### Fixes
+
+- Cleaned up some texts and fix grammatical errors
+
+
+# 7.4.1
+
+### Fixes
+
+- Fix inverted selection color setting
+- Change _Synthwave_ selection color
 
 
 # 7.4.0
