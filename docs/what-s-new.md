@@ -20,7 +20,7 @@ To enable it, you'll need to [install the IDE language packs](https://blog.jetbr
 
 {% include figure.html content="/screens/langs/chinese.png" caption="Actions - Chinese" %}
 
-{% include figure.html content="/screens/langs/japanese.png" caption="Wizard - Chinese" %}
+{% include figure.html content="/screens/langs/wizard.png" caption="Wizard - Chinese" %}
 
 
 Of course, there could be some inconsistencies between the english texts and their asian counterparts.
