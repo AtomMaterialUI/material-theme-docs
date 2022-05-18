@@ -9,6 +9,13 @@ toc: true
 
 ### Japanese, Chinese and Korean support
 
+**IMPORTANT**! Due to a yet unknown cause, the localization support has been reverted as a temporary measure to prevent the IDE crashes.
+We're working hard on a workaround, but for now please hold.
+
+Sorry for the inconvenience.
+{:class='warn card-panel'}
+
+
 This version adds support for three additional languages: **Japanese**, **Chinese (simplified)** and **Korean**.
 
 Thanks to machine learning and external translators, we've been finally able to translate the plugin into the three popular asian languages.
