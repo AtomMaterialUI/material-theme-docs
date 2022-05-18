@@ -11,7 +11,6 @@ toc: true
 
 **IMPORTANT**! Due to a yet unknown cause, the localization support has been reverted as a temporary measure to prevent the IDE crashes.
 We're working hard on a workaround, but for now please hold.
-
 Sorry for the inconvenience.
 {:class='warn card-panel'}
 
