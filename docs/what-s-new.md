@@ -5,6 +5,14 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.6.0
+
+This "in-between" version is the initial support of the newer 2022.2 EAP. As a result, it's only available for EAP users.
+
+The *Experimental UI* gained a lot more features, but also a few bugs. Please be aware of that and turn it off if it becomes too problematic.
+
+---
+
 ## What's new in Material Theme UI v7.5.0
 
 ### Japanese, Chinese and Korean support
