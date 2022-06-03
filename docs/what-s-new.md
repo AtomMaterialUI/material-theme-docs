@@ -13,6 +13,15 @@ The *Experimental UI* gained a lot more features, but also a few bugs. Please be
 
 ---
 
+## What's new in Material Theme UI v7.5.1
+
+This small update fixes the Experimental UI not working after the update to 2022.1.2, as well as adding more languages support in the color schemes: **Angular Template**, **Qute** and **Sonarlint**.
+
+In addition, the color for _Modified Files_ in the _SynthWave '84_ theme has been changed as well.
+
+
+---
+
 ## What's new in Material Theme UI v7.5.0
 
 ### Japanese, Chinese and Korean support
