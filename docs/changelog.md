@@ -16,6 +16,21 @@ next:
 # Changelog
 ----
 
+# 7.5.1
+
+### Features
+
+- Add Angular Template, Qute and Sonarlint colors in Color Schemes
+
+### Fixes
+
+- Fix Experimental UI stopping working on latest EAP
+
+### Other
+
+- Original support for plugins
+- Update dependencies
+
 # 7.5.0
 
 ### Features
