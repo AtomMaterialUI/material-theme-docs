@@ -16,6 +16,18 @@ next:
 # Changelog
 ----
 
+# 7.5.2
+
+### Features
+
+- Add an option to specify the color scheme to use in **Custom Themes**.
+
+### Fixes
+
+- Fix tab indicator being 1px cut in the bottom
+- First attempt at fixing the not-null exception
+- Correct deprecated uses
+
 # 7.5.1
 
 ### Features

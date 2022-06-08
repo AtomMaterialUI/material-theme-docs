@@ -5,11 +5,24 @@ group: whatsnew
 toc: true
 ---
 
-## What's new in Material Theme UI v7.6.0
 
-This "in-between" version is the initial support of the newer 2022.2 EAP. As a result, it's only available for EAP users.
+## What's new in Material Theme UI v7.5.2
 
-The *Experimental UI* gained a lot more features, but also a few bugs. Please be aware of that and turn it off if it becomes too problematic.
+### Custom Color Scheme in Custom Themes
+
+This update expands the functionalities of the [Custom Theme](/docs/configuration/custom-themes) by giving the ability to specify a color scheme to your custom theme.
+
+{% include figure.html content="/screens/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" %}
+
+This is particularly useful if you have "Custom Color Schemes" and want to assign them to your own custom theme.
+
+Note: If the color scheme cannot be found (for example if you decide to use the `_@user` schemes or if you select a plugin based scheme), it will automatically revert to _Darcula_)
+
+### Other fixes
+
+- Fix [#168](https://github.com/mallowigi/material-theme-issues/issues/168)
+- Attempt at fixing [#174](https://github.com/mallowigi/material-theme-issues/issues/174)
+- Initial support for "_Material Theme Extension Plugins_"
 
 ---
 

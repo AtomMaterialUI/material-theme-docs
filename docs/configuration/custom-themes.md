@@ -43,6 +43,17 @@ To use a custom theme, first you'll need to configure its colors. To do so open 
 
 Once you're done customizing your colors, you'll need to select **Custom Theme** or **Light Custom Theme** from the _Theme Switcher_ to see your colors in action. Enjoy!
 
+
+### Color Scheme
+
+From version 7.5.2 you are now able to select a _Color Scheme_ to assign to your custom theme. This is particularly useful if you have "Custom Color Schemes" or schemes downloaded from the Marketplace, and want to assign them to your custom theme.
+
+
+{% include figure.html content="/screens/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" %}
+
+Note: If the color scheme cannot be found (for example if you decide to use the `_@user` schemes or if you select a plugin based scheme), it will automatically revert to _Darcula_)
+{:class='card-panel warn'}
+
 ----
 ## Importing and Exporting Custom Themes
 
