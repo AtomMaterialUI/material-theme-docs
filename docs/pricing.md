@@ -104,15 +104,14 @@ you would be able to purchase it separately and benefit from it without having t
 Of course, these bundles would not be free, otherwise there would be no incentive of having to purchase a premium license.
 But they would be at a lesser price than the whole package.
 
-At the moment,
-the only available bundle is the [High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast) feature for an annual cost of $3 only.
+There are 5 packages related to the different paid features:
 
-Others should follow, depending on the demand. As of 2021, the planned ones for 2022 are:
-- Custom Theme
-- Language Additions
-- Project Frame Colors
-- Project View Settings
-- etc.
+- [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast)
+- [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme)
+- [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame)
+- [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
+- [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
+
 
 **PLEASE NOTE THAT THESE BUNDLES MUST NOT BE BOUGHT IF YOU ALREADY HAVE A PREMIUM LICENSE.**
 They only provide access to the paid features to people on the free plan,

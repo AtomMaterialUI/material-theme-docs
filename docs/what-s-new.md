@@ -5,6 +5,62 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.5.4
+
+Yet another small update that introduces new exciting features.
+
+### Recommended plugins
+
+The Material Theme UI is a great plugin, but there are also literally thousands of other plugins available in the Marketplace. Some are great, some not so much, but in any case it can be
+a little hard to get to find out the hidden pearls in this sea of available options.
+
+Introducing the **Recommended plugins**: It's another settings page found inside the _Material Theme Settings_ that showcases a hand-picked list of useful plugins and remarkable themes for you to discover at a glance rather than navigating the whole sea of available plugins in the Marketplace.
+
+{% include figure.html content="/screens/recommendedPlugins.png" caption="Recommended Plugins" %}
+
+Most of these plugins are UI-related, grouped into three sections:
+- **Recommended plugins**: Hand-picked list of great plugins to use alongside the Material Theme UI.
+- **Material Plugins**: These are the standalone paid plugins that you can buy separately instead of the main plugin.
+- **Great Themes**: Curated list of amazing themes that can be sideloaded with the Material Theme UI.
+
+Come take a look! And if you have other great recommendations, please post them on the chat or in the GitHub repo!
+
+Oh and by the way: this is a purely subjective list! So please don't be mad if a plugin you love isn't on the list!
+{:class='card-panel warn'}
+
+---
+
+## What's new in Material Theme UI v7.5.3
+
+### New StatusBar Widget: **Current Project**
+
+This version introduces a new widget to the Status Bar, which displays the current project and gives the ability to open other projects via a menu. This is based on a similar widget available on the title bar in the new UI.
+
+{% include figure.html content="/screens/projectsWidget.png" caption="Recent Projects Widget" %}
+
+### Material Theme Bundles
+
+This version finalizes the support of the _Material Theme Bundles_, by releasing 5 packages related to the different paid features:
+- [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast)
+- [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme)
+- [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame)
+- [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
+- [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
+
+As stated in [Material Theme Bundles](/docs/pricing#material-theme-bundles) section, these plugins are to be loaded as an alternate way to purchase a license, by providing a way to purchase only the features that are relevant to you.
+
+For instance, if you are only interested in the *Language Additions* feature and don't want to purchase the whole package, you can decide to install the relevant plugin at a lower price.
+
+**Important**: If you already have purchased the main plugin, purchasing these plugins will do nothing, so be careful! These only make sense if you are using the Free Version (and not to be confused with the Material Theme Lite)!
+{:class='card-panel warn'}
+
+### Other fixes
+
+- Fix [#187](https://github.com/mallowigi/material-theme-issues/issues/187)
+- Update Translations
+
+
+---
 
 ## What's new in Material Theme UI v7.5.2
 
