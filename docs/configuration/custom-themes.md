@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/color-scheme-additions'
   title: Color Scheme Additions
 next:
-  url: '/docs/icons/atom-material-icons-plugin'
-  title: Atom Material Icons Plugin
+  url: '/docs/configuration/recommended-plugins'
+  title: Recommended plugins
 ---
 
 This feature is only available for premium users.
