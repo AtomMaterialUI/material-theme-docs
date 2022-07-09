@@ -16,6 +16,47 @@ next:
 # Changelog
 ----
 
+
+# 7.5.4
+
+### Features
+
+- New Settings Section: **Recommended Plugins**: Display a list of curated plugins and themes.
+  - **Recommended plugins**: Hand-picked list of great plugins to use alongside the Material Theme UI
+  - **Material Plugins**: These are the standalone paid plugins that you can buy separately instead of the main plugin.
+  - **Great Themes**: Curated list of amazing themes that can be sideloaded with the Material Theme UI.
+- Support for **Material Bundles**:
+  - [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast)
+  - [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme)
+  - [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame)
+  - [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
+  - [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
+
+# 7.5.3
+
+### Features
+
+- New Statusbar widget: **Current Project**
+
+### Fixes
+
+- Fix #187
+- Translate new texts
+
+# 7.5.2.2
+
+### Fixes
+
+- Fix #180
+- Remove What's new popup
+
+# 7.5.2.1
+
+### Fixes
+
+- Fix #176
+- Fix #177
+
 # 7.5.2
 
 ### Features
