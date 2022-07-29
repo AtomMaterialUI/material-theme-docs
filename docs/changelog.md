@@ -17,6 +17,71 @@ next:
 ----
 
 
+# 7.7.1
+
+### Fixes
+
+- Fix issues with trees (background icon, double click not working)
+- Fix issue with loading _Recommended Plugins_ twice
+- Use default settings for non-premium users
+
+# 7.7.0
+
+### Features
+
+- New Setting: **Colorize Title Bar**
+  - This is an extension of the "_Project Frame_" that colorizes the *New UI's Title Bar* per project.
+  - This setting can be enabled alongside or independently of the Project Frame
+  - Supports per-project settings
+  - Can only be activated for the New UI!
+
+### Fixes
+
+- Integrate changes from 7.5.2 to 7.5.4
+  - Recommended Plugins
+  - Project Switcher Widget
+  - Custom Theme's Color Scheme
+- Other bug fixes related to the New UI Plugin
+
+### Other
+
+- Remove the **Experimental UI** in favor of the **New UI Plugin**
+  - Note: If you didn't register for the New UI EAP, you can still find it in the chat.
+
+# 7.6.2
+
+### Features
+
+- Integrate changes from 7.5.1
+
+### Fixes
+
+- Fix back infinite restart
+
+# 7.6.1.1
+
+### Fixes
+
+- Remove colored title bar on experimental UI
+
+# 7.6.1
+
+### Fixes
+
+- Fix Experimental UI's Toolbar _Dropdown Widgets_
+- Add back `Panel.background` and `Button.background` needed for the latest version
+
+# 7.6.0
+
+### Features
+
+- Support for JBR 17!
+
+### Fixes
+
+- Fix Languages
+
+
 # 7.5.4
 
 ### Features
