@@ -38,7 +38,7 @@ finally _Experimental UI_, giving users the opportunity to experience it first-h
 But now that the cat is out of the bag, there's no need to keep it in the plugin anymore, and therefore the setting has been removed altogether, as it became incompatible
 with the _New UI Preview_ plugin.
 
-Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it available [here](https://dl.material-theme.com/newUI). You can also find it in our Slack channel.
+Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it available <a href="http://dl.material-theme.com/newUI" download>here</a>. You can also find it in our Slack channel.
 {:class='card-panel warn'}
 
 
