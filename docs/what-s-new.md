@@ -5,6 +5,60 @@ group: whatsnew
 toc: true
 ---
 
+
+## What's new in Material Theme UI from v7.5.4 up to v7.7.1?
+
+### Editorial
+
+2022.2 is officially out! The JetBrains folks have been working constantly on the new version for the last three months, especially in the performance and remote departments. 
+The result is a more stable experience accompanied with a lot of great features, such as:
+- Migration to JDK 17
+- Remote Gateway improvements
+- User Experience and Quality of life improvements
+- etc
+
+But the plugin didn't stop during all this time! As updates kept coming, so was the plugin adapting itself to the newest additions and deprecations, in order to keep being 
+the plugin you cherish and love.
+
+Oh and the **New UI Preview** is officially out for [beta-testing](https://blog.jetbrains.com/idea/2022/05/take-part-in-the-new-ui-preview-for-your-jetbrains-ide/)! 
+Which means that it's time for the plugin to give it a proper goodbye, so that we can leave it to the pros and concentrate of the plugin's unique features.
+
+You can find more information in the [JetBrains Blog](https://blog.jetbrains.com/).
+
+Now let's focus on these last three months changes:
+
+### Sunsetting the Experimental UI
+
+As stated above, the [New UI Preview](https://blog.jetbrains.com/idea/2022/05/take-part-in-the-new-ui-preview-for-your-jetbrains-ide/) has officially begun it's beta-phase, 
+and thousands of users started experiencing what _Material Theme_ users have been experiencing all along, which is their brand-new rewriting of the UI.
+
+For many years this new UI preview has been available as a highly experimental setting in the plugin, first labeled _Striped Tool Windows_, then _Large Tool Windows_, and 
+finally _Experimental UI_, giving users the opportunity to experience it first-hand, even in it's super-beta-experimental state. 
+
+But now that the cat is out of the bag, there's no need to keep it in the plugin anymore, and therefore the setting has been removed altogether, as it became incompatible
+with the _New UI Preview_ plugin.
+
+Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it available [here]({{ site.data.newUiPreview }}). You can also find it in our Slack channel.
+{:class='card-panel warn'}
+
+
+### Colorize Title Bar
+
+The second highlight of this version is also related to the *New UI users only*, and is about an extension of the [Project Frame](/docs/configuration/project-frame-settings): the ability to **Colorize the Title Bar**!
+
+{% include figure.html content="/screens/colorized.png" caption="Colorize title bar" %}
+
+
+This was something that wasn't possible before, but the New UI introduced a flashy new "*title bar* component" to replace the original title bar (the same way the Material Theme [did in the past](/docs/configuration/other-tweaks-settings#themed-titlebar)), and this one is customizable.
+
+So there it is, the perfect **Project Frame**! And it can be customized per project!
+
+Note: As usual, you can still disable it from the [Project Frame Settings](/docs/configuration/project-frame-settings). And it's available in the separate standalone plugin as well.
+{:class='card-panel warn'}
+
+
+---------
+
 ## What's new in Material Theme UI v7.5.4
 
 Yet another small update that introduces new exciting features.
