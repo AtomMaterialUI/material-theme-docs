@@ -151,27 +151,6 @@ You can also specify a _second accent color_ to contrast with the now prominent 
 
 This feature has been available since 4.1.0.
 
------
-
-### Experimental UI
-
-This setting toggles the successor of the _Large Tool Windows_, renamed as **"Experimental UI"**. 
-
-When enabled, it introduces a lot of new changes that the folks at JetBrains are experimenting with:
-- Large Tool Windows
-- Hovering icons
-- Navigation Bar merged with the Status Bar
-- Animated tabs
-- etc.
-
-Because it's **highly experimental**,
-and not related to the plugin directly, there is a high probabily of bugs and breaking changes occurring from version to version. 
-
-Therefore, please use it with **extreme caution**. We don't take responsibility for any issues that can occur!
-
-**Important Note**: because this isn't a feature of the plugin, any bugs related to the feature would be immediately closed.
-{:class='card-panel warn'}
-
 ----
 
 ## Deprecated features
@@ -267,6 +246,27 @@ This feature is disabled by default, but you can go back to the old layout via t
 
 This feature is available since version 6.3.0 and is still experimental at this point, so there could be bugs.
 
+
+-----
+
+### Experimental UI
+
+This setting toggles the successor of the _Large Tool Windows_, renamed as **"Experimental UI"**.
+
+When enabled, it introduces a lot of new changes that the folks at JetBrains are experimenting with:
+- Large Tool Windows
+- Hovering icons
+- Navigation Bar merged with the Status Bar
+- Animated tabs
+- etc.
+
+Because it's **highly experimental**,
+and not related to the plugin directly, there is a high probabily of bugs and breaking changes occurring from version to version.
+
+Therefore, please use it with **extreme caution**. We don't take responsibility for any issues that can occur!
+
+**Important Note**: because this isn't a feature of the plugin, any bugs related to the feature would be immediately closed.
+{:class='card-panel warn'}
 
 -----
 ## FAQ/troubleshooting

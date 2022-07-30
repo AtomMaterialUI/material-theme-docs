@@ -53,6 +53,29 @@ Meaning, that if two projects have similar names, they would have similar colors
 
 This can be useful when having multiple open projects, to help distinguish between each of them.
 
+----
+### Colorize Title Bar
+
+This feature is only available for people having access to the New UI via the _New UI Preview Plugin_, and available since version 7.7.0.
+{:class='card-panel warn'}
+
+This feature is inspired by the [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) VS Code extension, and was the inspiration behind the 
+_Project Frame_. It allows you to paint the title bar differently per-project.
+
+This was something that wasn't possible before, but the New UI introduced a flashy new "*title bar* component" to replace the original title bar (the same way the Material Theme [did in the past](/docs/configuration/other-tweaks-settings#themed-titlebar)), and this one is customizable.
+
+So there it is, the perfect **Project Frame**! And it can be customized per project!
+
+{% include figure.html content="/screens/colorized.png" caption="Colorize title bar" %}
+
+As usual, you can still disable it from the [Project Frame Settings](/docs/configuration/project-frame-settings). And it's available in the separate standalone plugin as well.
+
+Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it available <a href="http://dl.material-theme.com/newUI" download>here</a>. You can also find it in our Slack channel.
+{:class='card-panel warn'}
+
+Note (2): This is **still** not possible on Linux, but a close enough result can be achievable through another plugin: [Project Color](https://plugins.jetbrains.com/plugin/19463-project-color).
+{:class='card-panel warn'}
+
 ---
 ### Show project name
 
