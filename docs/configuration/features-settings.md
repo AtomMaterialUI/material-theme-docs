@@ -268,6 +268,9 @@ Therefore, please use it with **extreme caution**. We don't take responsibility 
 **Important Note**: because this isn't a feature of the plugin, any bugs related to the feature would be immediately closed.
 {:class='card-panel warn'}
 
+Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it available <a href="http://dl.material-theme.com/newUI" download>here</a>. You can also find it in our Slack channel.
+{:class='card-panel warn'}
+
 -----
 ## FAQ/troubleshooting
 
