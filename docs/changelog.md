@@ -16,6 +16,16 @@ next:
 # Changelog
 ----
 
+# 7.8.0
+
+### Features
+
+- New Setting: **Animated Tabs**: Animation when switching tabs!
+
+### Fixes
+
+- Fix Custom UI Font not being applied in the New UI
+
 
 # 7.7.1
 

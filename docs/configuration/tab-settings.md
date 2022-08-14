@@ -145,6 +145,15 @@ Since version 6.10.0 you have the ability to customize both the __font family__ 
 
 ----
 
+## Animated Tabs
+
+The version 7.8.0 introduced a cool option giving animations to the tab indicators.
+
+{% include figure.html content="/screens/animatedtabs.gif" caption="Animated Tabs" %}
+
+
+----
+
 ## Per-project settings
 
 Since version 6.6.0, you can also override specific tab settings on a per-project basis.
