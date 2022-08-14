@@ -5,6 +5,23 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.8.0
+
+A small update to keep things going :)
+
+### Animated Tabs
+
+A small yet cool feature that makes your editor even cooler by animating the tab indicators!
+
+{% include figure.html content="/screens/animatedtabs.gif" caption="Animated Tabs" %}
+
+### Other fixes
+
+- Fix the Custom UI Font not being applied when using the Experimental New UI
+
+
+----
+
 
 ## What's new in Material Theme UI from v7.5.4 up to v7.7.1?
 
