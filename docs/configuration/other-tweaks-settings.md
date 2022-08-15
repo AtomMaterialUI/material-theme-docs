@@ -97,7 +97,6 @@ It sports the current theme name and icon, and you can open a menu with the list
 
 </div>
 
-
 #### Accent color widget
 
 Just besides the theme widget, you can also display the _Accent Color Widget_. 
@@ -108,6 +107,17 @@ It sports the current accent color, and displays the list of available predefine
 {% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widgets" %}
 
 {% include figure.html content="/screens/accentColorWidget.png" caption="Accent Color Widget" %}
+
+</div>
+
+
+### Current Project Widget
+
+Version 7.5.3 introduces yet another widget to the Status Bar, which displays the current project and gives the ability to open other projects via a menu. This is based on a similar widget available on the title bar in the new UI.
+
+<div class="masonry">
+
+{% include figure.html content="/screens/projectsWidget.png" caption="Recent Projects Widget" %}
 
 </div>
 
