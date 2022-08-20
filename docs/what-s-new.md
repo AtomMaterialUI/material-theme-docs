@@ -5,6 +5,29 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.8.1
+
+This is a bug fix version that solves some long awaited issues.
+
+- Fix NPE on the Title Frame
+- Remove deprecated color scheme keys about _Markdown Navigator_
+- Added newer color keys: 
+    - Run Toolbar Widget
+    - PackageSearch
+    - Search Everywhere Settings
+    - Editor Tooltip Foreground
+    - Main menu foreground
+    - Debugger
+    - Main Menu
+    - Version Control Commit
+    - Editor Pane Splitter
+    - Version Control Marker
+    - Banner Warning
+- Set Toolbar widgets foreground color to *selected foreground*
+- Fix Colorize Title Bar on Linux
+
+----
+
 ## What's new in Material Theme UI v7.8.0
 
 A small update to keep things going :)
