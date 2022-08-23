@@ -20,42 +20,45 @@ Here you can find settings for the Icons provided by the plugin, whether to enab
 
 {% include carbonads.html %}
 
-## Atom Material Icons plugin
+## Atom Material Icons
 
 <img class="avatar-img -centered" src="https://plugins.jetbrains.com/files/10044/78336/icon/META-INF_pluginIcon.svg" alt="Atom Material Icons Plugin">
 
 
 The [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) is a complementary
 plugin of the Material Theme whose purpose is to customize all IDE icons. It was originally part of the Material Theme
-but has been extracted from it since version 2.9.0, in order to tend to users who don't need the themes but do need the icons, the same way it is done in Atom or Visual Studio.
+but has been extracted from it since version 2.9.0, in order to tend to users who don't need the themes but do need the icons, the same way it's done in Atom or
+Visual Studio.
 
-The plugin can be installed the same way the Material Theme can be installed, but with one important twist: **it doesn't require the IDE to restart!**
+The plugin can be installed in the same way the Material Theme can be installed, but with one important twist: **it doesn't require the IDE to restart!**
 
 {% include figure.html content="/screens/atomMaterial.png" caption="Atom Material Toolbar" %}
 
 {% include figure.html content="/screens/atomMaterialSettings.png" caption="Atom Material Settings" %}
 
-The UI is a bit different from the Material Theme UI, but provides the same functionality nonetheless. This operation
-has been performed to decouple the Material Theme plugin from the _UI Icons_ feature, therefore allowing to use
-different *Icon Themes* from other authors alongside the Material Theme UI, and in the same time gives the ability to
+The UI is a bit different from the Material Theme UI but provides the same capability nonetheless.
+
+This operation has been performed to decouple the Material Theme plugin from the _UI Icons_ feature, therefore granting the ability to use
+different *Icon Themes* from other authors alongside the Material Theme UI, and at the same time gives the ability to
 use the icons independently of the UI themes.
 
-Note: This plugin has been recently ported to Google Chrome and Firefox! Go take a look: [Atom File Icons Web for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
+Note: This plugin has been recently ported to Google Chrome and Firefox!
+Go take a look: [Atom File Icons Web for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
 and [Atom File Icons Web for Firefox](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/)
 {:class='card-panel'}
 
 ----
 
-### File Icons
+### File icons
 
-This setting changes the icons for project files according to specific file patterns. Usually it is based off the
-extension of the file (*.js, *.scss, *.php) but it also identifies specific commonly used patterns and replace them with
+This setting changes the icons for project files according to specific file patterns.
+Usually, it's based off the extension of the file (*.js, *.scss, *.php) but it also identifies specific commonly used patterns and replaces them with
 the relevant icon, such as:
 
-- package.json
-- build.gradle
-- README.md
-- composer.json
+- `package.json`
+- `build.gradle`
+- `README.md`
+- `composer.json`
 - etc...
 
 {% include figure.html content="/screens/file-icons.png" caption="File Icons" %}
@@ -64,43 +67,43 @@ You can find more information at the [Associations](/docs/reference/associations
 
 ----
 
-### Directory Icons
+### Directory icons
 
 Assign specific folder icons to folders with commonly used names to add yet more visual grepping than with file icons.
 For instance, `tmp`, `logs`, `src`, `lib` or `test` are folders found within most projects.
 
 {% include figure.html content="/screens/decoFolders.png" caption="Decorated Folders" %}
 
-Note that excluded/resource root/test root/package folders will not be decorated.
+Note that excluded/resource root/test root/package folders won't be decorated.
 
 You can find more information at the [Folder Associations](/docs/reference/folder-associations).
 
-**Important note**: Because of the way it is implemented, this feature is not yet available in **Rider**.
+**Important note**: Because of the way it's implemented, in **Rider**, you would need to turn off the _Low Power Mode_ switch to see the directory icons.
 {:class='card-panel warn'}
 
 ----
 
 ### UI Icons
 
-This setting toggles the replacement of the icons provided by the plugin. Specifically this disables:
+This setting toggles the replacement of the icons provided by the plugin. Specifically, this disables:
 
 - Menu Icons
 - Toolbar Icons
 - Tool Window Icons
 - Application Icons
 
-Basically this replaces all icons provided by the plugin, including breakpoint icons, dialog icons and even icons inside
+Basically, this replaces all icons provided by the plugin, including breakpoint icons, dialog icons and even icons inside
 documentation panels.
 
 {% include figure.html content="/screens/iconsDisabled.png" caption="Material Icons Disabled" %}
 
-**Note**: This setting does not affect icons being changed by other plugins.
+**Note**: This setting doesn't affect icons being changed by other plugins.
 
 ----
 
 ### PSI Icons
 
-This toggle lets you replace the PSI icons (e.g. Class, Interface, Enums, functions and so on) with Material icons.
+This toggle lets you replace the PSI icons (e.g. Class, Interface, Enums, functions, etc) with Material icons.
 
 {% include figure.html content="/screens/psiIcons.png" caption="PSI Icons" %}
 
@@ -113,20 +116,21 @@ This option makes it look like the Visual Studio Code *Outline* Panel, as well a
 
 ----
 
-### Hide File Icons
+### Hide file icons
 
-This option allows you to _completely hide_ the __file__ icons from the IDE. This means from the _Project Tree_, Tabs,
-Dialogs and everything. This does not hide folders, though.
+This option allows you to _completely hide_ the __file icons__ from the IDE.
+It hides them from the _Project Tree_, Tabs, Dialogs and everything.
+Folders are unaffected, though.
 
 {% include figure.html content="/screens/hideFileIcons.png" caption="Hide File Icons" %}
 
-**Note**: This feature takes precedence over default file icons providers and the plugin's own ones. However, some
-plugins might have an even greater precedence, meaning that you will still see icons from such plugins.
+**Note**: This feature takes precedence over default file icons providers, and the plugin's own ones.
+However, some plugins might have an even greater precedence, meaning you would still see icons from such plugins.
 {:class='card-panel'}
 
 ----
 
-### Hide Folder Icons
+### Hide folder icons
 
 Same setting as the _Hide File Icons_ except that it works for folders.
 
@@ -135,24 +139,24 @@ Same setting as the _Hide File Icons_ except that it works for folders.
 
 ----
 
-### Monochrome Icons
+### Monochrome icons
 
-This option allows you to apply a monochrome filter to the whole IDE, just like the color blindness filter. This is
-ideal for people who don't like the avalanche of colors provided by the different icons.
+This option allows you to apply a monochrome filter to the whole IDE, just like the color blindness filter.
+This is ideal for people who don't like the avalanche of colors provided by the different icons.
 
 {% include figure.html content="/screens/monochrome.png" caption="Monochrome Icons" %}
 
-By applying this filter, all icons will be filtered with a shade of the primary color (i.e., the color of the items in
-the Project View) of the current theme.
+By applying this filter, all icons will be filtered with a shade of the primary color, that is, the color of the items in
+the Project View of the current theme.
 
 Note: This setting not only filters out the toolbar and file icons, but even tool window icons, debugger icons, etc…
 {:class='card-panel warn'}
 
 ----
 
-### Hollow Folders
+### Hollow folders
 
-This feature further decorates the _Project View_ by emphasizing the folders which contain files that are currently open
+This feature further decorates the _Project View_ by emphasizing the folders that contain files that are currently open
 in the editor, making them appear as "**hollow**".
 
 {% include figure.html content="/screens/hollowFolders.png" caption="Hollow Folders" %}
@@ -162,9 +166,9 @@ counterpart.
 
 ----
 
-### Custom Icon Size (replace Bigger Icons as of v64.0)
+### Custom icon size
 
-This option allows you to change the size of the icons from 12px to 24px.
+This option allows you to change the size of the icons ranging from 12px to 24px.
 
 Moreover, it adapts the Project View Items' height to the new size.
 
@@ -172,12 +176,14 @@ Moreover, it adapts the Project View Items' height to the new size.
 
 {% include figure.html content="/screens/biggerIcons.png" caption="Bigger Icons" %}
 
-**Note**: The IDEs are not optimized to handle bigger icons, so there could be parts of the IDE that are missing icons, or that the containers will appear larger/wider/bigger. Please be aware of such issues and use this mode with precaution.
+**Note**: The IDEs aren't optimized to handle bigger icons, so there could be parts of the IDE that are missing icons, or that the containers will appear
+larger/wider/bigger.
+Please be aware of such issues when using this setting.
 {:class='card-panel warn'}
 
 ----
 
-### Arrows Style
+### Arrows style
 
 This setting allows you to change the style of the arrows in trees such as the Project Tree or ~~Settings Tree~~ (TODO).
 
@@ -195,9 +201,9 @@ You can also switch styles in the `Actions Panel`.
 
 ----
 
-### Custom Accent Color
+### Custom accent color
 
-This option will let you override the *Accent Color* that is set for some icons, such as the _Checkboxes_.
+This option will let you override the *Accent Color* set for some icons, such as the _Checkboxes_.
 
 {% include figure.html content="/screens/accentColor.png" caption="Custom Accent Color" %}
 
@@ -206,9 +212,12 @@ This option will let you override the *Accent Color* that is set for some icons,
 
 ----
 
-### Custom Themed Color
+### Custom themed color
 
-Some icons are colored with what is called the **Themed Color**. It's a dynamic color that matches up the current UI Theme. Examples of such icons are:
+Some icons are colored with what's called the **Themed Color**.
+It's a dynamic color, which matches up the current UI Theme.
+Examples of such icons are:
+
 - Regular Folder Icons
 - Unchecked checkboxes
 - Unselected radio buttons
