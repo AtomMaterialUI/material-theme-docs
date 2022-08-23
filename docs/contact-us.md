@@ -7,7 +7,8 @@ comments: true
 
 Want to contribute to the plugin? Feel free to open issues at the GitHub repository, or use the form below to submit feature requests.
 
-Also, if you belong to one of the categories listed [here](https://www.material-theme.com/docs/pricing/), you can get the plugin for free. Please read the follwing link to see how to apply: <https://blog.jetbrains.com/platform/2021/06/community-offers-on-marketplace/>
+Also, if you belong to one of the categories listed [here](https://www.material-theme.com/docs/pricing/), you can get the plugin for free.
+Please read the following link to see how to apply:<https://blog.jetbrains.com/platform/2021/06/community-offers-on-marketplace/>.
 
 
 
