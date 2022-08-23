@@ -6,8 +6,8 @@ group: development
 comments: true
 
 previous:
-  url: '/docs/reference/wizard'
-  title: Wizard
+  url: '/docs/reference/chrome-themes'
+  title: Chrome Themes
 
 next:
   url: '/docs/faq-troubleshooting'
