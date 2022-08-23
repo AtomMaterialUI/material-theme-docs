@@ -18,7 +18,7 @@ You can find here a reference of all colors used in the themes.
 
 {% include carbonads.html %}
 
-## Material Themes
+## Material themes
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.material %}
@@ -32,8 +32,7 @@ You can find here a reference of all colors used in the themes.
 {% endfor %}
 </ul>
 
-
-## Other Themes
+## Other themes
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.other %}
