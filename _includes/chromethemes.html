@@ -1,0 +1,12 @@
+<div class="masonry duo" markdown="0">
+    {% for theme in page.gallery.themes %}
+    <a class="item" href="{{ theme.url }}">
+        <figure>
+            <img src="/img/chromethemes/{{ theme.imageUrl }}_640.png" alt="{{ theme.name }}" />
+            <figcaption>
+                <p>{{ theme.name }}</p>
+            </figcaption>
+        </figure>
+    </a>
+    {% endfor %}
+</div>

@@ -3,7 +3,6 @@
   @include flexbox(row, wrap, flex-start, flex-start);
   box-sizing: border-box;
   width: 100%;
-  //background: $lightbox-container-background;
 
   a {
     font-size: 0;
@@ -11,6 +10,12 @@
     margin: 10px;
     padding: 0;
     width: calc((100% / 3) - 20px);
+
+    figcaption, p {
+      font-size: 16px;
+      color: var(--foreground);
+      text-align: center;
+    }
 
     img {
       opacity: 0.8;
@@ -21,6 +26,18 @@
       img {
         opacity: 1;
       }
+    }
+  }
+
+  &.duo {
+    a {
+      width: calc((100% / 2) - 20px);
+    }
+  }
+
+  &.single {
+    a {
+      width: calc(100% - 20px);
     }
   }
 }
@@ -144,7 +161,7 @@
 #imagelightbox-caption {
   background-color: $almost-black;
   bottom: 0;
-  color: #fff;
+  color: #ffffff;
   left: 0;
   padding: 0.3em;
   position: fixed;

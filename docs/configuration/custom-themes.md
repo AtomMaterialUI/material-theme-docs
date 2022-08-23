@@ -298,3 +298,8 @@ You can simply use the [JetBrains Theme API](http://www.jetbrains.org/intellij/s
 or for the more advanced developers, create a **brand-new plugin** based off the Material Theme SDK, like
 the [Doki Doki Literature Club Theme](https://github.com/cyclic-reference/ddlc-jetbrains-theme), or
 the [Night Owl Theme](https://github.com/xdrop/night-owl-jetbrains).
+
+**Q**: I set the color scheme via the Editor > Color Scheme options, but it resets every time I restart the IDE!
+
+**A**: If you're using a _Custom Theme_, that might be due to the [Color Scheme option](/docs/configuration/custom-themes#color-scheme).
+Make sure to specify the color scheme you want to use to this screen as well.

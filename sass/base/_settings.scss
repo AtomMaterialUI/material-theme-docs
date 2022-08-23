@@ -175,7 +175,7 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
 
 // cards
 $card-padding: 24px !default;
-$card-bg-color: #fff !default;
+$card-bg-color: #ffffff !default;
 $card-link-color: $accent-color !default;
 $card-link-color-light: $card-link-color !default;
 
@@ -199,8 +199,8 @@ $select-disabled-color: rgba(0, 0, 0, 0.3) !default;
 // 9. Dropdown
 // ==========================================================================
 
-$dropdown-bg-color: #fff !default;
-$dropdown-hover-bg-color: #eee !default;
+$dropdown-bg-color: #ffffff !default;
+$dropdown-hover-bg-color: #eeeeee !default;
 $dropdown-color: $accent-color !default;
 $dropdown-item-height: 50px !default;
 
@@ -209,7 +209,7 @@ $input-color: $gray !default;
 $input-height: 3rem !default;
 $input-border-color: $gray !default;
 $input-border: 1px solid $input-border-color !default;
-$input-background: #fff !default;
+$input-background: #ffffff !default;
 $input-error-color: $red !default;
 $input-success-color: $green !default;
 $input-focus-color: $accent-color !default;
@@ -224,3 +224,4 @@ $input-disabled-border: 1px dotted $input-disabled-color !default;
 $input-invalid-border: 1px solid $input-error-color !default;
 $input-icon-size: 2rem;
 $placeholder-text-color: lighten($input-border-color, 20%) !default;
+$masonry-columns: 3 !default;
