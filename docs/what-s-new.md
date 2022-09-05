@@ -5,13 +5,54 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.9.0
+
+### Go Additions
+
+Another small addition to the list of [Language Additions](configuration/color-scheme-additions): **Go Additions**
+
+GoLand users and Go plugin users are now able to customize specific keywords of the Go language:
+
+- Functions:
+    - `main`
+    - `make`
+    - `len`, `cap`
+    - `Print`, `Println`, `Printf`
+- Keywords:
+    - `import`, `package`
+    - `func`
+    - `if`, `else`
+    - `switch`, `case`, `default`, `fallthrough`
+    - `for`, `range`, `map`
+    - `return`
+    - `var`, `const`
+    - `type`
+    - `defer`
+    - `struct`
+    - `interface`
+    - `go`, `select`
+    - `chan`
+- Primitives:
+    - `nil`
+    - `true`, `false`
+
+## Other bug fixes and additions
+
+- Add _Conventional Commit_ plugin's color scheme support
+- Fix _Synthwave_'s Caret row color
+- Fix Registry's text area not cleaning up the text
+- Fix indentation in the _Language Additions'_ Color Settings Pages
+- Adding more recommended plugins
+
+---
+
 ## What's new in Material Theme UI v7.8.1
 
 This is a bug fix version that solves some long awaited issues.
 
 - Fix NPE on the Title Frame
 - Remove deprecated color scheme keys about _Markdown Navigator_
-- Added newer color keys: 
+- Added newer color keys:
     - Run Toolbar Widget
     - PackageSearch
     - Search Everywhere Settings
@@ -42,25 +83,27 @@ A small yet cool feature that makes your editor even cooler by animating the tab
 
 - Fix the Custom UI Font not being applied when using the Experimental New UI
 
-
 ----
-
 
 ## What's new in Material Theme UI from v7.5.4 up to v7.7.1?
 
 ### Editorial
 
-2022.2 is officially out! The JetBrains folks have been working constantly on the new version for the last three months, especially in the performance and remote departments. 
+2022.2 is officially out! The JetBrains folks have been working constantly on the new version for the last three months, especially in the performance and
+remote departments.
 The result is a more stable experience accompanied with a lot of great features, such as:
+
 - Migration to JDK 17
 - Remote Gateway improvements
 - User Experience and Quality of life improvements
 - etc
 
-But the plugin didn't stop during all this time! As updates kept coming, so was the plugin adapting itself to the newest additions and deprecations, in order to keep being 
+But the plugin didn't stop during all this time! As updates kept coming, so was the plugin adapting itself to the newest additions and deprecations, in order to
+keep being
 the plugin you cherish and love.
 
-Oh and the **New UI Preview** is officially out for [beta-testing](https://blog.jetbrains.com/idea/2022/05/take-part-in-the-new-ui-preview-for-your-jetbrains-ide/)! 
+Oh and the **New UI Preview** is officially out
+for [beta-testing](https://blog.jetbrains.com/idea/2022/05/take-part-in-the-new-ui-preview-for-your-jetbrains-ide/)!
 Which means that it's time for the plugin to give it a proper goodbye, so that we can leave it to the pros and concentrate of the plugin's unique features.
 
 You can find more information in the [JetBrains Blog](https://blog.jetbrains.com/).
@@ -69,31 +112,36 @@ Now let's focus on these last three months changes:
 
 ### Sunsetting the Experimental UI
 
-As stated above, the [New UI Preview](https://blog.jetbrains.com/idea/2022/05/take-part-in-the-new-ui-preview-for-your-jetbrains-ide/) has officially begun it's beta-phase, 
+As stated above, the [New UI Preview](https://blog.jetbrains.com/idea/2022/05/take-part-in-the-new-ui-preview-for-your-jetbrains-ide/) has officially begun it's
+beta-phase,
 and thousands of users started experiencing what _Material Theme_ users have been experiencing all along, which is their brand-new rewriting of the UI.
 
-For many years this new UI preview has been available as a highly experimental setting in the plugin, first labeled _Striped Tool Windows_, then _Large Tool Windows_, and 
-finally _Experimental UI_, giving users the opportunity to experience it first-hand, even in it's super-beta-experimental state. 
+For many years this new UI preview has been available as a highly experimental setting in the plugin, first labeled _Striped Tool Windows_, then _Large Tool
+Windows_, and
+finally _Experimental UI_, giving users the opportunity to experience it first-hand, even in it's super-beta-experimental state.
 
-But now that the cat is out of the bag, there's no need to keep it in the plugin anymore, and therefore the setting has been removed altogether, as it became incompatible
+But now that the cat is out of the bag, there's no need to keep it in the plugin anymore, and therefore the setting has been removed altogether, as it became
+incompatible
 with the _New UI Preview_ plugin.
 
-Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it available <a href="http://dl.material-theme.com/newUI" download>here</a>. You can also find it in our Slack channel.
+Note: The _New UI Preview program_ has since then been closed, so there's no way to download the plugin anymore officially. However, we still have a copy of it
+available <a href="http://dl.material-theme.com/newUI" download>here</a>. You can also find it in our Slack channel.
 {:class='card-panel warn'}
-
 
 ### Colorize Title Bar
 
-The second highlight of this version is also related to the *New UI users only*, and is about an extension of the [Project Frame](/docs/configuration/project-frame-settings): the ability to **Colorize the Title Bar**!
+The second highlight of this version is also related to the *New UI users only*, and is about an extension of
+the [Project Frame](/docs/configuration/project-frame-settings): the ability to **Colorize the Title Bar**!
 
 {% include figure.html content="/screens/colorized.png" caption="Colorize title bar" %}
 
-
-This was something that wasn't possible before, but the New UI introduced a flashy new "*title bar* component" to replace the original title bar (the same way the Material Theme [did in the past](/docs/configuration/other-tweaks-settings#themed-titlebar)), and this one is customizable.
+This was something that wasn't possible before, but the New UI introduced a flashy new "*title bar* component" to replace the original title bar (the same way
+the Material Theme [did in the past](/docs/configuration/other-tweaks-settings#themed-titlebar)), and this one is customizable.
 
 So there it is, the perfect **Project Frame**! And it can be customized per project!
 
-Note: As usual, you can still disable it from the [Project Frame Settings](/docs/configuration/project-frame-settings). And it's available in the separate standalone plugin as well.
+Note: As usual, you can still disable it from the [Project Frame Settings](/docs/configuration/project-frame-settings). And it's available in the separate
+standalone plugin as well.
 {:class='card-panel warn'}
 
 
@@ -105,14 +153,17 @@ Yet another small update that introduces new exciting features.
 
 ### Recommended plugins
 
-The Material Theme UI is a great plugin, but there are also literally thousands of other plugins available in the Marketplace. Some are great, some not so much, but in any case it can be
+The Material Theme UI is a great plugin, but there are also literally thousands of other plugins available in the Marketplace. Some are great, some not so much,
+but in any case it can be
 a little hard to get to find out the hidden pearls in this sea of available options.
 
-Introducing the **Recommended plugins**: It's another settings page found inside the _Material Theme Settings_ that showcases a hand-picked list of useful plugins and remarkable themes for you to discover at a glance rather than navigating the whole sea of available plugins in the Marketplace.
+Introducing the **Recommended plugins**: It's another settings page found inside the _Material Theme Settings_ that showcases a hand-picked list of useful
+plugins and remarkable themes for you to discover at a glance rather than navigating the whole sea of available plugins in the Marketplace.
 
 {% include figure.html content="/screens/recommendedPlugins.png" caption="Recommended Plugins" %}
 
 Most of these plugins are UI-related, grouped into three sections:
+
 - **Recommended plugins**: Hand-picked list of great plugins to use alongside the Material Theme UI.
 - **Material Plugins**: These are the standalone paid plugins that you can buy separately instead of the main plugin.
 - **Great Themes**: Curated list of amazing themes that can be sideloaded with the Material Theme UI.
@@ -128,24 +179,29 @@ Oh and by the way: this is a purely subjective list! So please don't be mad if a
 
 ### New StatusBar Widget: **Current Project**
 
-This version introduces a new widget to the Status Bar, which displays the current project and gives the ability to open other projects via a menu. This is based on a similar widget available on the title bar in the new UI.
+This version introduces a new widget to the Status Bar, which displays the current project and gives the ability to open other projects via a menu. This is
+based on a similar widget available on the title bar in the new UI.
 
 {% include figure.html content="/screens/projectsWidget.png" caption="Recent Projects Widget" %}
 
 ### Material Theme Bundles
 
 This version finalizes the support of the _Material Theme Bundles_, by releasing 5 packages related to the different paid features:
+
 - [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast)
 - [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme)
 - [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame)
 - [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
 - [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
 
-As stated in [Material Theme Bundles](/docs/pricing#material-theme-bundles) section, these plugins are to be loaded as an alternate way to purchase a license, by providing a way to purchase only the features that are relevant to you.
+As stated in [Material Theme Bundles](/docs/pricing#material-theme-bundles) section, these plugins are to be loaded as an alternate way to purchase a license,
+by providing a way to purchase only the features that are relevant to you.
 
-For instance, if you are only interested in the *Language Additions* feature and don't want to purchase the whole package, you can decide to install the relevant plugin at a lower price.
+For instance, if you are only interested in the *Language Additions* feature and don't want to purchase the whole package, you can decide to install the
+relevant plugin at a lower price.
 
-**Important**: If you already have purchased the main plugin, purchasing these plugins will do nothing, so be careful! These only make sense if you are using the Free Version (and not to be confused with the Material Theme Lite)!
+**Important**: If you already have purchased the main plugin, purchasing these plugins will do nothing, so be careful! These only make sense if you are using
+the Free Version (and not to be confused with the Material Theme Lite)!
 {:class='card-panel warn'}
 
 ### Other fixes
@@ -153,20 +209,21 @@ For instance, if you are only interested in the *Language Additions* feature and
 - Fix [#187](https://github.com/mallowigi/material-theme-issues/issues/187)
 - Update Translations
 
-
 ---
 
 ## What's new in Material Theme UI v7.5.2
 
 ### Custom Color Scheme in Custom Themes
 
-This update expands the functionalities of the [Custom Theme](/docs/configuration/custom-themes) by giving the ability to specify a color scheme to your custom theme.
+This update expands the functionalities of the [Custom Theme](/docs/configuration/custom-themes) by giving the ability to specify a color scheme to your custom
+theme.
 
 {% include figure.html content="/screens/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" %}
 
 This is particularly useful if you have "Custom Color Schemes" and want to assign them to your own custom theme.
 
-Note: If the color scheme cannot be found (for example if you decide to use the `_@user` schemes or if you select a plugin based scheme), it will automatically revert to _Darcula_)
+Note: If the color scheme cannot be found (for example if you decide to use the `_@user` schemes or if you select a plugin based scheme), it will automatically
+revert to _Darcula_)
 
 ### Other fixes
 
@@ -178,7 +235,8 @@ Note: If the color scheme cannot be found (for example if you decide to use the 
 
 ## What's new in Material Theme UI v7.5.1
 
-This small update fixes the Experimental UI not working after the update to 2022.1.2, as well as adding more languages support in the color schemes: **Angular Template**, **Qute** and **Sonarlint**.
+This small update fixes the Experimental UI not working after the update to 2022.1.2, as well as adding more languages support in the color schemes: **Angular
+Template**, **Qute** and **Sonarlint**.
 
 In addition, the color for _Modified Files_ in the _SynthWave '84_ theme has been changed as well.
 
@@ -189,11 +247,12 @@ In addition, the color for _Modified Files_ in the _SynthWave '84_ theme has bee
 
 ### Japanese, Chinese and Korean support
 
-
 This version adds support for three additional languages: **Japanese**, **Chinese (simplified)** and **Korean**.
 
 Thanks to machine learning and external translators, we've been finally able to translate the plugin into the three popular asian languages.
-To enable it, you'll need to [install the IDE language packs](https://blog.jetbrains.com/idea/2021/04/use-updated-language-packs-for-intellij-based-ides-with-translation-plugin/), and the plugin will be automatically translated to the corresponding language.
+To enable it, you'll need
+to [install the IDE language packs](https://blog.jetbrains.com/idea/2021/04/use-updated-language-packs-for-intellij-based-ides-with-translation-plugin/), and
+the plugin will be automatically translated to the corresponding language.
 
 {% include figure.html content="/screens/langs/japanese.png" caption="Settings - Japanese" %}
 
@@ -202,7 +261,6 @@ To enable it, you'll need to [install the IDE language packs](https://blog.jetbr
 {% include figure.html content="/screens/langs/chinese.png" caption="Actions - Chinese" %}
 
 {% include figure.html content="/screens/langs/wizard.png" caption="Wizard - Chinese" %}
-
 
 Of course, there could be some inconsistencies between the english texts and their asian counterparts.
 In such cases, we'd appreciate if you could report such inconsistencies, and perhaps provide better translations!
@@ -216,7 +274,6 @@ Please make sure to **remove** the languages you don't use, or you would end up 
 ## What's new in Material Theme UI v7.4.0
 
 ### New Material Theme Widgets
-
 
 #### Material theme widget
 
@@ -270,30 +327,33 @@ As usual, this version also comes with its bug fixes and improvements:
 - Fix minimum size of table headers when using _Compact Table Cells_
 - Make _Tab Shadows_ feature free
 
-
 ----
 
 ## What's new in Material Theme UI v7.0.0-7.3.2
 
-The 7.X.X versions up to 7.3.2 contained mainly the same changes than of the 6.14.X up to 6.16.X, but for the 2022.1 IDEs. However, there are some changes that need to be mentioned:
+The 7.X.X versions up to 7.3.2 contained mainly the same changes than of the 6.14.X up to 6.16.X, but for the 2022.1 IDEs. However, there are some changes that
+need to be mentioned:
 
 ### Large Tool Windows deprecation and Experimental UI
 
 As with every major IDE updates, a lot of work needed to be done to support the newest releases, alongside their breaking changes and deprecations.
 
-One of the features that got the cut was the very famous **Large Tool Windows**, which was sometimes buggy but nonetheless a very awaited redesign. Since this wasn't a feature made by the plugin, it was very difficult to open the feature to the public despite the barriers, but this time it became utterly impossible, because it got merged with the complete redesign of the IDE.
+One of the features that got the cut was the very famous **Large Tool Windows**, which was sometimes buggy but nonetheless a very awaited redesign. Since this
+wasn't a feature made by the plugin, it was very difficult to open the feature to the public despite the barriers, but this time it became utterly impossible,
+because it got merged with the complete redesign of the IDE.
 
-As a result, the old setting has been removed, and temporarily replaced with a new setting to open this **Experimental UI** instead. However, we do **NOT** recommend using this UI as this is a **largely buggy and highly suspect to change between new releases of the IDE**. If you're aware of the risks, you can try it, but don't come complaining if there are issues.
+As a result, the old setting has been removed, and temporarily replaced with a new setting to open this **Experimental UI** instead. However, we do **NOT**
+recommend using this UI as this is a **largely buggy and highly suspect to change between new releases of the IDE**. If you're aware of the risks, you can try
+it, but don't come complaining if there are issues.
 
 ----
-
 
 ## What's new in Material Theme UI v6.16.1
 
 This is a bugfix update for many issues related to the new UI.
 
-
 ### Fixes
+
 - Improve the UI of the tag buttons: alignment, close button, color, etc
 - Add exclusions to replacing specific text fields: Plugins pages, New File popup, JFormDesigner inline edit, Prettier options etc
 - Fix outlined buttons disabled border color
@@ -301,14 +361,14 @@ This is a bugfix update for many issues related to the new UI.
 - Synthwave color scheme improvements: Kotlin instance field color
 - Prevent showing the "what's new" popup when the setting is disabled
 
-
 ---
 
 ## What's new in Material Theme UI v6.16.0
 
 ### New Feature: **Custom UI Font**
 
-A new setting has been added to the Material UI Settings Features: **Custom UI Font**. This font replaces (or rather, expands on) the original [Material Fonts](/docs/configuration/features-settings#material-fonts) to provide the ability to choose your own font.
+A new setting has been added to the Material UI Settings Features: **Custom UI Font**. This font replaces (or rather, expands on) the
+original [Material Fonts](/docs/configuration/features-settings#material-fonts) to provide the ability to choose your own font.
 
 Actually, this feature supplements the _Custom Font_ feature provided by JetBrains, so this is just another way to change the IDE font.
 
@@ -326,19 +386,21 @@ This feature is available to all users.
 - Fix text not showing when editing table cells
 - Fix Option button arrow
 
-
-
 ----
 
 ## What's new in Material Theme UI v6.15.0
 
 ### Legacy Material Design
 
-The latest version introduced a new UI with a lot of changes: broader components, rounder buttons and so on. However, not all people were happy with the changes, be it because they didn't like the new style, or simply because they were used to the old, sharper design and the signature of the legacy Material Design of 2016.
+The latest version introduced a new UI with a lot of changes: broader components, rounder buttons and so on. However, not all people were happy with the
+changes, be it because they didn't like the new style, or simply because they were used to the old, sharper design and the signature of the legacy Material
+Design of 2016.
 
-Therefore, in order to not drive people away, we decided to add it back! Disabled by default, you can find it inside the **Components** tab, in the Material Theme settings.
+Therefore, in order to not drive people away, we decided to add it back! Disabled by default, you can find it inside the **Components** tab, in the Material
+Theme settings.
 
-Please note however that this style remains **deprecated**. It means, we're not planning to remove it for the moment, but we won't be adding any new features nor fix any bugs that might occur in the future.
+Please note however that this style remains **deprecated**. It means, we're not planning to remove it for the moment, but we won't be adding any new features
+nor fix any bugs that might occur in the future.
 
 ### Fixes
 
@@ -346,7 +408,6 @@ Please note however that this style remains **deprecated**. It means, we're not 
 - Remove the glitch that happened during selection in lists.
 
 ----
-
 
 ## What's new in Material Theme UI v6.14.0
 
@@ -385,13 +446,15 @@ More info: <https://material.io/components/menus#usage>
 
 #### Buttons
 
-Buttons got rounder, smaller and now sport a small shadow under them, making them stand out more, like regular buttons. The other options (uppercase, outlined, etc.) are still available.
+Buttons got rounder, smaller and now sport a small shadow under them, making them stand out more, like regular buttons. The other options (uppercase, outlined,
+etc.) are still available.
 
 More info: <https://material.io/components/buttons#anatomy>
 
 #### Search Fields
 
-The search fields also underwent a redesign, becoming larger and bordered, but with a sharp border. The reason for this is that they are usually encapsulated in a more complex UI, such as the "_Search Everywhere_" or "_Find in Files_" popups.
+The search fields also underwent a redesign, becoming larger and bordered, but with a sharp border. The reason for this is that they are usually encapsulated in
+a more complex UI, such as the "_Search Everywhere_" or "_Find in Files_" popups.
 
 {% include figure.html content="/screens/search.png" caption="New Search Fields" %}
 
@@ -419,7 +482,8 @@ The Navigation Bar and Notifications have been redesigned too, but are only avai
 
 -----
 
-This redesign involved a lot of refactoring of the old components, as well as a full rewrite in Kotlin. Since it is impossible to check the whole UI, there might be bugs not yet discovered. In that case, please report them to the GitHub repository as soon as possible, thanks!
+This redesign involved a lot of refactoring of the old components, as well as a full rewrite in Kotlin. Since it is impossible to check the whole UI, there
+might be bugs not yet discovered. In that case, please report them to the GitHub repository as soon as possible, thanks!
 
 This was a lot of hard work, but I hope you'll like it :)
 
