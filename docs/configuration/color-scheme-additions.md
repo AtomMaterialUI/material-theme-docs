@@ -41,6 +41,7 @@ At the moment the only supported languages are:
 - **Kotlin**
 - **Python**
 - **Ruby**
+- **Go**
 
 More will come in the future.
 
@@ -177,6 +178,38 @@ The following keywords are customizable:
 - `initialize`
 - `new`
 - `puts`
+
+### Go
+
+Available since 7.9.0
+
+**Functions**:
+
+- `main`
+- `make`
+- `len`, `cap`
+- `Print`, `Println`, `Printf`
+
+**Keywords**:
+
+- `import`, `package`
+- `func`
+- `if`, `else`
+- `switch`, `case`, `default`, `fallthrough`
+- `for`, `range`, `map`
+- `return`
+- `var`, `const`
+- `type`
+- `defer`
+- `struct`
+- `interface`
+- `go`, `select`
+- `chan`
+
+**Primitives**:
+
+- `nil`
+- `true`, `false`
 
 ----
 
