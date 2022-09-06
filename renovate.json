@@ -1,67 +1,28 @@
 {
   "packageRules": [
     {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchPackagePatterns": [
+        "lint",
+        "prettier"
+      ],
+      "automerge": true
+    },
+    {
       "matchUpdateTypes": [
         "minor",
-        "patch",
-        "pin",
-        "digest"
+        "patch"
       ],
-      "semanticCommitType": "chore",
-      "automerge": true,
-      "semanticCommits": true
-    },
-    {
-      "matchPackagePatterns": [
-        "eslint"
-      ],
-      "labels": [
-        "linting"
-      ],
-      "groupName": "eslint",
-      "semanticCommitType": "chore",
-      "automerge": true,
-      "semanticCommits": true
-    },
-    {
-      "matchDepTypes": [
-        "optionalDependencies"
-      ],
-      "addLabels": [
-        "optional"
-      ],
-      "semanticCommitType": "chore",
-      "automerge": true,
-      "semanticCommits": true
-    },
-    {
-      "matchDepTypes": [
-        "peerDependencies"
-      ],
-      "addLabels": [
-        "peer"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ],
-      "groupName": "peerDependencies (non-major)",
-      "groupSlug": "peer-dependencies",
-      "semanticCommitType": "chore",
-      "automerge": true,
-      "semanticCommits": true
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
     }
   ],
-  "extends": [
-    "config:js-lib",
-    "packages:eslint"
-  ],
-  "labels": [
-    "dependencies"
-  ],
-  "bumpVersion": "patch",
-  "commitBodyTable": true,
-  "prHourlyLimit": 6,
-  "prConcurrentLimit": 6,
-  "automerge": true
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true
+  }
 }
