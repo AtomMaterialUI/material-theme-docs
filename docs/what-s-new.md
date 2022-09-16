@@ -5,6 +5,64 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.10.0
+
+This version focuses on bug fixes and improvements for various parts of the plugin.
+
+### License checking refactor
+
+The first improvement is a complete refactoring of the _license checking process_.
+
+It's been almost two years since the plugin became a freemium plugin, and since then a lot of changes have been brought to the licensing system: free plan, new
+features, external plugins and so on.
+Moreover, with the license checking becoming asynchronous, leading to many people having access to premium features even
+though they were on the free plan, and oftentimes with no possibility to turn them off.
+
+Therefore, it was time for a refactor of the whole process. This refactor attempts to cover all use cases that we can think of:
+
+- Free plan users
+- Premium users that downgraded to the free plan
+- Free plan users with the [external plugins](/docs/pricing#material-theme-bundles)
+- Premium users
+
+Besides, information about the external plugins licenses can be found on the About page.
+
+{% include figure.html content="/screens/licenses.png" caption="Material Theme Bundles Licences" %}
+
+---
+
+### Custom Tree Font Improvement
+
+Another long-awaited fix is the ability to change the _Project View Tree Font_ without having to restart the IDE.
+
+This was something quite difficult to implement, as even within JetBrains, a restart was required upon changing the font size.
+
+{% include figure.html content="/screens/advancedSettingsRestart.png" caption="JetBrains' Advanced Settings" %}
+
+Thankfully, with time comes experience, and we finally found a workaround for this issue, therefore giving the full ability to customize the _Project View_
+without a restart.
+
+{% include figure.html content="/screens/treeChange.gif" caption="Tree Font Change" %}
+
+---
+
+### Language Additions Improvement
+
+Last but not least, the [Languages Additions](configuration/color-scheme-additions) feature received an improvement as well, deprecating the need of
+the _Enforce Highlighting_ switch.
+
+This was done by the use of the `SeverityProvider`, which allows plugin developers to add their own "error severities". By doing so, the language additions no
+longer appear as _Weak Warnings_, but instead, fall into their own custom category, therefore not getting in the way of genuine warnings.
+
+### Other changes
+
+- Improved the Wizard UI
+- Improved the Custom Theme UI Settings
+- Improved the Project Based Settings
+- Fix the Project-Based Tab Highlighting applying to all projects
+
+---
+
 ## What's new in Material Theme UI v7.9.0
 
 ### Go Additions

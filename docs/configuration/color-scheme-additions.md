@@ -213,7 +213,7 @@ Available since 7.9.0
 
 ----
 
-#### Enforce highlighting
+#### Enforce highlighting (deprecated since 7.10.0)
 
 Due to a limitation in JetBrains' syntax highlighting, some additions might not be highlighted as expected,
 as the language's highlighting will take precedence over the additions.
