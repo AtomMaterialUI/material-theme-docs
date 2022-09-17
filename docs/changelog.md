@@ -16,6 +16,13 @@ next:
 # Changelog
 ----
 
+# 7.10.1
+
+### Fixes
+
+- Fix Project View Custom Tree Line Item Height being removed from the free plan
+- Fix Custom Tree Indent being toggleable in the free plan where it shouldn't
+
 # 7.10.0
 
 ### Features
