@@ -1,0 +1,16 @@
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for plugin in site.data.recommendedPlugins %}
+    <tr>
+        <td><a href="{plugin.url}">{{plugin.title}}</a></td>
+        <td>{{plugin.description}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

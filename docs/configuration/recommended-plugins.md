@@ -42,6 +42,8 @@ Oh and by the way: this is a purely subjective list! So please don't be mad if a
 
 ## Showcase
 
+{% include recommended-plugins.html %}
+
 | Title                                                                                                                                              | Description                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | [Atom Material Icons                 ](https://plugins.jetbrains.com/plugin/10044-atom-material-icons              )                               | Replaces file, folders and UI icons                                |
