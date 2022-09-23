@@ -88,19 +88,19 @@ gallery:
 The themes have also been ported to full-fledged Chrome Themes:
 {:class='title'}
 
-[Material Oceanic](https://chrome.google.com/webstore/detail/material-oceanic/jpfecmdhmbapaaoekjfndmincnlomhmb)
-[Material Darker](https://chrome.google.com/webstore/detail/material-darker/dehdmadehnmbjcilgpjhdjkepcknkjad)
-[Material Lighter](https://chrome.google.com/webstore/detail/material-lighter/ngniaepbfniljcccakbcpaaphockfhjh)
-[Material Palenight](https://chrome.google.com/webstore/detail/material-palenight/ilhklcniakbnimbanmchkeffaihfjnni)
-[Material Deep Ocean](https://chrome.google.com/webstore/detail/material-deep-ocean/nfbndjdhaehagagfllfcddofghkhcfdf)
-[Monokai Pro](https://chrome.google.com/webstore/detail/monokai-pro/gfmkmfimlhdidljenbailkfkcabnoebf)
-[Arc Dark](https://chrome.google.com/webstore/detail/arc-dark/lldoabpblmpgipmppgobdiamhjbjoffi)
-[Dracula](https://chrome.google.com/webstore/detail/dracula/klmoijkddehdpobmgicjlcidiijfngig)
-[Atom One Dark](https://chrome.google.com/webstore/detail/atom-one-dark/kjboibophcgchimahpicagheccpnjnhi)
-[Atom One Light](https://chrome.google.com/webstore/detail/atom-one-light/ajamefcbfaiolpnjelkafhjdninoclhc)
-[GitHub Dark](https://chrome.google.com/webstore/detail/github-dark/ebpfohnniggcgdadnghbkdopcpfcdmgh)
-[Night Owl](https://chrome.google.com/webstore/detail/night-owl/pjlijegfckfhokldpkmgkaoagcdcbcoe)
-[Solarized Light](https://chrome.google.com/webstore/detail/solarized-light/glojnijkhfdhojgkmbbpmaobbfdfaoej)
-[SynthWave' 84](https://chrome.google.com/webstore/detail/synthwave-84/kdanjdeljjimoalfjcjadmcbfkmolmnj)
+- [Material Oceanic](https://chrome.google.com/webstore/detail/material-oceanic/jpfecmdhmbapaaoekjfndmincnlomhmb)
+- [Material Darker](https://chrome.google.com/webstore/detail/material-darker/dehdmadehnmbjcilgpjhdjkepcknkjad)
+- [Material Lighter](https://chrome.google.com/webstore/detail/material-lighter/ngniaepbfniljcccakbcpaaphockfhjh)
+- [Material Palenight](https://chrome.google.com/webstore/detail/material-palenight/ilhklcniakbnimbanmchkeffaihfjnni)
+- [Material Deep Ocean](https://chrome.google.com/webstore/detail/material-deep-ocean/nfbndjdhaehagagfllfcddofghkhcfdf)
+- [Monokai Pro](https://chrome.google.com/webstore/detail/monokai-pro/gfmkmfimlhdidljenbailkfkcabnoebf)
+- [Arc Dark](https://chrome.google.com/webstore/detail/arc-dark/lldoabpblmpgipmppgobdiamhjbjoffi)
+- [Dracula](https://chrome.google.com/webstore/detail/dracula/klmoijkddehdpobmgicjlcidiijfngig)
+- [Atom One Dark](https://chrome.google.com/webstore/detail/atom-one-dark/kjboibophcgchimahpicagheccpnjnhi)
+- [Atom One Light](https://chrome.google.com/webstore/detail/atom-one-light/ajamefcbfaiolpnjelkafhjdninoclhc)
+- [GitHub Dark](https://chrome.google.com/webstore/detail/github-dark/ebpfohnniggcgdadnghbkdopcpfcdmgh)
+- [Night Owl](https://chrome.google.com/webstore/detail/night-owl/pjlijegfckfhokldpkmgkaoagcdcbcoe)
+- [Solarized Light](https://chrome.google.com/webstore/detail/solarized-light/glojnijkhfdhojgkmbbpmaobbfdfaoej)
+- [SynthWave' 84](https://chrome.google.com/webstore/detail/synthwave-84/kdanjdeljjimoalfjcjadmcbfkmolmnj)
 
 {% include chromethemes.html %}
