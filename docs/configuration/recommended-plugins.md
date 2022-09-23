@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Recommended Plugins
-description: Discover great plguins and themes!
+description: Discover great plugins and themes!
 group: configuration
 toc: true
 comments: true
