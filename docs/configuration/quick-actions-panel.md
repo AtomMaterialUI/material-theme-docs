@@ -43,7 +43,7 @@ You can also set a shortcut to open every one of its submenus from the
 
 ## Material theme switcher
 
-The first subpanel is a switcher to quickly switch between the themes. 
+The first subpanel is a switcher to quickly switch between the themes.
 There you can find all the available themes plus the two custom themes.
 
 {% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
@@ -53,7 +53,6 @@ There you can find all the available themes plus the two custom themes.
 Since version 6.13, Light and Dark themes are grouped together.
 
 {% include figure.html content="/screens/themeGroups.png" caption="Light and Dark Theme Groups" %}
-
 
 **Note**: _Custom Themes_ are only available for premium users.
 {:class='card-panel warn'}
@@ -66,6 +65,7 @@ Some features are only available for premium users.
 {:class='card-panel warn'}
 
 This panel allows you to quickly toggle some settings:
+
 - _Toggle Contrast Mode_
 - _Toggle High Contrast_
 - _Toggle Compact Item Line Height_
@@ -80,6 +80,7 @@ This panel allows you to quickly toggle some settings:
 - _Tab Highlight Position_
 
 In addition, there are one-time actions that change the plugin's configuration:
+
 - _Set Recommended Tab Height_: Change the tab height to _42_
 
 -----
@@ -91,6 +92,7 @@ This panel provides a set of predefined colors to set up your [accent color](/do
 {% include figure.html content="/screens/accentChooser.png" caption="Accent Chooser" %}
 
 There are also actions to easily toggle the following modes:
+
 - _Override Accent Color from Theme_
 - _Set Accent Mode_
 
@@ -105,23 +107,30 @@ Some features are only available for premium users.
 {:class='card-panel warn'}
 
 This panel as well allows you to quickly toggle the most used Component/Features Settings:
-- _Toggle Custom Tree Fonts_
-- _Toggle Material Fonts_
+
+- _Toggle Tab Separators_
+- _Toggle Custom Tree Font_
+- _Toggle Custom UI Font_
 - _Toggle Colored Directories_
 - _Toggle Language Additions_
+- _Toggle Focus Mode_
 - _Toggle Material Wallpapers_
 - _Toggle Outline Buttons_
 - _Toggle Overlays_
 - _Toggle Project Frame Colors_
+- _Colorize Title Bar (New UI)_
 
 In addition, other one-time actions are available in this panel, which are:
+
 - _Material Theme Wizard_: Open the Material Theme Wizard
 - _Atom Material Icons_: Open the **Atom Material Icons Plugin** page for installation.
 - _Show What's New_: Display the "**What's new**" page.
 - _Reset Color Scheme_: Reset the current color scheme, removing all custom changes.
 - _Clean Overlays_: Manually remove any lingering overlays.
+- _Apply Custom UI Font_: Forcibly triggers a UI Font change.
 
 --- 
+
 ### License activation
 
 - _Activate License_: Activate your Premium License, if it's not already done.
@@ -131,6 +140,7 @@ In addition, other one-time actions are available in this panel, which are:
 {% include figure.html content="/screens/license.png" caption="License" %}
 
 ---
+
 ### Material wallpapers
 
 - _Remove Material Wallpaper_: Remove the [IDE Background Image](https://www.jetbrains.com/help/idea/setting-background-image.html).
