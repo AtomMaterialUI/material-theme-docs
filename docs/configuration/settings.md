@@ -162,6 +162,7 @@ Quick explanation of all settings:
 - *Tab Highlight Position*![premium](/img/icons/premium.png): Customize the position of the tab highlighter.
 - *Custom Tab Font*![premium](/img/icons/premium.png): Control the font and size of the Editor Tabs.
 - *Tabs Animations*: Animate the tab indicator upon switching tabs
+- *Tab Separators*: Add thin borders between tabs
 
 **[Compact Settings](/docs/configuration/compact-settings)**:
 
@@ -219,6 +220,9 @@ Quick explanation of all settings:
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
 
 - *Language Additions*![premium](/img/icons/premium.png): Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions)
+- *Focus Mode*![premium](/img/icons/premium.png): Increases focus on the current editing scope by making other parts dimmer.
+    - *Override Focus Color from Theme*: Sets the color of the "unfocused" parts from the current theme.
+    - *Custom Focus Color*: Set your own unfocused color
 - *Colored Open Directories*![premium](/img/icons/premium.png): Colorize open directories with the accent color.
 - *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) page on each update.
 - *Automatically reset Color Scheme*: Automatically reset the color scheme on theme activation (_only for bundled color schemes_).
@@ -338,10 +342,12 @@ If a key isn't in your file, it means that it uses the default value.
     <!-- <option name="darkTitleBar" value="false" /> -->
     <!-- Enforced Language Additions -->
     <option name="enforcedLanguageAdditions" value="false"/>
-    <!-- Experimental UI -->
-    <option name="expUIEnabled" value="false"/>
+    <!-- Experimental UI (deprecated since 2022.1) -->
+    <!-- <option name="expUIEnabled" value="false"/>-->
     <!-- File Status Colors enabled-->
     <option name="fileStatusColorsEnabled" value="false"/>
+    <!-- Custom focus color when in Focus Mode -->
+    <option name="focusColor" value="424242"/>
     <!-- Tab highlight color -->
     <option name="highlightColor" value="E91E63"/>
     <!-- Tab highlight thickness -->
@@ -368,26 +374,30 @@ If a key isn't in your file, it means that it uses the default value.
     <option name="isContrastMode" value="false"/>
     <!-- Custom tree indent enabled -->
     <option name="isCustomTreeIndentEnabled" value="false"/>
+    <!-- Focus Mode Enabled -->
+    <option name="isFocusModeEnabled" value="false"/>
     <!-- High Contrast -->
     <option name="isHighContrast" value="false"/>
     <!-- Inverted Selection Color -->
     <option name="isInvertedSelectionColor" value="false"/>
     <!-- Old Material Design Style enabled -->
     <option name="isMaterialDesign2" value="false"/>
-    <!-- Material Theme enabled (deprecated) -->
-    <!--  <option name="isMaterialDesign2" value="false" />-->
     <!-- Custom Wallpapers -->
     <option name="isMaterialWallpapers" value="true"/>
     <!-- Styled folders enabled -->
     <option name="isStyledDirectories" value="false"/>
     <!-- Tabs Shadow -->
     <option name="isTabsShadow" value="true"/>
+    <!-- Tab Separators -->
+    <option name="isTabSeparatorsEnabled" value="true"/>
     <!-- Whether to show the wizard at start -->
     <option name="isWizardShown" value="true"/>
     <!-- Left tree indent  -->
     <option name="leftTreeIndent" value="6"/>
     <!-- Override accent color enabled -->
     <option name="overrideAccentColor" value="true"/>
+    <!-- Override focus color enabled -->
+    <option name="overrideFocusColor" value="true"/>
     <!-- Right tree indent  -->
     <option name="rightTreeIndent" value="6"/>
     <!-- Second Accent Color when in Accent Mode -->

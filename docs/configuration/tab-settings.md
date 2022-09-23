@@ -30,9 +30,9 @@ This setting controls the appearance of the little indicator under the current h
 
 {% include figure.html content="/screens/tabs.png" caption="Active Tab Indicator" %}
 
-- When the setting is **OFF**, the indicator color would either be the one defined by the color scheme, according to the `TAB_UNDERLINE` property, or the [current accent color](/docs/configuration/accents).
+- When the setting is **OFF**, the indicator color would either be the one defined by the color scheme, according to the `TAB_UNDERLINE` property, or
+  the [current accent color](/docs/configuration/accents).
 - When the setting is **ON**, you can select your own custom color.
-
 
 #### Thickness
 
@@ -42,12 +42,12 @@ This allows you to set the _thickness_ of the tab highlighter.
 
 To avoid crazy values that could ruin the UI, the values are limited between `1` to `5` pixels.
 
-
 #### About tabs placement
 
 While most people set their tabs to be on the top, JetBrains IDEs also give the possibility to place your tabs to the bottom, left or right side.
 
 In that case, the active tab indicator would be placed accordingly to the tab position:
+
 - At the top for _bottom placement_
 - At the right for _right placement_
 - At the left for _left placement_
@@ -55,11 +55,12 @@ In that case, the active tab indicator would be placed accordingly to the tab po
 {% include figure.html content="/screens/leftSideHeight.png" caption="Left Placement" %}
 
 -----
+
 ## Other tab options
 
 ### Uppercase Tabs
 
-This feature allows you to set the tabs to look even more like the usual 
+This feature allows you to set the tabs to look even more like the usual
 [Material Design Tabs](https://material.io/guidelines/components/tabs.html#tabs-usage), e.g. in _Uppercase_.
 
 {% include figure.html content="/screens/uppercasebold.png" caption="Uppercase Tabs" %}
@@ -81,7 +82,7 @@ Now, this setting controls the boldness of only the active, selected tab, making
 
 ### Tab height
 
-This setting allows you to customize the height of the different tabs of the IDE, 
+This setting allows you to customize the height of the different tabs of the IDE,
 such as _editor tabs_, _debugger tabs_, _code style tabs_, etc.
 This allows you to have the complete "Material Design Tabs" experience.
 
@@ -93,6 +94,7 @@ If you use vertical tabs though, the personal recommended value would be `25` so
 There is no reset button, but there is an action in the `Material Toolbar` that resets the value to its default value, `50`.
 
 ----
+
 ## Material tabbed panes
 
 Since version 3.0.0 the Tab Settings control not only the appearance of the Editor Tabs but for all tabbed panes as well
@@ -101,6 +103,7 @@ Since version 3.0.0 the Tab Settings control not only the appearance of the Edit
 {% include figure.html content="/screens/materialTabbedPanes.png" caption="Material Tabbed Panes" %}
 
 You can therefore customize:
+
 - The active tab highlighter color and thickness
 - The tab height
 - Whether they appear as upper case bold.
@@ -108,6 +111,7 @@ You can therefore customize:
 Tab Shadow and Opacity have no effect here.
 
 ----
+
 ## Tab highlighter position
 
 A new setting has been added in 3.4.0 which allows you to tweak the position of the tab highlighter:
@@ -133,6 +137,7 @@ A new setting has been added in 3.4.0 which allows you to tweak the position of 
 {% include figure.html content="/screens/positions/none.png" caption="None" %}
 
 ----
+
 ## Custom tab font
 
 Since version 6.10.0 you have the ability to customize both the __font family__ and __size__ of the Editor tabs.
@@ -147,9 +152,27 @@ Since version 6.10.0 you have the ability to customize both the __font family__ 
 
 ## Animated Tabs
 
-The version 7.8.0 introduced a cool option giving animations to the tab indicators.
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
+Version 7.8.0 introduced a cool option giving animations to the tab indicators.
 
 {% include figure.html content="/screens/animatedtabs.gif" caption="Animated Tabs" %}
+
+----
+
+## Tab Separators
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
+Version 7.11.0 introduces the support for **Tab Separators**.
+
+These are thin, almost transparent borders that can be added between tabs to ease the distinction between them.
+
+{% include figure.html content="/screens/noTabSeparators.png" caption="Without Tab Separators" %}
+
+{% include figure.html content="/screens/tabSeparators.png" caption="With Tab Separators" %}
 
 
 ----
@@ -159,6 +182,7 @@ The version 7.8.0 introduced a cool option giving animations to the tab indicato
 Since version 6.6.0, you can also override specific tab settings on a per-project basis.
 
 Such settings include:
+
 - Active Tab Highlighter color and thickness
 - Uppercase tabs
 - Bold Active Tab
@@ -168,6 +192,7 @@ Such settings include:
 
 
 ----
+
 ## Other tweaks
 
 #### Edited files icon
@@ -187,26 +212,27 @@ Same as the edited file icon, pinned tabs sports a little pin on the icon, color
 The close icon didn't change, but sports the accent color when the cursor hovers it.
 
 -----
+
 ## FAQ
 
 **Q**: Is there a way to completely remove the Active Tab Indicator?
 
 **A**: Not currently.
-Even disabling the feature in the IDE would still display the indicator provided by the plugin. 
+Even disabling the feature in the IDE would still display the indicator provided by the plugin.
 If there is enough demand to add this feature, it could appear in the future.
 
 **Q**: The _Tab Height_ feature is cool in the editor, but I'd rather leave other tabs untouched.
 
 **A**: It's a valid opinion.
-Unfortunately, currently the setting that sets the tab height is shared between all tabs in the IDE, and there is no way to distinguish between them currently. 
+Unfortunately, currently the setting that sets the tab height is shared between all tabs in the IDE, and there is no way to distinguish between them currently.
 Maybe in the future, if JetBrains provides more native customization.
 
 **Q**: Why limit the thickness or the tab height? I want to have 10 in thickness and 100 in tabs!!!
 
-**A**: Because allowing values past these limits would make the UI ugly or worse, crash it. 
+**A**: Because allowing values past these limits would make the UI ugly or worse, crash it.
 If you have a good reason to want it anyway, you can open an issue on GitHub with why you would want that.
 
 **Q**: The uppercase tabs feature is so useless! Editor Tabs !== Material Design Tabs!
 
-**A**: This might be true, but it's a matter of taste. 
+**A**: This might be true, but it's a matter of taste.
 It's not enabled by default, so if it bothers you, you can simply turn it off.
