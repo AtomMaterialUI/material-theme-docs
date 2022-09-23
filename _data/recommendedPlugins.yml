@@ -1,0 +1,53 @@
+- title: Atom Material Icons
+  url: https://plugins.jetbrains.com/plugin/10044-atom-material-icons
+  description: Replaces file, folders and UI icons
+- title: Color Highlighter
+  url: https://plugins.jetbrains.com/plugin/13309-color-highlighter
+  description: Colorizes colors in different formats
+- title: Extra Icons
+  url: https://plugins.jetbrains.com/plugin/11058-extra-icons
+  description: An alternative File Icon Theme
+- title: Foldable Project View
+  url: https://plugins.jetbrains.com/plugin/17288-foldable-projectview
+  description: Fold ignored and specific directories in the Project View
+- title: Image Icon Viewer
+  url: https://plugins.jetbrains.com/plugin/11096-image-icon-viewer
+  description: Preview Images directly in Project View and Tabs
+- title: Project Color
+  url: https://plugins.jetbrains.com/plugin/19463-project-color
+  description: Colorizes parts of the IDEs per project
+- title: ProjectTree Color Highlighter
+  url: https://plugins.jetbrains.com/plugin/13951-projecttree-color-highlighter
+  description: Apply background colors to specific folders
+- title: Rainbow Brackets
+  url: https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
+  description: Give brackets different colors by nesting level
+- title: Status Bar File Name & Recent Files
+  url: https://plugins.jetbrains.com/plugin/18290-status-bar-file-name--recent-files) Show the currently open file in the status bar
+- title: Theme Randomizer
+  url: https://plugins.jetbrains.com/plugin/16107-theme-randomizer
+  description: Pick a random theme at a set interval during the day
+- title: Material Design Color Palette
+  url: https://plugins.jetbrains.com/plugin/10869-material-design-color-palette
+  description: Show a Material Design Color Palette
+- title: Focus Mode
+  url: https://plugins.jetbrains.com/plugin/19837-focus-mode
+  description: Focus current edited part of the code by making other parts dimmer
+- title: Sloppy Focus
+  url: https://plugins.jetbrains.com/plugin/19733-sloppy-focus
+  description: Focus editors on hover rather than on click
+- title: ANSI Highlighter Premium
+  url: https://plugins.jetbrains.com/plugin/9707-ansi-highlighter-premium
+  description: Renders ANSI codes in files
+- title: Friendly Terminal
+  url: https://plugins.jetbrains.com/plugin/18857-friendly-terminal
+  description: Add a better terminal and file explorer inside your IDE
+- title: Inspection Lens
+  url: https://plugins.jetbrains.com/plugin/19678-inspection-lens
+  description: Display errors and warnings directly in the editor
+- title: ScreenCodePro
+  url: https://plugins.jetbrains.com/plugin/19556-screencodepro
+  description: Generate screenshots from your code
+- title: AppCodeAssets
+  url: https://plugins.jetbrains.com/plugin/19441-appcodeassets
+  description: Easily manage your AppCode Assets
