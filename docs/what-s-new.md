@@ -5,6 +5,59 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.11.0
+
+This is the latest version of the 2022.2 versions of the plugin.
+With the 2022.3 EAP already around the corner, work will very soon shift to that branch instead.
+That being said, this version brings two small but interesting features to the arsenal.
+
+### Tab Separators
+
+This version finalizes the planned tab features for 2022 by introducing support for **Tab Separators**.
+
+These are thin, almost transparent borders that can be added between tabs to ease the distinction between them.
+
+{% include figure.html content="/screens/noTabSeparators.png" caption="Without Tab Separators" %}
+
+{% include figure.html content="/screens/tabSeparators.png" caption="With Tab Separators" %}
+
+----
+
+### Focus Mode
+
+The second brand-new feature of this release is a feature called "Focus Mode".
+
+Originally inspired by an extension with the same name, this feature has been added to the plugin's feature as well, with more customization options.
+
+{% include figure.html content="/screens/focusModeOceanic.png" caption="Focus Mode (Oceanic)" %}
+
+{% include figure.html content="/screens/focusModeLighter.png" caption="Focus Mode (Lighter)" %}
+
+What this feature does is to help you focus on the current part of the code you're editing, by "unhighlighting" the other parts surrounding it.
+This can further help you to code without distractions!
+
+As this feature is highly dependent on the way people code, it is disabled by default, in order to not bother people used to code the usual way.
+
+By default, the color of the unfocused parts is taken from the current theme, but you can decide to use your own color as well.
+
+{% include figure.html content="/screens/customFocusColor.png" caption="Custom Focus Color (black)" %}
+
+{% include figure.html content="/screens/customFocusColorWhite.png" caption="Custom Focus Color (white)" %}
+
+You can find this feature under the "Other Tweaks" tab.
+
+This feature is available only available for premium users having bought the [Language Additions feature](/docs/configuration/color-scheme-additions).
+{:class='card-panel warn'}
+
+### Fixes and Improvements
+
+- Now the "What's New" page will take the current theme into consideration!
+- Added more of the newest settings to the _Material Theme Wizard_: Project Tree Font, Custom UI Font, Tab Font, Animated Tabs, Focus Mode...
+- Fix the fatal error happening to some users with the _Tab Highlight Indicator_.
+- Fix the small error with the Project Tree refresh when the said tree is not loaded.
+
+----
+
 ## What's new in Material Theme UI v7.10.0
 
 This version focuses on bug fixes and improvements for various parts of the plugin.
