@@ -16,6 +16,23 @@ next:
 # Changelog
 ----
 
+# 7.11.0
+
+### Features
+
+- New Setting: **Tab Separators**: Add separators between tabs
+- New Setting: **Focus Mode**. Focuses the current part of the code by making other parts dimmer.
+    - The unfocused color is automatically taken from the current theme's disabled color
+    - You can select your own color as well
+- Added more settings to the Wizard: Tab Font, Tree Font, UI Font, Tab Animations, Tab Separators, Focus Mode...
+- Send the current theme to the "What's New" page URL, to display the page with the current theme active.
+
+### Fixes
+
+- Improve Recommended Plugins' loading issue
+- Fix NPE when Project View Tab is not loaded yet
+- Fix NPE when Tab Highlight Indicator is undefined
+
 # 7.10.1
 
 ### Fixes
