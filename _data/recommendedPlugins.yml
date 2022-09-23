@@ -23,7 +23,8 @@
   url: https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
   description: Give brackets different colors by nesting level
 - title: Status Bar File Name & Recent Files
-  url: https://plugins.jetbrains.com/plugin/18290-status-bar-file-name--recent-files) Show the currently open file in the status bar
+  url: https://plugins.jetbrains.com/plugin/18290-status-bar-file-name--recent-files
+  description: Show the currently open file in the status bar
 - title: Theme Randomizer
   url: https://plugins.jetbrains.com/plugin/16107-theme-randomizer
   description: Pick a random theme at a set interval during the day
