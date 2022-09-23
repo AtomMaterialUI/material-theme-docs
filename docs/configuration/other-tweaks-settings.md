@@ -34,6 +34,9 @@ making possible to highlight specific keywords or function names separately from
 Refer to the [Language Additions](/docs/configuration/color-scheme-additions) page for more details.
 
 ----
+
+### Focus Mode
+
 This feature is only available for premium users and users who bought the **Language Additions** package.
 {:class='card-panel warn'}
 
