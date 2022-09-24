@@ -26,6 +26,7 @@ The plugin manager usually contains stable releases that made it through testing
 <img src="/img/screens/plugins.png" alt="Plugins">
 
 Steps:
+
 1. Open Settings/Preferences (Windows/Linux: `Ctrl-S`, Mac: `Cmd-,`)
 2. On the left, select **Plugins**
 3. Click on the button `Browse repositories`
@@ -45,6 +46,7 @@ decide to install it manually.
 </a>
 
 Steps:
+
 1. Select the version you want to install. Please note the _Compatible Builds_ column to ensure that your IDE is compatible with the selected version.
 2. Download the zip archive of the plugin.
 3. Open Plugins settings (`Preferences → Plugins`)
@@ -71,22 +73,26 @@ plugin:
 #### Material themes:
 
 {% for theme in site.data.themes.material %}
+
 - {{theme.name}}
-{% endfor %}
+  {% endfor %}
 
 {% for theme in site.data.themes.material2 %}
+
 - {{theme.name}}
-{% endfor %}
+  {% endfor %}
 
 #### Other themes:
 
 {% for theme in site.data.themes.other %}
+
 - {{theme.name}}
-{% endfor %}
+  {% endfor %}
 
 {% for theme in site.data.themes.other2 %}
+
 - {{theme.name}}
-{% endfor %}
+  {% endfor %}
 
 These schemes are adapted to the UI Theme of the same name, plus, for Atom One Dark, a complete port of the original
 [Atom One Dark](https://github.com/atom/one-dark-syntax) color scheme.
@@ -95,7 +101,7 @@ You can see more in the [Color Schemes](/docs/configuration/color-schemes) secti
 
 ### Configuring the plugin
 
-The plugin also comes with a bunch of configurable settings to suit all flavors. 
+The plugin also comes with a bunch of configurable settings to suit all flavors.
 There you can turn off certain features, change the sizes, appearance of the elements and colors, etc.
 
 These settings are found inside `Settings → Appearance and Behavior → Material Theme`.
@@ -104,13 +110,13 @@ These settings are found inside `Settings → Appearance and Behavior → Materi
 
 {% include figure.html content="/screens/settingsV2.png" caption="Material Theme Settings V2" %}
 
-
 Check [Settings](/docs/configuration/settings) for more info.
 
 ### Material Theme quick panel
 
 Last but not least, the plugin is also providing action groups to quickly customize the theme.
 These action groups are found in:
+
 - The IDE menu, under `Tools → Material Theme`
 - The main toolbar, at the end of the toolbar
 - By invoking the `Quick Switch Panel`
@@ -139,7 +145,9 @@ The plugin is supported on all IDEs, but because of changes of the SDK specific 
 - IDE versions 2021.1 > from version `6.0.0` up to `6.7.0`
 - IDE versions 2021.2 > from version `6.8.0`
 - IDE versions 2021.3 > from version `6.11.0`
-- IDE versions 2022.1 > from version `7.0.0`
+- IDE versions 2022.1 > from version `7.0.0` up to `7.5.2`
+- IDE versions 2022.2 > from version `7.6.0` up to `7.11.0`
+- IDE versions 2022.3 > from version `8.0.0`
 
 ## Premium Support
 
@@ -147,13 +155,10 @@ From version 6.0.0 the plugin has become a freemium plugin.
 
 Please refer [here](/docs/pricing) for more details and [this blog post](/docs/about-subscription-model) to better understand the reasons behind this choice.
 
-
 ## Android Studio
 
 The plugin should be compatible with Android Studio just fine,
-but since _Android Studio Bumblebee_ you would need to 
+but since _Android Studio Bumblebee_ you would need to
 install [another plugin](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) to be able to **Activate your license**.
-
-
 
 *[freemium]: The plugin is free, but some functionalities are under a paywall.

@@ -5,6 +5,28 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.0.0
+
+Coming just right after version 7.11.0, this is the first version for the new 2022.3 EAP.
+
+With the **New UI** now globally available, the Material Theme UI plugin had to be available as soon as possible, therefore, this
+version is merely focusing on getting ready for 2022.3.
+
+That being said, this version also brought its lots of small fixes and improvements, especially for the Material Theme Wizard.
+Screens have been reworked to better showcase the newest features, and many small artifacts have been corrected in the process.
+
+Also, a new tab has been added to the Welcome Screen to quickly open the Wizard.
+This will certainly prove useful for people that have skipped the wizard on the first start,
+or for people that configured it a while ago and didn't get to see the newest additions.
+
+{% include figure.html content="/screens/welcomeScreen.png" caption="Welcome Screen" %}
+
+By the way, remember that EAP users can use the premium features for free!
+
+Enjoy!
+
+---
+
 ## What's new in Material Theme UI v7.11.0
 
 This is the latest version of the 2022.2 versions of the plugin.
