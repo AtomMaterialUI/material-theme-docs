@@ -24,7 +24,9 @@
   .doc {
     margin: 3rem 0;
     width: 100%;
-
+    content-visibility: auto;
+    contain-intrinsic-size: 100px 1000px;
+    
     @media all and (min-width: $toc-hiding-point) {
       width: 70%;
     }
