@@ -52,3 +52,33 @@
 - title: AppCodeAssets
   url: https://plugins.jetbrains.com/plugin/19441-appcodeassets
   description: Easily manage your AppCode Assets
+- title: Mike's IDEA Extensions
+  url: https://plugins.jetbrains.com/plugin/12690-mike-s-idea-extensions
+  description: Improvements for Java, Kotlin and Android development
+- title: HTML Attribute Folder
+  url: https://plugins.jetbrains.com/plugin/19715-html-attribute-folder
+  description: Automatically folds specific HTML attributes for a cleaner html
+- title: Code Reactions
+  url: https://plugins.jetbrains.com/plugin/20099-code-reactions
+  description: Add reactions to your code just like Slack or Discord!
+- title: Translation
+  url: https://plugins.jetbrains.com/plugin/8579-translation
+  description: Add a popup window to translate text on the fly. Useful for translators!
+- title: Denigma
+  url: https://plugins.jetbrains.com/plugin/19914-denigma
+  description: Use machine learning to generate comments.
+- title: File Expander2
+  url: https://plugins.jetbrains.com/plugin/19799-file-expander2
+  description: Preview archive files contents in the Project View
+- title: Kotlin Extension Indexer
+  url: https://plugins.jetbrains.com/plugin/19945-kotlin-extension-indexer
+  description: A nice utility to find Kotlin extension functions
+- title: TypeWriter
+  url: https://plugins.jetbrains.com/plugin/20245-typewriter
+  description: TypeWriter is a plugin that makes your code look like it's being typed on the fly
+- title: Extensions Manager (Paid)
+  url: https://plugins.jetbrains.com/plugin/20238-extensions-manager
+  description: A nice UI to view and manage your plugins inside a tool window
+- title: StickyScroll
+  url: https://plugins.jetbrains.com/plugin/20114-stickyscroll
+  description: Add a panel on the top that keep the current scope you're scrolling into.
