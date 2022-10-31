@@ -5,6 +5,65 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v7.14.0
+
+Another bug fix version for 2022.2. This update fixes a few issues causing freezes or fatal errors, amongst others:
+
+- Settings: Add Per-Project **Default settings**: Predefined project settings to be applied for new projects.
+- Project Tree: Implement Material Trees to allow customization such as the _Project Tree Indicator_ to remain when not in focus.
+- Themes: Make the Tree Color opaque in all themes to prevent selection artifacts.
+- Wizard: Prevent Freeze when skipping defaults
+- Text Fields: Do not add the custom border if it goes under a certain size (such as _Docker Add Network Panel_)
+- Language Additions: Set annotations' icon and description to inform people they are not errors but simple annotations used to paint language additions.
+- Color Schemes: Change the "notification banners" color to the same color as the notification popups.
+- Focus Mode: Fix the error when invoking the *Add Method* action in some instances when the method would "expand" the document.
+
+### Per-project Default Settings
+
+The Material Theme plugin, for some time now, contains a setting panel allowing you to have different settings per project. At the time of writing, these
+include:
+
+- Tab Settings
+- Project Frame Settings
+
+However, it can be tedious to have to configure these settings for every project, when you can simply start from a boilerplate state, and adjust the bells and
+whistles per-project afterwards.
+
+For instance, you could want your projects, be it old or new, to have a specific tab highlighter position, and a custom project frame color, without having to
+change it for all projects through the application settings.
+
+{% include figure.html content="/screens/settingsMenu.png" caption="Settings Menu (Mac)" %}
+
+Such capabilities already exist for other settings, through the **New Projects Setup**, but not for the Material Theme. Therefore, since this version (7.14.0),
+it is now possible, and will affect new projects automatically.
+
+{% include figure.html content="/screens/perprojectDefaults.png" caption="Per-Project Defaults" %}
+
+**Note**: This will **NOT** affect existing projects!
+
+### Language Additions Annotator
+
+The next feature is less of a fix but more like additional details to an existing feature. According to another section of this document:
+
+> Last but not least, the [Languages Additions](configuration/color-scheme-additions) feature received an improvement as well, deprecating the need of
+> the _Enforce Highlighting_ switch.
+> This was done by the use of the `SeverityProvider`, which allows plugin developers to add their own "error severities". By doing so, the language additions no
+> longer appear as _Weak Warnings_, but instead, fall into their own custom category, therefore not getting in the way of genuine warnings.
+
+But this was not clear enough. The annotations were grouped alongside the warnings and errors, which made people believe they had errors in their code when it
+was simply annotations that they could disable.
+
+Therefore, this version adds a new icon and description to the checker tooltip, to make it clear that they are not errors, but simply annotations used to paint
+language additions.
+
+{% include figure.html content="/screens/annotations.png" caption="Language Addition Annotations" %}
+
+---
+
+That's it! Happy coding :) !
+
+-----------
+
 ## What's new in Material Theme UI v8.0.0
 
 Coming just right after version 7.11.0, this is the first version for the new 2022.3 EAP.

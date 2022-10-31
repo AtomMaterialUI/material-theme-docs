@@ -16,6 +16,57 @@ next:
 # Changelog
 ----
 
+# 7.14.0
+
+### Features
+
+- Settings: Add Per-Project **Default settings**: Predefined project settings to be applied for new projects.
+
+### Fixes
+
+- Project Tree: Implement Material Trees to allow customization such as the _Project Tree Indicator_ to remain when not in focus.
+- Themes: Make the Tree Color opaque in all themes to prevent selection artifacts.
+- Wizard: Prevent Freeze when skipping defaults
+- Text Fields: Do not add the custom border if it goes under a certain size (such as _Docker Add Network Panel_)
+- Language Additions: Set annotations' icon and description to inform people they are not errors but simple annotations used to paint language additions.
+- Color Schemes: Change the "notification banners" color to the same color as the notification popups.
+- Focus Mode: Fix the error when invoking the *Add Method* action in some instances when the method would "expand" the document.
+
+# 7.13.1
+
+### Fixes
+
+- Fix TSElementFinder, CSSElementFinder and JSONElementFinder to not be run unless the relevant plugin is available
+
+# 7.13.0
+
+### Features
+
+- Refactor the Focus Mode to be much simpler, thus preventing the IDE freezes. Supports:
+    - JSON
+    - HTML
+    - XML
+    - CSS
+    - Java
+    - Sass/SCSS (with Sass plugin)
+    - Kotlin (with Kotlin plugin or IntelliJ IDEA)
+    - PHP (with PHP Plugin or PHPStorm)
+    - Python (with Python Plugin or PyCharm)
+    - JavaScript and TypeScript (with TypeScript plugin or WebStorm)
+    - Ruby (with Ruby plugin or RubyMine)
+    - Go (with Go plugin or GoLand)
+
+### Fixes
+
+- Do not load Recommended Plugins when Offline
+- Improve SkyBlue theme to be "bluer"
+- Fix Annotations for light themes and Dracula
+- Change Dracula selected tab color to be white
+
+# 7.12.0
+
+- Support for Android Studio
+
 # 7.11.0
 
 ### Features
