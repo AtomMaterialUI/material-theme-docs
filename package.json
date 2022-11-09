@@ -35,7 +35,7 @@
     "http-proxy-middleware": "2.0.6",
     "js-yaml": "4.1.0",
     "load-grunt-tasks": "5.1.0",
-    "node-sass": "7.0.3",
+    "node-sass": "8.0.0",
     "rimraf": "3.0.2",
     "semver": "7.3.7",
     "url-loader": "4.1.1"
