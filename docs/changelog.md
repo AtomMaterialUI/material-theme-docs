@@ -18,6 +18,10 @@ next:
 
 # 8.2.0
 
+## Features
+
+- Restore the Intention Icon that disappeared with the new UI
+
 ### Fixes
 
 - Merge 7.14.0 changes for 2022.3
