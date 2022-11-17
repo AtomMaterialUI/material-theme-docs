@@ -16,6 +16,33 @@ next:
 # Changelog
 ----
 
+# 8.2.0
+
+### Fixes
+
+- Merge 7.14.0 changes for 2022.3
+
+# 8.1.0
+
+### Fixes
+
+- Fix Focus Mode performance by disabling it for files with more than 1000 lines
+- Fix title bar icons and widgets hover color
+
+# 8.0.0
+
+### Features
+
+- Support for 2022.3 EAP
+- New _Welcome Screen Tab_ to easily open the Material Theme Wizard
+- Added latest UI properties and components
+
+### Fixes
+
+- Improve the Wizard UI to better reflect the functionalities of the plugin
+
+----
+
 # 7.14.0
 
 ### Features
