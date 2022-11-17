@@ -37,7 +37,7 @@
     "load-grunt-tasks": "5.1.0",
     "node-sass": "7.0.3",
     "rimraf": "3.0.2",
-    "semver": "7.3.7",
+    "semver": "7.3.8",
     "url-loader": "4.1.1"
   },
   "engines": {
