@@ -5,9 +5,9 @@ group: whatsnew
 toc: true
 ---
 
-## What's new in Material Theme UI v7.14.0
+## What's new in Material Theme UI v7.14.0 / v8.2.0
 
-Another bug fix version for 2022.2. This update fixes a few issues causing freezes or fatal errors, amongst others:
+Another bug fix version for 2022.2/2022.3. This update fixes a few issues causing freezes or fatal errors, amongst others:
 
 - Settings: Add Per-Project **Default settings**: Predefined project settings to be applied for new projects.
 - Project Tree: Implement Material Trees to allow customization such as the _Project Tree Indicator_ to remain when not in focus.
