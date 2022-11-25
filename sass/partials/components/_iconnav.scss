@@ -23,3 +23,35 @@
     }
   }
 }
+
+body:has(.banner),
+.main-menu:has(.banner) {
+  margin-top: 52px;
+
+  .sidebar {
+    margin-top: 52px;
+  }
+
+  .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--accent);
+    color: var(--selectFg);
+
+    a {
+      padding: 0;
+      color: var(--primary);
+    }
+
+  }
+
+}

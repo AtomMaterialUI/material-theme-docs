@@ -1,0 +1,9 @@
+{% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+{% assign otherDay = '2023-01-01 00:00:00' | date: "%s" %}
+
+{% if now < otherDay %}
+<div class="banner">
+    <p>Black Friday & Cyber Monday discount! Click <a href="{{ site.baseurl }}/data/blackFridayDiscount.pdf">here</a> to
+        get a 50% coupon! Available until December 1st, 2022.</p>
+</div>
+{% endif %}
