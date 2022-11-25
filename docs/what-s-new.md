@@ -5,6 +5,22 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.3.1
+
+Another bugfix release. However this release includes a coupon for a 50% discount for Black Friday/Cyber Monday. You can find more information on the plugin
+page!
+
+### Fixes
+
+- Fix Selection Foreground color on Solarized Light
+- Improve contrast on some icons in Light Themes
+- Change Running widget background color from Accent to Highlight.
+- Make Notification tool window color the same as the Theme's notification color
+
+### Other
+
+- Add Black Friday discount to the plugin description
+
 ## What's new in Material Theme UI v7.14.0 / v8.2.0
 
 Another bug fix version for 2022.2/2022.3. This update fixes a few issues causing freezes or fatal errors, amongst others:

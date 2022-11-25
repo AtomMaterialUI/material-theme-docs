@@ -16,6 +16,19 @@ next:
 # Changelog
 ----
 
+# 8.3.0
+
+## Fixes
+
+- Fix Selection Foreground color on Solarized Light
+- Improve contrast on some icons in Light Themes
+- Change Running widget background color from Accent to Highlight.
+- Make Notification tool window color the same as the Theme's notification color
+
+## Other
+
+- Add Black Friday discount to the plugin description
+
 # 8.2.0
 
 ## Features
