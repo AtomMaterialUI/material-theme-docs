@@ -1,46 +1,48 @@
 <div class="main-menu">
-  <div class="content">
-    <a class="homelink" href="/">
-      <div style="width: 3em; height: 3em;" class="logo-img"></div>
-    </a>
-    <nav class="menu" aria-label="Navigation">
-      <a class="menu-toggle-link noline js-menu-toggle">
-        <i class="fa fa-close fa-lg"></i>
-      </a>
-      <ul class="navbar">
-        <li>
-          <a href="{{ site.baseurl }}/docs/introduction">Getting Started</a>
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/docs/configuration/settings">Configuration</a>
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/docs/reference/color-palette">Reference</a>
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/docs/pricing">Pricing</a>
-        </li>
-      </ul>
-    </nav>
-    <span class="h-spacer"></span>
-    <nav class="iconnav" aria-label="Icons">
-      <ul>
-        <li class="search-nav">
-          <div class="search" id="search">
-            <div class="search-wrapper card">
-            </div>
-          </div>
-        </li>
-        <li class="github-nav">
-          <a href="{{ site.github }}">
-            <button class="btn"><i class="fa fa-github" style="font-size: larger;"></i> GitHub</button>
-          </a>
-        </li>
-        <a href='#menu' class="menu-toggle-link noline js-menu-toggle">
-          <i class="fa fa-navicon"></i>
+    <div class="content">
+        <a class="homelink" href="/">
+            <div style="width: 3em; height: 3em;" class="logo-img"></div>
         </a>
-      </ul>
-    </nav>
+        <nav class="menu" aria-label="Navigation">
+            <a class="menu-toggle-link noline js-menu-toggle">
+                <i class="fa fa-close fa-lg"></i>
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="{{ site.baseurl }}/docs/introduction">Getting Started</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/docs/configuration/settings">Configuration</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/docs/reference/color-palette">Reference</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/docs/pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="h-spacer"></span>
+        <nav class="iconnav" aria-label="Icons">
+            <ul>
+                <li class="search-nav">
+                    <div class="search" id="search">
+                        <div class="search-wrapper card">
+                        </div>
+                    </div>
+                </li>
+                <li class="github-nav">
+                    <a href="{{ site.github }}">
+                        <button class="btn"><i class="fa fa-github" style="font-size: larger;"></i> GitHub</button>
+                    </a>
+                </li>
+                <a href='#menu' class="menu-toggle-link noline js-menu-toggle">
+                    <i class="fa fa-navicon"></i>
+                </a>
+            </ul>
+        </nav>
+    </div>
 
-  </div>
+    {% include banner.html %}
+
 </div>
