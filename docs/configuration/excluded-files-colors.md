@@ -7,11 +7,11 @@ toc: true
 comments: true
 
 previous:
-url: '/docs/configuration/component-settings'
-title: Component Settings
+  url: '/docs/configuration/component-settings'
+  title: Component Settings
 next:
-url: '/docs/configuration/file-status-colors'
-title: File Status Colors
+  url: '/docs/configuration/file-status-colors'
+  title: File Status Colors
 ---
 
 {% include carbonads.html %}
@@ -112,7 +112,7 @@ corresponding to the current theme's `Excluded Color`.
 
 Moreover, if you select this color and switch to another theme, the selected theme's excluded color should be applied automatically.
 
-**Note**: the Project View won't get the color change right away, due to its caching feature. 
+**Note**: the Project View won't get the color change right away, due to its caching feature.
 But this shall be solved eventually.
 {class='card-panel warn'}
 
