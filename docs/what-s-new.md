@@ -5,6 +5,35 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.4.1
+
+Another bug fix update, alongside the implementation of the new Sync Settings capability.
+
+### Sync Settings support
+
+2022.3 brought the newer **Sync Settings** feature, which transparently syncs all settings between machines. The previous sync settings feature was relying on a
+JBA account for syncing settings, while the new one uses a transaction system, like Git. This means that you can now sync settings between machines without
+having to create a JetBrains account.
+
+As a result, plugin developers can now sync their plugin's settings with that system very easily, without the need to implement anything. This means that from
+now on your settings, custom theme or project settings will now be synced between machines, in the case you decide to use the feature. However, you have much
+less control over the syncing process, as it's handled by JetBrains directly, so there might be some issues here and there.
+
+You will be finding the Material Theme settings under the **UI** category.
+
+### Other fixes
+
+- Add `{path}` and `{fullPath}` options to the _Project Frame Custom Text_ setting. They will be replaced with the project path and full path respectively.
+- Add a new setting to **hide the Wizard option at the Welcome Screen**.
+- Make the Popups color to the background color
+- Improve _Colorized Title Bar_ for lighter themes by making the colors brighter.
+- Fix narrow password fields
+- _Material File Status Colors_: Listen to the current color scheme rather than the one from the theme.
+- Atom One Dark: Slightly brighter highlight color.
+- Add the latest UI properties,
+
+--- 
+
 ## What's new in Material Theme UI v8.3.1
 
 Another bugfix release. However this release includes a coupon for a 50% discount for Black Friday/Cyber Monday. You can find more information on the plugin

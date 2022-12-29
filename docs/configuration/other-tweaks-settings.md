@@ -85,6 +85,18 @@ This setting allows you to toggle whether the [What's New](/docs/what-s-new) pag
 
 -----
 
+#### Show Wizard on Welcome Screen
+
+This feature is available for all users.
+{:class='card-panel warn'}
+
+This setting allows you to toggle the **Material Theme Wizard** option in the Welcome Screen.
+
+{% include figure.html content="/screens/welcomeScreen.png" caption="Welcome Screen Wizard Option" %}
+
+
+-----
+
 ### Automatically reset color schemes
 
 This feature is available for all users.

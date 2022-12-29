@@ -215,7 +215,8 @@ Quick explanation of all settings:
 - *Show Project Name*![premium](/img/icons/premium.png): Displays the _project name_ on the stripe.
 - *Show Project Icon*![premium](/img/icons/premium.png): Display the _project's custom icon_ on the stripe.
 - *Customize Text*![premium](/img/icons/premium.png): Customize the displayed text.
-    - You can use the keywords `{project}`, `{module}` and `{file}` to refer respectively to the current project, module and/or file.
+    - You can use the keywords `{project}`, `{module}`, `{fullPath}`, `{path}` and `{file}` to refer respectively to the current project, module, full path,
+      local path and/or current file.
 
 **[Other Tweaks](/docs/configuration/other-tweaks-settings)**:
 
@@ -226,6 +227,7 @@ Quick explanation of all settings:
 - *Colored Open Directories*![premium](/img/icons/premium.png): Colorize open directories with the accent color.
 - *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) page on each update.
 - *Automatically reset Color Scheme*: Automatically reset the color scheme on theme activation (_only for bundled color schemes_).
+- *Show Wizard on Welcome Screen*: Add or remove the Wizard option in the Welcome Screen.
 
 ----
 
@@ -392,6 +394,8 @@ If a key isn't in your file, it means that it uses the default value.
     <option name="isTabSeparatorsEnabled" value="true"/>
     <!-- Whether to show the wizard at start -->
     <option name="isWizardShown" value="true"/>
+    <!-- Show or hide the wizard option on welcome screen -->
+    <option name="isShowWizardOnWelcome" value="true"/>
     <!-- Left tree indent  -->
     <option name="leftTreeIndent" value="6"/>
     <!-- Override accent color enabled -->
