@@ -16,6 +16,36 @@ next:
 # Changelog
 ----
 
+# 8.4.1
+
+### Fixes
+
+- Sync Settings: Reload UI on sync finish
+- Fix Narrow Password fields
+- Material File Status Colors: Listen to the current color scheme rather than the one from the theme
+- Atom One Dark: Slightly brighter highlight color
+- Add latest UI properties, syncing with Material Theme Lite
+
+# 8.4.0
+
+### Features
+
+- Support for **Sync Settings** to sync your settings between computers.
+- Add `{path}` and `{fullPath}` options to the _Project Frame Custom Text_ setting.
+- Add new setting to **hide the Wizard option at the Welcome Screen**.
+
+### Fixes
+
+- Make the Popups color to the background color
+- Improve _Colorized Title Bar_ for lighter themes by making the colors brighter.
+
+# 8.3.2
+
+### Fixes
+
+- Fix fatal error with Trees
+- Remove cybermonday discount
+
 # 8.3.0
 
 ## Fixes
