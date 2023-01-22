@@ -5,6 +5,18 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.4.2
+
+This release in-between fixes support for 2023.1 EAP
+
+Fixes:
+
+- Support for 2023.1
+- Rewrite Tab Height feature
+- Improve Tool Windows on Hover
+- Change Custom Tag Name color
+- Fix deprecations
+
 ## What's new in Material Theme UI v8.4.1
 
 Another bug fix update, alongside the implementation of the new Sync Settings capability.

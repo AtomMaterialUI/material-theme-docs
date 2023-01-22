@@ -16,6 +16,16 @@ next:
 # Changelog
 ----
 
+# 8.4.2
+
+### Fixes
+
+- Support for 2023.1
+- Rewrite Tab Height feature
+- Improve Tool Windows on Hover
+- Change Custom Tag Name color
+- Fix deprecations
+
 # 8.4.1
 
 ### Fixes
