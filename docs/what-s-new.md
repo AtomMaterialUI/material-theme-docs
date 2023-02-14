@@ -5,6 +5,38 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.5.0
+
+Long time no see! It has been pretty busy lately, with other projects taking a lot of time. But recently was marked by new EAP updates, and therefore a plugin
+update was necessary to accomodate to the new changes.
+
+Apart from deprecation fixes, this version introduces the new **Themed macOS Project Bar**.
+
+### Themed macOS Project Bar
+
+The **macOS Project Bar** is not a new feature, allowing you to sideload multiple projects inside one same window. However, it was missing on the _New UI_,
+as it needed a new implementation to fit with the new Title Bar.
+
+But the latest release brought it back, and therefore needed attention from the plugin as well.
+
+{% include figure.html content="/screens/themedProjectBar.png" caption="Themed Project Bar" %}
+
+But that's not all! It also supports the **Colorize Title Bar** feature, making it blend with the colorized title bar (New UI only).
+
+{% include figure.html content="/screens/colorizedProjectBar.png" caption="Colorized Project Bar - Project 1" %}
+
+{% include figure.html content="/screens/colorizedProjectBar2.png" caption="Colorized Project Bar - Project 2" %}
+
+---
+
+I hope you enjoy this new release!
+
+And don't forget to rate the plugin!!! :)
+
+Happy coding!
+
+----
+
 ## What's new in Material Theme UI v8.4.2
 
 This release in-between fixes support for 2023.1 EAP
