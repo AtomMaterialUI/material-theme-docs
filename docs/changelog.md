@@ -16,6 +16,17 @@ next:
 # Changelog
 ----
 
+# 8.5.0
+
+### Features
+
+- Theme the MacOS **Project Tab Bar**
+
+### Fixes
+
+- Fix latest EAP breaking changes
+- Fix TypeScript Additions not properly themed
+
 # 8.4.2
 
 ### Fixes
