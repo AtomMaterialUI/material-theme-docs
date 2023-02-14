@@ -8,6 +8,8 @@
   transition: 0.3s all ease;
   width: $sidebar-width;
   z-index: 111;
+  display: flex;
+  flex-direction: column;
   @include shadow(1);
 
   .row {
