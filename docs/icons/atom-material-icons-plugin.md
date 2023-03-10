@@ -42,9 +42,18 @@ This operation has been performed to decouple the Material Theme plugin from the
 different *Icon Themes* from other authors alongside the Material Theme UI, and at the same time gives the ability to
 use the icons independently of the UI themes.
 
-Note: This plugin has been recently ported to Google Chrome and Firefox!
-Go take a look: [Atom File Icons Web for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
-and [Atom File Icons Web for Firefox](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/)
+Note: This plugin has been ported to Google Chrome and Firefox!
+Go take a look: [Atom Material Icons for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
+and [Atom Material Icons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/)
+{:class='card-panel'}
+
+{% include figure.html content="/screens/chrome.png" caption="Chrome Atom Material Icons Plugin" %}
+{:class='card-panel'}
+
+Note: This plugin has also ben ported to VSCode as well! Go take a
+look: [Atom Material Icons](https://marketplace.visualstudio.com/items?itemName=AtomMaterial.a-file-icon-vscode&ssr=false#overview)
+
+{% include figure.html content="/screens/vscode.png" caption="VSCode Atom Material Icons Plugin" %}
 {:class='card-panel'}
 
 ----
