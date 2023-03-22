@@ -36,7 +36,7 @@
     "js-yaml": "4.1.0",
     "load-grunt-tasks": "5.1.0",
     "node-sass": "8.0.0",
-    "rimraf": "3.0.2",
+    "rimraf": "4.4.1",
     "semver": "7.3.8",
     "url-loader": "4.1.1"
   },
