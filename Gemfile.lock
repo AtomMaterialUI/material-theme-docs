@@ -107,7 +107,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
     verbal_expressions (0.1.5)
-    webrick (1.7.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
