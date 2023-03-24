@@ -15,7 +15,8 @@ next:
 
 ---
 
-Here you can find settings for the Icons provided by the plugin, whether to enable or disable the icons, completely hide them or applying a filter to them.
+Here you can find settings for the Icons provided by the plugin, whether to enable or disable the icons, completely hide
+them or applying a filter to them.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -27,10 +28,8 @@ Here you can find settings for the Icons provided by the plugin, whether to enab
 
 The [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) is a complementary
 plugin of the Material Theme whose purpose is to customize all IDE icons. It was originally part of the Material Theme
-but has been extracted from it since version 2.9.0, in order to tend to users who don't need the themes but do need the icons, the same way it's done in Atom or
-Visual Studio.
-
-The plugin can be installed in the same way the Material Theme can be installed, but with one important twist: **it doesn't require the IDE to restart!**
+but has been extracted from it since version 2.9.0, in order to tend to users who don't need the themes but do need the
+icons, the same way it's done in Atom or Visual Studio.
 
 {% include figure.html content="/screens/atomMaterial.png" caption="Atom Material Toolbar" %}
 
@@ -38,12 +37,12 @@ The plugin can be installed in the same way the Material Theme can be installed,
 
 The UI is a bit different from the Material Theme UI but provides the same capability nonetheless.
 
-This operation has been performed to decouple the Material Theme plugin from the _UI Icons_ feature, therefore granting the ability to use
-different *Icon Themes* from other authors alongside the Material Theme UI, and at the same time gives the ability to
-use the icons independently of the UI themes.
+This operation has been performed to decouple the Material Theme plugin from the _UI Icons_ feature, therefore granting
+the ability to use different *Icon Themes* from other authors alongside the Material Theme UI, and at the same time
+gives the ability to use the icons independently of the UI themes.
 
-Note: This plugin has been ported to Google Chrome and Firefox!
-Go take a look: [Atom Material Icons for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
+Note: This plugin has been ported to Google Chrome and Firefox! Go take a
+look: [Atom Material Icons for Chrome](https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc)
 and [Atom Material Icons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/atom-file-icons-web/)
 {:class='card-panel'}
 
@@ -61,8 +60,8 @@ look: [Atom Material Icons](https://marketplace.visualstudio.com/items?itemName=
 ### File icons
 
 This setting changes the icons for project files according to specific file patterns.
-Usually, it's based off the extension of the file (*.js, *.scss, *.php) but it also identifies specific commonly used patterns and replaces them with
-the relevant icon, such as:
+Usually, it's based off the extension of the file (*.js, *.scss, *.php) but it also identifies specific commonly used
+patterns and replaces them with the relevant icon, such as:
 
 - `package.json`
 - `build.gradle`
@@ -87,7 +86,8 @@ Note that excluded/resource root/test root/package folders won't be decorated.
 
 You can find more information at the [Folder Associations](/docs/reference/folder-associations).
 
-**Important note**: Because of the way it's implemented, in **Rider**, you would need to turn off the _Low Power Mode_ switch to see the directory icons.
+**Important note**: Because of the way it's implemented, in **Rider**, you would need to turn off the _Low Power Mode_
+switch to see the directory icons.
 {:class='card-panel warn'}
 
 ----
@@ -101,8 +101,8 @@ This setting toggles the replacement of the icons provided by the plugin. Specif
 - Tool Window Icons
 - Application Icons
 
-Basically, this replaces all icons provided by the plugin, including breakpoint icons, dialog icons and even icons inside
-documentation panels.
+Basically, this replaces all icons provided by the plugin, including breakpoint icons, dialog icons and even icons
+inside documentation panels.
 
 {% include figure.html content="/screens/iconsDisabled.png" caption="Material Icons Disabled" %}
 
@@ -155,8 +155,8 @@ This is ideal for people who don't like the avalanche of colors provided by the 
 
 {% include figure.html content="/screens/monochrome.png" caption="Monochrome Icons" %}
 
-By applying this filter, all icons will be filtered with a shade of the primary color, that is, the color of the items in
-the Project View of the current theme.
+By applying this filter, all icons will be filtered with a shade of the primary color, that is, the color of the items
+in the Project View of the current theme.
 
 Note: This setting not only filters out the toolbar and file icons, but even tool window icons, debugger icons, etc…
 {:class='card-panel warn'}
@@ -185,9 +185,8 @@ Moreover, it adapts the Project View Items' height to the new size.
 
 {% include figure.html content="/screens/biggerIcons.png" caption="Bigger Icons" %}
 
-**Note**: The IDEs aren't optimized to handle bigger icons, so there could be parts of the IDE that are missing icons, or that the containers will appear
-larger/wider/bigger.
-Please be aware of such issues when using this setting.
+**Note**: The IDEs aren't optimized to handle bigger icons, so there could be parts of the IDE that are missing icons,
+or that the containers will appear larger/wider/bigger. Please be aware of such issues when using this setting.
 {:class='card-panel warn'}
 
 ----
@@ -233,6 +232,7 @@ Examples of such icons are:
 - Expand Arrows
 - And some others
 
-By default, this color will be the same as the text color in trees, but this setting will allow you to override it with the color of your choice.
+By default, this color will be the same as the text color in trees, but this setting will allow you to override it with
+the color of your choice.
 
 {% include figure.html content="/screens/themedColor.png" caption="Custom Themed Color" %}
