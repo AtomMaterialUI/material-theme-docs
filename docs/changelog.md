@@ -16,7 +16,56 @@ next:
 # Changelog
 ----
 
-# 8.6.0
+## 8.7.1
+
+### Fixes
+
+- Fix the issue with the _Tip of the Day_ footer not having a background color.
+- Fix the issue with Overlays being too dark on full screen.
+- Fix the changelog not being updated
+
+### Other
+
+- Rewrite the plugin description displayed on the Plugins Page.
+- Update the screenshots on the plugin page.
+- Upgrade dependencies
+
+## 8.7.0
+
+### Fixes
+
+- Fix the `getLayeredPane` once and for all
+- Remove deprecations
+
+## 8.6.4
+
+### Fixes
+
+- Try to fix the `getLayeredPane` issue once again
+- Coerce tab height value between min and max
+
+## 8.6.3
+
+### Fixes
+
+- Try to fix the fatal error happening in some instances
+
+## 8.6.2
+
+### Fixes
+
+- Bug fixes
+
+## 8.6.1
+
+### Fixes
+
+- Fix issue where language additions occured within TSX
+- Force directories to take the "Directories" color if the option is enabled
+- Increase the minimum tab height to prevent tabs to disappear
+- Fix random fatal error at start
+
+## 8.6.0
 
 ### Features
 
@@ -40,7 +89,7 @@ next:
 - **Native Themes**: Try another method of loading resources
 - Replace deprecated methods and classes
 
-# 8.5.0
+## 8.5.0
 
 ### Features
 
@@ -51,7 +100,7 @@ next:
 - Fix latest EAP breaking changes
 - Fix TypeScript Additions not properly themed
 
-# 8.4.2
+## 8.4.2
 
 ### Fixes
 
@@ -61,7 +110,7 @@ next:
 - Change Custom Tag Name color
 - Fix deprecations
 
-# 8.4.1
+## 8.4.1
 
 ### Fixes
 
@@ -71,7 +120,7 @@ next:
 - Atom One Dark: Slightly brighter highlight color
 - Add latest UI properties, syncing with Material Theme Lite
 
-# 8.4.0
+## 8.4.0
 
 ### Features
 
@@ -84,14 +133,14 @@ next:
 - Make the Popups color to the background color
 - Improve _Colorized Title Bar_ for lighter themes by making the colors brighter.
 
-# 8.3.2
+## 8.3.2
 
 ### Fixes
 
 - Fix fatal error with Trees
 - Remove cybermonday discount
 
-# 8.3.0
+## 8.3.0
 
 ## Fixes
 
@@ -104,7 +153,7 @@ next:
 
 - Add Black Friday discount to the plugin description
 
-# 8.2.0
+## 8.2.0
 
 ## Features
 
@@ -114,14 +163,14 @@ next:
 
 - Merge 7.14.0 changes for 2022.3
 
-# 8.1.0
+## 8.1.0
 
 ### Fixes
 
 - Fix Focus Mode performance by disabling it for files with more than 1000 lines
 - Fix title bar icons and widgets hover color
 
-# 8.0.0
+## 8.0.0
 
 ### Features
 
@@ -135,7 +184,7 @@ next:
 
 ----
 
-# 7.14.0
+## 7.14.0
 
 ### Features
 
@@ -154,13 +203,13 @@ next:
 - Focus Mode: Fix the error when invoking the *Add Method* action in some instances when the method would "expand" the
   document.
 
-# 7.13.1
+## 7.13.1
 
 ### Fixes
 
 - Fix TSElementFinder, CSSElementFinder and JSONElementFinder to not be run unless the relevant plugin is available
 
-# 7.13.0
+## 7.13.0
 
 ### Features
 
@@ -185,11 +234,11 @@ next:
 - Fix Annotations for light themes and Dracula
 - Change Dracula selected tab color to be white
 
-# 7.12.0
+## 7.12.0
 
 - Support for Android Studio
 
-# 7.11.0
+## 7.11.0
 
 ### Features
 
@@ -206,14 +255,14 @@ next:
 - Fix NPE when Project View Tab is not loaded yet
 - Fix NPE when Tab Highlight Indicator is undefined
 
-# 7.10.1
+## 7.10.1
 
 ### Fixes
 
 - Fix Project View Custom Tree Line Item Height being removed from the free plan
 - Fix Custom Tree Indent being toggleable in the free plan where it shouldn't
 
-# 7.10.0
+## 7.10.0
 
 ### Features
 
@@ -235,7 +284,7 @@ next:
 - **Custom Theme**: Fix some UI issues
 - **Project Based Settings**: Fix Settings being shared between projects instead of being separate
 
-# 7.9.0
+## 7.9.0
 
 ### Features
 
@@ -268,7 +317,7 @@ next:
 - Fix _Synthwave_'s Caret row color
 - Fix indentation in the _Language Additions'_ Color Settings Pages
 
-# 7.8.2
+## 7.8.2
 
 ### Features
 
@@ -283,7 +332,7 @@ next:
 - Add more recommended plugins
 - Update dependencies
 
-# 7.8.1
+## 7.8.1
 
 ### Fixes
 
@@ -295,7 +344,7 @@ next:
 - Set Toolbar widgets foreground color to selected foreground
 - Fix Colorize Title Bar on Linux
 
-# 7.8.0
+## 7.8.0
 
 ### Features
 
@@ -305,7 +354,7 @@ next:
 
 - Fix Custom UI Font not being applied in the New UI
 
-# 7.7.1
+## 7.7.1
 
 ### Fixes
 
@@ -313,7 +362,7 @@ next:
 - Fix issue with loading _Recommended Plugins_ twice
 - Use default settings for non-premium users
 
-# 7.7.0
+## 7.7.0
 
 ### Features
 
@@ -336,7 +385,7 @@ next:
 - Remove the **Experimental UI** in favor of the **New UI Plugin**
   - Note: If you didn't register for the New UI EAP, you can still find it in the chat.
 
-# 7.6.2
+## 7.6.2
 
 ### Features
 
@@ -346,20 +395,20 @@ next:
 
 - Fix back infinite restart
 
-# 7.6.1.1
+## 7.6.1.1
 
 ### Fixes
 
 - Remove colored title bar on experimental UI
 
-# 7.6.1
+## 7.6.1
 
 ### Fixes
 
 - Fix Experimental UI's Toolbar _Dropdown Widgets_
 - Add back `Panel.background` and `Button.background` needed for the latest version
 
-# 7.6.0
+## 7.6.0
 
 ### Features
 
@@ -369,7 +418,7 @@ next:
 
 - Fix Languages
 
-# 7.5.4
+## 7.5.4
 
 ### Features
 
@@ -384,7 +433,7 @@ next:
   - [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
   - [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
 
-# 7.5.3
+## 7.5.3
 
 ### Features
 
@@ -395,21 +444,21 @@ next:
 - Fix #187
 - Translate new texts
 
-# 7.5.2.2
+## 7.5.2.2
 
 ### Fixes
 
 - Fix #180
 - Remove What's new popup
 
-# 7.5.2.1
+## 7.5.2.1
 
 ### Fixes
 
 - Fix #176
 - Fix #177
 
-# 7.5.2
+## 7.5.2
 
 ### Features
 
@@ -421,7 +470,7 @@ next:
 - First attempt at fixing the not-null exception
 - Correct deprecated uses
 
-# 7.5.1
+## 7.5.1
 
 ### Features
 
@@ -436,7 +485,7 @@ next:
 - Original support for plugins
 - Update dependencies
 
-# 7.5.0
+## 7.5.0
 
 ### Features
 
@@ -446,14 +495,14 @@ next:
 
 - Cleaned up some texts and fix grammatical errors
 
-# 7.4.1
+## 7.4.1
 
 ### Fixes
 
 - Fix inverted selection color setting
 - Change _Synthwave_ selection color
 
-# 7.4.0
+## 7.4.0
 
 ### Features
 
@@ -476,14 +525,14 @@ next:
 
 - Make _Tab Shadows_ feature free
 
-# 7.3.2
+## 7.3.2
 
 ### Fixes
 
 - Migrated the **Experimental UI** to a new setting, to prevent it from having to be enabled for people using the
   deprecated **Large Tool Windows** setting.
 
-# 7.3.0 - 7.3.1
+## 7.3.0 - 7.3.1
 
 ### Features
 
@@ -493,19 +542,19 @@ next:
 
 - Migrated the notifications to the new SDK
 
-# 7.2.3 - 7.2.2
+## 7.2.3 - 7.2.2
 
 ### Fixes
 
 - New UI bug fixes
 
-# 7.2.1
+## 7.2.1
 
 ### Features
 
 - Incorporate changes from 6.14 and 6.15
 
-# 7.2.0
+## 7.2.0
 
 ### Features
 
@@ -515,7 +564,7 @@ next:
 
 - Add some spacing between buttons
 
-# 7.1.1
+## 7.1.1
 
 ### Fixes
 
@@ -533,7 +582,7 @@ next:
 - Fix #54
 - Fix #94
 
-# 7.1.0
+## 7.1.0
 
 ### Fixes
 
@@ -544,13 +593,13 @@ next:
 - Make EAP users work with premium features for free!
 - Removed the Large Tool Windows setting, as JetBrains removed the functionality in preparation of their new UI :'(
 
-# 7.0.0
+## 7.0.0
 
 ### Fixes
 
 - Initial Support for 2022.1
 
-# 6.16.1
+## 6.16.1
 
 ### Fixes
 
@@ -562,7 +611,7 @@ next:
 - Synthwave color scheme improvements: Kotlin instance field color
 - Prevent showing the "what's new" popup when the setting is disabled
 
-# 6.16.0
+## 6.16.0
 
 ### Features
 
@@ -580,7 +629,7 @@ next:
 - Fix text not showing when editing table cells
 - Fix Option button arrow
 
-# 6.15.0
+## 6.15.0
 
 ### Features
 
@@ -592,7 +641,7 @@ next:
 - Add some spacing between buttons.
 - Remove the glitch showing in the new lists when selecting the top element.
 
-# 6.14.0
+## 6.14.0
 
 ### Features
 
@@ -627,7 +676,7 @@ next:
   - Action Buttons
   - Separators
 
-# 6.13.0
+## 6.13.0
 
 ### Features
 
@@ -649,7 +698,7 @@ next:
 
 - Updated Wizard screens
 
-# 6.12.0
+## 6.12.0
 
 ### Features
 
@@ -685,7 +734,7 @@ next:
 - Fix Detekt and Sonarlint issues for 80% of the project
 - Add initial support for Material Theme internal plugins
 
-# 6.11.0
+## 6.11.0
 
 ### Features
 
@@ -702,7 +751,7 @@ next:
   unchecked ([#37](https://github.com/mallowigi/material-theme-issues/issues/37))
 - Fix Fatal Error when using Darcula Theme ([#33](https://github.com/mallowigi/material-theme-issues/issues/33))
 
-# 6.10.0
+## 6.10.0
 
 ### Features
 
@@ -721,7 +770,7 @@ next:
 - Add support for `material.` properties in JSON Themes
 - Deprecation of thee _External Themes_ feature
 
-# 6.9.1
+## 6.9.1
 
 ### Fixes
 
@@ -1244,44 +1293,44 @@ next:
 
 For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
-# 4.13.1
+## 4.13.1
 
 - Support for 2020.1
 - Fixes and improvements
 
-# 4.12.0
+## 4.12.0
 
 - Support for 2020.1
 
-# 4.11.5
+## 4.11.5
 
 - Fixed the issue when double-clicking on a tree item would not open the file
 - Restore the Themed Title Bar setting but disable it by default
 - Fixed (?, cannot reproduce) the "show more" in debugger tabs having a gray background
 
-# 4.11.4
+## 4.11.4
 
 - Disable title bar setting
 
-# 4.11.3
+## 4.11.3
 
 - Fix icons not being loaded by deferring icon loading to project opening
 - Add missing goland icons
 
-# 4.11.2
+## 4.11.2
 
 - Fix Windows White screen on launch
 - Fix Windows hover on title bar icons
 - Fix Issue where the tabs border was drawn with accent color even when no tabs
 
-# 4.11.1
+## 4.11.1
 
 - Migrate to new trees and fix arrows issue
 - Fix Scrollbar colors
 - Add Return Type Highlighter plugin support
 - Fix Rainbow Highlight default colors
 
-# 4.11.0
+## 4.11.0
 
 - Add opacity to identifiers under caret
 - Restore CodeStream sponsorship
@@ -1290,27 +1339,27 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix Accent Mode in Wizard
 - Fix Performance issues at start
 
-# 4.10.0
+## 4.10.0
 
 - New Themes: **Night Owl** and **Light Owl**!
 - Set buttons color to _selected Foreground_ on hover
 - Changed "_unknown symbol_" default to have red underline instead of full red
 
-# 4.9.2
+## 4.9.2
 
 - Fix issue with Table Header https://github.com/ChrisRM/material-theme-jetbrains/issues/1297
 - Fix issue with Solarized unknown colors looking like keywords
 - New icons: Test GO, Test Rust, Typedoc, yaml, webpack
 - Improve visibility of selected items in trees, lists and tables
 
-# 4.9.1
+## 4.9.1
 
 - New Java Additions: package, import, null, true, false
 - Fix unknown symbol color in Monokai Pro
 - Set Selection Color in lists as Tree Selection Color
 - Fix VCS Log current branch color
 
-# 4.9.0
+## 4.9.0
 
 - Rework color schemes, fixing inconsistencies and new keys taking color from the default schemes.
   - Affected: Java, Kotlin, JavaScript, Groovy, TypeScript, Haml, CSS, Markdown, Python, Go, Ruby
@@ -1319,7 +1368,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
   v, vala, events folder, gulp folder,
   json folder, netlify folder, relay folder
 
-# 4.8.0
+## 4.8.0
 
 - Fix Breakpoint background color for Atom One Light Scheme
 - Update icons
@@ -1329,7 +1378,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Remove opacity selection for foreground colors in custom theme
 - Replace call to analytics in the dispatch thread
 
-# 4.7
+## 4.7
 
 - Convert Analytics notification to simple notification
 - Changed Matched Brace's effect from border to bold underscore
@@ -1340,26 +1389,26 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Add Alert when enabling or changing Project Font Size
 - Possible fix for checkboxes in Scaled monitors
 
-# 4.6
+## 4.6
 
 - Restore the Tab Shadows
 - Support for 2019.3
 - Performance Improvements for Hollow folders
 
-# 4.5
+## 4.5
 
 - Fix issue with file colors not applied to tabs
 - Removed tab height hack and replace with proper implementation
 - Add new icons
 - Support EditorGroups plugin
 
-# 4.4.5
+## 4.4.5
 
 - Fix Transparent title bar on Windows
 - Fix accent mode transparency
 - Fix links color to take accent color again
 
-# 4.4
+## 4.4
 
 - Improve Accent Mode by allowing to choose a second accent color
 - Fix Tab Height becoming 0
@@ -1367,7 +1416,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix Custom Theme persisted even after Cancel
 - Fix Custom Theme showing that something has changed when there wasn't
 
-# 4.3
+## 4.3
 
 - Fix Double Title Bar in FullScreen mode
 - New File Icons:
@@ -1379,19 +1428,19 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
   - ci, class, container, content, css, delta, dump, error, examples, flow, helper, modals, maps
   - pipe, prisma, private, stack, utils, vm
 
-# 4.2.2
+## 4.2.2
 
 - Detect Fullscreen and windows without title to not show the title bar
 - Allow double click to maximize the window again
 - Fix typo in MTAbstractTheme not taking the selection background color but the second background color
 
-# 4.2.1
+## 4.2.1
 
 - Restore Title bar again (experimental)
 - Fix Color schemes for Go
 - Add new UI icons
 
-# 4.2
+## 4.2
 
 - Remove "Themed Title Bar" for Mac OSXes with JRE 11 (check <https://youtrack.jetbrains.com/issue/IDEA-219015>)
 - Fix File Colors not being applied to tabs
@@ -1400,7 +1449,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Replace global gray colors with theme colors
 - Darken up default file colors
 
-# 4.1
+## 4.1
 
 - Add **animations** when changing themes
 - New Feature: **Accent Mode**
@@ -1411,40 +1460,40 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Remove the Scrollbars color scheme settings page
 - Restore the Themed Title bar
 
-# 4.0.5
+## 4.0.5
 
 - Fix fatal error with Commit view at start
 
-# 4.0.4
+## 4.0.4
 
 - Temporarily disable themed title bar until it is fixed in JDK11
 - Set Input fields border color the same color as buttons
 
-# 4.0.3
+## 4.0.3
 
 - Fix Javascript default colors for dark themes
 
-# 4.0.2
+## 4.0.2
 
 - Fix Tab height
 - Fix Status bar height
 - Add missing icons
 - Add SilverStripe support
 
-# 4.0.0
+## 4.0.0
 
 - Support for 2019.2
 - Removing the Tab Shadow option
 - Adding GitHub theme to wizard themes
 - Fix some GitHub colors
 
-# 3.10.0
+## 3.10.0
 
 - New theme: GitHub
 - Fix Kotlin icons (thanks @cyclic-dependency)
 - Partial support for 2019.2
 
-# 3.9.4
+## 3.9.4
 
 - Rebranding "Project View Decorators" to "Hollow directories" for more transparency
 - Added new icons and folder icons: 3D, GraphQL, Vuex, Svelte
@@ -1453,20 +1502,20 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Remove Opacity from Custom Themes' background, foreground, accent and excluded colors
 - Other bug fixes
 
-# 3.9.3
+## 3.9.3
 
 - Adding a lot more Rider icons
 - Update Kotlin icon
 - Fix sponsor links
 
-# 3.9.2
+## 3.9.2
 
 - Introduced a new flow: Now themes are also available in the Look And Feel selector!!!
 - New icons: gitlab, lint-staged, semantic-release, commitlint, husky
 - Fix some icon associations: eslint config, prettier
 - Disable folder decorators on Rider
 
-# 3.9.1
+## 3.9.1
 
 * *New*: Contextual tab positions: When setting a tab position, it depends on the position of the tab pane:
   * When selecting top, it becomes bottom if the tabs are at the bottom, and same for bottom
@@ -1478,7 +1527,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 * Fix some bad file associations
 * Fix up theme colors for Atom One Light and Solarized Light
 
-# 3.9.0.3
+## 3.9.0.3
 
 * Fix <https://github.com/ChrisRM/material-theme-jetbrains/issues/1192>
 
@@ -1486,7 +1535,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 * Other small fixes
 
-# 3.9.0 #
+## 3.9.0 #
 
 - **New**: Reworked all color schemes for all different languages!!! Do not forget to reset the color scheme!
 - **New**: Add `console` to JS Additions
@@ -1504,7 +1553,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix wrong shadow color
 - Update Theme keys
 
-# 3.8.0
+## 3.8.0
 
 - **New**: A new button allowing importing and exporting custom themes!!!
 - **New**: Custom Themes can now accept RGBA values, i.e., **colors with opacity!**
@@ -1516,7 +1565,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Adding TailWindCSS icon association
 - Other bug fixes and improvements
 
-# 3.7.0
+## 3.7.0
 
 - Add a new setting: **Tab Font Size** to customize the tab font size
 - Fix the font size in trees
@@ -1529,7 +1578,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Hide accent actions when _override accent_ is enabled
 - Add missing icons
 
-# 3.6.1
+## 3.6.1
 
 - Fix the _Disabled Material Theme_ and remove the action
 - Fix the xStream warning
@@ -1537,7 +1586,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Hide accent actions when _override accent_ is enabled
 - Fix missing icons
 
-# 3.6
+## 3.6
 
 - Add new icon sets: *Docker*, *Maven*, *Groovy*, *Sass*, *Markdown*, *Kotlin*, *UML*, *Web*
 - Add **Scrollbars** section in *Color Scheme Settings* to paint the scrollbars according to the current color scheme
@@ -1545,7 +1594,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix Scrollbars width in Mac
 - Add new File Colors
 
-# 3.5
+## 3.5
 
 - New Tab Highlight position: Bottomless
 - Add AOP and JavaScript/TypeScript icons and PSI icons
@@ -1554,14 +1603,14 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Remove useless logging
 - Migration to 2019.1
 
-# 3.4.1
+## 3.4.1
 
 - Fix PSI Icons wrong sizes
 - Remove opacity for "grayForeground" resource
 - Add "Bottomless" tab position
 - Add "VERSION" file type
 
-# 3.4.0
+## 3.4.0
 
 - Add new setting: **Material PSI Icons**. Replaces the PSI Icons (class, interface, functions…) with Material Icons,
   inspired by Visual Studio Code.
@@ -1572,7 +1621,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix rare fatal error at start
 - Fix php icons showing the elephant instead of the PSI icon
 
-# 3.3.0
+## 3.3.0
 
 - Fix fatal error when deselecting Material Components
 - Change selection color to white for Dracula
@@ -1582,7 +1631,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Add more files: ANTLR, brainfuck, cobol, delphi, eiffel, fortran, idris, io, j, lerna, postscript, prolog, racket,
   red, supercollider, scheme, terraform, test-react, turing, toml
 
-# 3.2.0
+## 3.2.0
 
 - NEW: **Toggle Material UI Icons without restarting the IDE!**
 - Fix CLion colors in Monokai Pro
@@ -1590,7 +1639,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Remove TextArea borders when not editable
 - Fix FlameChart colors to use the theme's colors
 
-# 3.1.0
+## 3.1.0
 
 - Fix .ignore syntax highlighting
 - Add more padding to compact status bar
@@ -1605,7 +1654,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Add border to text areas
 - Add property whether the config is in pristine state
 
-# 3.0.0
+## 3.0.0
 
 - Major refactor of the whole code
 - New theme: **Dracula**!
@@ -1619,27 +1668,27 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Compact StatusBar is now also working for compact Tool Window Headers (need restart).
 - UI Icons now work in Rider! (work in progress)
 
-# 2.10.6
+## 2.10.6
 
 - Merge 2.9.6
 - Deprecate ParameterInfo hack
 
-# 2.10.5
+## 2.10.5
 
 - Merge 2.9.5
 
-# 2.10.4
+## 2.10.4
 
 - Merge 2.9.4
 
-# 2.10.3
+## 2.10.3
 
 - Merge 2.9.3
 - Add Caret Line Number color in color schemes
 - Increase menus padding
 - Deprecate obsolete patchers
 
-# 2.10.2
+## 2.10.2
 
 - New Setting: **Tabs Shadow**
 - New Setting: **Compact Menus**
@@ -1661,11 +1710,11 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
   - Project View and Sidepanel borders
 - New Action to remove Wallpaper
 
-# 2.10.0
+## 2.10.0
 
 - Support 2018.3 EAP
 
-# 2.9.6
+## 2.9.6
 
 - Add new Color Scheme Settings Pages: JS Additions and TS Additions
   - this/super
@@ -1688,16 +1737,16 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
   - download
   - upload
 
-# 2.9.5.2
+## 2.9.5.2
 
 - Disable Material Fonts feature (instead use the Registry as a workaround)
 
-# 2.9.5.1
+## 2.9.5.1
 
 - Fix plugin when Material Theme option is disabled to allow having MT features on Darcula/IntelliJ
 - Merge Project View Decorators with Folder Decorators — with open versions of decorated folders
 
-# 2.9.5
+## 2.9.5
 
 - <strike>Bundle Roboto fonts (named _Roboto Material_) with the plugin fixing the issue with scrambled fonts once and
   for all (currently disabled)</strike>
@@ -1710,7 +1759,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
   - Arrow Styles
   - List Style Indicator
 
-# 2.9.4
+## 2.9.4
 
 - Add Accent Color Widget in Status bar
 - Add Http Client Icons
@@ -1721,11 +1770,11 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix error with missing icon
 - Add Jenkinsfile association
 
-# 2.9.3.2
+## 2.9.3.2
 
 - Fix wrong icon associations
 
-# 2.9.3
+## 2.9.3
 
 - Add col icons for Database tools
 - Add RubyMine icons (RSpec, Rake and Zeus)
@@ -1734,11 +1783,11 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix Contrast status bar color
 - Fix loading fatal error in PHPStorm
 
-# 2.9.1
+## 2.9.1
 
 - Fix missing icons and change some icons to better reflect their functionality
 
-# 2.9.0
+## 2.9.0
 
 - Completely refactor the Icon Replacements framework, allowing the plugin to be able to replace even icons from
   external plugins such as AppCode, Gradle or even custom plugins such as Markdown Navigator and the sort.
@@ -1755,7 +1804,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Removed _Material Monokai Pro_
 - Added IDs to `plugin.xml` components and extensions
 
-# 2.8.3
+## 2.8.3
 
 - Improve Deep Ocean colors
 - Bold directories has been renamed to "styled directories" and an entry has been added to the Material File Colors
@@ -1763,7 +1812,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix Statistics not being persisted when clicking "decline"
 - Fix #902
 
-# 2.8.2
+## 2.8.2
 
 - Fix <https://github.com/ChrisRM/material-theme-jetbrains/issues/902>
 - Replace _Bold Directories_ option with _Styled directories_:
@@ -1772,20 +1821,20 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
     bold, italic and underscored effects)
 - Improve Deep Ocean colors to look more like the VSC equivalent
 
-# 2.8.1
+## 2.8.1
 
 - Fix Monokai Pro color scheme
 - Fix Status bar not expanding on Windows
 - Added new UI icons (run anything, java ee, json, todo, collapse/expand)
 
-# 2.8.0
+## 2.8.0
 
 - Fix temporarily the OptionPane error until JetBrains fixes it
 - Add new syntax theme: **Monokai Pro** based on the original Monokai Pro
 - Improve the Arc Dark Theme a bit
 - Fix Compact Statusbar in Windows
 
-# 2.7.2
+## 2.7.2
 
 - Set font for search field from the Default Font
 - Replace Segment by MixPanel for analytics
@@ -1794,32 +1843,32 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Refactor Color Schemes
 -
 
-# 2.7.1
+## 2.7.1
 
 - Add a shadow to the Tabs
 - Fix default font in Mac when Material Fonts is disabled
 - Fix Themed Title bar option: setting the option in dark themes turns the Dark Window Headers too.
 - Refactor color schemes
 
-# 2.7.0
+## 2.7.0
 
 - New: **Material Wizard** to help users configure the plugin!
 - Fix Freeze issue (<https://github.com/ChrisRM/material-theme-jetbrains/issues/855>)
 - Fix Atom One Light notification color
 
-# 2.6.1
+## 2.6.1
 
 - Fix Atom One Light and Deep Ocean color schemes (Diff, Javascript and Comments)
 - Change Border color and Button color of Deep Ocean theme
 
-# 2.6
+## 2.6
 
 - New Themes: **Atom One Light** and **Material Deep Ocean**
 - Add support for accent color and excluded files color in themes (and external themes)
 - Add option to override custom accent color with the theme's accent color
 - SVGify the theme icons
 
-# 2.5
+## 2.5
 
 - Return the **"Theme Title Bar"** option for macs… this time with fully theme support!
 - Add a new **Selected Item Indicator Style** for Project View
@@ -1830,14 +1879,14 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Added new VCS Icons
 - Added more tests
 
-# 2.4.2
+## 2.4.2
 
 - Add **Arc Theme** color scheme
 - Fix folder color when Material Theme is disabled
 - Fix scrollbars when accent scrollbars is disabled
 - Fix Ugly tomcat icon
 
-# 2.4.1.2
+## 2.4.1.2
 
 - Fix Atom One Dark console background color
 - Fix Font Size setting not applying
@@ -1845,7 +1894,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix monochrome filter not staying after saving options
 - Add new search everywhere resources
 
-# 2.4.1
+## 2.4.1
 
 - Add None Option to arrow styles
 - Remove Dark Title Bar setting for Macs (now available for all IDEs)
@@ -1853,7 +1902,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix Sky accent action
 - Remove shadows on balloons
 
-# 2.4.0.4
+## 2.4.0.4
 
 - Fix fatal error in older IDEs
 - Fix blurry arrow icons
@@ -1863,12 +1912,12 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Allow setting Material Theme options from Statusbar widget
 - Add multicaret icons
 
-# 2.4.0.3
+## 2.4.0.3
 
 - Add font size to be toggleable
 - Set Menlo as primary font for Lighter Schemes, and Fira Code for Darker schemes
 
-# 2.4.0
+## 2.4.0
 
 - Reworked the settings page to group options into tabs and allow changing theme from there
 - Setting for changing the font size of the Project View (needs restart)
@@ -1879,17 +1928,17 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Add analytics
 - Add TSX icon
 
-# 2.3.3
+## 2.3.3
 
 - This is a quick fix for 182.2757. This fixes critical issues introduced by the latest EAP.
   There could be other bugs though.
 
-# 2.3.2
+## 2.3.2
 
 - Fix error from plugin.svg icon not found
 - Fix preview icon similar to details icon
 
-# 2.3.1 (alpha)
+## 2.3.1 (alpha)
 
 - **NOTE: THIS IS NOT A STABLE RELEASE!**
 - This is a quick fix for MTComboBoxes to get back wide dropdowns.
@@ -1898,7 +1947,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - This also brings the popup over the dropdown to imitate material design components. This is disabled by the Compact
   Dropdown settings though
 
-# 2.3
+## 2.3
 
 - Major overhaul of the icons: most icons have been converted to svg! Please note though:
   - I couldn't find the originals of some icons, so some icons are now different or with different colors (sorry JSON…)
@@ -2583,7 +2632,7 @@ This version is more focused on the UI:
 - Add theme changer to Quick Switch (Ctrl+~)
 - More UI Icons
 
-# 0.4.3
+## 0.4.3
 
 - Fix issue with Statusbar option not being saved
 - Add bigger file icons for original ones (sass, php, ruby…)
