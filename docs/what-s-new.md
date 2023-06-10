@@ -5,6 +5,29 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.7.0 - 8.7.1
+
+Another bugfix release, concentrating on issues happening on Windows:
+
+### Fixes
+
+- **Overlays**: Fix the issue with the _Overlays_ being too dark on full screen (#329)
+- **Theme**: Fix the transparency issue on the _Tip of the Day_ dialog (#353) (#349)
+- **Changelog**: Fix the _Changelog_ not being updated
+
+### Other
+
+- Rewrite the Plugin description displayed on the Plugins Page
+- Updated screenshots to reflect the most updated state
+- Upgrade dependencies
+
+By the way, you've probably noticed that the releases are much less frequent than before. This is due to the fact that
+we've been currently working on a complete overhaul of all the settings page and configuration. This is a huge task, and
+we're trying to make it as smooth as possible, so it takes a lot of time. But we're getting there, and we hope to be
+able to release it soon!
+
+---
+
 ## What's new in Material Theme UI v8.6.0
 
 Yet another bug fix release to take care of more annoying issues:
