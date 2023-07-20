@@ -196,6 +196,7 @@ Quick explanation of all settings:
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart).
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart).
 - *Tabs Shadow*![premium](/img/icons/premium.png): Add a subtle shadow under the tabs.
+- *Shadows*![premium](/img/icons/premium.png): Add a subtle shadow around notifications and some popups.
 - *Inverted Completion Selection Color*: Switch the _Autocomplete_'s selected item color between the selection color and contrast color.
 
 **[Features Settings](/docs/configuration/features-settings)**:
@@ -390,6 +391,8 @@ If a key isn't in your file, it means that it uses the default value.
     <option name="isStyledDirectories" value="false"/>
     <!-- Tabs Shadow -->
     <option name="isTabsShadow" value="true"/>
+    <!-- Notifications shadows -->
+    <option name="useShadows" value="false"/>
     <!-- Tab Separators -->
     <option name="isTabSeparatorsEnabled" value="true"/>
     <!-- Whether to show the wizard at start -->

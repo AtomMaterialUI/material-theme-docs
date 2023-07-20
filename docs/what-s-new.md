@@ -5,6 +5,32 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.8.0 ~ 8.9.0
+
+There have been a few small updates to keep up with the changes all the while working on the new settings page.
+
+### Features
+
+- Add animating tool windows
+- New feature: **Shadows**: Add shadows to the notifications and popups.
+
+{% include figure.html content="/screens/shadows.png" caption="Shadows" %}
+
+### Fixes
+
+- Fix the size of the dropdown items
+- Fix regressions caused by the latest EAP
+- Changed Run Toolbar Widget color to button color
+- Fix the "no displayName" issue
+
+### Other
+
+- Refactor code: migrate from MTLafInstaller to MTThemeManager
+- Refactor: fix some padding issues
+- Add latest UI properties
+
+----
+
 ## What's new in Material Theme UI v8.7.0 - 8.7.1
 
 Another bugfix release, concentrating on issues happening on Windows:
