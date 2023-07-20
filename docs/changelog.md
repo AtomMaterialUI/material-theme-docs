@@ -16,6 +16,40 @@ next:
 # Changelog
 ----
 
+## 8.9.0
+
+### Features
+
+- New feature: **Shadows**: Add shadows to the notifications and popups.
+
+### Other
+
+- Updates from the latest beta
+
+## 8.8.1
+
+### Fixes
+
+- Fix the size of the dropdown items
+
+## 8.8.0
+
+### Features
+
+- Add animating tool windows
+
+### Fixes
+
+- Fix regressions caused by the latest EAP
+- Changed Run Toolbar Widget color to button color
+- Fix the "no displayName" issue
+
+### Other
+
+- Refactor code: migrate from MTLafInstaller to MTThememanager
+- Refactor: fix some padding issues
+- Add new UI properties
+
 ## 8.7.1
 
 ### Fixes
