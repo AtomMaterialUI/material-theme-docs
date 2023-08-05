@@ -16,6 +16,23 @@ next:
 # Changelog
 ----
 
+## 8.10.0
+
+### Features
+
+- New feature: **Animated Tool Windows** (not available for Linux at the moment).
+- New theme: **Material Space**! A new dark blue/purple theme based on Apollo GraphQL theme.
+- New actions: **Dock** and **Undock**, which allows you to dock/undock all currently available tool windows.
+
+### Fixes
+
+- Make the Project Frame opaque so that it doesn't get affected by the background image.
+- The Project Tree indent is now taking values from the Registry if not taken from the plugin.
+
+### Other
+
+- Add missing translations
+
 ## 8.9.0
 
 ### Features

@@ -128,3 +128,18 @@ This setting allows you to choose between two styles for the **selected option**
 
 {% include figure.html content="/screens/invertedSelection.png" caption="Inverted selection" %}
 
+---
+
+### Animated Tool Windows
+
+This feature is available in the free plan.
+{:class='card-panel warn'}
+
+This setting allows you to animate the **undocked** tool windows when they are opening/closing.
+
+{% include figure.html content="/screens/animatedToolWindows.gif" caption="Animated Tool Windows" %}
+
+It uses the registry feature behind the scenes, so it's available in the free plans. However, it is disabled on Linux as the animation is not smooth on this platform.
+
+**Important**: Since the animations only show for undocked tool windows, the plugin will ask you if you want to undock all currently opened tool windows. However, if you change your mind, an action "**Dock**" is available in the *Material Theme Toolbar* to dock back the tool windows.
+{:class='card-panel warn'}

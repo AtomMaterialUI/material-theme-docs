@@ -117,6 +117,7 @@ This panel as well allows you to quickly toggle the most used Component/Features
 - _Toggle Material Wallpapers_
 - _Toggle Outline Buttons_
 - _Toggle Overlays_
+- _Toggle Animated Tool Windows_
 - _Toggle Project Frame Colors_
 - _Colorize Title Bar (New UI)_
 
@@ -128,8 +129,10 @@ In addition, other one-time actions are available in this panel, which are:
 - _Reset Color Scheme_: Reset the current color scheme, removing all custom changes.
 - _Clean Overlays_: Manually remove any lingering overlays.
 - _Apply Custom UI Font_: Forcibly triggers a UI Font change.
+- _Undock Tool Windows_: Undock all currently available tool windows
+- _Dock Tool Windows_: Dock back all currently available tool windows
 
---- 
+---
 
 ### License activation
 
@@ -150,4 +153,3 @@ In addition, other one-time actions are available in this panel, which are:
 Please note that this is a setting that affects the whole IDE, so actions such as removing/disabling the plugin won't get rid of the background image.
 You can do so in `Settings → Appearance → Background Image`.
 {:class='card-panel warn'}
-

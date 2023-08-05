@@ -5,6 +5,39 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.10.0
+
+### New Feature: Animate Tool Windows
+
+This release introduces a new feature: **Animate Tool Windows**. This feature allows you to animate the **undocked** tool windows when they are opening/closing.
+
+{% include figure.html content="/screens/animatedToolWindows.gif" caption="Animated Tool Windows" %}
+
+It uses the registry feature behind the scenes, so it's available in the free plans. However, it is disabled on Linux as the animation is not smooth on this platform.
+
+**Important**: Since the animations only show for undocked tool windows, the plugin will ask you if you want to undock all currently opened tool windows. However, if you change your mind, an action "**Dock**" is available in the *Material Theme Toolbar* to dock back the tool windows.
+{:class='card-panel warn'}
+
+### New Theme: Material Space
+
+Another highlight of this release is a new theme: **Material Space**.
+
+This theme is a dark blue and purple theme reminiscent of the cosmic space. It is based off the theme used in the Apollo GraphQL website, but with Material colors.
+
+{% include figure.html content="/screens/space.png" caption="Material Space" %}
+
+### Fixes
+
+Last but not least, this release fixes a few older issues:
+- The Project Frame is now **opaque**, so that it doesn't get affected by the background image.
+- The **Left indent** and **Right indent** of the _Project Tree_ is now taking values from the registry when the checkbox is unchecked in the settings. It uses with the following algorithm:
+  - If the plugin's **Custom Tree Indent** setting is checked, the indent is taken from the plugin settings.
+  - Next, if the _Use smaller indents in trees_ setting is checked (in Settings > Appearance), it will set the right indent to 0.
+  - Then, if the Registry value is set and not equal to -1, it will use that value for the left and tree indent.
+  - Finally, it falls back to the default values (10 and 7)
+
+----
+
 ## What's new in Material Theme UI v8.8.0 ~ 8.9.0
 
 There have been a few small updates to keep up with the changes all the while working on the new settings page.
