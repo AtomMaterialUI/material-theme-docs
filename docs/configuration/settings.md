@@ -198,6 +198,7 @@ Quick explanation of all settings:
 - *Tabs Shadow*![premium](/img/icons/premium.png): Add a subtle shadow under the tabs.
 - *Shadows*![premium](/img/icons/premium.png): Add a subtle shadow around notifications and some popups.
 - *Inverted Completion Selection Color*: Switch the _Autocomplete_'s selected item color between the selection color and contrast color.
+- *Animated Tool Windows*: Animate opening and closing on tool windows when they are undocked.
 
 **[Features Settings](/docs/configuration/features-settings)**:
 
@@ -389,6 +390,8 @@ If a key isn't in your file, it means that it uses the default value.
     <option name="isMaterialWallpapers" value="true"/>
     <!-- Styled folders enabled -->
     <option name="isStyledDirectories" value="false"/>
+    <!-- Animated tool windows enabled -->
+    <option name="isAnimatedToolWindows" value="true"/>
     <!-- Tabs Shadow -->
     <option name="isTabsShadow" value="true"/>
     <!-- Notifications shadows -->
