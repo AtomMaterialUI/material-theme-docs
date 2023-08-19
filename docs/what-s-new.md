@@ -5,6 +5,22 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.11.0
+
+This version is another bug fix release, mostly focused on Windows and Linux issues.
+
+### Features
+
+- Linux/Windows: **Rounded menus**
+- Menu Separators: Make menu separators thinner and more subtle
+
+### Fixes
+
+- Linux: Fix the _Colorize title bar_ being applied to the whole IDE
+- Shadows: Fix spacing making the notifications blend to each other
+- Menus: Fix menu item size being too small due to the last update
+
+
 ## What's new in Material Theme UI v8.10.0
 
 ### New Feature: Animate Tool Windows

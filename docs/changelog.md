@@ -16,6 +16,19 @@ next:
 # Changelog
 ----
 
+## 8.11.0
+
+### Features
+
+- Linux/Windows: **Rounded menus**
+- Menu Separators: Make menu separators thinner and more subtle
+
+### Fixes
+
+- Linux: Fix the _Colorize title bar_ being applied to the whole IDE
+- Shadows: Fix spacing making the notifications blend to each other
+- Menus: Fix menu item size being too small due to the last update
+
 ## 8.10.0
 
 ### Features
