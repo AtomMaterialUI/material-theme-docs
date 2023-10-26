@@ -9,10 +9,7 @@ toc: true
 
 This version is only available for the 2023.3 EAP, and only consists on being compatible with the latest EAP breaking changes.
 
-
-## What's new in Material Theme UI v8.12.1 to 8.12.6
-
-These versions only contain bug fixes and improvements.
+-------
 
 ## What's new in Material Theme UI v8.12.0
 
