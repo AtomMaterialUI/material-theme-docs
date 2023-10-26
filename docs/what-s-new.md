@@ -5,6 +5,30 @@ group: whatsnew
 toc: true
 ---
 
+## What's new in Material Theme UI v8.13.0
+
+This version is only available for the 2023.3 EAP, and only consists on being compatible with the latest EAP breaking changes.
+
+
+## What's new in Material Theme UI v8.12.1 to 8.12.6
+
+These versions only contain bug fixes and improvements.
+
+## What's new in Material Theme UI v8.12.0
+
+Yet another bug fix release.
+
+### Features
+
+- Add more color options to the _File Colors_ settings
+
+### Fixes
+
+- Fix [#386](https://github.com/mallowigi/material-theme-issues/issues/386)
+- Fix [#388](https://github.com/mallowigi/material-theme-issues/issues/388)
+- Fix [#397](https://github.com/mallowigi/material-theme-issues/issues/397)
+- Fix [#398](https://github.com/mallowigi/material-theme-issues/issues/398)
+
 ## What's new in Material Theme UI v8.11.0
 
 This version is another bug fix release, mostly focused on Windows and Linux issues.

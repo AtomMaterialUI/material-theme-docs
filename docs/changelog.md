@@ -16,6 +16,37 @@ next:
 # Changelog
 ----
 
+## 8.13.1
+
+### Fixes
+
+- Fix deprecations from 233.10527
+
+## 8.13.0
+
+### Fixes
+
+- Fix deprecated code from 233.8264
+- Fix fatal error with `Descriptors` not being initialized
+
+## 8.12.1-8.12.6
+
+- Support for 2023.3 EAP
+
+## 8.12.0
+
+### Features
+
+- Add more color options to the _File Colors_ settings
+
+### Fixes
+
+- Fix [#386](https://github.com/mallowigi/material-theme-issues/issues/386)
+- Fix [#388](https://github.com/mallowigi/material-theme-issues/issues/388)
+- Fix [#397](https://github.com/mallowigi/material-theme-issues/issues/397)
+- Fix [#398](https://github.com/mallowigi/material-theme-issues/issues/398)
+
+
 ## 8.11.0
 
 ### Features
