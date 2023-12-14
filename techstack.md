@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 mallowigi/material-theme-docs is built on the following main stack:
+
 - [Grunt](http://gruntjs.com/) – JS Build Tools / JS Task Runners
 - [Ruby](https://www.ruby-lang.org) – Languages
 - [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
@@ -12,13 +13,18 @@ mallowigi/material-theme-docs is built on the following main stack:
 - [Babel](http://babeljs.io/) – JavaScript Compilers
 - [ESLint](http://eslint.org/) – Code Review
 - [GitHub Actions](https://github.com/features/actions) – Continuous Integration
+- [LangChain](https://github.com/hwchase17/langchain) – Large Language Model Tools
+- [pgvector](https://github.com/pgvector/pgvector/) – Database Tools
+- [Algolia](https://www.algolia.com/?utm_source=stackshare&utm_medium=referral) – Search as a Service
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 mallowigi/material-theme-docs is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/845/falgg2jybmhgk16y62lr.png' alt='Grunt'/> [Grunt](http://gruntjs.com/) – JS Build Tools / JS Task Runners
 - <img width='25' height='25' src='https://img.stackshare.io/service/989/ruby.png' alt='Ruby'/> [Ruby](https://www.ruby-lang.org) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
@@ -29,16 +35,20 @@ mallowigi/material-theme-docs is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/2739/-1wfGjNw.png' alt='Babel'/> [Babel](http://babeljs.io/) – JavaScript Compilers
 - <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
 - <img width='25' height='25' src='https://img.stackshare.io/service/11563/actions.png' alt='GitHub Actions'/> [GitHub Actions](https://github.com/features/actions) – Continuous Integration
+- <img width='25' height='25' src='https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg' alt='LangChain'/> [LangChain](https://github.com/hwchase17/langchain) – Large Language Model Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png' alt='pgvector'/> [pgvector](https://github.com/pgvector/pgvector/) – Database Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/589/default_452afb716f8f4b904f267638e5c6b9172f9fa06d.png' alt='Algolia'/> [Algolia](https://www.algolia.com/?utm_source=stackshare&utm_medium=referral) – Search as a Service
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [mallowigi/material-theme-docs](https://github.com/mallowigi/material-theme-docs)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|43<br/>Tools used|11/19/23 <br/>Report generated|
+|48<br/>Tools used|12/14/23 <br/>Report generated|
 |------|------|
 </div>
 
@@ -85,6 +95,19 @@ Full tech stack [here](/techstack.md)
   <img width='36' height='36' src='https://img.stackshare.io/service/1171/jCR2zNJV.png' alt='Sass'>
   <br>
   <sub><a href="http://sass-lang.com/">Sass</a></sub>
+  <br>
+  <sub></sub>
+</td>
+
+</tr>
+</table>
+
+## <img src='https://img.stackshare.io/databases.svg'/> Data (1)
+<table><tr>
+  <td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png' alt='pgvector'>
+  <br>
+  <sub><a href="https://github.com/pgvector/pgvector/">pgvector</a></sub>
   <br>
   <sub></sub>
 </td>
@@ -161,7 +184,20 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-## Other (2)
+## <img src='https://img.stackshare.io/saas.svg'/> Software as a Service (SaaS) (1)
+<table><tr>
+  <td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/589/default_452afb716f8f4b904f267638e5c6b9172f9fa06d.png' alt='Algolia'>
+  <br>
+  <sub><a href="https://www.algolia.com/?utm_source=stackshare&utm_medium=referral">Algolia</a></sub>
+  <br>
+  <sub></sub>
+</td>
+
+</tr>
+</table>
+
+## Other (3)
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/2270/no-img-open-source.png' alt='HTML'>
@@ -179,13 +215,21 @@ Full tech stack [here](/techstack.md)
   <sub>v4.3.2</sub>
 </td>
 
+<td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg' alt='LangChain'>
+  <br>
+  <sub><a href="https://github.com/hwchase17/langchain">LangChain</a></sub>
+  <br>
+  <sub></sub>
+</td>
+
 </tr>
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (28)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (30)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (25)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (26)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -195,7 +239,7 @@ Full tech stack [here](/techstack.md)
 |[babel-preset-env](https://www.npmjs.com/babel-preset-env)|v1.7.0|07/21/23|Elior |MIT|N/A|
 |[babel-register](https://www.npmjs.com/babel-register)|v6.26.0|07/21/23|Elior |MIT|N/A|
 |[browser-sync](https://www.npmjs.com/browser-sync)|v2.29.3|06/10/23|renovate[bot] |Apache-2.0|N/A|
-|[grunt-autoprefixer](https://www.npmjs.com/grunt-autoprefixer)|v3.0.4|03/25/23|renovate[bot] |MIT|N/A|
+|[grunt-autoprefixer](https://www.npmjs.com/grunt-autoprefixer)|v3.0.4|11/19/23|renovate[bot] |MIT|N/A|
 |[grunt-babel](https://www.npmjs.com/grunt-babel)|v8.0.0|07/21/23|Elior |MIT|N/A|
 |[grunt-contrib-copy](https://www.npmjs.com/grunt-contrib-copy)|v1.0.0|03/24/23|renovate[bot] |MIT|N/A|
 |[grunt-contrib-imagemin](https://www.npmjs.com/grunt-contrib-imagemin)|v4.0.0|03/24/23|renovate[bot] |MIT|N/A|
@@ -212,16 +256,18 @@ Full tech stack [here](/techstack.md)
 |[js-yaml](https://www.npmjs.com/js-yaml)|v4.1.0|06/10/21|Renovate Bot |MIT|N/A|
 |[load-grunt-tasks](https://www.npmjs.com/load-grunt-tasks)|v5.1.0|07/21/23|Elior |MIT|N/A|
 |[node-sass](https://www.npmjs.com/node-sass)|v9.0.0|07/21/23|Elior |MIT|N/A|
-|[rimraf](https://www.npmjs.com/rimraf)|v5.0.1|07/21/23|Elior |ISC|N/A|
+|[rimraf](https://www.npmjs.com/rimraf)|v5.0.5|11/19/23|renovate[bot] |ISC|N/A|
+|[semver](https://www.npmjs.com/semver)|v7.5.4|07/20/23|renovate[bot] |ISC|N/A|
 |[url-loader](https://www.npmjs.com/url-loader)|v4.1.1|07/21/23|Elior |MIT|N/A|
 
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg'/> RubyGems (3)
+## <img width='24' height='24' src='https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg'/> RubyGems (4)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
 |[jekyll-paginate](https://rubygems.org/jekyll-paginate)|v1.1.0|06/11/21|Renovate Bot |MIT|N/A|
 |[jekyll-sitemap](https://rubygems.org/jekyll-sitemap)|v1.4.0|06/11/21|Renovate Bot |MIT|N/A|
+|[jemoji](https://rubygems.org/jemoji)|v0.13.0|04/09/20|helio |MIT|N/A|
 |[webrick](https://rubygems.org/webrick)|v1.8.1|07/02/21|Elior |BSD-2-Clause|N/A|
 
 <br/>

@@ -1,11 +1,11 @@
 repo_name: mallowigi/material-theme-docs
-report_id: 1328d5f14844a04a16dc93726fc9749d
+report_id: fe3d7b5c2568c88f2db94f88fe2b6d73
 repo_type: Public
-timestamp: '2023-11-19T07:54:37+00:00'
+timestamp: '2023-12-14T13:14:38+00:00'
 requested_by: mallowigi
 provider: github
 branch: master
-detected_tools_count: 43
+detected_tools_count: 48
 tools:
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -27,8 +27,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
-  detection_source_url: ".ruby-version"
-  detection_source: ".ruby-version"
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/.ruby-version
+  detection_source: Repo Metadata
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
 - name: ".NET"
@@ -54,7 +54,7 @@ tools:
   image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
   detection_source: package.json
   last_updated_by: renovate[bot]
-  last_updated_on: 2023-03-25 07:48:36.000000000 Z
+  last_updated_on: 2023-11-19 08:03:01.000000000 Z
 - name: Sass
   description: Syntactically Awesome Style Sheets
   website_url: http://sass-lang.com/
@@ -67,6 +67,17 @@ tools:
   detection_source: package.json
   last_updated_by: helio
   last_updated_on: 2020-04-09 11:59:59.000000000 Z
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: robots.txt
+  last_updated_by: Elior
+  last_updated_on: 2021-12-07 12:19:40.000000000 Z
 - name: Babel
   description: Use next generation JavaScript, today.
   website_url: http://babeljs.io/
@@ -77,8 +88,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: JavaScript Compilers
   image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
-  detection_source_url: package.json
-  detection_source: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
+  detection_source: ".babelrc"
   last_updated_by: helio
   last_updated_on: 2020-04-09 11:59:59.000000000 Z
 - name: ESLint
@@ -111,8 +122,8 @@ tools:
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
   detection_source: ".github/workflows/main.yml"
-  last_updated_by: Elior
-  last_updated_on: 2023-06-10 09:15:30.000000000 Z
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-11-19 08:06:58.000000000 Z
 - name: Grunt
   description: The JavaScript Task Runner
   website_url: http://gruntjs.com/
@@ -122,7 +133,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: JS Build Tools / JS Task Runners
   image_url: https://img.stackshare.io/service/845/falgg2jybmhgk16y62lr.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -159,6 +170,17 @@ tools:
   detection_source: package.json
   last_updated_by: helio
   last_updated_on: 2020-04-09 11:59:59.000000000 Z
+- name: Algolia
+  description: Developer-friendly API and complete set of tools for building search
+  website_url: https://www.algolia.com/?utm_source=stackshare&utm_medium=referral
+  open_source: false
+  hosted_saas: true
+  category: Application Utilities
+  sub_category: Search as a Service
+  image_url: https://img.stackshare.io/service/589/default_452afb716f8f4b904f267638e5c6b9172f9fa06d.png
+  detection_source: Gemfile
+  last_updated_by: Elior
+  last_updated_on: 2023-08-05 17:32:36.000000000 Z
 - name: HTML
   description: Hypertext Markup Language for creating web pages.
   website_url: http://
@@ -178,10 +200,21 @@ tools:
   category: Application Utilities
   sub_category: Static Site Generators
   image_url: https://img.stackshare.io/service/1114/ad968c1615d956e800fa36494314f48c.jpeg
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Renovate Bot
   last_updated_on: 2021-06-11 02:05:18.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: robots.txt
+  last_updated_by: Elior
+  last_updated_on: 2021-12-07 12:19:40.000000000 Z
 - name: babel-core
   description: Babel compiler core
   package_url: https://www.npmjs.com/babel-core
@@ -192,7 +225,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15798/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -206,7 +239,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15803/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -220,7 +253,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -234,7 +267,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15814/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -248,7 +281,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15865/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -262,7 +295,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16034/default_a9b6ac3c2fe43713f9a8e43d4668d0352ad0d247.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-06-10 08:58:20.000000000 Z
@@ -277,10 +310,10 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17148/default_9746cbb559e39df4afd8298f9a252dff8519e646.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
-  last_updated_on: 2023-03-25 07:48:36.000000000 Z
+  last_updated_on: 2023-11-19 08:03:01.000000000 Z
 - name: grunt-babel
   description: Use next generation JavaScript, today
   package_url: https://www.npmjs.com/grunt-babel
@@ -291,7 +324,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16633/default_783b9b6c17b863f264c1418b0eb831316f741afd.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -305,7 +338,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16056/default_c7b204838197013798409fa2b4dafce450edc7fb.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -319,7 +352,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17791/default_abcc2eea82e62d338a749f334647866df76198b8.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -333,7 +366,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16843/default_768abdabb94806c932ace6262b6bbc8241907245.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:26:35.000000000 Z
@@ -347,7 +380,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15954/default_ac622bc364a601d766b9a6f6039f191492f54d65.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -361,7 +394,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15932/default_4dc9671df0093fd7061f6455afdf054e6cc9dacb.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -375,7 +408,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16754/default_6dc099b12d47e378ae121fb53c336fe5d8f0ffc8.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -390,7 +423,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17008/default_d17bbf7e4f3b102e29ff09c01b8165e7ba600319.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -404,7 +437,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17401/default_7b8a4dd0459c1d55636639cb97d216b33a363a7f.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -418,7 +451,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17362/default_943e7509740d800703ae1a754d4357f84d3c51e8.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -432,7 +465,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16916/default_2e3ed47575edcaf407097e6171e3d4cb8681a6b3.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:26:35.000000000 Z
@@ -446,7 +479,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18170/default_9988dbfaa49c66b3557cfcb4d0066fa661722714.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-24 11:13:25.000000000 Z
@@ -460,7 +493,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16167/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2022-09-16 17:29:57.000000000 Z
@@ -474,7 +507,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15997/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Renovate Bot
   last_updated_on: 2021-06-10 11:33:00.000000000 Z
@@ -488,7 +521,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16062/default_924b66c04aa848a4028c1a5753a23dae0f835f86.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -502,24 +535,38 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15827/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:26:35.000000000 Z
 - name: rimraf
   description: A deep deletion module for node
   package_url: https://www.npmjs.com/rimraf
-  version: 5.0.1
+  version: 5.0.5
   license: ISC
   open_source: true
   hosted_saas: false
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
-  last_updated_by: Elior
-  last_updated_on: 2023-07-21 06:18:54.000000000 Z
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-11-19 08:06:55.000000000 Z
+- name: semver
+  description: The semantic version parser used by npm
+  package_url: https://www.npmjs.com/semver
+  version: 7.5.4
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18809/default_dad3dc9dde4b82dc2a7bd32aa091165887abe57b.png
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-07-20 19:41:25.000000000 Z
 - name: url-loader
   description: A loader for webpack which transforms files into base64 URIs
   package_url: https://www.npmjs.com/url-loader
@@ -530,7 +577,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15858/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/package.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-07-21 06:18:54.000000000 Z
@@ -544,7 +591,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19371/default_ac0591cdb829f62a4300d942f96aea1bb642351d.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Renovate Bot
   last_updated_on: 2021-06-11 02:05:18.000000000 Z
@@ -558,10 +605,24 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19321/default_31ccb7684f50eae9f0c40cb9965cc32299f8935e.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Renovate Bot
   last_updated_on: 2021-06-11 02:05:18.000000000 Z
+- name: jemoji
+  description: GitHub-flavored emoji plugin for Jekyll
+  package_url: https://rubygems.org/jemoji
+  version: 0.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/rubygems/image.png
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: helio
+  last_updated_on: 2020-04-09 11:59:59.000000000 Z
 - name: webrick
   description: WEBrick is an HTTP server toolkit that can be configured as an HTTPS
     server
@@ -573,7 +634,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19444/default_e747a715ce0379afdb68c78657d70e4a512bf5f4.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/mallowigi/material-theme-docs/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: Elior
   last_updated_on: 2021-07-02 12:34:36.000000000 Z
