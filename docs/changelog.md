@@ -16,7 +16,19 @@ next:
 # Changelog
 ----
 
-### Other
+## 9.2.0
+
+### Features
+
+- New *UI Component* setting: **Use Original Tool Window Hover Buttons**. Enable it to restore the original look of the Tool Window Buttons.
+- Adds a tooltip to showcase the **Centered Editor** feature.
+
+### Fixes
+
+- Refactor the **Theme Selector** to improve performance and limit freezes
+- Fix the issue where buttons become spaced out when changing the **Custom Header Height** setting.
+- Adds back the _Selected Tool Window indicator_.
+- Fix the issue where the **Arrows Style** setting was disabled if the Atom Material Icons plugin was installed but disabled.
 
 ## 9.1.0
 
