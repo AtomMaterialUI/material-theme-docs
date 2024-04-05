@@ -16,6 +16,93 @@ next:
 # Changelog
 ----
 
+### Other
+
+## 9.1.0
+
+### Features
+
+- **New Setting**: **Material Design Loading Icon**: replace JetBrains loading icon with the Material Design one (requires _Atom Material Icons_ plugin)
+- **Migration**: Add Migration On-boarding dialog for non migrated users
+- **Color Schemes**: Add _New Terminal_ colors
+- **Color Schemes**: Add _JVM Logging_ colors
+- **Color Schemes**: Add _Tabs Scrollbar_ colors
+- **Color Schemes**: Add _Error Stripe_ colors on Searches
+
+### Fixes
+
+- **File Colors**: Set *Gray* as _Excluded Files_ color
+- **Overlays**: Fix overlays not being triggered on some cases
+- Prevent NPE on MTButton
+- Prevent NPE when the *Python* plugin is installed
+
+### Other
+
+- Migrate to IntelliJ Gradle 2.0
+
+## 9.0.0
+
+### Features
+
+- **New Settings**! Reorganized the settings into multiple panes for better organization
+- Rewrote all settings panes and wizard using Kotlin DSL v2
+- New settings are now saved in `material_theme_new.xml`, including the custom theme and per-project settings.
+- **Themes**: View the current theme's colors in the settings.
+- **Themes**: Introduced **Second Accent Color**, used for *Accent Mode*.
+- **Themes**: New Theme: **Adaptive Theme**. This is a theme that listens to **Color Scheme** changes and adapts itself accordingly (__Experimental__).
+- **Accent Mode**: Ability to toggle specific components only: _Tabs_, _Notifications_, _Lists_…
+- **Accent Mode**: Allow accent mode to modify color scheme (for the tab indicator, for example) – default is OFF.
+- **Spacing**: Header size is now customizable (for both compact and non-compact modes). (_Premium_)
+- **Spacing**: Status bar size is now customizable. (_Premium_)
+- **Contrast**: Allow to fine-tune the strength of the **High Contrast** mode. (_Premium_)
+- **Custom Theme**: Now you can customize the dark and light custom themes separately (_Experimental_).
+- **Features**: **Centered Editor**: you can center the editor like in Distraction-free mode. (_Free_)
+- **Features**: **Overlay Opacity**: customize the opacity of the overlays. (__Premium__)
+- **Language Additions**: New Language: **Rust** (experimental)
+- **Language Additions**: Toggle language additions per language.
+- **Project-tree indicators**: New indicators: **Right**, **Underline**, **Boxed**.
+- **Project-tree indicators**: Ability to set a gradient instead of a single color. (__Premium__)
+- **Arrows Style**: Customize the look of the arrows in trees (only if the _Atom Material Plugin_ is not installed, in which case it is controlled by the plugin). Styles:
+  - Material (chevrons)
+  - Darcula (triangles)
+  - Plus-Minus (+/-)
+  - Arrows (→)
+  - Circles (circles with arrows)
+  - None
+- **Title Bar** (previously **Project Frame**): Ability to colorize the **Left Toolbar**, **Right Toolbar** and **Status Bar**! (__Premium__)
+- **Title Bar Widget**: The **Project Frame** widget can now be added to the New UI's __Title Bar__!
+  - You can also switch between presets to display.
+- **UI Components**: Round notifications (__Premium__)
+- **UI Components**: Borderless mode (__Premium__)
+- Add back the icon for **Intentions**
+- _Action Buttons_ are now rounded (will be customizable in the future).
+- New **Java Keywords**: `abstract, extends, impements, native, assert, class, interface, enum, for, while, do, if, else, import, package, instanceof, new, module, requires, return, switch, synchronized, volatile, throw, throws, try, catch, finally, var` and primitive types.
+
+### Fixes
+
+- Improved **Accent Mode** to be more readable
+- Fix Lighter themes' arrows not visible
+- Space the text and the icon in _Icon Buttons_
+- Change the _Failed Tests_ color scheme colors
+- Fix _mnemonic texts_ not being visible
+- Change the default color of Left/Right Tool Windows to the background color instead of the contrast color.
+- Better support for _Native themes_.
+- Add a border to **Notification** for better visibility.
+- Add support for newer UI Properties.
+- Other performance improvements.
+
+### Removals
+
+- Removed the **Recommended Plugins** page, as it was flaky and not really useful
+- Removed the **Focus Mode** related settings, migrated to a [separate plugin](https://plugins.jetbrains.com/plugin/21237-focus-mode-2)
+- Removed a lot of hacks due to them no longer working in JBR 21
+
+### Other
+
+- Added a **Migrate Action** for migrating settings to the new format.
+- Refactored most of the project to Kotlin.
+
+
 ## 8.13.1
 
 ### Fixes
