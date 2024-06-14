@@ -11,7 +11,7 @@ previous:
   title: Scrollbars
 next:
   url: '/docs/configuration/color-scheme-additions'
-  title: Color Scheme Additions
+  title: Language Additions
 
 gallery:
   - images:
@@ -139,5 +139,3 @@ This is especially useful for external themes, so that Theme designers can provi
 ## Gallery
 
 {% include gallery_lightbox.html %}
-
-
