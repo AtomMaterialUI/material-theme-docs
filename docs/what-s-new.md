@@ -37,7 +37,7 @@ Upon clicking migrate, your previous settings will be migrated to the new format
 
 ### Centered Editor
 
-Perhaps the most controversial of the changes, is a new feature called **Centered Editor**. When enabled, it centers the code in the middle of the editor, as opposed as tucked to the left. This is a feature that has been requested for a long time, and it's finally here.
+Perhaps the most controversial of the changes, is a new feature called **Centered Editor**. When enabled, it centers the code in the middle of the editor, as opposed as tucked to the left. 
 
 {% include figure.html content="/screens/centeredEditor.png" caption="Centered Editor" %}
 
