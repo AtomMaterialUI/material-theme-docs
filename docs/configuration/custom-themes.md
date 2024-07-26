@@ -8,7 +8,7 @@ comments: true
 
 previous:
   url: '/docs/configuration/color-scheme-additions'
-  title: Color Scheme Additions
+  title: Language Additions
 next:
   url: '/docs/configuration/recommended-plugins'
   title: Recommended plugins
