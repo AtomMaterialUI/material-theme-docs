@@ -14,20 +14,28 @@ next:
   title: Color Schemes
 ---
 
-The Material Theme plugin comes with a bunch of features tailored for an optimal experience.
-However, it's also highly configurable to allow every one to customize it to their hearts' content.
+The Material Theme UI plugin comes with a bunch of features tailored for an optimal experience.
+However, it's also highly configurable to allow everyone to customize it to their hearts' content.
 {:class='title'}
 
 {% include carbonads.html %}
 
 ## Themes and color schemes
 
+### Current Theme
+
+Since version 9.0.0, you can see the current theme's colors from the settings page.
+
+For this, navigate to `Settings → Appearance → Material Theme UI → Current Theme`.
+
+{% include figure.html content="/screens/settingsv3/currentTheme.png" caption="Current Theme" %}
+
 ### Theme switcher
 
 The plugin comes prebundled with a set of themes interchangeables through the
-![Theme Switcher](/img/icons/switcher.png) *Theme Switcher*.
+![Theme Switcher](/img/icons/switcher.svg) *Theme Switcher*.
 
-{% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
+{% include figure.html content="/screens/settingsv3/switcher.png" caption="Theme Switcher" %}
 
 There are many ways to invoke the *Theme Switcher*:
 
@@ -35,13 +43,13 @@ There are many ways to invoke the *Theme Switcher*:
 - From the _Main Toolbar_
 - From the `Search Everything` dialog, type `Material Theme`
 - From the `Quick Switch` panel <kbd>(Ctrl + \`)</kbd> (Windows: <kbd>Ctrl + ~</kbd>)`
-- From the `Status Bar Widget` (since version 7.4.0)
+- From the `Status Bar Widget`
 
 {% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
 
-Or, since version 2.4.0, from the Settings at `Settings → Appearance → Material Theme`.
+Alternatively, you can also switch themes using the _Theme Selector_ found in `Settings → Appearance → Material Theme UI → Theme Selector`.
 
-{% include figure.html content="/screens/switchSettings.png" caption="Switcher in Settings" %}
+{% include figure.html content="/screens/settingsv3/themeSelector.png" caption="Theme Selector" %}
 
 The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.material2.size | plus: site.data.themes.other.size | plus:
 site.data.themes.other2.size }} themes:
@@ -74,20 +82,26 @@ Besides the Material Themes, there are other prebundled themes made by the commu
 {% endfor %}
 </ul>
 
-#### Custom theme
+-----
+
+#### Custom Themes
 
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Finally, there are the **Custom Themes**, which are the placeholder for the Custom Theme Settings, allowing you to set your own theme colors.
+In addition, premium users can also define their own **Custom Themes**.
+
+{% include figure.html content="/screens/settingsv3/customTheme.png" caption="Custom Themes" %}
 
 There are two options available, *Custom Theme* for dark themes and *Light Custom Theme* for light themes.
 
 See [Custom Themes](/docs/configuration/custom-themes) for more information.
 
-#### Native Themes (since 5.0)
+----
 
-From version 5.0 the plugin now supports **Native Themes** as well, that is, themes using JetBrains theme API.
+#### Native Themes
+
+The plugin supports **Native Themes** as well, that is, themes using JetBrains theme API.
 When loading a native theme, the plugin would try to convert it into a Material Theme,
 thus allowing you to use the theme colors while using the Material Theme features such as the components, accent mode, etc.
 
@@ -96,31 +110,47 @@ It will be automatically converted to a theme format supported by the plugin.
 
 Examples:
 
-{% include figure.html content="/screens/intellij.png" caption="IntelliJ Light" %}
+{% include figure.html content="/screens/themes/dark.png" caption="New UI Dark" %}
 
-{% include figure.html content="/screens/darcula.png" caption="Darcula" %}
+{% include figure.html content="/screens/themes/vscodedark.png" caption="VSCode Dark" %}
 
-{% include figure.html content="/screens/gradianto.png" caption="Gradianto Theme" %}
+{% include figure.html content="/screens/themes/gerrystorm.png" caption="Gerry Storm" %}
 
-#### External Themes (deprecated)
+{% include figure.html content="/screens/themes/dokidoki.png" caption="Doki Doki Literature Club" %}
 
-This feature is deprecated since version 6.10.0 in favor of the [native themes](https://plugins.jetbrains.com/search?tags=Theme).
+----
+
+#### Adaptive Theme
+
+This feature is only available for premium users.
 {:class='card-panel warn'}
 
-The plugin also exposes an endpoint allowing plugin developers to create and bundle their own custom themes,
-just like Color Schemes, Keymaps, Coding Styles, etc.
-To learn more about _External Themes_ or how to create your own plugin,
-head to the [External Themes section](/docs/development/external-themes).
+Last but not least, since version 9.0 the plugin also comes with an **Adaptive Theme**.
+This theme automatically changes its colors based on the current **color scheme**.
 
-Once the external theme has been downloaded and installed, it should appear at the bottom of the Switcher.
+This theme is quite useful if you have a lot of color schemes that do not come with their own UI Themes, such as the [Rainglow color schemes](https://rainglow.io/).
 
-{% include figure.html content="/screens/external.png" caption="External Themes" %}
+Examples:
 
-{% include figure.html content="/tutorial/externalList.png" caption="External Themes List" %}
+{% include figure.html content="/screens/themes/cobalt.png" caption="Cobalt Color Scheme" %}
+
+{% include figure.html content="/screens/themes/monokai.png" caption="Monokai Color Scheme" %}
+
+{% include figure.html content="/screens/themes/earthsong.png" caption="Rainglow EarthSong Color Scheme" %}
+
+{% include figure.html content="/screens/themes/mauve.png" caption="Rainglow Mauve Color Scheme" %}
+
+{% include figure.html content="/screens/themes/tetra.png" caption="Rainglow Tetra Color Scheme" %}
+
+
+You can also override the Adapative Theme's colors from a **Color Scheme Settings Page**.
+This way, you can customize your UI theme directly from the Color Scheme settings!
+
+{% include figure.html content="/screens/settingsv3/adaptiveTheme.png" caption="Adaptive Theme" %}
 
 ----------
 
-## Material theme settings
+## Material Theme UI settings
 
 ### Settings Page
 
@@ -128,16 +158,39 @@ Some settings are only available for premium users.
 {:class='card-panel warn'}
 
 You can configure many parts of the plugin features from the **plugin settings**.
-They're available within the `Settings → Appearance → Material Theme → Settings`.
+They're available within the `Settings → Appearance → Material Theme UI`.
 
-{% include figure.html content="/screens/settings.png" caption="Material Theme Settings v1" %}
+Since version 9.0, the settings page has been split into multiple settings pages, for easier navigation and maintenance.
 
-Since version 2.4.0, the settings page has been remade to prevent overwhelming the user from the abundance of customization options.
+{% include figure.html content="/screens/settingsv3/mainSettings.png" caption="Main Settings" %}
 
-Now settings are differentiated between basic and advanced settings, they're grouped within _tabs_,
-and a *Reset Settings* button has been added for easy factory resetting.
+{% include figure.html content="/screens/settingsv3/themeSelector.png" caption="Theme Selector" %}
 
-{% include figure.html content="/screens/settingsV2.png" caption="Material Theme Settings V2" %}
+{% include figure.html content="/screens/settingsv3/contrastMode.png" caption="Contrast Settings" %}
+
+{% include figure.html content="/screens/settingsv3/accentColors.png" caption="Accent Settings" %}
+
+{% include figure.html content="/screens/settingsv3/accentMode.png" caption="Accent Mode" %}
+
+{% include figure.html content="/screens/settingsv3/customTheme.png" caption="Custom Themes" %}
+
+{% include figure.html content="/screens/settingsv3/tabSettings.png" caption="Tabs Settings" %}
+
+{% include figure.html content="/screens/settingsv3/spacing.png" caption="Spacing Settings" %}
+
+{% include figure.html content="/screens/settingsv3/treeSettings.png" caption="Trees Settings" %}
+
+{% include figure.html content="/screens/settingsv3/uiComponents.png" caption="UI Components Settings" %}
+
+{% include figure.html content="/screens/settingsv3/featureSettings.png" caption="Features Settings" %}
+
+{% include figure.html content="/screens/settingsv3/projectTitleBar.png" caption="Project Title Bar" %}
+
+{% include figure.html content="/screens/settingsv3/langAdditions.png" caption="Language Additions Settings" %}
+
+{% include figure.html content="/screens/settingsv3/otherTweaks.png" caption="Other Tweaks" %}
+
+In addition, some settings are configurable per-project.
 
 #### Summary
 
@@ -273,8 +326,8 @@ You can also use the `Keymap Editor` to assign your own custom shortcuts to thes
 
 Your current configuration is stored inside the IDE settings' directory under the filenames:
 
-- **Main Settings**: `material_theme.xml`.
-- **Custom Theme**: `material_custom_theme.xml`.
+- **Main Settings**: `material_theme_new.xml`.
+- **Custom Theme**: `material_custom_theme_new.xml`.
 - **Per Project Settings**: `material_theme_project.xml`.
 
 If, for some reason, there are issues with the plugin, or you don't manage to reset to a stable state, just delete these files and restart the IDE.
