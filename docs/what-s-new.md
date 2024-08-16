@@ -9,7 +9,7 @@ toc: true
 
 ## What's new in Material Theme UI v9.5.0
 
-Yet another small update but with some new stuff.
+Yet another small update but with some new features worth checking.
 
 ### Rounded Tabs
 
