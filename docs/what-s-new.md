@@ -5,6 +5,167 @@ group: whatsnew
 toc: true
 ---
 
+----
+
+## What's new in Material Theme UI v9.5.0
+
+Yet another small update but with some new stuff.
+
+### Rounded Tabs
+
+As the New UI is now the default for all users, it's now become easier to add more customization to the UI.
+
+To celebrate that, we are introducing a new setting to customize the tabs' design: **Rounded Tabs**.
+
+{% include figure.html content="/screens/roundedTabs.png" caption="Rounded Tabs" %}
+
+This feature mimics the new tab design introduced by Google in their navigator, _Google Chrome_, which makes the tabs more rounded and looking like pressed buttons.
+
+This design isn't popular with everyone, so it's disabled by default, but you can give it a shot in the **Material Theme > UI Components** settings.
+
+### Other fixes
+
+- Add Sticky Lines background to color scheme
+- Fix parameter colors in Color schemes
+- Fix performance issue when multiple settings are modified
+
+----
+
+## What's new in Material Theme UI v9.4.0
+
+This version only brings bug fixes and improvements
+
+### Fixes
+
+- Refactor locale management to support the new framework
+- Fix deprecations
+- Fix Cancel Button not working on Custom Theme Settings
+- Fix "Auto expanding" search and replace
+- Support for 2024.2
+
+-----
+
+## What's new in Material Theme UI v9.3.0
+
+This version introduces small features and improvements to the plugin.
+
+### Custom Action Button Radius
+
+As a follow-up to the feature introduced in version 9.2.0, **Use Original Tool Window Hover Buttons**, this version introduces yet another feature requested by the community to control the border radius of all _Action Buttons_.
+
+You can find this setting in the **Material Theme > UI Components Settings**
+
+{% include figure.html content="/screens/actionButtonsRadius.png" caption="Action Buttons Radius Settings" %}
+
+Comparison:
+
+{% include figure.html content="/screens/fullRadius.png" caption="Full Rounded buttons" %}
+
+{% include figure.html content="/screens/halfRadius.png" caption="Half Rounded buttons" %}
+
+{% include figure.html content="/screens/noRadius.png" caption="Not Rounded buttons" %}
+
+### More Overlays
+
+This setting supplements the **Overlays** setting by adding way more triggers to the list of popups that trigger the overlays.
+
+Currently, the Overlays are displayed when most popups are displayed. However, there are still a few popups that do not trigger the overlays, such as the **Find In Files** popup, or the **Git Branches**, as this would be too intrusive for some users.
+
+But there are people that do not mind the overlays, and as such, this setting was added to allow those users to display the overlays in much more cases, such as the aforementioned examples, but also:
+- When **dropdowns** are opened
+- When **light popups** are opened
+- etc.
+
+{% include figure.html content="/screens/gitBranches.png" caption="Git Branch Overlays" %}
+
+{% include figure.html content="/screens/dropdownOverlays.png" caption="Dropdown Overlays" %}
+
+This setting is disabled by default to not get in the way of the users' workflow, but you can enable it in the **Material Theme > Features** settings.
+
+### Others
+
+- **Color Schemes**: Change the color of the *Identifier Under Caret* to be a shade of the Accent Color
+- **Color Schemes**: Change the default console font to _Hack_ with fallback to _JetBrains Mono_
+- **Color Schemes**: Add Prompt separator Color
+- Fix removal of underscore in the *Project Title Widget*
+- Fix display of *TypeScript Additions* settings page
+- Fix discrepancy between the *Editor Tabs* and *Tool Windows Tabs*
+- Color Schemes: Fix _Micronaut_ and _Angular Template_ background colors
+- Color Schemes: Fix _Angular Signals_ color
+- Color Schemes: Add a different color for *MongoDB properties*
+- Language Additions: Deprecate the _Severity Provider_ to use regular annotations again
+
+----
+
+## What's new in Material Theme UI v9.2.0
+
+### Use Original Tool Window Hover Buttons
+
+This feature is the result of a particular demand by some users to restore the original design of the tool windows buttons.
+
+As you may know, the plugin changed the look and feel of those buttons to look like the Material Design look and feel, by replacing them with a transparent circle of the accent color. However some users preferred the original look of the buttons, and as such, this feature was added to the plugin.
+
+{% include figure.html content="/screens/originalToolWindowButtons.png" caption="Original Tool Window Hover Buttons" %}
+
+### Other Bug fixes and improvements
+
+- **Java Additions**: Add `null` and `final` additions
+- Refactor the **Theme Selector** to improve performance and limit freezes
+- Fix the issue where buttons become spaced out when changing the **Custom Header Height** setting.
+- Adds back the _Selected Tool Window indicator_.
+- Fix the issue where the **Arrows Style** setting was disabled if the Atom Material Icons plugin was installed but
+  disabled.
+- Fix issue with large buttons
+- Fix issue with Toolbar icons unavailable on the free plan
+- Fix issue with File Color Gray
+- Fix _Custom Line Height_ setting not having any effect
+- Change default value of `Centered Editor` to false
+- Fix default button height
+- Fix custom line height not being applied
+
+----
+
+## What's new in Material Theme UI v9.1.0
+
+This version fixes a few problems with color schemes, as well as improves the onboarding screen for new users and also for migrating users to the version 9.0.0.
+
+### New On-boarding Screen
+
+If you've been using the plugin until now, chances are that you have your own configuration throughout the years.
+
+However, version 9.0.0 restructured how settings are kept, and as a result a migration is necessary to migrate the settings to the new format.
+
+To help existing users with that, a new onboarding screen has been added to the plugin, which will guide you through the migration process.
+
+{% include figure.html content="/screens/settingsv3/migrate.png" caption="Onboarding Screen" %}
+
+This screen will only show us once and will trigger the migration process.
+
+**Note**: You can still re-run the migration process manually through the `Actions > Material Theme Features > Migrate Settings`.
+
+
+### New Setting: Material Design Loading Icon
+
+This setting will return the old loading icon from Material Design, which was removed at some point in the past.
+
+{% include figure.html content="/screens/loader.png" caption="Material Design Loading Icon" %}
+
+**Note**: You will have to reset the IDE for the changes to take effect.
+
+
+### Other Bug fixes and improvements
+
+- **File Colors**: Set *Gray* as _Excluded Files_ color
+- **Overlays**: Fix overlays not being triggered on some cases
+- Prevent NPE on MTButton
+- Prevent NPE when the *Python* plugin is installed
+- **Color Schemes**: Add _New Terminal_ colors
+- **Color Schemes**: Add _JVM Logging_ colors
+- **Color Schemes**: Add _Tabs Scrollbar_ colors
+- **Color Schemes**: Add _Error Stripe_ colors on Searches
+
+----
+
 ## What's new in Material Theme UI v9.0.0
 
 Hello everyone, welcome for a new round of Material Theme UI updates. First, I would like to apologize for the lateness in updating the documentation since the latest version, this year has been very rough for me, but after long months of work, the new version is here, albeit still in its early phases, so bugs and performance issues can still be experienced at this point, but hopefully they will be less and less as time goes on.
@@ -13,7 +174,7 @@ So what's new in tow?
 
 ### New Settings
 
-The first thing you will notice is the new settings page. This is a complete overhaul of the settings page, which was long overdue. Since the beginning of the plugin, there has been only two settings overhauls, the last one going as far back as 2017 (!). Back then, the settings were organized into tabs, each tab responsible for a specific part of the plugin. 
+The first thing you will notice is the new settings page. This is a complete overhaul of the settings page, which was long overdue. Since the beginning of the plugin, there has been only two settings overhauls, the last one going as far back as 2017 (!). Back then, the settings were organized into tabs, each tab responsible for a specific part of the plugin.
 
 This was a good idea at the time, but as the plugin grew, so did the settings, and it started to become cramped in there, and it began being difficult to add more settings without breaking the UI.
 
@@ -37,7 +198,7 @@ Upon clicking migrate, your previous settings will be migrated to the new format
 
 ### Centered Editor
 
-Perhaps the most controversial of the changes, is a new feature called **Centered Editor**. When enabled, it centers the code in the middle of the editor, as opposed as tucked to the left. 
+Perhaps the most controversial of the changes, is a new feature called **Centered Editor**. When enabled, it centers the code in the middle of the editor, as opposed as tucked to the left.
 
 {% include figure.html content="/screens/centeredEditor.png" caption="Centered Editor" %}
 
@@ -59,7 +220,7 @@ Such options allow you to colorize not only the title bar, but the tool windows 
 
 {% include figure.html content="/screens/peacockMode.png" caption="Peacock Mode" %}
 
-Moreover, a new widget has been added on the Title Bar displaying the same contents of the Project Frame, that you can toggle ON or OFF according to your tastes. 
+Moreover, a new widget has been added on the Title Bar displaying the same contents of the Project Frame, that you can toggle ON or OFF according to your tastes.
 
 You can also select from a list of presets for your Title Bar widget. Maybe more will be added in the future!
 
@@ -101,7 +262,7 @@ The Theme Selector, previously only available inside the Wizard, is now availabl
 
 ### Contrast Settings
 
-The contrast settings are available in the `Material Theme UI > Contrast` page, just like before. 
+The contrast settings are available in the `Material Theme UI > Contrast` page, just like before.
 
 {% include figure.html content="/screens/settingsv3/contrastMode.png" caption="Contrast Settings" %}
 
@@ -115,7 +276,7 @@ Another highlight of that new version is the revamp of the Accent Mode.
 
 {% include figure.html content="/screens/settingsv3/accentMode.png" caption="Accent Mode" %}
 
-In the new Accent Mode, you will have much more options to control the look of the Accent Mode, 
+In the new Accent Mode, you will have much more options to control the look of the Accent Mode,
 such as the ability to add a second Accent Color, or to toggle which parts of the IDE you don't want to be affected by the Accent Color.
 
 ---

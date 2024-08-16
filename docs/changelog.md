@@ -16,6 +16,61 @@ next:
 # Changelog
 ----
 
+
+## 9.5.0
+
+### Features
+
+- Add Sticky Lines background to color scheme
+- New Feature: **Rounded Tabs**: Make tabs rounded (like in Google Chrome, or GitHub)
+
+### Fixes
+
+- Fix parameter colors in Color schemes
+- Fix performance issue when multiple settings are modified
+
+## 9.4.1
+
+### Fixes
+
+- Refactor locale management to support the new framework
+- Fix deprecations
+
+## 9.4.0
+
+### Fixes
+
+- Fix Cancel Button not working on Custom Theme Settings
+- Fix "Auto expanding" search and replace
+- Support for 2024.2
+
+## 9.3.0
+
+### Features
+
+- New Setting: **Custom Action Buttons Radius** — Customize the radius of action buttons (Premium only)
+- New Setting: **More Overlays** — Adds more popups that trigger overlays (Premium only)
+- **Color Schemes**: Change the color of the *Identifier Under Caret* to be a shade of the Accent Color
+- **Color Schemes**: Change the default console font to _Hack_ with fallback to _JetBrains Mono_
+- **Color Schemes**: Add Prompt separator Color
+
+### Fixes
+
+- Fix removal of underscore in the *Project Title Widget*
+- Fix display of *TypeScript Additions* settings page
+- Fix discrepancy between the *Editor Tabs* and *Tool Windows Tabs*
+- Color Schemes: Fix _Micronaut_ and _Angular Template_ background colors
+- Color Schemes: Fix _Angular Signals_ color
+- Color Schemes: Add a different color for *MongoDB properties*
+- Language Additions: Deprecate the _Severity Provider_ to use regular annotations again
+
+## 9.2.1
+
+### Fixes
+
+- Fix default button height
+- Fix custom line height not being applied
+
 ## 9.2.0
 
 ### Features
