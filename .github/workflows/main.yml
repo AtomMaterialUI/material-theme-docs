@@ -11,6 +11,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.1
 
+      - name: Generate the sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://www.material-theme.com
+      
+      - name: Output stats
+        run: |
+          echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+          echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+          echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.3
         with:
