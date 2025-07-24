@@ -16,6 +16,19 @@ next:
 # Changelog
 ----
 
+## 10.0.0
+
+### Features
+
+- New Premium Feature: **Theme Randomizer**: Randomize the theme every time you open the IDE.
+- New Premium Feature: **Islands Layout**: A new layout where the windows look like floating islands.
+- New Premium Feature: **Rounded Buttons**: Customize the radius of the buttons in the IDE.
+
+### Fixes
+
+- Added latest theme properties
+- Updated color schemes
+
 ## 9.8.1
 
 ### Features

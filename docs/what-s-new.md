@@ -7,6 +7,71 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.0.0
+
+After long months without updates, the Material Theme UI is proud to announce the release of version 10.0.0, which brings a few new features to the plugin.
+
+These features are reserved for premium users, but will be available to all for a limited time, so you can try them out, and because it is brand new, so it might contain bugs.
+
+### Theme Randomizer
+
+As the Material Theme UI contains quite a lot of themes, it can be challenging to choose one that fits your needs. This is why the plugin now comes with a **Theme Randomizer** feature, which will randomly switch the theme at a random interval of your choice.
+
+{% include figure.html content="/screens/randomizer.png" caption="Theme Randomizer" %}
+
+From these settings you can select the themes you want to include in the randomization, as well as the _interval_ at which the theme will be changed. You can also customize the _weight_ of the theme, e.g., the rate at which the theme will be selected. The less the number, the less likely the theme will be selected.
+
+Note: The randomizer will only switch between Dark or Light themes respectively. This means that if you are using a Dark theme, the randomizer will only switch between _Dark themes_, and the same for Light themes.
+{:class='card-panel warn'}
+
+Also, there's a new _Tool Window_ which will display the remaining time before the next theme change. This allows you to understand how long you have before it switches.
+
+{% include figure.html content="/screens/countdown.png" caption="Next Change countdown" %}
+
+Note: Changing anything in the settings will reset the countdown.
+{:class='card-panel warn'}
+
+### Islands Layout
+
+Since version 2025.2 JetBrains introduced a newer layout for the IDE, called **Islands Layout**. This layout, originally only present in Fleet, is now getting added to the main products, providing a more modern and flexible layout for the IDE.
+
+{% include figure.html content="/screens/islandsLayout.png" caption="Islands Layout" %}
+
+However, this new layout is only available for the new themes, **Single Island** and **Multiple Islands**. Other themes will still be using the current layout (but this might change in the future).
+
+In consequence, the Material Theme UI allows you to enable this layout for any other theme, all the while providing you with customization options for this layout.
+
+{% include figure.html content="/screens/islands.png" caption="Islands Layout" %}
+
+In the settings, you will find options that allow you to control the background color of the canvas, the spacing between the islands, the arc radius, and the gap between the islands and the tool windows.
+
+{% include figure.html content="/screens/islandsSettings.png" caption="Islands Settings" %}
+
+Moreover, associated with other features, you can be creative to have the *Islands Layout* the way you want it to be.
+
+For example, you can use the **Contrast Mode** for a better contrast between the islands.
+
+{% include figure.html content="/screens/contrastIslands.png" caption="Islands with Contrast Mode" %}
+
+You can also set a custom background color between the islands:
+
+{% include figure.html content="/screens/islandsBackground.png" caption="Islands with Background Color" %}
+
+Finally, you can also use the **Background Image** feature to set a custom background image for the background.
+
+{% include figure.html content="/screens/islandsWithImage.png" caption="Islands with Background Image" %}
+
+Note: This layout requires closing all projects when you change the settings.
+{:class='card-panel warn'}
+
+### Rounded Buttons
+
+A new setting has been added to the **UI Components**: **Rounded Buttons**. This setting will allow you to control the border radius of all buttons in the IDE, making them more rounded or less rounded, according to your tastes.
+
+{% include figure.html content="/screens/roundedButtons.png" caption="Rounded Buttons" %}
+
+----
+
 ## What's new in Material Theme UI v9.8.0
 
 ### Better Rounded Tabs
@@ -16,6 +81,8 @@ The **Rounded Tabs** setting has been improved to provide a better contrast betw
 Now the selected tab sports a border with the accent color, to make it more distinguishable from the unselected tabs. Moreover, the tabs use the highlight color on hover, to make it more prominent.
 
 {% include figure.html content="/screens/roundedTabsContrast.png" caption="Rounded Tabs" %}
+
+{% include figure.html content="/screens/withTabHighlighter.png" caption="Rounded Tabs with Tab Indicators" %}
 
 ### Fixes
 
