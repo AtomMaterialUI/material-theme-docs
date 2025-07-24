@@ -7,6 +7,43 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v9.8.0
+
+### Better Rounded Tabs
+
+The **Rounded Tabs** setting has been improved to provide a better contrast between the selected and unselected tabs.
+
+Now the selected tab sports a border with the accent color, to make it more distinguishable from the unselected tabs. Moreover, the tabs use the highlight color on hover, to make it more prominent.
+
+{% include figure.html content="/screens/roundedTabsContrast.png" caption="Rounded Tabs" %}
+
+### Fixes
+
+- Fix the title bar colors seeping out of the _Left_ and _Right_ tool windows.
+- Fix specific comboboxes' issue where the arrows and the combobox were overlapping.
+- Make the **Tab Separators** more visible.
+
+----
+
+## What's new in Material Theme UI v9.7.0
+
+This version fixes a list of long-standing issues, as well as some new features.
+
+### Use Editor Global Font for the Console
+
+The **Use Editor Global Font** setting now allows you to set the Global Font for the Console as well.
+
+### Other Fixes
+
+This version also includes it's set of bug fixes and improvements:
+
+- Fix the theme not being applied at start in some cases
+- Fix the **Uppercase Tabs** setting not being applied
+- Fix the freezing on the IDE when changing multiple settings at once
+- Removes a bunch of internal uses to be compliant with the new JetBrains guidelines
+
+----
+
 ## What's new in Material Theme UI v9.5.0
 
 Yet another small update but with some new features worth checking.

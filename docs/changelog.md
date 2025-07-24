@@ -16,6 +16,39 @@ next:
 # Changelog
 ----
 
+## 9.8.1
+
+### Features
+
+- Improved the _Rounded Tabs_ to be more like Fleet
+
+### Fixes
+
+- Fix title bar colors seeping out of the _Left_ and _Right_ Tool windows
+- Fix specific comboboxes' issue where the arrows and the renderer were overlapping
+- Increase _Tab Separators'_ contrast
+
+## 9.8.0
+
+### Fixes
+
+- Support for 2025.1
+- Remove deprecations
+
+## 9.7.0
+
+### Features
+
+- The setting "Use Editor Global Font" now applies to the *Console Font* as well.
+
+### Fixes
+
+- Fix theme not being loaded at start
+- Fix **Uppercase tabs**
+- Fix IDE freezing upon saving multiple settings pages
+- Fix deprecated code
+- Remove a lot of internal uses to be compliant with JetBrains guidelines.
+- Other fixes and improvements.
 
 ## 9.5.0
 
