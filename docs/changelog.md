@@ -16,6 +16,22 @@ next:
 # Changelog
 ----
 
+## 10.1.0
+
+### Features
+
+- Enhanced **Theme Randomizer**: Improved theme selection with a shuffle functionality that:
+  - Prevents the same theme from appearing consecutively
+  - Considers theme weights for frequency of appearance
+  - Displays upcoming themes in the tool window
+  - Adds next/previous/shuffle theme buttons for manual navigation
+
+### Fixes
+
+- **Theme Randomizer**: Fix unability to uncheck themes in the settings
+- **Theme Randomizer**: Fix unability to change the weight
+- **Theme Randomizer**: Non Material Themes are not switched over
+
 ## 10.0.0
 
 ### Features
