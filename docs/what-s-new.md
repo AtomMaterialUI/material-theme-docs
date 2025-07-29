@@ -7,6 +7,22 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.1.0
+
+This version focuses on issues related to the **Theme Randomizer** feature.
+
+### Favorite Themes Playlist
+
+The previous implementation of the randomizer was a bit too naive and didn't produce the right results. It would give the same theme over and over, prevents you from selecting non material themes, you can't disable specific themes, etc.
+
+As a result, the whole feature has been reworked to a different approach: **Favorite Themes Playlist**.
+
+In this implementation, rather than selecting a theme at random, the plugin will instead generate a "playlist" of themes from the selected favorite themes, and will switch to the next theme in the playlist at the specified interval, like a music playlist.
+
+{% include figure.html content="/screens/randomizerPlaylist.png" caption="Theme Randomizer Playlist" %}
+
+This playlist will be displayed in the tool window that was used to display the next theme countdown. It will display the current selected theme, as well as buttons to switch to the next or previous theme in the playlist. There is also a button to shuffle the playlist manually.
+
 ## What's new in Material Theme UI v10.0.0
 
 After long months without updates, the Material Theme UI is proud to announce the release of version 10.0.0, which brings a few new features to the plugin.
