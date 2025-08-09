@@ -7,6 +7,29 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.2.0
+
+This version fixes issues related to the **Theme Randomizer** feature, as well as many other issues that were reported by the community.
+
+### Custom Active Tab
+
+A new setting has been added to the **Tabs Settings** to allow customizing the active tab background color. This is done natively from the **Color Scheme General Colors** settings, but the plugin was overriding this behavior to provide its own colorization.
+
+From now on, you can again customize the colors from the Color Scheme, as long as you have the setting enabled.
+
+### Fixes
+
+- Fix an issue where selecting the first theme in the _Theme Randomizer_ freezes the IDE (hopefully)
+- Constraint the icon size in the _Theme Randomizer_ tables to 16x16.
+- __Rounded Tabs__: Change the selected tab color to a transparent accent color, to mimic the new Islands Design's tabs.
+- __Rounded Tabs__: Add a subtle border to inactive tabs, to make them more distinguishable.
+- __Accent Mode__: Make the active tab use the *Accent Color* instead of the usual *Background Color*
+- __Islands Layout__: Change the default settings to make the islands more spaced with each other.
+- __Outline Buttons__: Fix the shape of the focused buttons outline when a custom _Button Radius_ is set.
+- __Plugins__: [#579] _GitHub Copilot Chat Window_ style is now correctly indented.
+- __Plugins__: [#568] [#580] Fix Gemini and Junie plugins not being able to load when *Compact Menus* is enabled
+
+
 ## What's new in Material Theme UI v10.1.0
 
 This version focuses on issues related to the **Theme Randomizer** feature.
