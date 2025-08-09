@@ -16,6 +16,24 @@ next:
 # Changelog
 ----
 
+## 10.2.0
+
+### Features
+
+- **Custom Active Tab**: Allows you to customize the Active Tab Colors from the _Color Scheme General Colors_
+
+### Fixes
+
+- Trying to fix the freezing issue when selecting the first theme in the randomizer
+- Fix the icon size in the _Theme Randomizer_ tables
+- _Rounded Tabs_: Make the selection color more transparent
+- _Accent Mode_: Now the selected tab has the accent color
+- _Rounded Tabs_: Add a border to the inactive tabs
+- _Islands_: Change default insets to be more suited to defaults
+- Fix focused buttons outline
+- Fix the HTML rendering for GitHub Copilot Chat and co.
+- Fix Gemini and Junie plugins not being able to load when *Compact Menus* is enabled
+
 ## 10.1.0
 
 ### Features
