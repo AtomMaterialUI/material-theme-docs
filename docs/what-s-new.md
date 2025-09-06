@@ -7,6 +7,30 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.3.0
+
+### Rounded Tabs Opacity
+
+You can now customize the opacity of the rounded tabs.
+
+{% include figure.html content="/screens/roundedTabsSettings.png" caption="Rounded Tabs Opacity Settings" %}
+
+In addition, tabs using custom *File Colors* are now more opaque, providing a better visualization.
+
+### Sub-Project support in Project Title Frame
+
+A new pattern has been added to the **Project Title Frame**, `{subProject}` to reference a different sub-project when running in a **multi-project** setup.
+
+{% include figure.html content="/screens/subProject.png" caption="Sub-Project support in Project Title Frame" %}
+
+> Note: Multi-project setups are available for all IDEs except IntelliJ IDEA, Rider and Android Studio. They are allowing you to open multiple projects in the same window, using the "Attach Project" feature at `File > Attach Project`.
+
+### Fixes
+
+This version also fixes the issue of the *Theme Randomizer* not persisting the disabled themes across restarts.
+
+----
+
 ## What's new in Material Theme UI v10.2.0
 
 This version fixes issues related to the **Theme Randomizer** feature, as well as many other issues that were reported by the community.

@@ -16,6 +16,23 @@ next:
 # Changelog
 ----
 
+## 10.3.0
+
+### Features
+
+- **Rounded Tabs Opacity**: Customize the opacity of the rounded tabs background
+- **Project Frame**: Add a new custom pattern: `{subProject}` to refer to the current sub-project in a multi-projects setup.
+
+### Fixes
+
+- Fix the *Theme Randomizer* not persisting disabled themes and weights
+- Change the default opacity of tabs with custom file colors
+
+### Other
+
+- Stop showing the *Sharing Stats*, *Install Atom Plugin* and *Auto-Reset Color Scheme* notifications at the first install.
+
+
 ## 10.2.0
 
 ### Features
