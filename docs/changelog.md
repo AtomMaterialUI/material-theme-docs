@@ -16,6 +16,25 @@ next:
 # Changelog
 ----
 
+## 10.4.0
+
+### Features
+
+- Add a button in the **Favorite Themes Shuffle** tool window to disable themes on the fly.
+
+### Fixes
+
+- Fix the wrong identifier for the _Islands_ Plugin
+- Prevent a crash when selecting the first theme in the randomizer
+- Change the color of the identifier under caret to be consistent with the other identifiers
+- Better support for the _Compact Mode_
+
+## 10.3.1
+
+### Fixes
+
+- Fix again the issue with persisting Favorite Themes.
+
 ## 10.3.0
 
 ### Features
