@@ -7,6 +7,24 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.4.0
+
+## Disable Favorite Themes on the fly
+
+A new button has been added to the **Favorite Themes Shuffle** tool window, to allow you to disable the selected theme on the fly, rather than having to open the settings to disable them.
+
+{% include figure.html content="/screens/disableThemes.png" caption="Disable Themes on the fly" %}
+
+## Other Fixes
+
+- Fix again the issue with persisting Favorite Themes.
+- Fix the wrong identifier for the _Islands_ Plugin
+- Prevent a crash when selecting the first theme in the randomizer
+- Change the color of the identifier under caret to be consistent with the other identifiers
+- Better support for the _Compact Mode_
+
+----
+
 ## What's new in Material Theme UI v10.3.0
 
 ### Rounded Tabs Opacity
