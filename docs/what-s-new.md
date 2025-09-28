@@ -7,6 +7,19 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.4.1
+
+### Features
+
+- Add a setting to the **Islands** to control the opacity of inactive windows
+- Touch up the appearance of the *Islands layout'* tabs to be similar to the rounded tabs
+
+### Fixes
+
+- Fix the **Islands Border Insets** settings
+- Adapt the plugin to the new *Tab Painter* when the Islands layout is enabled
+- Remove the confirmation for closing projects
+
 ## What's new in Material Theme UI v10.4.0
 
 ## Disable Favorite Themes on the fly

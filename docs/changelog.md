@@ -16,6 +16,25 @@ next:
 # Changelog
 ----
 
+## 10.4.1
+
+### Features
+
+- Add a setting to the **Islands** to control the opacity of inactive windows
+- Touch up the appearance of the *Islands layout'* tabs to be similar to the rounded tabs
+
+### Fixes
+
+- Fix the **Islands Border Insets** settings
+- Adapt the plugin to the new *Tab Painter* when the Islands layout is enabled
+- Remove the confirmation for closing projects
+
+### Other
+
+- Migrated **Material Design Components** to Kotlin
+- Fix some deprecations triggered by the Verification Tool
+
+
 ## 10.4.0
 
 ### Features
