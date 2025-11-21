@@ -7,6 +7,30 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.5.0
+
+### Features
+
+#### New Options for the Project Title Frame:
+
+- Customize Width and Height of the Stripe
+- Customize Font and Font Size
+- New Macro: `{fileIcon}`: now you can display the file icon in the _Project Title Frame_.
+
+{% include figure.html content="/screens/projectTitleTweaks.png" caption="Project Title Bar Customizations" %}
+
+#### Islands Layout's improvements
+
+- Use the native Islands background for the *Application Frame* when all title options are off.
+- Hide tool window borders when the *Islands* mode is enabled
+
+### Fixes
+
+- Fix asynchronous issue for the `{modulePath}` and `{subProject}` macros
+- Add new UI properties, such as the _Alert Dialogs_
+
+----
+
 ## What's new in Material Theme UI v10.4.1
 
 ### Features
