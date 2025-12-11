@@ -16,6 +16,15 @@ next:
 # Changelog
 ----
 
+## 10.6.0
+
+### Fixes
+
+- Make the _Islands_ layout available to the free plan
+- Fix the `{{fileIcon}}` to return the actual file icon
+- *Experimental*: Provide a custom solution to paint a gradient on the _Project Title Frame_
+
+
 ## 10.5.0
 
 ### Features
