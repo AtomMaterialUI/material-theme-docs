@@ -7,6 +7,16 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.6.0
+
+### Fixes
+
+- Make the _Islands_ layout available to the free plan
+- Fix the `{{fileIcon}}` to return the actual file icon
+- *Experimental*: Provide a custom solution to paint a gradient on the _Project Title Frame_
+
+----
+
 ## What's new in Material Theme UI v10.5.0
 
 ### Features
