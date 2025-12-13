@@ -16,6 +16,21 @@ next:
 # Changelog
 ----
 
+## 10.7.0
+
+### Features
+
+- Improve **Islands** layout to follow the official guidelines:
+    - Main Window background is now merged with the stripes and status bar colors
+    - The Tabbed Pane is now using the same colors as the tool windows
+    - Inherit the **Main Window Gradient** when the Title Bar, Tool Windows and Status Bar are not colorized.
+- Add more settings to the **Islands Layout**:
+    - **Contrast Mode**: Make the background color lighter, to differentiate it from the tool windows and the editor.
+    - **Custom Background Color**: Specify your own background color
+    - **Border**: Add a slight border on the islands
+    - **Custom Border Color**: Specify your own border color
+- Better integration with the **Project Title Frame**
+
 ## 10.6.0
 
 ### Fixes

@@ -7,6 +7,46 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.7.0
+
+This version focuses on improving the **Islands** layout to look more like the original design, and its integration with the _Project Title Frame_.
+
+### Islands Layout improvements
+
+This version brings a refurbished version of the _Islands Layout_, following the official guidelines:
+- The background color is now inherited from the main frame.
+- The tool window stripes are also inherited from the main frame.
+- The tabs are using the same color as the islands' background color.
+- A slight border has been added to help distinguish the islands.
+
+For that purpose, a few settings have been added to the _Islands Settings_:
+- **Contrast Mode**: Set a lighter background color for the main window, contrasting with the islands and the editor
+- **Custom Background**: Same as before, set your own background color
+- **Border Color**: Set a border color for the islands
+- **Custom Border Color**: Specify your own border color
+
+### Project Title Frame Integration
+
+In addition, the _Project Title Frame_ is now integrated with the _Islands Layout_ by inheriting the background color from the main frame as well. The previous experimental solution was not working properly, therefore it has been removed in favor of this new solution.
+
+### Screenshots:
+
+{% include figure.html content="/screens/islandsV2.png" caption="New Islands Layout" %}
+
+{% include figure.html content="/screens/withProjectFrame.png" caption="With Project Title Frame" %}
+
+{% include figure.html content="/screens/islandsContrast.png" caption="Contrast Mode" %}
+
+{% include figure.html content="/screens/customBackground.png" caption="Custom Background" %}
+
+{% include figure.html content="/screens/withColorizedTitle.png" caption="With Colorized Title Bar" %}
+
+{% include figure.html content="/screens/withBorder.png" caption="With Border" %}
+
+{% include figure.html content="/screens/withCustomBorder.png" caption="With Custom Border" %}
+
+----
+
 ## What's new in Material Theme UI v10.6.0
 
 ### Fixes
@@ -86,7 +126,7 @@ In addition, tabs using custom *File Colors* are now more opaque, providing a be
 
 A new pattern has been added to the **Project Title Frame**, `{subProject}` to reference a different sub-project when running in a **multi-project** setup.
 
-{% include figure.html content="/screens/subProject.png" caption="Sub-Project support in Project Title Frame" %}
+{% include figure.html content="/screens/subproject.png" caption="Sub-Project support in Project Title Frame" %}
 
 > Note: Multi-project setups are available for all IDEs except IntelliJ IDEA, Rider and Android Studio. They are allowing you to open multiple projects in the same window, using the "Attach Project" feature at `File > Attach Project`.
 
