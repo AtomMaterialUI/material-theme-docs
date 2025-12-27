@@ -16,6 +16,27 @@ next:
 # Changelog
 ----
 
+
+## 10.7.1
+
+### Features
+
+- Add option to control the size of the _Rounded Tabs_ border
+- Open **Rounded Tabs** option to Free Users
+
+### Fixes
+
+- Fix issue where changing themes would place the Title Frame on the left
+- Fix issue where changing themes would change the Stripe Tool Windows Color
+- Experiment: Changing the ways _External Themes_ are loaded
+
+### Other
+
+- Add Islands Settings to the _Wizard_
+- Add _Borderless Mode_ to the _Wizard_
+
+----
+
 ## 10.7.0
 
 ### Features
