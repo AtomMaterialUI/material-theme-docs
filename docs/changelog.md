@@ -16,7 +16,6 @@ next:
 # Changelog
 ----
 
-
 ## 10.7.1
 
 ### Features
@@ -28,11 +27,13 @@ next:
 
 - Fix issue where changing themes would place the Title Frame on the left
 - Fix issue where changing themes would change the Stripe Tool Windows Color
-- Experiment: Changing the ways _External Themes_ are loaded
+- Fix conflict between _Centered Editor_ and _Distraction Free Mode_
+- Experiment: Change the way _External Themes_ are loaded in order to blend better in the _Islands_ layout
+- Experiment: Remove scaling, trying to fix issues with Zoom Level != 100
 
 ### Other
 
-- Add Islands Settings to the _Wizard_
+- Add _Islands Settings_ to the _Wizard_
 - Add _Borderless Mode_ to the _Wizard_
 
 ----
