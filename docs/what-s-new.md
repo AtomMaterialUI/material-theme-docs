@@ -7,27 +7,48 @@ toc: true
 
 ----
 
-## What's new in Material Theme UI v10.7.1
+## What's new in Material Theme UI v10.8.0
 
-## 10.7.1
+This version opens the **Rounded Tabs** feature to all users, an option to control the size of the rounded tabs border, and brings the **Material Wallpaper** feature to external themes.
 
-### Features
+### Material Wallpaper for all themes
 
-- Add option to control the size of the _Rounded Tabs_ border
-- Open **Rounded Tabs** option to Free Users
+The **Material Wallpaper** feature is now available for all themes, not only the bundled Material Themes. This was done by generating the wallpaper from the theme's colors on the fly, rather than using a pre-defined image.
 
-### Fixes
+Examples from a few themes from the Marketplace:
 
-- Fix issue where changing themes would place the Title Frame on the left
-- Fix issue where changing themes would change the Stripe Tool Windows Color
-- Fix conflict between _Centered Editor_ and _Distraction Free Mode_
-- Experiment: Change the way _External Themes_ are loaded in order to blend better in the _Islands_ layout
-- Experiment: Remove scaling, trying to fix issues with Zoom Level != 100
+{% include figure.html content="/screens/wallpapers/darkviolet.png" caption="Relax Dark Violet Wallpaper" %}
 
-### Other
+{% include figure.html content="/screens/wallpapers/onedark.png" caption="One Dark Islands Wallpaper" %}
 
-- Add _Islands Settings_ to the _Wizard_
-- Add _Borderless Mode_ to the _Wizard_
+{% include figure.html content="/screens/wallpapers/sakura2.png" caption="Sakura Wallpaper" %}
+
+{% include figure.html content="/screens/wallpapers/shades.png" caption="Shades Of Purple Wallpaper" %}
+
+**Note**: Enabling Wallpapers will prevent the **gradients** from being displayed on the Application Frame in the new Islands Layout!
+{:class='card-panel warn'}
+
+----
+
+### Rounded Tabs Settings
+
+Another option is the ability to control the size of the border for the Rounded Tabs.
+
+{% include figure.html content="/screens/minSize.png" caption="Min Size (1)" %}
+
+{% include figure.html content="/screens/maxSize.png" caption="Max Size (4)" %}
+
+----
+
+### Other Fixes
+
+Aside from these new features, we tried to fix a few issues related to the new Islands Layout to make it blend it better with external themes. 
+
+We also fixed the issue with the __Project Title Frame__ that was stuck to the left upon switching themes.
+
+We hope you enjoy the new version!
+
+Happy coding!
 
 ----
 
