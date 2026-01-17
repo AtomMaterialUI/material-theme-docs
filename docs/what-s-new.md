@@ -15,7 +15,7 @@ New year, new version! This version fixes a few issues related to the **Theme Ra
 
 A new feature has been added to the **UI Components** settings, **Custom Search Everywhere**, allowing you to customize the UI of the search everywhere popup. 
 
-{% include figure.html content="/screens/largerSearchEverywhere" caption="Larger Search Everywhere" %}
+{% include figure.html content="/screens/largerSearch.png" caption="Larger Search Everywhere" %}
 
 This feature is available in the Free plan, but further customization is only available in the Premium plan:
 - Custom padding
