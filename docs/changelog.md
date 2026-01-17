@@ -16,6 +16,29 @@ next:
 # Changelog
 ----
 
+## 10.9.0
+
+### Features
+
+- New Setting: **Customize Search Everywhere**! (Free feature)
+    - Make the Search Everywhere larger, in accordance with Material Style.
+    - Premium Users can customize the padding and the font size delta.
+- **Enable Tab Customization** setting: Allows disabling the customization of tabs altogether.
+
+### Fixes
+
+- Fix some freezes when trying to select a theme in the randomizer.
+- Fix the **Theme Selector** settings page not persisting the theme on restart
+- Make the **Rounded Tabs** smoother with antialiasing
+- Fix the **Tab Highlight Position** settings being selectable while on the free plan.
+- Remove deprecated keys
+
+### Other
+
+- Add screenshots inside Settings to help users understand the settings better.
+
+----
+
 ## 10.8.0
 
 ### Features
