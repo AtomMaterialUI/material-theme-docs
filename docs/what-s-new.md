@@ -7,6 +7,31 @@ toc: true
 
 ----
 
+## What's new in Material Theme UI v10.9.0
+
+New year, new version! This version fixes a few issues related to the **Theme Randomizer** and the **Rounded Tabs**, as well as a new feature: **Custom Search Everywhere**, allowing you to customize the search everywhere popup.
+
+### Customize Search Everywhere
+
+A new feature has been added to the **UI Components** settings, **Custom Search Everywhere**, allowing you to customize the UI of the search everywhere popup. 
+
+{% include figure.html content="/screens/largerSearch.png" caption="Larger Search Everywhere" %}
+
+This feature is available in the Free plan, but further customization is only available in the Premium plan:
+- Custom padding
+- Custom font size
+
+### Other Fixes and Improvements
+
+- Fix some freezes when trying to select a theme in the randomizer.
+- Add screenshots inside Settings to help users understand the settings better.
+- **Enable Tab Customization** setting: Allows disabling the customization of tabs altogether.
+- Fix the **Theme Selector** settings page not persisting the theme on restart
+- Make the **Rounded Tabs** smoother with antialiasing
+- Fix the **Tab Highlight Position** settings being selectable while on the free plan.
+
+----
+
 ## What's new in Material Theme UI v10.8.0
 
 This version opens the **Rounded Tabs** feature to all users, an option to control the size of the rounded tabs border, and brings the **Material Wallpaper** feature to external themes.
