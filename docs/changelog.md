@@ -16,6 +16,19 @@ next:
 # Changelog
 ----
 
+## 10.10.0
+
+### Features
+
+- New Setting: **Rounded Tabs Padding** and **Rounded Tabs Radius** gives you more personalization to the Rounded Tabs feature.
+
+### Fixes
+
+- Restore disabled screenshots after introducing a new images domain.
+- Fix issue with tool windows opacity not being applied correctly.
+
+----
+
 ## 10.9.0
 
 ### Features
