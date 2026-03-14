@@ -52,7 +52,7 @@ Choose a custom color to be used as the secondary accent color. The second accen
 
 When enabled, Accent Mode can override specific color scheme settings, such as the **Active Tab Color**, to ensure consistency across the UI. This allows the accent color to be applied to elements that are usually controlled by the editor's color scheme.
 
-{% include figure.html content="/screesn/accentMode/overrideColorScheme.png" caption="Override Color Scheme" %}
+{% include figure.html content="/screens/accentMode/overrideColorScheme.png" caption="Override Color Scheme" %}
 
 Important Note: This setting forcefully overrides the color scheme, meaning that once it is activated, it will not be possible to revert back to the original color scheme. Moreover, even turning off Accent Mode will not restore the original color scheme, as the override is applied at a global level. Use this option with caution.
 {:class='card-panel warn'}
