@@ -28,18 +28,14 @@ The plugin manager usually contains stable releases that made it through testing
 Steps:
 
 1. Open Settings/Preferences (Windows/Linux: `Ctrl-S`, Mac: `Cmd-,`)
-2. On the left, select **Plugins**
-3. Click on the button `Browse repositories`
-4. In the search field, type `Material Theme`
-5. Double-click `Material Theme UI` to install it. You can also decide to install `Atom Material Icons` to get the icons' customization feature.
-6. Click the `OK` button and restart the IDE.
-
-<img src="/img/screens/listplugin.png" alt="Plugins List">
+2. On the left, select or search for **Plugins**
+3. In the search field, type `Material Theme`
+4. Install the `Material Theme UI` plugin
+5. Click the `OK` button and restart the IDE.
 
 ### Manual installation
 
-If, for some reason, you don't want to use the plugin repository, or if you want to run your fork of the plugin, you can
-decide to install it manually.
+You can also install the plugin manually:
 
 <a href="https://plugins.jetbrains.com/plugin/8006-material-theme-ui">
   <button class="btn">Download <icon class="fa fa-download"></icon></button>
@@ -47,24 +43,26 @@ decide to install it manually.
 
 Steps:
 
-1. Select the version you want to install. Please note the _Compatible Builds_ column to ensure that your IDE is compatible with the selected version.
-2. Download the zip archive of the plugin.
+1. Go to the [plugin page](https://plugins.jetbrains.com/plugin/8006-material-theme-ui)
+2. Go to the **Download** section and download the latest version of the plugin as a zip file.
 3. Open Plugins settings (`Preferences → Plugins`)
-4. Instead of selecting `Browse repositories`, select **Install plugin from disk** and select the zip file.
+4. Click on the "more" button and select **Install plugin from disk** and select the zip file.
 5. Click OK and restart the IDE.
 
 ----
 
 ## Usage
 
-Once the plugin is installed, you should immediately notice that the color of your IDE changed to a nice oceanic blue
-color!
-But the Material Theme Plugin is much more than that.
+Congratulations! You've just installed the Material Theme plugin.
+
+If that's your first time using the plugin, you'll get greeted with a nice wizard to help you get started.
+
+{% include figure.html content="/screens/wizard.png" caption="Material Theme Wizard" %}
 
 ### Setting the color scheme
 
 The first thing to set is to change the color scheme to fit your current _UI Theme_. It's usually done automatically
-when selecting a theme, but if it doesn't for some reason, here's how you do it:
+when selecting a theme, but you can also decide to assign a different color scheme.
 
 To do so, open the `Quick Switch Panel` by typing `Ctrl + ``/Cmd + ~` and select `Color Scheme`.
 Alongside the color schemes provided by the IDE, and your own custom color schemes, you should find the color schemes provided by the
@@ -94,8 +92,7 @@ plugin:
 - {{theme.name}}
   {% endfor %}
 
-These schemes are adapted to the UI Theme of the same name, plus, for Atom One Dark, a complete port of the original
-[Atom One Dark](https://github.com/atom/one-dark-syntax) color scheme.
+These schemes are adapted to the UI Theme of the same name.
 
 You can see more in the [Color Schemes](/docs/configuration/color-schemes) section.
 
@@ -105,10 +102,6 @@ The plugin also comes with a bunch of configurable settings to suit all flavors.
 There you can turn off certain features, change the sizes, appearance of the elements and colors, etc.
 
 These settings are found inside `Settings → Appearance and Behavior → Material Theme`.
-
-{% include figure.html content="/screens/settings.png" caption="Material Theme Settings V1" %}
-
-{% include figure.html content="/screens/settingsV2.png" caption="Material Theme Settings V2" %}
 
 Check [Settings](/docs/configuration/settings) for more info.
 
@@ -124,30 +117,6 @@ These action groups are found in:
 {% include figure.html content="/screens/toolbar.png" caption="Material Theme Toolbar" %}
 
 Check [Actions](/docs/configuration/quick-actions-panel) for more info
-
-## Supported versions
-
-The plugin is supported on all IDEs, but because of changes of the SDK specific versions are available only on the latest builds:
-
-- IDE versions 2016.X and lower > up until version `0.2.3`
-- IDE versions 2017.1-2 > up until version `0.10.6`
-- IDE versions 2017.3+ > up until version `1.6.0.4`
-- IDE versions 2018.1 > from version `1.7.0` up to `2.4.0`
-- IDE versions 2018.2 > from version `2.4.0-2018.2` up to `3.1.0`
-- IDE versions 2018.3 > from version `3.1.0` up to `3.4.2`
-- IDE versions 2019.1 > from version `3.5.0` up to `3.9.3`
-- IDE versions 2019.2 > from version `4.0.0` up to `4.4.0`
-- IDE versions 2019.2.1 > from version `4.4.0` up to `4.5.1`
-- IDE versions 2019.3 > from version `4.6.0` up to `4.11.0`
-- IDE versions 2020.1 > from version `4.11.0`
-- IDE versions 2020.2 > from version `5.3.0`
-- IDE versions 2020.3 > from version `5.6.0` up to `5.7.0`
-- IDE versions 2021.1 > from version `6.0.0` up to `6.7.0`
-- IDE versions 2021.2 > from version `6.8.0`
-- IDE versions 2021.3 > from version `6.11.0`
-- IDE versions 2022.1 > from version `7.0.0` up to `7.5.2`
-- IDE versions 2022.2 > from version `7.6.0` up to `7.11.0`
-- IDE versions 2022.3 > from version `8.0.0`
 
 ## Premium Support
 
