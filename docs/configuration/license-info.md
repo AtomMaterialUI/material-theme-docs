@@ -32,6 +32,10 @@ The following information is available on this page:
 - **Account Information**: Details of the account associated with the license.
 - **Expiration Date**: The date when your current subscription or evaluation period ends.
 
+If you're on the free plan, this page will also provide a link to purchase a premium subscription.
+
+{% include figure.html content="/screens/license/freeVersion.png" caption="Free Version" %}
+
 ------
 
 ## Subscription Models
@@ -61,3 +65,15 @@ Purchased add-on plugins are also listed on the License Information page.
 
 **Note**: If you already have a **Premium** subscription, purchasing these individual add-on plugins is unnecessary, as all features are already included.
 {:class='card-panel warn'}
+
+## Activate License
+
+Normally, once you purchase a license, when you start the IDE you'll get prompted with the dialog to Manage Subscriptions. If you don't get the prompt, you can always go to `Help -> Manage Subscriptions` to activate your license.
+
+{% include figure.html content="/screens/license/manageSubscriptions.png" caption="Manage Subscriptions" %}
+
+You can also open the *Material Theme Toolbar* and select **Activate License** to prompt the dialog.
+
+{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
+
+If you have any issues activating your license, please [contact support.](/docs/support-us/)

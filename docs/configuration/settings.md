@@ -519,8 +519,8 @@ However, it should be as close as possible without causing critical issues. If y
 
 **A**: This indicates that your license has not yet been activated. To activate it, run the action to open the _Registration Modal_.
 
-{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
 
-{% include figure.html content="/screens/license.png" caption="License" %}
+{% include figure.html content="/screens/license/manageSubscriptions.png" caption="License" %}
 
 **Important note**: Android Studio users must install the [JetBrains Marketplace Licensing Support](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) plugin to activate the Material Theme UI (or any other paid plugin).

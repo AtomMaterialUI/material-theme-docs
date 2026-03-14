@@ -75,9 +75,9 @@ In that case, please report to the repository's issues.
 
 **A**: That means that you haven't activated your license yet. At the moment, the only way to do it's to run the action to open the _Registration Modal_.
 
-{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
 
-{% include figure.html content="/screens/license.png" caption="License" %}
+{% include figure.html content="/screens/license/manageSubscriptions.png" caption="License" %}
 
 **Important note**: Android Studio users, in order to activate the plugin (or any paid plugin),
 you need to install a plugin first:<https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support>.
@@ -213,9 +213,9 @@ The only way to do so would be to restore the color scheme.
 
 **A**: That means that you haven't activated your license yet. At the moment, the only way to do it would be to run the action to open the _Registration Modal_.
 
-{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
 
-{% include figure.html content="/screens/license.png" caption="License" %}
+{% include figure.html content="/screens/license/manageSubscriptions.png" caption="License" %}
 
 **Important note**: Android Studio users, in order to activate the plugin (or any paid plugin), you need to install a plugin
 first: <https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support>.
