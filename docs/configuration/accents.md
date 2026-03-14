@@ -106,16 +106,21 @@ Here is a non-exhaustive list of components where accent color is used:
 
 ## Customization
 
-There are two ways of customizing the current accent color:
+There are many ways to select an accent color:
 
-- By selecting a color from the list of available colors
-- By setting a custom color in the settings
+**Material Theme Toolbar**:
 
-### Accent color chooser
+{% include figure.html content="/screens/accents/accentChooser.png" caption="Material Toolbar Accent Chooser" %}
 
-A list of predefined accent colors is available in the `Material Config Toolbar`. These are colors frequently used from the Material Design color palette.
+**Status Bar Accent Color Widget**:
 
-{% include figure.html content="/screens/accentChooser.png" caption="Accent Chooser" %}
+{% include figure.html content="/screens/accents/statusAccentChooser.png" caption="Status Bar Accent Chooser" %}
+
+**From The Settings**:
+
+{% include figure.html content="/screens/settingsv3/accentColors.png" caption="Accent Color Settings" %}
+
+### Predefined accent colors
 
 Here is the list of predefined colors:
 
@@ -125,17 +130,18 @@ Here is the list of predefined colors:
 
 ### Custom accent color
 
-You can customize the accent color from the settings. Even when you choose a predefined color, you will see its value inside the settings.
+By default, the accent color is taken from the theme itself. For Material Themes, it is a specific property of the theme, but for external themes it is taken from the `Link.activeForeground` property.
 
-{% include figure.html content="/screens/customAccentColor.png" caption="Custom Accent Color" %}
+You can also decide to use your own accent color by unchecking the `Override Accent Color from Theme` checkbox.
 
-### Override Accent Color
+### Accent Color Preview
 
-Starting from version 2.6.0, there is the possibility to override the custom accent color with the default one bundled with the theme.
-For instance, for _Material Oceanic_, the accent color will be `teal` while for _Darker_ it will be `orange`, etc.
+If you want to know how the accent will look like, you can use the `Preview` section of the Settings Page
 
-This is especially useful for external themes, so that Theme designers can provide their own accent color.
+{% include figure.html content="/screens/accents/accentPreview.png" caption="Accent Preview" %}
 
 ## Gallery
+
+Note: These images are dating from the first versions of the plugin. As the plugin evolved, there is a high chance that these images are outdated. Nevertheless, you can navigate the `UI DSL Showcase` settings screen to see the preview in real-time.
 
 {% include gallery_lightbox.html %}

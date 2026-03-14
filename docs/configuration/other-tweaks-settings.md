@@ -148,7 +148,7 @@ It sports the current accent color, and displays the list of available predefine
 
 {% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widgets" %}
 
-{% include figure.html content="/screens/accentColorWidget.png" caption="Accent Color Widget" %}
+{% include figure.html content="/screens/accents/accentColorWidget.png" caption="Accent Color Widget" %}
 
 </div>
 
