@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/settings'
   title: Settings
 next:
-  url: '/docs/configuration/main-settings'
-  title: Main Settings
+  url: '/docs/configuration/license-info'
+  title: License Information
 ---
 
 The plugin includes a variety of color schemes optimized for Material Themes, providing a flat, 

@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/main-settings'
-  title: Main Settings
+  url: '/docs/configuration/license-info'
+  title: License Information
 next:
   url: '/docs/configuration/compact-settings'
   title: Compact Settings
