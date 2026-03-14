@@ -51,7 +51,7 @@ There are many ways to invoke the *Theme Switcher*:
 - From the `Quick Switch` panel <kbd>(Ctrl + \`)</kbd> (Windows: <kbd>Ctrl + ~</kbd>)`
 - From the `Status Bar Widget`
 
-{% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
+{% include figure.html content="/screens/settingsv3/quickswitch.png" caption="Quick Switch" %}
 
 Alternatively, you can switch themes using the _Theme Selector_ found in `Settings → Appearance → Material Theme UI → Theme Selector`.
 
@@ -260,9 +260,15 @@ Here you can preview the colors of the current theme in a nice color-coded grid.
 
 **[Tabs](/docs/configuration/tabs)**:
 
+- *Enable Customization*: Whether to use the Material Theme's tabs implementation or the native one.
 - *Tabs Height*: Customize the height of the tabs (between `25` and `60` pixels).
 - *Active Tab Highlight Color*![premium](/img/icons/premium.png): Customize the active tab's indicator color.
 - *Thickness*![premium](/img/icons/premium.png): Set the indicator thickness for the active tab.
+- *Rounded Tabs*: Use **Rounded Tabs** instead of the classic Material Design tabs.
+  - *Rounded Tabs Opacity*![premium](/img/icons/premium.png): Customize the opacity of the background color.
+  - *Rounded Tabs Border Size*![premium](/img/icons/premium.png): Customize the border size of the selected tab.
+  - *Rounded Tabs Arc*![premium](/img/icons/premium.png): Customize the arc radius of the selected tab.
+  - *Rounded Tabs Padding*![premium](/img/icons/premium.png): Customize the internal padding of the selected tab.
 - *Uppercase Tabs*![premium](/img/icons/premium.png): Set the tabs' text to uppercase.
 - *Bold Active Tab*![premium](/img/icons/premium.png): Make the active tab bold.
 - *Custom Tab Font*![premium](/img/icons/premium.png): Control the font and size of the tabs.
@@ -270,7 +276,7 @@ Here you can preview the colors of the current theme in a nice color-coded grid.
 - *Tabs Shadows*![premium](/img/icons/premium.png): Add a subtle shadow under the tabs.
 - *Animated Tabs*: Animate the tab indicator when switching tabs.
 - *Tab Separators*: Add thin borders between tabs.
-
+- *Customize Active Tab Color*: Allows overriding the active tab highlight color from the Color Scheme.
 
 **[Spacing](/docs/configuration/spacing)**:
 
@@ -294,16 +300,6 @@ Here you can preview the colors of the current theme in a nice color-coded grid.
 - *Outer Margin*![premium](/img/icons/premium.png): Customize the spacing between the islands.
 - *Islands Gap*![premium](/img/icons/premium.png): Set the gap between the islands and the window borders (only when the tool windows are hidden).
 - *Tool Window Overlay Opacity*: Customize the opacity applied to the tool windows when the IDE is inactive.
-
-**[Theme Randomizer](/docs/configuration/theme-randomizer)**:
-
-- *Enabled*: Enable the theme randomizer.
-- *Theme Change Interval*: Set the interval between theme changes.
-- *Theme List*: Check or uncheck themes to be included in the randomization.
-
-**[Theme Ignores](/docs/configuration/theme-ignores)**:
-
-This section allows you to add UI properties to be ignored from the _Native Theme_, to instead use the ones defined by the plugin.
 
 **[Trees](/docs/configuration/trees)**:
 
@@ -336,17 +332,23 @@ This section allows you to add UI properties to be ignored from the _Native Them
 - *Material Design Style*: Select the style of the components.
   - *Legacy Material Design*: Use the old Material Design style (sharp corners, borderless input fields…).
   - *Material Theme*: Use the Material Theme style (rounded corners, bordered input fields…).
-  - *Material 3*: Use the Material 3 style (rounded buttons, input fields…).
+  - *Material 3*: Use the Material 3 style (rounded buttons and search fields, Google Sans font...).
 - *Borderless Mode*![premium](/img/icons/premium.png): Remove most borders and separators.
 - *Uppercase buttons*: Set the button text to uppercase.
 - *Outlined buttons*![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
+- *Custom Button Radius*![premium](/img/icons/premium.png): Override the default button radius.
 - *Action Buttons Radius*![premium](/img/icons/premium.png): Customize the radius of the action buttons.
 - *Round Notifications*![premium](/img/icons/premium.png): Make notifications rounder.
+- *Search Everywhere Customization*![premium](/img/icons/premium.png): Customize the look of the Search Everywhere popup.
+  - *Custom Input Padding*![premium](/img/icons/premium.png): Increase or decrease the size of the Search Everywhere input field.
+  - *Font Size Delta*![premium](/img/icons/premium.png): Increase or decrease the size of the font.
 - *Inverted Completion Selection Color*: Toggle between the theme's selection color and a high-contrast color for the active item in the *Autocomplete* popup.
-- *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart).
-- *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart).
+- *Scrollbars*:
+  - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart).
+  - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart).
 - *Extra Shadows*![premium](/img/icons/premium.png): Add a subtle shadow around notifications and some popups.
 - *Material Circular Loader Icon*: Replace the loading icon with a Material Design circular loader icon (available only in conjunction with the [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) plugin).
+- *Use original Tool Window Hover Buttons*: Replace the look of the hover indicator on the Tool Windows with the native one.
 
 **[Features](/docs/configuration/features)**:
 
@@ -354,14 +356,26 @@ This section allows you to add UI properties to be ignored from the _Native Them
 - *Centered Editor*: Center the code in open editors, similar to distraction-free mode.
 - *Floating Action Button*: Add a floating action button to the bottom right corner of the screen.
 - *Show Overlays*: Display an overlay when modals are open.
-- *Add more popups under overlays*: When enabled, triggers overlays for additional popups such as right-click menus and dropdowns.
-- *Overlays Opacity*: Customize the opacity of the overlays.
+  - *Add more popups under overlays*: When enabled, triggers overlays for additional popups such as right-click menus and dropdowns.
+  - *Overlays Opacity*: Customize the opacity of the overlays.
 - *Material Wallpapers*![premium](/img/icons/premium.png): Add a custom wallpaper per theme for the empty frame window.
 - *Custom UI Font*![premium](/img/icons/premium.png): Set your own custom UI Font. Supplements the IDE's [_Custom Font_](https://www.jetbrains.com/help/idea/settings-appearance.html).
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors).
 - *Custom Directories Style*![premium](/img/icons/premium.png): Customize the style of directories.
 - *Automatically reset color scheme*: Automatically reset the color scheme on theme activation (_only for bundled color schemes_).
 - *Use Editor Default Font*![premium](/img/icons/premium.png): Automatically update color schemes to use the default font of your choice.
+
+**[Theme Randomizer](/docs/configuration/theme-randomizer)**:
+
+- *Enabled*: Enable the theme randomizer.
+- *Theme Change Interval*: Set the interval between theme changes.
+- *Theme List*: Check or uncheck themes to be included in the randomization.
+
+**[Theme Ignores](/docs/configuration/theme-ignores)**:
+
+This section allows you to add specific UI Properties to ignore when loading custom themes, so that they will be replaced by the plugin's default values.
+
+This is particularly useful in the case when external themes don't define properties, so that you don't end up with the default `Darcula` values.
 
 **[Language Additions](/docs/configuration/language-additions)**:
 
@@ -383,16 +397,26 @@ This section allows you to add UI properties to be ignored from the _Native Them
 - *Colorize Left Tool Window*![premium](/img/icons/premium.png): Colorize the left tool window (only for the New UI).
 - *Colorize Right Tool Window*![premium](/img/icons/premium.png): Colorize the right tool window (only for the New UI).
 - *Colorize Status Bar*![premium](/img/icons/premium.png): Colorize the status bar (only for the New UI).
+- *Gradient Radius*![premium](/img/icons/premium.png): Customize the Project Widget Gradient radius on the title bar.
 - *Project Title Bar*![premium](/img/icons/premium.png): Add a colored stripe on the top of each project window for easier differentiation.
 - *Show Project Icon*![premium](/img/icons/premium.png): Display the _project's custom icon_ on the stripe.
 - *Show Project Title*![premium](/img/icons/premium.png): Displays the _project title_ on the stripe.
 - *Customize Text*![premium](/img/icons/premium.png): Customize the displayed text.
     - You can use the keywords `{project}`, `{module}`, `{fullPath}`, `{path}` and `{file}` to refer respectively to the current project, module, full path, local path and/or current file.
+- *Project Title Frame Settings*:
+  - *Project Frame Width*: Set the width of the project frame (use 0 for the whole width).
+  - *Project Frame Height*: Set the height of the project frame.
+  - *Project Frame Font Family*: Customize the font family of the project frame text.
+  - *Project Frame Font Size*: Customize the font size of the project frame text.
 
 **[Other Tweaks](/docs/configuration/other-tweaks)**:
 
 - *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) page after each update.
 - *Show Wizard on Welcome Screen*: Add or remove the Wizard option in the Welcome Screen.
+
+**UI DSL Showcase**:
+
+This settings page simply displays a list of UI components to preview how they will look like in the IDE.
 
 -----
 
@@ -403,7 +427,7 @@ Simply press `Shift-Shift` and type `Material Theme` to get the list of availabl
 
 Same goes for the `Command Panel` (<kbd>Ctrl-Shift-A/Cmd-Shift-A</kbd>).
 
-{% include figure.html content="/screens/cmdpanel.png" caption="Command Panel" %}
+{% include figure.html content="/screens/settingsv3/cmdPanel.png" caption="Command Panel" %}
 
 You can also use the `Keymap Editor` to assign your own custom shortcuts to these toggles.
 
@@ -437,9 +461,9 @@ This feature is only available for premium users.
 Aside from the bundled themes, you can also set up your own Material Theme.
 
 You can do so by selecting `Custom Theme` in the theme list,
-then customize the theme colors in the settings page at `Settings → Appearance → Material Custom Theme Settings`.
+then customize the theme colors in the settings page at `Settings → Appearance → Material Theme -> Custom Theme`.
 
-{% include figure.html content="/screens/customsettings.png" caption="Material Custom Theme Settings" %}
+{% include figure.html content="/screens/settingsv3/customTheme.png" caption="Material Custom Theme Settings" %}
 
 Once you set these colors, select the `Custom Theme` in the _Material Theme Chooser_ and see your colors take effect.
 

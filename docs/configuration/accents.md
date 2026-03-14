@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/contrast'
   title: Contrast Settings
 next:
-  url: '/docs/configuration/color-scheme-additions'
-  title: Language Additions
+  url: '/docs/configuration/accent-mode'
+  title: Accent Mode
 
 gallery:
   - images:
@@ -127,6 +127,10 @@ Here is the list of predefined colors:
 {% for color in site.data.accentColors %}
 {% include color2.html color=color %}
 {% endfor %}
+
+### Second Accent Color
+
+Themes can define a second accent color. This color will be used when the [Accent Mode](/docs/configuration/accent-mode) is enabled, providing a different accent color when the primary accent color is the more prominent one.
 
 ### Custom accent color
 
