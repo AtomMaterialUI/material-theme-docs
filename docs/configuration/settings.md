@@ -352,6 +352,7 @@ This section allows you to add UI properties to be ignored from the _Native Them
 
 - *Animated Tool Windows*: Animate the opening and closing of tool windows when they are undocked.
 - *Centered Editor*: Center the code in open editors, similar to distraction-free mode.
+- *Floating Action Button*: Add a floating action button to the bottom right corner of the screen.
 - *Show Overlays*: Display an overlay when modals are open.
 - *Add more popups under overlays*: When enabled, triggers overlays for additional popups such as right-click menus and dropdowns.
 - *Overlays Opacity*: Customize the opacity of the overlays.
