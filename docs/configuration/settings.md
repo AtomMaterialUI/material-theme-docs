@@ -195,6 +195,9 @@ Since version 9.0, the settings have been split into multiple pages for easier n
 Here's an exhaustive list of all available settings:
 
 **[Current Theme](/docs/configuration/current-theme)**:
+
+![currentTheme.png](../../img/screens/settingsv3/currentTheme.png)
+
 In this section, you can view the current theme's colors. Click on a color to copy its value to the clipboard.
 
 **[Theme Selector](/docs/configuration/theme-selector)**:
