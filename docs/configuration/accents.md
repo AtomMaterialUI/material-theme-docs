@@ -114,7 +114,7 @@ There are many ways to select an accent color:
 
 **Status Bar Accent Color Widget**:
 
-{% include figure.html content="/screens/accents/accentChooserWidget.png" caption="Status Bar Accent Chooser" %}
+{% include figure.html content="/screens/accents/accentColorWidget.png" caption="Status Bar Accent Chooser" %}
 
 **From The Settings**:
 
