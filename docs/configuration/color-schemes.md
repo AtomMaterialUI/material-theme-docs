@@ -51,20 +51,16 @@ In this list you'll find all your installed color schemes alongside those provid
 ## Customization
 
 Though the color schemes have been made for an optimal day-to-day usage, if there are colors you don't like,
-you can create your own configuration and select which colors or fonts are best suited for you.
+you can easily change them through the `Colors and Fonts` editor.
 
-To do so, open the `Colors and Fonts` editor at `Settings → Editor → Color Scheme`,
-then click on the small icon next to the scheme selector and select `Duplicate`.
-This will create a copy of the color scheme that you can customize at your own will.
+To do so, open the `Colors and Fonts` editor at `Settings → Editor → Color Scheme`, and start customizing the colors. This will create a copy of the current color scheme with the name `_@user_<schemeName>.icls`, and you can modify it as you wish. You can also rename the copy to something more meaningful.
 
-{% include figure.html content="/screens/colorschemes.png" caption="Color Scheme Editor" %}
+{% include figure.html content="/screens/colorschemes.png" caption="Color Schemes" %}
 
+{% include figure.html content="/screens/colorschemes2.png" caption="Color Scheme Editor" %}
 
-You can also directly modify the original color schemes, and it will create a copy in the colors' folder with the name `_@user_<schemeName>.icls`.
-The color scheme will then appear in *accent color* in the list.
-
-However, if you enabled the
-[Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option (which is recommended),
+In addition, if you enabled the
+[Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option,
 your changes will not be persisted, so _duplicate_ is a better option.
 
 To revert the copies to their original state, in the previous menu select `Restore Defaults`.
