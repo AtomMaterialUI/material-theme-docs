@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/license-info'
-  title: License Information
+  url: '/docs/configuration/accent-mode'
+  title: Accent Mode
 next:
   url: '/docs/configuration/compact-settings'
   title: Compact Settings
