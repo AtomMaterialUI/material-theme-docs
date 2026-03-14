@@ -15,14 +15,14 @@ next:
 
 ---
 
-Access license information for Material Theme UI plugins directly within the IDE settings.
+Manage your Material Theme UI license and subscription status directly within the IDE settings.
 {:class='title'}
 
 {% include carbonads.html %}
 
 ## License Overview
 
-License details for Material Theme UI plugins can be found under the plugin settings. This page provides visibility into your current subscription status and account details.
+View details about your Material Theme UI license under the plugin settings. This page displays your current subscription status, account details, and installed plugin version.
 
 {% include figure.html content="/screens/home.png" caption="License Information" %}
 
@@ -46,7 +46,7 @@ Material Theme UI offers two primary subscription models:
 
 ### Individual Feature Plugins
 
-Alternatively, users of the Free version can purchase specific premium features individually through **Material Theme UI Add-on Plugins**. This allows you to customize your experience by only paying for the features you need.
+Alternatively, Free version users can purchase individual premium features via **Material Theme UI Add-on Plugins**. This allows for a more tailored experience by paying only for specific functionality.
 
 Available add-on plugins include:
 - [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast): Unlocks the **High Contrast** feature.
@@ -57,7 +57,7 @@ Available add-on plugins include:
 - [Material Theme Randomizer](https://plugins.jetbrains.com/plugin/28143-material-theme-ui-theme-randomizer): Unlocks the **Theme Randomizer**.
 - [Material Theme Islands](https://plugins.jetbrains.com/plugin/28142-material-theme-ui-islands): Unlocks **Islands** customization features.
 
-When you purchase one of these add-on plugins while using the Free version, you gain access to the corresponding premium features without needing a full Premium subscription.
+Purchasing an add-on plugin while using the Free version grants access to that specific feature without requiring a full Premium subscription.
 
 Purchased add-on plugins are also listed on the License Information page.
 
@@ -66,13 +66,13 @@ Purchased add-on plugins are also listed on the License Information page.
 **Note**: If you already have a **Premium** subscription, purchasing these individual add-on plugins is unnecessary, as all features are already included.
 {:class='card-panel warn'}
 
-## Activate License
+## License Activation
 
-Normally, once you purchase a license, when you start the IDE you'll get prompted with the dialog to Manage Subscriptions. If you don't get the prompt, you can always go to `Help -> Manage Subscriptions` to activate your license.
+After purchasing a license, you will typically be prompted to manage your subscription upon starting the IDE. If this prompt does not appear, you can manually activate your license by navigating to `Help → Manage Subscriptions`.
 
 {% include figure.html content="/screens/license/manageSubscriptions.png" caption="Manage Subscriptions" %}
 
-You can also open the *Material Theme Toolbar* and select **Activate License** to prompt the dialog.
+Alternatively, open the *Material Theme Toolbar* and select **Activate License** to open the activation dialog.
 
 {% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
 
