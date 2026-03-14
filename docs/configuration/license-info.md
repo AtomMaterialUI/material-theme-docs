@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/settings'
   title: Settings
 next:
-  url: '/docs/configuration/tab-settings'
-  title: Tab Settings
+  url: '/docs/configuration/contrast'
+  title: Contrast Settings
 
 ---
 
