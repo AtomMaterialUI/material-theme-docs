@@ -14,21 +14,21 @@ next:
   title: Main Settings
 ---
 
-The plugin comes prebundled with a bunch of color schemes adapted for the Material Themes, resulting in a flat,
-borderless and slick experience.
+The plugin includes a variety of color schemes optimized for Material Themes, providing a flat, 
+borderless, and modern experience.
 {:class='title'}
 
 {% include carbonads.html %}
 
 ## Installation
 
-There are multiple ways to change the color scheme:
-- Through the settings, in `Editor → Color Schemes`
-- Through the `Quick Switch`, with the first option `Color Scheme`.
+You can change the color scheme in several ways:
+- Through the IDE settings: `Editor → Color Scheme`
+- Using the `Quick Switch` menu: Select `Color Scheme`.
 
 {% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
 
-In this list you'll find all your installed color schemes alongside those provided by JetBrains. The color schemes provided by the plugin are:
+The list includes all your installed color schemes as well as those provided by JetBrains. The color schemes included with the plugin are:
 
 <ul>
 {% for theme in site.data.themes.material %}
@@ -50,24 +50,19 @@ In this list you'll find all your installed color schemes alongside those provid
 
 ## Customization
 
-Though the color schemes have been made for an optimal day-to-day usage, if there are colors you don't like,
-you can easily change them through the `Colors and Fonts` editor.
+While the color schemes are optimized for daily use, you can easily customize any color via the `Color Scheme` editor.
 
-To do so, open the `Colors and Fonts` editor at `Settings → Editor → Color Scheme`, and start customizing the colors. This will create a copy of the current color scheme with the name `_@user_<schemeName>.icls`, and you can modify it as you wish. You can also rename the copy to something more meaningful.
+To do so, navigate to `Settings → Editor → Color Scheme` and start modifying the colors. This will automatically create a copy of the current scheme (named `_@user_<schemeName>.icls`), which you can then edit or rename as desired.
 
 {% include figure.html content="/screens/colorschemes.png" caption="Color Schemes" %}
 
 {% include figure.html content="/screens/colorschemes2.png" caption="Color Scheme Editor" %}
 
-In addition, if you enabled the
-[Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option,
-your changes will not be persisted, so _duplicate_ is a better option.
+Note: If the [Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option is enabled, your manual changes will not be saved. In this case, we recommend using the `Duplicate` function to create a permanent copy.
 
-To revert the copies to their original state, in the previous menu select `Restore Defaults`.
-Or, you can run the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action from the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
+To revert a modified scheme to its original state, select `Restore Defaults` from the scheme's menu. Alternatively, you can run the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action from the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
 
-Be careful, though, as that means that __all the changes you've made will be lost__.
-Therefore, it is preferable that you make a copy (of the copy) using the `Duplicate` function, this way you can always go back to your changes one by one.
+**Important**: Resetting or restoring defaults will permanently erase all changes made to that scheme. To preserve your modifications, use the `Duplicate` function to create a backup copy before resetting.
 
 ----------
 ## Supported languages
@@ -96,7 +91,7 @@ Therefore, it is preferable that you make a copy (of the copy) using the `Duplic
 ----------
 ## Color Palette
 
-These are relevant only for _Material Themes_ (hover to see the hex value):
+The following palettes are relevant only for _Material Themes_ (hover to see the hex value):
 
 <span style="float:none">Dark variant</span>
 <span style="float:right">Light variant</span>
