@@ -14,17 +14,16 @@ next:
   title: License Information
 ---
 
-The plugin includes a variety of color schemes optimized for Material Themes, providing a flat, 
-borderless, and modern experience.
+The plugin provides a variety of color schemes optimized for Material Themes, delivering a flat, borderless, and modern interface.
 {:class='title'}
 
 {% include carbonads.html %}
 
 ## Installation
 
-You can change the color scheme in several ways:
-- Through the IDE settings: `Editor → Color Scheme`
-- Using the `Quick Switch` menu: Select `Color Scheme`.
+Change the active color scheme via:
+- IDE settings: `Editor → Color Scheme`
+- `Quick Switch` menu: Select `Color Scheme`.
 
 {% include figure.html content="/screens/schemes/quickSwitch.png" caption="Color Scheme Switcher" %}
 
@@ -50,19 +49,19 @@ The list includes all your installed color schemes as well as those provided by 
 
 ## Customization
 
-While the color schemes are optimized for daily use, you can easily customize any color via the `Color Scheme` editor.
+While color schemes are optimized for immediate use, you can customize them in the `Color Scheme` editor.
 
-To do so, navigate to `Settings → Editor → Color Scheme` and start modifying the colors. This will automatically create a copy of the current scheme (named `_@user_<schemeName>.icls`), which you can then edit or rename as desired.
+Navigate to `Settings → Editor → Color Scheme` to modify colors. This will create a local copy of the scheme (e.g., `_@user_<schemeName>.icls`), which you can then modify and rename.
 
 {% include figure.html content="/screens/schemes/colorschemes.png" caption="Color Schemes" %}
 
 {% include figure.html content="/screens/schemes/colorschemes2.png" caption="Color Scheme Editor" %}
 
-Note: If the [Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option is enabled, your manual changes will not be saved. In this case, we recommend using the `Duplicate` function to create a permanent copy.
+Note: If the [Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option is enabled, manual changes will not persist. We recommend using the `Duplicate` function to create a permanent copy.
 
-To revert a modified scheme to its original state, select `Restore Defaults` from the scheme's menu. Alternatively, you can run the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action from the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
+To revert a scheme to its original state, select `Restore Defaults` from the scheme's menu or use the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action in the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
 
-**Important**: Resetting or restoring defaults will permanently erase all changes made to that scheme. To preserve your modifications, use the `Duplicate` function to create a backup copy before resetting.
+**Important**: Resetting or restoring defaults will permanently erase all changes made to that scheme. To preserve your modifications, create a backup by using the `Duplicate` function before resetting.
 
 ----------
 ## Supported languages

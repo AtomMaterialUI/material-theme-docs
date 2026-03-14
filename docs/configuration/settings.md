@@ -14,8 +14,7 @@ next:
   title: Color Schemes
 ---
 
-The Material Theme UI plugin comes with a wide range of features tailored for an optimal experience.
-However, it's also highly configurable, allowing you to customize it to your heart's content.
+The Material Theme UI plugin is highly configurable, offering a wide array of features that can be tailored to suit your workflow.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -24,22 +23,22 @@ However, it's also highly configurable, allowing you to customize it to your hea
 
 ### Current Theme
 
-Since version 9.0.0, you can see the current theme's colors from the settings page.
+Since version 9.0.0, you can view the active theme's color palette directly within the settings.
 
-For this, navigate to `Settings → Appearance → Material Theme UI → Current Theme`.
+To access this, navigate to `Settings → Appearance → Material Theme UI → Current Theme`.
 
 {% include figure.html content="/screens/settingsv3/currentTheme.png" caption="Current Theme" %}
 
 ### Preview Theme Colors
 
-Here you can preview the colors of the current theme in a nice color-coded grid.
+This section provides a visual grid of all colors used by the currently active theme.
 
 {% include figure.html content="/screens/settingsv3/previewThemeColors.png" caption="Preview Theme Colors" %}
 
 ### Theme switcher
 
-The plugin comes prebundled with a set of themes that are interchangeable via the
-![Theme Switcher](/img/icons/switcher.svg) *Theme Switcher*.
+The plugin includes several prebundled themes that can be switched using the
+![Theme Switcher](/img/icons/switcher.svg) **Theme Switcher**.
 
 {% include figure.html content="/screens/settingsv3/switcher.png" caption="Theme Switcher" %}
 
@@ -53,7 +52,7 @@ There are many ways to invoke the *Theme Switcher*:
 
 {% include figure.html content="/screens/settingsv3/quickswitch.png" caption="Quick Switch" %}
 
-Alternatively, you can switch themes using the _Theme Selector_ found in `Settings → Appearance → Material Theme UI → Theme Selector`.
+Alternatively, use the **Theme Selector** at `Settings → Appearance → Material Theme UI → Theme Selector`.
 
 {% include figure.html content="/screens/settingsv3/themeSelector.png" caption="Theme Selector" %}
 
@@ -107,12 +106,9 @@ See [Custom Themes](/docs/configuration/custom-themes) for more information.
 
 #### Native Themes
 
-The plugin supports **Native Themes**, which use the JetBrains theme API.
-When loading a native theme, the plugin attempts to convert it into a Material Theme,
-allowing you to use the theme's colors while benefiting from Material Theme features such as components and accent mode.
+Native Themes utilize the JetBrains Theme API. The plugin automatically converts these themes, allowing you to use their colors while still benefiting from Material Theme features such as custom components and accent modes.
 
-You don't need to do anything to make it work: simply download a native theme and select it.
-It will be automatically converted to a format supported by the plugin.
+No manual configuration is required: simply download a native theme and select it; the plugin will handle the conversion.
 
 Examples:
 
@@ -131,10 +127,9 @@ Examples:
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Finally, since version 9.0, the plugin also includes an **Adaptive Theme**.
-This theme automatically updates its colors based on the current **color scheme**.
+Since version 9.0, the plugin includes an **Adaptive Theme** that dynamically updates its colors based on your current **color scheme**.
 
-This theme is especially useful if you use color schemes that do not include their own UI themes, such as the [Rainglow color schemes](https://rainglow.io/).
+This is particularly useful when using color schemes that do not bundle their own UI themes (e.g., [Rainglow color schemes](https://rainglow.io/)).
 
 Examples:
 
@@ -149,8 +144,7 @@ Examples:
 {% include figure.html content="/screens/themes/tetra.png" caption="Rainglow Tetra Color Scheme" %}
 
 
-You can also override the Adapative Theme's colors from a **Color Scheme Settings Page**.
-This way, you can customize your UI theme directly from the Color Scheme settings!
+You can further customize the Adaptive Theme's behavior via the **Color Scheme Settings Page**, allowing you to fine-tune the UI directly from your color scheme settings.
 
 {% include figure.html content="/screens/settingsv3/adaptiveTheme.png" caption="Adaptive Theme" %}
 
@@ -163,10 +157,9 @@ This way, you can customize your UI theme directly from the Color Scheme setting
 Some settings are only available for premium users.
 {:class='card-panel warn'}
 
-You can configure many of the plugin's features from the **plugin settings**.
-They are located under `Settings → Appearance → Material Theme UI`.
+Configure various plugin features via the **plugin settings** at `Settings → Appearance → Material Theme UI`.
 
-Since version 9.0, the settings have been split into multiple pages for easier navigation and maintenance.
+Starting with version 9.0, settings are categorized into sub-pages for improved organization.
 
 {% include figure.html content="/screens/settingsv3/mainSettings.png" caption="Main Settings" %}
 
@@ -208,11 +201,11 @@ Here's an exhaustive list of all available settings:
 
 **[Current Theme](/docs/configuration/current-theme)**:
 
-In this section, you can view the current theme's colors. Click on a color to copy its value to the clipboard.
+View the active theme's colors. Click any color to copy its hex value to the clipboard.
 
 **[Preview Theme Colors](/docs/configuration/preview-theme-colors)**:
 
-Here you can preview the colors of the current theme in a nice color-coded grid.
+This section provides a visual grid of all colors used by the currently active theme.
 
 **[Theme Selector](/docs/configuration/theme-selector)**:
 
@@ -473,54 +466,41 @@ See [Custom Theme](/docs/configuration/custom-themes) for more details.
 
 ## Frequently Asked Questions
 
-**Q**: **I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?**
+**Q**: **I've updated the IDE or plugin, and now the plugin fails to initialize. How can I fix this?**
 
-**A**: This could be due to several issues, but it might simply be that your settings are incompatible with the new version.
-In that case, make a copy of your settings file, delete the original, and restart the IDE.
-If the problem is resolved, you can reconfigure your settings manually.
-If the issue persists, please report it in the Issues section.
+**A**: This may occur if your settings are incompatible with the new version. Try creating a backup of your settings file, then delete the original and restart the IDE. If the issue is resolved, you can reconfigure your settings manually. If it persists, please report the issue on our GitHub repository.
 
-**Q**: **I've removed the plugin, and still the background image persists!**
+**Q**: **I've removed the plugin, but the background image persists!**
 
-**A**: This is a difficult issue to resolve because the *Custom Wallpaper* feature uses the IDE's native `Set Background image` function.
-Consequently, removing the plugin might not completely remove the background image.
-If this occurs, you can remove the image by opening the Command Panel (`Cmd-Shift-A`/`Ctrl-Shift-A`), typing `Set Background image`, and then manually clearing the image. Alternatively, go to `Settings → Appearance → Background Image`.
+**A**: This occurs because the *Custom Wallpaper* feature utilizes the IDE's native `Set Background image` function. If removing the plugin doesn't clear the image, you can do so manually via the Command Panel (`Cmd-Shift-A`/`Ctrl-Shift-A`) by searching for `Set Background image` and clearing the value, or by navigating to `Settings → Appearance → Background Image`.
 
-**Q**: **What is that analytics option? What data are collected?**
+**Q**: **What data is collected via the analytics option?**
 
-**A**: This option allows anonymous data to be sent to Material Theme servers regarding user configuration, usage, and trends.
-These metrics help us identify which features are most or least used, allowing us to prioritize development and improve user satisfaction.
-The data is completely anonymous and is never shared with or sold to third parties.
-If you wish to stop sending data, you can disable this option in `material_theme.xml`.
+**A**: This option sends anonymous usage data to Material Theme servers to help us understand user configurations and trends. These metrics allow us to prioritize development and improve the plugin. The data is entirely anonymous and is never shared with or sold to third parties. You can disable this option at any time in `material_theme.xml`.
 
-**Q**: **My settings are lost/jumbled up!**
+**Q**: **My settings seem jumbled or lost.**
 
-**A**: As the plugin evolves, settings may be modified or removed, which can occasionally cause issues with configuration files.
-We strive to minimize such occurrences, but they can still happen.
-If you are unable to use the plugin or run the IDE, try deleting your configuration files or specific properties until the IDE launches correctly.
+**A**: As the plugin evolves, some settings may be modified or retired, which can occasionally impact configuration files. We aim to minimize these disruptions. If you encounter issues, try deleting your configuration files or specific properties until the IDE launches correctly.
 
-**Q**: **The wizard idea was great! But I've made a mistake, and the wizard won't show up anymore!**
+**Q**: **The wizard only appeared once and I can't find it anymore.**
 
-**A**: The wizard only appears once, specifically when the `isWizardShown` option is not set to true in the configuration file.
-However, you can reopen it at any time by clicking the wizard action in the [Material Theme Toolbar](/docs/configuration/quick-actions-panel), under the Features menu.
+**A**: By design, the wizard only appears upon initial installation. However, you can relaunch it at any time via the [Material Theme Toolbar](/docs/configuration/quick-actions-panel), under the Features menu.
 
 **Q**: **Where have all the icons gone?**
 
 **A**: Starting with version 5.0.0, icon-related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), also developed by the Material Theme team.
 This change encourages the development of independent _Icon Themes_, as the main plugin no longer bundles icons.
 
-**Q**: **I've downloaded a theme from the Plugins Page, and now I'm seeing texts that aren't themed, or checkboxes that are wrongly colored, etc…**
+**Q**: **I've installed a theme from the Marketplace, but some UI elements are not correctly themed.**
 
-**A**: These are native themes that use the JetBrains Theme API rather than the Material Theme API.
-While the plugin attempts to convert them to its own format, the result may not perfectly match the original.
-However, it should be as close as possible without causing critical issues. If you encounter significant problems, please report them to the repository's issues page.
+**A**: These are likely "Native Themes" that use the JetBrains Theme API. While the Material Theme UI plugin attempts to convert them to its own format for better compatibility, the result may not always be perfect. If you encounter significant issues, please report them to the respective theme's repository.
 
 **Q**: **I've bought a license, but I am still identified as a Free User!**
 
 **A**: This indicates that your license has not yet been activated. To activate it, run the action to open the _Registration Modal_.
 
-{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
 
-{% include figure.html content="/screens/license.png" caption="License" %}
+{% include figure.html content="/screens/license/manageSubscriptions.png" caption="License" %}
 
 **Important note**: Android Studio users must install the [JetBrains Marketplace Licensing Support](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) plugin to activate the Material Theme UI (or any other paid plugin).

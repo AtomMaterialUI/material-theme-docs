@@ -138,9 +138,9 @@ In addition, other one-time actions are available in this panel, which are:
 
 - _Activate License_: Activate your Premium License, if it's not already done.
 
-{% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
+{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
 
-{% include figure.html content="/screens/license.png" caption="License" %}
+{% include figure.html content="/screens/license/manageSubscriptions.png" caption="License" %}
 
 ---
 
