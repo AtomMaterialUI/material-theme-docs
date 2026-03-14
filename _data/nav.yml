@@ -7,7 +7,8 @@
     - title: Color Schemes
     - title: Main Settings
     - title: License Info
-    - title: Contrast
+    - title: Contrast Settings
+    - title: Accents
     - title: Tab Settings
     - title: Compact Settings
     - title: Project View Settings
@@ -19,7 +20,6 @@
     - title: Excluded Files Colors
     - title: File Status Colors
     - title: Scrollbars
-    - title: Accents
     - title: Language Additions
     - title: Custom Themes
     - title: Recommended Plugins

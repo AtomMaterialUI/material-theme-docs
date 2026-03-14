@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Contrast
+title: Contrast Settings
 description: Enhance the UI with better contrast
 group: configuration
 toc: true
