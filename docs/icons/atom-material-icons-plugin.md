@@ -209,17 +209,6 @@ You can also switch styles in the `Actions Panel`.
 
 ----
 
-### Custom accent color
-
-This option will let you override the *Accent Color* set for some icons, such as the _Checkboxes_.
-
-{% include figure.html content="/screens/accentColor.png" caption="Custom Accent Color" %}
-
-**Note**: This custom color will be overriden by the Accent Color set by the *Material Theme UI* plugin.
-{:class='card-panel warn'}
-
-----
-
 ### Custom themed color
 
 Some icons are colored with what's called the **Themed Color**.
