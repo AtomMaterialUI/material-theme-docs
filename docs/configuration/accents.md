@@ -7,8 +7,8 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/scrollbars'
-  title: Scrollbars
+  url: '/docs/configuration/contrast'
+  title: Contrast Settings
 next:
   url: '/docs/configuration/color-scheme-additions'
   title: Language Additions
