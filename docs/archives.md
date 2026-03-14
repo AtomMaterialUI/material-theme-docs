@@ -799,7 +799,7 @@ It sports the current accent color, and displays the list of available predefine
 
 {% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widgets" %}
 
-{% include figure.html content="/screens/archives/accentColorWidget.png" caption="Accent Color Widget" %}
+{% include figure.html content="/screens/archive/accentColorWidget.png" caption="Accent Color Widget" %}
 
 </div>
 
@@ -1116,7 +1116,7 @@ for ways to make it possible!
 As part of the newest additions, the theme selection menus have been reorganized to group light and dark themes
 together.
 
-{% include figure.html content="/screens/themeGroups.png" caption="Theme Groups" %}
+{% include figure.html content="/screens/archive/themeGroups.png" caption="Theme Groups" %}
 
 ----
 

@@ -26,7 +26,7 @@ You can change the color scheme in several ways:
 - Through the IDE settings: `Editor → Color Scheme`
 - Using the `Quick Switch` menu: Select `Color Scheme`.
 
-{% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
+{% include figure.html content="/screens/schemes/quickSwitch.png" caption="Color Scheme Switcher" %}
 
 The list includes all your installed color schemes as well as those provided by JetBrains. The color schemes included with the plugin are:
 
@@ -54,9 +54,9 @@ While the color schemes are optimized for daily use, you can easily customize an
 
 To do so, navigate to `Settings → Editor → Color Scheme` and start modifying the colors. This will automatically create a copy of the current scheme (named `_@user_<schemeName>.icls`), which you can then edit or rename as desired.
 
-{% include figure.html content="/screens/colorschemes.png" caption="Color Schemes" %}
+{% include figure.html content="/screens/schemes/colorschemes.png" caption="Color Schemes" %}
 
-{% include figure.html content="/screens/colorschemes2.png" caption="Color Scheme Editor" %}
+{% include figure.html content="/screens/schemes/colorschemes2.png" caption="Color Scheme Editor" %}
 
 Note: If the [Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option is enabled, your manual changes will not be saved. In this case, we recommend using the `Duplicate` function to create a permanent copy.
 
