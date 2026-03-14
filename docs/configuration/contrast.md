@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/scrollbars'
-  title: Scrollbars
+  url: '/docs/configuration/license-info'
+  title: License Information
 next:
   url: '/docs/configuration/accents'
   title: Accents
