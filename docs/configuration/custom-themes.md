@@ -122,25 +122,25 @@ A secondary color used in some controls:
 
 **Property**: `material.selectionBackground`
 
-The background color of selections in controls:
+The background color of selected elements in various UI components:
 
-- Menu and Menu Items selected items
-- Selected List Items and Table Cells
-- Selected tabs
-- Autocomplete selected item
-- Selected Tab in TabbedPanes
+- Selected menu items
+- Selected list items and table cells
+- Active tabs
+- Autocomplete active item
+- Selected tab in TabbedPanes
 - Selected text in documentation panels
 
 ##### Selection foreground color
 
 **Property**: `material.selectionForeground`
 
-The foreground color of selections in controls:
+The text (foreground) color of selected elements in various UI components:
 
-- Menu and Menu Items selected items
-- Selected List Items and Table Cells
-- Selected tabs
-- Autocomplete selected item
+- Selected menu items
+- Selected list items and table cells
+- Active tabs
+- Autocomplete active item
 - Selected text in text fields
 - Selected text in documentation panels
 - Focused buttons' text
@@ -204,14 +204,14 @@ The color used when contrast mode is enabled:
 
 **Property**: `material.active`
 
-Another color to use for selected texts/active component colors:
+An additional color used for active elements or selected text:
 
-- Selected cells in tables
-- Selected text in text fields and documentation panes
-- Selected items in dropdowns
-- Primary Buttons and Hovered buttons
-- Hovered Tool Window buttons
-- Active Tab in Tabbed Panes
+- Selected table cells
+- Selected text in input fields and documentation panes
+- Active items in dropdowns
+- Primary and hovered buttons
+- Hovered tool window buttons
+- Active tab in Tabbed Panes
 
 ##### Border Color
 

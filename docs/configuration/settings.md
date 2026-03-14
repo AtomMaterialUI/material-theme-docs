@@ -217,16 +217,16 @@ In this page, you can view the current theme's colors. You can also click on a c
 
 **[Accent Mode](/docs/configuration/accent-mode)**:
 
-- *Accent Mode*![premium](/img/icons/premium.png): Make components stand out by painting them in the accent color (buttons, tabs, selections…).
-- *Second Accent Color*![premium](/img/icons/premium.png): Specify a second accent color to contrast with the primary accent color.
-- *Allow Color Scheme Modifications*![premium](/img/icons/premium.png): Modify the current color scheme to replace some elements with the primary or secondary accent color, such as links, tab highlighter, selections, etc.
-- *Fine-grained settings*![premium](/img/icons/premium.png): Instead of applying accent mode globally, you can decide to apply it only to specific components.
+- *Accent Mode*![premium](/img/icons/premium.png): Emphasize specific components (buttons, tabs, selections, etc.) by applying the accent color.
+- *Second Accent Color*![premium](/img/icons/premium.png): Define an additional accent color to complement the primary one.
+- *Allow Color Scheme Modifications*![premium](/img/icons/premium.png): Update the current color scheme to apply accent colors to elements like links, tab indicators, and selections.
+- *Fine-grained settings*![premium](/img/icons/premium.png): Apply accent mode to specific UI components rather than globally.
   - *Buttons*: Primary buttons
   - *Tabs*: Selected tabs
-  - *Lists*: Selected elements in lists
-  - *Trees*: Selected elements in trees
-  - *Toolbars*: Some toolbars
-  - *Notifications*: Notifications
+  - *Lists*: Selected list items
+  - *Trees*: Selected tree items
+  - *Toolbars*: Selected toolbar elements
+  - *Notifications*: Accent-colored notifications
 
 **[Custom Theme](/docs/configuration/custom-theme)**:
 
@@ -274,7 +274,7 @@ In this page, you can view the current theme's colors. You can also click on a c
     - You can configure both the *Left* and *Right* indents.
 - *Custom Line Item Height*![premium](/img/icons/premium.png): Set custom line height in trees (min: `18`, max: `44`).
 - *Custom Tree Font*![premium](/img/icons/premium.png): Customize the font and font size of the project trees.
-- *Selected Indicator Style*![premium](/img/icons/premium.png): Change the style of the indicator for selected item in trees.
+- *Selected Indicator Style*![premium](/img/icons/premium.png): Change the visual style of the indicator for selected tree items.
   - *Border*: Add a small rounded border to the left
   - *Dot*: Add a dot to the left of the selected item.
   - *Sharp*: Add a small sharp border to the left
@@ -305,7 +305,7 @@ In this page, you can view the current theme's colors. You can also click on a c
 - *Outlined buttons*![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
 - *Action Buttons Radius*![premium](/img/icons/premium.png): Customize the radius of the action buttons.
 - *Round Notifications*![premium](/img/icons/premium.png): Make notifications rounder.
-- *Inverted Completion Selection Color*: Switch the _Autocomplete_'s selected item color between the selection color and contrast color.
+- *Inverted Completion Selection Color*: Toggle between the theme's selection color and a high-contrast color for the active item in the *Autocomplete* popup.
 - *Accent Scrollbars*: Set the color of the scrollbars to the accent color (requires restart).
 - *Transparent Scrollbars*: Enable/Disable transparency in scrollbars (requires restart).
 - *Extra Shadows*![premium](/img/icons/premium.png): Add a subtle shadow around notifications and some popups.
