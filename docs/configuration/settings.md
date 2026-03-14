@@ -14,8 +14,8 @@ next:
   title: Color Schemes
 ---
 
-The Material Theme UI plugin comes with a bunch of features tailored for an optimal experience.
-However, it's also highly configurable to allow everyone to customize it to their hearts' content.
+The Material Theme UI plugin comes with a wide range of features tailored for an optimal experience.
+However, it's also highly configurable, allowing you to customize it to your heart's content.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -32,7 +32,7 @@ For this, navigate to `Settings → Appearance → Material Theme UI → Current
 
 ### Theme switcher
 
-The plugin comes prebundled with a set of themes interchangeables through the
+The plugin comes prebundled with a set of themes that are interchangeable via the
 ![Theme Switcher](/img/icons/switcher.svg) *Theme Switcher*.
 
 {% include figure.html content="/screens/settingsv3/switcher.png" caption="Theme Switcher" %}
@@ -47,7 +47,7 @@ There are many ways to invoke the *Theme Switcher*:
 
 {% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
 
-Alternatively, you can also switch themes using the _Theme Selector_ found in `Settings → Appearance → Material Theme UI → Theme Selector`.
+Alternatively, you can switch themes using the _Theme Selector_ found in `Settings → Appearance → Material Theme UI → Theme Selector`.
 
 {% include figure.html content="/screens/settingsv3/themeSelector.png" caption="Theme Selector" %}
 
@@ -56,7 +56,7 @@ site.data.themes.other2.size }} themes:
 
 #### Material themes
 
-These themes are based on the original themes, made by Mattia Astorino ([@equinusocio](https://github.com/equinusocio))
+These themes are based on the original Material Themes by Mattia Astorino ([@equinusocio](https://github.com/equinusocio)).
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.material %}
@@ -70,7 +70,7 @@ These themes are based on the original themes, made by Mattia Astorino ([@equinu
 
 #### Other themes
 
-Besides the Material Themes, there are other prebundled themes made by the community:
+Besides the Material Themes, there are other prebundled themes contributed by the community:
 
 <ul class="theme-cards">
 {% for theme in site.data.themes.other %}
@@ -101,12 +101,12 @@ See [Custom Themes](/docs/configuration/custom-themes) for more information.
 
 #### Native Themes
 
-The plugin supports **Native Themes** as well, that is, themes using JetBrains theme API.
-When loading a native theme, the plugin would try to convert it into a Material Theme,
-thus allowing you to use the theme colors while using the Material Theme features such as the components, accent mode, etc.
+The plugin supports **Native Themes**, which use the JetBrains theme API.
+When loading a native theme, the plugin attempts to convert it into a Material Theme,
+allowing you to use the theme's colors while benefiting from Material Theme features such as components and accent mode.
 
-You don't need to do anything to make it work, download a native theme and select it.
-It will be automatically converted to a theme format supported by the plugin.
+You don't need to do anything to make it work: simply download a native theme and select it.
+It will be automatically converted to a format supported by the plugin.
 
 Examples:
 
@@ -125,10 +125,10 @@ Examples:
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Last but not least, since version 9.0, the plugin also comes with an **Adaptive Theme**.
-This theme automatically changes its colors based on the current **color scheme**.
+Finally, since version 9.0, the plugin also includes an **Adaptive Theme**.
+This theme automatically updates its colors based on the current **color scheme**.
 
-This theme is quite useful if you have a lot of color schemes that do not come with their own UI Themes, such as the [Rainglow color schemes](https://rainglow.io/).
+This theme is especially useful if you use color schemes that do not include their own UI themes, such as the [Rainglow color schemes](https://rainglow.io/).
 
 Examples:
 
@@ -157,10 +157,10 @@ This way, you can customize your UI theme directly from the Color Scheme setting
 Some settings are only available for premium users.
 {:class='card-panel warn'}
 
-You can configure many parts of the plugin features from the **plugin settings**.
-They're available within the `Settings → Appearance → Material Theme UI`.
+You can configure many of the plugin's features from the **plugin settings**.
+They are located under `Settings → Appearance → Material Theme UI`.
 
-Since version 9.0, the settings page has been split into multiple settings pages, for easier navigation and maintenance.
+Since version 9.0, the settings have been split into multiple pages for easier navigation and maintenance.
 
 {% include figure.html content="/screens/settingsv3/mainSettings.png" caption="Main Settings" %}
 
@@ -195,23 +195,22 @@ Since version 9.0, the settings page has been split into multiple settings pages
 Here's an exhaustive list of all available settings:
 
 **[Current Theme](/docs/configuration/current-theme)**:
-
-In this page, you can view the current theme's colors. You can also click on a color to copy it to the clipboard.
+In this section, you can view the current theme's colors. Click on a color to copy its value to the clipboard.
 
 **[Theme Selector](/docs/configuration/theme-selector)**:
 
-- *Theme Selector*: Select a theme from the list of pre-bundled themes. You'll get a small preview of the theme for easier selection.
+- *Theme Selector*: Select a theme from the list of pre-bundled themes. A small preview is provided for easier selection.
 
 **[Contrast](/docs/configuration/contrast)**:
 
-- *Contrast Mode*: Add contrast to specific panels and components.
-- *High Contrast*![premium](/img/icons/premium.png): Set a more pronounced contrast, by making the texts more prominent.
-- *Contrast Value*![premium](/img/icons/premium.png): Fine tune the contrast value. The more you increase it, the more contrast you get.
+- *Contrast Mode*: Adds contrast to specific panels and components.
+- *High Contrast*![premium](/img/icons/premium.png): Enable a more pronounced contrast by making text more prominent.
+- *Contrast Value*![premium](/img/icons/premium.png): Fine-tune the contrast level. Higher values result in greater contrast.
 
 **[Accent Settings](/docs/configuration/accents)**:
 
 - *Custom Accent Color*: Set a custom accent color.
-- *Override Accent Color from Theme*: Use the theme's accent color.
+- *Override Accent Color from Theme*: Use the predefined accent color associated with the theme.
 - *Custom Accent Color*: Set a custom accent color.
 - *Predefined Accent Colors*: Choose from a list of predefined accent colors.
 
@@ -244,16 +243,16 @@ In this page, you can view the current theme's colors. You can also click on a c
 
 **[Tabs](/docs/configuration/tabs)**:
 
-- *Tabs Height*: Customize the tabs' height (between `25` and `60` pixels).
+- *Tabs Height*: Customize the height of the tabs (between `25` and `60` pixels).
 - *Active Tab Highlight Color*![premium](/img/icons/premium.png): Customize the active tab's indicator color.
-- *Thickness*![premium](/img/icons/premium.png): Set the active tab's indicator thickness.
+- *Thickness*![premium](/img/icons/premium.png): Set the indicator thickness for the active tab.
 - *Uppercase Tabs*![premium](/img/icons/premium.png): Set the tabs' text to uppercase.
 - *Bold Active Tab*![premium](/img/icons/premium.png): Make the active tab bold.
 - *Custom Tab Font*![premium](/img/icons/premium.png): Control the font and size of the tabs.
 - *Tab Highlight Position*![premium](/img/icons/premium.png): Customize the position of the tab highlighter.
 - *Tabs Shadows*![premium](/img/icons/premium.png): Add a subtle shadow under the tabs.
-- *Animated Tabs*: Animate the tab indicator upon switching tabs
-- *Tab Separators*: Add thin borders between tabs
+- *Animated Tabs*: Animate the tab indicator when switching tabs.
+- *Tab Separators*: Add thin borders between tabs.
 
 
 **[Spacing](/docs/configuration/spacing)**:
@@ -270,8 +269,8 @@ In this page, you can view the current theme's colors. You can also click on a c
 
 **[Trees](/docs/configuration/trees)**:
 
-- *Custom Tree Indent*![premium](/img/icons/premium.png): Fine tune indent of tree items.
-    - You can configure both the *Left* and *Right* indents.
+- *Custom Tree Indent*![premium](/img/icons/premium.png): Fine-tune the indentation of tree items.
+    - You can configure both *Left* and *Right* indents.
 - *Custom Line Item Height*![premium](/img/icons/premium.png): Set custom line height in trees (min: `18`, max: `44`).
 - *Custom Tree Font*![premium](/img/icons/premium.png): Customize the font and font size of the project trees.
 - *Selected Indicator Style*![premium](/img/icons/premium.png): Change the visual style of the indicator for selected tree items.
@@ -300,8 +299,8 @@ In this page, you can view the current theme's colors. You can also click on a c
   - *Legacy Material Design*: Use the old Material Design style (sharp corners, borderless input fields…).
   - *Material Theme*: Use the Material Theme style (rounded corners, bordered input fields…).
   - *Material You* (NOT RELEASED YET): Use the Material You style (rounded buttons, input fields…).
-- *Borderless Mode*![premium](/img/icons/premium.png): Remove most borders and separators
-- *Uppercase buttons*: Set the buttons' texts to uppercase.
+- *Borderless Mode*![premium](/img/icons/premium.png): Remove most borders and separators.
+- *Uppercase buttons*: Set the button text to uppercase.
 - *Outlined buttons*![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
 - *Action Buttons Radius*![premium](/img/icons/premium.png): Customize the radius of the action buttons.
 - *Round Notifications*![premium](/img/icons/premium.png): Make notifications rounder.
@@ -313,11 +312,11 @@ In this page, you can view the current theme's colors. You can also click on a c
 
 **[Features](/docs/configuration/features)**:
 
-- *Animated Tool Windows*: Animate opening and closing on tool windows when they are undocked.
-- *Centered Editor*: Centers the code in open editors, like in distraction free mode.
-- *Show Overlays*: Displays an overlay when modals are open.
-- *Add more popups under overlays*: When enabled, triggers overlays for more popups, such as right click menus, dropdowns, etc.
-- *Overlays Opacity*: Customize the opacity of the overlays
+- *Animated Tool Windows*: Animate the opening and closing of tool windows when they are undocked.
+- *Centered Editor*: Center the code in open editors, similar to distraction-free mode.
+- *Show Overlays*: Display an overlay when modals are open.
+- *Add more popups under overlays*: When enabled, triggers overlays for additional popups such as right-click menus and dropdowns.
+- *Overlays Opacity*: Customize the opacity of the overlays.
 - *Material Wallpapers*![premium](/img/icons/premium.png): Add a custom wallpaper per theme for the empty frame window.
 - *Custom UI Font*![premium](/img/icons/premium.png): Set your own custom UI Font. Supplements the IDE's [_Custom Font_](https://www.jetbrains.com/help/idea/settings-appearance.html).
 - *Material File Status Colors*: Enable/Disable the [Material File Status Colors](/docs/configuration/file-status-colors).
@@ -353,7 +352,7 @@ In this page, you can view the current theme's colors. You can also click on a c
 
 **[Other Tweaks](/docs/configuration/other-tweaks)**:
 
-- *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) page on each update.
+- *Show What's New on each update*: Whether to display the [What's New](/docs/what-s-new) page after each update.
 - *Show Wizard on Welcome Screen*: Add or remove the Wizard option in the Welcome Screen.
 
 -----
@@ -380,10 +379,9 @@ Your current configuration is stored inside the IDE settings' directory under th
 If, for some reason, there are issues with the plugin,
 or you don't manage to reset to a stable state, delete these files and restart the IDE.
 
-Read [IDE Settings](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) 
-and [Directories
-used by the IDE](https://www.jetbrains.com/help/idea/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html)
-to find out where are stored such configuration files.
+Read the [IDE Settings](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) 
+and [Directories used by the IDE](https://www.jetbrains.com/help/idea/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html)
+documentation to learn where these configuration files are stored.
 
 The files in question should be located in the following directories:
 
@@ -414,70 +412,52 @@ See [Custom Theme](/docs/configuration/custom-themes) for more details.
 
 **Q**: **I've updated the IDE/plugin to a new version, and now I get an error about the plugin failing to initialize?**
 
-**A**: It could come from multiple issues, but it could simply be a problem with the settings not being compatible with the new version.
-
-In that case, make a copy of the settings file, then delete the original file, and restart the IDE.
-
-If the issue is gone, go back to the settings and go back to your previous configuration manually.
-
-If the issue persists, please report it in the Issues Section.
+**A**: This could be due to several issues, but it might simply be that your settings are incompatible with the new version.
+In that case, make a copy of your settings file, delete the original, and restart the IDE.
+If the problem is resolved, you can reconfigure your settings manually.
+If the issue persists, please report it in the Issues section.
 
 **Q**: **I've removed the plugin, and still the background image persists!**
 
-**A**: This is an issue hard to resolve, because the *Custom Wallpaper* function is using the `Set Background image` function from the IDE behind the curtains.
-
-Therefore, removing the plugin might not remove the set image completely.
-
-If that occurs, you can remove the image by opening the Command Panel (`Cmd-Shift-A/Ctrl-Shift-A`)
-and type `Set Background image` and then manually remove the image,
-or go into `Settings → Appearance → Background Image`.
+**A**: This is a difficult issue to resolve because the *Custom Wallpaper* feature uses the IDE's native `Set Background image` function.
+Consequently, removing the plugin might not completely remove the background image.
+If this occurs, you can remove the image by opening the Command Panel (`Cmd-Shift-A`/`Ctrl-Shift-A`), typing `Set Background image`, and then manually clearing the image. Alternatively, go to `Settings → Appearance → Background Image`.
 
 **Q**: **What is that analytics option? What data are collected?**
 
-**A**: This is an option to allow sending data to Material Theme servers about users' configuration, usage and trends.
-
-These metrics allow us to find out which features are most used or least used, to prioritize development of features,
-or maybe notify users about specific features, to provide better satisfaction.
-
-These data are completely anonymous, and aren't shared/sold to any third parties.
-If you want to stop sending data, turn off the option in the `material_theme.xml`.
+**A**: This option allows anonymous data to be sent to Material Theme servers regarding user configuration, usage, and trends.
+These metrics help us identify which features are most or least used, allowing us to prioritize development and improve user satisfaction.
+The data is completely anonymous and is never shared with or sold to third parties.
+If you wish to stop sending data, you can disable this option in `material_theme.xml`.
 
 **Q**: **My settings are lost/jumbled up!**
 
-**A**: As the plugin evolves, sometimes settings are modified or removed, and as a result it can jumble your configuration files.
-
-We're trying our best to limit such issues, but they can happen nonetheless.
-
-If you find yourself being unable to use the plugin or even run the IDE, try to delete your configuration files,
-or at least try to delete specific properties until the IDE launches again.
+**A**: As the plugin evolves, settings may be modified or removed, which can occasionally cause issues with configuration files.
+We strive to minimize such occurrences, but they can still happen.
+If you are unable to use the plugin or run the IDE, try deleting your configuration files or specific properties until the IDE launches correctly.
 
 **Q**: **The wizard idea was great! But I've made a mistake, and the wizard won't show up anymore!**
 
-**A**: The wizard shows only once and only when you don't have the `isWizardShown` option set to true in the config file.
-
-But you can reopen it by simply clicking on the action from the [Material Theme Toolbar](/docs/configuration/quick-actions-panel),
-on the Features menu.
+**A**: The wizard only appears once, specifically when the `isWizardShown` option is not set to true in the configuration file.
+However, you can reopen it at any time by clicking the wizard action in the [Material Theme Toolbar](/docs/configuration/quick-actions-panel), under the Features menu.
 
 **Q**: **Where have all the icons gone?**
 
-**A**: Since 5.0.0, the icons related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), another plugin developed by the Material Theme team.
-
-This is to encourage developers to develop _Icon Themes_, as the plugin is now free of icons.
+**A**: Starting with version 5.0.0, icon-related settings have been moved to the [Atom Material Icons plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons), also developed by the Material Theme team.
+This change encourages the development of independent _Icon Themes_, as the main plugin no longer bundles icons.
 
 **Q**: **I've downloaded a theme from the Plugins Page, and now I'm seeing texts that aren't themed, or checkboxes that are wrongly colored, etc…**
 
-**A**: This is because these are native themes, and such themes use the Theme API provided by JetBrains rather than the API used by the Material Themes.
-
-Even though the plugin tries to convert it to its own format, it won't be as good as the originals.
-Still, it should be as similar as possible, so there shouldn't be any critical issues.
-In that case, please report to the repository's issues.
+**A**: These are native themes that use the JetBrains Theme API rather than the Material Theme API.
+While the plugin attempts to convert them to its own format, the result may not perfectly match the original.
+However, it should be as close as possible without causing critical issues. If you encounter significant problems, please report them to the repository's issues page.
 
 **Q**: **I've bought a license, but I am still identified as a Free User!**
 
-**A**: That means that you haven't activated your license yet. At the moment, the only way to do it, is to run the action to open the _Registration Modal_.
+**A**: This indicates that your license has not yet been activated. To activate it, run the action to open the _Registration Modal_.
 
 {% include figure.html content="/screens/activateLicense.png" caption="Activate License" %}
 
 {% include figure.html content="/screens/license.png" caption="License" %}
 
-**Important note**: Android Studio users, to activate the plugin (or any paid plugin), you need to install a plugin first:<https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support>.
+**Important note**: Android Studio users must install the [JetBrains Marketplace Licensing Support](https://plugins.jetbrains.com/plugin/13407-jetbrains-marketplace-licensing-support) plugin to activate the Material Theme UI (or any other paid plugin).
