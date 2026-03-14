@@ -30,6 +30,12 @@ For this, navigate to `Settings → Appearance → Material Theme UI → Current
 
 {% include figure.html content="/screens/settingsv3/currentTheme.png" caption="Current Theme" %}
 
+### Preview Theme Colors
+
+Here you can preview the colors of the current theme in a nice color-coded grid.
+
+{% include figure.html content="/screens/settingsv3/previewThemeColors.png" caption="Preview Theme Colors" %}
+
 ### Theme switcher
 
 The plugin comes prebundled with a set of themes that are interchangeable via the
@@ -190,15 +196,23 @@ Since version 9.0, the settings have been split into multiple pages for easier n
 
 {% include figure.html content="/screens/settingsv3/otherTweaks.png" caption="Other Tweaks" %}
 
+{% include figure.html content="/screens/settingsv3/islands.png" caption="Islands" %}
+
+{% include figure.html content="/screens/settingsv3/themeRandomizer.png" caption="Theme Randomizer" %}
+
+{% include figure.html content="/screens/settingsv3/themeIgnores.png" caption="Theme Ignores" %}
+
 #### Summary
 
 Here's an exhaustive list of all available settings:
 
 **[Current Theme](/docs/configuration/current-theme)**:
 
-![currentTheme.png](../../img/screens/settingsv3/currentTheme.png)
-
 In this section, you can view the current theme's colors. Click on a color to copy its value to the clipboard.
+
+**[Preview Theme Colors](/docs/configuration/preview-theme-colors)**:
+
+Here you can preview the colors of the current theme in a nice color-coded grid.
 
 **[Theme Selector](/docs/configuration/theme-selector)**:
 
@@ -269,6 +283,27 @@ In this section, you can view the current theme's colors. Click on a color to co
 - *Custom List Items Height*: Control the size of items in lists and dropdowns (min: `18`, max: `48`).
 - *Compact Fields*: Reduce the size of fields, such as input, numeric and passwords.
 
+**[Islands](/docs/configuration/islands)**:
+
+- *Islands Layout*: Enable the new islands layout.
+- *Background Contrast*![premium](/img/icons/premium.png): Give more contrast between the IDE and the islands.
+- *Custom Background Color*![premium](/img/icons/premium.png): Set a custom background color between the islands.
+- *Border Color*![premium](/img/icons/premium.png): Set a custom border color.
+- *Island Arc Size*![premium](/img/icons/premium.png): Sets a custom arc radius.
+- *Inner Spacing*![premium](/img/icons/premium.png): Customize the inner spacing inside the islands.
+- *Outer Margin*![premium](/img/icons/premium.png): Customize the spacing between the islands.
+- *Islands Gap*![premium](/img/icons/premium.png): Set the gap between the islands and the window borders (only when the tool windows are hidden).
+- *Tool Window Overlay Opacity*: Customize the opacity applied to the tool windows when the IDE is inactive.
+
+**[Theme Randomizer](/docs/configuration/theme-randomizer)**:
+
+- *Enabled*: Enable the theme randomizer.
+- *Theme Change Interval*: Set the interval between theme changes.
+- *Theme List*: Check or uncheck themes to be included in the randomization.
+
+**[Theme Ignores](/docs/configuration/theme-ignores)**:
+
+This section allows you to add UI properties to be ignored from the _Native Theme_, to instead use the ones defined by the plugin.
 
 **[Trees](/docs/configuration/trees)**:
 
@@ -301,7 +336,7 @@ In this section, you can view the current theme's colors. Click on a color to co
 - *Material Design Style*: Select the style of the components.
   - *Legacy Material Design*: Use the old Material Design style (sharp corners, borderless input fields…).
   - *Material Theme*: Use the Material Theme style (rounded corners, bordered input fields…).
-  - *Material You* (NOT RELEASED YET): Use the Material You style (rounded buttons, input fields…).
+  - *Material 3*: Use the Material 3 style (rounded buttons, input fields…).
 - *Borderless Mode*![premium](/img/icons/premium.png): Remove most borders and separators.
 - *Uppercase buttons*: Set the button text to uppercase.
 - *Outlined buttons*![premium](/img/icons/premium.png): Use outline buttons instead of full buttons.
