@@ -101,7 +101,7 @@ This feature is available in the free plan.
 
 This option enables/disables the shadow under the tabs.
 
-{% include figure.html content="/screens/tabShadow.png" caption="Tabs Shadow" %}
+{% include figure.html content="/screens/tabs/tabShadow.png" caption="Tabs Shadow" %}
 
 ---
 

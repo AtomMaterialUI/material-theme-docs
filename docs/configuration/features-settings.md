@@ -145,7 +145,7 @@ This feature makes components stand out more by coloring them with the current a
 - The Primary Buttons
 - The selection color for Lists, Tables and Trees
 
-{% include figure.html content="/screens/accentMode.png" caption="Accent Mode" %}
+{% include figure.html content="/screens/archive/accentMode.png" caption="Accent Mode" %}
 
 You can also specify a _second accent color_ to contrast with the now prominent accent color.
 
@@ -203,9 +203,9 @@ Specifically, this option disables:
 But while these components are disabled, other features, such as _Accent Colors_ and _Contrast Mode_ are still active,
 meaning you can have Darcula checkboxes and buttons with your accent color, or the contents of text boxes being in contrast color, for instance.
 
-{% include figure.html content="/screens/componentsEnabled.png" caption="Material Components Enabled" %}
+{% include figure.html content="/screens/archive/componentsEnabled.png" caption="Material Components Enabled" %}
 
-{% include figure.html content="/screens/componentsDisabled.png" caption="Material Components Disabled" %}
+{% include figure.html content="/screens/archive/componentsDisabled.png" caption="Material Components Disabled" %}
 
 What it doesn't disable however, albeit Material Design components, are:
 - Dialog boxes padded titles
@@ -238,7 +238,7 @@ The new version of the Material Theme UI makes use of the new experimental featu
 This new layout, heavily reminding of VSCode, replaces the tool windows with larger stripes on the left and right sides of the screen.
 It also strips the buttons of all texts, making the IDE feeling less cluttered.
 
-{% include figure.html content="/screens/stripedToolWindows.png" caption="Large Tool Windows" %}
+{% include figure.html content="/screens/archive/stripedToolWindows.png" caption="Large Tool Windows" %}
 
 This feature is disabled by default, but you can go back to the old layout via the _Settings_, or the _Material UI Actions Panel_.
 
@@ -280,4 +280,3 @@ Note: The _New UI Preview program_ has since then been closed, so there's no way
 It could be because the IDE caches fonts or because there are conflicts between Roboto fonts, or that you have a bad version of Roboto.
 Try to reinstall the Roboto font and restart the computer.
 If it still doesn't work, just disable the option or select another font in the settings.
-

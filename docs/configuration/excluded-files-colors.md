@@ -83,7 +83,7 @@ To do so, you have to create a **Scope**.
 There you can define your pattern rules, which directories should be included in the scope and which should be excluded.
 Finally, add your new created scope in the _File Colors_ list, and rise it up to the top, so it won't be shrouded by other file colors.
 
-{% include figure.html content="/screens/scopes.png" caption="Scopes" %}
+{% include figure.html content="/screens/archive/scopes.png" caption="Scopes" %}
 
 See more
 at [File Colors](https://www.jetbrains.com/help/idea/2017.3/file-colors.html?utm_medium=help_link&utm_source=from_product&utm_campaign=IU&utm_content=2017.3)

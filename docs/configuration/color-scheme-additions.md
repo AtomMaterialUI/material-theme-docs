@@ -226,7 +226,7 @@ as the language's highlighting will take precedence over the additions.
 To remedy that, a setting has been added in the Material Theme Settings, **Enforce Highlighting**,
 which would give the language additions higher precedence by making them appear as _Weak Warnings_.
 
-{% include figure.html content="/screens/enforceHighlighting.png" caption="Enforce Highlighting" %}
+{% include figure.html content="/screens/archive/enforceHighlighting.png" caption="Enforce Highlighting" %}
 
 This, of course, has the side effect of adding a lot of "fake errors", therefore, it's disabled by default.
 

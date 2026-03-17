@@ -57,7 +57,7 @@ To get started, first install the Gradle plugin if not available, than activate 
 get prompted with a dialog asking if you want to configure the project as a Gradle project. The IDE will then download
 the Gradle devkit and wrapper and a new tool window will be available on the right with the tasks available.
 
-{% include figure.html content="/screens/gradleTasks.png" caption="Gradle IntelliJ Tasks" %}
+{% include figure.html content="/screens/archive/gradleTasks.png" caption="Gradle IntelliJ Tasks" %}
 
 You can run tasks using the _CLI_ by using the gradle wrapper, like this: `gradlew <task_name>`. Or you can use the
 plugin and double-click on a task to run it. The most important task is the **runIde** task which runs an instance of
