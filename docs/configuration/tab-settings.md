@@ -45,7 +45,7 @@ You can set a custom height between `24` and `60`.
 
 {% include figure.html content="/screens/tabs/largestTabs.png" caption="Largest Height Tabs" %}
 
-{% include figure.html content="/screens/tabs/defaultTabs.png" caption="Default Height Tabs" %}
+{% include figure.html content="/screens/tabs/normalTabs.png" caption="Default Height Tabs" %}
 
 **Note**: The _Tabs Height_ setting also affects the **Tool Windows' Height**, to provide a consistent look between the Editor Tabs and other tool windows.
 {:class='card-panel info'}
@@ -115,9 +115,9 @@ Controls the transparency of the background.
 
 Controls the size of the border.
 
-{% include figure.html content="/screens/tabs/thin.png" caption="Thin Border" %}
+{% include figure.html content="/screens/tabs/thinBorder.png" caption="Thin Border" %}
 
-{% include figure.html content="/screens/tabs/thick.png" caption="Thick Border" %}
+{% include figure.html content="/screens/tabs/thickBorder.png" caption="Thick Border" %}
 
 ### Rounded Tabs Arc
 
