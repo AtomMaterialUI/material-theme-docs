@@ -15,7 +15,7 @@ This version includes a quick hotfix to fix some urgent issues regarding the scr
 
 This version includes two new settings to control the padding and the radius of the rounded tabs.
 
-{% include figure.html content="/screens/roundedTabsPadding.png" caption="Rounded Tabs Customization Options" %}
+{% include figure.html content="/screens/archive/roundedTabsPadding.png" caption="Rounded Tabs Customization Options" %}
 
 ### Other
 

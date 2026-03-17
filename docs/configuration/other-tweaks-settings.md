@@ -45,9 +45,9 @@ Originally inspired by an extension with the same name, this feature has been ad
 What it does is to "focus" on the current part of the code, by "unhighlighting" the parts surrounding it. Whether it's within a class, a function, or inside an
 if-block, the surrounding parts will receive a unique, monotone color, in order for the focused part to receive all the necessary attention.
 
-{% include figure.html content="/screens/focusModeOceanic.png" caption="Focus Mode (Oceanic)" %}
+{% include figure.html content="/screens/archive/focusModeOceanic.png" caption="Focus Mode (Oceanic)" %}
 
-{% include figure.html content="/screens/focusModeLighter.png" caption="Focus Mode (Lighter)" %}
+{% include figure.html content="/screens/archive/focusModeLighter.png" caption="Focus Mode (Lighter)" %}
 
 Since this way of coding is highly dependent of the individual, it is disabled by default,
 in order to not frustrate the users that are used to code without this tweak.
@@ -57,9 +57,9 @@ By default, the color of the unfocused parts is taken from the current theme, bu
 thanks to a switch found inside the settings.
 For example, you can set the _Focus Color_ to the same color as your current editor background, making the unfocused parts disappear completely!
 
-{% include figure.html content="/screens/customFocusColor.png" caption="Custom Focus Color (black)" %}
+{% include figure.html content="/screens/archive/customFocusColor.png" caption="Custom Focus Color (black)" %}
 
-{% include figure.html content="/screens/customFocusColorWhite.png" caption="Custom Focus Color (white)" %}
+{% include figure.html content="/screens/archive/customFocusColorWhite.png" caption="Custom Focus Color (white)" %}
 
 This feature is available since version 7.11.0.
 
@@ -110,7 +110,7 @@ relying on user interaction means that there is a high chance they're going to m
 Therefore, from version **6.12.0** users can now decide to let the plugin **automatically reset the color scheme** during theme activation,
 that's during startup and whenever the theme is changed.
 
-{% include figure.html content="/screens/autoResetSettings.png" caption="Auto Reset Color Scheme" %}
+{% include figure.html content="/screens/archive/autoResetSettings.png" caption="Auto Reset Color Scheme" %}
 
 This setting only affects the **bundled themes**, excluding the *Custom themes*.
 {:class='card-panel'}
@@ -169,9 +169,9 @@ You can still find the previous legacy widget:
 
 <div class="masonry">
 
-{% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
+{% include figure.html content="/screens/archive/widgetStatusbar.png" caption="Status Bar Widget" %}
 
-{% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
+{% include figure.html content="/screens/archive/statusAccentWidget.png" caption="Accent Widget" %}
 
 </div>
 
@@ -202,7 +202,7 @@ IDE/uninstall the plugin. Just follow the instructions at
 From version 2.5.0 the option came back with support for macOS. And unlike in Windows, this does not change the
 Registry but actually applies the background color to the IDE title bar only!
 
-{% include figure.html content="/screens/titlebarThemed.png" caption="Themed Title Bar Mac" %}
+{% include figure.html content="/screens/archive/titlebarThemed.png" caption="Themed Title Bar Mac" %}
 
 ##### macOS with JRE 11
 
@@ -212,7 +212,7 @@ But the developers at JetBrains removed the ability to set the transparent title
 However, instead of mourning the disparition of the title bar and removing the feature altogether,
 we found out a solution by implementing a _custom title bar_ and by delegating the events to the real, hidden title bar.
 
-{% include figure.html content="/screens/customTitleBar.png" caption="Custom Title Bar" %}
+{% include figure.html content="/screens/archive/customTitleBar.png" caption="Custom Title Bar" %}
 
 Now the title bar looks more embedded than ever! However, it is still in its **experimental** state, so it can still contain bugs.
 For instance, sometimes the titlebar would not show for some dialogs; the text could be out of sync with what's supposed to show, font rendering issues etc.
@@ -241,11 +241,11 @@ If someone is interested in a way to do so, please send us a PM by email or Slac
 This setting adds a "widget" to the status bar to indicate which theme you are currently on.
 You can also click on it to open the Material Theme Settings.
 
-{% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
+{% include figure.html content="/screens/archive/widgetStatusbar.png" caption="Status Bar Widget" %}
 
 Starting from version 2.9.4/2.10.4, you can also see your current accent color.
 
-{% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
+{% include figure.html content="/screens/archive/statusAccentWidget.png" caption="Accent Widget" %}
 
 **Note**: this feature has been merged into the Status bar's context menu as of version 2020.3.
 As a result, it has been removed from the plugin.

@@ -26,15 +26,15 @@ You can find this panel in many places:
 
 - Inside the menu, under `Tools → Material Theme`
 
-{% include figure.html content="/screens/toolsMenu.png" caption="Tools Menu" %}
+{% include figure.html content="/screens/archive/toolsMenu.png" caption="Tools Menu" %}
 
 - At the end of the main toolbar
 
-{% include figure.html content="/screens/toolbar.png" caption="Main Toolbar" %}
+{% include figure.html content="/screens/archive/toolbar.png" caption="Main Toolbar" %}
 
 - As an option of the `Quick Switch Panel`
 
-{% include figure.html content="/screens/quickswitch.png" caption="Quick Switch" %}
+{% include figure.html content="/screens/archive/quickswitch.png" caption="Quick Switch" %}
 
 You can also set a shortcut to open every one of its submenus from the
 `Settings → Appearance and Behavior → Keymap → Material Theme` settings.
@@ -46,7 +46,7 @@ You can also set a shortcut to open every one of its submenus from the
 The first subpanel is a switcher to quickly switch between the themes.
 There you can find all the available themes plus the two custom themes.
 
-{% include figure.html content="/screens/switcher.png" caption="Theme Switcher" %}
+{% include figure.html content="/screens/archive/switcher.png" caption="Theme Switcher" %}
 
 **Note**:
 

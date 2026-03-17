@@ -64,7 +64,7 @@ revert to _Darcula_)
 
 From version 3.8.0 a new button has been added to allow you to import colors from external themes into your custom theme.
 
-{% include figure.html content="/screens/importTheme.png" caption="Import Themes" %}
+{% include figure.html content="/screens/archive/importTheme.png" caption="Import Themes" %}
 
 You can set colors from the predefined themes to have a better starting point, or you can import your own theme in the form of an XML file
 (see [External Themes](/docs/development/external-themes))

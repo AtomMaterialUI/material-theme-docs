@@ -31,7 +31,7 @@ to be used from other plugins wanting to extend the theme list.
 Once your theme is done, you should see it inside the
 [theme switcher](/docs/configuration/settings#theme-switcher) under the _External Themes_ section.
 
-{% include figure.html content="/screens/external.png" caption="External Themes" %}
+{% include figure.html content="/screens/archive/external.png" caption="External Themes" %}
 
 You can see an example of it from the
 [Dracula Theme plugin](https://plugins.jetbrains.com/plugin/10762-dracula-theme), a porting of the successful

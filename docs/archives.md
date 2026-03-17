@@ -15,7 +15,7 @@ This version includes a quick hotfix to fix some urgent issues regarding the scr
 
 This version includes two new settings to control the padding and the radius of the rounded tabs.
 
-{% include figure.html content="/screens/roundedTabsPadding.png" caption="Rounded Tabs Customization Options" %}
+{% include figure.html content="/screens/archive/roundedTabsPadding.png" caption="Rounded Tabs Customization Options" %}
 
 ### Other
 
@@ -77,9 +77,9 @@ Examples from a few themes from the Marketplace:
 
 Another option is the ability to control the size of the border for the Rounded Tabs.
 
-{% include figure.html content="/screens/minSize.png" caption="Min Size (1)" %}
+{% include figure.html content="/screens/archive/minSize.png" caption="Min Size (1)" %}
 
-{% include figure.html content="/screens/maxSize.png" caption="Max Size (4)" %}
+{% include figure.html content="/screens/archive/maxSize.png" caption="Max Size (4)" %}
 
 ----
 
@@ -206,7 +206,7 @@ A new button has been added to the **Favorite Themes Shuffle** tool window, to a
 
 You can now customize the opacity of the rounded tabs.
 
-{% include figure.html content="/screens/roundedTabsSettings.png" caption="Rounded Tabs Opacity Settings" %}
+{% include figure.html content="/screens/archive/roundedTabsSettings.png" caption="Rounded Tabs Opacity Settings" %}
 
 In addition, tabs using custom *File Colors* are now more opaque, providing a better visualization.
 
@@ -336,7 +336,7 @@ The **Rounded Tabs** setting has been improved to provide a better contrast betw
 
 Now the selected tab sports a border with the accent color, to make it more distinguishable from the unselected tabs. Moreover, the tabs use the highlight color on hover, to make it more prominent.
 
-{% include figure.html content="/screens/tabs/roundedTabs.png" caption="Rounded Tabs" %}
+{% include figure.html content="/screens/archive/roundedTabs.png" caption="Rounded Tabs" %}
 
 {% include figure.html content="/screens/withTabHighlighter.png" caption="Rounded Tabs with Tab Indicators" %}
 
@@ -377,7 +377,7 @@ As the New UI is now the default for all users, it's now become easier to add mo
 
 To celebrate that, we are introducing a new setting to customize the tabs' design: **Rounded Tabs**.
 
-{% include figure.html content="/screens/tabs/roundedTabs.png" caption="Rounded Tabs" %}
+{% include figure.html content="/screens/archive/roundedTabs.png" caption="Rounded Tabs" %}
 
 This feature mimics the new tab design introduced by Google in their navigator, _Google Chrome_, which makes the tabs more rounded and looking like pressed buttons.
 
@@ -806,7 +806,7 @@ Another highlight of this release is a new theme: **Material Space**.
 
 This theme is a dark blue and purple theme reminiscent of the cosmic space. It is based off the theme used in the Apollo GraphQL website, but with Material colors.
 
-{% include figure.html content="/screens/space.png" caption="Material Space" %}
+{% include figure.html content="/screens/archive/space.png" caption="Material Space" %}
 
 ### Fixes
 
@@ -917,7 +917,7 @@ as it needed a new implementation to fit with the new Title Bar.
 
 But the latest release brought it back, and therefore needed attention from the plugin as well.
 
-{% include figure.html content="/screens/themedProjectBar.png" caption="Themed Project Bar" %}
+{% include figure.html content="/screens/archive/themedProjectBar.png" caption="Themed Project Bar" %}
 
 But that's not all! It also supports the **Colorize Title Bar** feature, making it blend with the colorized title bar (
 New UI only).
@@ -1034,13 +1034,13 @@ For instance, you could want your projects, be it old or new, to have a specific
 project frame color, without having to
 change it for all projects through the application settings.
 
-{% include figure.html content="/screens/settingsMenu.png" caption="Settings Menu (Mac)" %}
+{% include figure.html content="/screens/archive/settingsMenu.png" caption="Settings Menu (Mac)" %}
 
 Such capabilities already exist for other settings, through the **New Projects Setup**, but not for the Material Theme.
 Therefore, since this version (7.14.0),
 it is now possible, and will affect new projects automatically.
 
-{% include figure.html content="/screens/perprojectDefaults.png" caption="Per-Project Defaults" %}
+{% include figure.html content="/screens/archive/perprojectDefaults.png" caption="Per-Project Defaults" %}
 
 **Note**: This will **NOT** affect existing projects!
 
@@ -1065,7 +1065,7 @@ Therefore, this version adds a new icon and description to the checker tooltip, 
 errors, but simply annotations used to paint
 language additions.
 
-{% include figure.html content="/screens/annotations.png" caption="Language Addition Annotations" %}
+{% include figure.html content="/screens/archive/annotations.png" caption="Language Addition Annotations" %}
 
 ---
 
@@ -1123,9 +1123,9 @@ The second brand-new feature of this release is a feature called "Focus Mode".
 Originally inspired by an extension with the same name, this feature has been added to the plugin's feature as well,
 with more customization options.
 
-{% include figure.html content="/screens/focusModeOceanic.png" caption="Focus Mode (Oceanic)" %}
+{% include figure.html content="/screens/archive/focusModeOceanic.png" caption="Focus Mode (Oceanic)" %}
 
-{% include figure.html content="/screens/focusModeLighter.png" caption="Focus Mode (Lighter)" %}
+{% include figure.html content="/screens/archive/focusModeLighter.png" caption="Focus Mode (Lighter)" %}
 
 What this feature does is to help you focus on the current part of the code you're editing, by "unhighlighting" the
 other parts surrounding it.
@@ -1137,9 +1137,9 @@ used to code the usual way.
 By default, the color of the unfocused parts is taken from the current theme, but you can decide to use your own color
 as well.
 
-{% include figure.html content="/screens/customFocusColor.png" caption="Custom Focus Color (black)" %}
+{% include figure.html content="/screens/archive/customFocusColor.png" caption="Custom Focus Color (black)" %}
 
-{% include figure.html content="/screens/customFocusColorWhite.png" caption="Custom Focus Color (white)" %}
+{% include figure.html content="/screens/archive/customFocusColorWhite.png" caption="Custom Focus Color (white)" %}
 
 You can find this feature under the "Other Tweaks" tab.
 
@@ -1192,7 +1192,7 @@ Another long-awaited fix is the ability to change the _Project View Tree Font_ w
 This was something quite difficult to implement, as even within JetBrains, a restart was required upon changing the font
 size.
 
-{% include figure.html content="/screens/advancedSettingsRestart.png" caption="JetBrains' Advanced Settings" %}
+{% include figure.html content="/screens/archive/advancedSettingsRestart.png" caption="JetBrains' Advanced Settings" %}
 
 Thankfully, with time comes experience, and we finally found a workaround for this issue, therefore giving the full
 ability to customize the _Project View_
@@ -1393,7 +1393,7 @@ showcases a hand-picked list of useful
 plugins and remarkable themes for you to discover at a glance rather than navigating the whole sea of available plugins
 in the Marketplace.
 
-{% include figure.html content="/screens/recommendedPlugins.png" caption="Recommended Plugins" %}
+{% include figure.html content="/screens/archive/recommendedPlugins.png" caption="Recommended Plugins" %}
 
 Most of these plugins are UI-related, grouped into three sections:
 
@@ -1550,9 +1550,9 @@ You can still find the previous legacy widget:
 
 <div class="masonry">
 
-{% include figure.html content="/screens/widgetStatusbar.png" caption="Status Bar Widget" %}
+{% include figure.html content="/screens/archive/widgetStatusbar.png" caption="Status Bar Widget" %}
 
-{% include figure.html content="/screens/statusAccentWidget.png" caption="Accent Widget" %}
+{% include figure.html content="/screens/archive/statusAccentWidget.png" caption="Accent Widget" %}
 
 </div>
 
@@ -1719,7 +1719,7 @@ The search fields also underwent a redesign, becoming larger and bordered, but w
 is that they are usually encapsulated in
 a more complex UI, such as the "_Search Everywhere_" or "_Find in Files_" popups.
 
-{% include figure.html content="/screens/search.png" caption="New Search Fields" %}
+{% include figure.html content="/screens/archive/search.png" caption="New Search Fields" %}
 
 They are also affected by the "*Compact Fields*" setting.
 
@@ -1925,7 +1925,7 @@ Therefore, from version 6.12.0 users can now decide to let the plugin **automati
 theme activation, i.e., at startup and
 whenever the theme is changed.
 
-{% include figure.html content="/screens/autoResetSettings.png" caption="Auto Reset Color Scheme" %}
+{% include figure.html content="/screens/archive/autoResetSettings.png" caption="Auto Reset Color Scheme" %}
 
 This setting only affects the bundled themes, excluding the *Custom theme*.
 
@@ -2003,9 +2003,9 @@ This release brings a lot of new features, mostly related to font customization.
 
 Continuing from the *Tab Font Size* feature, you will now be able to customize the font displayed in the editor tabs.
 
-{% include figure.html content="/screens/customTabFont.png" caption="Tab Font Settings" %}
+{% include figure.html content="/screens/archive/archive/customTabFont.png" caption="Tab Font Settings" %}
 
-{% include figure.html content="/screens/tabFont.png" caption="Custom Tab Font" %}
+{% include figure.html content="/screens/archive/archive/tabFont.png" caption="Custom Tab Font" %}
 
 This font will be different from the one used for the whole IDE.
 
@@ -2263,7 +2263,7 @@ This version finally implements the so long waited **Sync Settings**!!! Now you 
 
 This was one of our most waited features since… forever, and it is finally here! You can finally share your Material Theme Settings and Custom Theme using the **Sync Settings** plugin.
 
-{% include figure.html content="/screens/syncSettings.png" caption="Sync Settings" %}
+{% include figure.html content="/screens/archive/syncSettings.png" caption="Sync Settings" %}
 
 Please note however that this is highly depending on the Sync Settings implementation. There are still some discrepencies with how the Sync Settings should work, as you can show in this [YouTrack issue](https://youtrack.jetbrains.com/issue/IDEA-219788). But theoretically your Material Theme Settings should be shared across your stations.
 
@@ -2437,7 +2437,7 @@ Please open issues in the repository if you wish for more modals to be affected!
 
 A new option made its way to the tab settings section, which is the ability to make the current tab as bold.
 
-{% include figure.html content="/screens/activeBoldTab.png" caption="Active Tab as Bold" %}
+{% include figure.html content="/screens/archive/activeBoldTab.png" caption="Active Tab as Bold" %}
 
 Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
 
@@ -2519,30 +2519,30 @@ The plugin continues its process to theme all parts of the IDE, even those that 
 
 Another non-themed part were the _inlay hints_ that can be displayed in different places of the editor.
 
-{% include figure.html content="/screens/inlayUnthemed.png" caption="Inlay Hints Unthemed" %}
+{% include figure.html content="/screens/archive/inlayUnthemed.png" caption="Inlay Hints Unthemed" %}
 
-{% include figure.html content="/screens/inlayThemed.png" caption="Inlay Hints Themed" %}
+{% include figure.html content="/screens/archive/inlayThemed.png" caption="Inlay Hints Themed" %}
 
-{% include figure.html content="/screens/inlayParamsUnthemed.png" caption="Inlay Parameters Unhemed" %}
+{% include figure.html content="/screens/archive/inlayParamsUnthemed.png" caption="Inlay Parameters Unhemed" %}
 
-{% include figure.html content="/screens/inlayParamsThemed.png" caption="Inlay Parameters Themed" %}
+{% include figure.html content="/screens/archive/inlayParamsThemed.png" caption="Inlay Parameters Themed" %}
 
 
 ### Problems Toolbar
 
 This is the small transparent toolbar that appears on the top right of the editor window to display the current file's problems. Although it looked like it was themed, the hovered buttons were not.
 
-{% include figure.html content="/screens/problemsUnthemed.png" caption="Problems Toolbar Unthemed" %}
+{% include figure.html content="/screens/archive/problemsUnthemed.png" caption="Problems Toolbar Unthemed" %}
 
-{% include figure.html content="/screens/problemsThemed.png" caption="Problems Toolbar Themed" %}
+{% include figure.html content="/screens/archive/problemsThemed.png" caption="Problems Toolbar Themed" %}
 
 ### Inline refactoring toolbar
 
 Last but not least, the _inline refactoring toolbar_ was themed as well.
 
-{% include figure.html content="/screens/inlineUnthemed.png" caption="Inline Refactoring Unthemed" %}
+{% include figure.html content="/screens/archive/inlineUnthemed.png" caption="Inline Refactoring Unthemed" %}
 
-{% include figure.html content="/screens/inlineThemed.png" caption="Inline Refactoring Themed" %}
+{% include figure.html content="/screens/archive/inlineThemed.png" caption="Inline Refactoring Themed" %}
 
 
 
@@ -2634,7 +2634,7 @@ The new version of the Material Theme UI makes use of the new experimental featu
 
 This new layout, heavily reminding of VSCode, replaces the tool windows by larger stripes on the left and right side of the screen. It also strips the buttons of all texts, making the IDE feeling less cluttered.
 
-{% include figure.html content="/screens/stripedToolWindows.png" caption="Striped Tool Windows" %}
+{% include figure.html content="/screens/archive/stripedToolWindows.png" caption="Striped Tool Windows" %}
 
 This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
 
@@ -2690,7 +2690,7 @@ Of course, the bundled color schemes have been extended to support those new add
 
 However, due to a limitation in JetBrains' syntax highlighting, some additions might not be highlighted as expected, as the language's highlighting will take precedence over the additions. To remedy that, a setting has been added in the Material Theme Settings, **Enforce Highlighting**, which would give the language additions higher precedence by making them appear as _Weak Warnings_.
 
-{% include figure.html content="/screens/enforceHighlighting.png" caption="Enforce Highlighting" %}
+{% include figure.html content="/screens/archive/enforceHighlighting.png" caption="Enforce Highlighting" %}
 
 This, of course, has the side effect of adding a lot of "fake errors", therefore, it's disabled by default.
 

@@ -28,7 +28,7 @@ a little hard to get to find out the hidden pearls in this sea of available opti
 Introducing the **Recommended plugins**: It's another settings page found inside the _Material Theme Settings_ that showcases a hand-picked list of useful
 plugins and remarkable themes for you to discover at a glance rather than navigating the whole sea of available plugins in the Marketplace.
 
-{% include figure.html content="/screens/recommendedPlugins.png" caption="Recommended Plugins" %}
+{% include figure.html content="/screens/archive/recommendedPlugins.png" caption="Recommended Plugins" %}
 
 Most of these plugins are UI-related, grouped into three sections:
 
