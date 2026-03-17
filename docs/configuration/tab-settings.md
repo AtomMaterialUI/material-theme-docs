@@ -113,7 +113,7 @@ Controls the transparency of the background.
 
 ### Rounded Tabs Border Size
 
-Controls the size of the border.
+Controls the size of the border of the tabs.
 
 {% include figure.html content="/screens/tabs/thinBorder.png" caption="Thin Border" %}
 
