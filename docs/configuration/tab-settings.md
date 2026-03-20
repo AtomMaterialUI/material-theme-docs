@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/accent-mode'
   title: Accent Mode
 next:
-  url: '/docs/configuration/compact-settings'
-  title: Compact Settings
+  url: '/docs/configuration/spacing-settings'
+  title: Spacing Settings
 ---
 
 Some features are only available for premium users.
