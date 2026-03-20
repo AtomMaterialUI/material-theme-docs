@@ -1684,7 +1684,7 @@ bottom border. The reasoning behind this,
 according to Material Design principles, is to make them more discoverable and interactable.
 
 Moreover, since these larger components can take a lot of space, a new setting has been added to
-the [Compact Settings](/docs/configuration/compact-settings#compact-fields)
+the [Compact Settings](/docs/configuration/spacing-settings#compact-fields)
 to allow you to have smaller fields.
 
 More info: <https://material.io/components/text-fields#anatomy>
@@ -1701,7 +1701,7 @@ instead of over it. The caret icon (the
 arrow) also changed to the usual Material Design chevron.
 
 Menus have too undergone some changes and became larger as well, with the option to tweak up the items size through
-the [Compact Settings](/docs/configuration/compact-settings#custom-list-items-height).
+the [Compact Settings](/docs/configuration/spacing-settings#custom-list-items-height).
 
 More info: <https://material.io/components/menus#usage>
 
@@ -2445,7 +2445,7 @@ Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-setti
 
 ## Make Run Configurations using the Compact Settings
 
-A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/compact-settings#compact-dropdown-lists) setting, the same way the other dropdowns do.
+A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/spacing-settings#compact-dropdown-lists) setting, the same way the other dropdowns do.
 
 {% include figure.html content="/screens/paddedRunConf.png" caption="Padded Run Configuration" %}
 

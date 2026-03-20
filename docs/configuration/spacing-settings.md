@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Compact Settings
-description: Fine tune some components' display.
+title: Spacing Settings
+description: Control the size of various IDE components.
 group: configuration
 toc: true
 comments: true
@@ -15,10 +15,10 @@ next:
 
 ---
 
-This feature is available in the free plan.
+Some features are only available in the premium plan.
 {:class='card-panel warn'}
 
-These settings control some components' display, mainly about their compactness.
+These settings allows you to control the size of various IDE components, giving you more freedom to control the overall look and feel of the IDE.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -103,4 +103,3 @@ Note: this also affects *Autocompletion choices**.
 - Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display issues in some components.
   One example is the *Python DataView* (<https://github.com/ChrisRM/material-theme-jetbrains/issues/485>).
   If you are using such features a lot, just enable the "Compact Table Cells" option to solve that problem.
-

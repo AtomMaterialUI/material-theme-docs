@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/compact-settings'
-  title: Compact Settings
+  url: '/docs/configuration/spacing-settings'
+  title: Spacing Settings
 next:
   url: '/docs/configuration/component-settings'
   title: Component Settings
@@ -127,4 +127,3 @@ It also affects other trees as well, such as the _Find Usages_, _Settings_… (b
 
 - Tree views' settings work for all tree views, even views such as "Project Structure" or "Remote Host".
 - _Font size_ also replaces the font of the settings tree.
-
