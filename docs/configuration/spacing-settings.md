@@ -23,83 +23,124 @@ These settings allows you to control the size of various IDE components, giving 
 
 {% include carbonads.html %}
 
-### Compact statusbar
-
-The IDE's Status Bar went through a redesign as well, removing all borders and giving more padding on the top and bottom.
-This setting allows you to revert to the default "_compact_" design.
-
-
-{% include figure.html content="/screens/expandedStatusbar.png" caption="Padded Status Bar" %}
-
-{% include figure.html content="/screens/compactStatusbar.png" caption="Compact Status Bar" %}
-
 ----
-### Compact table cells
 
-Just like the status bar, table cells, table headers and list views were also given more padding to resemble more like
-Material Design's equivalents.
+## Spacing Settings
 
-This setting allows you to revert to the old, "_compact_" style. This can be useful if you have lots of items and don't
-want to scroll endlessly.
+You can find the Spacing Settings in the **Spacing** menu under the **Material Theme** group. Since version 11, you can now control the size of each component separately rather than choose between compact and regular mode.
 
-{% include figure.html content="/screens/regularTableHeaders.png" caption="Regular Table Cells" %}
-
-{% include figure.html content="/screens/compactTableHeaders.png" caption="Compact Table Cells" %}
-
-----
-### Compact dropdowns
-
-This setting allows you to reduce the size of the dropdowns used in the UI to be more compact.
-
-{% include figure.html content="/screens/notCompactDropdowns.png" caption="Regular Dropdowns" %}
-
-{% include figure.html content="/screens/compactDropdowns.png" caption="Compact Dropdowns" %}
-
-----
-### Compact menus
-
-From version 2.10.2 Menus had also gained more padding just like dropdowns and tables.
-
-As a result, a setting has been added to revert to the default menus size.
-
-{% include figure.html content="/screens/paddedMenus.png" caption="Regular Menus" %}
-
-
-----
-### Compact fields
-
-This setting allows you to reduce the size of the fields, that has become larger since version 6.14.
-
-This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**, 
-as well as **Search Everywhere**, **Find In Files**, **New File**, etc.
-
-{% include figure.html content="/screens/compactField.png" caption="Compact Fields" %}
-
-{% include figure.html content="/screens/paddedField.png" caption="Padded Fields" %}
-
-{% include figure.html content="/screens/compactSearch.png" caption="Compact Search Everywhere" %}
-
-{% include figure.html content="/screens/paddedSearch.png" caption="Padded Search Everywhere" %}
-
+{% include figure.html content="/screens/settingsv3/spacing.png" caption="Spacing Settings" %}
 
 ----
 
-### Custom list items height
+### Main Toolbar
 
-This setting allows you to customize the items' height in lists, such as regular lists, dropdown options, etc.
+This setting allows you to control the height of the Main Toolbar in both regular and compact modes.
 
-Note: this also affects *Autocompletion choices**.
+{% include figure.html content="/screens/spacing/smallHeader.png" caption="Small Header" %}
 
-{% include figure.html content="/screens/highestHeight.png" caption="Custom List Item Size: 48" %}
+{% include figure.html content="/screens/spacing/largeHeader.png" caption="Large Header" %}
 
-{% include figure.html content="/screens/paddedComplete.png" caption="Large Autocomplete" %}
+----
 
-{% include figure.html content="/screens/compactComplete.png" caption="Compact Autocomplete" %}
+### Custom statusbar size
 
----
+This setting controls the size of the status bar.
 
-### Notes
+{% include figure.html content="/screens/spacing/smallStatus.png" caption="Small Status Bar" %}
 
-- Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display issues in some components.
-  One example is the *Python DataView* (<https://github.com/ChrisRM/material-theme-jetbrains/issues/485>).
-  If you are using such features a lot, just enable the "Compact Table Cells" option to solve that problem.
+{% include figure.html content="/screens/spacing/largeStatus.png" caption="Large Status Bar" %}
+
+----
+### Custom table cells size
+
+Similarly, this setting control the size of table cells and table headers. 
+
+**Note**: this doesn't control the size of database tables.
+
+{% include figure.html content="/screens/small/defaultCells.png" caption="Default Table Cells" %}
+
+{% include figure.html content="/screens/small/smallCells.png" caption="Small Table Cells" %}
+
+{% include figure.html content="/screens/small/largeCells.png" caption="Large Table Cells" %}
+
+----
+### Custom dropdowns size
+
+This setting allows you to customize the size of the dropdowns used in the UI.
+
+{% include figure.html content="/screens/spacing/defaultDropdowns.png" caption="Default Dropdowns" %}
+
+{% include figure.html content="/screens/spacing/smallDropdowns.png" caption="Small Dropdowns" %}
+
+{% include figure.html content="/screens/spacing/largeDropdowns.png" caption="Large Dropdowns" %}
+
+[//]: # (----)
+
+[//]: # (### Custom menus size)
+
+[//]: # ()
+[//]: # (Menus also have gain padding to match the rest of the UI.)
+
+[//]: # (This setting allows you to customize the size of the menus and menu items.)
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/paddedMenus.png" caption="Regular Menus" %})
+
+[//]: # ()
+[//]: # (----)
+
+[//]: # (### Custom list items height)
+
+[//]: # ()
+[//]: # (This setting allows you to customize the items' height in lists, such as regular lists, dropdown options, etc.)
+
+[//]: # ()
+[//]: # (Note: this also affects **Autocompletion choices**.)
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/highestHeight.png" caption="Custom List Item Size: 48" %})
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/paddedComplete.png" caption="Large Autocomplete" %})
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/compactComplete.png" caption="Compact Autocomplete" %})
+
+[//]: # ()
+[//]: # (----)
+
+[//]: # (### Custom fields size)
+
+[//]: # ()
+[//]: # (This setting allows you to customize the size of the fields, such as text fields, password fields, etc.)
+
+[//]: # ()
+[//]: # (This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**,)
+
+[//]: # (as well as **Search Everywhere**, **Find In Files**, **New File**, etc.)
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/compactField.png" caption="Compact Fields" %})
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/paddedField.png" caption="Padded Fields" %})
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/compactSearch.png" caption="Compact Search Everywhere" %})
+
+[//]: # ()
+[//]: # ({% include figure.html content="/screens/paddedSearch.png" caption="Padded Search Everywhere" %})
+
+[//]: # ()
+[//]: # (---)
+
+[//]: # ()
+[//]: # (### Notes)
+
+[//]: # ()
+[//]: # (- Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display issues in some components.)
+
+[//]: # (  One example is the *Python DataView* &#40;<https://github.com/ChrisRM/material-theme-jetbrains/issues/485>&#41;.)
+
+[//]: # (  If you are using such features a lot, just enable the "Compact Table Cells" option to solve that problem.)
