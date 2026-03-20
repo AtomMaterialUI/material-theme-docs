@@ -2,7 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 /npm-debug.log
-archive/
 img/galleries/
 jekyllbuild/
 node_modules/
