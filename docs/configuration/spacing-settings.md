@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/tab-settings'
   title: Tab Settings
 next:
-  url: '/docs/configuration/project-view-settings'
-  title: Project View Settings
+  url: '/docs/configuration/trees-settings'
+  title: Trees Settings
 
 ---
 

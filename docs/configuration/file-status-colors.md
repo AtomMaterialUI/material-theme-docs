@@ -116,7 +116,7 @@ Therefore, it's recommended to use the `Custom File Colors` from now on, even if
 From version 2.9.0 a new entry named _Directories_ has been added to the page,
 allowing to set a custom color to directories only, thus differentiating from regular files.
 
-This setting depends on the [Project View Settings's Styled Directories](/docs/configuration/project-view-settings#styled-directories), and is disabled by
+This setting depends on the [Project View Settings's Styled Directories](/docs/configuration/trees-settings#styled-directories), and is disabled by
 default.
 
 {% include figure.html content="/screens/styledDirectories.png" caption="Styled Directories" %}

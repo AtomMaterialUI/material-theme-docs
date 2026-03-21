@@ -7,8 +7,8 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/project-view-settings'
-  title: Project View Settings
+  url: '/docs/configuration/trees-settings'
+  title: Trees Settings
 next:
   url: '/docs/configuration/features-settings'
   title: Features Settings

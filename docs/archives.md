@@ -1730,7 +1730,7 @@ the design of the navigation drawer's
 selected items from <https://material.io/components/navigation-drawer#usage>.
 
 Moreover, a new style
-of [Selected Tree Indicators](/docs/configuration/project-view-settings#indicator-style-and-thickness), bolder and
+of [Selected Tree Indicators](/docs/configuration/trees-settings#indicator-style-and-thickness), bolder and
 rounder, replaces
 the current one. You can still use the old one from the options though, renamed "_Sharp_".
 
@@ -2021,7 +2021,7 @@ Just like the tabs, you will now be able to customize the Trees' Font Family as 
 
 Just like the _Tree Font Size_, you will need to close and reopen the project (or restart) to see the changes.
 
-You can find the setting in the [_Project View Settings_](/docs/configuration/project-view-settings#custom-font) panel.
+You can find the setting in the [_Project View Settings_](/docs/configuration/trees-settings#custom-font) panel.
 
 ### Use Editor Default Font
 
