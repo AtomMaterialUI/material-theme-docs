@@ -117,12 +117,12 @@ Available styles:
 | Circle             | <img src="/img/screens/arrows/circle.png">    |
 | None               | (no arrows)                                   |
 
-**Note**: If the [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) plugin is installed, this setting will be disabled as it is managed by that plugin.
+**Note**: If the [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) plugin is installed, this setting is disabled as it is managed by the plugin itself.
 {:class='card-panel warn'}
 
 ----
 ### Colored open directories
 
-When enabled, this setting applies the accent color to directories containing open files in the _Project View_, making them easier to identify.
+This setting applies the accent color to directories containing open files in the _Project View_, making them easier to identify.
 
 {% include figure.html content="/screens/trees/coloredOpen.png" caption="Colored open directories" %}
