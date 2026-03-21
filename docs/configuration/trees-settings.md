@@ -81,7 +81,7 @@ Available styles:
 | Border (default) | <img src="/img/screens/indicators/border.png">    |
 | Sharp Border     | <img src="/img/screens/indicators/sharp.png">     |
 | Dot              | <img src="/img/screens/indicators/dot.png">       |
-| Boxed            | <img src="/img/screens/indicators/boxes.png">     |
+| Boxed            | <img src="/img/screens/indicators/boxed.png">     |
 | Right Border     | <img src="/img/screens/indicators/right.png">     |
 | Underline        | <img src="/img/screens/indicators/underline.png"> |
 | None             | (no indicator)                                    |
