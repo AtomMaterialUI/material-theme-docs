@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/tab-settings'
   title: Tab Settings
 next:
-  url: '/docs/configuration/project-view-settings'
-  title: Project View Settings
+  url: '/docs/configuration/trees-settings'
+  title: Trees Settings
 
 ---
 
@@ -61,11 +61,11 @@ This setting controls the vertical padding of **Table Cells** and **Table Header
 
 **Note**: This setting does not affect database tables.
 
-{% include figure.html content="/screens/small/defaultCells.png" caption="Default Table Cells" %}
+{% include figure.html content="/screens/spacing/defaultCells.png" caption="Default Table Cells" %}
 
-{% include figure.html content="/screens/small/smallCells.png" caption="Small Table Cells" %}
+{% include figure.html content="/screens/spacing/smallCells.png" caption="Small Table Cells" %}
 
-{% include figure.html content="/screens/small/largeCells.png" caption="Large Table Cells" %}
+{% include figure.html content="/screens/spacing/largeCells.png" caption="Large Table Cells" %}
 
 ### Modify Database Tables
 
@@ -73,9 +73,9 @@ The previous setting only applies to tables within the IDE interface. However, f
 
 By enabling this option, the plugin will automatically apply your custom table size settings to the Data Editor as well, ensuring a consistent look across the entire environment.
 
-{% include figure.html content="/screens/spacing/databaseViewsSmall.png" caption="Data Views Small Cells" %}
+{% include figure.html content="/screens/spacing/dataViewsSmall.png" caption="Data Views Small Cells" %}
 
-{% include figure.html content="/screens/spacing/databaseViewsLarge.png" caption="Data Views Large Cells" %}
+{% include figure.html content="/screens/spacing/dataViewsLarge.png" caption="Data Views Large Cells" %}
 
 **Note**: This option directly overrides the values in `Settings -> Appearance -> Data Editor and Viewer`. Be aware that these changes are permanent and cannot be automatically reverted to their previous state once applied.
 {:class='card-panel warn'}

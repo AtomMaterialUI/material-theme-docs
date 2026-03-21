@@ -274,13 +274,14 @@ This section provides a visual grid of all colors used by the currently active t
 **[Spacing](/docs/configuration/spacing)**:
 
 - *Header Size*![premium](/img/icons/premium.png): Control the size of the header.
-- *Compact Mode Header Size*![premium](/img/icons/premium.png): Control the size of the header in compact mode.
+  - *Compact Mode Header Size*![premium](/img/icons/premium.png): Control the size of the header in compact mode.
 - *Custom Statusbar Size*![premium](/img/icons/premium.png): Control the size of the status bar.
-- *Compact Table Cells*: Reduce the height of table headers and table cells.
-- *Compact Dropdowns*: Reduce the size of dropdowns.
-- *Compact Menus*: Reduce the size of the menus.
-- *Custom List Items Height*: Control the size of items in lists and dropdowns (min: `18`, max: `48`).
-- *Compact Fields*: Reduce the size of fields, such as input, numeric and passwords.
+- *Custom Table Cells*: Control the size of table headers and table cells.
+  - *Modify Database Tables*: Apply the custom table cell size to editor tables such as Database Views.
+- *Custom Dropdowns*: Control the size of dropdowns.
+- *Custom Menus*: Control the size of the menus.
+- *Custom List Items Height*: Control the size of items in lists and dropdowns.
+- *Custom Fields*: Control the size of fields, such as input, numeric and passwords.
 
 **[Islands](/docs/configuration/islands)**:
 
