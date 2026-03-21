@@ -115,6 +115,7 @@ You can choose from the following styles:
 | Arrows             | <img src="/img/screens/arrows/arrows.png">    |
 | Plus-Minus         | <img src="/img/screens/arrows/plusMinus.png"> |
 | Circle             | <img src="/img/screens/arrows/circle.png">    |
+| None               | (no arrows)                                   |
 
 **Note**: If you have the [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons) plugin installed, this setting will be disabled as it is controlled by that plugin.
 {:class='card-panel warn'}
