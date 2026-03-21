@@ -18,7 +18,7 @@ next:
 Some features are only available in the premium plan.
 {:class='card-panel warn'}
 
-These settings allows you to control the size of various IDE components, giving you more freedom to control the overall look and feel of the IDE.
+These settings give you precise control over the spacing and sizing of various IDE components, allowing you to tailor the overall look and feel of your development environment to your preference.
 {:class='title'}
 
 {% include carbonads.html %}
@@ -27,15 +27,18 @@ These settings allows you to control the size of various IDE components, giving 
 
 ## Spacing Settings
 
-You can find the Spacing Settings in the **Spacing** menu under the **Material Theme** group. Since version 11, you can now control the size of each component separately rather than choose between compact and regular mode.
+You can access the **Spacing** menu under the **Material Theme** settings group. Since version 11.0, the plugin has shifted from a simple "Compact vs. Regular" mode to a more granular system where you can control the size of each component individually using intuitive sliders.
 
-{% include figure.html content="/screens/settingsv3/spacing.png" caption="Spacing Settings" %}
+{% include figure.html content="/screens/settingsv3/spacing.png" caption="Spacing Settings Interface" %}
 
 ----
 
 ### Main Toolbar
 
-This setting allows you to control the height of the Main Toolbar in both regular and compact modes.
+This setting allows you to adjust the height of the **Main Toolbar** for both regular and compact modes. This is especially useful for high-resolution displays where you might want a more spacious or a more compact layout.
+
+- **Header Size**: Adjusts the height of the toolbar in standard mode.
+- **Compact Mode Header Size**: Adjusts the height when the IDE is set to [Compact Mode](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#compact-mode).
 
 {% include figure.html content="/screens/spacing/smallHeader.png" caption="Small Header" %}
 
@@ -43,20 +46,21 @@ This setting allows you to control the height of the Main Toolbar in both regula
 
 ----
 
-### Custom statusbar size
+### Custom Status Bar Size
 
-This setting controls the size of the status bar.
+The IDE's **Status Bar** has been redesigned to align with Material Design principles, featuring increased padding and a cleaner look. Use this slider to find the perfect balance between information density and visual breathing room.
 
 {% include figure.html content="/screens/spacing/smallStatus.png" caption="Small Status Bar" %}
 
 {% include figure.html content="/screens/spacing/largeStatus.png" caption="Large Status Bar" %}
 
 ----
-### Custom table cells size
+### Custom Table Cells Size
 
-Similarly, this setting control the size of table cells and table headers. 
+This setting controls the vertical padding of **Table Cells** and **Table Headers** across the IDE. This is particularly helpful when working with long lists or complex configurations where you want to minimize vertical scrolling.
 
-**Note**: this doesn't control the size of database tables.
+**Note**: This setting does not affect database tables in the Database tool window.
+{:class='card-panel warn'}
 
 {% include figure.html content="/screens/small/defaultCells.png" caption="Default Table Cells" %}
 
@@ -65,9 +69,9 @@ Similarly, this setting control the size of table cells and table headers.
 {% include figure.html content="/screens/small/largeCells.png" caption="Large Table Cells" %}
 
 ----
-### Custom dropdowns size
+### Custom Dropdowns Size
 
-This setting allows you to customize the size of the dropdowns used in the UI.
+This setting allows you to customize the size of **Dropdown Menus** (Comboboxes) used throughout the UI, such as the branch selector or run configurations.
 
 {% include figure.html content="/screens/spacing/defaultDropdowns.png" caption="Default Dropdowns" %}
 
@@ -75,72 +79,39 @@ This setting allows you to customize the size of the dropdowns used in the UI.
 
 {% include figure.html content="/screens/spacing/largeDropdowns.png" caption="Large Dropdowns" %}
 
-[//]: # (----)
+----
 
-[//]: # (### Custom menus size)
+### Custom Menus Size
 
-[//]: # ()
-[//]: # (Menus also have gain padding to match the rest of the UI.)
+Customize the padding and overall size of the IDE's **Menus**. This affects both the top-level application menus and context (right-click) menus.
 
-[//]: # (This setting allows you to customize the size of the menus and menu items.)
+{% include figure.html content="/screens/spacing/smallMenus.png" caption="Small Menus" %}
 
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/paddedMenus.png" caption="Regular Menus" %})
+{% include figure.html content="/screens/spacing/largeMenus.png" caption="Large Menus" %}
 
-[//]: # ()
-[//]: # (----)
+----
 
-[//]: # (### Custom list items height)
+### Custom List Items Height
 
-[//]: # ()
-[//]: # (This setting allows you to customize the items' height in lists, such as regular lists, dropdown options, etc.)
+This slider controls the height of individual items in **Lists**, such as the "Find in Files" results or the "Search Everywhere" list.
 
-[//]: # ()
-[//]: # (Note: this also affects **Autocompletion choices**.)
+**Note**: This also affects **Autocompletion choices** and **Menu Items**.
+{:class='card-panel warn'}
 
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/highestHeight.png" caption="Custom List Item Size: 48" %})
+{% include figure.html content="/screens/spacing/smallLists.png" caption="Small List Items" %}
 
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/paddedComplete.png" caption="Large Autocomplete" %})
+{% include figure.html content="/screens/spacing/largeLists.png" caption="Large List Items" %}
 
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/compactComplete.png" caption="Compact Autocomplete" %})
+{% include figure.html content="/screens/spacing/smallComplete.png" caption="Compact Autocomplete" %}
 
-[//]: # ()
-[//]: # (----)
+{% include figure.html content="/screens/spacing/largeComplete.png" caption="Large Autocomplete" %}
 
-[//]: # (### Custom fields size)
+----
 
-[//]: # ()
-[//]: # (This setting allows you to customize the size of the fields, such as text fields, password fields, etc.)
+### Custom Input Fields Size
 
-[//]: # ()
-[//]: # (This option concerns **Text Fields**, **Password Fields**, **Number Fields** and **Search Fields**,)
+Finally, this setting allows you to adjust the size of **Input Fields** used in the UI, including text fields, password fields, number fields, and search fields.
 
-[//]: # (as well as **Search Everywhere**, **Find In Files**, **New File**, etc.)
+{% include figure.html content="/screens/spacing/smallFields.png" caption="Small Fields" %}
 
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/compactField.png" caption="Compact Fields" %})
-
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/paddedField.png" caption="Padded Fields" %})
-
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/compactSearch.png" caption="Compact Search Everywhere" %})
-
-[//]: # ()
-[//]: # ({% include figure.html content="/screens/paddedSearch.png" caption="Padded Search Everywhere" %})
-
-[//]: # ()
-[//]: # (---)
-
-[//]: # ()
-[//]: # (### Notes)
-
-[//]: # ()
-[//]: # (- Because the IDE is developed with compact table cells in mind, using "padded table cells" may result of display issues in some components.)
-
-[//]: # (  One example is the *Python DataView* &#40;<https://github.com/ChrisRM/material-theme-jetbrains/issues/485>&#41;.)
-
-[//]: # (  If you are using such features a lot, just enable the "Compact Table Cells" option to solve that problem.)
+{% include figure.html content="/screens/spacing/largeFields.png" caption="Large Fields" %}
