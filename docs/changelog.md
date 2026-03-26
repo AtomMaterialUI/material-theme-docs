@@ -16,6 +16,40 @@ next:
 # Changelog
 ----
 
+## 11.0.0
+
+### Features
+
+- **Default Contrast Mode**: The **Contrast Mode** is now enabled by default to provide a generally better looking experience.
+- **Material 3 Style**: The **Material 3 Style** is now available by default, replacing the now outdated **Material Theme** (_Material 2_)
+  Style.
+    - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look and feel.
+- **Floating Action Button (FAB)**: Introduced FAB support with customizable action groups, drag-and-drop, and position persistence.
+- **Theme Ignores Configuration**: New interface for managing and configuring native theme ignores.
+- **Enhanced UI Customization**:
+    - New settings for **Custom Button Radius** and personalization of UI component borders.
+    - Improved **Rounded Tabs** with additional customization options and controls.
+    - Support for **Google Sans** font across the UI.
+- **Spacing Settings Refinements**: Adds enhanced customization options for spacing settings.
+- **Database Integration**: Added support for database table settings and plugin integration.
+- **Current Look and Feel Properties**: New Settings page to visualize the current theme's colors.
+- **UI DSL showcase**: New Settings page to preview various UI components.
+
+### Fixes
+
+- Major overhaul of the settings in order to fix many bugs within various settings pages.
+- Improve the Contrast Mode layout and integration with the Islands and High Contrast.
+- Improve Accent Mode to be more consistent and visually appealing.
+- Fixed the issue where the plugin wouldn't load on the free plan.
+- Improved resource disposal in the Change LaF Animator to prevent memory leaks.
+- Corrected opacity calculations for inactive island settings.
+
+### Other
+
+- Updated Kotlin and dependency versions for better performance and stability.
+- Translations updated
+- Updated UI Properties and Color Schemes.
+
 ## 10.10.0
 
 ### Features
