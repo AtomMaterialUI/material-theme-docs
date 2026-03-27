@@ -57,8 +57,23 @@ visual style.
 
 ### Borderless Mode
 
-This option allows you to replace the color of various borders and separators with the background color, giving the appearance of a
-**borderless** interface.
+The Material Theme UI designs feature very subtle borders and separators to create an "almost-flat" experience. However, you can take this
+further by blending borders completely with the background.
+
+This option replaces the color of various borders and separators with the background color, simulating a **pure borderless** interface.
+
+<div class="masonry">
+
+{% include figure.html content="/screens/ui/borderful.png" caption="Borderful Menu" %}
+
+{% include figure.html content="/screens/ui/borderless.png" caption="Borderless Menu" %}
+
+{% include figure.html content="/screens/ui/borderfulIde.png" caption="Borderful Ide" %}
+
+{% include figure.html content="/screens/ui/borderlessIde.png" caption="Borderless Ide" %}
+
+
+</div>
 
 ----
 
