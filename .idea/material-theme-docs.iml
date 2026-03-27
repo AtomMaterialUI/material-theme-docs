@@ -24,6 +24,7 @@
       <excludeFolder url="file://$MODULE_DIR$/img" />
       <excludeFolder url="file://$MODULE_DIR$/js" />
     </content>
+    <content url="file://$MODULE_DIR$/img/screens" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.0, rbenv: 3.3.6) [gem]" level="application" />
