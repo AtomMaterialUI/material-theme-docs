@@ -199,25 +199,33 @@ In addition, this setting gives the ability to increase or decrease the font siz
 
 ----
 
+## Scrollbars
+
 ### Transparent scrollbars and accent scrollbars
 
-This feature is available in the free plan.
-{:class='card-panel warn'}
+These options control the appearance of the IDE's scrollbars. Please note that this doesn't affect the scrollbars in the editor; for those you have a dedicated setting page: [**Scrollbars Color Scheme**](/docs/configuration/scrollbars.md).
 
-These options control the appearance of the scrollbars.
+- When both options are unchecked, the scrollbars will sport the same color as the foreground color.
+- *Transparent scrollbars*: make scrollbars 50% transparent.
+- *Accent scrollbars* changes the scrollbar color with the _current theme's accent color_.
+- When both options are checked, the scrollbars will be accent colored and 50% transparent.
 
-**Note**: this feature works natively on Windows and Linux, but on macOS it's dependent on the "_System Scrollbars_"
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/transparentScrollbars.png" caption="Transparent Scrollbars" %}
+
+{% include figure.html content="/screens/ui/accentScrollbars.png" caption="Accent Scrollbars" %}
+
+{% include figure.html content="/screens/ui/transparentAccentScrollbars.png" caption="Transparent Accent Scrollbars" %}
+
+{% include figure.html content="/screens/ui/noTintScrollbars.png" caption="Not Tinted Scrollbars" %}
+
+</div>
+
+**Important**: this feature works natively on Windows and Linux, but on macOS it's dependent on the "_System Scrollbars_"
 setting.
 
-{% include figure.html content="/screens/macScrollSettings.png" caption="Scrollbar Settings macOS" %}
-
-- *Transparent scrollbars* adds more transparency to the scrollbars and set it as the same color as the current theme's
-  background color.
-  It's adding _50% opacity_, and there is no way to change it.
-
-- *Accent scrollbars* replaces the scrollbar color with the _current accent color_.
-
-{% include figure.html content="/screens/scrollbars.png" caption="Accent Scrollbars" %}
+{% include figure.html content="/screens/ui/macSettings.png" caption="Scrollbar Settings macOS" %}
 
 #### Editor scrollbars
 
