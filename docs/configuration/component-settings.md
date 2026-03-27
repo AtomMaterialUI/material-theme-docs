@@ -199,91 +199,80 @@ In addition, this setting gives the ability to increase or decrease the font siz
 
 ----
 
+## Scrollbars
+
 ### Transparent scrollbars and accent scrollbars
 
-This feature is available in the free plan.
-{:class='card-panel warn'}
+These options control the appearance of the IDE's scrollbars. Please note that this doesn't affect the scrollbars in the editor; for those you have a dedicated setting page: [**Scrollbars Color Scheme**](/docs/configuration/scrollbars.md).
 
-These options control the appearance of the scrollbars.
+- When both options are unchecked, the scrollbars will sport the same color as the foreground color.
+- *Transparent scrollbars*: make scrollbars 50% transparent.
+- *Accent scrollbars* changes the scrollbar color with the _current theme's accent color_.
+- When both options are checked, the scrollbars will be accent colored and 50% transparent.
 
-**Note**: this feature works natively on Windows and Linux, but on macOS it's dependent on the "_System Scrollbars_"
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/transparentScrollbars.png" caption="Transparent Scrollbars" %}
+
+{% include figure.html content="/screens/ui/accentScrollbars.png" caption="Accent Scrollbars" %}
+
+{% include figure.html content="/screens/ui/transparentAccentScrollbars.png" caption="Transparent Accent Scrollbars" %}
+
+{% include figure.html content="/screens/ui/noTintScrollbars.png" caption="Not Tinted Scrollbars" %}
+
+</div>
+
+**Important**: this feature works natively on Windows and Linux, but on macOS it's dependent on the "_System Scrollbars_"
 setting.
 
-{% include figure.html content="/screens/macScrollSettings.png" caption="Scrollbar Settings macOS" %}
+{% include figure.html content="/screens/ui/macSettings.png" caption="Scrollbar Settings macOS" %}
 
-- *Transparent scrollbars* adds more transparency to the scrollbars and set it as the same color as the current theme's
-  background color.
-  It's adding _50% opacity_, and there is no way to change it.
+----
 
-- *Accent scrollbars* replaces the scrollbar color with the _current accent color_.
+## Misc
 
-{% include figure.html content="/screens/scrollbars.png" caption="Accent Scrollbars" %}
-
-#### Editor scrollbars
-
-This feature is available in the free plan.
+These features are available in the free plan.
 {:class='card-panel warn'}
 
-Since 2019.1 the scrollbars enter into two categories:
+### Extra Shadows
 
-* _UI Scrollbars_: these are the scrollbars found throughout the UI, such as lists and trees.
-* _Editor Scrollbars_: these are scrollbars for the editor.
+This small tweak adds a shadow to some popups and notifications.
 
-Due to this separation, this setting only affects the _UI Scrollbars_.
+{% include figure.html content="/screens/ui/shadows.png" caption="Notifications Shadows" %}
 
-The _Editor Scrollbars_, in turn, are managed via a [**Color Scheme Setting Page**](/docs/configuration/scrollbars).
+### Circular Icon Loader
 
----
+This setting replaces the default icon loader (the gear-like animated icon) with the Material Icons' circular loader icon.
 
-### Tabs shadow
+{% include figure.html content="/screens/ui/circleLoader.png" caption="Circular Icon Loader" %}
 
-This feature is available in the free plan.
+{% include figure.html content="/screens/ui/miniLoader.png" caption="Small Icon Loader" %}
+
+
+**Note**: This feature is only usable in coordination with the _Atom Material Icons_ plugin, as the icon is part of that plugin.
 {:class='card-panel warn'}
 
-This option enables/disables the shadow under the tabs.
-
-{% include figure.html content="/screens/tabs/tabShadow.png" caption="Tabs Shadow" %}
-
----
-
-### Shadows
-
-This feature is only available for premium users.
+**Note 2**: You need to restart the IDE for this setting to take effect.
 {:class='card-panel warn'}
 
-This small tweak adds a shadow to popups and some notifications.
+### Use Original Tool Window Buttons
 
-{% include figure.html content="/screens/shadows.png" caption="Shadows" %}
+The plugin replaces the appearance of the tool window buttons with a circular, transparent shape on hover, and a fully squared, transparent shape for opened tool windows.
 
+This setting allows you to revert to the original tool window appearance instead.
 
----
+<div class="masonry" markdown="0">
 
-### Inverted completion selection color
+{% include figure.html content="/screens/ui/hoverTWButtons.png" caption="Material Tool Window Buttons on Hover" %}
 
-This feature is available in the free plan.
-{:class='card-panel warn'}
+{% include figure.html content="/screens/ui/toggledButtons.png" caption="Material Toggled Tool Window Buttons" %}
 
-This setting allows you to choose between two styles for the **selected option** in the *Autocomplete Panel*:
+</div>
 
-{% include figure.html content="/screens/normalSelection.png" caption="Normal selection" %}
+<div class="masonry" markdown="0">
 
-{% include figure.html content="/screens/invertedSelection.png" caption="Inverted selection" %}
+{% include figure.html content="/screens/ui/originalHoverTWButtons.png" caption="Original Tool Window Buttons on Hover" %}
 
----
+{% include figure.html content="/screens/ui/originalToggledButtons.png" caption="Original Toggled Tool Window Buttons" %}
 
-### Animated Tool Windows
-
-This feature is available in the free plan.
-{:class='card-panel warn'}
-
-This setting allows you to animate the **undocked** tool windows when they are opening/closing.
-
-{% include figure.html content="/screens/animatedToolWindows.gif" caption="Animated Tool Windows" %}
-
-It uses the registry feature behind the scenes, so it's available in the free plans. However, it is disabled on Linux as the animation is
-not smooth on this platform.
-
-**Important**: Since the animations only show for undocked tool windows, the plugin will ask you if you want to undock all currently opened
-tool windows. However, if you change your mind, an action "**Dock**" is available in the *Material Theme Toolbar* to dock back the tool
-windows.
-{:class='card-panel warn'}
+</div>
