@@ -11,7 +11,7 @@ previous:
   title: Spacing Settings
 next:
   url: '/docs/configuration/component-settings'
-  title: Component Settings
+  title: UI Components Settings
 
 ---
 

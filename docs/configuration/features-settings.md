@@ -8,7 +8,7 @@ toc: true
 
 previous:
   url: '/docs/configuration/component-settings'
-  title: Component Settings
+  title: UI Components Settings
 next:
   url: '/docs/configuration/project-frame-settings'
   title: Project Frame Settings
