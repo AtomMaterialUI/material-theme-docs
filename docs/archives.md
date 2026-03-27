@@ -436,9 +436,9 @@ But there are people that do not mind the overlays, and as such, this setting wa
 - When **light popups** are opened
 - etc.
 
-{% include figure.html content="/screens/gitBranches.png" caption="Git Branch Overlays" %}
+{% include figure.html content="/screens/archive/gitBranches.png" caption="Git Branch Overlays" %}
 
-{% include figure.html content="/screens/dropdownOverlays.png" caption="Dropdown Overlays" %}
+{% include figure.html content="/screens/archive/dropdownOverlays.png" caption="Dropdown Overlays" %}
 
 This setting is disabled by default to not get in the way of the users' workflow, but you can enable it in the **Material Theme > Features** settings.
 
@@ -508,7 +508,7 @@ This screen will only show us once and will trigger the migration process.
 
 This setting will return the old loading icon from Material Design, which was removed at some point in the past.
 
-{% include figure.html content="/screens/loader.png" caption="Material Design Loading Icon" %}
+{% include figure.html content="/screens/archive/loader.png" caption="Material Design Loading Icon" %}
 
 **Note**: You will have to reset the IDE for the changes to take effect.
 
@@ -707,7 +707,7 @@ The **Material Circular Loader** is now available in the settings page under `Ma
 
 When enabled, it restores the previous circular loading icon, just like the one found in the Material Design guidelines.
 
-{% include figure.html content="/screens/loader.png" caption="Material Circular Loader" %}
+{% include figure.html content="/screens/archive/loader.png" caption="Material Circular Loader" %}
 
 ---
 
@@ -1673,7 +1673,7 @@ nor fix any bugs that might occur in the future.
 The Material Design components experienced a major overhaul to conform to the
 latest [Material Design specification](https://material.io/components).
 
-{% include figure.html content="/screens/dslShowcase.png" caption="New Components Showcase" %}
+{% include figure.html content="/screens/archive/dslShowcase.png" caption="New Components Showcase" %}
 
 Here's a brief overview of the new components:
 
@@ -2015,9 +2015,9 @@ You can find the setting in the [_Tab Settings_](/docs/configuration/tab-setting
 
 Just like the tabs, you will now be able to customize the Trees' Font Family as well.
 
-{% include figure.html content="/screens/customTreeFont.png" caption="Tree Font Settings" %}
+{% include figure.html content="/screens/archive/customTreeFont.png" caption="Tree Font Settings" %}
 
-{% include figure.html content="/screens/treeFont.png" caption="Custom Tree Font" %}
+{% include figure.html content="/screens/archive/treeFont.png" caption="Custom Tree Font" %}
 
 Just like the _Tree Font Size_, you will need to close and reopen the project (or restart) to see the changes.
 
@@ -2447,9 +2447,9 @@ Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-setti
 
 A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/spacing-settings#compact-dropdown-lists) setting, the same way the other dropdowns do.
 
-{% include figure.html content="/screens/paddedRunConf.png" caption="Padded Run Configuration" %}
+{% include figure.html content="/screens/archive/paddedRunConf.png" caption="Padded Run Configuration" %}
 
-{% include figure.html content="/screens/compactRunConf.png" caption="Compact Run Configuration" %}
+{% include figure.html content="/screens/archive/compactRunConf.png" caption="Compact Run Configuration" %}
 
 -----
 
@@ -2457,7 +2457,7 @@ A small but notable change is the [Run Configurations](https://www.jetbrains.com
 
 Another small but great improvement is the display of notifications ("toasts") after executing actions. This makes it easier to notice what exactly happened at a glance.
 
-{% include figure.html content="/screens/notification.png" caption="Example Notification" %}
+{% include figure.html content="/screens/archive/notification.png" caption="Example Notification" %}
 
 ----
 
@@ -2507,9 +2507,9 @@ This version closes the gap with some leftover tasks, mainly about **UI Theme Pr
 
 The plugin continues its process to theme all parts of the IDE, even those that are currently non-themable. And one of those is the **Learn IDE** plugin's pane.
 
-{% include figure.html content="/screens/learnIDEunthemed.png" caption="Learn IDE Unthemed" %}
+{% include figure.html content="/screens/archive/learnIDEunthemed.png" caption="Learn IDE Unthemed" %}
 
-{% include figure.html content="/screens/learnIDEthemed.png" caption="Learn IDE Unthemed" %}
+{% include figure.html content="/screens/archive/learnIDEthemed.png" caption="Learn IDE Unthemed" %}
 
 ----
 
@@ -2638,7 +2638,7 @@ This new layout, heavily reminding of VSCode, replaces the tool windows by large
 
 This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
 
-{% include figure.html content="/screens/quickActionsPanel.png" caption="Quick Actions Panel" %}
+{% include figure.html content="/screens/archive/quickActionsPanel.png" caption="Quick Actions Panel" %}
 
 ----
 

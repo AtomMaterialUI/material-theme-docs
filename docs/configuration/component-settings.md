@@ -80,10 +80,16 @@ This option replaces the color of various borders and separators with the backgr
 This feature is available in the free plan.
 {:class='card-panel warn'}
 
-This setting sets the text of the buttons to be uppercase, just like the Material Design buttons.
-It's optimal for a full-fledged _Material Design_ experience.
+This setting changes the button text to uppercase, giving it a look reminiscent of Material Design guidelines.
 
-{% include figure.html content="/screens/uppercaseButtons.png" caption="Uppercase Buttons" %}
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/lowercaseButtons.png" caption="Regular Buttons" %}
+
+{% include figure.html content="/screens/ui/uppercaseButtons.png" caption="Uppercase Buttons" %}
+
+</div>
+
 
 -----
 
@@ -92,7 +98,8 @@ It's optimal for a full-fledged _Material Design_ experience.
 This feature is only available for premium users.
 {:class='card-panel warn'}
 
-Starting from version 6.2, this setting replaces regular buttons with **outlined buttons**.
+This setting gives buttons an alternate look, sporting a transparent background and the border and text having the color of the
+current accent color, making them looking like "outlined buttons".
 
 {% include figure.html content="/screens/outlinedButtons.png" caption="Outlined Buttons" %}
 

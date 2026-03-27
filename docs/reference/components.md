@@ -94,7 +94,7 @@ Regular Editor tabs have been modified to look like Material design tabs:
 
 {% include figure.html content="/components/dropdown.png" caption="Dropdown/Comboboxes" %}
 
-{% include figure.html content="/screens/dropdownEnhanced.png" caption="Opened Dropdowns" %}
+{% include figure.html content="/screens/archive/dropdownEnhanced.png" caption="Opened Dropdowns" %}
 
 - The dropdowns/comboboxes got redesigned by having the same border as the inputs, which highlights on active/hover.
 - Besides, they have been added more padding between items, as well as hovering over the selector, just like Material
