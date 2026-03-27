@@ -261,10 +261,14 @@ The plugin replaces the appearance of the tool window buttons with a circular, t
 
 This setting allows you to revert to the original tool window appearance instead.
 
-{% include figure.html content="/screens/ui/hoverTWButtons.png" caption="Material Tool Window Buttons on Hover" %}
+<div class="masonry" markdown="0">
 
-{% include figure.html content="/screens/ui/toggledButtons.png" caption="Material Toggled Tool Window Buttons" %}
+{% include figure.html content="/screens/ui/hoverTWButtons.png" caption="Hover" %}
 
-{% include figure.html content="/screens/ui/originalHoverTWButtons.png" caption="Original Tool Window Buttons on Hover" %}
+{% include figure.html content="/screens/ui/toggledButtons.png" caption="Toggled" %}
 
-{% include figure.html content="/screens/ui/originalToggledButtons.png" caption="Original Toggled Tool Window Buttons" %}
+{% include figure.html content="/screens/ui/originalHoverTWButtons.png" caption="Original Hover" %}
+
+{% include figure.html content="/screens/ui/originalToggledButtons.png" caption="Original Toggled" %}
+
+</div>
