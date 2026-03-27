@@ -62,6 +62,8 @@ further by blending borders completely with the background.
 
 This option replaces the color of various borders and separators with the background color, simulating a **pure borderless** interface.
 
+<div class="masonry" markdown="0">
+
 {% include figure.html content="/screens/ui/borderful.png" caption="Borderful Menu" %}
 
 {% include figure.html content="/screens/ui/borderless.png" caption="Borderless Menu" %}
@@ -70,6 +72,7 @@ This option replaces the color of various borders and separators with the backgr
 
 {% include figure.html content="/screens/ui/borderlessIde.png" caption="Borderless Ide" %}
 
+</div>
 ----
 
 ### Uppercase buttons
