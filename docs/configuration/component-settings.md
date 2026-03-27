@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Component Settings
+title: UI Components Settings
 description: Customize various components of the IDE.
 group: configuration
 comments: true
@@ -62,8 +62,6 @@ further by blending borders completely with the background.
 
 This option replaces the color of various borders and separators with the background color, simulating a **pure borderless** interface.
 
-<div class="masonry">
-
 {% include figure.html content="/screens/ui/borderful.png" caption="Borderful Menu" %}
 
 {% include figure.html content="/screens/ui/borderless.png" caption="Borderless Menu" %}
@@ -71,9 +69,6 @@ This option replaces the color of various borders and separators with the backgr
 {% include figure.html content="/screens/ui/borderfulIde.png" caption="Borderful Ide" %}
 
 {% include figure.html content="/screens/ui/borderlessIde.png" caption="Borderless Ide" %}
-
-
-</div>
 
 ----
 
