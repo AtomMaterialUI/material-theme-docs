@@ -21,6 +21,11 @@ These settings provide you with a wide range of customization options for variou
 
 {% include figure.html content="/screens/settingsv3/uiComponents.png" caption="UI Components" %}
 
+Some features are only available for premium users.
+{:class='card-panel warn'}
+
+## Look And Feel
+
 ### Material Design Style
 
 This feature is available in the free plan.
@@ -75,10 +80,9 @@ This option replaces the color of various borders and separators with the backgr
 </div>
 ----
 
-### Uppercase buttons
+## Components
 
-This feature is available in the free plan.
-{:class='card-panel warn'}
+### Uppercase buttons
 
 This setting changes the button text to uppercase, giving it a look reminiscent of Material Design guidelines.
 
@@ -90,20 +94,110 @@ This setting changes the button text to uppercase, giving it a look reminiscent 
 
 </div>
 
-
------
+----
 
 ### Outline buttons
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
-This setting gives buttons an alternate look, sporting a transparent background and the border and text having the color of the
+This setting gives buttons an alternate look, sporting a transparent background, and the border and text having the color of the
 current accent color, making them looking like "outlined buttons".
 
-{% include figure.html content="/screens/outlinedButtons.png" caption="Outlined Buttons" %}
+{% include figure.html content="/screens/ui/outlined.png" caption="Outlined Buttons" %}
+
+----
+
+### Custom Button Radius
+
+By default, the buttons have a different radius depending on the _Material Design Style_ selected:
+- Material 1: 0px
+- Material 2: 8px
+- Material 3: 20px
+
+However, if these defaults don't suit your tastes, you can use these settings to change the radius of the buttons.
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/rectangularButtons.png" caption="Rectangular Buttons" %}
+
+{% include figure.html content="/screens/ui/roundButtons.png" caption="Pill Buttons" %}
+
+</div>
+
+### Custom Action Buttons Radius
+
+Like the _Custom Button Radius_, this setting allows you to change the radius of the action buttons, which are the buttons found in the toolbars and some popups. In this case, the default value is always 20px, giving it a full circle shape.
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/rectangularActionButtons.png" caption="Rectangular Action Buttons" %}
+
+{% include figure.html content="/screens/ui/roundActionButtons.png" caption="Circled Action Buttons" %}
+
+</div>
 
 -----
+
+### Round Notifications
+
+This setting allows you to make the notifications round. 
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/roundNotifications.png" caption="Round Notifications" %}
+
+{% include figure.html content="/screens/ui/rectNotifications.png" caption="Regular Notifications" %}
+
+</div>
+
+----
+
+### Inverted Completion Color
+
+This setting gives you the choice to change the color of the selected line in the autocompletion popup. When selected, it uses the *Contrast Color* instead of the *Selection Color*.
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/normalSelection.png" caption="Normal Selection" %}
+
+{% include figure.html content="/screens/ui/invertedSelection.png" caption="Inverted Selection" %}
+
+</div>
+
+----
+
+## Search Everywhere
+
+### Customize Search Everywhere
+
+This section allows you to customize many aspects of the Search Everywhere popup, such as the padding, or the font size.
+
+This feature is available for premium users.
+{:class='card-panel warn'}
+
+#### Custom Input Padding
+
+This setting allows you to customize the size of the search input field. The more padding, the bigger the input will become. The default value is 12px.
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/smallestSearch.png" caption="Smallest Search Field" %}
+
+{% include figure.html content="/screens/ui/largestSearch.png" caption="Largest Search Field" %}
+
+</div>
+
+#### Font Size Delta
+
+In addition, this setting gives the ability to increase or decrease the font size of the search field.
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/ui/smallestFont.png" caption="Smallest Font Size" %}
+
+{% include figure.html content="/screens/ui/largestFont.png" caption="Largest Font Size" %}
+
+</div>
+
+----
 
 ### Transparent scrollbars and accent scrollbars
 
