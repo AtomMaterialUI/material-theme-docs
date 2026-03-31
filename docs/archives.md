@@ -2280,7 +2280,7 @@ However, this change might have caused some disagreements with the previous beha
 
 Therefore, I've decided to include a new setting to select your preferred style, **Inverted Selection Color**.
 
-{% include figure.html content="/screens/invertedSelectionColor.png" caption="Inverted Selection Color" %}
+{% include figure.html content="/screens/archive/invertedSelectionColor.png" caption="Inverted Selection Color" %}
 
 More information in the [Component Settings documentation](/docs/configuration/component-settings#inverted-selection-color)
 
