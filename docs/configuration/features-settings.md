@@ -26,25 +26,21 @@ Here you can turn on and off specific features of the Material Theme for even fu
 
 ### Animated Tool Windows
 
-Tool Windows in JetBrains IDEs can have 5 different states: **undocked, floating, windowed, docked pinned and docked unpinned**
+Tool windows in JetBrains IDEs can have five different states: **Undocked**, **Floating**, **Windowed**, **Docked Pinned**, and **Docked Unpinned**.
 
-By default, tool windows are **Docked Pinned**, meaning they are docked to the sides of the screen and always visible, unless the user
-minimizes it by clicking on the minimize button, or by using the shortcut `Shift + Escape` when the tool window is focused.
+By default, tool windows are **Docked Pinned**, meaning they are attached to the sides of the screen and always visible, unless minimized by clicking the minimize button or using the `Shift + Escape` shortcut while the tool window is focused.
 
-But this behavior can be changed either by clicking on the "more" button on every tool window.
+This behavior can be changed by clicking the "More" button on any tool window.
 
 {% include figure.html content="/screens/features/toolWindowStates.png" caption="Tool Window States" %}
 
-Among these, the **Undocked** state represents a tool window that opens when pressing on the button, then closes automatically when you
-click outside of it. But unlike the _Docked Unpinned_ state, in the Undocked state, the tool window opens **on top** of the main editor,
-rather than at the side, like a drawer. However, the opening and closing animation is instant, which can be a bit jarring.
+Among these, the **Undocked** state represents a tool window that opens when its button is pressed and then closes automatically when you click outside of it. Unlike the **Docked Unpinned** state, an **Undocked** tool window opens **on top** of the main editor, rather than to the side, similar to a drawer. However, the default opening and closing animation is instant, which can be somewhat jarring.
 
-This setting adds a sliding animation on tool windows when in that state.
+This setting adds a smooth sliding animation to tool windows when they are in this state.
 
 {% include figure.html content="/screens/features/animatedToolWindows.png" caption="Animated Tool Windows" %}
 
-In addition, two actions have been added to the _Material UI Actions Toolbar_ to set all current tool windows to either the Undocked or
-Docked Pinned state, to quickly switch to a auto-hidden layout experience and benefit from the animations.
+In addition, two actions have been added to the _Material UI Actions Toolbar_ to set all current tool windows to either the **Undocked** or **Docked Pinned** state. This allows you to quickly switch to an auto-hidden layout and enjoy the benefit of the animations.
 
 {% include figure.html content="/screens/features/dockingOptions.png" caption="Docking Actions" %}
 
@@ -52,65 +48,58 @@ Docked Pinned state, to quickly switch to a auto-hidden layout experience and be
 
 ### Centered Editor
 
-This option centers the editor in the middle of the screen rather than stuck to the left, completing the fully undocked layout for a more
-focused experience. It is very similar to the _Distraction Free Mode_, but without hiding the tabs and the tool windows.
+This option centers the editor in the middle of the screen rather than pinning it to the left, providing a more focused experience that complements the fully undocked layout. It is very similar to **Distraction Free Mode**, but without hiding the tabs or tool windows.
 
 {% include figure.html content="/screens/features/centeredEditor.png" caption="Centered Editor" %}
 
-**Note**: At this time, there is no way to increase or reduce the width of the centered editor, but we're monitoring for when such an option
-can be implemented in the future.
+**Note**: Currently, there is no way to adjust the width of the centered editor, but we are monitoring for future implementation possibilities.
 {:class='card-panel'}
 
 ----
 
 ### Floating Action Button (FAB)
 
-This feature creates a small floating action button at the bottom right of the editor, which is a placeholder to contain any generic action
-you'd like to have access at all times.
+This feature creates a small floating action button at the bottom right of the editor, serving as a customizable container for actions you want to access at any time.
 
 {% include figure.html content="/screens/features/fab.png" caption="Floating Action Button" %}
 
-By default, it contains three basic default actions:
+By default, it contains three standard actions:
 
-- **New File**: Creates a new file in the same folder as the current opened editor.
-- **New Directory**: Creates a new directory in the same folder as the current opened editor.
-- **New Scratch File**: Creates a new scratch file in the type of your choice.
+- **New File**: Creates a new file in the same folder as the currently open editor.
+- **New Directory**: Creates a new directory in the same folder as the currently open editor.
+- **New Scratch File**: Creates a new scratch file of the selected type.
 
 {% include figure.html content="/screens/features/fabActions.png" caption="FAB Actions" %}
 
-However, you can also assign your own custom actions through the `Settings > Menus And Toolbars > Material FAB`. This can be useful, for
-instance, to have access to common actions like "Jump To Top", "Reformat Code", "Push", etc.
+However, you can also assign your own custom actions via `Settings > Menus and Toolbars > Material FAB`. This is useful for providing quick access to common actions such as **Jump to Top**, **Reformat Code**, or **Push**.
 
 {% include figure.html content="/screens/features/customizeFab.png" caption="Customize FAB Actions" %}
 
 {% include figure.html content="/screens/features/fabCustomActions.png" caption="Custom FAB Actions" %}
 
-You can also drag and drop the button to move it wherever you want, and it will remember the last position even after closing the IDE. You
-can also temporarily hide it by clicking on the "x" button, but it will reappear again once you switch to another tab.
+You can drag and drop the button to move it anywhere you like; it will remember its last position even after the IDE is restarted. You can also temporarily hide it by clicking the "X" button, though it will reappear when you switch tabs.
 
 ----
 
 ### Overlays
 
-The Material Theme UI follows the Material Design principles and one of those principles is the use of overlays to create a sense of depth
-and hierarchy in the UI. This setting enables or disables the use of overlays in the IDE.
+The Material Theme UI follows Material Design principles, one of which is the use of overlays to create a sense of depth and hierarchy. This setting enables or disables the use of overlays throughout the IDE.
 
-When enabled, some UI elements will have a semi-transparent background that allows the underlying content to show through, creating a
-layered effect. This can help to visually separate different sections of the UI and make it easier to focus on specific elements.
+When enabled, certain UI elements will have a semi-transparent background that allows underlying content to show through, creating a layered effect. This helps visually separate different sections of the UI and makes it easier to focus on specific elements.
 
 {% include figure.html content="/screens/features/overlays.png" caption="Overlays" %}
 
-Overlays are displayed whenever a dialog or light popup is open, such as the Settings dialog, the Find In Files, Search Everywhere, etc.
+Overlays are displayed whenever a dialog or light popup is open, such as the **Settings** dialog, **Find in Files**, or **Search Everywhere**.
 
 ### More Overlays
 
-Normally, overlays are displayed only for dialogs and light popups, but you can also decide to enable showing them for more UI elements, such as Menus, Quick Switch Panels, and other floating elements, making the experience even more immersive. This feature is disabled by default.
+By default, overlays are only displayed for dialogs and light popups. Enabling this option extends overlays to more UI elements, such as menus, **Quick Switch** panels, and other floating elements, for a more immersive experience. This feature is disabled by default.
 
 {% include figure.html content="/screens/features/moreOverlays.png" caption="More Overlays" %}
 
 ### Overlays Opacity
 
-This setting allows you to fine-tune the opacity of the overlays. The default is 40%, but you can decide to increase or decrease it to your liking.
+This setting allows you to fine-tune the opacity of overlays. The default is 40%, but you can increase or decrease it to your preference.
 
 {% include figure.html content="/screens/features/transparent.png" caption="20% Opacity" %}
 
