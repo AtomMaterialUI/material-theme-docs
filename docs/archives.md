@@ -699,7 +699,7 @@ A new mode is available under `Material Theme UI > UI Components > Borderless Mo
 
 Still on the **UI Components** page, you can now make the notifications round by enabling the **Round Notifications** setting.
 
-{% include figure.html content="/screens/roundNotifications.png" caption="Round Notifications" %}
+{% include figure.html content="/screens/archive/roundNotifications.png" caption="Round Notifications" %}
 
 ### Material Circular Loader
 
@@ -2418,9 +2418,9 @@ This version's features consists in the ability to [display an overlay](/docs/co
 
 Your IDE can now display **overlays** when modals are open, providing better focus to the information at hand.
 
-{% include figure.html content="/screens/modalOverlay.png" caption="Modals Overlay" %}
+{% include figure.html content="/screens/archive/modalOverlay.png" caption="Modals Overlay" %}
 
-{% include figure.html content="/screens/settingsOverlay.png" caption="Settings Overlay" %}
+{% include figure.html content="/screens/archive/settingsOverlay.png" caption="Settings Overlay" %}
 
 These overlays show up in the following modal windows:
 - Alerts

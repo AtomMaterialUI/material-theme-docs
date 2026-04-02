@@ -12,6 +12,24 @@ previous:
 next:
   url: '/docs/configuration/project-frame-settings'
   title: Project Frame Settings
+
+wallpapers:
+  - filename: oceanic.png
+    alttext: Material Oceanic
+  - filename: palenight.png
+    alttext: Material Palenight
+  - filename: lighter.png
+    alttext: Material Lighter
+  - filename: darker.png
+    alttext: Material Darker
+  - filename: onedark.png
+    alttext: Atom One Dark
+  - filename: darkviolet.png
+    alttext: Dark Violet
+  - filename: shades.png
+    alttext: Shades of Purple
+  - filename: sakura2
+    alttext: Sakura
 ---
 
 Some of these features are only available for premium users.
@@ -104,3 +122,18 @@ This setting allows you to fine-tune the opacity of overlays. The default is 40%
 {% include figure.html content="/screens/features/transparent.png" caption="20% Opacity" %}
 
 {% include figure.html content="/screens/features/veryOpaque.png" caption="80% Opacity" %}
+
+----
+
+### Material Wallpapers
+
+This setting replaces the _empty frame_ of the IDE, e.g., the background of the IDE when there are no open files, with a custom wallpaper that sports the logo of the plugin with colors matching the current theme. This is a purely aesthetic feature that adds a touch of personality to your IDE, reminiscent of what you can find in other editors such as Atom or VScode.
+
+<div class="masonry" markdown="0">
+  {% for wallpaper in site.data.wallpapers %}
+    <div class="masonry-brick">
+      <img src="/screens/wallpapers/{{ wallpaper.filename }}"
+           alt="{{ wallpaper.alttext }}">
+    </div>
+  {% endfor %}
+</div>
