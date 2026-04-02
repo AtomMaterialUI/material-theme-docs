@@ -14,22 +14,14 @@ next:
   title: Project Frame Settings
 
 wallpapers:
-  - filename: oceanic.png
+  - filename: https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/oceanic.png
     alttext: Material Oceanic
-  - filename: palenight.png
+  - filename: https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/palenight.png
     alttext: Material Palenight
-  - filename: lighter.png
+  - filename: https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/lighter.png
     alttext: Material Lighter
-  - filename: darker.png
+  - filename: https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/darker.png
     alttext: Material Darker
-  - filename: onedark.png
-    alttext: Atom One Dark
-  - filename: darkviolet.png
-    alttext: Dark Violet
-  - filename: shades.png
-    alttext: Shades of Purple
-  - filename: sakura2.png
-    alttext: Sakura
 ---
 
 Some of these features are only available for premium users.
@@ -127,16 +119,33 @@ This setting allows you to fine-tune the opacity of overlays. The default is 40%
 
 ### Material Wallpapers
 
-This setting replaces the _empty frame_ of the IDE, e.g., the background of the IDE when there are no open files, with a custom wallpaper that sports the logo of the plugin with colors matching the current theme. This is a purely aesthetic feature that adds a touch of personality to your IDE, reminiscent of what you can find in other editors such as Atom or VScode.
+JetBrains IDEs feature a built-in mechanism that allows you to set custom background images for the entire IDE or specifically for the **empty frame** (the background shown when no files are open). You can configure this manually in `Settings > Appearance & Behavior > Appearance > Background Image`.
+
+The Material Theme UI leverages this feature to automatically replace the _empty frame_ with a custom-generated wallpaper. These wallpapers feature the plugin logo with a color palette that dynamically matches your active theme. This aesthetic enhancement adds a personal touch to your workspace, similar to what you might find in other editors like Atom or VS Code.
+
+<div class="masonry" markdown="0">
+  {% for wallpaper in page.wallpapers %}
+    <div class="masonry-brick">
+      <img src="{{ wallpaper.filename }}"
+           alt="{{ wallpaper.alttext }}">
+    </div>
+  {% endfor %}
+</div>
+
+These wallpapers are also compatible with custom and external themes, as they automatically adjust to the theme's colors.
 
 <div class="masonry" markdown="0">
 
-{% include figure.html content="https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/oceanic.png" caption="Oceanic" %}
+{% include figure.html content="/screens/wallpapers/shades.png" caption="Shades of Purple" %}
 
-{% include figure.html content="https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/darker.png" caption="Darker" %}
+{% include figure.html content="/screens/wallpapers/darkviolet.png" caption="JetBrains Dark Violet" %}
 
-{% include figure.html content="https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/palenight.png" caption="Palenight" %}
-
-{% include figure.html content="https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/lighter.png" caption="Lighter" %}
+{% include figure.html content="/screens/wallpapers/sakura2.png" caption="Sakura Theme" %}
 
 </div>
+
+**Note**: Enabling this option will replace any background image you may have previously configured.
+{:class='card-panel danger'}
+
+**Note 2**: As of March 2026, setting a wallpaper—whether through the plugin or manually—will disable gradients in the application frame. We are investigating whether this limitation can be addressed in future updates.
+{:class='card-panel warn'}
