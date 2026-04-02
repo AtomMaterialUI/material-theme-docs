@@ -31,9 +31,9 @@ plugin of the Material Theme whose purpose is to customize all IDE icons. It was
 but has been extracted from it since version 2.9.0, in order to tend to users who don't need the themes but do need the
 icons, the same way it's done in Atom or Visual Studio.
 
-{% include figure.html content="/screens/atomMaterial.png" caption="Atom Material Toolbar" %}
+{% include figure.html content="/screens/atom/atomMaterial.png" caption="Atom Material Toolbar" %}
 
-{% include figure.html content="/screens/atomMaterialSettings.png" caption="Atom Material Settings" %}
+{% include figure.html content="/screens/atom/atomMaterialSettings.png" caption="Atom Material Settings" %}
 
 The UI is a bit different from the Material Theme UI but provides the same capability nonetheless.
 
@@ -69,7 +69,7 @@ patterns and replaces them with the relevant icon, such as:
 - `composer.json`
 - etc...
 
-{% include figure.html content="/screens/file-icons.png" caption="File Icons" %}
+{% include figure.html content="/screens/atom/file-icons.png" caption="File Icons" %}
 
 You can find more information at the [Associations](/docs/reference/associations).
 
@@ -114,11 +114,11 @@ inside documentation panels.
 
 This toggle lets you replace the PSI icons (e.g. Class, Interface, Enums, functions, etc) with Material icons.
 
-{% include figure.html content="/screens/psiIcons.png" caption="PSI Icons" %}
+{% include figure.html content="/screens/atom/psiIcons.png" caption="PSI Icons" %}
 
 The Structure Panel icons are also changed:
 
-{% include figure.html content="/screens/psiStructure.png" caption="PSI Icons" %}
+{% include figure.html content="/screens/atom/psiStructure.png" caption="PSI Icons" %}
 
 This option makes it look like the Visual Studio Code *Outline* Panel, as well as Rider or Resharper structure panels.
 
@@ -131,7 +131,7 @@ This option allows you to _completely hide_ the __file icons__ from the IDE.
 It hides them from the _Project Tree_, Tabs, Dialogs and everything.
 Folders are unaffected, though.
 
-{% include figure.html content="/screens/hideFileIcons.png" caption="Hide File Icons" %}
+{% include figure.html content="/screens/archive/hideFileIcons.png" caption="Hide File Icons" %}
 
 **Note**: This feature takes precedence over default file icons providers, and the plugin's own ones.
 However, some plugins might have an even greater precedence, meaning you would still see icons from such plugins.
@@ -143,7 +143,7 @@ However, some plugins might have an even greater precedence, meaning you would s
 
 Same setting as the _Hide File Icons_ except that it works for folders.
 
-{% include figure.html content="/screens/hideFolderIcons.png" caption="Hide Folder Icons" %}
+{% include figure.html content="/screens/archive/hideFolderIcons.png" caption="Hide Folder Icons" %}
 
 
 ----
@@ -153,7 +153,7 @@ Same setting as the _Hide File Icons_ except that it works for folders.
 This option allows you to apply a monochrome filter to the whole IDE, just like the color blindness filter.
 This is ideal for people who don't like the avalanche of colors provided by the different icons.
 
-{% include figure.html content="/screens/monochrome.png" caption="Monochrome Icons" %}
+{% include figure.html content="/screens/archive/monochrome.png" caption="Monochrome Icons" %}
 
 By applying this filter, all icons will be filtered with a shade of the primary color, that is, the color of the items
 in the Project View of the current theme.
@@ -168,7 +168,7 @@ Note: This setting not only filters out the toolbar and file icons, but even too
 This feature further decorates the _Project View_ by emphasizing the folders that contain files that are currently open
 in the editor, making them appear as "**hollow**".
 
-{% include figure.html content="/screens/hollowFolders.png" caption="Hollow Folders" %}
+{% include figure.html content="/screens/archive/hollowFolders.png" caption="Hollow Folders" %}
 
 Not only regular folders, but also excluded folders, resource folders or even decorated folders have a hollow
 counterpart.
@@ -181,9 +181,9 @@ This option allows you to change the size of the icons ranging from 12px to 24px
 
 Moreover, it adapts the Project View Items' height to the new size.
 
-{% include figure.html content="/screens/normalIcons.png" caption="Normal Icons" %}
+{% include figure.html content="/screens/archive/normalIcons.png" caption="Normal Icons" %}
 
-{% include figure.html content="/screens/biggerIcons.png" caption="Bigger Icons" %}
+{% include figure.html content="/screens/archive/biggerIcons.png" caption="Bigger Icons" %}
 
 **Note**: The IDEs aren't optimized to handle bigger icons, so there could be parts of the IDE that are missing icons,
 or that the containers will appear larger/wider/bigger. Please be aware of such issues when using this setting.

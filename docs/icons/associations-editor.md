@@ -25,7 +25,7 @@ View, Add and Edit your icon associations!
 Since version 50.0 of the _Atom Material Icons_ plugin, a new Settings Page has been added allowing you to view,
 add, remove or edit the plugin's associations directly from inside the IDE.
 
-{% include figure.html content="/screens/customAssociations.png" caption="Icon Associations Editor" %}
+{% include figure.html content="/screens/atom/customAssociations.png" caption="Icon Associations Editor" %}
 
 ## Features
 
