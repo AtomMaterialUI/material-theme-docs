@@ -33,7 +33,7 @@ New year, new version! This version fixes a few issues related to the **Theme Ra
 
 A new feature has been added to the **UI Components** settings, **Custom Search Everywhere**, allowing you to customize the UI of the search everywhere popup.
 
-{% include figure.html content="/screens/largerSearch.png" caption="Larger Search Everywhere" %}
+{% include figure.html content="/screens/archive/largerSearch.png" caption="Larger Search Everywhere" %}
 
 This feature is available in the Free plan, but further customization is only available in the Premium plan:
 - Custom padding
@@ -324,7 +324,7 @@ Note: This layout requires closing all projects when you change the settings.
 
 A new setting has been added to the **UI Components**: **Rounded Buttons**. This setting will allow you to control the border radius of all buttons in the IDE, making them more rounded or less rounded, according to your tastes.
 
-{% include figure.html content="/screens/roundedButtons.png" caption="Rounded Buttons" %}
+{% include figure.html content="/screens/archive/roundedButtons.png" caption="Rounded Buttons" %}
 
 ----
 
@@ -415,15 +415,15 @@ As a follow-up to the feature introduced in version 9.2.0, **Use Original Tool W
 
 You can find this setting in the **Material Theme > UI Components Settings**
 
-{% include figure.html content="/screens/actionButtonsRadius.png" caption="Action Buttons Radius Settings" %}
+{% include figure.html content="/screens/archive/actionButtonsRadius.png" caption="Action Buttons Radius Settings" %}
 
 Comparison:
 
-{% include figure.html content="/screens/fullRadius.png" caption="Full Rounded buttons" %}
+{% include figure.html content="/screens/archive/fullRadius.png" caption="Full Rounded buttons" %}
 
-{% include figure.html content="/screens/halfRadius.png" caption="Half Rounded buttons" %}
+{% include figure.html content="/screens/archive/halfRadius.png" caption="Half Rounded buttons" %}
 
-{% include figure.html content="/screens/noRadius.png" caption="Not Rounded buttons" %}
+{% include figure.html content="/screens/archive/noRadius.png" caption="Not Rounded buttons" %}
 
 ### More Overlays
 
@@ -465,7 +465,7 @@ This feature is the result of a particular demand by some users to restore the o
 
 As you may know, the plugin changed the look and feel of those buttons to look like the Material Design look and feel, by replacing them with a transparent circle of the accent color. However some users preferred the original look of the buttons, and as such, this feature was added to the plugin.
 
-{% include figure.html content="/screens/originalToolWindowButtons.png" caption="Original Tool Window Hover Buttons" %}
+{% include figure.html content="/screens/archive/originalToolWindowButtons.png" caption="Original Tool Window Hover Buttons" %}
 
 ### Other Bug fixes and improvements
 

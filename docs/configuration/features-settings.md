@@ -149,3 +149,68 @@ These wallpapers are also compatible with custom and external themes, as they au
 
 **Note 2**: As of March 2026, setting a wallpaper—whether through the plugin or manually—will disable gradients in the application frame. We are investigating whether this limitation can be addressed in future updates.
 {:class='card-panel warn'}
+
+----
+
+### Custom UI Font
+
+The Material Theme UI plugin replaces the IDE's default font with the standard fonts recommended by Material Design style guides.
+
+For _Material Design (Material 1)_ and _Material Theme (Material 2)_, the recommended font is [**Roboto**](https://fonts.google.com/specimen/Roboto). For _Material You (Material 3)_, it uses [**Google Sans**](https://fonts.google.com/specimen/Google+Sans). For CJK (Chinese, Japanese, Korean) languages, it uses [**Noto Sans**](https://fonts.google.com/noto/specimen/Noto+Sans?query=noto+sans).
+
+While you can change the font via `Settings > Appearance & Behavior > Appearance > Use custom font`, doing so sets a global IDE state that may interfere with features like *Zoom Level* or *Presentation Mode*.
+
+The **Custom UI Font** option in the Material Theme settings allows you to customize the font without these side effects.
+
+{% include figure.html content="/screens/features/apperance.png" caption="Custom UI Font" %}
+
+{% include figure.html content="/screens/features/customFont.png" caption="Custom UI Font" %}
+
+**Note**: If you have already set a custom font in the IDE's _Appearance_ settings, that setting will take precedence over this one.
+{:class='card-panel warn'}
+
+----
+
+### File Status Colors
+
+By default, JetBrains IDEs color filenames based on their Version Control (VCS) status (see [File Status Colors](/docs/configuration/file-status-colors.md)). These colors are typically defined within the *Color Scheme* rather than the *UI Theme*.
+
+This setting allows you to enforce these colors when switching themes, making them independent of the active *Color Scheme*. This is particularly useful for themes that don't define these colors or if you prefer consistent file colors across different schemes.
+
+{% include figure.html content="/screens/features/customFileColors.png" caption="Custom File Colors" %}
+
+These colors can be customized in `Settings > Editor > Color Scheme > Custom File Colors` and will override the defaults in `Settings > Version Control > File Status Colors`.
+
+**Note**: Enabling this option modifies the current Color Scheme by creating a copy with the new settings. Disabling the option will not automatically restore the original colors; you must manually click **Restore Defaults** in the Color Scheme settings to revert.
+{:class='card-panel warn'}
+
+### Custom Directories Style
+
+Similar to *File Status Colors*, this setting adds an option to the *Custom File Colors* scheme settings, allowing you to set custom colors for modules or directories.
+
+{% include figure.html content="/screens/features/directories.png" caption="Directories File Colors" %}
+
+{% include figure.html content="/screens/features/customDirectoriesStyle.png" caption="Custom Directories Style" %}
+
+**Note**: Although you can configure background, marker, and effects colors, only the foreground color will be applied.
+{:class='card-panel'}
+
+**Note 2**: Like *File Status Colors*, this feature modifies your active color scheme.
+{:class='card-panel warn'}
+
+----
+
+## Color Scheme Tweaks
+
+These settings modify your current color scheme rather than the IDE's overall appearance. Please note that applying these changes might overwrite any custom modifications you have made to the color scheme.
+{:class='card-panel warn'}
+
+### Automatically reset color scheme
+
+This option automatically removes all customizations from your color scheme when switching themes. This ensures a clean slate, which is especially useful given that many plugins, including this one, modify color schemes.
+
+It also ensures you receive all the latest color scheme updates, as copied schemes cannot automatically detect changes to the original.
+
+### Use Editor Default Font
+
+This option overrides the color scheme's font with the *Default Font* defined in `Settings > Editor > Font`. Since color schemes can define their own fonts—leading to inconsistencies across different themes—enabling this ensures a uniform typography regardless of the active color scheme.

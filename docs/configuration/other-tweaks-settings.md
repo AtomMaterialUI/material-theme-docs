@@ -251,7 +251,7 @@ Starting from version 2.9.4/2.10.4, you can also see your current accent color.
 As a result, it has been removed from the plugin.
 {:class='card-panel warn'}
 
-{% include figure.html content="/screens/statusbar.png" caption="Status Bar Toggles" %}
+{% include figure.html content="/screens/archive/statusbar.png" caption="Status Bar Toggles" %}
 
 -----
 
