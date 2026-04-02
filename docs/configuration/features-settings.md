@@ -162,7 +162,7 @@ While you can change the font via `Settings > Appearance & Behavior > Appearance
 
 The **Custom UI Font** option in the Material Theme settings allows you to customize the font without these side effects.
 
-{% include figure.html content="/screens/features/apperance.png" caption="Custom UI Font" %}
+{% include figure.html content="/screens/features/appearance.png" caption="Appearance Settings" %}
 
 {% include figure.html content="/screens/features/customFont.png" caption="Custom UI Font" %}
 
