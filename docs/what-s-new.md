@@ -32,7 +32,7 @@ But that's not all! We've added some handy new features to level up your workflo
 
 Need quick access to your favorite actions? We've added a floating button right in your IDE window. You can pick which actions it triggers and where it sits—just head over to the *Menus and Toolbars* settings to set it up.
 
-{% include figure.html content="/screens/fab.png" caption="Your new best friend: the Floating Action Button" %}
+{% include figure.html content="/screens/features/fab.png" caption="Your new best friend: the Floating Action Button" %}
 
 ## Theme Ignores
 
