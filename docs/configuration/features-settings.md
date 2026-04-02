@@ -56,7 +56,7 @@ Among these, the **Undocked** state represents a tool window that opens when its
 
 This setting adds a smooth sliding animation to tool windows when they are in this state.
 
-{% include figure.html content="/screens/features/animatedToolWindows.png" caption="Animated Tool Windows" %}
+{% include figure.html content="/screens/features/animatedToolWindows.gif" caption="Animated Tool Windows" %}
 
 In addition, two actions have been added to the _Material UI Actions Toolbar_ to set all current tool windows to either the **Undocked** or **Docked Pinned** state. This allows you to quickly switch to an auto-hidden layout and enjoy the benefit of the animations.
 
@@ -93,7 +93,7 @@ However, you can also assign your own custom actions via `Settings > Menus and T
 
 {% include figure.html content="/screens/features/customizeFab.png" caption="Customize FAB Actions" %}
 
-{% include figure.html content="/screens/features/fabCustomActions.png" caption="Custom FAB Actions" %}
+{% include figure.html content="/screens/features/customFabActions.png" caption="Custom FAB Actions" %}
 
 You can drag and drop the button to move it anywhere you like; it will remember its last position even after the IDE is restarted. You can also temporarily hide it by clicking the "X" button, though it will reappear when you switch tabs.
 
@@ -132,7 +132,7 @@ This setting replaces the _empty frame_ of the IDE, e.g., the background of the 
 <div class="masonry" markdown="0">
   {% for wallpaper in site.data.wallpapers %}
     <div class="masonry-brick">
-      <img src="/screens/wallpapers/{{ wallpaper.filename }}"
+      <img src="/img/screens/wallpapers/{{ wallpaper.filename }}"
            alt="{{ wallpaper.alttext }}">
     </div>
   {% endfor %}
