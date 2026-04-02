@@ -130,7 +130,7 @@ This setting allows you to fine-tune the opacity of overlays. The default is 40%
 This setting replaces the _empty frame_ of the IDE, e.g., the background of the IDE when there are no open files, with a custom wallpaper that sports the logo of the plugin with colors matching the current theme. This is a purely aesthetic feature that adds a touch of personality to your IDE, reminiscent of what you can find in other editors such as Atom or VScode.
 
 <div class="masonry" markdown="0">
-  {% for wallpaper in site.data.wallpapers %}
+  {% for wallpaper in page.wallpapers %}
     <div class="masonry-brick">
       <img src="/img/screens/wallpapers/{{ wallpaper.filename }}"
            alt="{{ wallpaper.alttext }}">
