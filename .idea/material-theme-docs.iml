@@ -19,7 +19,6 @@
       <excludeFolder url="file://$MODULE_DIR$/.jekyll-cache" />
       <excludeFolder url="file://$MODULE_DIR$/assets" />
       <excludeFolder url="file://$MODULE_DIR$/download" />
-      <excludeFolder url="file://$MODULE_DIR$/_data" />
       <excludeFolder url="file://$MODULE_DIR$/_layouts" />
       <excludeFolder url="file://$MODULE_DIR$/img" />
       <excludeFolder url="file://$MODULE_DIR$/js" />

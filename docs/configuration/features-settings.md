@@ -11,7 +11,7 @@ previous:
   title: UI Components Settings
 next:
   url: '/docs/configuration/project-frame-settings'
-  title: Project Frame Settings
+  title: Project Title Bar Settings
 
 wallpapers:
   - filename: https://images.material-theme.com/mariosmilax/image/upload/c_thumb,w_400,g_face/v1694951877/walls/oceanic.png
