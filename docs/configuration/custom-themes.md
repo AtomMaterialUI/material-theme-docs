@@ -11,7 +11,7 @@ previous:
   title: Project Title Bar Settings
 next:
   url: '/docs/configuration/language-additions'
-  title: Recommended plugins
+  title: Language Additions
 ---
 
 Create your own custom themes.
@@ -19,7 +19,7 @@ Create your own custom themes.
 
 {% include carbonads.html %}
 
-This feature is exclusive to premium users. You can purchase a premium license for the plugin or a dedicated license for this feature via the following link: [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme/edit).
+This feature is exclusive to premium users. You can purchase a premium license for the plugin or a dedicated license for this feature via the following link: [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme).
 {:class='card-panel warn'}
 
 ## Introduction

@@ -10,52 +10,55 @@ previous:
   url: '/docs/configuration/custom-themes'
   title: Custom Themes
 next:
-  url: '/docs/configuration/custom-themes'
-  title: Custom Themes
+  url: '/docs/configuration/islands-settings'
+  title: Islands Settings
 
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
-Augment languages highlighting capabilities.
+Enhance your code's clarity with granular syntax highlighting.
 {:class='title'}
 
 {% include carbonads.html %}
 
-## Intro
+This is a **premium feature**. You can unlock it by purchasing a full plugin license or a standalone [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions) license.
+{:class='card-panel warn'}
 
-This feature is much more oriented development than the others as it provides new features for the Color Schemes rather than the UI. Basically, it adds more
-customization to the Color Schemes by providing more syntax highlighting options than the original bundled ones, thus enhancing visual grepping.
+## Overview
 
-{% include figure.html content="/screens/jsExtensions.png" caption="JavaScript Additions" %}
+Language Additions significantly improves the IDE's syntax highlighting by allowing you to individually colorize keywords, functions, and primitives. This creates a more readable and vibrant coding environment, helping you instantly distinguish between different code elements.
 
-## Additions
+{% include figure.html content="/screens/settingsv3/langAdditions.png" caption="Language Additions Settings" %}
 
-At the moment the only supported languages are:
+These additions are integrated directly into the **Color Scheme** settings pages for each supported language, titled `<Language> Additions`.
 
+{% include figure.html content="/screens/additions/jsAdditions.png" caption="JavaScript Additions Settings" %}
+
+{% include figure.html content="/screens/additions/phpAdditions.png" caption="PHP Additions Settings" %}
+
+### Supported Languages
+
+Language Additions are currently available for several popular languages:
+
+- **Java**
+- **Kotlin**
 - **JavaScript**
 - **TypeScript**
-- **Java**
 - **PHP**
-- **Kotlin**
 - **Python**
 - **Ruby**
 - **Go**
 - **Rust**
 
-Planned languages:
-- **C#**
-- **Dart**
-- **Bash**
+**Note**: We plan to allow other plugin authors to contribute their own language additions in the future.
+{:class='card-panel info'}
 
-### JavaScript/TypeScript
+### JavaScript / TypeScript
 
-The following keywords are customizable:
+The following elements can be customized:
 
 - `this`, `super`
 - `if`, `else`, `for`, `while`, `do`
-- `constructor`,
+- `constructor`
 - `return`, `yield`
 - `new`, `throw`
 - `async`, `await`
@@ -82,18 +85,18 @@ The following keywords are customizable:
 
 ### Java
 
-The following keywords are customizable:
+The following elements can be customized:
 
-- `abstract` `extends`, `implements`, `native`
+- `abstract`, `extends`, `implements`, `native`
 - `assert`
 - `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`, `void`
 - `class`, `interface`
 - `enum`
-- `for`, `while`, `do`, 
+- `for`, `while`, `do`
 - `if`, `else`
 - `package`, `import`
 - `instanceof`
-- `module`, `exports`, `requires`, `opens`, `provides`, `uses`, `with`, `transitive`, `uses`
+- `module`, `exports`, `requires`, `opens`, `provides`, `uses`, `with`, `transitive`
 - `new`
 - `true`, `false`
 - `null`
@@ -104,19 +107,19 @@ The following keywords are customizable:
 - `switch`, `case`, `default`
 - `synchronized`, `volatile`, `transient`
 - `this`, `super`
-- `throw`, `throws`, 
+- `throw`, `throws`
 - `try`, `catch`, `finally`
 - `var`
 
 ### PHP
 
-The following keywords are customizable:
+The following elements can be customized:
 
 - `echo`
 - `exit`, `die`
 - `function`
 - `null`
-- `private`, `public` and `protected`
+- `private`, `public`, `protected`
 - `self`
 - `static`, `final`
 - `true`, `false`
@@ -124,7 +127,7 @@ The following keywords are customizable:
 
 ### Kotlin
 
-The following keywords are customizable
+The following keywords can be customized:
 
 - `private`, `public`, `protected`, `internal`
 - `sealed`, `override`, `open`
@@ -138,9 +141,9 @@ The following keywords are customizable
 
 ### Python
 
-The following keywords are customizable:
+The following elements can be customized:
 
-- `True`, `False` and `None`
+- `True`, `False`, `None`
 - `as`
 - `async`, `await`
 - `class`
@@ -149,7 +152,7 @@ The following keywords are customizable:
 - `import`, `from`
 - `print`
 - `raise`
-- `return` and `yield`
+- `return`, `yield`
 - `try`, `except`, `finally`
 - `with`
 
@@ -187,8 +190,6 @@ The following keywords are customizable:
 
 ### Go
 
-Available since 7.9.0
-
 **Functions**:
 
 - `main`
@@ -219,22 +220,9 @@ Available since 7.9.0
 
 ----
 
-#### Enforce highlighting (deprecated since 7.10.0)
-
-Due to a limitation in JetBrains' syntax highlighting, some additions might not be highlighted as expected,
-as the language's highlighting will take precedence over the additions.
-To remedy that, a setting has been added in the Material Theme Settings, **Enforce Highlighting**,
-which would give the language additions higher precedence by making them appear as _Weak Warnings_.
-
-{% include figure.html content="/screens/archive/enforceHighlighting.png" caption="Enforce Highlighting" %}
-
-This, of course, has the side effect of adding a lot of "fake errors", therefore, it's disabled by default.
-
-----
-
 ### Rust
 
-The following keywords are customizable:
+The following keywords and elements are customizable:
 
 - `as`
 - `async`, `await`
@@ -267,24 +255,18 @@ The following keywords are customizable:
 
 ----
 
-## Disabling the feature
-
-Just like other features, you can also disable language additions if you don't need them for performance reasons or simply if you don't like them.
-
-You can find the setting under `Material Theme UI > Language Additions`.
-
 ### Advanced Toggles
 
-Since version 9.0.0, you can now disable specific language additions, in case you don't want to use them all.
+Individual Language Additions can be enabled or disabled globally through the **Advanced Settings** page.
 
-{% include figure.html content="/screens/additionsToggles.png" caption="Additions Toggles" %}
+{% include figure.html content="/screens/additions/advancedToggles.png" caption="Advanced Toggles" %}
 
 ---
 
 ## FAQ
 
-**Q**: The feature doesn't work! My var/this/debugger keywords are still the same color as the others! By the way, I'm using Darcula/IntelliJ/My custom scheme.
+**Q**: The feature doesn't seem to be working. My keywords like `var` or `this` are the same color as the default keyword color, even though I'm using a different color scheme.
 
-**A**: Since these are *Additions*, of course, other schemes would be unaware of these new entries and would revert to the default keyword color.
-However, color scheme designers can provide their own color definitions for the new entries if they choose to *Export scheme* after having selected their
-colors, and it will work for people having the plugin installed.
+**A**: Since these are *Additions*, most color schemes are not natively aware of these specific entries and will fall back to the default keyword color defined by that scheme.
+
+To fix this, you can manually customize the colors in the Language Additions settings page. If you're a theme designer, you can include these color definitions in your exported schemes so that users who have the plugin installed can see your custom highlighting.
