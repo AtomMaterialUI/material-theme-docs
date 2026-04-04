@@ -10,44 +10,47 @@ previous:
   url: '/docs/configuration/custom-themes'
   title: Custom Themes
 next:
-  url: '/docs/configuration/custom-themes'
-  title: Custom Themes
+  url: '/docs/configuration/islands-settings'
+  title: Islands Settings
 
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
-Augment languages highlighting capabilities.
+Augments syntax highlighting capabilities.
 {:class='title'}
 
 {% include carbonads.html %}
 
-## Intro
+This feature is only available for premium users. You can either buy a premium license for the plugin, or purchase the license for this feature only by going to this link: [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions).
+{:class='card-panel warn'}
 
-This feature is much more oriented development than the others as it provides new features for the Color Schemes rather than the UI. Basically, it adds more
-customization to the Color Schemes by providing more syntax highlighting options than the original bundled ones, thus enhancing visual grepping.
+## Language Additions
 
-{% include figure.html content="/screens/jsExtensions.png" caption="JavaScript Additions" %}
+This feature enhances the IDE's syntax highlighting by allowing you to colorize keywords, functions, and primitives individually. This results in a more vibrant coding environment and helps you quickly distinguish between different types of code elements.
 
-## Additions
+{% include figure.html content="/screens/settingsv3/langAdditions.png" caption="Language Additions" %}
 
-At the moment the only supported languages are:
+You can find these additions in specific _Color Scheme_ settings pages, denoted by the `<Language> Additions`.
 
+{% include figure.html content="/screens/additions/jsAdditions.png" caption="JavaScript Additions" %}
+
+{% include figure.html content="/screens/additions/phpAdditions.png" caption="PHP Additions" %}
+
+### Languages
+
+Language Additions are available for the most popular languages, such as:
+
+- **Java**
+- **Kotlin**
 - **JavaScript**
 - **TypeScript**
-- **Java**
 - **PHP**
-- **Kotlin**
 - **Python**
 - **Ruby**
 - **Go**
 - **Rust**
 
-Planned languages:
-- **C#**
-- **Dart**
-- **Bash**
+**Note**: In the future, we might give the option for other plugin authors to add their own additions as well.
+{:class='card-panel info'}
 
 ### JavaScript/TypeScript
 
@@ -187,8 +190,6 @@ The following keywords are customizable:
 
 ### Go
 
-Available since 7.9.0
-
 **Functions**:
 
 - `main`
@@ -216,19 +217,6 @@ Available since 7.9.0
 
 - `nil`
 - `true`, `false`
-
-----
-
-#### Enforce highlighting (deprecated since 7.10.0)
-
-Due to a limitation in JetBrains' syntax highlighting, some additions might not be highlighted as expected,
-as the language's highlighting will take precedence over the additions.
-To remedy that, a setting has been added in the Material Theme Settings, **Enforce Highlighting**,
-which would give the language additions higher precedence by making them appear as _Weak Warnings_.
-
-{% include figure.html content="/screens/archive/enforceHighlighting.png" caption="Enforce Highlighting" %}
-
-This, of course, has the side effect of adding a lot of "fake errors", therefore, it's disabled by default.
 
 ----
 
@@ -267,17 +255,11 @@ The following keywords are customizable:
 
 ----
 
-## Disabling the feature
-
-Just like other features, you can also disable language additions if you don't need them for performance reasons or simply if you don't like them.
-
-You can find the setting under `Material Theme UI > Language Additions`.
-
 ### Advanced Toggles
 
-Since version 9.0.0, you can now disable specific language additions, in case you don't want to use them all.
+You can enable/disable the language additions for specific languages by using these toggles.
 
-{% include figure.html content="/screens/additionsToggles.png" caption="Additions Toggles" %}
+{% include figure.html content="/screens/additions/advancedToggles.png" caption="Advanced Toggles" %}
 
 ---
 
