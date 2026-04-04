@@ -152,7 +152,7 @@ project settings.
 [Project Label](https://plugins.jetbrains.com/plugin/8032-project-label)
 
 A rather simple plugin that shows the current project in the status bar, which was the inspiration for the
-[Status Bar Indicator](/docs/configuration/component-settings#theme-in-status-bar) feature.
+[Status Bar Indicator](/docs/configuration/ui-components-settings#theme-in-status-bar) feature.
 
 ##### Browse word at caret
 

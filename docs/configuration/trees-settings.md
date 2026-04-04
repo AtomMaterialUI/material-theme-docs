@@ -10,7 +10,7 @@ previous:
   url: '/docs/configuration/spacing-settings'
   title: Spacing Settings
 next:
-  url: '/docs/configuration/component-settings'
+  url: '/docs/configuration/ui-components-settings'
   title: UI Components Settings
 
 ---

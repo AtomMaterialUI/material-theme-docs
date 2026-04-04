@@ -2282,7 +2282,7 @@ Therefore, I've decided to include a new setting to select your preferred style,
 
 {% include figure.html content="/screens/archive/invertedSelectionColor.png" caption="Inverted Selection Color" %}
 
-More information in the [Component Settings documentation](/docs/configuration/component-settings#inverted-selection-color)
+More information in the [Component Settings documentation](/docs/configuration/ui-components-settings#inverted-selection-color)
 
 ----
 
@@ -2601,7 +2601,7 @@ As a result, I've added more information in the plugin page as well, so that hop
 
 ### Bug Fixes
 
-- The __[Outline buttons](configuration/component-settings#outline-buttons)__ are no longer transparent as transparency is not really supported in the IDE. Instead, the buttons use color mixing to simulate transparency. This should make the outlined buttons feature more comfortable to use.
+- The __[Outline buttons](configuration/ui-ui-components-settings#outline-buttons)__ are no longer transparent as transparency is not really supported in the IDE. Instead, the buttons use color mixing to simulate transparency. This should make the outlined buttons feature more comfortable to use.
 - __[Language Additions](configuration/color-scheme-additions)__ are no longer appearing inside comments or JSX Tags. Hope this will be the last of it!
 - Now when changing settings without changing the theme, the color scheme will **NOT BE RESET**.
 - Same for executing actions such as the _Striped Tool Windows_, _Language Additions_, etc.
