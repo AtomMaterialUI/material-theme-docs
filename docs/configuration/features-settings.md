@@ -10,7 +10,7 @@ previous:
   url: '/docs/configuration/component-settings'
   title: UI Components Settings
 next:
-  url: '/docs/configuration/project-frame-settings'
+  url: '/docs/configuration/project-title-bar-settings'
   title: Project Title Bar Settings
 
 wallpapers:

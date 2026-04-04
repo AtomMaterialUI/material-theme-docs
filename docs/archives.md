@@ -1358,7 +1358,7 @@ available <a href="http://dl.material-theme.com/newUI" download>here</a>. You ca
 ### Colorize Title Bar
 
 The second highlight of this version is also related to the *New UI users only*, and is about an extension of
-the [Project Frame](/docs/configuration/project-frame-settings): the ability to **Colorize the Title Bar**!
+the [Project Frame](/docs/configuration/project-title-bar-settings): the ability to **Colorize the Title Bar**!
 
 {% include figure.html content="/screens/colorized.png" caption="Colorize title bar" %}
 
@@ -1369,7 +1369,7 @@ customizable.
 
 So there it is, the perfect **Project Frame**! And it can be customized per project!
 
-Note: As usual, you can still disable it from the [Project Frame Settings](/docs/configuration/project-frame-settings).
+Note: As usual, you can still disable it from the [Project Frame Settings](/docs/configuration/project-title-bar-settings).
 And it's available in the separate
 standalone plugin as well.
 {:class='card-panel warn'}
@@ -1784,7 +1784,7 @@ Introducing **Material Theme Bundles**: these are separate plugins that provide 
 For example, let's say you are only
 interested in the [Custom Theme](/docs/configuration/custom-themes) feature but don't need
 the [Tab Settings](/docs/configuration/tab-settings),
-[Project Frame](/docs/configuration/project-frame-settings)
+[Project Frame](/docs/configuration/project-title-bar-settings)
 or [Language Additions](configuration/color-scheme-additions), you would be able to purchase
 it separately and benefit from it without having to buy a premium license.
 
@@ -2151,13 +2151,13 @@ Stay tuned!
 
 # What's new in Material Theme UI v6.7.0
 
-This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) to the [Project Frame Colors](/docs/configuration/project-frame-settings), as well as fixing many issues as usual.
+This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) to the [Project Frame Colors](/docs/configuration/project-title-bar-settings), as well as fixing many issues as usual.
 {:class='title'}
 
 
 ## Project Icon in the Project Frame
 
-In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-frame-settings), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
+In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-title-bar-settings), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
 
 {% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
 
@@ -2204,7 +2204,7 @@ This version brings out the first **per-project settings**, alongside new settin
 
 One of the latest updates of the Material Theme was a feature allowing you to add a "custom frame", or "toolbar", at the top of the window with a different color per project.
 
-This feature, named [Project Frame Colors](/docs/configuration/project-frame-settings), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
+This feature, named [Project Frame Colors](/docs/configuration/project-title-bar-settings), was inspired by a [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors), and was positively adopted by users.
 
 As a result, new customization capabilities were added to that feature to stand out even more.
 
@@ -2378,7 +2378,7 @@ Yet another bug-fix release, alongside small features and an overgoing refactor.
 {:class='title'}
 
 ### Features
-- Add two new keywords for the [Project Frame Custom Text](/docs/configuration/project-frame-settings#customize-text): `{module}` and `{file}`
+- Add two new keywords for the [Project Frame Custom Text](/docs/configuration/project-title-bar-settings#customize-text): `{module}` and `{file}`
 
 ### Fixes
 - Fix [#1823](https://github.com/ChrisRM/material-theme-jetbrains/issues/1823)

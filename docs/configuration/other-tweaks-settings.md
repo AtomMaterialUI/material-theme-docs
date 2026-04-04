@@ -7,7 +7,7 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/project-frame-settings'
+  url: '/docs/configuration/project-title-bar-settings'
   title: Project Frame Settings
 next:
   url: '/docs/configuration/quick-actions-panel'
