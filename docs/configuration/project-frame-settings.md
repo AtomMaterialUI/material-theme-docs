@@ -14,13 +14,13 @@ next:
   title: Other Tweaks
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
 This panel controls settings related to the **Project Title Bar** and the **Project Banner** feature.
 {:class='title'}
 
 {% include carbonads.html %}
+
+This feature is only available for premium users. You can either buy a premium license for the plugin, or purchase the license for this feature only by going to this link: [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame).
+{:class='card-panel warn'}
 
 ## Application Frame
 
@@ -52,7 +52,7 @@ You can customize which parts of the application frame to colorize. While only t
 
 ## Project Widget Settings
 
-This section expose some configuration settings for the native **Project Gradient** feature.
+This section exposes some configuration settings for the native **Project Gradient** feature.
 
 ### Gradient Radius
 
@@ -67,3 +67,100 @@ This setting allows you to specify the radius of the gradient. It's 2000px by de
 {% include figure.html content="/screens/projectFrame/4000gradient.png" caption="Gradient Radius: 4000px" %}
 
 </div>
+
+----
+
+## Project Banner
+
+The **Project Banner** is a feature that allows you to display a customizable colored banner at the top of the IDE. This banner can be used to provide useful information about the current file, project, or module.
+
+The color of the banner uses the same color of the application frame, e.g. generated from the project name.
+
+{% include figure.html content="/screens/projectFrame/projectBanners.png" caption="Project Banner" %}
+
+This banner can display a variety of information, such as:
+- the current opened file
+- the path of the current file
+- the current project name
+- the current module name
+- the current opened file icon
+
+### Show Project Icon
+
+This setting determines whether to display the project icon in the banner.
+
+{% include figure.html content="/screens/projectFrame/withoutIcon.png" caption="Banner without Project Icon" %}
+
+### Show Project Text
+
+This setting determines whether to display the text in the banner.
+
+{% include figure.html content="/screens/projectFrame/withoutText.png" caption="Banner without Project Text" %}
+
+### Customize Text
+
+Here you can customize the text that appears in the banner. You can use the following variables to include dynamic information:
+- `{project}`: The name of the current project.
+- `{subProject}`: When you have multiple projects in the same workspace, the project name of the currently opened file.
+- `{module}`: The name of the current module (for Java and Kotlin projects).
+- `{file}`: The name of the currently opened file.
+- `{fileIcon}`: The icon of the currently opened file.
+- `{path}`: The path of the currently opened file, relative to the project root.
+- `{fullPath}`: The full path of the currently opened file.
+
+{% include figure.html content="/screens/projectFrame/customizedText.png" caption="Banner with Customized Text" %}
+
+----
+
+## Project Banner Widget
+
+In addition to the Project Banner, the plugin also provides a **Project Banner Widget** that can be added to the Title Bar, showing the same information as the Project Banner. This way, you can benefit from the Project Banner's features without having to add the banner to the Title Bar.
+
+{% include figure.html content="/screens/projectFrame/projectBannerWidget.png" caption="Project Banner Widget" %}
+
+To add it, rather than using this settings page, you need to right click on the Title Bar and select **Customize Toolbar**. Then, search for the **Material Project Title Bar Widget** and click **Add**.
+
+**Note**: This widget is added by default, so this is also relevant if you want to remove it.
+{:class='card-panel info'}
+
+In addition to showing the information, this widget also provides you with the option to select from a list of predefined presets, enabling you to customize it to your needs.
+
+{% include figure.html content="/screens/projectFrame/presets.png" caption="Project Banner Widget Presets" %}
+
+----
+
+## Project Banner Settings
+
+The following settings allow you to customize the appearance of the Project Banner Widget.
+
+### Project Banner Width
+
+Specify a custom width for the Project Banner Widget. Setting it to 0 will take the full width of the IDE.
+
+The default value is 800.
+
+{% include figure.html content="/screens/projectFrame/customWidth.png" caption="Custom Project Banner Width" %}
+
+### Project Banner Height
+
+Specify a custom height for the Project Banner Widget.
+
+The default value is 30.
+
+{% include figure.html content="/screens/projectFrame/customHeight.png" caption="Custom Project Banner Height" %}
+
+### Project Banner Font Family and Font Size
+
+This gives you the option to customize the font family and font size of the Project Banner Widget.
+
+{% include figure.html content="/screens/projectFrame/customFont.png" caption="Custom Project Banner Font" %}
+
+----
+
+## Per-project settings
+
+Just like the Tabs Settings or the Trees Settings, the Project Banner Settings can also be configured per-project. 
+
+This way, you can decide to change the color of the banner for each project individually, use a custom text, a different font, etc.
+
+{% include figure.html content="/screens/projectFrame/customProjectSettings.png" caption="Per-project Project Banner Settings" %}

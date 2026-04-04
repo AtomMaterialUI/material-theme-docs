@@ -19,6 +19,9 @@ Contrast settings allow you to improve the visibility of UI components by adding
 
 {% include carbonads.html %}
 
+The High Contrast feature is only available for premium users. You can either buy a premium license for the plugin, or purchase the license for this feature only by going to this link: [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast).
+{:class='card-panel warn'}
+
 ## Contrast Settings
 
 You can configure the contrast settings by navigating to `Settings → Appearance → Material Theme UI → Contrast`.

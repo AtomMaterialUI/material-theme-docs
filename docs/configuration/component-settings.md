@@ -19,12 +19,14 @@ These settings provide you with a wide range of customization options for variou
 
 {% include carbonads.html %}
 
-{% include figure.html content="/screens/settingsv3/uiComponents.png" caption="UI Components" %}
-
-Some features are only available for premium users.
+Some features are only available for premium users. You can either buy a premium license for the plugin, or purchase the license for these features only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras).
 {:class='card-panel warn'}
 
+----
+
 ## Look And Feel
+
+{% include figure.html content="/screens/settingsv3/uiComponents.png" caption="UI Components" %}
 
 ### Material Design Style
 

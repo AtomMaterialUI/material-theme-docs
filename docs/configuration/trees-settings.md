@@ -20,10 +20,10 @@ These settings allow you to customize the look and feel of the IDE's tree views,
 
 {% include carbonads.html %}
 
-----
-
-Some features are only available for premium users.
+Some features are only available for premium users. You can either buy a premium license for the plugin, or purchase the license for these features only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras).
 {:class='card-panel warn'}
+
+----
 
 Trees Settings are grouped into the following categories:
 - [Spacing Settings](#spacing-settings)
