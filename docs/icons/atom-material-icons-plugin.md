@@ -52,7 +52,7 @@ and [Atom Material Icons for Firefox](https://addons.mozilla.org/en-US/firefox/a
 Note: This plugin has also ben ported to VSCode as well! Go take a
 look: [Atom Material Icons](https://marketplace.visualstudio.com/items?itemName=AtomMaterial.a-file-icon-vscode&ssr=false#overview)
 
-{% include figure.html content="/screens/vscode.png" caption="VSCode Atom Material Icons Plugin" %}
+{% include figure.html content="/screens/atom/vscode.png" caption="VSCode Atom Material Icons Plugin" %}
 {:class='card-panel'}
 
 ----
@@ -224,4 +224,4 @@ Examples of such icons are:
 By default, this color will be the same as the text color in trees, but this setting will allow you to override it with
 the color of your choice.
 
-{% include figure.html content="/screens/themedColor.png" caption="Custom Themed Color" %}
+{% include figure.html content="/screens/atom/themedColor.png" caption="Custom Themed Color" %}

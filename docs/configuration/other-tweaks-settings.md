@@ -21,50 +21,6 @@ These features are additional extras to the plugin, not related to the themes or
 
 -----
 
-### Language additions
-
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
-This feature adds new highlighting capabilities to popular languages,
-making possible to highlight specific keywords or function names separately from the language color scheme.
-
-{% include figure.html content="/screens/javaScriptAdditions.png" caption="Language Additions" %}
-
-Refer to the [Language Additions](/docs/configuration/language-additions) page for more details.
-
-----
-
-### Focus Mode
-
-This feature is only available for premium users and users who bought the **Language Additions** package.
-{:class='card-panel warn'}
-
-Originally inspired by an extension with the same name, this feature has been added to the plugin's feature as well, with more customization options.
-
-What it does is to "focus" on the current part of the code, by "unhighlighting" the parts surrounding it. Whether it's within a class, a function, or inside an
-if-block, the surrounding parts will receive a unique, monotone color, in order for the focused part to receive all the necessary attention.
-
-{% include figure.html content="/screens/archive/focusModeOceanic.png" caption="Focus Mode (Oceanic)" %}
-
-{% include figure.html content="/screens/archive/focusModeLighter.png" caption="Focus Mode (Lighter)" %}
-
-Since this way of coding is highly dependent of the individual, it is disabled by default,
-in order to not frustrate the users that are used to code without this tweak.
-However, we recommend giving it a shot, and maybe you'll get used to coding this way!
-
-By default, the color of the unfocused parts is taken from the current theme, but you can decide to use your own color as well,
-thanks to a switch found inside the settings.
-For example, you can set the _Focus Color_ to the same color as your current editor background, making the unfocused parts disappear completely!
-
-{% include figure.html content="/screens/archive/customFocusColor.png" caption="Custom Focus Color (black)" %}
-
-{% include figure.html content="/screens/archive/customFocusColorWhite.png" caption="Custom Focus Color (white)" %}
-
-This feature is available since version 7.11.0.
-
-----
-
 ### Colored open directories
 
 This feature is only available for premium users.
