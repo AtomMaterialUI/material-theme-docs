@@ -119,4 +119,4 @@ This setting controls the opacity of the overlay applied to Tool Windows when th
 
 {% include figure.html content="/screens/islands/halfOpacity.png" caption="Half Transparent" %}
 
-{% include figure.html content="/screens/islands/maxOpacity.png" caption="No Transparency" %}
+{% include figure.html content="/screens/islands/fullOpacity.png" caption="No Transparency" %}
