@@ -15,29 +15,29 @@ next:
 
 ---
 
-Augments syntax highlighting capabilities.
+Enhance your code's clarity with granular syntax highlighting.
 {:class='title'}
 
 {% include carbonads.html %}
 
-This feature is only available for premium users. You can either buy a premium license for the plugin, or purchase the license for this feature only by going to this link: [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions).
+This is a **premium feature**. You can unlock it by purchasing a full plugin license or a standalone [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions) license.
 {:class='card-panel warn'}
 
-## Language Additions
+## Overview
 
-This feature enhances the IDE's syntax highlighting by allowing you to colorize keywords, functions, and primitives individually. This results in a more vibrant coding environment and helps you quickly distinguish between different types of code elements.
+Language Additions significantly improves the IDE's syntax highlighting by allowing you to individually colorize keywords, functions, and primitives. This creates a more readable and vibrant coding environment, helping you instantly distinguish between different code elements.
 
-{% include figure.html content="/screens/settingsv3/langAdditions.png" caption="Language Additions" %}
+{% include figure.html content="/screens/settingsv3/langAdditions.png" caption="Language Additions Settings" %}
 
-You can find these additions in specific _Color Scheme_ settings pages, denoted by the `<Language> Additions`.
+These additions are integrated directly into the **Color Scheme** settings pages for each supported language, titled `<Language> Additions`.
 
-{% include figure.html content="/screens/additions/jsAdditions.png" caption="JavaScript Additions" %}
+{% include figure.html content="/screens/additions/jsAdditions.png" caption="JavaScript Additions Settings" %}
 
-{% include figure.html content="/screens/additions/phpAdditions.png" caption="PHP Additions" %}
+{% include figure.html content="/screens/additions/phpAdditions.png" caption="PHP Additions Settings" %}
 
-### Languages
+### Supported Languages
 
-Language Additions are available for the most popular languages, such as:
+Language Additions are currently available for several popular languages:
 
 - **Java**
 - **Kotlin**
@@ -49,16 +49,16 @@ Language Additions are available for the most popular languages, such as:
 - **Go**
 - **Rust**
 
-**Note**: In the future, we might give the option for other plugin authors to add their own additions as well.
+**Note**: We plan to allow other plugin authors to contribute their own language additions in the future.
 {:class='card-panel info'}
 
-### JavaScript/TypeScript
+### JavaScript / TypeScript
 
-The following keywords are customizable:
+The following elements can be customized:
 
 - `this`, `super`
 - `if`, `else`, `for`, `while`, `do`
-- `constructor`,
+- `constructor`
 - `return`, `yield`
 - `new`, `throw`
 - `async`, `await`
@@ -85,18 +85,18 @@ The following keywords are customizable:
 
 ### Java
 
-The following keywords are customizable:
+The following elements can be customized:
 
-- `abstract` `extends`, `implements`, `native`
+- `abstract`, `extends`, `implements`, `native`
 - `assert`
 - `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`, `void`
 - `class`, `interface`
 - `enum`
-- `for`, `while`, `do`, 
+- `for`, `while`, `do`
 - `if`, `else`
 - `package`, `import`
 - `instanceof`
-- `module`, `exports`, `requires`, `opens`, `provides`, `uses`, `with`, `transitive`, `uses`
+- `module`, `exports`, `requires`, `opens`, `provides`, `uses`, `with`, `transitive`
 - `new`
 - `true`, `false`
 - `null`
@@ -107,19 +107,19 @@ The following keywords are customizable:
 - `switch`, `case`, `default`
 - `synchronized`, `volatile`, `transient`
 - `this`, `super`
-- `throw`, `throws`, 
+- `throw`, `throws`
 - `try`, `catch`, `finally`
 - `var`
 
 ### PHP
 
-The following keywords are customizable:
+The following elements can be customized:
 
 - `echo`
 - `exit`, `die`
 - `function`
 - `null`
-- `private`, `public` and `protected`
+- `private`, `public`, `protected`
 - `self`
 - `static`, `final`
 - `true`, `false`
@@ -127,7 +127,7 @@ The following keywords are customizable:
 
 ### Kotlin
 
-The following keywords are customizable
+The following keywords can be customized:
 
 - `private`, `public`, `protected`, `internal`
 - `sealed`, `override`, `open`
@@ -141,9 +141,9 @@ The following keywords are customizable
 
 ### Python
 
-The following keywords are customizable:
+The following elements can be customized:
 
-- `True`, `False` and `None`
+- `True`, `False`, `None`
 - `as`
 - `async`, `await`
 - `class`
@@ -152,7 +152,7 @@ The following keywords are customizable:
 - `import`, `from`
 - `print`
 - `raise`
-- `return` and `yield`
+- `return`, `yield`
 - `try`, `except`, `finally`
 - `with`
 
@@ -222,7 +222,7 @@ The following keywords are customizable:
 
 ### Rust
 
-The following keywords are customizable:
+The following keywords and elements are customizable:
 
 - `as`
 - `async`, `await`
@@ -257,7 +257,7 @@ The following keywords are customizable:
 
 ### Advanced Toggles
 
-You can enable/disable the language additions for specific languages by using these toggles.
+Individual Language Additions can be enabled or disabled globally through the **Advanced Settings** page.
 
 {% include figure.html content="/screens/additions/advancedToggles.png" caption="Advanced Toggles" %}
 
@@ -265,8 +265,8 @@ You can enable/disable the language additions for specific languages by using th
 
 ## FAQ
 
-**Q**: The feature doesn't work! My var/this/debugger keywords are still the same color as the others! By the way, I'm using Darcula/IntelliJ/My custom scheme.
+**Q**: The feature doesn't seem to be working. My keywords like `var` or `this` are the same color as the default keyword color, even though I'm using a different color scheme.
 
-**A**: Since these are *Additions*, of course, other schemes would be unaware of these new entries and would revert to the default keyword color.
-However, color scheme designers can provide their own color definitions for the new entries if they choose to *Export scheme* after having selected their
-colors, and it will work for people having the plugin installed.
+**A**: Since these are *Additions*, most color schemes are not natively aware of these specific entries and will fall back to the default keyword color defined by that scheme.
+
+To fix this, you can manually customize the colors in the Language Additions settings page. If you're a theme designer, you can include these color definitions in your exported schemes so that users who have the plugin installed can see your custom highlighting.
