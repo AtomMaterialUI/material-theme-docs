@@ -14,13 +14,15 @@ next:
   title: Spacing Settings
 ---
 
-Some features are only available for premium users.
-{:class='card-panel warn'}
-
 These settings allow you to customize the appearance of the Tabs, whether it's Editor Tabs, Debugger Tabs, or any tabbed pane in the IDE. You can customize the height, the active tab indicator, the font, and much more to achieve the perfect look for your IDE.
 {:class='title'}
 
 {% include carbonads.html %}
+
+Some features are only available for premium users. You can either buy a premium license for the plugin, or purchase the license for these features only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras).
+{:class='card-panel warn'}
+
+----
 
 ## Tab Customization
 

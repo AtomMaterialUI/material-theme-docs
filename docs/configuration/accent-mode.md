@@ -17,7 +17,7 @@ next:
 Accent Mode allows you to emphasize specific UI components by applying the accent color more prominently throughout the IDE.
 {:class='title'}
 
-This feature is only available for premium users.
+This feature is only available for premium users. You can either buy a premium license for the plugin, or purchase the license for this feature only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras).
 {:class='card-panel warn'}
 
 {% include carbonads.html %}

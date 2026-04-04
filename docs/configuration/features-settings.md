@@ -24,13 +24,13 @@ wallpapers:
     alttext: Material Darker
 ---
 
-Some of these features are only available for premium users.
-{:class='card-panel warn'}
-
 Here you can turn on and off specific features of the Material Theme for even further customization.
 {:class='title'}
 
 {% include carbonads.html %}
+
+Some features are only available for premium users. You can either buy a premium license for the plugin, or purchase the license for these features only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras).
+{:class='card-panel warn'}
 
 ## General
 
