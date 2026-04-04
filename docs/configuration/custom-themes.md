@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Custom Themes
-description: Create your own custom theme
+description: Learn how to create and manage your own custom themes.
 group: configuration
 toc: true
 comments: true
@@ -14,136 +14,152 @@ next:
   title: Recommended plugins
 ---
 
-This feature is only available for premium users.
-{:class='card-panel warn'}
-
-This section explains how you can customize the themes colors using Custom Themes.
+Create your own custom themes.
 {:class='title'}
 
 {% include carbonads.html %}
 
+This feature is exclusive to premium users. You can purchase a premium license for the plugin or a dedicated license for this feature via the following link: [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme/edit).
+{:class='card-panel warn'}
+
 ## Introduction
 
-The Material Theme plugin comes with a set of beautiful prebundled themes, suited for a good development experience.
-However, not everyone can be content with the choices made by the theme creator,
-and while the plugin offers a lot of customizations, still, the ability to customize the themes themselves was one of the most requested features.
+Material Themes utilize a clever theme system that exposes only a select few properties to modify. This simplifies the customization process compared to JetBrains' native themes. Theme authors don't need to know every possible UI property; instead, they only need to define these core properties to create a theme supported by the plugin.
 
-As of version 0.10.0, the plugin is giving the ability to do so by offering two "_boilerplate themes_", `Custom Theme` and `Light Custom Theme`, respectively
-based on `Material Oceanic` and `Material Lighter`, with the ability to customize most of the colors used by the themes!
+Through this system, the plugin allows users to create their own **custom themes** by modifying these properties directly through the settings.
+
+Furthermore, users can export and share their custom themes with others who are also using the plugin.
 
 ## Configuration
 
 ### Settings
 
-To use a custom theme, first you'll need to configure its colors.
-To do so, open the Settings and navigate to **Appearance & Behavior** → **Material Theme UI** → **Custom Theme**.
+The **Custom Theme Settings** provide a simple way to create your own custom theme. You can start from scratch, use a predefined theme as a base, or import an existing custom theme.
 
-{% include figure.html content="/screens/customTheme.png" caption="Custom Theme Colors" %}
-
-{% include figure.html content="/screens/lightCustomTheme.png" caption="Light Custom Theme Colors" %}
-
-Once you're done customizing your colors, you'll need to select **Custom Theme** or **Light Custom Theme** from the _Theme Switcher_ to see your colors in
-action.
-Enjoy!
+{% include figure.html content="/screens/custom/customThemeSettings.png" caption="Custom Theme Settings" %}
 
 ### Color Scheme
 
-From version 7.5.2 you are now able to select a _Color Scheme_ to assign to your custom theme.
-This is particularly useful if you have "Custom Color Schemes" or
-schemes downloaded from the Marketplace, and want to assign them to your custom theme.
+Since custom themes don't have an intrinsic color scheme, you must specify which one to associate with your theme. You can attach any color scheme, including default ones, those from other themes, or your own custom schemes.
 
-{% include figure.html content="/screens/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" %}
+{% include figure.html content="/screens/custom/colorSchemeSelect.png" caption="Assign Color Scheme" %}
 
-Note: If the color scheme can't be found (for example, if you decide to use the `_@user` schemes or if you select a plugin based scheme), it will automatically
-revert to _Darcula_)
-{:class='card-panel warn'}
+**Note**: Since the plugin modifies color schemes, modified schemes may appear in the list with the prefix `@user_`. 
+{:class='card-panel'}
+
+### Theme Properties
+
+You can preview and edit your theme colors via an easy-to-use grid that displays both the color and its hex value.
+
+Clicking a color opens a color picker for selection.
+Click **Apply** to preview how the theme looks within the IDE.
+
+{% include figure.html content="/screens/custom/colorPicker.png" caption="Pick a color" %}
+
+#### Property Descriptions
+
+- **Background color**: The primary background color for IDE panels, application windows, dialogs, etc.
+- **Foreground color**: The primary text and icon color used throughout the IDE.
+- **Secondary text color**: The foreground color for supplementary controls, such as tree items, button text, shortcuts, and explanation text.
+- **Selection background color**: The background color for selected items in menus and lists.
+- **Selection foreground color**: The text color for selected items in menus and lists.
+- **Button color**: The background color for buttons and similar components.
+- **Secondary background color**: A secondary color used for lists, active tool window headers, autocomplete popups, etc.
+- **Disabled color**: The color used for disabled items, such as menu items and buttons.
+- **Contrast color**: A ternary color used to provide contrast against the primary background, typically in trees, text fields, and tab panes.
+- **Table Selected text color**: A quaternary background color used in specific components like tables.
+- **Separators color**: The color for borders and separators in menu bars, buttons, tabbed panes, etc.
+- **Highlight color**: The color for highlighted components, such as primary buttons.
+- **Tree selection color**: The background color for selected items in trees and autocompletion lists.
+- **Notifications color**: The background color for notification popups.
+- **Accent color**: The primary accent color for the theme.
+- **Excluded files' color**: The color for excluded files in the Project View.
+- **Second Accent color**: The secondary accent color used in [Accent Mode](/docs/configuration/accent-mode).
+
+Once defined, your theme will appear in the theme list as **Custom Theme**.
 
 ----
 
-## Importing and exporting custom themes
+## Importing and Exporting Custom Themes
 
-From version 3.8.0 a new button has been added to allow you to import colors from external themes into your custom theme.
+The settings page includes buttons for loading colors from predefined themes, as well as importing and exporting custom themes.
 
-{% include figure.html content="/screens/archive/importTheme.png" caption="Import Themes" %}
+{% include figure.html content="/screens/custom/loadFrom.png" caption="Load colors from Predefined Themes" %}
 
-You can set colors from the predefined themes to have a better starting point, or you can import your own theme in the form of an XML file
-(see [External Themes](/docs/development/external-themes))
+- **Import Theme**: Select a previously saved custom theme `xml` file to load its colors.
+- **Export Theme**: Opens a popup where you can specify the theme's ID, name, and darkness setting.
 
-Lastly, you can export your current set of colors into your own External Theme so that you can share it or, even better, bundle and release it as a plugin!
+{% include figure.html content="/screens/custom/export.png" caption="Export Theme" %}
 
-Just select `Save current theme as…` to be presented with a screen to enter your theme details:
-
-{% include figure.html content="/screens/customThemeDetails.png" caption="Custom Theme Details" %}
-
-Here you can specify the name of your theme, a unique identifier, whether it's a dark theme and optionally a color scheme to associate with (useful if you want
-to write a theme for a color scheme such as the ones found in the plugin repository or from the internet).
-
-From this point, you can distribute it between your IDEs/computers/peers or for all the world to share.
+After entering these details, you'll be prompted to choose a save location. You can then share the resulting file with other users.
 
 ----
 
-### Colors' explanation
+## Light Custom Theme
 
-Here's a non-exhaustive list of all the settings and what components they're affecting.
-Please note that this is a non-fixed list, as in every version new
-components are added, some components are updated, deleted etc…
+Custom Themes are "darkness agnostic," meaning they are neither inherently dark nor light; the user determines the color palette. However, by default, the IDE treats them as *Dark Themes* regardless of the colors chosen.
 
-**New**: Since version 6.10.0, you can add support for the Material Theme plugin in your native themes' json using the **properties** specified in the following
-section.
-{:class='card-panel warn'}
+To create a true *Light Theme*, use the **Light Custom Theme** settings. This interface is identical to the standard **Custom Theme Settings**, but it generates a theme recognized by the IDE as a light theme.
+
+Your created theme will appear in the theme list as **Light Custom Theme**.
+
+{% include figure.html content="/screens/custom/lightCustomTheme.png" caption="Light Custom Theme" %}
+
+----
+
+### Detailed Color Reference
+
+The following is a non-exhaustive reference of theme properties and the components they affect. Note that this list may evolve as new IDE components are added or updated.
 
 ##### Background color
 
 **Property**: `material.background`
 
-Affects the main _background_ color of the IDE's panels, popups, controls…
+The primary background color for IDE panels, popups, and controls.
 
 ##### Foreground color
 
 **Property**: `material.foreground`
 
-Affects the main _foreground_ color of the IDE's panels, popups, controls…
+The primary foreground (text) color for IDE panels, popups, and controls.
 
 ##### Secondary text color
 
 **Property**: `material.primaryColor`
 
-A secondary color used in some controls:
-
-- Buttons Text
-- Menu and Menu Items shortcut texts
-- Text fields' border
+A secondary color used for:
+- Button text
+- Menu and menu item shortcut text
+- Text field borders
 - Disabled text in dropdowns
 - Tree items
-- Tag names in VCS Log
-- Other helping texts
+- Tag names in the VCS Log
+- Supplementary help text
 
 ##### Selection background color
 
 **Property**: `material.selectionBackground`
 
-The background color of selected elements in various UI components:
-
+The background color for selected elements:
 - Selected menu items
 - Selected list items and table cells
 - Active tabs
 - Autocomplete active item
-- Selected tab in TabbedPanes
+- Selected tab in `TabbedPanes`
 - Selected text in documentation panels
 
 ##### Selection foreground color
 
 **Property**: `material.selectionForeground`
 
-The text (foreground) color of selected elements in various UI components:
-
+The text color for selected elements:
 - Selected menu items
 - Selected list items and table cells
 - Active tabs
 - Autocomplete active item
 - Selected text in text fields
 - Selected text in documentation panels
-- Focused buttons' text
+- Focused button text
 - Dropdown selected item text
 - Selected item in trees
 
@@ -151,155 +167,140 @@ The text (foreground) color of selected elements in various UI components:
 
 **Property**: `material.button`
 
-Buttons colors and others:
-
-- Buttons background color
-- Merge commits text
+Affects buttons and related elements:
+- Button background color
+- Merge commit text
 - Section headers
-- More Buttons
+- "More" buttons
 
 ##### Secondary background color
 
 **Property**: `material.second`
 
-A secondary color used to contrast with the background color.
-
-- Lists background color
-- Active Tool Window Header Color
-- Memory Indicator Unused color
-- ProgressBar track color
+A secondary color used for contrast:
+- List background color
+- Active Tool Window header color
+- Memory indicator (unused portion)
+- Progress bar track color
 - Autocomplete popup background
 - Parameter info popup background
-- VCS Log's current branch background color
+- VCS Log's current branch background
 
 ##### Disabled color
 
 **Property**: `material.disabled`
 
-A color used principally inside disabled items:
-
-- Disabled menus and menu items' text
-- Disabled text fields and password fields
-- Disabled buttons
-- Disabled checkboxes
+The color used for disabled components:
+- Disabled menu and menu item text
+- Disabled text and password fields
+- Disabled buttons and checkboxes
 - Disabled tabs
-- Disabled items in Parameter info
+- Disabled items in Parameter Info
 
 ##### Contrast color
 
 **Property**: `material.contrast`
 
-The color used when contrast mode is enabled:
-
-- Contrast mode-affected controls (Tree, Text fields, Tabs…)
+The color used when **Contrast Mode** is enabled:
+- Contrast-affected controls (Trees, Text fields, Tabs, etc.)
 - Odd rows in striped tables
 - Documentation panes
-- Tool Window Headers selected tab
-- Selected Tab in Tabbed Panes
+- Tool Window headers (selected tab)
+- Selected tab in `Tabbed Panes`
 - Search Everywhere search field
-- Selected ToolWindow
-- Editor background when no opened files
+- Selected Tool Window
+- Editor background (when no files are open)
 
 ##### Selected text color
 
 **Property**: `material.active`
 
-An additional color used for active elements or selected text:
-
+An additional color for active elements or selected text:
 - Selected table cells
 - Selected text in input fields and documentation panes
 - Active items in dropdowns
 - Primary and hovered buttons
 - Hovered tool window buttons
-- Active tab in Tabbed Panes
+- Active tab in `Tabbed Panes`
 
 ##### Border Color
 
 **Property**: `material.border`
 
-Color affecting the following components:
-
+The color for borders and separators:
 - Menu bar border
-- Disabled checkbox box color
-- Button borders for non-material buttons
-- Tabbed Panes border
-- One Pixel Separators separating editors in Split Mode
-- Menu Separators
-- Help Tooltips border
-- Welcome Screen Separator Color
-- List Separators
+- Disabled checkbox borders
+- Button borders (non-material buttons)
+- Tabbed Pane borders
+- Editor separators in Split Mode
+- Menu separators
+- Help tooltip borders
+- Welcome screen separators
+- List separators
 
 ##### Highlight color
 
 **Property**: `material.highlight`
 
-Color affecting the following components:
-
-- Text fields and dropdowns border
-- Checkboxes' sign in disabled checkboxes
-- Memory indicator's used memory color
-- Unfocused item in some lists
-- Hovered tab in tabbed panes
-- Selected Tab in Search Everywhere
+Used for highlighting specific UI elements:
+- Text field and dropdown borders
+- Checkbox markers in disabled checkboxes
+- Memory indicator (used portion)
+- Unfocused items in certain lists
+- Hovered tabs in `Tabbed Panes`
+- Selected tab in Search Everywhere
 - Active debugger tab
 
 ##### Tree selection color
 
 **Property**: `material.tree`
 
-Specific color used for selected items in trees and autocompletion lists.
+The color used specifically for selected items in trees and autocompletion lists.
 
 ##### Notifications color
 
 **Property**: `material.notifications`
 
-Color used in the notification popups.
+The background color for notification popups.
 
 ##### Accent Color
 
 **Property**: `material.accent`
 
-This is the color replacing the _Accent Color_ if the [Override Accent color from theme](/docs/configuration/main-settings#override-accent-color)
-setting is set.
+The color that replaces the default Accent Color if the [Override Accent color from theme](/docs/configuration/main-settings#override-accent-color) setting is enabled.
 
 ##### Excluded files' color
 
 **Property**: `material.excluded`
 
-This is the color added in the [File Colors' Settings](/docs/configuration/excluded-files-colors#excluded-files-theme-color), named "_Theme_".
+The color used for the "Theme" option in [File Colors Settings](/docs/configuration/excluded-files-colors#excluded-files-theme-color).
+
+##### Second Accent Color
+
+**Property**: `material.accent2`
+
+Supplements the primary Accent Color in [Accent Mode](/docs/configuration/accent-mode) (e.g., Active Tab highlight, links in notifications).
 
 -----
 
 ## Frequently Asked Questions
 
-**Q**: Can I use more than one custom theme?
+**Q: Can I use more than one custom theme?**
 
-**A**: No, you can't.
-But if you're confident with your theme, you can decide to publish your theme with the aforementioned properties,
-so that it would be caught by the plugin, or save the XML file so that you can export it and use it wherever you want.
+**A:** Currently, you can only define one "Custom Theme" and one "Light Custom Theme" at a time. However, you can save your settings as an XML file (via Export) to swap between different palettes or share your creations with others.
 
-**Q**: Where are stored my custom theme settings?
+**Q: Where are my custom theme settings stored?**
 
-**A**: You can find your custom colors inside
-the [config directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)
-, just like the Material settings, with the filename `material_custom_theme.xml`.
+**A:** Custom colors are stored in your IDE's [config directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) within a file named `material_custom_theme.xml`.
 
-**Q**: I changed the colors, but it doesn't look as good as the default themes.
+**Q: My custom colors don't look as cohesive as the default themes.**
 
-**A**: Creating a theme isn't an easy task, and the Material ones are the result of a long-thought process about which colors are best suited for a UI.
-However, you can check out other famous Sublime/Atom/Visual Studio themes as an inspiration and start from it.
+**A:** Creating a well-balanced theme is challenging. The default Material themes are the result of extensive refinement. We recommend using established palettes from Sublime, Atom, or VS Code as inspiration when starting.
 
-**Q**: OK I have an idea of a theme, but there aren't enough options in the settings for me to make it.
+**Q: I need more fine-grained control than these settings provide.**
 
-**A**: It's true that those settings are for color palettes of a few colors only, and regroup components of the same purpose under the same color group.
-However, if you'd like to have a different color for checkboxes and radio buttons, or between lists and tables, or set the tree color different as the main
-background color, etc. — for you have multiple options.
-You can simply use the [JetBrains Theme API](http://www.jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes.html) to create a custom theme,
-or for the more advanced developers, create a **brand-new plugin** based off the Material Theme SDK, like
-the [Doki Doki Literature Club Theme](https://github.com/cyclic-reference/ddlc-jetbrains-theme), or
-the [Night Owl Theme](https://github.com/xdrop/night-owl-jetbrains).
+**A:** These settings are designed for quick color palette customization. For more advanced needs (e.g., different colors for checkboxes vs. radio buttons), consider using the [JetBrains Theme API](http://www.jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes.html) or creating a **new plugin** based on the Material Theme SDK. Examples include the [Doki Doki Literature Club Theme](https://github.com/cyclic-reference/ddlc-jetbrains-theme) and the [Night Owl Theme](https://github.com/xdrop/night-owl-jetbrains).
 
-**Q**: I set the color scheme via the Editor > Color Scheme options, but it resets every time I restart the IDE!
+**Q: My editor color scheme resets every time I restart the IDE.**
 
-**A**: If you're using a _Custom Theme_, that might be due to the [Color Scheme option](/docs/configuration/custom-themes#color-scheme).
-Make sure to specify the color scheme you want to use to this screen as well.
+**A:** If you are using a custom theme, ensure you have correctly associated your preferred color scheme in the [Color Scheme settings](/docs/configuration/custom-themes#color-scheme) of the Custom Theme panel.
