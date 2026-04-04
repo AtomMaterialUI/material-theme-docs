@@ -31,7 +31,7 @@ making possible to highlight specific keywords or function names separately from
 
 {% include figure.html content="/screens/javaScriptAdditions.png" caption="Language Additions" %}
 
-Refer to the [Language Additions](/docs/configuration/color-scheme-additions) page for more details.
+Refer to the [Language Additions](/docs/configuration/language-additions) page for more details.
 
 ----
 

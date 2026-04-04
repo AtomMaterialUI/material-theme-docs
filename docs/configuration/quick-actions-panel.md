@@ -7,7 +7,7 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/component-settings'
+  url: '/docs/configuration/ui-components-settings'
   title: Component Settings
 next:
   url: '/docs/configuration/excluded-files-colors'

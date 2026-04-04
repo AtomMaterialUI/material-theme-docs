@@ -373,7 +373,7 @@ This is particularly useful in the case when external themes don't define proper
 
 **[Language Additions](/docs/configuration/language-additions)**:
 
-- *Language Additions*![premium](/img/icons/premium.png): Enable/Disable the [Language Additions](/docs/configuration/color-scheme-additions).
+- *Language Additions*![premium](/img/icons/premium.png): Enable/Disable the [Language Additions](/docs/configuration/language-additions).
 - *Advanced Settings*![premium](/img/icons/premium.png): Turn off language additions for specific languages, depending on the IDE. The available options are:
   - Java (IntelliJ IDEA)
   - Kotlin (IntelliJ IDEA)

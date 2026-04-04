@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/features-settings'
   title: Features Settings
 next:
-  url: '/docs/configuration/other-tweaks-settings'
-  title: Other Tweaks
+  url: '/docs/configuration/custom-themes'
+  title: Custom Themes
 ---
 
 This panel controls settings for the **Project Title Bar** and the **Project Banner** feature.

@@ -7,7 +7,7 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/component-settings'
+  url: '/docs/configuration/ui-components-settings'
   title: UI Components Settings
 next:
   url: '/docs/configuration/project-title-bar-settings'
