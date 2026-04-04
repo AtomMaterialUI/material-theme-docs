@@ -119,19 +119,19 @@ In addition, the _Project Title Frame_ is now integrated with the _Islands Layou
 
 ### Screenshots:
 
-{% include figure.html content="/screens/islandsV2.png" caption="New Islands Layout" %}
+{% include figure.html content="/screens/archive/islandsV2.png" caption="New Islands Layout" %}
 
-{% include figure.html content="/screens/withProjectFrame.png" caption="With Project Title Frame" %}
+{% include figure.html content="/screens/archive/withProjectFrame.png" caption="With Project Title Frame" %}
 
-{% include figure.html content="/screens/islandsContrast.png" caption="Contrast Mode" %}
+{% include figure.html content="/screens/archive/islandsContrast.png" caption="Contrast Mode" %}
 
-{% include figure.html content="/screens/customBackground.png" caption="Custom Background" %}
+{% include figure.html content="/screens/archive/customBackground.png" caption="Custom Background" %}
 
-{% include figure.html content="/screens/withColorizedTitle.png" caption="With Colorized Title Bar" %}
+{% include figure.html content="/screens/archive/withColorizedTitle.png" caption="With Colorized Title Bar" %}
 
-{% include figure.html content="/screens/withBorder.png" caption="With Border" %}
+{% include figure.html content="/screens/archive/withBorder.png" caption="With Border" %}
 
-{% include figure.html content="/screens/withCustomBorder.png" caption="With Custom Border" %}
+{% include figure.html content="/screens/archive/withCustomBorder.png" caption="With Custom Border" %}
 
 ----
 
@@ -214,7 +214,7 @@ In addition, tabs using custom *File Colors* are now more opaque, providing a be
 
 A new pattern has been added to the **Project Title Frame**, `{subProject}` to reference a different sub-project when running in a **multi-project** setup.
 
-{% include figure.html content="/screens/subproject.png" caption="Sub-Project support in Project Title Frame" %}
+{% include figure.html content="/screens/archive/subproject.png" caption="Sub-Project support in Project Title Frame" %}
 
 > Note: Multi-project setups are available for all IDEs except IntelliJ IDEA, Rider and Android Studio. They are allowing you to open multiple projects in the same window, using the "Attach Project" feature at `File > Attach Project`.
 
@@ -291,31 +291,31 @@ Note: Changing anything in the settings will reset the countdown.
 
 Since version 2025.2 JetBrains introduced a newer layout for the IDE, called **Islands Layout**. This layout, originally only present in Fleet, is now getting added to the main products, providing a more modern and flexible layout for the IDE.
 
-{% include figure.html content="/screens/islandsLayout.png" caption="Islands Layout" %}
+{% include figure.html content="/screens/archive/islandsLayout.png" caption="Islands Layout" %}
 
 However, this new layout is only available for the new themes, **Single Island** and **Multiple Islands**. Other themes will still be using the current layout (but this might change in the future).
 
 In consequence, the Material Theme UI allows you to enable this layout for any other theme, all the while providing you with customization options for this layout.
 
-{% include figure.html content="/screens/islands.png" caption="Islands Layout" %}
+{% include figure.html content="/screens/archive/islands.png" caption="Islands Layout" %}
 
 In the settings, you will find options that allow you to control the background color of the canvas, the spacing between the islands, the arc radius, and the gap between the islands and the tool windows.
 
-{% include figure.html content="/screens/islandsSettings.png" caption="Islands Settings" %}
+{% include figure.html content="/screens/archive/islandsSettings.png" caption="Islands Settings" %}
 
 Moreover, associated with other features, you can be creative to have the *Islands Layout* the way you want it to be.
 
 For example, you can use the **Contrast Mode** for a better contrast between the islands.
 
-{% include figure.html content="/screens/contrastIslands.png" caption="Islands with Contrast Mode" %}
+{% include figure.html content="/screens/archive/contrastIslands.png" caption="Islands with Contrast Mode" %}
 
 You can also set a custom background color between the islands:
 
-{% include figure.html content="/screens/islandsBackground.png" caption="Islands with Background Color" %}
+{% include figure.html content="/screens/archive/islandsBackground.png" caption="Islands with Background Color" %}
 
 Finally, you can also use the **Background Image** feature to set a custom background image for the background.
 
-{% include figure.html content="/screens/islandsWithImage.png" caption="Islands with Background Image" %}
+{% include figure.html content="/screens/archive/islandsWithImage.png" caption="Islands with Background Image" %}
 
 Note: This layout requires closing all projects when you change the settings.
 {:class='card-panel warn'}
@@ -338,7 +338,7 @@ Now the selected tab sports a border with the accent color, to make it more dist
 
 {% include figure.html content="/screens/archive/roundedTabs.png" caption="Rounded Tabs" %}
 
-{% include figure.html content="/screens/withTabHighlighter.png" caption="Rounded Tabs with Tab Indicators" %}
+{% include figure.html content="/screens/archive/withTabHighlighter.png" caption="Rounded Tabs with Tab Indicators" %}
 
 ### Fixes
 
@@ -584,7 +584,7 @@ Moreover, a new widget has been added on the Title Bar displaying the same conte
 
 You can also select from a list of presets for your Title Bar widget. Maybe more will be added in the future!
 
-{% include figure.html content="/screens/titleBarOptions.png" caption="Title Bar Widget" %}
+{% include figure.html content="/screens/archive/titleBarOptions.png" caption="Title Bar Widget" %}
 
 ----
 
@@ -922,9 +922,9 @@ But the latest release brought it back, and therefore needed attention from the 
 But that's not all! It also supports the **Colorize Title Bar** feature, making it blend with the colorized title bar (
 New UI only).
 
-{% include figure.html content="/screens/colorizedProjectBar.png" caption="Colorized Project Bar - Project 1" %}
+{% include figure.html content="/screens/archive/colorizedProjectBar.png" caption="Colorized Project Bar - Project 1" %}
 
-{% include figure.html content="/screens/colorizedProjectBar2.png" caption="Colorized Project Bar - Project 2" %}
+{% include figure.html content="/screens/archive/colorizedProjectBar2.png" caption="Colorized Project Bar - Project 2" %}
 
 ---
 
@@ -1181,7 +1181,7 @@ think of:
 
 Besides, information about the external plugins licenses can be found on the About page.
 
-{% include figure.html content="/screens/licenses.png" caption="Material Theme Bundles Licences" %}
+{% include figure.html content="/screens/archive/licenses.png" caption="Material Theme Bundles Licences" %}
 
 ---
 
@@ -1360,7 +1360,7 @@ available <a href="http://dl.material-theme.com/newUI" download>here</a>. You ca
 The second highlight of this version is also related to the *New UI users only*, and is about an extension of
 the [Project Frame](/docs/configuration/project-title-bar-settings): the ability to **Colorize the Title Bar**!
 
-{% include figure.html content="/screens/colorized.png" caption="Colorize title bar" %}
+{% include figure.html content="/screens/archive/colorized.png" caption="Colorize title bar" %}
 
 This was something that wasn't possible before, but the New UI introduced a flashy new "*title bar* component" to
 replace the original title bar (the same way
@@ -1457,7 +1457,7 @@ This update expands the functionalities of the [Custom Theme](/docs/configuratio
 to specify a color scheme to your custom
 theme.
 
-{% include figure.html content="/screens/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" %}
+{% include figure.html content="/screens/archive/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" %}
 
 This is particularly useful if you have "Custom Color Schemes" and want to assign them to your own custom theme.
 
@@ -1899,7 +1899,7 @@ following keywords:
 - `new`
 - `puts`
 
-{% include figure.html content="/screens/ruby-additions.png" caption="Ruby Additions" %}
+{% include figure.html content="/screens/archive/ruby-additions.png" caption="Ruby Additions" %}
 
 **Note**: As usual, this feature is only available for premium users. {:class='card-panel warn'}
 
@@ -2036,7 +2036,7 @@ day!
 This setting provides a way to undo this by turning off the color schemes' defined font and use the Default Font
 instead.
 
-{% include figure.html content="/screens/useEditorDefaultFont.png" caption="Use Editor Default Font" %}
+{% include figure.html content="/screens/archive/useEditorDefaultFont.png" caption="Use Editor Default Font" %}
 
 **Note**: Turning on this setting will immediately cause the current color scheme to be edited, as if you changed the
 color scheme font with the default one.
@@ -2159,7 +2159,7 @@ This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/
 
 In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-title-bar-settings), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
 
-{% include figure.html content="/screens/projectIcons.png" caption="Project Icons" %}
+{% include figure.html content="/screens/archive/projectIcons.png" caption="Project Icons" %}
 
 This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per-project basis as well!
 
@@ -2223,7 +2223,7 @@ These are not much, but they signalize the beginning of a new set of improvement
 
 This is the second highlight of this release: the ability to override the global settings **on a per-project basis**.
 
-{% include figure.html content="/screens/perProject.png" caption="Per-Project Settings" %}
+{% include figure.html content="/screens/archive/perProject.png" caption="Per-Project Settings" %}
 
 As you can see in this screenshot, the two projects have different settings for the **Active Tab** and the **Project Frame**. This will allow you to customize even more your IDE, now having different settings for each project.
 
@@ -2564,7 +2564,7 @@ New settings have been added to the **Scrollbars** Color Scheme page to allow ch
 
 The Material Theme UI Landing Page have been improved to simplify __accessing the Marketplace__ to buy the plugin and __activating your License__.
 
-{% include figure.html content="/screens/landingPage.png" caption="Material Theme UI Landing Page" %}
+{% include figure.html content="/screens/archive/landingPage.png" caption="Material Theme UI Landing Page" %}
 
 ---
 
@@ -2650,7 +2650,7 @@ This is the beginning of a long refactor of such a useful feature, starting from
 
 In addition, the list of available additions has been greatly expanded for these languages, allowing users to configure almost everything.
 
-{% include figure.html content="/screens/javaScriptAdditions.png" caption="JavaScript Additions" %}
+{% include figure.html content="/screens/archive/javaScriptAdditions.png" caption="JavaScript Additions" %}
 
 Here's the list of new additions:
 

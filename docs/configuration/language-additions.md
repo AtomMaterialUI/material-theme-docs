@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Additions
-description: Language Additions
+title: Language Additions
+description: Augment language highlightin capabilities
 group: configuration
 comments: true
 toc: true
