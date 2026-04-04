@@ -7,10 +7,10 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/color-scheme-additions'
-  title: Language Additions
+  url: '/docs/configuration/project-title-bar-settings'
+  title: Project Title Bar Settings
 next:
-  url: '/docs/configuration/recommended-plugins'
+  url: '/docs/configuration/language-additions'
   title: Recommended plugins
 ---
 

@@ -7,8 +7,8 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/accents'
-  title: Accents
+  url: '/docs/configuration/custom-themes'
+  title: Custom Themes
 next:
   url: '/docs/configuration/custom-themes'
   title: Custom Themes

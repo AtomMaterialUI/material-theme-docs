@@ -1049,7 +1049,7 @@ it is now possible, and will affect new projects automatically.
 The next feature is less of a fix but more like additional details to an existing feature. According to another section
 of this document:
 
-> Last but not least, the [Languages Additions](configuration/color-scheme-additions) feature received an improvement as
+> Last but not least, the [Languages Additions](configuration/language-additions) feature received an improvement as
 > well, deprecating the need of
 > the _Enforce Highlighting_ switch.
 > This was done by the use of the `SeverityProvider`, which allows plugin developers to add their own "error
@@ -1144,7 +1144,7 @@ as well.
 You can find this feature under the "Other Tweaks" tab.
 
 This feature is available only available for premium users having bought
-the [Language Additions feature](/docs/configuration/color-scheme-additions).
+the [Language Additions feature](/docs/configuration/language-additions).
 {:class='card-panel warn'}
 
 ### Fixes and Improvements
@@ -1204,7 +1204,7 @@ without a restart.
 
 ### Language Additions Improvement
 
-Last but not least, the [Languages Additions](configuration/color-scheme-additions) feature received an improvement as
+Last but not least, the [Languages Additions](configuration/language-additions) feature received an improvement as
 well, deprecating the need of
 the _Enforce Highlighting_ switch.
 
@@ -1226,7 +1226,7 @@ genuine warnings.
 
 ### Go Additions
 
-Another small addition to the list of [Language Additions](configuration/color-scheme-additions): **Go Additions**
+Another small addition to the list of [Language Additions](configuration/language-additions): **Go Additions**
 
 GoLand users and Go plugin users are now able to customize specific keywords of the Go language:
 
@@ -1785,7 +1785,7 @@ For example, let's say you are only
 interested in the [Custom Theme](/docs/configuration/custom-themes) feature but don't need
 the [Tab Settings](/docs/configuration/tab-settings),
 [Project Frame](/docs/configuration/project-title-bar-settings)
-or [Language Additions](configuration/color-scheme-additions), you would be able to purchase
+or [Language Additions](configuration/language-additions), you would be able to purchase
 it separately and benefit from it without having to buy a premium license.
 
 Of course, these bundles would not be free; otherwise there would be no point of having to purchase a premium license.
@@ -1863,7 +1863,7 @@ together.
 
 ### Ruby Additions
 
-And last but not least, a new [Language Addition](/docs/configuration/color-scheme-additions) made its way alongside the
+And last but not least, a new [Language Addition](/docs/configuration/language-additions) made its way alongside the
 others: **Ruby**.
 
 Just like _Python_, **Ruby Additions** are now available for Ruby-based IDEs, and provide additional coloring for the
@@ -1938,7 +1938,7 @@ This feature is available in the free plan. {:class='card-panel'}
 
 ### Python Additions
 
-Another small addition to the list of [Language Additions](configuration/color-scheme-additions): **Python Additions**
+Another small addition to the list of [Language Additions](configuration/language-additions): **Python Additions**
 
 PyCharm users and Python plugin users are now able to customize specific keywords of the Python language:
 
@@ -2602,14 +2602,14 @@ As a result, I've added more information in the plugin page as well, so that hop
 ### Bug Fixes
 
 - The __[Outline buttons](configuration/ui-ui-components-settings#outline-buttons)__ are no longer transparent as transparency is not really supported in the IDE. Instead, the buttons use color mixing to simulate transparency. This should make the outlined buttons feature more comfortable to use.
-- __[Language Additions](configuration/color-scheme-additions)__ are no longer appearing inside comments or JSX Tags. Hope this will be the last of it!
+- __[Language Additions](configuration/language-additions)__ are no longer appearing inside comments or JSX Tags. Hope this will be the last of it!
 - Now when changing settings without changing the theme, the color scheme will **NOT BE RESET**.
 - Same for executing actions such as the _Striped Tool Windows_, _Language Additions_, etc.
 
 ### Additions
 
 - Two new actions have been added to the Quick Action Panels: _Outline Buttons_ and _Language Additions_.
-- JavaScript and TypeScript additions requiring the __[Enforced Highlighting](configuration/color-scheme-additions#enforce-highlighting)__ are now annotated as such in the _Color Scheme Setting Pages_.
+- JavaScript and TypeScript additions requiring the __[Enforced Highlighting](configuration/language-additions#enforce-highlighting)__ are now annotated as such in the _Color Scheme Setting Pages_.
 
 
 That's it! And as JetBrains say,
