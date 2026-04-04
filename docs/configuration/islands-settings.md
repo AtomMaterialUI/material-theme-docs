@@ -15,19 +15,19 @@ next:
 
 ---
 
-This page provides more customization capabilities for JetBrains' Islands layout.
+This page describes the customization options for JetBrains' Islands layout.
 {:class='title'}
 
 {% include carbonads.html %}
 
-This feature is exclusive to premium users. You can purchase a premium license for the plugin or a dedicated license for this feature via the following link: [Material Theme Islands](https://plugins.jetbrains.com/plugin/28142-material-theme-ui-islands).
+This feature is exclusive to premium users. You can purchase a premium license for the plugin or a dedicated license for this feature here: [Material Theme Islands](https://plugins.jetbrains.com/plugin/28142-material-theme-ui-islands).
 {:class='card-panel warn'}
 
 ## Introduction
 
-Since late 2025, JetBrains have revamped its user interface and introduced a layout called **Islands**. This layout features a more spacious design with distinct "islands" for the editor, tool windows, and other UI components. It is based on the now discontinued **JetBrains Fleet**, and gives a more refreshed look to its IDE suite.
+In late 2025, JetBrains revamped its user interface by introducing the **Islands** layout. This design features a more spacious look with distinct "islands" for the editor, tool windows, and other UI components. Based on the now-discontinued **JetBrains Fleet**, it provides a refreshed aesthetic to the IDE suite.
 
-The Islands layout is enabled by default on all IDEs, but is not configurable. The Material Theme Islands settings allow you to customize various aspects of this new layout to better suit your preferences and workflow.
+The Islands layout is enabled by default in recent IDE versions but offers limited native configuration. Material Theme Islands settings allow you to customize various aspects of this layout to better suit your preferences and workflow.
 
 {% include figure.html content="/screens/islands/islandsSettings.png" caption="Islands Settings" %}
 
@@ -37,9 +37,9 @@ The Islands layout is enabled by default on all IDEs, but is not configurable. T
 
 ### Background Contrast
 
-By default, the Islands' background is the same as the Tool Windows and the Status Bar color, blending together and distinguished by a thin border. 
+By default, the Islands' background matches the Tool Windows and Status Bar colors, blending them together with only a thin border for distinction.
 
-This setting will slightly increase the contrast between them by increasing the lightness of the _Application Frame_, making the elements more distinguishable.
+This setting increases the contrast between these elements by adjusting the lightness of the _Application Frame_, making the UI components more distinguishable.
 
 {% include figure.html content="/screens/islands/noContrast.png" caption="Without Contrast" %}
 
@@ -47,19 +47,19 @@ This setting will slightly increase the contrast between them by increasing the 
 
 ### Custom Background Color
 
-Alternatively, you can choose to use your own background color instead.
+Alternatively, you can define a custom background color for the Islands.
 
 {% include figure.html content="/screens/islands/customColor.png" caption="Custom Background Color" %}
 
-**Note**: This setting may conflict with the [Colorize Application Frame](/docs/configuration/project-title-bar.md#application-frame). If you enable both, the Application Frame settings will take precedence over the Islands Background Color. 
+**Note**: This setting may conflict with [Colorize Application Frame](/docs/configuration/project-title-bar.md#application-frame). If both are enabled, the Application Frame settings take precedence over the Islands Background Color.
 {:class='card-panel warn'}
 
-**Note 2**: At the moment, it's not possible to use a different background color for each project.
+**Note**: Currently, it is not possible to set a different background color for each project.
 {:class='card-panel info'}
 
 ### Border Color
 
-This setting adds a border around the Islands', reinforcing the separation between the UI elements. You can also choose a custom border color.
+This setting adds a border around the Islands, reinforcing the separation between UI elements. You can also specify a custom border color.
 
 {% include figure.html content="/screens/islands/noBorder.png" caption="Without Border" %}
 
@@ -73,7 +73,7 @@ This setting adds a border around the Islands', reinforcing the separation betwe
 
 ### Island Arc Size
 
-Controls the radius for the curved corners of the Islands. Default is 20.
+Controls the radius of the curved corners for the Islands. The default value is 20.
 
 {% include figure.html content="/screens/islands/angledCorners.png" caption="Angled Corners" %}
 
@@ -81,7 +81,7 @@ Controls the radius for the curved corners of the Islands. Default is 20.
 
 ### Inner Spacing
 
-Controls the inner spacing inside the Islands. Default is 10.
+Controls the padding inside the Islands. The default value is 10.
 
 {% include figure.html content="/screens/islands/noInnerSpacing.png" caption="No Inner Spacing" %}
 
@@ -89,23 +89,23 @@ Controls the inner spacing inside the Islands. Default is 10.
 
 ### Outer Margin
 
-Controls the distance between the Islands and the editor edges. Default is 10.
+Controls the distance between the Islands and the editor edges. The default value is 10.
 
 {% include figure.html content="/screens/islands/noOuterMargin.png" caption="No Outer Margin" %}
 
 {% include figure.html content="/screens/islands/maxOuterMargin.png" caption="Max Outer Margin" %}
 
-**Note**: Margins are "eating up" on the editor area, leading to the tabs being "cut off" at the edges.
+**Note**: Increasing margins reduces the available editor area, which may cause tabs to appear "cut off" at the edges.
 {:class='card-panel warn'}
 
 ----
 
 ### Islands Gap
 
-This setting only applies when the _Tool Windows_ are hidden.
+This setting applies only when the _Tool Windows_ are hidden.
 {:class='card-panel info'}
 
-This option adds a horizontal gap between the edges of the IDE and the Islands, thus achieving a more centered layout. Default is 4.
+This option adds a horizontal gap between the IDE edges and the Islands, creating a more centered layout. The default value is 4.
 
 {% include figure.html content="/screens/islands/islandsGap.png" caption="Islands Gap" %}
 
@@ -113,8 +113,7 @@ This option adds a horizontal gap between the edges of the IDE and the Islands, 
 
 ### Tool Windows Overlay Opacity
 
-This setting controls the opacity of the overlay applied to Tool Windows when the application is not focused. By default, it's set to 50% opacity.
-
+This setting controls the opacity of the overlay applied to Tool Windows when the application is not focused. The default value is 50%.
 
 {% include figure.html content="/screens/islands/noOpacity.png" caption="Fully Opaque" %}
 
