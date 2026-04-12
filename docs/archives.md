@@ -155,7 +155,7 @@ In addition, the _Project Title Frame_ is now integrated with the _Islands Layou
 - Customize Font and Font Size
 - New Macro: `{fileIcon}`: now you can display the file icon in the _Project Title Frame_.
 
-{% include figure.html content="/screens/projectTitleTweaks.png" caption="Project Title Bar Customizations" %}
+{% include figure.html content="/screens/archive/projectTitleTweaks.png" caption="Project Title Bar Customizations" %}
 
 #### Islands Layout's improvements
 
@@ -188,7 +188,7 @@ In addition, the _Project Title Frame_ is now integrated with the _Islands Layou
 
 A new button has been added to the **Favorite Themes Shuffle** tool window, to allow you to disable the selected theme on the fly, rather than having to open the settings to disable them.
 
-{% include figure.html content="/screens/disableThemes.png" caption="Disable Themes on the fly" %}
+{% include figure.html content="/screens/archive/disableThemes.png" caption="Disable Themes on the fly" %}
 
 ## Other Fixes
 
@@ -259,7 +259,7 @@ As a result, the whole feature has been reworked to a different approach: **Favo
 
 In this implementation, rather than selecting a theme at random, the plugin will instead generate a "playlist" of themes from the selected favorite themes, and will switch to the next theme in the playlist at the specified interval, like a music playlist.
 
-{% include figure.html content="/screens/randomizerPlaylist.png" caption="Theme Randomizer Playlist" %}
+{% include figure.html content="/screens/archive/randomizerPlaylist.png" caption="Theme Randomizer Playlist" %}
 
 This playlist will be displayed in the tool window that was used to display the next theme countdown. It will display the current selected theme, as well as buttons to switch to the next or previous theme in the playlist. There is also a button to shuffle the playlist manually.
 
@@ -273,7 +273,7 @@ These features are reserved for premium users, but will be available to all for 
 
 As the Material Theme UI contains quite a lot of themes, it can be challenging to choose one that fits your needs. This is why the plugin now comes with a **Theme Randomizer** feature, which will randomly switch the theme at a random interval of your choice.
 
-{% include figure.html content="/screens/randomizer.png" caption="Theme Randomizer" %}
+{% include figure.html content="/screens/archive/randomizer.png" caption="Theme Randomizer" %}
 
 From these settings you can select the themes you want to include in the randomization, as well as the _interval_ at which the theme will be changed. You can also customize the _weight_ of the theme, e.g., the rate at which the theme will be selected. The less the number, the less likely the theme will be selected.
 
@@ -282,7 +282,7 @@ Note: The randomizer will only switch between Dark or Light themes respectively.
 
 Also, there's a new _Tool Window_ which will display the remaining time before the next theme change. This allows you to understand how long you have before it switches.
 
-{% include figure.html content="/screens/countdown.png" caption="Next Change countdown" %}
+{% include figure.html content="/screens/archive/countdown.png" caption="Next Change countdown" %}
 
 Note: Changing anything in the settings will reset the countdown.
 {:class='card-panel warn'}
@@ -1416,7 +1416,7 @@ This version introduces a new widget to the Status Bar, which displays the curre
 other projects via a menu. This is
 based on a similar widget available on the title bar in the new UI.
 
-{% include figure.html content="/screens/projectsWidget.png" caption="Recent Projects Widget" %}
+{% include figure.html content="/screens/archive/projectsWidget.png" caption="Recent Projects Widget" %}
 
 ### Material Theme Bundles
 
@@ -1525,9 +1525,9 @@ It sports the current theme name and icon, and you can open a menu with the list
 
 <div class="masonry">
 
-{% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widget" %}
+{% include figure.html content="/screens/archive/newWidgets.png" caption="Material Theme + Accent Widget" %}
 
-{% include figure.html content="/screens/widgetsMenu.png" caption="Theme Selection Widget" %}
+{% include figure.html content="/screens/archive/widgetsMenu.png" caption="Theme Selection Widget" %}
 
 </div>
 
