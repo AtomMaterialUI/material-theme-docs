@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Status Bar Widgets
-description: Neat Status Bar Widgets to quickly access some of the plugin's features.
+description: Useful Status Bar Widgets for quick access to plugin features.
 group: configuration
 toc: true
 comments: true
@@ -14,61 +14,52 @@ next:
   title: Excluded File Colors
 ---
 
-Here you can find an explanation of the actions found in the `Quick Actions Panel`.
+This page provides an overview of the various **Status Bar Widgets** available in the plugin.
 {:class='title'}
 
 {% include carbonads.html %}
 
 ## Status Bar Widgets
 
-This isn't a setting, but rather a set of toggleable widgets for the _Status Bar_.
-You can find them by right-clicking the status bar and enabling the widgets you'd like.
+The Material Theme UI plugin includes several _Status Bar Widgets_ that provide useful information and quick access to common actions.
 
-### Material theme widget
+You can toggle these widgets by right-clicking the status bar and selecting the ones you wish to display.
 
-Since version 7.4.0, the old _Material Theme widget_ has been redone to better blend with the other widgets.
-It sports the current theme name and icon, and you can open a menu with the list of available themes.
+{% include figure.html content="/screens/widgets/widgetsMenu.png" caption="Toggle Widgets" %}
 
-<div class="masonry">
 
-{% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widget" %}
+### Theme Widget
 
-{% include figure.html content="/screens/widgetsMenu.png" caption="Theme Selection Widget" %}
+The _Theme Widget_ displays the current theme along with its icon. It also provides a menu to quickly switch between all available themes.
+
+<div class="masonry" markdown="0">
+
+{% include figure.html content="/screens/widgets/themeWidget.png" caption="Theme Widget" %}
+
+{% include figure.html content="/screens/widgets/selectTheme.png" caption="Switch Theme" %}
 
 </div>
 
-### Accent color widget
+### Accent Color Widget
 
-Just besides the theme widget, you can also display the _Accent Color Widget_.
-It sports the current accent color, and displays the list of available predefined accent colors when clicked.
+Adjacent to the Theme Widget is the _Accent Color Widget_. It displays the current accent color and allows you to switch between predefined accent colors (available only when the **Override Accent Color from Theme** setting is disabled).
 
-<div class="masonry">
+<div class="masonry" markdown="0">
 
-{% include figure.html content="/screens/newWidgets.png" caption="Material Theme + Accent Widgets" %}
+{% include figure.html content="/screens/widgets/accentWidget.png" caption="Accent Color Widget" %}
 
-{% include figure.html content="/screens/accents/accentColorWidget.png" caption="Accent Color Widget" %}
+{% include figure.html content="/screens/widgets/switchAccent.png" caption="Switch Accent Color" %}
 
 </div>
 
 ### Current Project Widget
 
-Version 7.5.3 introduces yet another widget to the Status Bar, which displays the current project and gives the ability to open other projects via a menu. This
-is based on a similar widget available on the title bar in the new UI.
+The _Project Widget_ displays the current project's name and icon, providing a convenient way to quickly switch between recent projects.
 
-<div class="masonry">
+<div class="masonry" markdown="0">
 
-{% include figure.html content="/screens/projectsWidget.png" caption="Recent Projects Widget" %}
+{% include figure.html content="/screens/widgets/projectWidget.png" caption="Recent Projects Widget" %}
 
-</div>
-
-### Material theme legacy widget
-
-You can still find the previous legacy widget:
-
-<div class="masonry">
-
-{% include figure.html content="/screens/archive/widgetStatusbar.png" caption="Status Bar Widget" %}
-
-{% include figure.html content="/screens/archive/statusAccentWidget.png" caption="Accent Widget" %}
+{% include figure.html content="/screens/widgets/recentProjects.png" caption="Open Recent Project" %}
 
 </div>
