@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Theme Randomizer
-description: Fine tuning for External Themes
+description: Automatically switch themes to keep your workspace fresh and dynamic.
 group: configuration
 toc: true
 comments: true
@@ -14,7 +14,7 @@ next:
   title: Other Tweaks
 ---
 
-Automatically rotate your favorite themes throughout the day.
+This feature allows you to automatically switch between your favorite themes at regular intervals.
 {:class='title'}
 
 {% include carbonads.html %}
