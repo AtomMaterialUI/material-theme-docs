@@ -70,6 +70,10 @@ You can manage and view the current playlist via the **Favorite Theme Shuffle** 
 
 Within this tool window, you can manually select a theme, skip to the next or previous theme, or shuffle the playlist to generate a new random sequence. You can also view the remaining time until the next rotation.
 
+**Note**: You can also switch themes via the [Quick Actions Panel](/docs/configuration/quick-actions-panel.md).
+
+{% include figure.html content="/screens/randomizer/randomizerActions.png" caption="Randomizer Actions" %}
+
 The tool window also features a **Disable Selected Theme** button, allowing you to quickly exclude the current theme from future rotations without opening the settings. Disabling a theme will automatically re-shuffle the playlist.
 
 **Note**: Manually adding or removing themes, or switching the current theme, will trigger a re-shuffle of the playlist.

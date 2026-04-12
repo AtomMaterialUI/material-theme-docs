@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/ui-components-settings'
   title: Component Settings
 next:
-  url: '/docs/configuration/excluded-files-colors'
-  title: Excluded File Colors
+  url: '/docs/configuration/status-bar-widgets'
+  title: Status Bar Widgets
 ---
 
 Here you can find an explanation of the actions found in the `Quick Actions Panel`.
