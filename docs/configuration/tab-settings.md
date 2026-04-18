@@ -198,11 +198,14 @@ You have the choice of the following positions:
 
 Lastly, there are a few small and free tweaks to apply to the tabs.
 
-### Tabs Shadow
+### Tabs Shadow Effect
 
-Enable or disable the shadow effect under the tabs to provide a sense of depth.
+Adds a shadow or glow effect under the tabs.
 
 {% include figure.html content="/screens/tabs/tabShadow.png" caption="Tabs Shadow" %}
+
+{% include figure.html content="/screens/tabs/tabGlow.png" caption="Tabs Glow" %}
+
 
 ### Animated Tabs
 

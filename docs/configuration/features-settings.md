@@ -62,8 +62,11 @@ This option centers the editor in the middle of the screen rather than pinning i
 
 {% include figure.html content="/screens/features/centeredEditor.png" caption="Centered Editor" %}
 
-**Note**: Currently, there is no way to adjust the width of the centered editor, but we are monitoring for future implementation possibilities.
-{:class='card-panel'}
+The width of the editor depends on the **Hard Wrap** configured in your Code Style settings, e.g. in `Settings > Editor > Code Style > [Your language] > Hard Wrap`.
+
+{% include figure.html content="/screens/features/hardWrap.png" caption="Code Style Settings > Hard Wrap" %}
+
+{% include figure.html content="/screens/features/hardWrap80.png" caption="80 Characters Width" %}
 
 ----
 
