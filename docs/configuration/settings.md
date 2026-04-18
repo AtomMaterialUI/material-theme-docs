@@ -266,7 +266,7 @@ This section provides a visual grid of all colors used by the currently active t
 - *Bold Active Tab*![premium](/img/icons/premium.png): Make the active tab bold.
 - *Custom Tab Font*![premium](/img/icons/premium.png): Control the font and size of the tabs.
 - *Tab Highlight Position*![premium](/img/icons/premium.png): Customize the position of the tab highlighter.
-- *Tabs Shadows*![premium](/img/icons/premium.png): Add a subtle shadow under the tabs.
+- *Tabs Shadow Effect*![premium](/img/icons/premium.png): Add a subtle shadow or glow effect under the tabs.
 - *Animated Tabs*: Animate the tab indicator when switching tabs.
 - *Tab Separators*: Add thin borders between tabs.
 - *Customize Active Tab Color*: Allows overriding the active tab highlight color from the Color Scheme.
