@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/ui-components-settings'
-  title: Component Settings
+  url: '/docs/configuration/status-bar-widgets'
+  title: Status Bar Widgets
 next:
   url: '/docs/configuration/file-status-colors'
   title: File Status Colors
@@ -18,109 +18,95 @@ next:
 
 ## Introduction
 
-JetBrains editors are great for all kinds of projects, whatever big they're.
-However, once you've started working on big projects, you're beginning to notice that it's getting harder finding your way through open files,
-the project tree, or the search results.
+JetBrains IDEs are excellent for projects of any scale. However, as projects grow, navigating through open files, the project tree, or search results can become increasingly difficult.
 
-Therefore, the IDEs have a nifty feature called **File Colors**.
-It allows developers to add custom colors to specific groups of files according to a pattern.
+To address this, JetBrains IDEs offer a feature called **File Colors**. It allows you to assign custom colors to specific groups of files based on patterns.
 
-Such examples are:
+Common examples include:
 
 - Excluded Files
 - Tests
 - Erroneous files
 - Build Files
 - Logs
-- etc...
+- etc.
 
-You can even set specific folders representing different parts/modules of your project.
+You can even colorize specific folders representing different modules or parts of your project. As a result, files in these categories will have a distinct background color, significantly reducing the time spent searching and navigating through the use of *color-based identification*.
 
-As a result, files belonging to such categories would sport a distinct background color,
-significantly reducing the time looking for a file and navigating thanks to *color grepping*.
-
-Such components having this feature are:
+This feature is supported in several areas, including:
 
 - Project Tree
 - Editor Tabs
-- Find in Path Dialog
+- Find in Files Dialog
 - Search Everywhere dialog
-- Navigate to file/class/symbol dialog
-- And other places…
+- Navigate to File/Class/Symbol dialog
+- And more…
 
 ## Configuration
 
-The JetBrains editors come prebundled with at least two _File Colors_:
+JetBrains editors come with at least two pre-configured _File Colors_:
 
-- **Excluded files**, or files that are _Marked as Excluded_, and therefore excluded for indexing, searching and navigation, resulting in huge performance
-  boosts.
-    - Such examples are `node_modules`, `logs`, `vendors`, `gradle` etc…
-- **Tests**, which is the test directory in `gradle/rails/symfony`…
+- **Excluded files**: Files marked as excluded are omitted from indexing, searching, and navigation, which significantly improves performance. Examples include `node_modules`, `logs`, `vendors`, `gradle`, etc.
+- **Tests**: Typically identifies the tests directory.
 
-**Note**: you can mark a directory for exclusion by clicking right on the directory and select `Mark Directory as…`
+**Note**: You can mark a directory as excluded by right-clicking it and selecting `Mark Directory as…`.
 
-Specific IDEs might have other _File Colors_ preinstalled.
+Depending on the IDE, other _File Colors_ might also be pre-installed. You can find them under `Settings/Preferences → Appearance & Behavior → File Colors`.
 
-You can find them within `Settings → Appearance & Behavior → File Colors`.
+{% include figure.html content="/screens/colors/fileColors.png" caption="File Colors" %}
 
-{% include figure.html content="/screens/fileColors.png" caption="File Colors" %}
+From this settings screen, you can add new colors, share them across projects, disable them for specific components, or adjust their priority.
 
-By using this settings screen, you can add new colors, share them across projects,
-disable them in specific components, or assign them different priority if needed.
-
-**Tip**: there's also a nice plugin, [Project Tree Highlighter](https://plugins.jetbrains.com/plugin/13951-projecttree-color-highlighter),
-giving you the ability to colorize folders from the Project View directly.
+**Tip**: The [Project Tree Highlighter](https://plugins.jetbrains.com/plugin/13951-projecttree-color-highlighter) plugin also allows you to colorize folders directly from the Project View.
 {:class='card-panel'}
 
----
+----
 
 ### Scopes
 
-The two pre-bundled options are pretty limited, but you can add your own file colors according to certain patterns.
-For example, differentiating between the `docs` directory than the rest of the source.
+While the pre-bundled options are a great start, you can create custom file colors using **Scopes**. Scopes allow you to define pattern-based rules to include or exclude specific directories.
 
-To do so, you have to create a **Scope**.
-There you can define your pattern rules, which directories should be included in the scope and which should be excluded.
-Finally, add your new created scope in the _File Colors_ list, and rise it up to the top, so it won't be shrouded by other file colors.
+To set up a custom color:
+1. Create a **Scope** and define its rules.
+2. Add your new scope to the _File Colors_ list.
+3. Move it to the top of the list to ensure it isn't overridden by other colors.
 
-{% include figure.html content="/screens/archive/scopes.png" caption="Scopes" %}
+{% include figure.html content="/screens/colors/scopes.png" caption="Scopes" %}
 
-See more
-at [File Colors](https://www.jetbrains.com/help/idea/2017.3/file-colors.html?utm_medium=help_link&utm_source=from_product&utm_campaign=IU&utm_content=2017.3)
+{% include figure.html content="/screens/colors/scopes2.png" caption="Add File Colors To Scope" %}
+
+For more information, visit the [official JetBrains documentation on File Colors](https://www.jetbrains.com/help/idea/file-colors.html).
 
 -----
 
 ## Material File Colors
 
-### Excluded files theme color
+### Theme-Specific File Colors
 
-_File Colors_ are pretty neat, but the current prebundled _File Colors_ are adapted for the _Darcula/IntelliJ_ look and feels, not for the Material Themes.
+Themes can override default file colors to provide a palette that matches their specific aesthetic.
 
-To remedy this, the plugin is also coming prebundled with _File Colors_, specifically for **Excluded files**.
+{% include figure.html content="/screens/colors/cobaltColors.png" caption="Cobalt2 File Colors" %}
 
-However, because the _File Colors_ are user settings, and because the user could have modified the default _Excluded Files_' color,
-the plugin couldn't override this setting with its own.
-Therefore, it's the responsibility of the user to change the color of the Excluded Files.
+{% include figure.html content="/screens/colors/catpuccinColors.png" caption="Catppuccin File Colors" %}
 
-To do so, open the File Colors Settings (`Appearance > File Colors`), select the scope you want to change the color, for instance, "_Excluded Files_",
-and click to the _Edit_ button.
+Similarly, the themes included with this plugin provide their own optimized File Colors.
 
-There you should see a list of predefined colors, as well as one specific color named __Theme Excluded Color__,
-corresponding to the current theme's `Excluded Color`.
+{% include figure.html content="/screens/colors/materialColors.png" caption="Material File Colors" %}
 
-{% include figure.html content="/screens/excludedFilesColors.png" caption="Excluded Files Color" %}
+### Excluded Files Theme Color
 
-Moreover, if you select this color and switch to another theme, the selected theme's excluded color should be applied automatically.
+In addition, the plugin includes a specific color designed for **Excluded Files**.
 
-**Note**: the Project View won't get the color change right away, due to its caching feature.
-But this shall be solved eventually.
-{class='card-panel warn'}
+Known as the **Excluded Files Color** in the theme nomenclature, this is typically a dimmed variant of the background color. It is automatically injected into the "Gray" File Color, making it ready for use with excluded files.
 
-### Other colors
+{% include figure.html content="/screens/colors/oceanicExcluded.png" caption="Material Oceanic Excluded Files Color" %}
 
-Aside from the _Theme Excluded Color_, the plugin also comes with other colors, better suited for the provided themes.
+{% include figure.html content="/screens/colors/darkerExcluded.png" caption="Material Darker Excluded Files Color" %}
 
-{% include figure.html content="/screens/excludedFilesColors2.png" caption="Other file colors" %}
+{% include figure.html content="/screens/colors/spaceExcluded.png" caption="Material Space Excluded Files Color" %}
+
+**Note**: While theme authors are not required to provide a specific "excluded files color," most also use the "Gray" File Color for this purpose.
+{:class='card-panel info'}
 
 -----
 
