@@ -31,7 +31,7 @@ You can access this panel from several locations:
 
 - On the far right of the main toolbar.
 
-{% include figure.html content="/screens/other/mainToolbar.png" caption="Main Toolbar" %}
+{% include figure.html content="/screens/other/toolbarMenu.png" caption="Main Toolbar" %}
 
 - Within the `Quick Switch Panel`.
 
@@ -61,92 +61,187 @@ Additionally, it includes options to inherit the accent color from the current t
 
 ----
 
-## Panel Options
+## Contrast Toggles
 
-This panel allows you to quickly toggle various UI settings:
+This submenu includes toggles related to contrast options:
+- _Toggle Contrast Mode_ to enable/disable the plugin's contrast mode.
+- _Toggle High Contrast_ to enable/disable the plugin's high contrast mode.
 
-- _Toggle Contrast Mode_
-- _Toggle High Contrast_
-- _Toggle Compact Item Line Height_
-- _Toggle Compact Dropdowns_
-- _Toggle Compact Table Cells_
-- _Toggle Compact Fields_
-- _Toggle Compact Menus_
-- _Toggle Compact Status Bar_
-- _Toggle Uppercase Tabs_
-- _Toggle Custom Tab Font_
-- _Indicator Styles_
-- _Tab Highlight Position_
+----
 
-It also provides one-time actions to modify the plugin's configuration:
+## Tabs Toggles
 
-- _Set Recommended Tab Height_: Sets the tab height to _42_.
+This submenu includes various toggles for customizing the appearance and behavior of tabs:
 
------
+- _Set Recommended Tab Height_: Resets the tab height to the default value (42).
+- _Toggle Uppercase Tabs_: Toggles the uppercase tabs style.
+- _Toggle Custom Tab Font_: Toggles the tabs custom font.
+- _Toggle Tab Separators_: Toggles the visibility of separators between tabs.
+- _Toggle Rounded Tabs_: Toggles the Rounded Tabs style.
+- _Toggle Bold Active Tab_: Toggles bold text for the active tab.
+- _Toggle Tab Shadow_: Toggles the shadow effect beneath the tabs.
+- _Toggle Tab Glow_: Toggles the glow effect beneath the tabs.
+- _Remove Tab Shadow_: Removes any shadow or glow effect under the tabs.
+- _Tab Highlight Position_: Allows you to change the position of the tab highlight.
 
-## Accent Color Chooser
+{% include figure.html content="/screens/other/tabsMenu.png" caption="Tabs Toggles" %}
 
-This panel offers a selection of predefined colors for your [accent color](/docs/configuration/accents).
+----
 
-{% include figure.html content="/screens/accentChooser.png" caption="Accent Chooser" %}
+## Spacing Toggles
 
-It also includes shortcuts to toggle the following:
+This submenu includes options for adjusting the spacing of various UI components:
 
-- _Override Accent Color from Theme_
-- _Set Accent Mode_
+- _Toggle Compact Item Line Height_: Toggles the compact line height for menu items and list items.
+- _Toggle Compact Dropdowns_: Toggles the compact size for dropdown components.
+- _Toggle Compact Table Cells_: Toggles the compact size for table cells.
+- _Toggle Compact Fields_: Toggles the compact size for text fields and other input components.
+- _Toggle Compact Menus_: Toggles the compact size for menus.
+- _Toggle Compact Status Bar_: Toggles the compact size for the IDE status bar.
+- _Toggle Compact List Items_: Toggles the compact size for items in lists.
 
-Note: You can still manually change the accent color in `Settings → Custom Accent Color`.
+{% include figure.html content="/screens/other/spacingMenu.png" caption="Spacing Toggles" %}
 
------
+----
 
-## Material Theme Features
+## Trees Toggles
 
-The following features are available for Premium users.
-{:class='card-panel warn'}
+This submenu includes toggles for customizing the appearance and behavior of trees:
 
-This panel provides quick toggles for the most frequently used component and feature settings:
+- _Toggle Colored Directories_: Toggles the colored directories feature in the project tree.
+- _Toggle Custom Tree Font_: Toggles the custom font for the tree components.
+- _Toggle Indicator Gradient_: Toggles the gradient effect for tree indicators.
+- _Toggle Custom Tree Indent_: Toggles the custom indentation for tree items.
+- _Toggle Custom Line Height_: Toggles the custom line height for tree items.
+- _Indicator Styles_: Allows you to choose between different styles for tree indicators:
+    - _Border_
+    - _Sharp_
+    - _Dot_
+    - _Right Border_
+    - _Boxed_
+    - _Underline_
+    - _None_
 
-- _Toggle Tab Separators_
-- _Toggle Custom Tree Font_
-- _Toggle Custom UI Font_
-- _Toggle Colored Directories_
-- _Toggle Language Additions_
-- _Toggle Focus Mode_
-- _Toggle Material Wallpapers_
-- _Toggle Outline Buttons_
-- _Toggle Overlays_
-- _Toggle Animated Tool Windows_
-- _Toggle Project Frame Colors_
-- _Colorize Title Bar (New UI)_
+{% include figure.html content="/screens/other/treesMenu.png" caption="Trees Toggles" %}
 
-Additional one-time actions available in this panel:
+----
 
-- _Material Theme Wizard_: Launch the Material Theme Wizard.
-- _Atom Material Icons_: Visit the **Atom Material Icons Plugin** page for installation.
-- _Show What's New_: Open the "**What's New**" page.
-- _Reset Color Scheme_: Restore the default color scheme, removing any custom changes.
-- _Clean Overlays_: Manually clear any remaining overlays.
-- _Apply Custom UI Font_: Force a UI font update.
-- _Undock Tool Windows_: Undock all currently active tool windows.
-- _Dock Tool Windows_: Re-dock all active tool windows.
+## UI Components Toggles
 
----
+This submenu provides toggles for various UI components and their styles:
 
-### License Activation
+- _Toggle Outline Buttons_: Toggles the outline style for buttons.
+- _Toggle Round Notifications_: Toggles rounded corners for notification popups.
+- _Extra Shadows_: Toggles additional shadows for some components.
+- _Toggle Upper Case Buttons_: Toggles uppercase text for buttons.
+- _Toggle Inverted Completion Selection_: Inverts the selection color in completion lists.
+- _Toggle Custom Search Everywhere_: Toggles the custom Material style for the Search Everywhere dialog.
+- _Toggle Borderless_: Toggles borderless style for some components.
+- _Toggle Material Spinner_: Toggles the Material-style progress spinner.
+- _Toggle Original Square Buttons_: Toggles the original square style for buttons.
+- _Material Design Style_: Choose between different Material Design versions:
+    - _V1_
+    - _V2_
+    - _V3_
 
-- _Activate License_: Activate your Premium license.
+{% include figure.html content="/screens/other/componentsMenu.png" caption="UI Components Toggles" %}
 
-{% include figure.html content="/screens/license/activateLicense.png" caption="Activate License" %}
+----
 
-{% include figure.html content="/screens/license/manageSubscriptions.png" caption="License" %}
+## Features Toggles
 
----
+This submenu includes toggles for various plugin features:
 
-### Material Wallpapers
+- _Toggle Custom Font_: Toggles the use of a custom font for the IDE.
+- _Toggle Material Wallpapers_: Toggles the Material Wallpapers feature.
+- _Toggle Overlays_: Toggles the use of overlays for some components.
+- _Toggle More Overlays_: Toggles additional overlays.
+- _Animate Tool Windows_: Toggles animations when opening/closing tool windows.
+- _Toggle Auto Reset Color Scheme_: Toggles automatic resetting of the color scheme when changing themes.
+- _Toggle Centered Editor_: Toggles the centered editor mode.
+- _Toggle Editor Global Font_: Toggles the use of a global font for the editor.
+- _Toggle Floating Action Button_: Toggles the visibility of the Floating Action Button.
+- _Remove Material Wallpaper_: Clears the current IDE background image.
+- _Set UI Font to Google Sans_: Sets the IDE UI font to Google Sans.
+- _Reset Color Scheme_: Resets the current color scheme to its default values.
+- _Clean Overlays_: Removes all active overlays.
+- _Apply Custom UI Font_: Applies the configured custom UI font.
 
-- _Remove Material Wallpaper_: Clears the current [IDE Background Image](https://www.jetbrains.com/help/idea/setting-background-image.html).
+{% include figure.html content="/screens/other/featuresMenu.png" caption="Features Toggles" %}
 
-{% include figure.html content="/screens/customWallpaper.png" caption="Material Wallpaper" %}
+----
 
-Note: This setting affects the entire IDE. Removing or disabling the plugin will not automatically remove the background image. You can manage this manually in `Settings → Appearance → Background Image`.
-{:class='card-panel warn'}
+## Project Banner Toggles
+
+This submenu allows you to customize the Project Banner feature:
+
+- _Toggle Project Banner_: Toggles the visibility of the project banner.
+- _Colorize Title Bar_: Toggles title bar colorization based on the project.
+- _Colorize Left Tool Window Stripe_: Toggles colorization of the left tool window stripe.
+- _Colorize Right Tool Window Stripe_: Toggles colorization of the right tool window stripe.
+- _Colorize Status Bar_: Toggles colorization of the status bar.
+- _Toggle Show Project Icon_: Toggles the visibility of the project icon in the banner.
+- _Toggle Show Project Name_: Toggles the visibility of the project name in the banner.
+
+{% include figure.html content="/screens/other/bannerMenu.png" caption="Project Banner Toggles" %}
+
+----
+
+## Islands Toggles
+
+This submenu includes toggles for the "Islands" UI style:
+
+- _Toggle Islands Background_: Toggles the isolated background style for certain components.
+- _Toggle Islands Contrast_: Toggles contrast for the Islands style.
+- _Toggle Islands Border_: Toggles borders for the Islands style.
+
+{% include figure.html content="/screens/other/islandsMenu.png" caption="Islands Toggles" %}
+
+----
+
+## Theme Randomizer
+
+This submenu provides options for the Theme Randomizer feature:
+
+- _Toggle Theme Randomizer_: Enables or disables the theme randomizer.
+- _Next Favorite Theme_: Switches to the next theme in your favorites list.
+- _Previous Favorite Theme_: Switches to the previous theme in your favorites list.
+
+{% include figure.html content="/screens/other/randomizerMenu.png" caption="Theme Randomizer" %}
+
+----
+
+## Language Additions
+
+This submenu includes toggles for language additions:
+
+- _Toggle Language Additions_: Enables or disables all language-specific additions.
+- _Toggle Advanced Settings_: Toggles advanced language settings.
+- _Specific Languages_: Allows you to toggle additions for specific languages:
+    - _Java_
+    - _Kotlin_
+    - _JavaScript_
+    - _TypeScript_
+    - _PHP_
+    - _Ruby_
+    - _Python_
+    - _Go_
+    - _Rust_
+
+{% include figure.html content="/screens/other/langagesMenu.png" caption="Language Additions" %}
+
+----
+
+## Other Toggles
+
+This submenu includes miscellaneous options and tools:
+
+- _Material Theme Wizard_: Opens the Material Theme setup wizard.
+- _Install Atom Material Icons_: Provides a link to install the Atom Material Icons plugin.
+- _Activate License_: Opens the license activation dialog.
+- _Toggle Show Wizard on Welcome_: Toggles whether to show the wizard on the welcome screen.
+- _Toggle Show What's New_: Toggles whether to show the "What's New" dialog after updates.
+- _Undock Tool Windows_: Undocks all tool windows.
+- _Dock Tool Windows_: Docks all tool windows.
+
+{% include figure.html content="/screens/other/otherMenu.png" caption="Other Toggles" %}
