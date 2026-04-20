@@ -24,63 +24,53 @@ Customize the editor scrollbars from the Color Scheme.
 
 ## Introduction
 
-For some time, JetBrains IDEs started separating components from the IDE Themes to the Color Schemes.
-Since the color schemes can be changed without affecting the UI, it makes sense that the color schemes control the appearance of elements tied with the Editor.
+In recent versions, JetBrains IDEs began moving several UI components from global Themes to individual Color Schemes. This change allows for greater flexibility, as color schemes can be switched without altering the overall IDE user interface. It also ensures that editor elements—such as scrollbars—match the active coding environment.
 
-Such examples are:
+Examples of elements controlled by Color Schemes include:
 - Search matches
-- Line Coverage sections
+- Line coverage sections
 - Tooltips
 - Notifications
 - Breadcrumbs
 - Gutter modified lines
 - ...
 
-However, up until 2019.1 scrollbars were still controlled by the UI Theme.
-This was fine but if the color scheme was using a dark purple shade, for instance, why would the scrollbar still _Darcula Gray_ based?
+Prior to version 2019.1, scrollbars were strictly controlled by the UI Theme. This often led to visual inconsistencies; for example, a dark purple color scheme might still display standard "Darcula Gray" scrollbars.
 
-As a result, they refactored the scrollbars, allowing color scheme designers to control the color and opacity of the scrollbars when their scheme is applied. 
-However, this setting is nowhere to be found as of today!
-The only way to change the _Scrollbar_ colors was from the XML file directly.
+To address this, JetBrains refactored scrollbars to allow color scheme designers to define their own colors and opacity. However, as of now, these settings are not exposed in the standard IDE settings and can typically only be modified by editing the color scheme's XML file directly.
 
-While this is bound to happen sooner or later, in the meantime the plugin adds a new section in the _Color Scheme Settings_ to allow tuning these colors, 
-independently of the UI Theme being used.
-
+The Material Theme UI plugin bridges this gap by adding a dedicated section in the **Color Scheme Settings**, allowing you to tune scrollbar colors independently of your current UI Theme.
 
 ----
-## Scrollbar colors
 
-You can find this section under `Settings > Editor > Color Scheme > Scrollbars`.
-Since this is a color scheme based setting, each color scheme has its own, with a default value of gray if not defined.
+## Scrollbar Colors
 
-{% include figure.html content="/screens/scrollbarSettings.png" caption="Scrollbar Settings" %}
+You can access these settings under `Settings/Preferences > Editor > Color Scheme > Scrollbars`. Since these settings are tied to the color scheme, each scheme can have its own unique configuration. If no specific colors are defined, the IDE defaults to a standard gray.
 
-By default, in the provided themes all the scrollbar properties have the same value.
-But you can easily specify a different border color, or a different color when hovered.
+{% include figure.html content="/screens/scrollbars/scrollbarSettings.png" caption="Scrollbar Settings" %}
 
-### System Scrolling Settings
+By default, the Material Theme's included schemes use consistent values for all scrollbar properties. However, you can easily customize specific elements, such as the border color or the color used when the scrollbar is hovered.
 
-In macOS systems, the scrollbar colors are highly dependent on the _System scrollbar settings_:
+### macOS System Scrolling Settings
 
-{% include figure.html content="/screens/macScrollSettings.png" caption="Scrollbar Settings macOS" %}
+On macOS, scrollbar appearance is heavily influenced by system-level settings found in `System Settings > Appearance`:
 
-- If you decide to go with "_Always_", then the `Transparent` values have no effect.
-- But, should you select the option to display the scrollbar only when scrolling, then only the `Transparent` settings are relevant.
+{% include figure.html content="/screens/scrollbars/macScrollSettings.png" caption="macOS Scrollbar Settings" %}
 
+- **Always**: If the system is set to always show scrollbars, any `Transparent` color settings will have no effect.
+- **When scrolling**: If scrollbars are only shown during interaction, only the `Transparent` settings in the IDE will be applied.
 
-Be aware, that modifying these values from the prebundled color schemes results in the color schemes being copied,
-so color scheme updates would not be reflected unless you decide to `Restore Defaults`.
+**Note**: Modifying these values in a pre-bundled color scheme will create a local copy of that scheme. Consequently, future updates to the original scheme will not be reflected unless you select `Restore Defaults`.
 {:class='card-panel warn'}
 
 ----
+
 ## FAQ
 
-**Q**: **I've set the `Accent Scrollbars` setting off, but my scrollbar is still blue/orange/whatever!**
+**Q: I've disabled the "Accent Scrollbars" setting, but my scrollbars are still colored!**
 
-**A**: The `Accent Scrollbars` and `Transparent Scrollbars` feature control the appearance of the IDE Scrollbars, not the editor scrollbars. 
-For the editor scrollbars, unfortunately, the only way to do so is to use this _Color Scheme Panel_.
+**A:** The `Accent Scrollbars` and `Transparent Scrollbars` features control the appearance of **IDE-wide scrollbars** (e.g., in tool windows or lists). They do not affect the **editor scrollbars**. To customize the editor's scrollbars, you must use the **Color Scheme** settings described above.
 
-**Q**: **I've uninstalled the theme, but the scrollbar colors persist!**
+**Q: I've uninstalled the plugin, but the scrollbar colors haven't reverted!**
 
-**A**: Since these colors are color scheme based, removing the plugin doesn't revert them back, just like with the [File Status Colors](/docs/configuration/file-status-colors). 
-The only way to do so would be to restore the color scheme.
+**A:** Because these settings are saved within your active Color Scheme, removing the plugin does not automatically reset them—similar to how [File Status Colors](/docs/configuration/file-status-colors) behave. To return to the original look, you will need to manually restore your color scheme's default settings.
