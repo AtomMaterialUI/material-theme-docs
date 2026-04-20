@@ -1389,6 +1389,10 @@ h5, h6 {
   padding: 7px 0 10px
 }
 
+#disqus_thread iframe {
+  display: none;
+}
+
 @media only screen and (min-width: 480px) {
   .disqus-footer__wrapper {
     padding-bottom: 0

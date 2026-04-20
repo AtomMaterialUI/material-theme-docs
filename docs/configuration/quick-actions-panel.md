@@ -35,7 +35,7 @@ You can access this panel from several locations:
 
 - Within the `Quick Switch Panel`.
 
-{% include figure.html content="/screens/other/quickswitch.png" caption="Quick Switch" %}
+{% include figure.html content="/screens/other/switchMenu.png" caption="Quick Switch" %}
 
 You can also assign custom shortcuts to any of its submenus in `Settings → Appearance & Behavior → Keymap → Material Theme`.
 
