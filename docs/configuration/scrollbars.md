@@ -10,12 +10,9 @@ previous:
   url: '/docs/configuration/file-status-colors'
   title: File Status Colors
 next:
-  url: '/docs/configuration/accents'
-  title: Accents
+  url: '/docs/configuration/adaptive-theme'
+  title: Adaptive Theme
 ---
-
-This feature is available in the free plan.
-{:class='card-panel warn'}
 
 Customize the editor scrollbars from the Color Scheme.
 {:class='title'}
