@@ -16,6 +16,69 @@ next:
 # Changelog
 ----
 
+## 11.1.0
+
+### Features
+
+- New Setting: **Tab Glow** (premium): adds a glow effect under the tabs.
+- Reorganization of the **Material Theme UI Toolbar**:
+  - Categorize actions under their own section (_Tabs_, _Features_, etc)
+  - Adding most of the settings toggles
+  - Adding toggles to switch the current **Material Style**
+
+### Fixes
+
+- Fix **Adaptive Theme** not adapting upon color scheme changes.
+- Fix issue where the _StatusBar Widgets_ are not added back upon removal until the next reloading.
+- Fix wrong spacing in the _New File_ popup in M3 Style
+- Fix outline not always added to text fields
+
+### Other
+
+- Remove Legacy Widget
+- More Translations
+- Update dependencies
+
+## 11.0.0-beta.5
+
+### Fixes
+
+- Fixes the issue with the Font Scale booming up to MaxValue
+- Removes deprecated setting for Islands Layout
+- Changed the text from **Project Frame** to **Project Banner**
+- Fixes the Project Banner's **Show Project Banner Text** not working
+- Fixes wrong screenshot url in Features Settings
+- Fixes empty text in the **Language Additions** settings
+- Add a new setting for the **Full Window Gradient** in **Project Title Bar** settings.
+
+## 11.0.0-beta.4
+
+### Fixes
+
+- Reverted the Tab Height Refactor as it was causing the tabs to be too big
+- Remove Read Action in `MTListUI`
+
+## 11.0.0-beta.3
+
+### Fixes
+
+- Removed the disabled state on the **Floating Action Button** setting.
+
+## 11.0.0-beta.2
+
+### Fixes
+
+- Make FAB Actions Editor context-aware.
+- Improve UI components sizing in larger Zoom Scales.
+- Remove some API Internal uses
+
+## 11.0.0-beta.1
+
+### Fixes
+
+- Remove some API Internal uses
+- Improve **Borderless** mode in the Islands Layout
+
 ## 11.0.0
 
 ### Features
