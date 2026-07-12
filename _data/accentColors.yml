@@ -64,3 +64,27 @@
   color: '#651FFF'
 - name: Slate
   color: '#607D8B'
+- name: Aqua
+  color: '#5CCFE6'
+- name: Coral
+  color: '#F28779'
+- name: Fresh Blue
+  color: '#73D0FF'
+- name: Gold
+  color: '#FFCD66'
+- name: Mandarin
+  color: '#FFA659'
+- name: Mauve
+  color: '#DFBFFF'
+- name: Mint
+  color: '#95E6CB'
+- name: Rose
+  color: '#F27983'
+- name: Salmon
+  color: '#F29E74'
+- name: Sand
+  color: '#D9BE98'
+- name: Steel
+  color: '#8A9199'
+- name: Yellow Green
+  color: '#D5FF80'
