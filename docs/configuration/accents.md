@@ -109,14 +109,16 @@ Accent colors can be configured in several ways:
 
 **Material Theme Toolbar**:
 
-In the latest version, the **Accent Color Popup** has been completely redesigned with a modern UI. It now features dynamic SVG previews for
+Since version 12.0.0, the **Accent Color Popup** has been completely redesigned with a modern UI. It now features dynamic SVG previews for
 each accent color, making it easier to visualize your choice before applying it.
 
-{% include figure.html content="/screens/accents/accentChooser.png" caption="Material Toolbar Accent Chooser" %}
+{% include figure.html content="/screens/archive/accentChooser.png" caption="Material Toolbar Old Accent Chooser" %}
+
+{% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
 
 **Status Bar Accent Color Widget**:
 
-{% include figure.html content="/screens/accents/accentColorWidget.png" caption="Status Bar Accent Chooser" %}
+{% include figure.html content="/screens/archive/accentColorWidget.png" caption="Status Bar Accent Chooser" %}
 
 **From The Settings**:
 

@@ -255,24 +255,3 @@ for modules or directories.
 
 **Note 2**: Like *File Status Colors*, this feature modifies your active color scheme.
 {:class='card-panel warn'}
-
-----
-
-## Color Scheme Tweaks
-
-These settings modify your current color scheme rather than the IDE's overall appearance. Please note that applying these changes might
-overwrite any custom modifications you have made to the color scheme.
-{:class='card-panel warn'}
-
-### Automatically reset color scheme
-
-This option automatically removes all customizations from your color scheme when switching themes. This ensures a clean slate, which is
-especially useful given that many plugins, including this one, modify color schemes.
-
-It also ensures you receive all the latest color scheme updates, as copied schemes cannot automatically detect changes to the original.
-
-### Use Editor Default Font
-
-This option overrides the color scheme's font with the *Default Font* defined in `Settings > Editor > Font`. Since color schemes can define
-their own fonts—leading to inconsistencies across different themes—enabling this ensures a uniform typography regardless of the active color
-scheme.
