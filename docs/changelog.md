@@ -16,6 +16,37 @@ next:
 # Changelog
 ----
 
+## 12.0.0
+
+### Features
+
+- **New Themes**: Added **Cobalt2**, **Prism**, **Prism Light**, **Horizon**, **Horizon Bright**, and **Omni** themes to the list of the
+  predefined themes.
+- **New Accents**: Added more predefined accents to the collection
+- **New Accent Color Popup**: Replaced the long list of actions for switching accents with a modernized popup for selecting accent colors
+  with dynamic previews.
+- **Peek**:
+  - Introduced **Peek (Popup)** and **Peek (Inline)**: Quick code preview and editing capabilities similar to VSCode's Peek feature.
+  - Added configurable settings for Peek, such as **padding**, **header color**, etc..
+- **Color Scheme Overrides**: New settings page for overriding color scheme colors on the fly, for all themes.
+  - Migrated the **Automatically reset color scheme** and **Global Default Font** to this new page.
+  - **Diff Colors Opacity**: Adjust the opacity of diff highlights in the editor.
+  - **Popups and Notifications**: Override the colors of popups and notifications from the theme.
+  - **VCS Gutter Colors**: Override the colors of the VCS gutter indicators with the Material ones.
+- **Theme Selector Redone**: Replaced static theme preview screenshots with dynamic SVG previews for better consistency across all themes.
+- New modernized **Plugin Logo**.
+
+### Fixes
+
+- Adjust the project banner's height to prevent it being cut off.
+- Improve window type checks in dialog utilities for overlays in the new 2026.2 build.
+
+### Other
+
+- **Round Notifications** are now enabled by default.
+- Updated **Gradle IntelliJ Plugin** and **Java version**.
+- Optimized theme layout spacing and chunking logic.
+
 ## 11.1.0
 
 ### Features
@@ -86,13 +117,13 @@ next:
 - **Default Contrast Mode**: The **Contrast Mode** is now enabled by default to provide a generally better looking experience.
 - **Material 3 Style**: The **Material 3 Style** is now available by default, replacing the now outdated **Material Theme** (_Material 2_)
   Style.
-    - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look and feel.
+  - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look and feel.
 - **Floating Action Button (FAB)**: Introduced FAB support with customizable action groups, drag-and-drop, and position persistence.
 - **Theme Ignores Configuration**: New interface for managing and configuring native theme ignores.
 - **Enhanced UI Customization**:
-    - New settings for **Custom Button Radius** and personalization of UI component borders.
-    - Improved **Rounded Tabs** with additional customization options and controls.
-    - Support for **Google Sans** font across the UI.
+  - New settings for **Custom Button Radius** and personalization of UI component borders.
+  - Improved **Rounded Tabs** with additional customization options and controls.
+  - Support for **Google Sans** font across the UI.
 - **Spacing Settings Refinements**: Adds enhanced customization options for spacing settings.
 - **Database Integration**: Added support for database table settings and plugin integration.
 - **Current Look and Feel Properties**: New Settings page to visualize the current theme's colors.
@@ -131,8 +162,8 @@ next:
 ### Features
 
 - New Setting: **Customize Search Everywhere**! (Free feature)
-    - Make the Search Everywhere larger, in accordance with Material Style.
-    - Premium Users can customize the padding and the font size delta.
+  - Make the Search Everywhere larger, in accordance with Material Style.
+  - Premium Users can customize the padding and the font size delta.
 - **Enable Tab Customization** setting: Allows disabling the customization of tabs altogether.
 
 ### Fixes
@@ -177,14 +208,14 @@ next:
 ### Features
 
 - Improve **Islands** layout to follow the official guidelines:
-    - Main Window background is now merged with the stripes and status bar colors
-    - The Tabbed Pane is now using the same colors as the tool windows
-    - Inherit the **Main Window Gradient** when the Title Bar, Tool Windows and Status Bar are not colorized.
+  - Main Window background is now merged with the stripes and status bar colors
+  - The Tabbed Pane is now using the same colors as the tool windows
+  - Inherit the **Main Window Gradient** when the Title Bar, Tool Windows and Status Bar are not colorized.
 - Add more settings to the **Islands Layout**:
-    - **Contrast Mode**: Make the background color lighter, to differentiate it from the tool windows and the editor.
-    - **Custom Background Color**: Specify your own background color
-    - **Border**: Add a slight border on the islands
-    - **Custom Border Color**: Specify your own border color
+  - **Contrast Mode**: Make the background color lighter, to differentiate it from the tool windows and the editor.
+  - **Custom Background Color**: Specify your own background color
+  - **Border**: Add a slight border on the islands
+  - **Custom Border Color**: Specify your own border color
 - Better integration with the **Project Title Frame**
 
 ## 10.6.0
@@ -195,14 +226,13 @@ next:
 - Fix the `{{fileIcon}}` to return the actual file icon
 - *Experimental*: Provide a custom solution to paint a gradient on the _Project Title Frame_
 
-
 ## 10.5.0
 
 ### Features
 
 - New Options for the **Project Title Frame**:
-    - Customize Width and Height of the Stripe
-    - Customize Font and Font Size
+  - Customize Width and Height of the Stripe
+  - Customize Font and Font Size
 - New Macro: `{fileIcon}`: now you can display the file icon in the _Project Title Frame_.
 - Use the native Islands background for the *Application Frame* when all title options are off.
 - Hide tool window borders when the *Islands* mode is enabled
@@ -229,7 +259,6 @@ next:
 
 - Migrated **Material Design Components** to Kotlin
 - Fix some deprecations triggered by the Verification Tool
-
 
 ## 10.4.0
 
@@ -265,7 +294,6 @@ next:
 ### Other
 
 - Stop showing the *Sharing Stats*, *Install Atom Plugin* and *Auto-Reset Color Scheme* notifications at the first install.
-
 
 ## 10.2.0
 
@@ -431,7 +459,8 @@ next:
 
 ### Features
 
-- **New Setting**: **Material Design Loading Icon**: replace JetBrains loading icon with the Material Design one (requires _Atom Material Icons_ plugin)
+- **New Setting**: **Material Design Loading Icon**: replace JetBrains loading icon with the Material Design one (requires _Atom Material
+  Icons_ plugin)
 - **Migration**: Add Migration On-boarding dialog for non migrated users
 - **Color Schemes**: Add _New Terminal_ colors
 - **Color Schemes**: Add _JVM Logging_ colors
@@ -458,7 +487,8 @@ next:
 - New settings are now saved in `material_theme_new.xml`, including the custom theme and per-project settings.
 - **Themes**: View the current theme's colors in the settings.
 - **Themes**: Introduced **Second Accent Color**, used for *Accent Mode*.
-- **Themes**: New Theme: **Adaptive Theme**. This is a theme that listens to **Color Scheme** changes and adapts itself accordingly (__Experimental__).
+- **Themes**: New Theme: **Adaptive Theme**. This is a theme that listens to **Color Scheme** changes and adapts itself accordingly (_
+  _Experimental__).
 - **Accent Mode**: Ability to toggle specific components only: _Tabs_, _Notifications_, _Lists_…
 - **Accent Mode**: Allow accent mode to modify color scheme (for the tab indicator, for example) – default is OFF.
 - **Spacing**: Header size is now customizable (for both compact and non-compact modes). (_Premium_)
@@ -471,21 +501,25 @@ next:
 - **Language Additions**: Toggle language additions per language.
 - **Project-tree indicators**: New indicators: **Right**, **Underline**, **Boxed**.
 - **Project-tree indicators**: Ability to set a gradient instead of a single color. (__Premium__)
-- **Arrows Style**: Customize the look of the arrows in trees (only if the _Atom Material Plugin_ is not installed, in which case it is controlled by the plugin). Styles:
+- **Arrows Style**: Customize the look of the arrows in trees (only if the _Atom Material Plugin_ is not installed, in which case it is
+  controlled by the plugin). Styles:
   - Material (chevrons)
   - Darcula (triangles)
   - Plus-Minus (+/-)
   - Arrows (→)
   - Circles (circles with arrows)
   - None
-- **Title Bar** (previously **Project Frame**): Ability to colorize the **Left Toolbar**, **Right Toolbar** and **Status Bar**! (__Premium__)
+- **Title Bar** (previously **Project Frame**): Ability to colorize the **Left Toolbar**, **Right Toolbar** and **Status Bar**! (__Premium
+  __)
 - **Title Bar Widget**: The **Project Frame** widget can now be added to the New UI's __Title Bar__!
   - You can also switch between presets to display.
 - **UI Components**: Round notifications (__Premium__)
 - **UI Components**: Borderless mode (__Premium__)
 - Add back the icon for **Intentions**
 - _Action Buttons_ are now rounded (will be customizable in the future).
-- New **Java Keywords**: `abstract, extends, impements, native, assert, class, interface, enum, for, while, do, if, else, import, package, instanceof, new, module, requires, return, switch, synchronized, volatile, throw, throws, try, catch, finally, var` and primitive types.
+- New **Java Keywords**:
+  `abstract, extends, impements, native, assert, class, interface, enum, for, while, do, if, else, import, package, instanceof, new, module, requires, return, switch, synchronized, volatile, throw, throws, try, catch, finally, var`
+  and primitive types.
 
 ### Fixes
 
@@ -510,7 +544,6 @@ next:
 
 - Added a **Migrate Action** for migrating settings to the new format.
 - Refactored most of the project to Kotlin.
-
 
 ## 8.13.1
 
@@ -541,7 +574,6 @@ next:
 - Fix [#388](https://github.com/mallowigi/material-theme-issues/issues/388)
 - Fix [#397](https://github.com/mallowigi/material-theme-issues/issues/397)
 - Fix [#398](https://github.com/mallowigi/material-theme-issues/issues/398)
-
 
 ## 8.11.0
 

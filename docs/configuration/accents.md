@@ -66,9 +66,11 @@ The **Accent Colors** feature allows you to personalize and emphasize key UI ele
 
 ## Definition
 
-An _Accent Color_ is used to highlight primary UI components, such as active tabs, focused inputs, checkboxes, and buttons. The Material Theme UI plugin enables comprehensive customization of these colors within the IDE.
+An _Accent Color_ is used to highlight primary UI components, such as active tabs, focused inputs, checkboxes, and buttons. The Material
+Theme UI plugin enables comprehensive customization of these colors within the IDE.
 
-For more information, refer to the [Material Design Color System](https://material.io/guidelines/style/color.html#color-color-system) guidelines.
+For more information, refer to the [Material Design Color System](https://material.io/guidelines/style/color.html#color-color-system)
+guidelines.
 
 ### Usage
 
@@ -107,11 +109,16 @@ Accent colors can be configured in several ways:
 
 **Material Theme Toolbar**:
 
-{% include figure.html content="/screens/accents/accentChooser.png" caption="Material Toolbar Accent Chooser" %}
+Since version 12.0.0, the **Accent Color Popup** has been completely redesigned with a modern UI. It now features dynamic SVG previews for
+each accent color, making it easier to visualize your choice before applying it.
+
+{% include figure.html content="/screens/archive/accentChooser.png" caption="Material Toolbar Old Accent Chooser" %}
+
+{% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
 
 **Status Bar Accent Color Widget**:
 
-{% include figure.html content="/screens/accents/accentColorWidget.png" caption="Status Bar Accent Chooser" %}
+{% include figure.html content="/screens/archive/accentColorWidget.png" caption="Status Bar Accent Chooser" %}
 
 **From The Settings**:
 
@@ -127,11 +134,13 @@ Here is the list of predefined colors:
 
 ### Second Accent Color
 
-Themes can define a secondary accent color. This color is utilized when [Accent Mode](/docs/configuration/accent-mode) is enabled, providing a complementary highlight when the primary accent color is already prominent.
+Themes can define a secondary accent color. This color is utilized when [Accent Mode](/docs/configuration/accent-mode) is enabled, providing
+a complementary highlight when the primary accent color is already prominent.
 
 ### Custom accent color
 
-By default, the accent color is derived from the theme. For Material Themes, this is a predefined theme property; for external themes, it is typically based on the `Link.activeForeground` property.
+By default, the accent color is derived from the theme. For Material Themes, this is a predefined theme property; for external themes, it is
+typically based on the `Link.activeForeground` property.
 
 To use a different color, uncheck the `Override Accent Color from Theme` option and select your preferred color.
 
@@ -143,6 +152,7 @@ To see how your chosen accent color will appear, refer to the `Preview` section 
 
 ## Gallery
 
-Note: These images are from earlier versions of the plugin and may not reflect current UI changes. For a real-time preview, navigate to the `UI DSL Showcase` settings screen within the IDE.
+Note: These images are from earlier versions of the plugin and may not reflect current UI changes. For a real-time preview, navigate to the
+`UI DSL Showcase` settings screen within the IDE.
 
 {% include gallery_lightbox.html %}
