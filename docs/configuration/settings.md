@@ -60,7 +60,8 @@ Alternatively, use the **Theme Selector** at `Settings → Appearance → Materi
 
 The plugin comes prebundled with {{ site.data.themes.material.size | plus: site.data.themes.material2.size | plus:
 site.data.themes.other.size | plus:
-site.data.themes.other2.size }} themes:
+site.data.themes.other2.size | plus:
+site.data.themes.other3.size }} themes:
 
 #### Material themes
 
@@ -86,6 +87,10 @@ Besides the Material Themes, there are other prebundled themes contributed by th
 {% endfor %}
 
 {% for theme in site.data.themes.other2 %}
+{% include theme-card.html %}
+{% endfor %}
+
+{% for theme in site.data.themes.other3 %}
 {% include theme-card.html %}
 {% endfor %}
 </ul>

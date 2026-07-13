@@ -1064,6 +1064,7 @@ other2:
     numbers: '#f97e72'
     parameters: '#ff7edb'
 
+other3:
   - cobalt2:
     id: COBALT2
     name: Cobalt2

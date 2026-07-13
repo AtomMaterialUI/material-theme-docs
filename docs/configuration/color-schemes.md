@@ -46,6 +46,10 @@ The list includes all your installed color schemes as well as those provided by 
 {% for theme in site.data.themes.other2 %}
 <li>{{ theme.name }}</li>
 {% endfor %}
+
+{% for theme in site.data.themes.other3 %}
+<li>{{ theme.name }}</li>
+{% endfor %}
 </ul>
 
 ## Customization
