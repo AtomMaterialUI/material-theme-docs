@@ -22,6 +22,7 @@ The plugin provides a variety of color schemes optimized for Material Themes, de
 ## Installation
 
 Change the active color scheme via:
+
 - IDE settings: `Editor → Color Scheme`
 - `Quick Switch` menu: Select `Color Scheme`.
 
@@ -35,15 +36,15 @@ The list includes all your installed color schemes as well as those provided by 
 {% endfor %}
 
 {% for theme in site.data.themes.material2 %}
-    <li>Material {{ theme.name }}</li>
+<li>Material {{ theme.name }}</li>
 {% endfor %}
 
 {% for theme in site.data.themes.other %}
-    <li>{{ theme.name }}</li>
+<li>{{ theme.name }}</li>
 {% endfor %}
 
 {% for theme in site.data.themes.other2 %}
-    <li>{{ theme.name }}</li>
+<li>{{ theme.name }}</li>
 {% endfor %}
 </ul>
 
@@ -51,19 +52,44 @@ The list includes all your installed color schemes as well as those provided by 
 
 While color schemes are optimized for immediate use, you can customize them in the `Color Scheme` editor.
 
-Navigate to `Settings → Editor → Color Scheme` to modify colors. This will create a local copy of the scheme (e.g., `_@user_<schemeName>.icls`), which you can then modify and rename.
+Navigate to `Settings → Editor → Color Scheme` to modify colors. This will create a local copy of the scheme (e.g.,
+`_@user_<schemeName>.icls`), which you can then modify and rename.
 
 {% include figure.html content="/screens/schemes/colorschemes.png" caption="Color Schemes" %}
 
 {% include figure.html content="/screens/schemes/colorschemes2.png" caption="Color Scheme Editor" %}
 
-Note: If the [Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option is enabled, manual changes will not persist. We recommend using the `Duplicate` function to create a permanent copy.
+Note: If the [Automatically reset color schemes](/docs/configuration/other-tweaks-settings#automatically-reset-color-schemes) option is
+enabled, manual changes will not persist. We recommend using the `Duplicate` function to create a permanent copy.
 
-To revert a scheme to its original state, select `Restore Defaults` from the scheme's menu or use the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action in the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
+### Diff Colors Opacity (Premium)
 
-**Important**: Resetting or restoring defaults will permanently erase all changes made to that scheme. To preserve your modifications, create a backup by using the `Duplicate` function before resetting.
+This setting allows you to adjust the opacity of the background color of modified, added, or deleted lines in the editor. Reducing the
+opacity can help make the editor less cluttered and easier to read, especially in large diffs.
+
+You can configure this in `Settings > Appearance & Behavior > Material Theme > Color Scheme`.
+
+### Color Overrides (Premium)
+
+You can further customize the IDE's appearance by overriding certain colors:
+
+- **Use Notification Color for Popups**: When enabled, the IDE will use the notification background color for information popups,
+  documentation popups, and lookup windows.
+- **Override VCS Gutter Colors**: Allows you to override the default VCS gutter colors (added, modified, deleted lines) with
+  Material-optimized colors for better visibility.
+
+To revert a scheme to its original state, select `Restore Defaults` from the scheme's menu or use
+the [Reset Color Scheme](/docs/configuration/quick-actions-panel#material-theme-features) action in
+the [Quick Actions Panel](/docs/configuration/quick-actions-panel).
+
+In addition, a new **Force Reset Color Scheme** action has been added to the _Quick Actions Panel_ to quickly revert any Material color
+scheme to its original state, erasing all manual modifications.
+
+**Important**: Resetting or restoring defaults will permanently erase all changes made to that scheme. To preserve your modifications,
+create a backup by using the `Duplicate` function before resetting.
 
 ----------
+
 ## Supported languages
 
 |              |             |             |
@@ -88,6 +114,7 @@ To revert a scheme to its original state, select `Restore Defaults` from the sch
 | Regex        | Rdoc        | HTTP Client |
 
 ----------
+
 ## Color Palette
 
 The following palettes are relevant only for _Material Themes_ (hover to see the hex value):
