@@ -94,6 +94,32 @@ opacity can help make the editor less cluttered and easier to read.
 
 {% include figure.html content="/screens/colorSchemes/fiftyPercentOpaqueDiff.png" caption="Fifty Percent Opaque Diff Colors" %}
 
+### VCS Gutter Colors
+
+Another area of concern are the VCS Gutter Indicator Colors. Some theme editors completely missed this section or provided values that don't
+have enough contrast with the background, making it hard to see the changes in the gutter.
+
+This setting forcefully replaces these colors to use the same ones provided by the Material Themes.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/colorSchemes/originalVCS.png" caption="Original VCS Gutter Colors" %}
+
+{% include figure.html content="/screens/colorSchemes/updatedVCS.png" caption="Updated VCS Gutter Colors" %}
+
+</div>
+
+### Popups and Notifications
+
+Another point of contention is the color of popups and notifications, which is sometimes forgotten by theme editors, leading to the theme
+displaying the default Darcula/Light color.
+
+Just like the above settings, this option forcefully replace these colors with values taken from the Theme itself, ensuring a consistent
+look and feel across the IDE.
+
+{% include figure.html content="/screens/colorSchemes/originalPopupColor.png" caption="Original Popup Colors" %}
+
+{% include figure.html content="/screens/colorSchemes/updatedPopupColor.png" caption="Updated Popup Colors" %}
+
 ### Automatically reset color scheme
 
 This option automatically removes all customizations from your color scheme when switching themes. This ensures a clean slate, which is
@@ -112,29 +138,6 @@ scheme.
 
 **Note**: This setting was previously found in the **Other** section of the plugin settings.
 {:class='card-panel info'}
-
-### VCS Gutter Colors
-
-Another area of concern are the VCS Gutter Indicator Colors. Some theme editors completely missed this section or provided values that don't
-have enough contrast with the background, making it hard to see the changes in the gutter.
-
-This setting forcefully replaces these colors to use the same ones provided by the Material Themes.
-
-{% include figure.html content="/screens/colorSchemes/originalVCS.png" caption="Original VCS Gutter Colors" %}
-
-{% include figure.html content="/screens/colorSchemes/updatedVCS.png" caption="Updated VCS Gutter Colors" %}
-
-### Popups and Notifications
-
-Another point of contention is the color of popups and notifications, which is sometimes forgotten by theme editors, leading to the theme
-displaying the default Darcula/Light color.
-
-Just like the above settings, this option forcefully replace these colors with values taken from the Theme itself, ensuring a consistent
-look and feel across the IDE.
-
-{% include figure.html content="/screens/colorSchemes/originalPopupColor.png" caption="Original Popup Colors" %}
-
-{% include figure.html content="/screens/colorSchemes/updatedPopupColor.png" caption="Updated Popup Colors" %}
 
 ### Restoring Color Scheme Defaults
 
