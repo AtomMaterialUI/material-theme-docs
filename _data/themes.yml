@@ -1068,7 +1068,7 @@ other2:
     id: COBALT2
     name: Cobalt2
     className: cobalt2
-    desc: Cobalt2 Theme for Material Design
+    desc: A port of the famous Cobalt2 theme by Wes Bos
     light: false
     background: '#193549'
     foreground: '#E1EFFF'
@@ -1114,7 +1114,7 @@ other2:
     id: PRISM
     name: Prism
     className: prism
-    desc: Prism Theme for Material Design
+    desc: A vibrant colorful dark theme
     light: false
     background: '#0F111A'
     foreground: '#A6ACCD'
@@ -1160,7 +1160,7 @@ other2:
     id: PRISM_LIGHT
     name: Prism Light
     className: prismlight
-    desc: Prism Light Theme for Material Design
+    desc: A vibrant colorful light theme
     light: true
     background: '#FAFAFA'
     foreground: '#29263C'
@@ -1206,7 +1206,7 @@ other2:
     id: HORIZON
     name: Horizon
     className: horizon
-    desc: Horizon Theme for Material Design
+    desc: A beautifully warm theme based by Jonathan Olaleye
     light: false
     background: '#1C1E26'
     foreground: '#D5D8DA'
@@ -1252,7 +1252,7 @@ other2:
     id: HORIZON_BRIGHT
     name: Horizon Bright
     className: horizonbright
-    desc: Horizon Bright Theme for Material Design
+    desc: A beautifully warm theme based by Jonathan Olaleye
     light: true
     background: '#FDF0ED'
     foreground: '#16161C'
@@ -1298,7 +1298,7 @@ other2:
     id: OMNI
     name: Omni
     className: omni
-    desc: Omni Theme for Material Design
+    desc: A port of the vibrant Omni theme by Diego Fernandes
     light: false
     background: '#191622'
     foreground: '#E1E1E6'
