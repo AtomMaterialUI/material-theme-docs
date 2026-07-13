@@ -1159,7 +1159,7 @@ other2:
   - prismlight:
     id: PRISM_LIGHT
     name: Prism Light
-    className: prismlight
+    className: prismLight
     desc: A vibrant colorful light theme
     light: true
     background: '#FAFAFA'
@@ -1251,7 +1251,7 @@ other2:
   - horizonbright:
     id: HORIZON_BRIGHT
     name: Horizon Bright
-    className: horizonbright
+    className: horizonBright
     desc: A beautifully warm theme based by Jonathan Olaleye
     light: true
     background: '#FDF0ED'
