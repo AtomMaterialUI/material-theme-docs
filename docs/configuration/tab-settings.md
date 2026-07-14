@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/accent-mode'
-  title: Accent Mode
+  url: '/docs/configuration/peek'
+  title: Peek
 next:
   url: '/docs/configuration/spacing-settings'
   title: Spacing Settings
