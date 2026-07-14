@@ -105,31 +105,6 @@ also temporarily hide it by clicking the "X" button, though it will reappear whe
 
 ----
 
-### Peek & Edit Definition
-
-The **Peek & Edit Definition** feature allows you to view and edit code definitions in a popup or inline editor, without having to leave
-your current file. This is a powerful tool for maintaining focus and exploring complex codebases.
-
-#### Peek & Edit Definition (Popup)
-
-This action opens a sleek, editable popup containing the definition of the symbol under the caret. You can make quick changes directly
-within the popup and save them instantly.
-
-#### Peek & Edit Definition (Inline)
-
-Similar to the popup, this action embeds an editor directly within your current file, right below the line where the symbol is used. This
-provides an even more integrated experience, allowing you to see the definition in its usage context.
-
-#### Inline Code Configuration
-
-You can customize the appearance and behavior of the inline editors in `Settings > Appearance & Behavior > Material Theme > Peek`.
-Options include:
-
-- **Rounded Borders**: Enable or disable rounded borders for the inline editor.
-- **Double-Escape to Close**: Quickly close all open inline editors by pressing the `Escape` key twice.
-
-----
-
 ### Overlays
 
 The Material Theme UI follows Material Design principles, one of which is the use of overlays to create a sense of depth and hierarchy. This
