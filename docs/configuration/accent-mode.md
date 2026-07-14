@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/accents'
   title: Accents
 next:
-  url: '/docs/configuration/tab-settings'
-  title: Tab Settings
+  url: '/docs/configuration/peek'
+  title: Peek
 ---
 
 Accent Mode allows you to emphasize specific UI components by applying the accent color more prominently throughout the IDE.
