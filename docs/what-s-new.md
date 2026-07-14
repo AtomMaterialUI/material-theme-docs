@@ -21,6 +21,15 @@ We've added six new themes to the collection:
 - **Horizon & Horizon Bright**: Reddish soothing themes with a warm and refined color palette.
 - **Omni**: A dusk theme with vibrant colors, ported from the theme of the same name.
 
+<div class="masonry" markdown="0">
+{% include figure.html content="/themes/cobalt2.png" caption="Cobalt2 Theme" %}
+{% include figure.html content="/themes/prism.png" caption="Prism Theme" %}
+{% include figure.html content="/themes/prism_light.png" caption="Prism Light Theme" %}
+{% include figure.html content="/themes/horizon.png" caption="Horizon Theme" %}
+{% include figure.html content="/themes/horizon_bright.png" caption="Horizon Bright Theme" %}
+{% include figure.html content="/themes/omni.png" caption="Omni Theme" %}
+</div>
+
 ### Peek
 
 Introducing **Peek & Edit Definition**, a new way to explore and modify your code without losing context. Inspired by the VSCode feature of
@@ -31,6 +40,12 @@ the appearance and behavior of the inline editor, including rounded borders and 
   files.
 - **Peek & Edit Definition (Inline)**: Embeds the definition directly within your editor for a truly seamless experience.
 
+{% include figure.html content="/screens/peek/popupPeek.png" caption="Peek as a Popup" %}
+
+{% include figure.html content="/screens/peek/inlinePeek.png" caption="Peek Inline" %}
+
+{% include figure.html content="/screens/peek/customColorsPeek.png" caption="Custom Colors" %}
+
 **Note**: This feature is currently in beta and free for everyone, but in the future it will be only available in the Premium Plan.
 {:class='card-panel warn'}
 
@@ -40,6 +55,8 @@ We've removed the plethora of **Accent Color Actions** and replaced them with a 
 of available swatches in a modernized, handy popup. This allows you for a quick and easy way to change your accent color without navigating
 through multiple menus.
 
+{% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
+
 In addition, we've added a few more **predefined accent colors** to the list, such as **Aqua**, **Sand**, **Salmon** among others.
 
 ### Color Scheme Overrides
@@ -47,8 +64,7 @@ In addition, we've added a few more **predefined accent colors** to the list, su
 Thanks to the JetBrains Marketplace, you can download hundreds of themes and color schemes from a variety of sources. However, sometimes the
 color schemes have contrast issues, wrong colors, or simply don't match the overall appearance. JetBrains IDEs already allow you to override
 the colors of a color scheme. However, you can only override one scheme at a time, and if you have lots of color schemes, this can become
-easily
-tedious and not worth the hassle.
+easily tedious and not worth the hassle.
 
 As such, we've added a new settings page for overriding vendor color schemes on the fly, centralizing all the settings in one place. We've
 migrated some of the existing color scheme overrides to this new page, such as the **Global Default Font** and the **Automatically Reset
@@ -57,6 +73,8 @@ Color Scheme**, and added a few more options for better control over your color 
 - **Diff Colors Opacity**: You can now adjust the opacity of diff highlights in the Diff/Merge editor.
 - **Popups and Notifications**: Override the colors of popups and notifications from the Theme itself.
 - **VCS Gutter Indicators**: Replace the VCS gutter indicator colors with the Material schemes' colors.
+
+{% include figure.html content="/screens/colorSchemes/colorSchemeOverrides.png" caption="Color Scheme Overrides" %}
 
 **Note**: It's important to note that these overrides are affecting the color schemes, meaning that once applied, they can't be easily
 reverted unless you reset the color scheme to its default state. Bear that in mind if you're using customized color schemes!
