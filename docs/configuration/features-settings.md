@@ -122,7 +122,7 @@ provides an even more integrated experience, allowing you to see the definition 
 
 #### Inline Code Configuration
 
-You can customize the appearance and behavior of the inline editors in `Settings > Appearance & Behavior > Material Theme > Inline Code`.
+You can customize the appearance and behavior of the inline editors in `Settings > Appearance & Behavior > Material Theme > Peek`.
 Options include:
 
 - **Rounded Borders**: Enable or disable rounded borders for the inline editor.
