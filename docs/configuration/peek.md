@@ -20,7 +20,7 @@ next:
 Inspired by the VSCode feature of the same name, it enables you to peek at definitions, make quick edits, and navigate your codebase more
 efficiently, all within the same editor window.
 
-This feature is currently in beta and free for everyone. In the future, it will be part of the [Premium Plan](/docs/pricing).
+This feature is currently in beta and free for everyone. In the future, it will be part of the Premium Plan.
 {:class='card-panel warn'}
 
 {% include carbonads.html %}
@@ -40,15 +40,24 @@ There are two main ways to use Peek:
 
 ### Peek & Edit Definition (Popup)
 
-This mode opens the definition in a sleek, editable popup window. It's ideal for quick lookups and small edits where you want to keep the
+This mode opens the definition in a separate, editable popup window. It's ideal for quick lookups and small edits where you want to keep the
 main editor fully visible.
+
+To open it, simply place your cursor on a symbol and press `Ctrl + Shift + P` (or your configured shortcut). You can also press
+`Alt + Shift + Click` on the symbol to open the Peek window directly.
 
 {% include figure.html content="/screens/peek/popupPeek.png" caption="Peek as a Popup" %}
 
 ### Peek & Edit Definition (Inline)
 
-In this mode, the definition is embedded directly within your current editor, shifting the surrounding code to make room. This provides a
-truly seamless experience as if the code were part of the same file.
+In this mode, the definition is embedded directly within your current editor, shifting the surrounding code to make room. You can add as
+many inline Peek windows as you like, allowing for a more integrated and seamless editing experience.
+
+To open it, simply place your cursor on a symbol and press `Ctrl + Shift + I` (or your configured shortcut). You can also press
+`Shift + Click` on the symbol to open the Peek window directly.
+
+To close them, you can either click the close button on the Peek window or press `Escape` twice if you have that option enabled in the
+settings.
 
 {% include figure.html content="/screens/peek/inlinePeek.png" caption="Peek Inline" %}
 
@@ -66,15 +75,18 @@ To match the modern aesthetic of the Material Theme, you can enable and adjust r
 
 ### Custom Colors
 
-Peek allows for fine-grained control over its color palette. You can customize the header background, the editor background, and the border
-colors to make the Peek window stand out or blend in.
+Peek allows for fine-grained control over its color palette. You can customize the header background and the border colors to your tastes.
 
 {% include figure.html content="/screens/peek/customColorsPeek.png" caption="Custom Colors" %}
 
 ### Padding and Layout
 
-Adjust the internal padding and line count of the Peek window to ensure it shows exactly as much information as you need without being
-intrusive.
+The **Min Lines** and **Max Lines** settings let you control the size of the popup by specifying the minimum and maximum number of lines
+displayed. You can adjust these values to ensure that the Peek window fits your workflow, whether you prefer a compact view or a more
+spacious layout.
+
+The **Padding** setting determines the space between the content and the edges of the Peek window, allowing you to create a more comfortable
+reading experience.
 
 {% include figure.html content="/screens/peek/customLinesPeek.png" caption="Padding and Layout Settings" %}
 
@@ -84,5 +96,5 @@ intrusive.
 
 ### Double Escape to Close
 
-For a faster workflow, you can enable the option to close the Peek window by pressing `Escape` twice. This allows you to quickly return to
-your main editor after you've finished peeking.
+By default, you can close the Peek window by pressing `Escape` twice. However if you prefer to close it manually, you can disable this
+option in the settings.
