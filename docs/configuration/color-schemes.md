@@ -124,6 +124,20 @@ look and feel across the IDE.
 
 {% include figure.html content="/screens/colorSchemes/updatedPopupColor.png" caption="Updated Popup Colors" %}
 
+### Override Accent
+
+This section allows you to automatically align certain color scheme properties with the current **Accent Color**. This makes sure that your
+accent color changes are reflected to the color scheme as well.
+
+The following properties can be toggled:
+
+- **Override Scrollbar Thumb**: Align the scrollbar thumb color (and hover color) with the accent color.
+- **Override Caret Color**: Align the editor caret color with the accent color.
+- **Override Hyperlink**: Align the hyperlink color with the accent color.
+- **Override Underline Tab**: Align the underline tab color (and inactive color) with the accent color.
+
+{% include figure.html content="/screens/colorSchemes/overrideAccents.png" caption="Override Accents" %}
+
 ### Automatically reset color scheme
 
 This option automatically removes all customizations from your color scheme when switching themes. This ensures a clean slate, which is

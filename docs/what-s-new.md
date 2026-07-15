@@ -73,8 +73,11 @@ Color Scheme**, and added a few more options for better control over your color 
 - **Diff Colors Opacity**: You can now adjust the opacity of diff highlights in the Diff/Merge editor.
 - **Popups and Notifications**: Override the colors of popups and notifications from the Theme itself.
 - **VCS Gutter Indicators**: Replace the VCS gutter indicator colors with the Material schemes' colors.
+- **Accent Color Overrides**: Automatically align certain color scheme properties with the current **Accent Color**.
 
 {% include figure.html content="/screens/colorSchemes/colorSchemeOverrides.png" caption="Color Scheme Overrides" %}
+
+{% include figure.html content="/screens/colorSchemes/overrideAccents.png" caption="Override Accents" %}
 
 **Note**: It's important to note that these overrides are affecting the color schemes, meaning that once applied, they can't be easily
 reverted unless you reset the color scheme to its default state. Bear that in mind if you're using customized color schemes!
