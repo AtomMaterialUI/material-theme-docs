@@ -33,6 +33,7 @@ next:
   - **Diff Colors Opacity**: Adjust the opacity of diff highlights in the editor.
   - **Popups and Notifications**: Override the colors of popups and notifications from the theme.
   - **VCS Gutter Colors**: Override the colors of the VCS gutter indicators with the Material ones.
+  - **Override Accent**: Align certain color scheme properties with the current **Accent Color**.
 - **Theme Selector Redone**: Replaced static theme preview screenshots with dynamic SVG previews for better consistency across all themes.
 - New modernized **Plugin Logo**.
 
@@ -40,6 +41,7 @@ next:
 
 - Adjust the project banner's height to prevent it being cut off.
 - Improve window type checks in dialog utilities for overlays in the new 2026.2 build.
+- Fixed the cropping issue in the NuGet Package Manager
 
 ### Other
 
