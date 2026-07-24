@@ -14,6 +14,22 @@ next:
 ---
 
 # Changelog
+
+## 12.1.0
+
+### Features
+
+- **Peek: Custom Width**: Added a new setting to customize the width of the Peek popup.
+- **Peek**: Change the background color and the border color of the Peek popup.
+- **Peek**: Change the default number of lines to `16` and the default shortcut to `Alt+Click` and `Ctrl+Alt+Click`.
+
+### Fixes
+
+- Fix the issue (hopefully) with the **Random Theme Switcher** happening multiple times out of nowhere.
+- Improve the **Omni Theme** colors
+- Improve the **Omni Theme** color scheme colors
+- Add *Overlays* support to the new *Non-Modal Settings*
+
 ----
 
 ## 12.0.0
@@ -26,14 +42,14 @@ next:
 - **New Accent Color Popup**: Replaced the long list of actions for switching accents with a modernized popup for selecting accent colors
   with dynamic previews.
 - **Peek**:
-  - Introduced **Peek (Popup)** and **Peek (Inline)**: Quick code preview and editing capabilities similar to VSCode's Peek feature.
-  - Added configurable settings for Peek, such as **padding**, **header color**, etc..
+    - Introduced **Peek (Popup)** and **Peek (Inline)**: Quick code preview and editing capabilities similar to VSCode's Peek feature.
+    - Added configurable settings for Peek, such as **padding**, **header color**, etc..
 - **Color Scheme Overrides**: New settings page for overriding color scheme colors on the fly, for all themes.
-  - Migrated the **Automatically reset color scheme** and **Global Default Font** to this new page.
-  - **Diff Colors Opacity**: Adjust the opacity of diff highlights in the editor.
-  - **Popups and Notifications**: Override the colors of popups and notifications from the theme.
-  - **VCS Gutter Colors**: Override the colors of the VCS gutter indicators with the Material ones.
-  - **Override Accent**: Align certain color scheme properties with the current **Accent Color**.
+    - Migrated the **Automatically reset color scheme** and **Global Default Font** to this new page.
+    - **Diff Colors Opacity**: Adjust the opacity of diff highlights in the editor.
+    - **Popups and Notifications**: Override the colors of popups and notifications from the theme.
+    - **VCS Gutter Colors**: Override the colors of the VCS gutter indicators with the Material ones.
+    - **Override Accent**: Align certain color scheme properties with the current **Accent Color**.
 - **Theme Selector Redone**: Replaced static theme preview screenshots with dynamic SVG previews for better consistency across all themes.
 - New modernized **Plugin Logo**.
 
@@ -55,9 +71,9 @@ next:
 
 - New Setting: **Tab Glow** (premium): adds a glow effect under the tabs.
 - Reorganization of the **Material Theme UI Toolbar**:
-  - Categorize actions under their own section (_Tabs_, _Features_, etc)
-  - Adding most of the settings toggles
-  - Adding toggles to switch the current **Material Style**
+    - Categorize actions under their own section (_Tabs_, _Features_, etc)
+    - Adding most of the settings toggles
+    - Adding toggles to switch the current **Material Style**
 
 ### Fixes
 
@@ -119,13 +135,13 @@ next:
 - **Default Contrast Mode**: The **Contrast Mode** is now enabled by default to provide a generally better looking experience.
 - **Material 3 Style**: The **Material 3 Style** is now available by default, replacing the now outdated **Material Theme** (_Material 2_)
   Style.
-  - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look and feel.
+    - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look and feel.
 - **Floating Action Button (FAB)**: Introduced FAB support with customizable action groups, drag-and-drop, and position persistence.
 - **Theme Ignores Configuration**: New interface for managing and configuring native theme ignores.
 - **Enhanced UI Customization**:
-  - New settings for **Custom Button Radius** and personalization of UI component borders.
-  - Improved **Rounded Tabs** with additional customization options and controls.
-  - Support for **Google Sans** font across the UI.
+    - New settings for **Custom Button Radius** and personalization of UI component borders.
+    - Improved **Rounded Tabs** with additional customization options and controls.
+    - Support for **Google Sans** font across the UI.
 - **Spacing Settings Refinements**: Adds enhanced customization options for spacing settings.
 - **Database Integration**: Added support for database table settings and plugin integration.
 - **Current Look and Feel Properties**: New Settings page to visualize the current theme's colors.
@@ -164,8 +180,8 @@ next:
 ### Features
 
 - New Setting: **Customize Search Everywhere**! (Free feature)
-  - Make the Search Everywhere larger, in accordance with Material Style.
-  - Premium Users can customize the padding and the font size delta.
+    - Make the Search Everywhere larger, in accordance with Material Style.
+    - Premium Users can customize the padding and the font size delta.
 - **Enable Tab Customization** setting: Allows disabling the customization of tabs altogether.
 
 ### Fixes
@@ -210,14 +226,14 @@ next:
 ### Features
 
 - Improve **Islands** layout to follow the official guidelines:
-  - Main Window background is now merged with the stripes and status bar colors
-  - The Tabbed Pane is now using the same colors as the tool windows
-  - Inherit the **Main Window Gradient** when the Title Bar, Tool Windows and Status Bar are not colorized.
+    - Main Window background is now merged with the stripes and status bar colors
+    - The Tabbed Pane is now using the same colors as the tool windows
+    - Inherit the **Main Window Gradient** when the Title Bar, Tool Windows and Status Bar are not colorized.
 - Add more settings to the **Islands Layout**:
-  - **Contrast Mode**: Make the background color lighter, to differentiate it from the tool windows and the editor.
-  - **Custom Background Color**: Specify your own background color
-  - **Border**: Add a slight border on the islands
-  - **Custom Border Color**: Specify your own border color
+    - **Contrast Mode**: Make the background color lighter, to differentiate it from the tool windows and the editor.
+    - **Custom Background Color**: Specify your own background color
+    - **Border**: Add a slight border on the islands
+    - **Custom Border Color**: Specify your own border color
 - Better integration with the **Project Title Frame**
 
 ## 10.6.0
@@ -233,8 +249,8 @@ next:
 ### Features
 
 - New Options for the **Project Title Frame**:
-  - Customize Width and Height of the Stripe
-  - Customize Font and Font Size
+    - Customize Width and Height of the Stripe
+    - Customize Font and Font Size
 - New Macro: `{fileIcon}`: now you can display the file icon in the _Project Title Frame_.
 - Use the native Islands background for the *Application Frame* when all title options are off.
 - Hide tool window borders when the *Islands* mode is enabled
@@ -320,10 +336,10 @@ next:
 ### Features
 
 - Enhanced **Theme Randomizer**: Improved theme selection with a shuffle functionality that:
-  - Prevents the same theme from appearing consecutively
-  - Considers theme weights for frequency of appearance
-  - Displays upcoming themes in the tool window
-  - Adds next/previous/shuffle theme buttons for manual navigation
+    - Prevents the same theme from appearing consecutively
+    - Considers theme weights for frequency of appearance
+    - Displays upcoming themes in the tool window
+    - Adds next/previous/shuffle theme buttons for manual navigation
 
 ### Fixes
 
@@ -436,8 +452,7 @@ next:
 
 ### Features
 
-- New *UI Component* setting: **Use Original Tool Window Hover Buttons**. Enable it to restore the original look of the
-  Tool Window Buttons.
+- New *UI Component* setting: **Use Original Tool Window Hover Buttons**. Enable it to restore the original look of the Tool Window Buttons.
 - **Java Additions**: Add `null` and `final` additions
 
 ### Fixes
@@ -445,8 +460,7 @@ next:
 - Refactor the **Theme Selector** to improve performance and limit freezes
 - Fix the issue where buttons become spaced out when changing the **Custom Header Height** setting.
 - Adds back the _Selected Tool Window indicator_.
-- Fix the issue where the **Arrows Style** setting was disabled if the Atom Material Icons plugin was installed but
-  disabled.
+- Fix the issue where the **Arrows Style** setting was disabled if the Atom Material Icons plugin was installed but disabled.
 - Fix issue with large buttons
 - Fix issue with Toolbar icons unavailable on the free plan
 - Fix issue with File Color Gray
@@ -505,16 +519,16 @@ next:
 - **Project-tree indicators**: Ability to set a gradient instead of a single color. (__Premium__)
 - **Arrows Style**: Customize the look of the arrows in trees (only if the _Atom Material Plugin_ is not installed, in which case it is
   controlled by the plugin). Styles:
-  - Material (chevrons)
-  - Darcula (triangles)
-  - Plus-Minus (+/-)
-  - Arrows (→)
-  - Circles (circles with arrows)
-  - None
+    - Material (chevrons)
+    - Darcula (triangles)
+    - Plus-Minus (+/-)
+    - Arrows (→)
+    - Circles (circles with arrows)
+    - None
 - **Title Bar** (previously **Project Frame**): Ability to colorize the **Left Toolbar**, **Right Toolbar** and **Status Bar**! (__Premium
   __)
 - **Title Bar Widget**: The **Project Frame** widget can now be added to the New UI's __Title Bar__!
-  - You can also switch between presets to display.
+    - You can also switch between presets to display.
 - **UI Components**: Round notifications (__Premium__)
 - **UI Components**: Borderless mode (__Premium__)
 - Add back the icon for **Intentions**
@@ -817,16 +831,14 @@ next:
 
 ### Fixes
 
-- Project Tree: Implement Material Trees to allow customization such as the _Project Tree Indicator_ to remain when not
-  in focus.
+- Project Tree: Implement Material Trees to allow customization such as the _Project Tree Indicator_ to remain when not in focus.
 - Themes: Make the Tree Color opaque in all themes to prevent selection artifacts.
 - Wizard: Prevent Freeze when skipping defaults
 - Text Fields: Do not add the custom border if it goes under a certain size (such as _Docker Add Network Panel_)
-- Language Additions: Set annotations' icon and description to inform people they are not errors but simple annotations
-  used to paint language additions.
+- Language Additions: Set annotations' icon and description to inform people they are not errors but simple annotations used to paint
+  language additions.
 - Color Schemes: Change the "notification banners" color to the same color as the notification popups.
-- Focus Mode: Fix the error when invoking the *Add Method* action in some instances when the method would "expand" the
-  document.
+- Focus Mode: Fix the error when invoking the *Add Method* action in some instances when the method would "expand" the document.
 
 ## 7.13.1
 
@@ -839,18 +851,18 @@ next:
 ### Features
 
 - Refactor the Focus Mode to be much simpler, thus preventing the IDE freezes. Supports:
-  - JSON
-  - HTML
-  - XML
-  - CSS
-  - Java
-  - Sass/SCSS (with Sass plugin)
-  - Kotlin (with Kotlin plugin or IntelliJ IDEA)
-  - PHP (with PHP Plugin or PHPStorm)
-  - Python (with Python Plugin or PyCharm)
-  - JavaScript and TypeScript (with TypeScript plugin or WebStorm)
-  - Ruby (with Ruby plugin or RubyMine)
-  - Go (with Go plugin or GoLand)
+    - JSON
+    - HTML
+    - XML
+    - CSS
+    - Java
+    - Sass/SCSS (with Sass plugin)
+    - Kotlin (with Kotlin plugin or IntelliJ IDEA)
+    - PHP (with PHP Plugin or PHPStorm)
+    - Python (with Python Plugin or PyCharm)
+    - JavaScript and TypeScript (with TypeScript plugin or WebStorm)
+    - Ruby (with Ruby plugin or RubyMine)
+    - Go (with Go plugin or GoLand)
 
 ### Fixes
 
@@ -869,8 +881,8 @@ next:
 
 - New Setting: **Tab Separators**: Add separators between tabs
 - New Setting: **Focus Mode**. Focuses the current part of the code by making other parts dimmer.
-  - The unfocused color is automatically taken from the current theme's disabled color
-  - You can select your own color as well
+    - The unfocused color is automatically taken from the current theme's disabled color
+    - You can select your own color as well
 - Added more settings to the Wizard: Tab Font, Tree Font, UI Font, Tab Animations, Tab Separators, Focus Mode...
 - Send the current theme to the "What's New" page URL, to display the page with the current theme active.
 
@@ -891,8 +903,8 @@ next:
 
 ### Features
 
-- **Language Additions**: Remove the *Enforce Highlighting* setting, instead use a *Severity Provider* to tackle the
-  enforced highlighting without using the
+- **Language Additions**: Remove the *Enforce Highlighting* setting, instead use a *Severity Provider* to tackle the enforced highlighting
+  without using the
   "_Weak Warning_" workaround!
 - **Custom Tree Font**: Found a workaround to prevent having to **restart the IDE!!!**
 - **Color schemes**: Add _Ruby_ and _Go_ Additions specific colors
@@ -901,10 +913,10 @@ next:
 ### Fixes
 
 - **License Checking**: Refactor the whole license checking to better support all different plans:
-  - Free Plan
-  - Downgraded to free
-  - Freemium with extra plugins
-  - Premium
+    - Free Plan
+    - Downgraded to free
+    - Freemium with extra plugins
+    - Premium
 - **Wizard**: Improved the Wizard UI a bit, fixing small UI artifacts that can be found.
 - **Custom Theme**: Fix some UI issues
 - **Project Based Settings**: Fix Settings being shared between projects instead of being separate
@@ -914,28 +926,28 @@ next:
 ### Features
 
 - New Language Addition: **Go**!
-  - Functions:
-    - `main`
-    - `make`
-    - `len`, `cap`
-    - `Print`, `Println`, `Printf`
-  - Keywords:
-    - `import`, `package`
-    - `func`
-    - `if`, `else`
-    - `switch`, `case`, `default`, `fallthrough`
-    - `for`, `range`, `map`
-    - `return`
-    - `var`, `const`
-    - `type`
-    - `defer`
-    - `struct`
-    - `interface`
-    - `go`, `select`
-    - `chan`
-  - Primitives:
-    - `nil`
-    - `true`, `false`
+    - Functions:
+        - `main`
+        - `make`
+        - `len`, `cap`
+        - `Print`, `Println`, `Printf`
+    - Keywords:
+        - `import`, `package`
+        - `func`
+        - `if`, `else`
+        - `switch`, `case`, `default`, `fallthrough`
+        - `for`, `range`, `map`
+        - `return`
+        - `var`, `const`
+        - `type`
+        - `defer`
+        - `struct`
+        - `interface`
+        - `go`, `select`
+        - `chan`
+    - Primitives:
+        - `nil`
+        - `true`, `false`
 
 ### Fixes
 
@@ -963,9 +975,8 @@ next:
 
 - Fix NPE on the Title Frame
 - Remove deprecated color scheme keys about _Markdown Navigator_
-- Added newer color keys: Run Toolbar Widget, PackageSearch, Search Everywhere Settings, Editor Tooltip Foreground, Main
-  menu foreground, Debugger, Main Menu,
-  Version Control Commit, Editor Pane Splitter, Version Control Marker, Banner Warning
+- Added newer color keys: Run Toolbar Widget, PackageSearch, Search Everywhere Settings, Editor Tooltip Foreground, Main menu foreground,
+  Debugger, Main Menu, Version Control Commit, Editor Pane Splitter, Version Control Marker, Banner Warning
 - Set Toolbar widgets foreground color to selected foreground
 - Fix Colorize Title Bar on Linux
 
@@ -992,23 +1003,23 @@ next:
 ### Features
 
 - New Setting: **Colorize Title Bar**
-  - This is an extension of the "_Project Frame_" that colorizes the *New UI's Title Bar* per project.
-  - This setting can be enabled alongside or independently of the Project Frame
-  - Supports per-project settings
-  - Can only be activated for the New UI!
+    - This is an extension of the "_Project Frame_" that colorizes the *New UI's Title Bar* per project.
+    - This setting can be enabled alongside or independently of the Project Frame
+    - Supports per-project settings
+    - Can only be activated for the New UI!
 
 ### Fixes
 
 - Integrate changes from 7.5.2 to 7.5.4
-  - Recommended Plugins
-  - Project Switcher Widget
-  - Custom Theme's Color Scheme
+    - Recommended Plugins
+    - Project Switcher Widget
+    - Custom Theme's Color Scheme
 - Other bug fixes related to the New UI Plugin
 
 ### Other
 
 - Remove the **Experimental UI** in favor of the **New UI Plugin**
-  - Note: If you didn't register for the New UI EAP, you can still find it in the chat.
+    - Note: If you didn't register for the New UI EAP, you can still find it in the chat.
 
 ## 7.6.2
 
@@ -1048,15 +1059,15 @@ next:
 ### Features
 
 - New Settings Section: **Recommended Plugins**: Display a list of curated plugins and themes.
-  - **Recommended plugins**: Hand-picked list of great plugins to use alongside the Material Theme UI
-  - **Material Plugins**: These are the standalone paid plugins that you can buy separately instead of the main plugin.
-  - **Great Themes**: Curated list of amazing themes that can be sideloaded with the Material Theme UI.
+    - **Recommended plugins**: Hand-picked list of great plugins to use alongside the Material Theme UI
+    - **Material Plugins**: These are the standalone paid plugins that you can buy separately instead of the main plugin.
+    - **Great Themes**: Curated list of amazing themes that can be sideloaded with the Material Theme UI.
 - Support for **Material Bundles**:
-  - [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast)
-  - [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme)
-  - [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame)
-  - [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
-  - [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
+    - [Material Theme High Contrast](https://plugins.jetbrains.com/plugin/17456-material-theme-ui-high-contrast)
+    - [Material Theme Custom Theme](https://plugins.jetbrains.com/plugin/19308-material-theme-ui-custom-theme)
+    - [Material Theme Project Frame](https://plugins.jetbrains.com/plugin/19310-material-theme-ui-project-frame)
+    - [Material Theme Language Additions](https://plugins.jetbrains.com/plugin/19309-material-theme-ui-language-additions)
+    - [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras)
 
 ## 7.5.3
 
@@ -1132,9 +1143,9 @@ next:
 ### Features
 
 - Rewrite of the _Material Theme Widgets_, to better blend with other widgets
-  - Displays the current theme name and icon, and the current accent color
-  - Open the theme selection menu when clicking on the theme
-  - Open the accent selection menu when clicking on the accent icon
+    - Displays the current theme name and icon, and the current accent color
+    - Open the theme selection menu when clicking on the theme
+    - Open the accent selection menu when clicking on the accent icon
 - Deprecation of the legacy _Material Theme widget_
 
 ### Fixes
@@ -1154,8 +1165,8 @@ next:
 
 ### Fixes
 
-- Migrated the **Experimental UI** to a new setting, to prevent it from having to be enabled for people using the
-  deprecated **Large Tool Windows** setting.
+- Migrated the **Experimental UI** to a new setting, to prevent it from having to be enabled for people using the deprecated **Large Tool
+  Windows** setting.
 
 ## 7.3.0 - 7.3.1
 
@@ -1229,8 +1240,7 @@ next:
 ### Fixes
 
 - Improve the UI of the tag buttons: alignment, close button, color, etc
-- Add exclusions to replacing specific text fields: Plugins pages, New File popup, JFormDesigner inline edit, Prettier
-  options etc
+- Add exclusions to replacing specific text fields: Plugins pages, New File popup, JFormDesigner inline edit, Prettier options etc
 - Fix outlined buttons disabled border color
 - Limit the minimum left and right indent at 4 as it wouldn't work below it.
 - Synthwave color scheme improvements: Kotlin instance field color
@@ -1259,7 +1269,7 @@ next:
 ### Features
 
 - New Setting: **Old Material Design Style**: allows you to go back to the legacy material design style (2016-2022).
-  - You can find it in the *Components* Tab.
+    - You can find it in the *Components* Tab.
 
 ### Fixes
 
@@ -1271,46 +1281,46 @@ next:
 ### Features
 
 - **New Material Design UI!!!**
-  - Text Fields
-  - Password Fields
-  - Number Fields
-  - Search Fields
-  - Text Areas
-  - Buttons
-  - Comboboxes (dropdowns)
-  - Menus
-  - Trees
-  - Lists
-  - Color Pickers
-  - Table Headers
+    - Text Fields
+    - Password Fields
+    - Number Fields
+    - Search Fields
+    - Text Areas
+    - Buttons
+    - Comboboxes (dropdowns)
+    - Menus
+    - Trees
+    - Lists
+    - Color Pickers
+    - Table Headers
 - New Compact Settings
-  - Compact Fields
-  - Custom List Items Height
+    - Compact Fields
+    - Custom List Items Height
 
 ### Fixes
 
 - Refactor and rewrite of all components, including the ones not cited above:
-  - Checkboxes
-  - Radio Buttons
-  - Switches (OnOff)
-  - Sliders
-  - Progress Bars
-  - Tabs
-  - NavBar
-  - Labels
-  - Action Buttons
-  - Separators
+    - Checkboxes
+    - Radio Buttons
+    - Switches (OnOff)
+    - Sliders
+    - Progress Bars
+    - Tabs
+    - NavBar
+    - Labels
+    - Action Buttons
+    - Separators
 
 ## 6.13.0
 
 ### Features
 
 - New Themes:
-  - **Material Forest**
-  - **Material Volcano**
-  - **Material Sky Blue**
-  - **Material Sandy Beach**
-  - **SynthWave '84**
+    - **Material Forest**
+    - **Material Volcano**
+    - **Material Sky Blue**
+    - **Material Sandy Beach**
+    - **SynthWave '84**
 - New Language Addition: **Ruby**
 - Reorganization of the color themes
 
@@ -1332,15 +1342,13 @@ next:
 
 ### Fixes
 
-- Fix Premium features not being loaded at
-  start [#1850](https://github.com/ChrisRM/material-theme-jetbrains/issues/1850)
+- Fix Premium features not being loaded at start [#1850](https://github.com/ChrisRM/material-theme-jetbrains/issues/1850)
 - Fix Custom Theme not being applied at start [#41](https://github.com/mallowigi/material-theme-issues/issues/41)
 - Fix issue with Buttons keeping the color of the previous theme when switching
   themes. [#1848](https://github.com/ChrisRM/material-theme-jetbrains/issues/1848)
 - Fix _Enforce Highlighting_ Slider clipping [#43](https://github.com/mallowigi/material-theme-issues/issues/43)
 - Fix _Overlay_ staying on Magento New Module [#26](https://github.com/mallowigi/material-theme-issues/issues/26)
-- Fix _Language Additions_ being added in comments in
-  JS/TS [#44](https://github.com/mallowigi/material-theme-issues/issues/44)
+- Fix _Language Additions_ being added in comments in JS/TS [#44](https://github.com/mallowigi/material-theme-issues/issues/44)
 - Fix _Custom Tree Font_ not being loaded at start [#45](https://github.com/mallowigi/material-theme-issues/issues/45)
 - Fix loading error in JetBrains Gateway [#38](https://github.com/mallowigi/material-theme-issues/issues/38)
 - Support for new color keys for the diagrams [#1847](https://github.com/ChrisRM/material-theme-jetbrains/issues/1847)
@@ -1370,10 +1378,10 @@ next:
 
 - Fix Plugin not loading Premium features at start
 - Fix Large Tool Windows not working in latest EAP/RC
-- Fix Material Oceanic scrollbars' colors (you need to reset the color
-  scheme) ([#34](https://github.com/mallowigi/material-theme-issues/issues/34))
-- Fix Color Scheme Font resetted to Default Font even when the checkbox is
-  unchecked ([#37](https://github.com/mallowigi/material-theme-issues/issues/37))
+- Fix Material Oceanic scrollbars' colors (you need to reset the color scheme)
+  ([#34](https://github.com/mallowigi/material-theme-issues/issues/34))
+- Fix Color Scheme Font resetted to Default Font even when the checkbox is unchecked
+  ([#37](https://github.com/mallowigi/material-theme-issues/issues/37))
 - Fix Fatal Error when using Darcula Theme ([#33](https://github.com/mallowigi/material-theme-issues/issues/33))
 
 ## 6.10.0
@@ -1407,10 +1415,10 @@ next:
 
 - Make **External Themes** as a dynamic extension point
 - Add more popups showing an **overlay**:
-  - Recent Files
-  - Quick Switchers
-  - Branch Chooser
-  - and others
+    - Recent Files
+    - Quick Switchers
+    - Branch Chooser
+    - and others
 
 ### Fixes
 
@@ -1488,10 +1496,10 @@ next:
 
 - Add **Project Icon** to the **Project Frame**
 - Added themed [XPathView Plugin](https://plugins.jetbrains.com/plugin/12478-xpathview--xslt) configurations.
-- **Language Additions**: Fix back `console`, `window`, `global` not being colored
-  correctly. ([#1780](https://github.com/ChrisRM/material-theme-jetbrains/issues/1780))
-- Refactor **File Status Colors**, allowing to restore the file status colors when resetting the color
-  scheme ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
+- **Language Additions**: Fix back `console`, `window`, `global` not being colored correctly.
+  ([#1780](https://github.com/ChrisRM/material-theme-jetbrains/issues/1780))
+- Refactor **File Status Colors**, allowing to restore the file status colors when resetting the color scheme
+  ([#1732](https://github.com/ChrisRM/material-theme-jetbrains/issues/1732))
 - Fix [#1773](https://github.com/ChrisRM/material-theme-jetbrains/issues/1773)
 - Fix [#1764](https://github.com/ChrisRM/material-theme-jetbrains/issues/1764)
 - Fix [#1776](https://github.com/ChrisRM/material-theme-jetbrains/issues/1776)
@@ -1502,16 +1510,16 @@ next:
 ### Features
 
 - New Set of Settings for the **Project Frame**:
-  - Show Project Name in the Frame
-  - Add the ability to specify a custom text
+    - Show Project Name in the Frame
+    - Add the ability to specify a custom text
 - Finally, the so-long waited **Project Settings**. Now you can have specific settings on a per-project basis!
 - Settings include:
-  - Active Tab Color and Thickness
-  - Uppercase bold tabs
-  - Highlight Position
-  - Project Frame's Color
-  - Project Frame's Project Name display
-  - Project Frame's Custom Text
+    - Active Tab Color and Thickness
+    - Uppercase bold tabs
+    - Highlight Position
+    - Project Frame's Color
+    - Project Frame's Project Name display
+    - Project Frame's Custom Text
 
 ### Fixes
 
@@ -1527,10 +1535,9 @@ next:
 
 ### Features
 
-- Add new setting, **Inverted Selection Color**, to give a choice between the normal selection color and inverted
-  selection color for the Autocompletion Popup.
-- At last, added the Material Theme Settings to the **Sync Settings**. Now your settings and custom themes can be
-  synced!
+- Add new setting, **Inverted Selection Color**, to give a choice between the normal selection color and inverted selection color for the
+  Autocompletion Popup.
+- At last, added the Material Theme Settings to the **Sync Settings**. Now your settings and custom themes can be synced!
 - Add a new action to display the **What's new Page** in the toolbar.
 
 ### Fixes
@@ -1551,8 +1558,7 @@ next:
 - Add setting to toggle the display of the _What's New_ page on each update.
 - Set Autocomplete selected item to the same color as the background, and the list to the secondary color background.
 - Remove Opacity for selected background color
-- Improve contrast for some colors for themes: _Arc Dark, GitHub, GitHub Dark, Night Owl, Palenight, Lighter, Deep
-  Ocean_
+- Improve contrast for some colors for themes: _Arc Dark, GitHub, GitHub Dark, Night Owl, Palenight, Lighter, Deep Ocean_
 - Remove border color for striped tool windows
 
 ### Fixes
@@ -1626,31 +1632,31 @@ next:
 - New feature: **Striped Tool Windows**
 - New Color Scheme configuration screen: **Scrollbars**.
 - New language additions for _JavaScript_:
-  - Globals: `window`, `document`, `global`
-  - Primitives: `NaN`
-  - Keywords:
-    - `abstract`, `class`, `extends`, `implements`
-    - `async`, `await`
-    - `constructor`
-    - `static`
-    - `get`, `set`
-    - `if`, `else`, `for`, `while`, `do`
-    - `in`, `of`, `instanceof`, `typeof`, `as`
-    - `default`
-    - `new`, `throw`
-    - `return`, `yield`
-    - `try`, `catch`, `finally`
-  - Other: `prototype`
+    - Globals: `window`, `document`, `global`
+    - Primitives: `NaN`
+    - Keywords:
+        - `abstract`, `class`, `extends`, `implements`
+        - `async`, `await`
+        - `constructor`
+        - `static`
+        - `get`, `set`
+        - `if`, `else`, `for`, `while`, `do`
+        - `in`, `of`, `instanceof`, `typeof`, `as`
+        - `default`
+        - `new`, `throw`
+        - `return`, `yield`
+        - `try`, `catch`, `finally`
+    - Other: `prototype`
 - New language additions for _TypeScript_:
-  - Keywords:
-    - `declare`, `namespace`
-    - `enum`
-    - `keyof`
-    - `readonly`
-    - `type`, `interface`, `alias`
-  - Types:
-    - `any`, `unknown`, `never`
-    - `string`, `boolean`, `number`, `object`, `symbol`, `bigint`, `void`
+    - Keywords:
+        - `declare`, `namespace`
+        - `enum`
+        - `keyof`
+        - `readonly`
+        - `type`, `interface`, `alias`
+    - Types:
+        - `any`, `unknown`, `never`
+        - `string`, `boolean`, `number`, `object`, `symbol`, `bigint`, `void`
 - **Enforce highlighting*** setting to enforce language additions by making them look like weak warnings
 
 ### Fixes
@@ -1720,9 +1726,9 @@ next:
 ### Features
 
 - Support for the new *Freemium* system:
-  - Themes, Color Schemes and UI Components are **FREE**
-  - Custom Themes, External Themes, Tweaks and Customization Settings are **PAID**
-  - Please note that future themes will also only be available for Premium users.
+    - Themes, Color Schemes and UI Components are **FREE**
+    - Custom Themes, External Themes, Tweaks and Customization Settings are **PAID**
+    - Please note that future themes will also only be available for Premium users.
 - New action: **Activate License**
 
 ### Fixes
@@ -1832,23 +1838,23 @@ next:
 ### Features
 
 - New Language Addition: **Kotlin**!
-  - Keywords: `private`, `public`, `protected`, `internal`
-  - Keywords: `sealed`, `open`, `override`
-  - Keywords: `object`, `companion`
-  - Keywords: `import`, `package`
-  - Keywords: `data`
-  - Keywords: `operator`, `infix`
-  - Keywords: `this`, `super`
-  - Primitives: `null`, `Unit`
-  - Primitives: `true`, `false`
+    - Keywords: `private`, `public`, `protected`, `internal`
+    - Keywords: `sealed`, `open`, `override`
+    - Keywords: `object`, `companion`
+    - Keywords: `import`, `package`
+    - Keywords: `data`
+    - Keywords: `operator`, `infix`
+    - Keywords: `this`, `super`
+    - Primitives: `null`, `Unit`
+    - Primitives: `true`, `false`
 - New settings for PHP Additions:
-  - `echo`, `true`, `false`, `null`, `exit`, `die`
+    - `echo`, `true`, `false`, `null`, `exit`, `die`
 - New settings for TypeScript additions:
-  - `declare`, `type`, `alias`, `true`, `false`
+    - `declare`, `type`, `alias`, `true`, `false`
 - New settings for JavaScript additions:
-  - `true` and `false`
+    - `true` and `false`
 - New settings for Java additions:
-  - `true` and `false`
+    - `true` and `false`
 
 ### Other
 
@@ -1903,18 +1909,18 @@ next:
 ### Features
 
 - Built-in support for **native themes**! Supports `Light`, `Darcula`, `High Contrast` and user-defined themes!
-  - Please note that this is a feature in its first steps, so please report any bugs you can find!
+    - Please note that this is a feature in its first steps, so please report any bugs you can find!
 - New feature: **Material Wallpapers**! Now themes come with their own empty frame wallpaper!
 
 ### Removals
 
 - Deprecation of the following features:
-  - _Material Design Components_ -- This is replaced by native themes support
-  - _Material Theme_ -- This is replaced by native themes support
-  - _Material Icons (UI, File and PSI Icons)_ -- This has been moved to
-    the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
-  - _Arrow Styles_ -- This has been moved to
-    the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
+    - _Material Design Components_ -- This is replaced by native themes support
+    - _Material Theme_ -- This is replaced by native themes support
+    - _Material Icons (UI, File and PSI Icons)_ -- This has been moved to
+      the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
+    - _Arrow Styles_ -- This has been moved to
+      the [Atom Material Icons Plugin](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
 
 For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
@@ -1987,11 +1993,10 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 ## 4.9.0
 
 - Rework color schemes, fixing inconsistencies and new keys taking color from the default schemes.
-  - Affected: Java, Kotlin, JavaScript, Groovy, TypeScript, Haml, CSS, Markdown, Python, Go, Ruby
-  - Affected: Debugger, Diff and Merge, Unused, Hyperlinks, Code Lens, Tabs and Scrollbars
-- New Icons and Folder Icons: Cargo, codecov, codeowners, cypress, gridsome, netlify, pnpm, posthtml, riot, sapper, uml,
-  v, vala, events folder, gulp folder,
-  json folder, netlify folder, relay folder
+    - Affected: Java, Kotlin, JavaScript, Groovy, TypeScript, Haml, CSS, Markdown, Python, Go, Ruby
+    - Affected: Debugger, Diff and Merge, Unused, Hyperlinks, Code Lens, Tabs and Scrollbars
+- New Icons and Folder Icons: Cargo, codecov, codeowners, cypress, gridsome, netlify, pnpm, posthtml, riot, sapper, uml, v, vala, events
+  folder, gulp folder, json folder, netlify folder, relay folder
 
 ## 4.8.0
 
@@ -2045,13 +2050,12 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 - Fix Double Title Bar in FullScreen mode
 - New File Icons:
-  - edge, autoit, azure, bithound, blink, bucklescript, buildkite, certificate, commitlint, credits, history
-  - graphcool, helm, istanbul, key, kivy, lib, livescript, markojs, mdx, merlin, mint, moonscript, mxml, nest
-  - houdini, now, nunjucks, prisma, processing, restql, san, sequelize, swc, unity, velocity, vm, webassembly, webhint,
-    wepy, yang
+    - edge, autoit, azure, bithound, blink, bucklescript, buildkite, certificate, commitlint, credits, history
+    - graphcool, helm, istanbul, key, kivy, lib, livescript, markojs, mdx, merlin, mint, moonscript, mxml, nest
+    - houdini, now, nunjucks, prisma, processing, restql, san, sequelize, swc, unity, velocity, vm, webassembly, webhint, wepy, yang
 - New Folder Icons:
-  - ci, class, container, content, css, delta, dump, error, examples, flow, helper, modals, maps
-  - pipe, prisma, private, stack, utils, vm
+    - ci, class, container, content, css, delta, dump, error, examples, flow, helper, modals, maps
+    - pipe, prisma, private, stack, utils, vm
 
 ## 4.2.2
 
@@ -2143,11 +2147,11 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 ## 3.9.1
 
 * *New*: Contextual tab positions: When setting a tab position, it depends on the position of the tab pane:
-  * When selecting top, it becomes bottom if the tabs are at the bottom, and same for bottom
-  * When selecting left, it becomes right if the tabs are at the right, and same for left
-  * When selecting topless, it becomes bottomless when tabs are at the bottom
-  * When selecting bottomless, it becomes topless when tabs are at the bottom
-  * Others are unchanged
+    * When selecting top, it becomes bottom if the tabs are at the bottom, and same for bottom
+    * When selecting left, it becomes right if the tabs are at the right, and same for left
+    * When selecting topless, it becomes bottomless when tabs are at the bottom
+    * When selecting bottomless, it becomes topless when tabs are at the bottom
+    * Others are unchanged
 * Fix selection background and matched brace for Solarized themes
 * Fix some bad file associations
 * Fix up theme colors for Atom One Light and Solarized Light
@@ -2182,8 +2186,8 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 - **New**: A new button allowing importing and exporting custom themes!!!
 - **New**: Custom Themes can now accept RGBA values, i.e., **colors with opacity!**
-- **New**: Default accent color (for the "Override accent color") and Excluded Files colors are now customizable in the
-  Custom Theme settings!
+- **New**: Default accent color (for the "Override accent color") and Excluded Files colors are now customizable in the Custom Theme
+  settings!
 - Fix NavBar not applying the background image
 - Fix Icon alignment in buttons
 - More Markdown Navigator icons
@@ -2237,10 +2241,9 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 ## 3.4.0
 
-- Add new setting: **Material PSI Icons**. Replaces the PSI Icons (class, interface, functions…) with Material Icons,
-  inspired by Visual Studio Code.
-- Add new setting: **Tab highlight position**. Available options: Bottom, Top, Left, Right, Left-Right, Top-Bottom, Full
-  and None
+- Add new setting: **Material PSI Icons**. Replaces the PSI Icons (class, interface, functions…) with Material Icons, inspired by Visual
+  Studio Code.
+- Add new setting: **Tab highlight position**. Available options: Bottom, Top, Left, Right, Left-Right, Top-Bottom, Full and None
 - Refactor UI components a bit and introduced MTUI
 - Fix issue where "not inherited members" would not differ from regular members in the Structure Panel
 - Fix rare fatal error at start
@@ -2251,10 +2254,10 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Fix fatal error when deselecting Material Components
 - Change selection color to white for Dracula
 - Deprecate some functions
-- Add more directories: guard, providers, animations, grunt, icons, e2e, custom, rules, screens, storybook, stylus,
-  syntax, security, meta-inf, fixtures, channels, concerns, support, features, fabricators, nyc, reviews
-- Add more files: ANTLR, brainfuck, cobol, delphi, eiffel, fortran, idris, io, j, lerna, postscript, prolog, racket,
-  red, supercollider, scheme, terraform, test-react, turing, toml
+- Add more directories: guard, providers, animations, grunt, icons, e2e, custom, rules, screens, storybook, stylus, syntax, security,
+  meta-inf, fixtures, channels, concerns, support, features, fabricators, nyc, reviews
+- Add more files: ANTLR, brainfuck, cobol, delphi, eiffel, fortran, idris, io, j, lerna, postscript, prolog, racket, red, supercollider,
+  scheme, terraform, test-react, turing, toml
 
 ## 3.2.0
 
@@ -2285,8 +2288,8 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - New theme: **Dracula**!
 - New *Arrow Style*: **Arrows**
 - New component **Material Tabbed Panes**. Working with Tab Options!
-- New folders: api, archive, constants, core, env, functions, generated, hook, job, keys, layouts, meta, notification,
-  packages, posts, serverless, shared
+- New folders: api, archive, constants, core, env, functions, generated, hook, job, keys, layouts, meta, notification, packages, posts,
+  serverless, shared
 - Reworked notifications to be fully expanded!
 - Added some new *Accent Colors*
 - Reworked *Arc Dark Theme* to be darker
@@ -2321,18 +2324,18 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 - Add missing icons and change some icons to better reflect their functionality
 - Add border and padding to Menus
 - 2018.3 new theme properties, allowing to better theme up to now hard coded values:
-  - Menu Border
-  - Separator Border
-  - Progress Bar
-  - Code Style Tabs
-  - Search Everywhere Highlight
-  - New Welcome Screen
-  - Active and inactive headers
-  - Validation Tooltips
-  - Help tooltips
-  - Drag and drop projects in Welcome Screen
-  - Search Everywhere active tab
-  - Project View and Sidepanel borders
+    - Menu Border
+    - Separator Border
+    - Progress Bar
+    - Code Style Tabs
+    - Search Everywhere Highlight
+    - New Welcome Screen
+    - Active and inactive headers
+    - Validation Tooltips
+    - Help tooltips
+    - Drag and drop projects in Welcome Screen
+    - Search Everywhere active tab
+    - Project View and Sidepanel borders
 - New Action to remove Wallpaper
 
 ## 2.10.0
@@ -2342,25 +2345,25 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 ## 2.9.6
 
 - Add new Color Scheme Settings Pages: JS Additions and TS Additions
-  - this/super
-  - var/let/const
-  - debugger
-  - function
-  - null/undefined
-  - import/export/require
-  - public/private/protected
+    - this/super
+    - var/let/const
+    - debugger
+    - function
+    - null/undefined
+    - import/export/require
+    - public/private/protected
 - Add more folder decorations:
-  - android
-  - deploy/aws
-  - ios (xcproject/xcworkspace/xcassets)
-  - middleware/thunks
-  - react-components
-  - server/jobs/requests/sagas
-  - colors/schemes/skins
-  - helpers/utils/tools
-  - pods
-  - download
-  - upload
+    - android
+    - deploy/aws
+    - ios (xcproject/xcworkspace/xcassets)
+    - middleware/thunks
+    - react-components
+    - server/jobs/requests/sagas
+    - colors/schemes/skins
+    - helpers/utils/tools
+    - pods
+    - download
+    - upload
 
 ## 2.9.5.2
 
@@ -2373,16 +2376,16 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 ## 2.9.5
 
-- <strike>Bundle Roboto fonts (named _Roboto Material_) with the plugin fixing the issue with scrambled fonts once and
-  for all (currently disabled)</strike>
+- <strike>Bundle Roboto fonts (named _Roboto Material_) with the plugin fixing the issue with scrambled fonts once and for all (currently
+  disabled)</strike>
 - Fix "Override fonts" not working
 - Add Folder Decorations to open folders
 - Refactor Material Components toggle to allow other features to work when disabled:
-  - Padded Status Bar
-  - Padded Dropdowns
-  - Padded Table Cells
-  - Arrow Styles
-  - List Style Indicator
+    - Padded Status Bar
+    - Padded Dropdowns
+    - Padded Table Cells
+    - Arrow Styles
+    - List Style Indicator
 
 ## 2.9.4
 
@@ -2414,15 +2417,14 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 ## 2.9.0
 
-- Completely refactor the Icon Replacements framework, allowing the plugin to be able to replace even icons from
-  external plugins such as AppCode, Gradle or even custom plugins such as Markdown Navigator and the sort.
+- Completely refactor the Icon Replacements framework, allowing the plugin to be able to replace even icons from external plugins such as
+  AppCode, Gradle or even custom plugins such as Markdown Navigator and the sort.
 - **Replaced all the icons to their SVG equivalent!** (that was hard)
 - Also remade a lot of icons to better reflect Material Design
-- Added new **file icons**: Arduino, Assembly, Authors, Ballerina, Crystal, CSSMap, Dotjs, DTS, Favicon, Firebase,
-  Flash, Gatsby, Gemfile, Po, JSMap, MJML, Nimble, Raml, Razor, Redux Actions/Stores/Reducers, Smarty, Solidity, Sonar,
-  Stencil, Storybook, Wallaby
-- Added new **folder icons**: benchmarks, coverage, controllers, debug, excluded, expo, jinja, less, maven, messages,
-  models, plugin, python, react, redux, routes, scripts, sublime, sync, tasks
+- Added new **file icons**: Arduino, Assembly, Authors, Ballerina, Crystal, CSSMap, Dotjs, DTS, Favicon, Firebase, Flash, Gatsby, Gemfile,
+  Po, JSMap, MJML, Nimble, Raml, Razor, Redux Actions/Stores/Reducers, Smarty, Solidity, Sonar, Stencil, Storybook, Wallaby
+- Added new **folder icons**: benchmarks, coverage, controllers, debug, excluded, expo, jinja, less, maven, messages, models, plugin,
+  python, react, redux, routes, scripts, sublime, sync, tasks
 - Separate the _Material Icons_ setting to _Material UI Icons_ and _Material File Icons_.
 - Fixed Project View border color
 - Fixed **Monokai Pro** colors to better reflect the original theme
@@ -2441,9 +2443,9 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 - Fix <https://github.com/ChrisRM/material-theme-jetbrains/issues/902>
 - Replace _Bold Directories_ option with _Styled directories_:
-  - This option also create a _Directories_ entry inside `Material File Colors` section of the color scheme
-  - This will allow you to style directories in the Project View however you want (currently only supports foreground,
-    bold, italic and underscored effects)
+    - This option also create a _Directories_ entry inside `Material File Colors` section of the color scheme
+    - This will allow you to style directories in the Project View however you want (currently only supports foreground, bold, italic and
+      underscored effects)
 - Improve Deep Ocean colors to look more like the VSC equivalent
 
 ## 2.8.1
@@ -2555,8 +2557,7 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 ## 2.3.3
 
-- This is a quick fix for 182.2757. This fixes critical issues introduced by the latest EAP.
-  There could be other bugs though.
+- This is a quick fix for 182.2757. This fixes critical issues introduced by the latest EAP. There could be other bugs though.
 
 ## 2.3.2
 
@@ -2567,18 +2568,18 @@ For more changelog entries, check <https://material-theme.com/docs/changelog/>
 
 - **NOTE: THIS IS NOT A STABLE RELEASE!**
 - This is a quick fix for MTComboBoxes to get back wide dropdowns.
-- This is not a final fixes since it doesn't display the paddings for some comboboxes (such as Color Scheme), even
-  though it works after selecting another value. This will be investigated further in a next release.
-- This also brings the popup over the dropdown to imitate material design components. This is disabled by the Compact
-  Dropdown settings though
+- This is not a final fixes since it doesn't display the paddings for some comboboxes (such as Color Scheme), even though it works after
+  selecting another value. This will be investigated further in a next release.
+- This also brings the popup over the dropdown to imitate material design components. This is disabled by the Compact Dropdown settings
+  though
 
 ## 2.3
 
 - Major overhaul of the icons: most icons have been converted to svg! Please note though:
-  - I couldn't find the originals of some icons, so some icons are now different or with different colors (sorry JSON…)
-  - Since this is a big update, there might be some further changes to those icons
-  - I decided to keep some original icons made by JetBrains (such as Minimize Tool Window)
-  - Please open issues about icons that you find not suited for their purpose.
+    - I couldn't find the originals of some icons, so some icons are now different or with different colors (sorry JSON…)
+    - Since this is a big update, there might be some further changes to those icons
+    - I decided to keep some original icons made by JetBrains (such as Minimize Tool Window)
+    - Please open issues about icons that you find not suited for their purpose.
 - Set a default matched brace color in order to use _Current Scope highlight_
   (<https://github.com/ChrisRM/material-theme-jetbrains/issues/774>)
 - Fix bugs related to 2018.2 EAP (<https://github.com/ChrisRM/material-theme-jetbrains/issues/777>)
@@ -2679,10 +2680,10 @@ CHORE:
 
 FEATURES:
 
-- Complete rewrite of the Theming System! Now all themes inherit from the same parent class which defines which
-  resources get which color. Maintaining themes will be a lot easier!
-- **Plugin extension** to allow plugin developers to add their own themes to the Material Theme plugin! It's still in
-  beta but some examples will be available shortly.
+- Complete rewrite of the Theming System! Now all themes inherit from the same parent class which defines which resources get which color.
+  Maintaining themes will be a lot easier!
+- **Plugin extension** to allow plugin developers to add their own themes to the Material Theme plugin! It's still in beta but some examples
+  will be available shortly.
 - The caret is now an **accent color** resource.
 - The Arrows Style applies now to menus as well
 - RubyMine icons for Ruby/Rails folders and actions.
@@ -2707,12 +2708,12 @@ FEATURES:
 - New **Material Toggle Button UI**
 - Fix breadcrumb and parameter hint colors to their relevant theme colors
 - Add a specific accent color for each color scheme:
-  - Oceanic: Teal
-  - Darker: Orange
-  - Lighter: Indigo
-  - Palenight: Amethyst
-  - Monokai: Lime
-  - One Dark: Gold
+    - Oceanic: Teal
+    - Darker: Orange
+    - Lighter: Indigo
+    - Palenight: Amethyst
+    - Monokai: Lime
+    - One Dark: Gold
 
 FIXES:
 
@@ -2817,12 +2818,10 @@ FIXES:
 
 - Fix **Theme Switching requiring to restart the IDE**. Now switching is becoming as easy as pie!
 - New feature: **Windows Title Bar Theming**.
-  - **Note**: this changes the color of the title bar OS-wide, meaning that even after closing the IDE the color will
-    still be set. (see
-    <https://www.howtogeek.com/222831/how-to-get-colored-window-title-bars-on-windows-10-instead-of-white/>) for setting
-    it.
-- Added more other file icons: Atom, Appveyor, Bean, Cabal, Compass, Doxygen, Dylib, Ghostscript, GitHub, Jquery, JS
-  Minified, Makefile, Manpage, Nib, Godot, Openoffice, Patch, Phalcon, Redme
+    - **Note**: this changes the color of the title bar OS-wide, meaning that even after closing the IDE the color will still be set. (see
+      <https://www.howtogeek.com/222831/how-to-get-colored-window-title-bars-on-windows-10-instead-of-white/>) for setting it.
+- Added more other file icons: Atom, Appveyor, Bean, Cabal, Compass, Doxygen, Dylib, Ghostscript, GitHub, Jquery, JS Minified, Makefile,
+  Manpage, Nib, Godot, Openoffice, Patch, Phalcon, Redme
 - Fix the inactive selection background color in trees
 - Fix Status Bar Indicator height in HiDPi screens
 - Remove buggy Tool Window Header patch
@@ -2830,17 +2829,16 @@ FIXES:
 ## 1.5.4
 
 - Change color of unfocused tree elements
-- New file icons for: Autohotkey, API Blueprint, MACOSX, Jekyll, Mathematica, ReasonML, RestructuredText, Maven,
-  ObjectiveC, Spring, Tomcat, Test Ruby and VHDL.
+- New file icons for: Autohotkey, API Blueprint, MACOSX, Jekyll, Mathematica, ReasonML, RestructuredText, Maven, ObjectiveC, Spring, Tomcat,
+  Test Ruby and VHDL.
 - Try to fix issue with createResolvedStylesheet by loading the Darcula default properties
 
 ## 1.5.3
 
 - Custom Notification Colors for the Custom Themes
 - Change default colors of Notifications to Contrast Color
-- Revert the buggy fix of the Tool Window Header (also known as the ToolWindowHeader hack) and add a new action "Patch
-  Tool Window Header" to approve the hack of the Window Header
-  (<https://github.com/ChrisRM/material-theme-jetbrains/issues/548>)
+- Revert the buggy fix of the Tool Window Header (also known as the ToolWindowHeader hack) and add a new action "Patch Tool Window Header"
+  to approve the hack of the Window Header (<https://github.com/ChrisRM/material-theme-jetbrains/issues/548>)
 
 ## 1.5.2.2
 
@@ -2888,8 +2886,7 @@ FIXES:
 
 - Add new option to select the style of arrows in trees
 - Restore Bold directories
-- Fix https://github.com/ChrisRM/material-theme-jetbrains/issues/540 by setting a lighter selection background color on
-  refactor
+- Fix https://github.com/ChrisRM/material-theme-jetbrains/issues/540 by setting a lighter selection background color on refactor
 
 ## 1.4.3
 
@@ -2925,8 +2922,7 @@ FIXES:
 
 ## 1.3.8
 
-- Use experimental feature to set dark title bar when using dark themes. Only works on latest EAP, but is planned for
-  2018.X
+- Use experimental feature to set dark title bar when using dark themes. Only works on latest EAP, but is planned for 2018.X
 
 ## 1.3.7
 
@@ -3196,8 +3192,8 @@ FIXES:
 
 - Fix issue with Merge branches window
 - Put Material Theme options under "Appearance"
-- Add Actions for Settings: Compact Sidebar, Compact Statusbar, Material Theme, Material Components, Material Icons,
-  Status Bar Indicator and Project View Decorators
+- Add Actions for Settings: Compact Sidebar, Compact Statusbar, Material Theme, Material Components, Material Icons, Status Bar Indicator
+  and Project View Decorators
 - Add actions for Hide File Icons, Bigger Tabs and set actions as toggles
 - Themed Action UI Icons, General UI Icons and Debugger UI Icons
 - Refactor classes so we can make use of Actions.
@@ -3271,8 +3267,8 @@ This version is more focused on the UI:
 
 ## 0.4.1
 
-- Change behavior of custom wallpaper to not disable the background if the user unchecks the option, allowing to set
-  custom wallpaper with the IDE
+- Change behavior of custom wallpaper to not disable the background if the user unchecks the option, allowing to set custom wallpaper with
+  the IDE
 - Add Disable option for the current theme indicator in the status bar
 - Fix issue with SQLite icon
 - Theme notification popups
@@ -3289,8 +3285,8 @@ This version is more focused on the UI:
 - Fix #92
 - Fix: Do not try to replace all icons, if an icon is not provided use JetBrains one.
 - Refactor project: put the selected theme in the MTConfig + better folder structure
-- Add more icons: Access, Word, PowerPoint, Excel, Audio, Video, Elm, Go, Hack, Julia, Pug, Kotlin, Maya, Markup,
-  Premiere, Powershell, Rake, Riot, Stata, Sublime, Vim
+- Add more icons: Access, Word, PowerPoint, Excel, Audio, Video, Elm, Go, Hack, Julia, Pug, Kotlin, Maya, Markup, Premiere, Powershell,
+  Rake, Riot, Stata, Sublime, Vim
 - Fix PHP + JS Code Schemes
 - New: Background image for empty IDE with customization available in options
 - New: Option to hide file icons in the Project View
@@ -3333,8 +3329,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Add option to set bold tabs
 - Add toggle options to Search Everything
 - Change trees collapse and expand icons
-- Themed IDE icons: Checkout, Project Structure, Back, Forward, History, Up, Down, Step Into, Step Out,
-  Compile, Jars, Library…
+- Themed IDE icons: Checkout, Project Structure, Back, Forward, History, Up, Down, Step Into, Step Out, Compile, Jars, Library…
 - Other bug fixes and improvements
 - Fix button background not taking the full width
 - Themed Memory Indicator
@@ -3370,8 +3365,8 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 - Set Open and closed folders according to open tabs (still buggy)
 - Now the active tab indicator is following the user's tabs placement settings!
 - Started creating settings for customizing the plugin.
-  - Active tab indicator color
-  - Active tab indicator thickness
+    - Active tab indicator color
+    - Active tab indicator thickness
 - Fixed issue with tabs in last EAP
 - Update file icons to use the latest icons from the original Sublime theme repository.
 - Added a new theme, the **Palenight** theme, that is a violet shade of the Default theme.
@@ -3421,8 +3416,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 
 ## 0.1.9
 
-- Fails to launch when using Darker or Lighter theme. @robertfreund — #187
-  — Kotlin syntax highlighting — #153
+- Fails to launch when using Darker or Lighter theme. @robertfreund — #187 — Kotlin syntax highlighting — #153
 - File icon: Kotlin - `*.kt`
 - File icon: Liquid - Shopify templating language - `*.liquid`
 - File icon: Lua - `*.lua`
@@ -3430,7 +3424,7 @@ Thanks to @mallowigi for taking the project to the next level. This is all him:
 
 ## 0.1.8
 
-- In some cases getVirtualFile() for psi elements can be null. Fixes #172, #175 — @anstarovoyt
+- In some cases getVirtualFile () for psi elements can be null. Fixes #172, #175 — @anstarovoyt
 - Vertical tabs highlight — @Cyberdelia1987
 - Fixes an error which caused the plugin to misbehave in non-java ide's. See #177
 - File icon: React `*.jsx` - #162
