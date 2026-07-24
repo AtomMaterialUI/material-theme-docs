@@ -7,6 +7,42 @@ toc: true
 
 ----
 
+## What's New in Material Theme UI v12.1.0
+
+This version fixes a bunch of errors and usability issues, especially with the new **Peek** feature.
+
+### Addition of a **Custom Width** option
+
+Gives the ability to set a custom width for the Peek popup, restrained to the editor's width. This allows for a more comfortable reading
+experience, especially when working with long lines of code.
+
+### New defaults
+
+The previous default of 8 lines in the Peek popup is really small and seldom useful. After comparing with other IDEs, we decided to increase
+the default to 15 lines, which is a more comfortable size for most users.
+
+In addition, we changed the background color to use the *Contrast Color* of the current theme, and the border color to the *Highlight
+Color*, giving more contrast between the Peek Panels and the enclosing editor.
+
+### New shortcuts
+
+The previous shortcuts of `Shift + Click` or `Alt + Shift + Click` are conflicting with the usual purpose of `Shift`, which is to select
+text. As such, we've added new shortcuts for the Peek feature: `Alt + Click` for Peek Inline and `Alt + Ctrl + Click` for Peek Popup.
+
+### Omni Theme touches
+
+The **Omni Theme** was found lacking a few properties in its color scheme, in comparison with the other prebundled themes. We've ran a
+script to detect and fix the missing properties, and added a few more touches to make it more complete and visually appealing.
+
+### Random Theme Fixes
+
+We also (hopefully!) fixed a strange bug happening with the **Random Theme Switcher**, where the theme would suddenly change randomly,
+despite not having reach the timer.
+
+As always, happy coding!
+
+---
+
 ## What's New in Material Theme UI v12.0.0
 
 This release introduces a bunch of new content, including six new themes and handy code navigation features. We've also added a new options
@@ -32,13 +68,12 @@ We've added six new themes to the collection:
 
 ### Peek
 
-Introducing **Peek & Edit Definition**, a new way to explore and modify your code without losing context. Inspired by the VSCode feature of
-the same name, this feature allows you to peek at definitions inline, edit them, all in the comfort of your current file. You can configure
-the appearance and behavior of the inline editor, including rounded borders and double-escape to close.
+Introducing **Peek**, a new way to explore and modify your code without losing context. Inspired by the VSCode feature of the same name,
+this feature allows you to peek at definitions inline, edit them, all in the comfort of your current file. You can configure the appearance
+and behavior of the inline editor, including rounded borders and double-escape to close.
 
-- **Peek & Edit Definition (Editable Popup)**: Opens the definition in a sleek popup, allowing you to make quick edits without switching
-  files.
-- **Peek & Edit Definition (Inline)**: Embeds the definition directly within your editor for a truly seamless experience.
+- **Peek (Editable Popup)**: Opens the definition in a sleek popup, allowing you to make quick edits without switching files.
+- **Peek (Inline)**: Embeds the definition directly within your editor for a truly seamless experience.
 
 {% include figure.html content="/screens/peek/popupPeek.png" caption="Peek as a Popup" %}
 
@@ -46,8 +81,8 @@ the appearance and behavior of the inline editor, including rounded borders and 
 
 {% include figure.html content="/screens/peek/customColorsPeek.png" caption="Custom Colors" %}
 
-**Note**: This feature is currently in beta and free for everyone, but in the future it will be only available in the Premium Plan.
-{:class='card-panel warn'}
+**Note**: This feature is currently in beta and free for everyone, but in the future it will be only available in the Premium Plan. {:
+class='card-panel warn'}
 
 ### Accent Color Picker
 
@@ -98,9 +133,9 @@ reverted unless you reset the color scheme to its default state. Bear that in mi
 
 - **New Setting: Tab Glow (Premium)**: Adds a subtle glow effect beneath active tabs.
 - **Material Theme UI Toolbar Reorganization**:
-  - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
-  - Added more setting toggles for quicker access.
-  - Added toggles to quickly switch the current **Material Style**.
+    - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
+    - Added more setting toggles for quicker access.
+    - Added toggles to quickly switch the current **Material Style**.
 
 ### Fixes
 
@@ -161,8 +196,7 @@ reverted unless you reset the color scheme to its default state. Bear that in mi
 
 New year, new look! The **Material Theme UI** plugin continues to evolve, bringing a modernized experience to your IDE. This version
 introduces the **Material 3** style, offering a fresh, contemporary aesthetic to replace the classic **Material 2** look. We’ve also added
-support for the sleek **Google Sans** font (available separately) to further refine your workspace.
-{:class='title'}
+support for the sleek **Google Sans** font (available separately) to further refine your workspace. {:class='title'}
 
 ### Material 3 Style
 
@@ -220,13 +254,13 @@ inconsistent disabled states), and overall polish to make navigation more intuit
 
 - **Contrast Mode by Default**: Enabled by default to provide a sharper, more defined UI out of the box.
 - **Material 3 Integration**: Material 3 is now the default style, succeeding Material 2.
-  - **Material 1** has been revitalized as a primary customization option.
+    - **Material 1** has been revitalized as a primary customization option.
 - **Floating Action Button (FAB)**: A customizable, draggable shortcut hub that persists across sessions.
 - **Theme Ignores**: A dedicated interface for managing and overriding external theme properties.
 - **UI Customization Enhancements**:
-  - New settings for **Custom Button Radius** and component borders.
-  - Improved **Rounded Tabs** with expanded customization options.
-  - Official support for the **Google Sans** font.
+    - New settings for **Custom Button Radius** and component borders.
+    - Improved **Rounded Tabs** with expanded customization options.
+    - Official support for the **Google Sans** font.
 - **Enhanced Spacing**: More granular options for fine-tuning the IDE layout.
 - **Database Integration**: New settings for database tables and improved plugin synergy.
 - **Live Color Preview**: A dedicated page to visualize every color property in your current theme.
