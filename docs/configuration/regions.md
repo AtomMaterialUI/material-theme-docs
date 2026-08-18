@@ -15,12 +15,14 @@ next:
 ---
 
 **Stylish Regions** transforms your folded code regions into beautifully styled visual separators, making it easier to organize and navigate
-large files. {:class='title'}
+large files. 
+{:class='title'}
 
 With customizable styles, colors, fonts, and positioning options, you can create a personalized code organization system that matches your
 workflow.
 
-Most customization features require the **Advanced** license. Basic enable/disable is free for everyone. {:class='card-panel warn'}
+Most customization features require the **Advanced** license. Basic enable/disable is free for everyone. 
+{:class='card-panel warn'}
 
 {% include carbonads.html %}
 
