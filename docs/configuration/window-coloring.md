@@ -118,7 +118,7 @@ Linear gradients transition colors along a straight line. You control the **angl
 
 This allows you to create horizontal, vertical, or diagonal color flows that complement your IDE layout.
 
-{% include figure.html content="/screens/projectFrame/45degGradient.png" caption="Linear Gradient at Different Angles" %}
+{% include figure.html content="/screens/windows/45degGradient.png" caption="Linear Gradient at Different Angles" %}
 
 #### Radial Gradients
 
@@ -131,13 +131,13 @@ Radial gradients emanate outward from a central **anchor point**. You can positi
 The default is **Top Left**, creating a glow effect from the upper-left corner. Center anchors create a spotlight effect, while bottom
 anchors create an inverted glow.
 
-{% include figure.html content="/screens/projectFrame/topRight.png" caption="Top Right Gradient" %}
+{% include figure.html content="/screens/windows/topRight.png" caption="Top Right Gradient" %}
 
-{% include figure.html content="/screens/projectFrame/bottomRight.png" caption="Bottom Right Gradient" %}
+{% include figure.html content="/screens/windows/bottomRight.png" caption="Bottom Right Gradient" %}
 
-{% include figure.html content="/screens/projectFrame/leftCenter.png" caption="Left Center Gradient" %}
+{% include figure.html content="/screens/windows/leftCenter.png" caption="Left Center Gradient" %}
 
-{% include figure.html content="/screens/projectFrame/centerGradient.png" caption="Center Gradient" %}
+{% include figure.html content="/screens/windows/centerGradient.png" caption="Center Gradient" %}
 
 ### Gradient Size
 
