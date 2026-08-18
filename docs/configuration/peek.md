@@ -10,8 +10,8 @@ previous:
   url: '/docs/configuration/accent-mode'
   title: Accent Mode
 next:
-  url: '/docs/configuration/tab-settings'
-  title: Tab Settings
+  url: '/docs/configuration/regions'
+  title: Stylish Regions
 ---
 
 **Peek & Edit Definition** is a powerful feature that allows you to explore and modify your code without losing your current context. {:
