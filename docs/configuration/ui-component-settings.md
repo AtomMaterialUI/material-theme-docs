@@ -14,13 +14,13 @@ next:
   title: Features Settings
 ---
 
-These settings provide you with a wide range of customization options for various IDE components.
-{:class='title'}
+These settings provide you with a wide range of customization options for various IDE components. {:class='title'}
 
 {% include carbonads.html %}
 
-Some features are only available for premium users. You can either buy a premium license for the plugin, or purchase the license for these features only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras).
-{:class='card-panel warn'}
+Some features are only available for premium users. You can either buy a premium license for the plugin, or purchase the license for these
+features only by going to this link: [Material Theme Extras](https://plugins.jetbrains.com/plugin/19250-material-theme-ui-extras). {:
+class='card-panel warn'}
 
 ----
 
@@ -30,8 +30,7 @@ Some features are only available for premium users. You can either buy a premium
 
 ### Material Design Style
 
-This feature is available in the free plan.
-{:class='card-panel warn'}
+This feature is available in the free plan. {:class='card-panel warn'}
 
 This setting allows you to choose between three _Material Design_ styles, each offering a distinct visual experience: **Material Design**, *
 *Material Theme**, and **Material You**.
@@ -39,8 +38,8 @@ This setting allows you to choose between three _Material Design_ styles, each o
 #### Material Design (Material 1)
 
 The first iteration of [Material Design from Google](https://m1.material.io/) features flat, rectangular elements with consistent spacing
-and shadows to convey depth. Input fields blend seamlessly with the background by omitting borders, **Roboto** serves as the primary
-font, toggled elements display an overlaid circle indicator, and selected tabs are marked by an underline.
+and shadows to convey depth. Input fields blend seamlessly with the background by omitting borders, **Roboto** serves as the primary font,
+toggled elements display an overlaid circle indicator, and selected tabs are marked by an underline.
 
 {% include figure.html content="/screens/ui/material1.png" caption="Material Design" %}
 
@@ -100,8 +99,8 @@ This setting changes the button text to uppercase, giving it a look reminiscent 
 
 ### Outline buttons
 
-This setting gives buttons an alternate look, sporting a transparent background, and the border and text having the color of the
-current accent color, making them looking like "outlined buttons".
+This setting gives buttons an alternate look, sporting a transparent background, and the border and text having the color of the current
+accent color, making them looking like "outlined buttons".
 
 {% include figure.html content="/screens/ui/outlined.png" caption="Outlined Buttons" %}
 
@@ -110,6 +109,7 @@ current accent color, making them looking like "outlined buttons".
 ### Custom Button Radius
 
 By default, the buttons have a different radius depending on the _Material Design Style_ selected:
+
 - Material 1: 0px
 - Material 2: 8px
 - Material 3: 20px
@@ -126,7 +126,8 @@ However, if these defaults don't suit your tastes, you can use these settings to
 
 ### Custom Action Buttons Radius
 
-Like the _Custom Button Radius_, this setting allows you to change the radius of the action buttons, which are the buttons found in the toolbars and some popups. In this case, the default value is always 20px, giving it a full circle shape.
+Like the _Custom Button Radius_, this setting allows you to change the radius of the action buttons, which are the buttons found in the
+toolbars and some popups. In this case, the default value is always 20px, giving it a full circle shape.
 
 <div class="masonry" markdown="0">
 
@@ -140,7 +141,7 @@ Like the _Custom Button Radius_, this setting allows you to change the radius of
 
 ### Round Notifications
 
-This setting allows you to make the notifications round. 
+This setting allows you to make the notifications round.
 
 <div class="masonry" markdown="0">
 
@@ -150,11 +151,20 @@ This setting allows you to make the notifications round.
 
 </div>
 
+### Outline Notifications
+
+You can also select an alternative style of notifications: **Outline Notifications**. With this style, the notifications will have its
+background color mixed with a small tint of the _Accent Color_, and with an accented border color.
+
+{% include figure.html content="/screens/ui/notificationsOpaque.png" caption="Outline Notifications" %}
+
+
 ----
 
 ### Inverted Completion Color
 
-This setting gives you the choice to change the color of the selected line in the autocompletion popup. When selected, it uses the *Contrast Color* instead of the *Selection Color*.
+This setting gives you the choice to change the color of the selected line in the autocompletion popup. When selected, it uses the *Contrast
+Color* instead of the *Selection Color*.
 
 <div class="masonry" markdown="0">
 
@@ -172,12 +182,12 @@ This setting gives you the choice to change the color of the selected line in th
 
 This section allows you to customize many aspects of the Search Everywhere popup, such as the padding, or the font size.
 
-This feature is available for premium users.
-{:class='card-panel warn'}
+This feature is available for premium users. {:class='card-panel warn'}
 
 #### Custom Input Padding
 
-This setting allows you to customize the size of the search input field. The more padding, the bigger the input will become. The default value is 12px.
+This setting allows you to customize the size of the search input field. The more padding, the bigger the input will become. The default
+value is 12px.
 
 <div class="masonry" markdown="0">
 
@@ -205,7 +215,8 @@ In addition, this setting gives the ability to increase or decrease the font siz
 
 ### Transparent scrollbars and accent scrollbars
 
-These options control the appearance of the IDE's scrollbars. Please note that this doesn't affect the scrollbars in the editor; for those you have a dedicated setting page: [**Scrollbars Color Scheme**](/docs/configuration/scrollbars.md).
+These options control the appearance of the IDE's scrollbars. Please note that this doesn't affect the scrollbars in the editor; for those
+you have a dedicated setting page: [**Scrollbars Color Scheme**](/docs/configuration/scrollbars.md).
 
 - When both options are unchecked, the scrollbars will sport the same color as the foreground color.
 - *Transparent scrollbars*: make scrollbars 50% transparent.
@@ -233,8 +244,7 @@ setting.
 
 ## Misc
 
-These features are available in the free plan.
-{:class='card-panel warn'}
+These features are available in the free plan. {:class='card-panel warn'}
 
 ### Extra Shadows
 
@@ -250,16 +260,15 @@ This setting replaces the default icon loader (the gear-like animated icon) with
 
 {% include figure.html content="/screens/ui/miniLoader.png" caption="Small Icon Loader" %}
 
+**Note**: This feature is only usable in coordination with the _Atom Material Icons_ plugin, as the icon is part of that plugin. {:
+class='card-panel warn'}
 
-**Note**: This feature is only usable in coordination with the _Atom Material Icons_ plugin, as the icon is part of that plugin.
-{:class='card-panel warn'}
-
-**Note 2**: You need to restart the IDE for this setting to take effect.
-{:class='card-panel warn'}
+**Note 2**: You need to restart the IDE for this setting to take effect. {:class='card-panel warn'}
 
 ### Use Original Tool Window Buttons
 
-The plugin replaces the appearance of the tool window buttons with a circular, transparent shape on hover, and a fully squared, transparent shape for opened tool windows.
+The plugin replaces the appearance of the tool window buttons with a circular, transparent shape on hover, and a fully squared, transparent
+shape for opened tool windows.
 
 This setting allows you to revert to the original tool window appearance instead.
 

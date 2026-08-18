@@ -14,14 +14,13 @@ next:
   title: Tab Settings
 ---
 
-**Peek & Edit Definition** is a powerful feature that allows you to explore and modify your code without losing your current context.
-{:class='title'}
+**Peek & Edit Definition** is a powerful feature that allows you to explore and modify your code without losing your current context. {:
+class='title'}
 
 Inspired by the VSCode feature of the same name, it enables you to peek at definitions, make quick edits, and navigate your codebase more
 efficiently, all within the same editor window.
 
-This feature is currently in beta and free for everyone. In the future, it will be part of the Premium Plan.
-{:class='card-panel warn'}
+This feature is currently in beta and free for everyone. In the future, it will be part of the Premium Plan. {:class='card-panel warn'}
 
 {% include carbonads.html %}
 
@@ -85,8 +84,11 @@ The **Min Lines** and **Max Lines** settings let you control the size of the pop
 displayed. You can adjust these values to ensure that the Peek window fits your workflow, whether you prefer a compact view or a more
 spacious layout.
 
-The **Padding** setting determines the space between the content and the edges of the Peek window, allowing you to create a more comfortable
+The **Spacing** setting determines the space between the content and the edges of the Peek window, allowing you to create a more comfortable
 reading experience.
+
+Lastly, the **Custom Width** option lets you define a specific width for the Peek window, giving you complete control over its dimensions.
+The width will be clamped to the visible editor area, ensuring you won't need to scroll horizontally. Set it to `0` to take the full width.
 
 {% include figure.html content="/screens/peek/customLinesPeek.png" caption="Padding and Layout Settings" %}
 
