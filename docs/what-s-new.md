@@ -7,6 +7,15 @@ toc: true
 
 ----
 
+## What's New in Material Theme UI v13.0.0
+
+Even though the version 12 was deployed not long ago, this new version brings a lot of new features and refactorings, which is a pretty big change.
+
+Between **Color Scheme Overrides**, **Peek**, **Window Coloring**, **Stylish Regions** and other new settings, this version changes the underlaying architecture 
+of the **Actions System**, **Analytics**, **Accent Colors**, **Project Banner**, just to name a few.
+
+
+
 ## What's New in Material Theme UI v12.1.0
 
 This version fixes a bunch of errors and usability issues, especially with the new **Peek** feature.
