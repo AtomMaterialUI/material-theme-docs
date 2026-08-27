@@ -9,12 +9,115 @@ toc: true
 
 ## What's New in Material Theme UI v13.0.0
 
-Even though the version 12 was deployed not long ago, this new version brings a lot of new features and refactorings, which is a pretty big change.
+Even though version 12 was deployed not long ago, this new version brings a lot of new features and refactorings, which is a pretty big change.
 
-Between **Color Scheme Overrides**, **Peek**, **Window Coloring**, **Stylish Regions** and other new settings, this version changes the underlaying architecture 
+Between **Color Scheme Overrides**, **Peek**, **Window Coloring**, **Stylish Regions** and other new settings, this version changes the underlying architecture
 of the **Actions System**, **Analytics**, **Accent Colors**, **Project Banner**, just to name a few.
 
+### Stylish Regions
 
+Folded regions can now become visual landmarks instead of plain folded blocks. **Stylish Regions** redesigns the appearance of folded regions, 
+making them more visually distinct and easier to identify. 
+
+You can choose from a variety of styles to suit your preferences, including:
+
+- **Wavy**: A soft, undulating separator, reminiscent of what you can already experience in diff windows.
+- **Line**: A clean horizontal rule that keeps boundaries subtle and precise.
+- **Stripe**: A bold, high-contrast separator that makes regions easy to spot while scrolling.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/regions/wavy.png" caption="Wavy Separator" %}
+{% include figure.html content="/screens/regions/line.png" caption="Line Separator" %}
+{% include figure.html content="/screens/regions/stripe.png" caption="Stripe Separator" %}
+</div>
+
+The **Advanced** plan unlocks deeper customization, including custom separator and title colors, font family and size, and title block
+positioning. You can also generate a background color automatically from the region description. This gives regions with the same name a
+consistent color across files, making familiar groups such as *Constants*, *Helpers*, or *API Calls* instantly recognizable.
+
+You can configure these options in `Settings → Appearance → Material Theme UI → Regions`. The basic enable/disable option remains free for
+everyone, so you can try the default Wavy style before enabling the full set of customization options.
+
+----
+
+### Window Coloring and Gradients
+
+The former **Project Banner** window-coloring options are now available in their own settings page. **Window Coloring** applies a distinctive
+color to the IDE frame for each project, making it much easier to identify the right window when several projects are open. Colors can be
+generated consistently from a project name, overridden manually, or regenerated when you want a different visual identity.
+
+Alongside the existing **Solid Fill**, version 13.0.0 introduces **Gradient Fill** for a more polished transition between the project color
+and the theme's panel color:
+
+- **Linear** gradients transition along a configurable angle, allowing horizontal, vertical, or diagonal color flows.
+- **Radial** gradients radiate from a configurable anchor point. You can place the anchor at any of nine positions, from top-left to
+  bottom-right, to create anything from a corner glow to a centered spotlight.
+- **Gradient size and opacity** let you control how strongly the project color appears and how quickly it fades into the surrounding frame.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/windows/gradient1.png" caption="Window Coloring" %}
+{% include figure.html content="/screens/windows/gradient2.png" caption="Gradient Fill" %}
+</div>
+
+Window Coloring can be configured globally at `Settings → Appearance → Material Theme UI → Window Coloring`. You can also enable
+**Regenerate
+window color on theme change** to automatically pick a new color whenever you switch themes. 
+
+For more granular control, **Per-Project Settings** allows you to choose different frame regions, fill modes, gradient settings, and colors for each project.
+This makes it possible to give each project its own customizations, making them distinct from one another.
+
+---
+
+### Peek Evolution
+
+Peek has received a number of improvements to make it more useful and easier to use:
+
+- You can now use **Replace Ctrl-click** to replace the default `Ctrl+Click/Cmd+Click` behavior with the *Inline Peek* feature, keeping you in context while exploring definitions.
+- To improve the reading experience, the Peek panel now **defaults to full width**. 
+- We've added **F4 navigation** for faster jumping between results
+- Implemented a **ServiceDimensionKey** to ensure consistent popup sizing when switching between peek panels. 
+- Furthermore, interacting with the Peek window no longer triggers parent container scrolling, providing a more stable and focused editing experience.
+
+**Note**: The **Replace Ctrl-click** option is a destructive action that modifies your current keymap. Please make a backup before enabling it.
+{:class='card-panel warn'}
+
+### New Color Scheme Overrides
+
+We’ve expanded the **Color Scheme Overrides** to give you finer control over your workspace's aesthetics. You can now override the colors
+for **Search Results**, the **Identifier Under Caret**, and **Matched Braces** using the **Accent Color**. This ensures key UI elements are
+always consistent with your chosen theme and accent, regardless of the underlying color scheme's default colors. 
+
+{% include figure.html content="/screens/colorSchemes/overrideAccents.png" caption="Override Accents" %}
+
+We've also fixed the issue with **Diff Colors Opacity** not persisting after restarts.
+
+### Outline Notifications
+
+Experience a cleaner, more modern approach to IDE notifications with **Outline Notifications**. These notifications feature a subtle,
+**accent-colored outline** styling that integrates seamlessly with the rest of the Material Theme UI, reducing visual clutter while
+ensuring key information remains prominent.
+
+{% include figure.html content="/screens/ui/notificationsOpaque.png" caption="Outline Notifications" %}
+
+### Random Accent Color
+
+The **Accent Color Picker** and **Accent Color Settings** now feature a **Random Accent Color** option. 
+
+This allows you to generate a new accent color outside the predefined swatches, giving you a fresh and unique look for your IDE. 
+
+{% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
+
+### Architectural Improvements
+
+Behind the scenes, version 13.0.0 includes a massive architectural refactor to ensure the plugin remains fast and maintainable as it grows:
+
+- **Dynamic Action System**: The entire action system has been rewritten to be fully dynamic, reducing boilerplate code. This allows for easier addition of new actions and features, while also improving startup performance.
+- **Modular ThemeManager**: The core `ThemeManager` has been broken down into smaller, specialized services grouped by module. This makes the code more maintainable and testable, and less prone to bugs.
+- **Boilerplate Reduction**: We've significantly reduced the boilerplate code required for Configurables and States, leading to a more
+  reliable settings experience and faster delivery of new features.
+- **Analytics Overhaul**: We've also improved the Analytics Collection, making it more efficient to follow user interactions and feature usage, which will help us prioritize future improvements.
+
+These changes might not be immediately visible, but they provide a more stable foundation for the future of Material Theme UI.
 
 ## What's New in Material Theme UI v12.1.0
 
