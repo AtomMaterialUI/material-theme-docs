@@ -96,6 +96,15 @@ The width will be clamped to the visible editor area, ensuring you won't need to
 
 ## Behavior
 
+### Replace Cmd/Ctrl Click
+
+This option will hijack the default behavior of the `Cmd/Ctrl + Click` action, replacing it with the _Peek Inline_ feature instead of the _Navigate to Definition_ action.
+
+This is useful if you prefer staying in the same context as much as possible, rather than jumping to a new file. You can still navigate to the definition by using the `F4` key or the `Navigate to Definition` action.
+
+**Note**: This is a DESTRUCTIVE ACTION, e.g. this will modify your current keymap. Therefore, you should make a backup just in case.
+{:class='card-panel warn'}
+
 ### Double Escape to Close
 
 By default, you can close the Peek window by pressing `Escape` twice. However if you prefer to close it manually, you can disable this

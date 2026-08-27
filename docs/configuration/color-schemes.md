@@ -135,6 +135,9 @@ The following properties can be toggled:
 - **Override Caret Color**: Align the editor caret color with the accent color.
 - **Override Hyperlink**: Align the hyperlink color with the accent color.
 - **Override Underline Tab**: Align the underline tab color (and inactive color) with the accent color.
+- **Override Search Results**: Align the search results highlight color with the accent color.
+- **Override Identifier Under Caret**: Align the identifier under caret color with the accent color.
+- **Override Matched Brace**: Align the matched brace color with the accent color.
 
 {% include figure.html content="/screens/colorSchemes/overrideAccents.png" caption="Override Accents" %}
 
