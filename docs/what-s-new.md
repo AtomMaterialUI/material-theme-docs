@@ -5,19 +5,68 @@ group: whatsnew
 toc: true
 ---
 
+## What's New in Material Theme UI v13.1.0
+
+The new version focuses on bringing new themes to the table, as well as improving the existing ones.
+It also introduces a new feature to edit the theme colors in-place, allowing for a more personalized experience.
+
+Hope you like it!
+
+### New Themes
+
+This version introduces three new themes to the collection:
+
+- **Winter Is Coming**: A dark theme with a cold, icy color palette.
+- **Shades of Purple**: A vibrant theme with a purple color scheme.
+- **Noctis**: A dark theme with a deep, rich color palette.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/themes/noctisSmall.png" caption="Noctis" %}
+{% include figure.html content="/screens/themes/winterSmall.png" caption="Winter Is Coming" %}
+{% include figure.html content="/screens/themes/shadesSmall.png" caption="Shades of Purple" %}
+</div>
+
+In addition, the **Omni** and **Cobalt2** color schemes have been reworked from the ground up to better look like their
+VSCode counterparts, while also improving their overall color schemes and aesthetics.
+
+### Override Theme Colors
+
+The other highlight of this version is the repurposing of the **Preview Theme Colors** page into a full-fledged **Theme
+Colors Override** settings page allowing you to customize any theme's colors.
+
+{% include figure.html content="/screens/override/overrideThemeColors.png" caption="Override Theme Colors" %}
+
+**Note**: This feature is only available for **Premium** and **Custom Theme** license owners.
+{:class='card-panel warn'}
+
+Inside this page you can:
+
+- Filter out properties by name or color.
+- Override a theme color that will be persisted for that specific theme.
+- Reset a property or all properties to their defaults.
+- Import and export your theme color overrides to share with others.
+
+{% include figure.html content="/screens/override/editColor.png" caption="Edit Color" %}
+
+**Note**: Any properties listed in the *Theme Ignores* will be ignored, no matter what color you give it.
+{:class='card-panel warn'}
+
+
 ----
 
 ## What's New in Material Theme UI v13.0.0
 
-Even though version 12 was deployed not long ago, this new version brings a lot of new features and refactorings, which is a pretty big change.
+Even though version 12 was deployed not long ago, this new version brings a lot of new features and refactorings, which
+is a pretty big change.
 
-Between **Color Scheme Overrides**, **Peek**, **Window Coloring**, **Stylish Regions** and other new settings, this version changes the underlying architecture
-of the **Actions System**, **Analytics**, **Accent Colors**, **Project Banner**, just to name a few.
+Between **Color Scheme Overrides**, **Peek**, **Window Coloring**, **Stylish Regions** and other new settings, this
+version changes the underlying architecture of the **Actions System**, **Analytics**, **Accent Colors**, **Project
+Banner**, just to name a few.
 
 ### Stylish Regions
 
-Folded regions can now become visual landmarks instead of plain folded blocks. **Stylish Regions** redesigns the appearance of folded regions, 
-making them more visually distinct and easier to identify. 
+Folded regions can now become visual landmarks instead of plain folded blocks. **Stylish Regions** redesigns the
+appearance of folded regions, making them more visually distinct and easier to identify.
 
 You can choose from a variety of styles to suit your preferences, including:
 
@@ -31,40 +80,45 @@ You can choose from a variety of styles to suit your preferences, including:
 {% include figure.html content="/screens/regions/stripe.png" caption="Stripe Separator" %}
 </div>
 
-The **Advanced** plan unlocks deeper customization, including custom separator and title colors, font family and size, and title block
-positioning. You can also generate a background color automatically from the region description. This gives regions with the same name a
-consistent color across files, making familiar groups such as *Constants*, *Helpers*, or *API Calls* instantly recognizable.
+The **Advanced** plan unlocks deeper customization, including custom separator and title colors, font family and size,
+and title block positioning. You can also generate a background color automatically from the region description. This
+gives regions with the same name a
+consistent color across files, making familiar groups such as *Constants*, *Helpers*, or *API Calls* instantly
+recognizable.
 
-You can configure these options in `Settings → Appearance → Material Theme UI → Regions`. The basic enable/disable option remains free for
-everyone, so you can try the default Wavy style before enabling the full set of customization options.
+You can configure these options in `Settings → Appearance → Material Theme UI → Regions`. The basic enable/disable
+option remains free for everyone, so you can try the default Wavy style before enabling the full set of customization
+options.
 
 ----
 
 ### Window Coloring and Gradients
 
-The former **Project Banner** window-coloring options are now available in their own settings page. **Window Coloring** applies a distinctive
-color to the IDE frame for each project, making it much easier to identify the right window when several projects are open. Colors can be
-generated consistently from a project name, overridden manually, or regenerated when you want a different visual identity.
+The former **Project Banner** window-coloring options are now available in their own settings page. **Window Coloring**
+applies a distinctive color to the IDE frame for each project, making it much easier to identify the right window when
+several projects are open. Colors can be generated consistently from a project name, overridden manually, or regenerated
+when you want a different visual identity.
 
-Alongside the existing **Solid Fill**, version 13.0.0 introduces **Gradient Fill** for a more polished transition between the project color
-and the theme's panel color:
+Alongside the existing **Solid Fill**, version 13.0.0 introduces **Gradient Fill** for a more polished transition
+between the project color and the theme's panel color:
 
 - **Linear** gradients transition along a configurable angle, allowing horizontal, vertical, or diagonal color flows.
-- **Radial** gradients radiate from a configurable anchor point. You can place the anchor at any of nine positions, from top-left to
-  bottom-right, to create anything from a corner glow to a centered spotlight.
-- **Gradient size and opacity** let you control how strongly the project color appears and how quickly it fades into the surrounding frame.
+- **Radial** gradients radiate from a configurable anchor point. You can place the anchor at any of nine positions, from
+  top-left to bottom-right, to create anything from a corner glow to a centered spotlight.
+- **Gradient size and opacity** let you control how strongly the project color appears and how quickly it fades into the
+  surrounding frame.
 
 <div class="masonry" markdown="0">
 {% include figure.html content="/screens/windows/gradient1.png" caption="Window Coloring" %}
 {% include figure.html content="/screens/windows/gradient2.png" caption="Gradient Fill" %}
 </div>
 
-Window Coloring can be configured globally at `Settings → Appearance → Material Theme UI → Window Coloring`. You can also enable
-**Regenerate
-window color on theme change** to automatically pick a new color whenever you switch themes. 
+Window Coloring can be configured globally at `Settings → Appearance → Material Theme UI → Window Coloring`. You can
+also enable **Regenerate window color on theme change** to automatically pick a new color whenever you switch themes.
 
-For more granular control, **Per-Project Settings** allows you to choose different frame regions, fill modes, gradient settings, and colors for each project.
-This makes it possible to give each project its own customizations, making them distinct from one another.
+For more granular control, **Per-Project Settings** allows you to choose different frame regions, fill modes, gradient
+settings, and colors for each project. This makes it possible to give each project its own customizations, making them
+distinct from one another.
 
 ---
 
@@ -72,20 +126,24 @@ This makes it possible to give each project its own customizations, making them 
 
 Peek has received a number of improvements to make it more useful and easier to use:
 
-- You can now use **Replace Ctrl-click** to replace the default `Ctrl+Click/Cmd+Click` behavior with the *Inline Peek* feature, keeping you in context while exploring definitions.
-- To improve the reading experience, the Peek panel now **defaults to full width**. 
+- You can now use **Replace Ctrl-click** to replace the default `Ctrl+Click/Cmd+Click` behavior with the *Inline Peek*
+  feature, keeping you in context while exploring definitions.
+- To improve the reading experience, the Peek panel now **defaults to full width**.
 - We've added **F4 navigation** for faster jumping between results
-- Implemented a **ServiceDimensionKey** to ensure consistent popup sizing when switching between peek panels. 
-- Furthermore, interacting with the Peek window no longer triggers parent container scrolling, providing a more stable and focused editing experience.
+- Implemented a **ServiceDimensionKey** to ensure consistent popup sizing when switching between peek panels.
+- Furthermore, interacting with the Peek window no longer triggers parent container scrolling, providing a more stable
+  and focused editing experience.
 
-**Note**: The **Replace Ctrl-click** option is a destructive action that modifies your current keymap. Please make a backup before enabling it.
+**Note**: The **Replace Ctrl-click** option is a destructive action that modifies your current keymap. Please make a
+backup before enabling it.
 {:class='card-panel warn'}
 
 ### New Color Scheme Overrides
 
-We’ve expanded the **Color Scheme Overrides** to give you finer control over your workspace's aesthetics. You can now override the colors
-for **Search Results**, the **Identifier Under Caret**, and **Matched Braces** using the **Accent Color**. This ensures key UI elements are
-always consistent with your chosen theme and accent, regardless of the underlying color scheme's default colors. 
+We’ve expanded the **Color Scheme Overrides** to give you finer control over your workspace's aesthetics. You can now
+override the colors for **Search Results**, the **Identifier Under Caret**, and **Matched Braces** using the **Accent
+Color**. This ensures key UI elements are always consistent with your chosen theme and accent, regardless of the
+underlying color scheme's default colors.
 
 {% include figure.html content="/screens/colorSchemes/overrideAccents.png" caption="Override Accents" %}
 
@@ -93,31 +151,37 @@ We've also fixed the issue with **Diff Colors Opacity** not persisting after res
 
 ### Outline Notifications
 
-Experience a cleaner, more modern approach to IDE notifications with **Outline Notifications**. These notifications feature a subtle,
-**accent-colored outline** styling that integrates seamlessly with the rest of the Material Theme UI, reducing visual clutter while
-ensuring key information remains prominent.
+Experience a cleaner, more modern approach to IDE notifications with **Outline Notifications**. These notifications
+feature a subtle, **accent-colored outline** styling that integrates seamlessly with the rest of the Material Theme UI,
+reducing visual clutter while ensuring key information remains prominent.
 
 {% include figure.html content="/screens/ui/notificationsOpaque.png" caption="Outline Notifications" %}
 
 ### Random Accent Color
 
-The **Accent Color Picker** and **Accent Color Settings** now feature a **Random Accent Color** option. 
+The **Accent Color Picker** and **Accent Color Settings** now feature a **Random Accent Color** option.
 
-This allows you to generate a new accent color outside the predefined swatches, giving you a fresh and unique look for your IDE. 
+This allows you to generate a new accent color outside the predefined swatches, giving you a fresh and unique look for
+your IDE.
 
 {% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
 
 ### Architectural Improvements
 
-Behind the scenes, version 13.0.0 includes a massive architectural refactor to ensure the plugin remains fast and maintainable as it grows:
+Behind the scenes, version 13.0.0 includes a massive architectural refactor to ensure the plugin remains fast and
+maintainable as it grows:
 
-- **Dynamic Action System**: The entire action system has been rewritten to be fully dynamic, reducing boilerplate code. This allows for easier addition of new actions and features, while also improving startup performance.
-- **Modular ThemeManager**: The core `ThemeManager` has been broken down into smaller, specialized services grouped by module. This makes the code more maintainable and testable, and less prone to bugs.
-- **Boilerplate Reduction**: We've significantly reduced the boilerplate code required for Configurables and States, leading to a more
-  reliable settings experience and faster delivery of new features.
-- **Analytics Overhaul**: We've also improved the Analytics Collection, making it more efficient to follow user interactions and feature usage, which will help us prioritize future improvements.
+- **Dynamic Action System**: The entire action system has been rewritten to be fully dynamic, reducing boilerplate code.
+  This allows for easier addition of new actions and features, while also improving startup performance.
+- **Modular ThemeManager**: The core `ThemeManager` has been broken down into smaller, specialized services grouped by
+  module. This makes the code more maintainable and testable, and less prone to bugs.
+- **Boilerplate Reduction**: We've significantly reduced the boilerplate code required for Configurables and States,
+  leading to a more reliable settings experience and faster delivery of new features.
+- **Analytics Overhaul**: We've also improved the Analytics Collection, making it more efficient to follow user
+  interactions and feature usage, which will help us prioritize future improvements.
 
-These changes might not be immediately visible, but they provide a more stable foundation for the future of Material Theme UI.
+These changes might not be immediately visible, but they provide a more stable foundation for the future of Material
+Theme UI.
 
 ## What's New in Material Theme UI v12.1.0
 
@@ -125,31 +189,33 @@ This version fixes a bunch of errors and usability issues, especially with the n
 
 ### Addition of a **Custom Width** option
 
-Gives the ability to set a custom width for the Peek popup, restrained to the editor's width. This allows for a more comfortable reading
-experience, especially when working with long lines of code.
+Gives the ability to set a custom width for the Peek popup, restrained to the editor's width. This allows for a more
+comfortable reading experience, especially when working with long lines of code.
 
 ### New defaults
 
-The previous default of 8 lines in the Peek popup is really small and seldom useful. After comparing with other IDEs, we decided to increase
-the default to 15 lines, which is a more comfortable size for most users.
+The previous default of 8 lines in the Peek popup is really small and seldom useful. After comparing with other IDEs, we
+decided to increase the default to 15 lines, which is a more comfortable size for most users.
 
-In addition, we changed the background color to use the *Contrast Color* of the current theme, and the border color to the *Highlight
-Color*, giving more contrast between the Peek Panels and the enclosing editor.
+In addition, we changed the background color to use the *Contrast Color* of the current theme, and the border color to
+the *Highlight Color*, giving more contrast between the Peek Panels and the enclosing editor.
 
 ### New shortcuts
 
-The previous shortcuts of `Shift + Click` or `Alt + Shift + Click` are conflicting with the usual purpose of `Shift`, which is to select
-text. As such, we've added new shortcuts for the Peek feature: `Alt + Click` for Peek Inline and `Alt + Ctrl + Click` for Peek Popup.
+The previous shortcuts of `Shift + Click` or `Alt + Shift + Click` are conflicting with the usual purpose of `Shift`,
+which is to select text. As such, we've added new shortcuts for the Peek feature: `Alt + Click` for Peek Inline and
+`Alt + Ctrl + Click` for Peek Popup.
 
 ### Omni Theme touches
 
-The **Omni Theme** was found lacking a few properties in its color scheme, in comparison with the other prebundled themes. We've ran a
-script to detect and fix the missing properties, and added a few more touches to make it more complete and visually appealing.
+The **Omni Theme** was found lacking a few properties in its color scheme, in comparison with the other prebundled
+themes. We've ran a script to detect and fix the missing properties, and added a few more touches to make it more
+complete and visually appealing.
 
 ### Random Theme Fixes
 
-We also (hopefully!) fixed a strange bug happening with the **Random Theme Switcher**, where the theme would suddenly change randomly,
-despite not having reach the timer.
+We also (hopefully!) fixed a strange bug happening with the **Random Theme Switcher**, where the theme would suddenly
+change randomly, despite not having reach the timer.
 
 As always, happy coding!
 
@@ -157,8 +223,9 @@ As always, happy coding!
 
 ## What's New in Material Theme UI v12.0.0
 
-This release introduces a bunch of new content, including six new themes and handy code navigation features. We've also added a new options
-page for managing **Color Schemes**, a new **Accent Color Picker**, a new **Theme Selector**, and other quality-of-life improvements.
+This release introduces a bunch of new content, including six new themes and handy code navigation features. We've also
+added a new options page for managing **Color Schemes**, a new **Accent Color Picker**, a new **Theme Selector**, and
+other quality-of-life improvements.
 
 ### New Themes
 
@@ -180,11 +247,13 @@ We've added six new themes to the collection:
 
 ### Peek
 
-Introducing **Peek**, a new way to explore and modify your code without losing context. Inspired by the VSCode feature of the same name,
-this feature allows you to peek at definitions inline, edit them, all in the comfort of your current file. You can configure the appearance
-and behavior of the inline editor, including rounded borders and double-escape to close.
+Introducing **Peek**, a new way to explore and modify your code without losing context. Inspired by the VSCode feature
+of the same name, this feature allows you to peek at definitions inline, edit them, all in the comfort of your current
+file. You can configure the appearance and behavior of the inline editor, including rounded borders and double-escape to
+close.
 
-- **Peek (Editable Popup)**: Opens the definition in a sleek popup, allowing you to make quick edits without switching files.
+- **Peek (Editable Popup)**: Opens the definition in a sleek popup, allowing you to make quick edits without switching
+  files.
 - **Peek (Inline)**: Embeds the definition directly within your editor for a truly seamless experience.
 
 {% include figure.html content="/screens/peek/popupPeek.png" caption="Peek as a Popup" %}
@@ -193,29 +262,32 @@ and behavior of the inline editor, including rounded borders and double-escape t
 
 {% include figure.html content="/screens/peek/customColorsPeek.png" caption="Custom Colors" %}
 
-**Note**: This feature is currently in beta and free for everyone, but in the future it will be only available in the Premium Plan. {:
-class='card-panel warn'}
+**Note**: This feature is currently in beta and free for everyone, but in the future it will be only available in the
+Premium Plan.
+{:class='card-panel warn'}
 
 ### Accent Color Picker
 
-We've removed the plethora of **Accent Color Actions** and replaced them with a single, unified **Accent Color Picker** displaying the list
-of available swatches in a modernized, handy popup. This allows you for a quick and easy way to change your accent color without navigating
-through multiple menus.
+We've removed the plethora of **Accent Color Actions** and replaced them with a single, unified **Accent Color Picker**
+displaying the list of available swatches in a modernized, handy popup. This allows you for a quick and easy way to
+change your accent color without navigating through multiple menus.
 
 {% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
 
-In addition, we've added a few more **predefined accent colors** to the list, such as **Aqua**, **Sand**, **Salmon** among others.
+In addition, we've added a few more **predefined accent colors** to the list, such as **Aqua**, **Sand**, **Salmon**
+among others.
 
 ### Color Scheme Overrides
 
-Thanks to the JetBrains Marketplace, you can download hundreds of themes and color schemes from a variety of sources. However, sometimes the
-color schemes have contrast issues, wrong colors, or simply don't match the overall appearance. JetBrains IDEs already allow you to override
-the colors of a color scheme. However, you can only override one scheme at a time, and if you have lots of color schemes, this can become
-easily tedious and not worth the hassle.
+Thanks to the JetBrains Marketplace, you can download hundreds of themes and color schemes from a variety of sources.
+However, sometimes the color schemes have contrast issues, wrong colors, or simply don't match the overall appearance.
+JetBrains IDEs already allow you to override the colors of a color scheme. However, you can only override one scheme at
+a time, and if you have lots of color schemes, this can become easily tedious and not worth the hassle.
 
-As such, we've added a new settings page for overriding vendor color schemes on the fly, centralizing all the settings in one place. We've
-migrated some of the existing color scheme overrides to this new page, such as the **Global Default Font** and the **Automatically Reset
-Color Scheme**, and added a few more options for better control over your color schemes.
+As such, we've added a new settings page for overriding vendor color schemes on the fly, centralizing all the settings
+in one place. We've migrated some of the existing color scheme overrides to this new page, such as the **Global Default
+Font** and the **Automatically Reset Color Scheme**, and added a few more options for better control over your color
+schemes.
 
 - **Diff Colors Opacity**: You can now adjust the opacity of diff highlights in the Diff/Merge editor.
 - **Popups and Notifications**: Override the colors of popups and notifications from the Theme itself.
@@ -226,16 +298,18 @@ Color Scheme**, and added a few more options for better control over your color 
 
 {% include figure.html content="/screens/colorSchemes/overrideAccents.png" caption="Override Accents" %}
 
-**Note**: It's important to note that these overrides are affecting the color schemes, meaning that once applied, they can't be easily
-reverted unless you reset the color scheme to its default state. Bear that in mind if you're using customized color schemes!
+**Note**: It's important to note that these overrides are affecting the color schemes, meaning that once applied, they
+can't be easily reverted unless you reset the color scheme to its default state. Bear that in mind if you're using
+customized color schemes!
 {:class='card-panel warn'}
 
 ### Other Improvements
 
-- **New Logo**: We've replaced the static PNG logo with a nicer SVG version, which scales better and looks sharper on high-resolution
-  displays. It also features a slightly more pleasant border radius, embedding with its containing environment.
-- **New Theme Selector**: We've replaced the static PNG screenshots of the themes with SVG icons representing the theme's main colors. This
-  allows us to add or edit themes more easily by automatically generating the previews.
+- **New Logo**: We've replaced the static PNG logo with a nicer SVG version, which scales better and looks sharper on
+  high-resolution displays. It also features a slightly more pleasant border radius, embedding with its containing
+  environment.
+- **New Theme Selector**: We've replaced the static PNG screenshots of the themes with SVG icons representing the
+  theme's main colors. This allows us to add or edit themes more easily by automatically generating the previews.
 
 -----
 
@@ -245,9 +319,9 @@ reverted unless you reset the color scheme to its default state. Bear that in mi
 
 - **New Setting: Tab Glow (Premium)**: Adds a subtle glow effect beneath active tabs.
 - **Material Theme UI Toolbar Reorganization**:
-    - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
-    - Added more setting toggles for quicker access.
-    - Added toggles to quickly switch the current **Material Style**.
+  - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
+  - Added more setting toggles for quicker access.
+  - Added toggles to quickly switch the current **Material Style**.
 
 ### Fixes
 
@@ -306,13 +380,16 @@ reverted unless you reset the color scheme to its default state. Bear that in mi
 
 ## What's New in Material Theme UI v11.0.0
 
-New year, new look! The **Material Theme UI** plugin continues to evolve, bringing a modernized experience to your IDE. This version
-introduces the **Material 3** style, offering a fresh, contemporary aesthetic to replace the classic **Material 2** look. We’ve also added
-support for the sleek **Google Sans** font (available separately) to further refine your workspace. {:class='title'}
+New year, new look! The **Material Theme UI** plugin continues to evolve, bringing a modernized experience to your IDE.
+This version introduces the **Material 3** style, offering a fresh, contemporary aesthetic to replace the classic
+**Material 2** look. We’ve also added support for the sleek **Google Sans** font (available separately) to further
+refine your workspace.
+{:class='title'}
 
 ### Material 3 Style
 
-{% include figure.html content="/screens/ui/material3.png" caption="Refined UI: Buttons, dropdowns, sliders, and search boxes." %}
+{% include figure.html content="/screens/ui/material3.png" caption="Refined UI: Buttons, dropdowns, sliders, and search
+boxes." %}
 
 {% include figure.html content="/screens/ui/material3_2.png" caption="Updated Toggles" %}
 
@@ -320,8 +397,8 @@ support for the sleek **Google Sans** font (available separately) to further ref
 
 Want a preview? Explore the new **UI DSL Showcase** page in your settings.
 
-For fans of the classics: we’ve completely overhauled the original **Material Design** (*Material 1*). No longer just a legacy style, it is
-now a fully-featured customization option for those who prefer the traditional Material look.
+For fans of the classics: we’ve completely overhauled the original **Material Design** (*Material 1*). No longer just a
+legacy style, it is now a fully-featured customization option for those who prefer the traditional Material look.
 
 ----
 
@@ -329,36 +406,38 @@ Beyond the visual refresh, we’ve introduced several powerful features to enhan
 
 ## Customizable Floating Action Button (FAB)
 
-Access your most-used actions instantly with the new Floating Action Button. Position it anywhere in your IDE window and customize its
-triggered actions via the **Menus and Toolbars** settings.
+Access your most-used actions instantly with the new Floating Action Button. Position it anywhere in your IDE window and
+customize its triggered actions via the **Menus and Toolbars** settings.
 
 {% include figure.html content="/screens/features/fab.png" caption="The new Floating Action Button." %}
 
 ## Theme Ignores
 
-Sometimes external themes don’t align perfectly with your preferences. With the new **Theme Ignores** page, you can choose to bypass
-specific theme properties in favor of native IDE defaults, helping you resolve color clashes and UI inconsistencies.
+Sometimes external themes don’t align perfectly with your preferences. With the new **Theme Ignores** page, you can
+choose to bypass specific theme properties in favor of native IDE defaults, helping you resolve color clashes and UI
+inconsistencies.
 
 {% include figure.html content="/screens/settingsv3/themeIgnores.png" caption="Fine-tune your theme overrides." %}
 
 ## Preview Theme Colors
 
-Gain full transparency into your active theme. This new tool provides a comprehensive table of all theme properties and their exact color
-values, eliminating the guesswork from customization.
+Gain full transparency into your active theme. This new tool provides a comprehensive table of all theme properties and
+their exact color values, eliminating the guesswork from customization.
 
-{% include figure.html content="/screens/settingsv3/previewThemeColors.png" caption="Inspect your theme's color palette." %}
+{% include figure.html content="/screens/settingsv3/previewThemeColors.png" caption="Inspect your theme's color
+palette." %}
 
 ## Refined Spacing Settings
 
-Precision matters. We’ve expanded the **Spacing Settings** to grant you granular control over the size and padding of UI components,
-allowing you to tailor your IDE to your exact specifications.
+Precision matters. We’ve expanded the **Spacing Settings** to grant you granular control over the size and padding of UI
+components, allowing you to tailor your IDE to your exact specifications.
 
 {% include figure.html content="/screens/settingsv3/spacingNew.png" caption="Pixel-perfect layout control." %}
 
 ## Settings Overhaul
 
-We’ve refined every settings page to improve the user experience. This includes UX optimizations, fixing UI bugs (such as broken images or
-inconsistent disabled states), and overall polish to make navigation more intuitive.
+We’ve refined every settings page to improve the user experience. This includes UX optimizations, fixing UI bugs (such
+as broken images or inconsistent disabled states), and overall polish to make navigation more intuitive.
 
 ### Full Changelog
 
@@ -366,13 +445,13 @@ inconsistent disabled states), and overall polish to make navigation more intuit
 
 - **Contrast Mode by Default**: Enabled by default to provide a sharper, more defined UI out of the box.
 - **Material 3 Integration**: Material 3 is now the default style, succeeding Material 2.
-    - **Material 1** has been revitalized as a primary customization option.
+  - **Material 1** has been revitalized as a primary customization option.
 - **Floating Action Button (FAB)**: A customizable, draggable shortcut hub that persists across sessions.
 - **Theme Ignores**: A dedicated interface for managing and overriding external theme properties.
 - **UI Customization Enhancements**:
-    - New settings for **Custom Button Radius** and component borders.
-    - Improved **Rounded Tabs** with expanded customization options.
-    - Official support for the **Google Sans** font.
+  - New settings for **Custom Button Radius** and component borders.
+  - Improved **Rounded Tabs** with expanded customization options.
+  - Official support for the **Google Sans** font.
 - **Enhanced Spacing**: More granular options for fine-tuning the IDE layout.
 - **Database Integration**: New settings for database tables and improved plugin synergy.
 - **Live Color Preview**: A dedicated page to visualize every color property in your current theme.
@@ -393,6 +472,7 @@ inconsistent disabled states), and overall polish to make navigation more intuit
 - Expanded and updated translations.
 - Refreshed UI properties and color schemes.
 
-**Note**: This version is actively being refined. If you encounter any bugs or have feedback, please report them to help us improve.
+**Note**: This version is actively being refined. If you encounter any bugs or have feedback, please report them to help
+us improve.
 
 Happy coding!
