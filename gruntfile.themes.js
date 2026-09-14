@@ -49,6 +49,8 @@ const toTheme = theme => ({
     vars: theme.vars,
     parameters: theme.parameters,
     links: theme.links,
+    error: theme.error,
+    classes: theme.classes,
 
 
     yellow: theme.yellow,
@@ -60,6 +62,7 @@ const toTheme = theme => ({
     orange: theme.orange,
     gray: theme.comments,
     silver: theme.white,
+    white: theme.white,
 });
 
 const generateCSS = (theme) => {
