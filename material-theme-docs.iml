@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/download" />
       <excludeFolder url="file://$MODULE_DIR$/jekyllbuild" />
       <excludeFolder url="file://$MODULE_DIR$/js" />
+      <excludeFolder url="file://$MODULE_DIR$/.agents" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
