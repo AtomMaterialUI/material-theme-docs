@@ -60,12 +60,12 @@ The **Window Coloring** settings now allow you to configure a second anchor for 
 Previously, you could preview the colors of the current theme, but you couldn't edit them. That's now possible with the new **Theme Colors
 Override** tool window, which allows you to edit the colors of any theme in-place.
 
-{% include figure.html content="/screens/custom/overrideThemeColorsTW.png" caption="Override Theme Colors" %}
+{% include figure.html content="/screens/override/toolWindow.png" caption="Override Theme Colors" %}
 
 This Tool Window gives you a preview of the current theme's colors, and allows you to edit them in-place. Upon clicking on a color, you will
 be presented with a custom color picker that allows you to pick a color from the current theme's colors, or pick a new one.
 
-{% include figure.html content="/screens/custom/colorSelector.png" caption="Color Selector" %}
+{% include figure.html content="/screens/override/colorSelector.png" caption="Color Selector" %}
 
 You can also filter out properties, reset to their default values, or add/remove custom properties if they are not present in the current
 theme.
