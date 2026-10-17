@@ -230,3 +230,23 @@ for modules or directories.
 
 **Note 2**: Like *File Status Colors*, this feature modifies your active color scheme.
 {:class='card-panel warn'}
+
+----
+
+### Tool Window Stripes Handle
+
+The **Tool Window Stripes Handle** feature allows you to automatically hide the tool window stripes and reveal them only when you hover over
+a small handle on the side of the IDE.
+
+This is particularly useful for **"Zen Users"** — people who prefer to hide their tool windows to focus entirely on the code. When the
+stripes are hidden, hovering over the handle reveals them, and the last auto-hidden tool window will reopen automatically.
+
+{% include figure.html content="/screens/features/autohide.gif" caption="Auto-hide Tool Window Stripes" %}
+
+You can configure the following options:
+
+- **Hover Delay**: Adjust the delay before the stripes appear when hovering over the handle.
+- **Handle Width**: Set the width of the visible handle on the IDE edge.
+
+**Note**: This feature is available for all users.
+{:class='card-panel info'}

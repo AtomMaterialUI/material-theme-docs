@@ -7,8 +7,8 @@ comments: true
 toc: true
 
 previous:
-  url: '/docs/configuration/custom-themes'
-  title: Custom Themes
+  url: '/docs/configuration/theme-color-overrides'
+  title: Theme Color Overrides
 next:
   url: '/docs/configuration/islands-settings'
   title: Islands Settings

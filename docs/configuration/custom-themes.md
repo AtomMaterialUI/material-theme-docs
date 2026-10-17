@@ -7,8 +7,8 @@ toc: true
 comments: true
 
 previous:
-  url: '/docs/configuration/project-title-bar-settings'
-  title: Project Title Bar Settings
+  url: '/docs/configuration/theme-color-overrides'
+  title: Theme Color Overrides
 next:
   url: '/docs/configuration/language-additions'
   title: Language Additions

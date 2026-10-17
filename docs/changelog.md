@@ -15,23 +15,58 @@ next:
 
 # Changelog
 
+## 14.0.0
+
+### Features
+
+- **New Feature: File Header**: Display a configurable header at the top of every open editor.
+    - App-level and per-project settings, with project overrides
+    - Header styles: *Island*, *Seamless* and *Header*
+    - Configurable position, text alignment, dimensions, font and colors
+    - Toolbar with configurable alignment and a visibility toggle
+    - Presets popup for choosing the header pattern
+    - Scrollable text view in the header panel
+- **New Feature: Tool Window Stripes Handle**: Collapse the tool window stripes and reveal them from a handle.
+    - Auto-hide with configurable hover delay and handle width
+    - Reopens the last auto-hidden tool window when revealing the bars from the handle
+- **Project Frame**: Rich patterns can now style text in the title widget.
+- **Second Gradient**: Optional secondary anchor for radial gradients.
+- **Theme Color Overrides Tool Window**: Manually override the current theme's colors via a Tool Window.
+
+### Fixes
+
+- Fix Stripes Handle not installing on live frames and bars not collapsing when the feature is enabled.
+- Fix Stripes Handle positioning.
+- Fix hex color parsing in rich patterns to avoid `NumberFormatException`.
+
+### Removals
+
+- Removed unused dark theme detection methods.
+
+### Other
+
+- Support `Configurable.NewOptions` in all settings panels.
+- Refactor the rich pattern rendering into modular parser and renderer classes.
+- Refactor the overlay state management and popup detection.
+- Improve the Peek editor data context handling and configuration.
+
 ## 13.1.0
 
 ### Features
 
 - **New Themes!**
-  - **Winter Is Coming**
-  - **Shades of Purple**
-  - **Noctis**
+    - **Winter Is Coming**
+    - **Shades of Purple**
+    - **Noctis**
 - Redesign of the **Omni** and **Cobalt2** themes to improve their color schemes and overall look.
 - **Custom Theme Colors**: You can now edit **in-place** the theme colors of *any theme*
-  - Inside "**Current Theme**" settings
-  - Edit any property and it will persist for this specific theme
-  - Select a color among the current theme's colors or pick a new one.
-  - Search for a specific property or color
-  - Reset a property or all properties to their defaults.
-  - **Note**: This feature is only available for **Premium** and **Custom Theme** license owners.
-  - **Note**: Any properties listed in the *Theme Ignores* will be ignored, no matter what color you give it.
+    - Inside "**Current Theme**" settings
+    - Edit any property and it will persist for this specific theme
+    - Select a color among the current theme's colors or pick a new one.
+    - Search for a specific property or color
+    - Reset a property or all properties to their defaults.
+    - **Note**: This feature is only available for **Premium** and **Custom Theme** license owners.
+    - **Note**: Any properties listed in the *Theme Ignores* will be ignored, no matter what color you give it.
 
 ### Fixes
 
@@ -44,32 +79,32 @@ next:
 ### Features
 
 - **New Feature: Stylish Regions**: Make Folded Regions stand out.
-  - Three styles: *Wavy*, *Line* and *Stripe*
-  - Custom Separator Color (PREMIUM)
-  - Custom Text Color and Font (PREMIUM)
-  - Generate background color from the region description (PREMIUM)
+    - Three styles: *Wavy*, *Line* and *Stripe*
+    - Custom Separator Color (PREMIUM)
+    - Custom Text Color and Font (PREMIUM)
+    - Generate background color from the region description (PREMIUM)
 - **Peek**:
-  - New Option: **Replace Ctrl-click**. When enabled, this will replace the default `Ctrl+Click/Cmd+Click` behavior by
-    the *Inline
-    Peek* feature.
-  - Prevent scrolling the parent container when scrolling on a peek panel
-  - Set default width to the full width
-  - Make the Peek Panel navigatable by `F4`
-  - Add the `ServiceDimensionKey` to make it keep the same size when switching between peek panels.
+    - New Option: **Replace Ctrl-click**. When enabled, this will replace the default `Ctrl+Click/Cmd+Click` behavior by
+      the *Inline
+      Peek* feature.
+    - Prevent scrolling the parent container when scrolling on a peek panel
+    - Set default width to the full width
+    - Make the Peek Panel navigatable by `F4`
+    - Add the `ServiceDimensionKey` to make it keep the same size when switching between peek panels.
 - **New Feature: Window Coloring**: Color the IDE window frame per project.
-  - Split out the *Window Coloring* settings from the *Project Banner* settings.
-  - You can now select between **Solid Color** or **Gradient Fill**
-  - For Gradients:
-    - You can choose between *Linear* and *Radial* gradient types
-    - You can select the anchor point for radial gradients (top left, top center, top right, etc)
-    - You can customize the size and opacity
-  - Override and regenerate the frame color
-  - Customize settings per-project
-  - **Regenerate window color on theme change**: Trigger a new Gradient/Solid color when the theme changes.
+    - Split out the *Window Coloring* settings from the *Project Banner* settings.
+    - You can now select between **Solid Color** or **Gradient Fill**
+    - For Gradients:
+        - You can choose between *Linear* and *Radial* gradient types
+        - You can select the anchor point for radial gradients (top left, top center, top right, etc)
+        - You can customize the size and opacity
+    - Override and regenerate the frame color
+    - Customize settings per-project
+    - **Regenerate window color on theme change**: Trigger a new Gradient/Solid color when the theme changes.
 - **New Color Scheme Overrides**:
-  - **Search Results**: Override the search results highlight color with the accent color.
-  - **Identifier Under Caret**: Override the identifier under caret color with the accent color.
-  - **Matched Brace**: Override the matched brace color with the accent color.
+    - **Search Results**: Override the search results highlight color with the accent color.
+    - **Identifier Under Caret**: Override the identifier under caret color with the accent color.
+    - **Matched Brace**: Override the matched brace color with the accent color.
 - **New Feature: Outline Notifications** (UI Components): Give notifications an outline accent-colored look.
 
 ### Fixes
@@ -115,15 +150,15 @@ next:
   selecting accent colors
   with dynamic previews.
 - **Peek**:
-  - Introduced **Peek (Popup)** and **Peek (Inline)**: Quick code preview and editing capabilities similar to VSCode's
-    Peek feature.
-  - Added configurable settings for Peek, such as **padding**, **header color**, etc..
+    - Introduced **Peek (Popup)** and **Peek (Inline)**: Quick code preview and editing capabilities similar to VSCode's
+      Peek feature.
+    - Added configurable settings for Peek, such as **padding**, **header color**, etc..
 - **Color Scheme Overrides**: New settings page for overriding color scheme colors on the fly, for all themes.
-  - Migrated the **Automatically reset color scheme** and **Global Default Font** to this new page.
-  - **Diff Colors Opacity**: Adjust the opacity of diff highlights in the editor.
-  - **Popups and Notifications**: Override the colors of popups and notifications from the theme.
-  - **VCS Gutter Colors**: Override the colors of the VCS gutter indicators with the Material ones.
-  - **Override Accent**: Align certain color scheme properties with the current **Accent Color**.
+    - Migrated the **Automatically reset color scheme** and **Global Default Font** to this new page.
+    - **Diff Colors Opacity**: Adjust the opacity of diff highlights in the editor.
+    - **Popups and Notifications**: Override the colors of popups and notifications from the theme.
+    - **VCS Gutter Colors**: Override the colors of the VCS gutter indicators with the Material ones.
+    - **Override Accent**: Align certain color scheme properties with the current **Accent Color**.
 - **Theme Selector Redone**: Replaced static theme preview screenshots with dynamic SVG previews for better consistency
   across all themes.
 - New modernized **Plugin Logo**.
@@ -146,9 +181,9 @@ next:
 
 - New Setting: **Tab Glow** (premium): adds a glow effect under the tabs.
 - Reorganization of the **Material Theme UI Toolbar**:
-  - Categorize actions under their own section (_Tabs_, _Features_, etc)
-  - Adding most of the settings toggles
-  - Adding toggles to switch the current **Material Style**
+    - Categorize actions under their own section (_Tabs_, _Features_, etc)
+    - Adding most of the settings toggles
+    - Adding toggles to switch the current **Material Style**
 
 ### Fixes
 
@@ -212,15 +247,15 @@ next:
 - **Material 3 Style**: The **Material 3 Style** is now available by default, replacing the now outdated **Material
   Theme** (_Material 2_)
   Style.
-  - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look
-    and feel.
+    - In addition, the **Material Design** (_Material 1_) has been reworked, to provide more options to your IDE's look
+      and feel.
 - **Floating Action Button (FAB)**: Introduced FAB support with customizable action groups, drag-and-drop, and position
   persistence.
 - **Theme Ignores Configuration**: New interface for managing and configuring native theme ignores.
 - **Enhanced UI Customization**:
-  - New settings for **Custom Button Radius** and personalization of UI component borders.
-  - Improved **Rounded Tabs** with additional customization options and controls.
-  - Support for **Google Sans** font across the UI.
+    - New settings for **Custom Button Radius** and personalization of UI component borders.
+    - Improved **Rounded Tabs** with additional customization options and controls.
+    - Support for **Google Sans** font across the UI.
 - **Spacing Settings Refinements**: Adds enhanced customization options for spacing settings.
 - **Database Integration**: Added support for database table settings and plugin integration.
 - **Current Look and Feel Properties**: New Settings page to visualize the current theme's colors.

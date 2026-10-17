@@ -7,14 +7,14 @@ toc: true
 
 ## What's New in Material Theme UI (Unreleased)
 
-This upcoming version introduces the **File Header**, a new **Tool Window Stripes Handle**, the **Theme Colors Override** tool window,
-and a new **Gradient** in the **Window Coloring** settings.
+This upcoming version introduces the **File Header**, improved **Wizard** steps, a new **Tool Window Stripes Handle**, the **Theme Colors Override** tool window,
+and a **Second Gradient Anchor** in the **Window Coloring** settings.
 
 ### File Header
 
 A configurable header can now be displayed at the top of every open editor, completing the **Project Banner** already available. Similarly
 to the Project Banner,
-the *File Header* can provide useful information about the current file, such as it's name, path, module, and more.
+the *File Header* can provide useful information about the current file, such as its name, path, module, and more.
 
 {% include figure.html content="/screens/fileHeader/fileHeader.png" caption="File Header" %}
 
@@ -23,7 +23,9 @@ the *File Header* can provide useful information about the current file, such as
 - Give each header a generated tint to better distinguish between files.
 - Customize the position, text alignment, dimensions, opacity, font and colors.
 - Provides a few handy actions, such as *Copy Path* or *Open in Split*.
-- You can also change the current pattern by right-clicking and select from a list of available patterns.
+- You can also change the current pattern by right-clicking and selecting from a list of predefined patterns.
+
+{% include figure.html content="/screens/fileHeader/customPresets.png" caption="Predefined Patterns" %}
 
 In addition, both the **Project Banner** and the **File Header** can now style the displayed information, e.g. change the color, make the
 text bold, italic, etc.
@@ -35,16 +37,31 @@ This allows you to highlight important information, such as the file name, and m
 **Note**: This feature is available for **Premium** and **Project Frame** license owners.
 {:class='card-panel warn'}
 
+### Wizard
+
+The theme setup wizard has been improved with new steps and a better layout. Two new wizard steps allow you to configure the **Banner/Header**
+and **Regions/Peek** settings directly during initial setup, making it easier to personalize your workspace from the start.
+
+The wizard UI has also been refined with improved layout using WrapLayout and minimum size constraints, ensuring a more consistent and
+comfortable experience across different window sizes.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/wizard/welcomeStep.png" caption="Wizard Welcome Step" %}
+{% include figure.html content="/screens/wizard/themesStep.png" caption="Wizard Themes Step" %}
+{% include figure.html content="/screens/wizard/accentStep.png" caption="Wizard Accent Step" %}
+{% include figure.html content="/screens/wizard/contrastStep.png" caption="Wizard Contrast Step" %}
+</div>
+
 ### Tool Window Stripes Handle
 
 A new feature is available inside the **Features** settings: the **Tool Window Stripes Handle**. This feature allows you to automatically
 hide the tool window stripes, and reveal them when you hover over a small handle on the side of the IDE.
 
-This can be particularly useful for **"Zen Users"**, e.g. people that usually hide their tool windows to focus on the code.
+This can be particularly useful for **"Zen Users"**, i.e. people who usually hide their tool windows to focus on the code.
 
 {% include figure.html content="/screens/features/autohide.gif" caption="Auto-hide Tool Window Stripes" %}
 
-You can configure the auto-hide behavior, the hover delay and the handle width.
+You can configure the auto-hide behavior, the hover delay, and the handle width.
 
 **Note**: This feature is available for all users.
 {:class='card-panel warn'}

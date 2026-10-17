@@ -139,6 +139,14 @@ anchors create an inverted glow.
 
 {% include figure.html content="/screens/windows/centerGradient.png" caption="Center Gradient" %}
 
+#### Second Gradient Anchor
+
+Radial gradients support an optional **second anchor point**, allowing you to create two-color gradients. With a second anchor, the gradient
+transitions from the project color at the first anchor to a different color at the second anchor, creating a more dynamic and visually
+rich effect.
+
+{% include figure.html content="/screens/windows/doubleGradient.png" caption="Double Gradient with Second Anchor" %}
+
 ### Gradient Size
 
 The **gradient size** (0-100%) controls the region before the gradient starts fading out to the background color (in gradient terms, it
