@@ -5,9 +5,10 @@ group: whatsnew
 toc: true
 ---
 
-## What's New in Material Theme UI (Unreleased)
+## What's New in Material Theme UI v14.0.0
 
-This upcoming version introduces the **File Header**, improved **Wizard** steps, a new **Tool Window Stripes Handle**, the **Theme Colors Override** tool window,
+This upcoming version introduces the **File Header**, improved **Wizard** steps, a new **Tool Window Stripes Handle**, the **Theme Colors
+Override** tool window,
 and a **Second Gradient Anchor** in the **Window Coloring** settings.
 
 ### File Header
@@ -39,7 +40,8 @@ This allows you to highlight important information, such as the file name, and m
 
 ### Wizard
 
-The theme setup wizard has been improved with new steps and a better layout. Two new wizard steps allow you to configure the **Banner/Header**
+The theme setup wizard has been improved with new steps and a better layout. Two new wizard steps allow you to configure the
+**Banner/Header**
 and **Regions/Peek** settings directly during initial setup, making it easier to personalize your workspace from the start.
 
 The wizard UI has also been refined with improved layout using WrapLayout and minimum size constraints, ensuring a more consistent and
