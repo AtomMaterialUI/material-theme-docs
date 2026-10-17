@@ -5,6 +5,77 @@ group: whatsnew
 toc: true
 ---
 
+## What's New in Material Theme UI (Unreleased)
+
+This upcoming version introduces the **File Header**, a new **Tool Window Stripes Handle**, the **Theme Colors Override** tool window,
+and a new **Gradient** in the **Window Coloring** settings.
+
+### File Header
+
+A configurable header can now be displayed at the top of every open editor, completing the **Project Banner** already available. Similarly
+to the Project Banner,
+the *File Header* can provide useful information about the current file, such as it's name, path, module, and more.
+
+{% include figure.html content="/screens/fileHeader/fileHeader.png" caption="File Header" %}
+
+- Configure it globally in the app settings, or override it per project.
+- Choose between three styles: *Island*, *Seamless* and *Header*.
+- Give each header a generated tint to better distinguish between files.
+- Customize the position, text alignment, dimensions, opacity, font and colors.
+- Provides a few handy actions, such as *Copy Path* or *Open in Split*.
+- You can also change the current pattern by right-clicking and select from a list of available patterns.
+
+In addition, both the **Project Banner** and the **File Header** can now style the displayed information, e.g. change the color, make the
+text bold, italic, etc.
+
+This allows you to highlight important information, such as the file name, and make it stand out from the rest of the text.
+
+{% include figure.html content="/screens/fileHeader/headerStyle.png" caption="Header Style" %}
+
+**Note**: This feature is available for **Premium** and **Project Frame** license owners.
+{:class='card-panel warn'}
+
+### Tool Window Stripes Handle
+
+A new feature is available inside the **Features** settings: the **Tool Window Stripes Handle**. This feature allows you to automatically
+hide the tool window stripes, and reveal them when you hover over a small handle on the side of the IDE.
+
+This can be particularly useful for **"Zen Users"**, e.g. people that usually hide their tool windows to focus on the code.
+
+{% include figure.html content="/screens/features/autohide.gif" caption="Auto-hide Tool Window Stripes" %}
+
+You can configure the auto-hide behavior, the hover delay and the handle width.
+
+**Note**: This feature is available for all users.
+{:class='card-panel warn'}
+
+### Second Gradient Anchor
+
+The **Window Coloring** settings now allow you to configure a second anchor for the gradient fill.
+
+{% include figure.html content="/screens/windows/doubleGradient.png" caption="Double Gradient" %}
+
+### Theme Colors Override Tool Window
+
+Previously, you could preview the colors of the current theme, but you couldn't edit them. That's now possible with the new **Theme Colors
+Override** tool window, which allows you to edit the colors of any theme in-place.
+
+{% include figure.html content="/screens/custom/overrideThemeColorsTW.png" caption="Override Theme Colors" %}
+
+This Tool Window gives you a preview of the current theme's colors, and allows you to edit them in-place. Upon clicking on a color, you will
+be presented with a custom color picker that allows you to pick a color from the current theme's colors, or pick a new one.
+
+{% include figure.html content="/screens/custom/colorSelector.png" caption="Color Selector" %}
+
+You can also filter out properties, reset to their default values, or add/remove custom properties if they are not present in the current
+theme.
+
+**Note**: This is the same feature as the one described in the v13.1.0 release notes, but in this version it is available as a Tool Window
+in addition of the Settings page. As such, it is also only available for **Premium** and **Custom Theme** license owners.
+{:class='card-panel warn'}
+
+----
+
 ## What's New in Material Theme UI v13.1.0
 
 The new version focuses on bringing new themes to the table, as well as improving the existing ones.
@@ -319,9 +390,9 @@ customized color schemes!
 
 - **New Setting: Tab Glow (Premium)**: Adds a subtle glow effect beneath active tabs.
 - **Material Theme UI Toolbar Reorganization**:
-  - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
-  - Added more setting toggles for quicker access.
-  - Added toggles to quickly switch the current **Material Style**.
+    - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
+    - Added more setting toggles for quicker access.
+    - Added toggles to quickly switch the current **Material Style**.
 
 ### Fixes
 
@@ -381,8 +452,8 @@ customized color schemes!
 ## What's New in Material Theme UI v11.0.0
 
 New year, new look! The **Material Theme UI** plugin continues to evolve, bringing a modernized experience to your IDE.
-This version introduces the **Material 3** style, offering a fresh, contemporary aesthetic to replace the classic
-**Material 2** look. We’ve also added support for the sleek **Google Sans** font (available separately) to further
+This version introduces the **Material 3** style, offering a fresh, contemporary aesthetic to replace the classic **Material 2** look. We’ve
+also added support for the sleek **Google Sans** font (available separately) to further
 refine your workspace.
 {:class='title'}
 
@@ -445,13 +516,13 @@ as broken images or inconsistent disabled states), and overall polish to make na
 
 - **Contrast Mode by Default**: Enabled by default to provide a sharper, more defined UI out of the box.
 - **Material 3 Integration**: Material 3 is now the default style, succeeding Material 2.
-  - **Material 1** has been revitalized as a primary customization option.
+    - **Material 1** has been revitalized as a primary customization option.
 - **Floating Action Button (FAB)**: A customizable, draggable shortcut hub that persists across sessions.
 - **Theme Ignores**: A dedicated interface for managing and overriding external theme properties.
 - **UI Customization Enhancements**:
-  - New settings for **Custom Button Radius** and component borders.
-  - Improved **Rounded Tabs** with expanded customization options.
-  - Official support for the **Google Sans** font.
+    - New settings for **Custom Button Radius** and component borders.
+    - Improved **Rounded Tabs** with expanded customization options.
+    - Official support for the **Google Sans** font.
 - **Enhanced Spacing**: More granular options for fine-tuning the IDE layout.
 - **Database Integration**: New settings for database tables and improved plugin synergy.
 - **Live Color Preview**: A dedicated page to visualize every color property in your current theme.
