@@ -5,6 +5,13 @@ group: whatsnew
 toc: true
 ---
 
+## What's New in Material Theme UI v14.1.0
+
+This version fixes a few issues with the recent **File Header** feature, as well as adding more keywords and primitives to the `Java`,
+`Kotlin`, `Rust` and `Go` languages additions.
+
+See Changelog for more details.
+
 ## What's New in Material Theme UI v14.0.0
 
 This upcoming version introduces the **File Header**, improved **Wizard** steps, a new **Tool Window Stripes Handle**, the **Theme Colors

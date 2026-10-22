@@ -15,6 +15,20 @@ next:
 
 # Changelog
 
+## 14.1.0
+
+### Features
+
+- **New Language Additions Keywords**: Added new language addition keywords
+- **File Header**: Implemented a custom renderer for the settings
+
+### Fixes
+
+- **File Header**: Fix the issue where the header grows and prevent the splits from being resized
+- **File Header**: Fix close button
+- **File Header**: Remove the header boldness and reduce size
+- **Linux**: Hopefully fix the issue with the window coloring spreading over the editor and project tree
+
 ## 14.0.0
 
 ### Features
