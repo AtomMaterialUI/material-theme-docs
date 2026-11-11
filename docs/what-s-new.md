@@ -5,6 +5,74 @@ group: whatsnew
 toc: true
 ---
 
+## What's New in Material Theme UI v14.2.0
+
+This release brings significant expansions to the **Language Additions** ecosystem, introducing **User-Defined Custom Additions**,
+**Framework and Library Providers**, dedicated **HTML & CSS Additions**, as well as the new **UI Theme Inspector**.
+
+### Custom Language Additions
+
+You are no longer limited to pre-configured keywords. You can now define your own language additions to highlight specific functions,
+identifiers, or variables directly in your code. By entering custom words or prefix patterns (such as `use*`) into the Language Additions
+settings, they will automatically be exposed to the corresponding Color Scheme page.
+
+{% include figure.html content="/screens/additions/customEntries.png" caption="Custom Language Additions Settings" %}
+
+- Add custom identifiers per language in **Settings | Appearance & Behavior | Material Theme | Language Additions**.
+- Supports comma-separated or newline-separated values.
+- Supports trailing wildcards (e.g. `use*` will match `useState`, `useEffect`, `useCustomHook`).
+- Customize colors under the `Custom` category in each language's **Color Scheme** additions page.
+
+### Language Additions Providers
+
+To enhance readability and provide immediate visual distinction for common frameworks and libraries, Material Theme UI now comes with
+pre-packaged providers. In addition, an open extension point allows third-party plugin authors to contribute their own additions.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/additions/customProvidersJS.png" caption="Custom Providers - JavaScript" %}
+{% include figure.html content="/screens/additions/customProvidersKotline.png" caption="Custom Providers - Kotlin" %}
+</div>
+
+Built-in framework and library providers include:
+
+- **React Hooks**: `useState`, `useEffect`, `useContext`, `useReducer`, `useMemo`, `useCallback`, etc.
+- **Angular**: `@Component`, `@Injectable`, `@Directive`, `@Pipe`, `ngFor`, `ngIf`...
+- **Vue**: `use*`, `watch*`, `computed`, `ref`, `reactive`...
+- **NestJS**: `@Controller`, `@Injectable`, `@Module`, `@Get`, `@Post`...
+- **Django**: `@login_required`, `@app.route`, `views.View`...
+- **Spring**: `@Controller`, `@Service`, `@Repository`, `@Autowired`, `@Component`...
+- **Laravel**: `@Route`, `@Controller`, `@Middleware`...
+- **IntelliJ Platform SDK**: `@NotNull`, `@Nullable`, `Project`, `PsiFile`, `ApplicationManager`...
+- **Rails**: `before_action`, `after_save`, `validate`, `has_many`, `belongs_to`...
+
+### HTML & CSS Additions
+
+Granular syntax highlighting is now extended to HTML Pages and CSS stylesheets. You can customize colors for HTML tags (semantic,
+structural, layout, forms, media) and attributes (classes, IDs, ARIA, data attributes, boolean flags), as well as CSS properties,
+pseudo-classes, functions, and at-rules.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/additions/htmlAdditions.png" caption="HTML Additions Color Scheme" %}
+{% include figure.html content="/screens/additions/cssAdditions.png" caption="CSS Additions Color Scheme" %}
+</div>
+
+**Note**: Language Additions is a **Premium** feature.
+{:class='card-panel warn'}
+
+### UI Theme Inspector
+
+A new **Theme Inspector** is now available in the **Theme Color Overrides** tool window. It allows you to inspect any UI element in the IDE
+on click to discover its theme property keys, color scheme keys, and active color values.
+
+<div class="masonry" markdown="0">
+{% include figure.html content="/screens/override/inspector1.png" caption="Color Scheme Inspector" %}
+{% include figure.html content="/screens/override/inspector2.png" caption="Theme Inspector" %}
+{% include figure.html content="/screens/override/inspector3.png" caption="Component Inspector" %}
+</div>
+
+
+---
+
 ## What's New in Material Theme UI v14.1.0
 
 This version fixes a few issues with the recent **File Header** feature, as well as adding more keywords and primitives to the `Java`,
