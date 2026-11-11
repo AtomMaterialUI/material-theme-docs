@@ -15,6 +15,29 @@ next:
 
 # Changelog
 
+## 14.2.0
+
+### Features
+
+- **Custom Language Additions**: Now you can add your own language additions! If you ever wanted to colorize specific functions, variables
+  or even strings, you can now add them on the fly and they will be added to the _Language Additions_ color scheme pages.
+- **Language Additions Providers**: The plugin also provides a new `extensionPoint` to allow other plugins to provide their own language
+  additions.
+- To illustrate the functionality, we provided a bunch of custom providers as well:
+    - *React Hooks*: `useState`, `useEffect`, `useContext`, etc.
+    - *Angular*: `@Component`, `@Injectable`, `ngFor`...
+    - *Vue*: `use*`, `watch*`, `computed`...
+    - *NestJS*: `@Controller`, `@Injectable`, `@Module`...
+    - *Django*: `@login_required`, `@app.route`, `views.View`...
+    - *Spring*: `@Controller`, `@Service`, `@Repository`...
+    - *Laravel*: `@Route`, `@Controller`, `@Middleware`...
+    - *IntelliJ Platform*: `@NotNull`, `@Nullable`, `Project`, `PsiFile`, `ApplicationManager`...
+    - *Rails*: `before_action`, `after_save`, `validate`, `has_many`...
+- **HTML Additions**: Customize HTML tags and attributes to your liking.
+- **CSS Additions**: Customize CSS properties, pseudo-elements, functions or at-rules at your leisure.
+- **UI Theme Inspector**: Open the *Theme Color Overrides* tool window to launch a nifty **Theme Inspector**. This allows you to point at
+  any UI element and see its theme properties, color scheme keys, or raw color value.
+
 ## 14.1.0
 
 ### Features
