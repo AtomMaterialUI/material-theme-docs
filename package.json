@@ -1,19 +1,18 @@
 {
   "name": "material-theme-docs",
-  "type": "module",
   "version": "2.0.0",
   "private": true,
-  "packageManager": "pnpm@10.26.1",
-  "engines": {
-    "node": ">=26"
-  },
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
     "serve": "netlify serve",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "lint": "oxlint",
+    "format": "oxfmt && prettier --write \"src/**/*.astro\"",
+    "format:check": "oxfmt --check && prettier --check \"src/**/*.astro\""
   },
   "dependencies": {
     "@astrojs/starlight": "^0.43.1",
@@ -26,6 +25,14 @@
     "@playwright/test": "latest",
     "@types/js-yaml": "4.0.9",
     "netlify-cli": "latest",
+    "oxfmt": "0.79.0",
+    "oxlint": "1.94.0",
+    "prettier": "3.10.1",
+    "prettier-plugin-astro": "1.1.2",
     "typescript": "^6.0.3"
-  }
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "packageManager": "pnpm@10.26.1"
 }
