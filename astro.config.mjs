@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import starlight from '@astrojs/starlight';
 import AutoImport from 'astro-auto-import';
+import starlightLinksValidator from 'starlight-links-validator';
 
 // Material themes that have a matching bundled Shiki theme (code blocks follow these 5 only);
 // every other theme falls back to github-dark/light by its light/dark type.
@@ -34,6 +35,7 @@ export default defineConfig({
         './src/components/content/ThemeCard.astro',
         './src/components/content/ThemeCards.astro',
         './src/components/content/ThemeColors.astro',
+        './src/components/content/ThemeList.astro',
         './src/components/content/ThemePalette.astro',
         './src/components/content/ThemePalettes.astro',
         './src/components/content/Wallpapers.astro',
@@ -63,7 +65,40 @@ export default defineConfig({
           href: 'https://github.com/mallowigi/material-theme-docs',
         },
       ],
-      sidebar: [],
+      sidebar: [
+        { label: 'Introduction', slug: 'docs/introduction' },
+        { label: 'Getting Started', slug: 'docs/getting-started' },
+        {
+          label: 'Configuration',
+          items: [{ label: 'Accents', slug: 'docs/configuration/accents' }],
+        },
+        {
+          label: 'Reference',
+          items: [{ label: 'Color Palette', slug: 'docs/reference/color-palette' }],
+        },
+        { label: 'Analytics', slug: 'docs/analytics' },
+        { label: 'FAQ/Troubleshooting', slug: 'docs/faq-troubleshooting' },
+        { label: 'Other Products', slug: 'docs/other-products' },
+        { label: 'Acknowledgements', slug: 'docs/acknowledgements' },
+        { label: 'Pricing', slug: 'docs/pricing' },
+        { label: 'About Subscription Model', slug: 'docs/about-subscription-model' },
+        { label: 'Support Us', slug: 'docs/support-us' },
+        { label: 'EULA', slug: 'docs/eula' },
+      ],
+      plugins: [
+        starlightLinksValidator({
+          // Sections not converted yet (configuration, icons, reference, changelog, ...).
+          exclude: [
+            '/docs/configuration/**',
+            '/docs/icons/**',
+            '/docs/reference/**',
+            '/docs/changelog/**',
+            '/docs/whats-new/**',
+            '/docs/archives/**',
+            '/docs/development/**',
+          ],
+        }),
+      ],
       components: {
         ThemeProvider: './src/components/overrides/ThemeProvider.astro',
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',
