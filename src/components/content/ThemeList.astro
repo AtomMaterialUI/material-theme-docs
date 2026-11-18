@@ -1,0 +1,22 @@
+---
+// Replaces `{% for theme in site.data.themes.<group> %}<li>{{ theme.name }}</li>` loops.
+// Usage: <ThemeList groups={['material', 'material2']} prefix="Material " />
+import { themeGroups } from '../../data/themes';
+
+interface Props {
+  groups: string[];
+  prefix?: string;
+}
+
+const { groups, prefix = '' } = Astro.props;
+const list = groups.flatMap((group) => themeGroups[group] ?? []);
+---
+
+<ul>
+  {list.map((theme) => (
+    <li>
+      {prefix}
+      {theme.name}
+    </li>
+  ))}
+</ul>
