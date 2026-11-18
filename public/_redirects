@@ -7,6 +7,9 @@ https://www.material-theme.com/*  https://material-theme.com/:splat  301!
 # /docs/ has no index page of its own
 /docs/                                           /docs/introduction/                        301
 
+# The old robots.txt and Search Console pointed at /sitemap.xml
+/sitemap.xml                                      /sitemap-index.xml                         301
+
 # Slug fixes
 /docs/development/installation_/                 /docs/development/installation/            301
 /docs/configuration/ui-components-settings/      /docs/configuration/ui-component-settings/ 301

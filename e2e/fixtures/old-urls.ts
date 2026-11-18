@@ -58,6 +58,7 @@ export const otherPages = ['/', '/robots.txt'];
 
 export const redirects: Record<string, string> = {
   '/docs/': '/docs/introduction/',
+  '/sitemap.xml': '/sitemap-index.xml',
   '/docs/development/installation_/': '/docs/development/installation/',
   '/docs/configuration/ui-components-settings/': '/docs/configuration/ui-component-settings/',
   '/docs/configuration/main-settings/': '/docs/configuration/settings/',
