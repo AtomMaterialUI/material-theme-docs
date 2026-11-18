@@ -1,0 +1,20 @@
+---
+// Replaces `{% for color in site.data.accentColors %}{% include color2.html %}{% endfor %}`.
+import { accentColors } from '../../data/site';
+import ColorSwatch from './ColorSwatch.astro';
+---
+
+<div class="not-content mt-colors">
+  {accentColors.map((color) => (
+    <ColorSwatch color={color} />
+  ))}
+</div>
+
+<style>
+  .mt-colors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 0.35rem;
+    margin: 1rem 0;
+  }
+</style>

@@ -1,0 +1,41 @@
+---
+// Replaces _includes/theme-card.html: a card with the theme name and description on its own background.
+import type { Theme } from '../../data/themes';
+
+interface Props {
+  theme: Theme;
+}
+
+const { theme } = Astro.props;
+const capitalize = (value: string) =>
+  value.charAt(0).toUpperCase() + value.slice(1);
+---
+
+<li
+  class="mt-theme-card"
+  id={`theme-${theme.className}`}
+  style={`background: ${theme.background}; color: ${theme.foreground}`}
+>
+  <span class="title">{capitalize(theme.name)}</span>
+  <p>{theme.desc}</p>
+</li>
+
+<style>
+  .mt-theme-card {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.3);
+  }
+
+  .title {
+    display: block;
+    font-size: var(--sl-text-xl);
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0.25rem 0 0 !important;
+  }
+</style>

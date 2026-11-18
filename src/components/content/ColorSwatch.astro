@@ -1,0 +1,71 @@
+---
+// Replaces _includes/color.html and color2.html: a gradient (dark → light) or a solid color swatch.
+// Usage: <ColorSwatch color={color} />, or <ColorSwatch theme={theme} field="excluded" />.
+import type { AccentColor, PaletteColor } from '../../data/site';
+import type { Theme } from '../../data/themes';
+
+interface Props {
+  color?: PaletteColor | AccentColor;
+  theme?: Theme;
+  field?: keyof Theme;
+}
+
+const { color, theme, field } = Astro.props;
+
+const capitalize = (value: string) =>
+  value.charAt(0).toUpperCase() + value.slice(1);
+
+let name = '';
+let title = '';
+let style = '';
+let tags: string[] = [];
+const isGradient = !!color && 'dark' in color;
+
+if (color && 'dark' in color) {
+  name = capitalize(color.name);
+  title = `${color.dark} - ${color.light}`;
+  style = `background: linear-gradient(to right, ${color.dark} 0%, ${color.light} 100%)`;
+  tags = color.tags ?? [];
+} else if (color) {
+  name = capitalize(color.name);
+  title = color.color;
+  style = `background: ${color.color}; color: ${color.light ? 'black' : 'white'}`;
+} else if (theme && field) {
+  const value = String(theme[field]);
+
+  name = capitalize(theme.name);
+  title = value;
+  style = `background: ${value}; color: ${theme.light ? 'black' : 'white'}`;
+}
+---
+
+<div
+  class:list={['mt-color', 'not-content', { gradient: isGradient }]}
+  {title}
+  {style}
+>
+  <span class="name">{name}</span>
+  {tags.length > 0 && <p class="tags">Tags: {tags.join(', ')}</p>}
+</div>
+
+<style>
+  .mt-color {
+    padding: 0.75rem 1rem;
+    border-radius: 0.35rem;
+    margin: 0 0 0.35rem;
+  }
+
+  .gradient {
+    color: white;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.45);
+  }
+
+  .name {
+    font-weight: 600;
+  }
+
+  .tags {
+    margin: 0;
+    font-size: var(--sl-text-xs);
+  }
+</style>
