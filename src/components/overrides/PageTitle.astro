@@ -1,0 +1,12 @@
+---
+// The "ribbon": an accent band holding the page title and the front-matter description as subheading.
+// The band background itself is painted on the parent .content-panel in custom.css (`:has(.docs-header)`).
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const { description } = Astro.locals.starlightRoute.entry.data;
+---
+
+<div class="docs-header">
+  <Default />
+  {description && <p class="docs-subtitle">{description}</p>}
+</div>

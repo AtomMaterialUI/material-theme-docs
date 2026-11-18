@@ -1,0 +1,126 @@
+/* Per-theme colors come from /material-themes.css (generated from src/data/themes.yml).
+   These defaults (Oceanic / teal #009688) only matter without JS; :where() keeps them at zero
+   specificity so the per-theme blocks always win. */
+:where(:root) {
+  --sl-color-accent-low: #0b3b3a;
+  --sl-color-accent: #009688;
+  --sl-color-accent-high: #80cbc4;
+}
+
+:where(:root[data-theme='light']) {
+  --sl-color-accent-low: #b2dfdb;
+  --sl-color-accent: #009688;
+  --sl-color-accent-high: #00695c;
+}
+
+/* Fonts match the live site: Google Sans for text, Source Code Pro for code. */
+:root {
+  --sl-font: 'Google Sans', 'Roboto', 'Calibri', 'Arial', sans-serif;
+  --sl-font-mono:
+    'Source Code Pro', Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal, monospace;
+  --mt-ribbon-fg: var(--mt-select-fg, #ffffff);
+}
+
+/* Headings in the accent color */
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--sl-color-accent);
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.sl-markdown-content h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+}
+
+/* Ribbon (.docs-header, see PageTitle override): accent band across the main pane */
+.main-pane .content-panel:has(.docs-header) {
+  background: var(--sl-color-accent);
+  color: var(--mt-ribbon-fg);
+  padding-block: 1rem 2rem;
+  border: 0;
+  transition: background-color 0.3s;
+}
+
+.main-pane .content-panel:has(.docs-header) + .content-panel {
+  border-top: 0;
+}
+
+.docs-header h1#_top {
+  color: var(--mt-ribbon-fg);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5.5vw, 3.94rem);
+  line-height: 1.1;
+  margin: 1.5rem 0 0;
+}
+
+.docs-header .docs-subtitle {
+  color: var(--mt-ribbon-fg);
+  font-size: clamp(1.25rem, 2.6vw, 2.14rem);
+  line-height: 1.15;
+  margin: 1.75rem 0 0.5rem;
+}
+
+@media (max-width: 37.5rem) {
+  .docs-header {
+    text-align: center;
+  }
+}
+
+/* TOC links in the accent color; the active one is marked with an accent bar */
+.right-sidebar starlight-toc a {
+  color: var(--sl-color-accent);
+}
+
+.right-sidebar starlight-toc a:hover {
+  color: var(--sl-color-accent-high);
+}
+
+.right-sidebar starlight-toc a[aria-current='true'] {
+  box-shadow: inset 3px 0 0 var(--sl-color-accent);
+  font-weight: 500;
+  border-radius: 0;
+}
+
+/* Desktop (Starlight's lg breakpoint): the ribbon reaches the viewport's right edge and the TOC floats
+   over it as a card pinned to the right edge. */
+@media (min-width: 72rem) {
+  html {
+    overflow-x: clip;
+  }
+
+  .main-pane .content-panel:has(.docs-header) {
+    border-image: linear-gradient(var(--sl-color-accent) 0 0) fill 0 / 0 / 0 100vw 0 0;
+  }
+
+  .right-sidebar-container {
+    width: var(--sl-sidebar-width);
+  }
+
+  .right-sidebar {
+    right: 0;
+    width: var(--sl-sidebar-width);
+    box-sizing: border-box;
+    border-inline-start: 0;
+    background: transparent;
+    padding: calc(var(--sl-nav-height) + 1rem) 0 1rem;
+    height: auto;
+    overflow: visible;
+    max-height: 100vh;
+  }
+
+  .right-sidebar-panel {
+    background: var(--sl-color-bg-nav);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
+    padding: 1rem;
+    margin-inline-end: 1rem;
+    box-sizing: border-box;
+    width: calc(100% - 1rem);
+  }
+
+  .right-sidebar-panel .sl-container {
+    width: auto;
+    max-width: none;
+  }
+}
