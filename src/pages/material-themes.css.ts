@@ -4,11 +4,11 @@ import { themes, type Theme } from '../data/themes';
 const mix = (a: string, pct: number, b: string) => `color-mix(in srgb, ${a} ${pct}%, ${b})`;
 
 function block(t: Theme) {
-	const bg = t.background;
-	const strong = t.white;
-	const hue = (name: string, c: string) =>
-		`--sl-color-${name}: ${c}; --sl-color-${name}-low: ${mix(c, 22, bg)}; --sl-color-${name}-high: ${mix(c, 70, strong)};`;
-	return `:root[data-material-theme='${t.className}'] {
+  const bg = t.background;
+  const strong = t.white;
+  const hue = (name: string, c: string) =>
+    `--sl-color-${name}: ${c}; --sl-color-${name}-low: ${mix(c, 22, bg)}; --sl-color-${name}-high: ${mix(c, 70, strong)};`;
+  return `:root[data-material-theme='${t.className}'] {
   --sl-color-white: ${strong};
   --sl-color-gray-1: ${mix(t.foreground, 50, strong)};
   --sl-color-gray-2: ${t.foreground};
@@ -45,8 +45,9 @@ function block(t: Theme) {
 }
 
 export function GET() {
-	const css = `/* generated from src/data/themes.yml: ${themes.length} themes */\n` +
-		themes.map(block).join('\n') +
-		`\n::selection { background: var(--mt-select-bg); color: var(--mt-select-fg); }\n`;
-	return new Response(css, { headers: { 'Content-Type': 'text/css; charset=utf-8' } });
+  const css =
+    `/* generated from src/data/themes.yml: ${themes.length} themes */\n` +
+    themes.map(block).join('\n') +
+    `\n::selection { background: var(--mt-select-bg); color: var(--mt-select-fg); }\n`;
+  return new Response(css, { headers: { 'Content-Type': 'text/css; charset=utf-8' } });
 }

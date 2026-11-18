@@ -16,7 +16,8 @@
 /* Fonts match the live site: Google Sans for text, Source Code Pro for code. */
 :root {
   --sl-font: 'Google Sans', 'Roboto', 'Calibri', 'Arial', sans-serif;
-  --sl-font-mono: 'Source Code Pro', Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal, monospace;
+  --sl-font-mono:
+    'Source Code Pro', Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal, monospace;
   --mt-ribbon-fg: var(--mt-select-fg, #ffffff);
 }
 
