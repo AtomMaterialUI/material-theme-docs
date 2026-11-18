@@ -1,8 +1,84 @@
 ---
-// Keeps Starlight's footer and adds the floating theme picker on every page.
+// Keeps Starlight's footer (edit link, pagination), then adds the site footer and the floating theme picker.
 import Default from '@astrojs/starlight/components/Footer.astro';
+import { site, years } from '../../config/site';
 import ThemeFab from '../theme/ThemeFab.astro';
 ---
 
 <Default />
+
+<div
+  class="mt-footer"
+  data-mt-footer
+>
+  <div class="mt-footer-cols">
+    <section>
+      <h2>Support Us</h2>
+      <p>
+        Thank you for using our plugins! If you liked them, you can support us
+        on PayPal or OpenCollective.
+      </p>
+      <p>
+        <a href={site.paypal}>PayPal</a>·
+        <a href={site.openCollective}>OpenCollective</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Join the Discussion</h2>
+      <p>
+        Talk directly with us on Slack about new features, goals, problems or
+        anything else.
+      </p>
+      <p>
+        <a href={site.slack}>Join Slack</a>
+      </p>
+    </section>
+  </div>
+
+  <p class="mt-footer-copyright">
+    <span>
+      Material Theme v{site.version} © {years}
+    </span>
+    <a href="/docs/eula/">EULA</a>
+  </p>
+</div>
+
 <ThemeFab />
+
+<style>
+  .mt-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-hairline);
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+  }
+
+  .mt-footer-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .mt-footer h2 {
+    margin: 0 0 0.5rem;
+    font-size: var(--sl-text-base);
+    color: var(--sl-color-white);
+  }
+
+  .mt-footer p {
+    margin: 0 0 0.5rem;
+  }
+
+  .mt-footer a {
+    color: var(--sl-color-accent-high);
+  }
+
+  .mt-footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+</style>
