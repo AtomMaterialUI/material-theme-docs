@@ -1,0 +1,149 @@
+---
+// The landing page theme chooser. Swatches switch the whole site theme through the same
+// window.materialTheme.apply() the floating button uses; the screenshot follows the current theme,
+// so it also updates when the theme is changed from the floating button.
+import { GROUP_LABELS, themeGroups } from '../../data/themes';
+
+const featured = ['material', 'material2'];
+const others = ['other', 'other2', 'other3'];
+const sections = [
+  { title: 'Available Themes', groups: featured },
+  { title: 'Check out the other themes', groups: others },
+];
+---
+
+<section class="not-content mt-chooser">
+  {sections.map((section, index) => (
+    <>
+      <h2>{section.title}</h2>
+
+      {section.groups.map((group) => (
+        <ul aria-label={GROUP_LABELS[group]}>
+          {themeGroups[group].map((theme) => (
+            <li>
+              <button
+                type="button"
+                data-mt-theme={theme.className}
+                data-name={theme.name}
+                aria-label={theme.name}
+                aria-pressed="false"
+                style={`background: ${theme.background}`}
+              />
+              <span>{theme.name}</span>
+            </li>
+          ))}
+        </ul>
+      ))}
+
+      {index === 0 && (
+        <a
+          class="screenshot"
+          data-mt-screenshot
+          href="/img/themes/oceanic.png"
+          target="_blank"
+        >
+          <img
+            src="/img/themes/oceanic.png"
+            alt="Oceanic theme screenshot"
+          />
+        </a>
+      )}
+    </>
+  ))}
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('.mt-chooser')!;
+  const swatches = [
+    ...root.querySelectorAll<HTMLButtonElement>('[data-mt-theme]'),
+  ];
+  const link = root.querySelector<HTMLAnchorElement>('[data-mt-screenshot]')!;
+  const image = link.querySelector('img')!;
+
+  const sync = () => {
+    const current = window.materialTheme.current();
+    const selected = swatches.find((s) => s.dataset.mtTheme === current);
+
+    swatches.forEach((swatch) => {
+      swatch.setAttribute('aria-pressed', String(swatch === selected));
+    });
+
+    if (!selected) {
+      return;
+    }
+
+    link.href = `/img/themes/${current}.png`;
+    image.src = `/img/themes/${current}.png`;
+    image.alt = `${selected.dataset.name} theme screenshot`;
+  };
+
+  swatches.forEach((swatch) => {
+    swatch.addEventListener('click', () => {
+      window.materialTheme.apply(swatch.dataset.mtTheme ?? '', true);
+    });
+  });
+
+  document.addEventListener('material-theme-change', sync);
+
+  sync();
+</script>
+
+<style>
+  h2 {
+    text-align: center;
+    color: var(--sl-color-accent);
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5.5rem;
+    gap: 0.25rem;
+    text-align: center;
+    font-size: var(--sl-text-xs);
+  }
+
+  button {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--sl-color-gray-4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  button[aria-pressed='true'] {
+    border-color: var(--sl-color-accent);
+    box-shadow: 0 0 0 3px var(--sl-color-accent-low);
+  }
+
+  .screenshot {
+    display: block;
+    max-width: 60rem;
+    margin: 1.5rem auto;
+  }
+
+  .screenshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px rgb(0 0 0 / 0.4);
+  }
+</style>

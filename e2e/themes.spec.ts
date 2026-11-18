@@ -27,7 +27,7 @@ test('the saved theme is on <html> before the body is parsed (no flash)', async 
 test('a picked theme persists across reload and navigation', async ({ page }) => {
   await page.goto('/');
   await openPicker(page);
-  await page.locator('[data-mt-theme="dracula"]').click();
+  await page.locator('.mt-theme-fab [data-mt-theme="dracula"]').click();
   await expect(html(page)).toHaveAttribute('data-material-theme', 'dracula');
 
   await page.reload();
@@ -47,13 +47,13 @@ test('?theme= overrides the saved theme without replacing it', async ({ page }) 
 test('all 32 themes can be picked and set light or dark accordingly', async ({ page }) => {
   await page.goto('/');
   await openPicker(page);
-  const cards = page.locator('[data-mt-theme]');
+  const cards = page.locator('.mt-theme-fab [data-mt-theme]');
   await expect(cards).toHaveCount(32);
 
   for (const name of await cards.evaluateAll((els) =>
     els.map((e) => (e as HTMLElement).dataset.mtTheme!),
   )) {
-    await page.locator(`[data-mt-theme="${name}"]`).click();
+    await page.locator(`.mt-theme-fab [data-mt-theme="${name}"]`).click();
     await expect(html(page)).toHaveAttribute('data-material-theme', name);
     const { scheme, theme } = await html(page).evaluate((el) => ({
       scheme: getComputedStyle(el).colorScheme,

@@ -1,0 +1,41 @@
+---
+// The 10 OpenCollective sponsor avatars (slots 0-9); an unfilled slot just renders a blank avatar.
+const slots = Array.from({ length: 10 }, (_, index) => index);
+const base =
+  'https://opencollective.com/atom-material-themes-and-plugins/sponsor';
+---
+
+<section class="not-content mt-sponsors">
+  <h2>Sponsors</h2>
+
+  <div>
+    {slots.map((slot) => (
+      <a
+        href={`${base}/${slot}/website`}
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src={`${base}/${slot}/avatar.svg`}
+          alt={`Sponsor ${slot + 1}`}
+          loading="lazy"
+        />
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  h2 {
+    text-align: center;
+    color: var(--sl-color-accent);
+    font-weight: 400;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+</style>
