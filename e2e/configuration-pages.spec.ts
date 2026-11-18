@@ -16,6 +16,21 @@ const pages = [
   'ui-component-settings',
   'features-settings',
   'project-title-bar-settings',
+  'file-header-settings',
+  'theme-color-overrides',
+  'custom-themes',
+  'language-additions',
+  'islands-settings',
+  'theme-ignores',
+  'theme-randomizer',
+  'other-tweaks-settings',
+  'quick-actions-panel',
+  'status-bar-widgets',
+  'excluded-files-colors',
+  'file-status-colors',
+  'scrollbars',
+  'adaptive-theme',
+  'recommended-plugins',
 ];
 
 for (const slug of pages) {
