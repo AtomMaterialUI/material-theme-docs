@@ -21,6 +21,12 @@
   --mt-ribbon-fg: var(--mt-select-fg, #ffffff);
 }
 
+/* Lead paragraph at the top of a page (the old `{:class='title'}`) */
+.sl-markdown-content p.title {
+  font-size: var(--sl-text-lg);
+  color: var(--sl-color-white);
+}
+
 /* Headings in the accent color */
 .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
   color: var(--sl-color-accent);
