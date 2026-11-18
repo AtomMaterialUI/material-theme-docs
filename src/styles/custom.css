@@ -22,7 +22,7 @@
 }
 
 /* Lead paragraph at the top of a page (the old `{:class='title'}`) */
-.sl-markdown-content p.title {
+.sl-markdown-content :is(p.title, div.title > p) {
   font-size: var(--sl-text-lg);
   color: var(--sl-color-white);
 }
