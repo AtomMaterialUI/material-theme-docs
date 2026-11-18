@@ -1,0 +1,129 @@
+---
+// Replaces _includes/theme.html: the full color palette of one theme, each row styled with its own color.
+import type { Theme } from '../../data/themes';
+
+interface Props {
+  theme: Theme;
+}
+
+type Row = [
+  label: string,
+  key: keyof Theme,
+  css: (t: Theme, value: string) => string,
+];
+
+const text = (_: Theme, value: string) => `color: ${value}`;
+const fill = (_: Theme, value: string) => `background: ${value}`;
+const none = () => '';
+
+const sections: Row[][] = [
+  [
+    ['Background', 'background', none],
+    ['Foreground', 'foreground', none],
+    ['Text', 'text', text],
+    [
+      'Selection Background',
+      'selectBg',
+      (t, v) => `background: ${v}; color: ${t.selectFg}`,
+    ],
+    [
+      'Selection Foreground',
+      'selectFg',
+      (t, v) => `background: ${t.selectBg}; color: ${v}`,
+    ],
+    ['Buttons', 'button', (t, v) => `background: ${v}; color: ${t.text}`],
+    ['Second Background', 'second', fill],
+    ['Disabled', 'disabled', text],
+    ['Contrast', 'contrast', fill],
+    ['Active', 'table', fill],
+    ['Border', 'border', (_, v) => `border: 2px solid ${v}`],
+    ['Highlight', 'hl', fill],
+    ['Tree', 'tree', (t, v) => `background: ${v}; color: ${t.selectFg}`],
+    ['Notifications', 'notif', fill],
+    ['Accent Color', 'accent', text],
+    ['Excluded Files Color', 'excluded', fill],
+  ],
+  [
+    ['Green Color', 'green', text],
+    ['Yellow Color', 'yellow', text],
+    ['Blue Color', 'blue', text],
+    ['Red Color', 'red', text],
+    ['Purple Color', 'purple', text],
+    ['Orange Color', 'orange', text],
+    ['Cyan Color', 'cyan', text],
+    ['Gray Color', 'gray', text],
+    ['White/Black Color', 'white', text],
+    ['Error Color', 'error', text],
+  ],
+  [
+    ['Comments Color', 'comments', text],
+    ['Variables Color', 'vars', text],
+    ['Links Color', 'links', text],
+    ['Functions Color', 'functions', text],
+    ['Keywords Color', 'keywords', text],
+    ['Tags Color', 'tags', text],
+    ['Strings Color', 'strings', text],
+    ['Operators Color', 'operators', text],
+    ['Attributes Color', 'attributes', text],
+    ['Numbers Color', 'numbers', text],
+    ['Parameters Color', 'parameters', text],
+  ],
+];
+
+const { theme } = Astro.props;
+const capitalize = (value: string) =>
+  value.charAt(0).toUpperCase() + value.slice(1);
+---
+
+<li
+  class="mt-theme-palette"
+  id={`theme-${theme.className}`}
+  style={`background: ${theme.background}; color: ${theme.foreground}`}
+>
+  <span class="title">{capitalize(theme.name)}</span>
+
+  {sections.map((rows, index) => (
+    <>
+      {index > 0 && <hr />}
+      {rows.map(([label, key, css]) => {
+        const value = String(theme[key]);
+
+        return (
+          <p style={css(theme, value)}>
+            {label}: {value}
+          </p>
+        );
+      })}
+    </>
+  ))}
+</li>
+
+<style>
+  .mt-theme-palette {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.3);
+    font-size: var(--sl-text-sm);
+  }
+
+  .title {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: var(--sl-text-xl);
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0 !important;
+    padding: 0.1rem 0.3rem;
+  }
+
+  hr {
+    margin: 0.5rem 0;
+    border: 0;
+    border-top: 1px solid currentColor;
+    opacity: 0.3;
+  }
+</style>

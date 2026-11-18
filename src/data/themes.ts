@@ -1,11 +1,10 @@
 // Single source of truth for the 32 Material themes: src/data/themes.yml (read at build time).
-import fs from 'node:fs';
-import path from 'node:path';
-import { load } from 'js-yaml';
+import { readData } from './load';
 
 export interface Theme {
   id: string;
   name: string;
+  desc: string;
   className: string;
   light: boolean;
   group: string;
@@ -14,6 +13,7 @@ export interface Theme {
   text: string;
   selectBg: string;
   selectFg: string;
+  selectFg2: string;
   button: string;
   second: string;
   disabled: string;
@@ -27,9 +27,27 @@ export interface Theme {
   white: string;
   green: string;
   red: string;
+  yellow: string;
   blue: string;
   purple: string;
   orange: string;
+  cyan: string;
+  gray: string;
+  error: string;
+  table: string;
+  tree: string;
+  excluded: string;
+  comments: string;
+  vars: string;
+  links: string;
+  functions: string;
+  keywords: string;
+  tags: string;
+  strings: string;
+  operators: string;
+  classes: string;
+  numbers: string;
+  parameters: string;
 }
 
 export const GROUP_LABELS: Record<string, string> = {
@@ -40,8 +58,7 @@ export const GROUP_LABELS: Record<string, string> = {
   other3: 'Other (3)',
 };
 
-const file = path.resolve(process.cwd(), 'src/data/themes.yml');
-const raw = load(fs.readFileSync(file, 'utf8')) as Record<string, Omit<Theme, 'group'>[]>;
+const raw = readData<Record<string, Omit<Theme, 'group'>[]>>('themes.yml');
 
 export const themeGroups: Record<string, Theme[]> = Object.fromEntries(
   Object.entries(raw).map(([group, list]) => [group, list.map((t) => ({ ...t, group }))]),

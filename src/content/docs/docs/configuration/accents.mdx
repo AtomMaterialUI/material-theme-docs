@@ -1,17 +1,12 @@
 ---
-layout: docs
 title: Accents
 description: Colorize important parts of the UI
-group: configuration
-comments: true
-toc: true
-
-previous:
-  url: '/docs/configuration/contrast'
-  title: Contrast Settings
+prev:
+  link: /docs/configuration/contrast/
+  label: Contrast Settings
 next:
-  url: '/docs/configuration/accent-mode'
-  title: Accent Mode
+  link: /docs/configuration/accent-mode/
+  label: Accent Mode
 
 gallery:
   - images:
@@ -59,10 +54,9 @@ gallery:
         alttext: Running Indicator in Run Configurations
 ---
 
-The **Accent Colors** feature allows you to personalize and emphasize key UI elements throughout the IDE.
-{:class='title'}
-
-{% include carbonads.html %}
+<p class="title">
+  The <strong>Accent Colors</strong> feature allows you to personalize and emphasize key UI elements throughout the IDE.
+</p>
 
 ## Definition
 
@@ -112,29 +106,27 @@ Accent colors can be configured in several ways:
 Since version 12.0.0, the **Accent Color Popup** has been completely redesigned with a modern UI. It now features dynamic SVG previews for
 each accent color, making it easier to visualize your choice before applying it.
 
-{% include figure.html content="/screens/archive/accentChooser.png" caption="Material Toolbar Old Accent Chooser" %}
+<Figure content="/screens/archive/accentChooser.png" caption="Material Toolbar Old Accent Chooser" />
 
-{% include figure.html content="/screens/accents/accentPicker.png" caption="Material Accent Picker" %}
+<Figure content="/screens/accents/accentPicker.png" caption="Material Accent Picker" />
 
 **Status Bar Accent Color Widget**:
 
-{% include figure.html content="/screens/archive/accentColorWidget.png" caption="Status Bar Accent Chooser" %}
+<Figure content="/screens/archive/accentColorWidget.png" caption="Status Bar Accent Chooser" />
 
 **From The Settings**:
 
-{% include figure.html content="/screens/settingsv3/accentColors.png" caption="Accent Color Settings" %}
+<Figure content="/screens/settingsv3/accentColors.png" caption="Accent Color Settings" />
 
 ### Predefined accent colors
 
 Here is the list of predefined colors:
 
-{% for color in site.data.accentColors %}
-{% include color2.html color=color %}
-{% endfor %}
+<AccentColors />
 
 ### Second Accent Color
 
-Themes can define a secondary accent color. This color is utilized when [Accent Mode](/docs/configuration/accent-mode) is enabled, providing
+Themes can define a secondary accent color. This color is utilized when [Accent Mode](/docs/configuration/accent-mode/) is enabled, providing
 a complementary highlight when the primary accent color is already prominent.
 
 ### Custom accent color
@@ -148,11 +140,11 @@ To use a different color, uncheck the `Override Accent Color from Theme` option 
 
 To see how your chosen accent color will appear, refer to the `Preview` section on the settings page.
 
-{% include figure.html content="/screens/accents/accentPreview.png" caption="Accent Preview" %}
+<Figure content="/screens/accents/accentPreview.png" caption="Accent Preview" />
 
 ## Gallery
 
 Note: These images are from earlier versions of the plugin and may not reflect current UI changes. For a real-time preview, navigate to the
 `UI DSL Showcase` settings screen within the IDE.
 
-{% include gallery_lightbox.html %}
+<Gallery />

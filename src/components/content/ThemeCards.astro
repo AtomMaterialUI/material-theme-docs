@@ -1,0 +1,28 @@
+---
+// Replaces `<ul class="theme-cards">{% for theme in site.data.themes.<group> %}{% include theme-card.html %}`.
+// Usage: <ThemeCards groups={['material', 'material2']} />
+import { themeGroups } from '../../data/themes';
+import ThemeCard from './ThemeCard.astro';
+
+interface Props {
+  groups: string[];
+}
+
+const list = Astro.props.groups.flatMap((group) => themeGroups[group] ?? []);
+---
+
+<ul class="mt-theme-cards not-content">
+  {list.map((theme) => (
+    <ThemeCard theme={theme} />
+  ))}
+</ul>
+
+<style>
+  .mt-theme-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    padding: 0;
+    margin: 1rem 0 2rem;
+  }
+</style>

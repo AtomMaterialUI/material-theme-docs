@@ -1,0 +1,31 @@
+---
+// Replaces `{% for theme in site.data.themes.<group> %}{% include color.html color=theme field="..." %}`:
+// one swatch per theme for a given theme property, e.g. <ThemeColors field="excluded" />.
+import { themes } from '../../data/themes';
+import type { Theme } from '../../data/themes';
+import ColorSwatch from './ColorSwatch.astro';
+
+interface Props {
+  field: keyof Theme;
+}
+
+const { field } = Astro.props;
+---
+
+<div class="not-content mt-theme-colors">
+  {themes.map((theme) => (
+    <ColorSwatch
+      theme={theme}
+      field={field}
+    />
+  ))}
+</div>
+
+<style>
+  .mt-theme-colors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 0.35rem;
+    margin: 1rem 0;
+  }
+</style>
