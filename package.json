@@ -18,11 +18,13 @@
   "dependencies": {
     "@astrojs/starlight": "^0.43.1",
     "astro": "^7.3.6",
+    "js-yaml": "5.5.0",
     "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@astrojs/check": "latest",
     "@playwright/test": "latest",
+    "@types/js-yaml": "4.0.9",
     "netlify-cli": "latest",
     "typescript": "^6.0.3"
   }
