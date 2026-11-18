@@ -38,6 +38,31 @@
 
 .sl-markdown-content h2 {
   font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  color: var(--sl-color-white);
+}
+
+.sl-markdown-content h3 {
+  font-size: var(--sl-text-2xl);
+}
+
+/* Feature illustrations and creator avatars: small accent tiles, like the old site */
+.sl-markdown-content :is(img.promo-img, img.avatar-img) {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+  padding: 0.75rem;
+  background: var(--sl-color-accent);
+  transition: background-color 0.3s;
+}
+
+.sl-markdown-content img.avatar-img {
+  padding: 0;
+  object-fit: cover;
+}
+
+.sl-markdown-content img.avatar-img.-centered {
+  margin-inline: auto;
 }
 
 /* Ribbon (.docs-header, see PageTitle override): accent band across the main pane */
