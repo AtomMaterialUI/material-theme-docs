@@ -22,6 +22,10 @@
       <excludeFolder url="file://$MODULE_DIR$/_layouts" />
       <excludeFolder url="file://$MODULE_DIR$/img" />
       <excludeFolder url="file://$MODULE_DIR$/js" />
+      <excludeFolder url="file://$MODULE_DIR$/.astro" />
+      <excludeFolder url="file://$MODULE_DIR$/.awb" />
+      <excludeFolder url="file://$MODULE_DIR$/.netlify" />
+      <excludeFolder url="file://$MODULE_DIR$/test-results" />
     </content>
     <content url="file://$MODULE_DIR$/img/screens" />
     <orderEntry type="inheritedJdk" />
