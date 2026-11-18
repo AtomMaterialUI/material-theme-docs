@@ -90,9 +90,11 @@ const sections = [
 
 <style>
   h2 {
+    margin-top: 3rem;
     text-align: center;
-    color: var(--sl-color-accent);
+    color: var(--sl-color-white);
     font-weight: 400;
+    text-transform: uppercase;
   }
 
   ul {
@@ -113,6 +115,7 @@ const sections = [
     gap: 0.25rem;
     text-align: center;
     font-size: var(--sl-text-xs);
+    text-transform: uppercase;
   }
 
   button {
@@ -134,16 +137,22 @@ const sections = [
   }
 
   .screenshot {
+    position: relative;
     display: block;
     max-width: 60rem;
     margin: 1.5rem auto;
+    aspect-ratio: 1750 / 1024;
+    background: url('/img/laptop.png') no-repeat center / 100% auto;
   }
 
+  /* The theme screenshot sits inside the laptop frame's screen area. */
   .screenshot img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 24px rgb(0 0 0 / 0.4);
+    position: absolute;
+    top: 5.1%;
+    left: 11.1%;
+    width: 77.9%;
+    height: 83.3%;
+    object-fit: cover;
+    object-position: top;
   }
 </style>

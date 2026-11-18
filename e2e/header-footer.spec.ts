@@ -31,9 +31,13 @@ test.describe('Header and footer', () => {
 
     const footer = page.locator('[data-mt-footer]');
 
-    await expect(footer.getByRole('link', { name: 'PayPal' })).toBeVisible();
-    await expect(footer.getByRole('link', { name: 'OpenCollective' })).toBeVisible();
-    await expect(footer.getByRole('link', { name: 'Join Slack' })).toBeVisible();
+    await expect(footer.getByRole('link', { name: 'Support', exact: true })).toHaveAttribute(
+      'href',
+      '/docs/support-us/',
+    );
+    await expect(footer.getByRole('link', { name: 'Slack', exact: true })).toBeVisible();
+    await expect(footer.getByRole('link', { name: 'Elior Boukhobza' })).toBeVisible();
+    await expect(footer.getByRole('link', { name: 'Chris Magnussen' })).toBeVisible();
     await expect(footer).toContainText(/Material Theme v\d+\.\d+\.\d+ © 2015-\d{4}/);
     await expect(footer.getByRole('link', { name: 'EULA' })).toHaveAttribute('href', '/docs/eula/');
   });

@@ -23,6 +23,12 @@ const script = `(() => {
 
   const apply = (id, persist) => {
     id = resolve(id) || DEFAULT;
+    if (persist) {
+      root.classList.add('mt-theme-transition');
+      clearTimeout(window.__mtTransition);
+      window.__mtTransition = setTimeout(() => root.classList.remove('mt-theme-transition'), 400);
+    }
+
     root.dataset.materialTheme = id;
     root.dataset.theme = MAP[id][1] ? 'light' : 'dark';
     if (persist) {

@@ -163,6 +163,8 @@ export default defineConfig({
         PageTitle: './src/components/overrides/PageTitle.astro',
         Footer: './src/components/overrides/Footer.astro',
         Header: './src/components/overrides/Header.astro',
+        SiteTitle: './src/components/overrides/SiteTitle.astro',
+        Hero: './src/components/overrides/Hero.astro',
       },
       expressiveCode: {
         themes: /** @type {any} */ (['github-dark', 'github-light', ...Object.keys(CODE_THEMES)]),

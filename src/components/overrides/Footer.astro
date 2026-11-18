@@ -15,24 +15,30 @@ import ThemeFab from '../theme/ThemeFab.astro';
     <section>
       <h2>Support Us</h2>
       <p>
-        Thank you for using our plugins! If you liked them, you can support us
-        on PayPal or OpenCollective.
+        Thank you for using our plugins! If you liked the plugins, you can
+        support us on PayPal or OpenCollective.
       </p>
-      <p>
-        <a href={site.paypal}>PayPal</a>·
-        <a href={site.openCollective}>OpenCollective</a>
-      </p>
+      <a
+        class="mt-btn"
+        href="/docs/support-us/"
+      >
+        Support
+      </a>
     </section>
 
     <section>
       <h2>Join the Discussion</h2>
       <p>
-        Talk directly with us on Slack about new features, goals, problems or
-        anything else.
+        We have a Slack chat room set up where you can talk directly with us.
+        Come in and discuss new features, future goals, general problems or
+        questions, or anything else you can think of.
       </p>
-      <p>
-        <a href={site.slack}>Join Slack</a>
-      </p>
+      <a
+        class="mt-btn"
+        href={site.slack}
+      >
+        Slack
+      </a>
     </section>
   </div>
 
@@ -40,6 +46,12 @@ import ThemeFab from '../theme/ThemeFab.astro';
     <span>
       Material Theme v{site.version} © {years}
     </span>
+    <span>
+      <a href="https://twitter.com/mallowigi">Elior Boukhobza</a>
+      {' & '}
+      <a href="https://twitter.com/crmag">Chris Magnussen</a>
+    </span>
+    <span>All rights reserved</span>
     <a href="/docs/eula/">EULA</a>
   </p>
 </div>
@@ -47,38 +59,61 @@ import ThemeFab from '../theme/ThemeFab.astro';
 <ThemeFab />
 
 <style>
+  /* Full-bleed band in the "contrast" color, like the header and sidebar. */
   .mt-footer {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--sl-color-hairline);
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background: var(--sl-color-bg-nav);
+    box-shadow: 0 0 0 100vmax var(--sl-color-bg-nav);
+    clip-path: inset(0 -100vmax);
     font-size: var(--sl-text-sm);
     color: var(--sl-color-gray-2);
+    transition:
+      background-color 0.3s,
+      box-shadow 0.3s;
   }
 
   .mt-footer-cols {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+  }
+
+  .mt-footer-cols section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mt-footer-cols p {
+    flex: 1;
   }
 
   .mt-footer h2 {
-    margin: 0 0 0.5rem;
-    font-size: var(--sl-text-base);
+    margin: 0 0 0.75rem;
+    font-size: var(--sl-text-lg);
+    font-weight: 400;
     color: var(--sl-color-white);
   }
 
   .mt-footer p {
-    margin: 0 0 0.5rem;
+    margin: 0 0 1rem;
   }
 
-  .mt-footer a {
-    color: var(--sl-color-accent-high);
+  .mt-footer a:not(.mt-btn) {
+    color: var(--sl-color-gray-2);
+  }
+
+  .mt-footer a:not(.mt-btn):hover {
+    color: var(--sl-color-accent);
   }
 
   .mt-footer-copyright {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    gap: 0.5rem 1.5rem;
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sl-color-hairline);
   }
 </style>

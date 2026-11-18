@@ -40,6 +40,7 @@ function block(t: Theme) {
   --mt-select-fg: ${t.selectFg};
   --mt-primary: ${t.attributes};
   --mt-accent2: ${t.accent2};
+  --mt-logo: url('/img/logo/material-${t.className}.svg');
   color-scheme: ${t.light ? 'light' : 'dark'};
 }`;
 }
