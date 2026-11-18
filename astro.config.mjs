@@ -81,6 +81,8 @@ export default defineConfig({
       sidebar: [
         { label: 'Introduction', slug: 'docs/introduction' },
         { label: 'Getting Started', slug: 'docs/getting-started' },
+        { label: "What's New", slug: 'docs/what-s-new' },
+        { label: 'Changelog', slug: 'docs/changelog' },
         {
           label: 'Configuration',
           items: [
@@ -154,33 +156,7 @@ export default defineConfig({
         { label: 'Support Us', slug: 'docs/support-us' },
         { label: 'EULA', slug: 'docs/eula' },
       ],
-      plugins: [
-        starlightLinksValidator({
-          // Sections not converted yet (configuration, icons, reference, changelog, ...).
-          exclude: [
-            '/docs/configuration/file-header-settings/**',
-            '/docs/configuration/theme-color-overrides/**',
-            '/docs/configuration/custom-themes/**',
-            '/docs/configuration/language-additions/**',
-            '/docs/configuration/islands-settings/**',
-            '/docs/configuration/theme-ignores/**',
-            '/docs/configuration/theme-randomizer/**',
-            '/docs/configuration/other-tweaks-settings/**',
-            '/docs/configuration/quick-actions-panel/**',
-            '/docs/configuration/status-bar-widgets/**',
-            '/docs/configuration/excluded-files-colors/**',
-            '/docs/configuration/file-status-colors/**',
-            '/docs/configuration/scrollbars/**',
-            '/docs/configuration/adaptive-theme/**',
-            '/docs/configuration/recommended-plugins/**',
-            '/docs/icons/**',
-            '/docs/reference/**',
-            '/docs/changelog/**',
-            '/docs/what-s-new/**',
-            '/docs/archives/**',
-          ],
-        }),
-      ],
+      plugins: [starlightLinksValidator()],
       components: {
         ThemeProvider: './src/components/overrides/ThemeProvider.astro',
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',

@@ -1,0 +1,33 @@
+# Real 301s served by Netlify (see decision #180). Netlify applies these before the 404 page.
+# Order matters: the first matching rule wins.
+
+# Canonical host is the bare domain
+https://www.material-theme.com/*  https://material-theme.com/:splat  301!
+
+# /docs/ has no index page of its own
+/docs/                                           /docs/introduction/                        301
+
+# Slug fixes
+/docs/development/installation_/                 /docs/development/installation/            301
+/docs/configuration/ui-components-settings/      /docs/configuration/ui-component-settings/ 301
+/docs/configuration/main-settings/               /docs/configuration/settings/              301
+
+# Reference pages that never existed
+/docs/reference/file-icons/                      /docs/icons/associations-editor/           301
+/docs/reference/associations/                    /docs/icons/associations-editor/           301
+/docs/reference/folder-associations/             /docs/icons/associations-editor/           301
+
+# Old settings sub-slugs (listed in the old settings.md)
+/docs/configuration/current-theme/               /docs/configuration/settings/              301
+/docs/configuration/preview-theme-colors/        /docs/configuration/settings/              301
+/docs/configuration/theme-selector/              /docs/configuration/settings/              301
+/docs/configuration/custom-theme/                /docs/configuration/custom-themes/         301
+/docs/configuration/light-custom-theme/          /docs/configuration/custom-themes/         301
+/docs/configuration/features/                    /docs/configuration/features-settings/     301
+/docs/configuration/islands/                     /docs/configuration/islands-settings/      301
+/docs/configuration/other-tweaks/                /docs/configuration/other-tweaks-settings/ 301
+/docs/configuration/project-title-bar/           /docs/configuration/project-title-bar-settings/ 301
+/docs/configuration/spacing/                     /docs/configuration/spacing-settings/      301
+/docs/configuration/tabs/                        /docs/configuration/tab-settings/          301
+/docs/configuration/trees/                       /docs/configuration/trees-settings/        301
+/docs/configuration/ui-components/               /docs/configuration/ui-component-settings/ 301

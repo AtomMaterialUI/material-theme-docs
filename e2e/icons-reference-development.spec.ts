@@ -24,12 +24,8 @@ for (const slug of pages) {
   });
 }
 
-test('the Kitchen test page and the old installation URL are not published', async ({
-  request,
-}) => {
-  for (const url of ['/docs/development/kitchen/', '/docs/development/installation_/']) {
-    expect((await request.get(url)).status()).toBe(404);
-  }
+test('the Kitchen test page is not published', async ({ request }) => {
+  expect((await request.get('/docs/development/kitchen/')).status()).toBe(404);
 });
 
 test('the Chrome Themes page lists the gallery of themes', async ({ page }) => {
