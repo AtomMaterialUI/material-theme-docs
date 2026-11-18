@@ -105,8 +105,30 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Icons',
+          items: [
+            {
+              label: 'Atom Material Icons Plugin',
+              slug: 'docs/icons/atom-material-icons-plugin',
+            },
+            { label: 'Associations Editor', slug: 'docs/icons/associations-editor' },
+          ],
+        },
+        {
           label: 'Reference',
-          items: [{ label: 'Color Palette', slug: 'docs/reference/color-palette' }],
+          items: [
+            { label: 'Color Palette', slug: 'docs/reference/color-palette' },
+            { label: 'Components', slug: 'docs/reference/components' },
+            { label: 'Wizard', slug: 'docs/reference/wizard' },
+            { label: 'Chrome Themes', slug: 'docs/reference/chrome-themes' },
+          ],
+        },
+        {
+          label: 'Development',
+          items: [
+            { label: 'Installation', slug: 'docs/development/installation' },
+            { label: 'External Themes', slug: 'docs/development/external-themes' },
+          ],
         },
         { label: 'Analytics', slug: 'docs/analytics' },
         { label: 'FAQ/Troubleshooting', slug: 'docs/faq-troubleshooting' },
@@ -136,12 +158,9 @@ export default defineConfig({
             '/docs/configuration/scrollbars/**',
             '/docs/configuration/adaptive-theme/**',
             '/docs/configuration/recommended-plugins/**',
-            '/docs/icons/**',
-            '/docs/reference/**',
             '/docs/changelog/**',
             '/docs/what-s-new/**',
             '/docs/archives/**',
-            '/docs/development/**',
           ],
         }),
       ],

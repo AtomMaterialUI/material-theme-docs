@@ -6,7 +6,7 @@ test.describe('Header and footer', () => {
   test('the header shows the five top links and the social icons on desktop', async ({ page }) => {
     await page.goto('/docs/reference/color-palette/');
 
-    const nav = page.getByRole('navigation', { name: 'Main', exact: true });
+    const nav = page.locator('header').getByRole('navigation', { name: 'Main', exact: true });
 
     for (const label of [
       'Getting Started',
