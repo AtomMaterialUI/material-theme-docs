@@ -12,7 +12,10 @@ test('the saved theme is on <html> before the body is parsed (no flash)', async 
   await page.addInitScript((key) => {
     localStorage.setItem(key, 'dracula');
     new MutationObserver((_, observer) => {
-      if (!document.body) return;
+      if (!document.body) {
+        return;
+      }
+
       (window as any).__themeAtBody = document.documentElement.dataset.materialTheme;
       observer.disconnect();
     }).observe(document, { childList: true, subtree: true });
