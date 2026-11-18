@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import starlight from '@astrojs/starlight';
 import AutoImport from 'astro-auto-import';
+import { site } from './src/config/site';
 
 // Material themes that have a matching bundled Shiki theme (code blocks follow these 5 only);
 // every other theme falls back to github-dark/light by its light/dark type.
@@ -43,10 +44,17 @@ export default defineConfig({
       title: 'Material Theme UI',
       customCss: ['./src/styles/custom.css'],
       head: [
-        { tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' } },
         {
           tag: 'link',
-          attrs: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+          attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'preconnect',
+            href: 'https://fonts.gstatic.com',
+            crossorigin: '',
+          },
         },
         {
           tag: 'link',
@@ -60,7 +68,12 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/mallowigi/material-theme-docs',
+          href: site.github,
+        },
+        {
+          icon: 'slack',
+          label: 'Slack',
+          href: site.slack,
         },
       ],
       sidebar: [],
@@ -69,6 +82,7 @@ export default defineConfig({
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',
         PageTitle: './src/components/overrides/PageTitle.astro',
         Footer: './src/components/overrides/Footer.astro',
+        Header: './src/components/overrides/Header.astro',
       },
       expressiveCode: {
         themes: /** @type {any} */ (['github-dark', 'github-light', ...Object.keys(CODE_THEMES)]),
