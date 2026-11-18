@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
 import starlight from '@astrojs/starlight';
+import AutoImport from 'astro-auto-import';
 
 // Material themes that have a matching bundled Shiki theme (code blocks follow these 5 only);
 // every other theme falls back to github-dark/light by its light/dark type.
@@ -18,6 +20,25 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   integrations: [
+    // Content components are available in every MDX page without import lines.
+    // Order matters: AutoImport, then Starlight, then MDX (Expressive Code must precede MDX).
+    AutoImport({
+      imports: [
+        './src/components/content/AccentColors.astro',
+        './src/components/content/ChromeThemes.astro',
+        './src/components/content/ColorSwatch.astro',
+        './src/components/content/Figure.astro',
+        './src/components/content/Gallery.astro',
+        './src/components/content/PaletteColors.astro',
+        './src/components/content/RecommendedPlugins.astro',
+        './src/components/content/ThemeCard.astro',
+        './src/components/content/ThemeCards.astro',
+        './src/components/content/ThemeColors.astro',
+        './src/components/content/ThemePalette.astro',
+        './src/components/content/ThemePalettes.astro',
+        './src/components/content/Wallpapers.astro',
+      ],
+    }),
     starlight({
       title: 'Material Theme UI',
       customCss: ['./src/styles/custom.css'],
@@ -68,5 +89,6 @@ export default defineConfig({
         },
       },
     }),
+    mdx(),
   ],
 });
