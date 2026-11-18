@@ -71,8 +71,7 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
       fill="currentColor"
       aria-hidden="true"
     >
-      <path
-        d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37-1.34-1.34a.996.996 0 0 0-1.41 0L9 12.25 11.75 15l8.96-8.96a.996.996 0 0 0 0-1.41z" />
+      <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37-1.34-1.34a.996.996 0 0 0-1.41 0L9 12.25 11.75 15l8.96-8.96a.996.996 0 0 0 0-1.41z" />
     </svg>
   </button>
 </div>
@@ -92,6 +91,7 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
       b.setAttribute('aria-pressed', String(b.dataset.mtTheme === cur)),
     );
     const c = cards.find((b) => b.dataset.mtTheme === cur);
+
     root.querySelector('[data-mt-current]')!.textContent = c
       ? `· ${c.dataset.name}`
       : '';
@@ -109,9 +109,13 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
 
   // Open → focus (and reveal) the current theme's card. Escape / outside click are native popover behaviour.
   pop.addEventListener('toggle', (e) => {
-    if ((e as ToggleEvent).newState !== 'open') return;
+    if ((e as ToggleEvent).newState !== 'open') {
+      return;
+    }
+
     const c =
       cards.find((b) => b.getAttribute('aria-pressed') === 'true') || cards[0];
+
     c.focus({ preventScroll: true });
     c.scrollIntoView({ block: 'nearest' });
   });
@@ -125,10 +129,14 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
       ArrowDown: [0, 1],
     };
     const d = dirs[e.key];
-    if (!d) return;
+    if (!d) {
+      return;
+    }
 
     const from = document.activeElement as HTMLButtonElement;
-    if (!cards.includes(from)) return;
+    if (!cards.includes(from)) {
+      return;
+    }
 
     e.preventDefault();
     const r = from.getBoundingClientRect();
@@ -137,14 +145,19 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
       bestScore = Infinity;
 
     for (const c of cards) {
-      if (c === from) continue;
+      if (c === from) {
+        continue;
+      }
 
       const q = c.getBoundingClientRect();
       const dx = q.left - r.left,
         dy = q.top - r.top;
       const main = d[0] ? dx * d[0] : dy * d[1];
       const cross = d[0] ? Math.abs(dy) : Math.abs(dx);
-      if (main <= 1) continue;
+
+      if (main <= 1) {
+        continue;
+      }
 
       const score = main + cross * 4;
       if (score < bestScore) {
@@ -179,8 +192,9 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
     color: var(--sl-color-text-invert);
     box-shadow: 0 6px 18px rgb(0 0 0 / 0.35);
     anchor-name: --mt-theme-fab;
-    transition: transform 0.15s,
-    background-color 0.3s;
+    transition:
+      transform 0.15s,
+      background-color 0.3s;
   }
 
   .btn:hover {
