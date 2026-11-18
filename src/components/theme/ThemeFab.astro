@@ -1,0 +1,384 @@
+---
+// Floating action button + theme cards in a native popover (desktop: anchored panel, mobile: bottom sheet).
+import { themeGroups, GROUP_LABELS } from '../../data/themes';
+---
+
+<div class="mt-theme-fab">
+  <div
+    id="mt-theme-fab-pop"
+    popover
+    class="pop"
+    role="dialog"
+    aria-labelledby="mt-theme-fab-title"
+  >
+    <div class="head">
+      <p id="mt-theme-fab-title" class="ttl">
+        Theme <span data-mt-current></span>
+      </p>
+
+      <button
+        type="button"
+        class="close"
+        popovertarget="mt-theme-fab-pop"
+        popovertargetaction="hide"
+        aria-label="Close theme switcher"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div class="body">
+      {Object.entries(themeGroups).map(([g, list]) => (
+        <section aria-label={GROUP_LABELS[g]}>
+          <p class="grp">{GROUP_LABELS[g]}</p>
+
+          <div class="cards">
+            {list.map((t) => (
+              <button
+                type="button"
+                class="card"
+                data-mt-theme={t.className}
+                data-name={t.name}
+                style={`background:${t.background};color:${t.foreground};border-color:${t.border};--a:${t.accent}`}
+              >
+                <span class="name">{t.name}</span>
+
+                <span class="dots" aria-hidden="true">
+                  {[t.accent, t.foreground, t.selectBg, t.button, t.border].map(
+                    (c) => (
+                      <i style={`background:${c}`}></i>
+                    ),
+                  )}
+                </span>
+              </button>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <button
+    class="btn"
+    popovertarget="mt-theme-fab-pop"
+    aria-label="Open theme switcher"
+    title="Open theme switcher"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path
+        d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37-1.34-1.34a.996.996 0 0 0-1.41 0L9 12.25 11.75 15l8.96-8.96a.996.996 0 0 0 0-1.41z" />
+    </svg>
+  </button>
+</div>
+<script>
+  // Fixed UI must live directly under <body> (Starlight's content column uses `isolation: isolate`).
+  const root = document.querySelector<HTMLElement>('.mt-theme-fab')!;
+  document.body.append(root);
+  const pop = root.querySelector<HTMLElement>('.pop')!;
+  const cards = [
+    ...root.querySelectorAll<HTMLButtonElement>('[data-mt-theme]'),
+  ];
+  const mt = () => window.materialTheme;
+
+  const mark = () => {
+    const cur = mt().current();
+    cards.forEach((b) =>
+      b.setAttribute('aria-pressed', String(b.dataset.mtTheme === cur)),
+    );
+    const c = cards.find((b) => b.dataset.mtTheme === cur);
+    root.querySelector('[data-mt-current]')!.textContent = c
+      ? `· ${c.dataset.name}`
+      : '';
+  };
+
+  cards.forEach((b) =>
+    b.addEventListener('click', () =>
+      mt().apply(b.dataset.mtTheme ?? '', true),
+    ),
+  );
+
+  document.addEventListener('material-theme-change', mark);
+
+  mark();
+
+  // Open → focus (and reveal) the current theme's card. Escape / outside click are native popover behaviour.
+  pop.addEventListener('toggle', (e) => {
+    if ((e as ToggleEvent).newState !== 'open') return;
+    const c =
+      cards.find((b) => b.getAttribute('aria-pressed') === 'true') || cards[0];
+    c.focus({ preventScroll: true });
+    c.scrollIntoView({ block: 'nearest' });
+  });
+
+  // Arrow keys: move to the nearest card in that direction (2-D grid navigation across groups).
+  pop.addEventListener('keydown', (e) => {
+    const dirs: Record<string, [number, number]> = {
+      ArrowLeft: [-1, 0],
+      ArrowRight: [1, 0],
+      ArrowUp: [0, -1],
+      ArrowDown: [0, 1],
+    };
+    const d = dirs[e.key];
+    if (!d) return;
+
+    const from = document.activeElement as HTMLButtonElement;
+    if (!cards.includes(from)) return;
+
+    e.preventDefault();
+    const r = from.getBoundingClientRect();
+
+    let best: HTMLButtonElement | null = null,
+      bestScore = Infinity;
+
+    for (const c of cards) {
+      if (c === from) continue;
+
+      const q = c.getBoundingClientRect();
+      const dx = q.left - r.left,
+        dy = q.top - r.top;
+      const main = d[0] ? dx * d[0] : dy * d[1];
+      const cross = d[0] ? Math.abs(dy) : Math.abs(dx);
+      if (main <= 1) continue;
+
+      const score = main + cross * 4;
+      if (score < bestScore) {
+        bestScore = score;
+        best = c;
+      }
+    }
+
+    if (best) {
+      best.focus({ preventScroll: true });
+      best.scrollIntoView({ block: 'nearest' });
+    }
+  });
+</script>
+<style>
+  .mt-theme-fab {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 50;
+  }
+
+  .btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background: var(--sl-color-accent);
+    color: var(--sl-color-text-invert);
+    box-shadow: 0 6px 18px rgb(0 0 0 / 0.35);
+    anchor-name: --mt-theme-fab;
+    transition: transform 0.15s,
+    background-color 0.3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.06);
+  }
+
+  .btn:focus-visible,
+  .close:focus-visible,
+  .card:focus-visible {
+    outline: 2px solid var(--sl-color-white);
+    outline-offset: 2px;
+  }
+
+  /* Desktop: panel anchored above the FAB (fallback: fixed bottom-right). */
+  .pop {
+    position: fixed;
+    inset: auto 1.5rem 6.5rem auto;
+    margin: 0;
+    padding: 0;
+    width: min(40rem, calc(100vw - 3rem));
+    max-height: min(75vh, 44rem);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.9rem;
+    border: 1px solid var(--sl-color-hairline-light);
+    background: var(--sl-color-bg-nav);
+    color: var(--sl-color-text);
+    box-shadow: 0 16px 40px rgb(0 0 0 / 0.45);
+  }
+
+  .pop:popover-open {
+    display: flex;
+  }
+
+  @supports (anchor-name: --x) {
+    .pop {
+      position-anchor: --mt-theme-fab;
+      inset: auto;
+      bottom: anchor(top);
+      right: anchor(right);
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .pop::backdrop {
+    background: transparent;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0.6rem 0.6rem 1rem;
+    border-bottom: 1px solid var(--sl-color-hairline-light);
+  }
+
+  .ttl {
+    margin: 0;
+    font-weight: 600;
+    color: var(--sl-color-white);
+  }
+
+  .ttl span {
+    font-weight: 400;
+    color: var(--sl-color-accent);
+  }
+
+  .close {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    color: var(--sl-color-gray-2);
+    font-size: 1rem;
+  }
+
+  .close:hover {
+    background: var(--sl-color-gray-6);
+    color: var(--sl-color-white);
+  }
+
+  .body {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.25rem 1rem 1rem;
+  }
+
+  .grp {
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+    margin: 0.85rem 0 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8.75rem, 1fr));
+    gap: 0.5rem;
+  }
+
+  .card {
+    position: relative;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.6rem 0.55rem;
+    text-align: start;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    box-shadow: inset 0 3px 0 var(--a);
+    transition: transform 0.12s;
+  }
+
+  .card:hover {
+    transform: translateY(-1px);
+  }
+
+  .card[aria-pressed='true'] {
+    outline: 2px solid var(--sl-color-accent);
+    outline-offset: 2px;
+  }
+
+  .card[aria-pressed='true']::after {
+    content: '✓';
+    position: absolute;
+    top: 0.3rem;
+    right: 0.45rem;
+    color: var(--a);
+    font-weight: 700;
+  }
+
+  .name {
+    display: block;
+    font-weight: 600;
+    padding-right: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dots {
+    display: flex;
+    gap: 3px;
+  }
+
+  .dots i {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+  }
+
+  /* Mobile: bottom sheet with dimmed backdrop. */
+  @media (max-width: 50rem) {
+    .mt-theme-fab {
+      right: 1rem;
+      bottom: 1rem;
+    }
+
+    .pop,
+    .pop:popover-open {
+      inset: auto 0 0 0;
+      width: 100%;
+      max-width: none;
+      max-height: 80dvh;
+      margin: 0;
+      border-radius: 1rem 1rem 0 0;
+      border-bottom: 0;
+    }
+
+    .pop::backdrop {
+      background: rgb(0 0 0 / 0.45);
+    }
+
+    .head::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0.35rem;
+      width: 2.5rem;
+      height: 0.25rem;
+      border-radius: 99px;
+      transform: translateX(-50%);
+      background: var(--sl-color-gray-5);
+    }
+
+    .head {
+      position: relative;
+      padding-top: 0.9rem;
+    }
+
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+    }
+  }
+</style>
