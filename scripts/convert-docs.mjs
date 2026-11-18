@@ -164,13 +164,18 @@ function convertProse(text, file) {
   );
 
   result = result.replace(/\{\{\s*site\.baseurl\s*\}\}/g, '');
+  // The only multi-line expression: the total theme count (32).
+  result = result.replace(/\{\{\s*site\.data\.themes\.material\.size[\s\S]*?\}\}/g, '32');
   result = result.replace(/<!--[\s\S]*?-->\n?/g, '');
   result = result.replace(/\s+markdown="\d"/g, '');
   result = result.replace(/<(br|hr|img|input)((?:\s[^<>]*?)?)\s*\/?>/gi, '<$1$2 />');
 
   // Internal links get a trailing slash (trailingSlash: 'always').
-  const slash = (_, start, url, hash = '', end) =>
-    `${start}${/(\/|\.[a-z0-9]+)$/i.test(url) ? url : `${url}/`}${hash}${end}`;
+  const slash = (_, start, url, hash = '', end) => {
+    const clean = url.replace(/\.md$/, '');
+
+    return `${start}${/(\/|\.[a-z0-9]+)$/i.test(clean) ? clean : `${clean}/`}${hash}${end}`;
+  };
 
   result = result.replace(/(\]\()(\/docs\/[^)#\s]*)(#[^)\s]*)?(\))/g, slash);
   result = result.replace(/(href=")(\/docs\/[^"#]*)(#[^"]*)?(")/g, slash);

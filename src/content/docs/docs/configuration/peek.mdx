@@ -1,0 +1,99 @@
+---
+title: Peek
+description: Quick code preview and editing without losing context
+---
+
+**Peek & Edit Definition** is a powerful feature that allows you to explore and modify your code without losing your current context. \{:
+class='title'\}
+
+Inspired by the VSCode feature of the same name, it enables you to peek at definitions, make quick edits, and navigate your codebase more
+efficiently, all within the same editor window.
+
+This feature is currently in beta and free for everyone. In the future, it will be part of the Premium Plan. \{:class='card-panel warn'\}
+
+## Overview
+
+Traditional code navigation often requires jumping between files, which can break your focus. **Peek** solves this by opening a small,
+secondary editor window — either as a popup or inline — that displays the definition of the symbol under your cursor.
+
+You can configure Peek by navigating to `Settings → Appearance → Material Theme UI → Peek`.
+
+<Figure content="/screens/peek/peekSettings.png" caption="Peek Settings" />
+
+## Peek Modes
+
+There are two main ways to use Peek:
+
+### Peek & Edit Definition (Popup)
+
+This mode opens the definition in a separate, editable popup window. It's ideal for quick lookups and small edits where you want to keep the
+main editor fully visible.
+
+To open it, simply place your cursor on a symbol and press `Ctrl + Shift + P` (or your configured shortcut). You can also press
+`Alt + Shift + Click` on the symbol to open the Peek window directly.
+
+<Figure content="/screens/peek/popupPeek.png" caption="Peek as a Popup" />
+
+### Peek & Edit Definition (Inline)
+
+In this mode, the definition is embedded directly within your current editor, shifting the surrounding code to make room. You can add as
+many inline Peek windows as you like, allowing for a more integrated and seamless editing experience.
+
+To open it, simply place your cursor on a symbol and press `Ctrl + Shift + I` (or your configured shortcut). You can also press
+`Shift + Click` on the symbol to open the Peek window directly.
+
+To close them, you can either click the close button on the Peek window or press `Escape` twice if you have that option enabled in the
+settings.
+
+<Figure content="/screens/peek/inlinePeek.png" caption="Peek Inline" />
+
+---
+
+## Appearance Settings
+
+You can customize the look and feel of the Peek window to match your preferences and theme.
+
+### Rounded Borders
+
+To match the modern aesthetic of the Material Theme, you can enable and adjust rounded borders for the Peek window.
+
+<Figure content="/screens/peek/borderRadiusPeek.png" caption="Rounded Borders" />
+
+### Custom Colors
+
+Peek allows for fine-grained control over its color palette. You can customize the header background and the border colors to your tastes.
+
+<Figure content="/screens/peek/customColorsPeek.png" caption="Custom Colors" />
+
+### Padding and Layout
+
+The **Min Lines** and **Max Lines** settings let you control the size of the popup by specifying the minimum and maximum number of lines
+displayed. You can adjust these values to ensure that the Peek window fits your workflow, whether you prefer a compact view or a more
+spacious layout.
+
+The **Spacing** setting determines the space between the content and the edges of the Peek window, allowing you to create a more comfortable
+reading experience.
+
+Lastly, the **Custom Width** option lets you define a specific width for the Peek window, giving you complete control over its dimensions.
+The width will be clamped to the visible editor area, ensuring you won't need to scroll horizontally. Set it to `0` to take the full width.
+
+<Figure content="/screens/peek/customLinesPeek.png" caption="Padding and Layout Settings" />
+
+---
+
+## Behavior
+
+### Replace Cmd/Ctrl Click
+
+This option will hijack the default behavior of the `Cmd/Ctrl + Click` action, replacing it with the _Peek Inline_ feature instead of the _Navigate to Definition_ action.
+
+This is useful if you prefer staying in the same context as much as possible, rather than jumping to a new file. You can still navigate to the definition by using the `F4` key or the `Navigate to Definition` action.
+
+:::caution
+**Note**: This is a DESTRUCTIVE ACTION, e.g. this will modify your current keymap. Therefore, you should make a backup just in case.
+:::
+
+### Double Escape to Close
+
+By default, you can close the Peek window by pressing `Escape` twice. However if you prefer to close it manually, you can disable this
+option in the settings.
