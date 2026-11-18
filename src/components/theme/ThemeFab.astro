@@ -12,7 +12,10 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
     aria-labelledby="mt-theme-fab-title"
   >
     <div class="head">
-      <p id="mt-theme-fab-title" class="ttl">
+      <p
+        id="mt-theme-fab-title"
+        class="ttl"
+      >
         Theme <span data-mt-current></span>
       </p>
 
@@ -43,7 +46,10 @@ import { themeGroups, GROUP_LABELS } from '../../data/themes';
               >
                 <span class="name">{t.name}</span>
 
-                <span class="dots" aria-hidden="true">
+                <span
+                  class="dots"
+                  aria-hidden="true"
+                >
                   {[t.accent, t.foreground, t.selectBg, t.button, t.border].map(
                     (c) => (
                       <i style={`background:${c}`}></i>

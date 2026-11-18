@@ -13,25 +13,33 @@ export const collections = {
         gallery: z
           .array(
             z.object({
-              images: z.array(z.object({
-                filename: z.string(),
-                alttext: z.string()
-              })),
+              images: z.array(
+                z.object({
+                  filename: z.string(),
+                  alttext: z.string(),
+                }),
+              ),
             }),
           )
           .optional(),
 
-        wallpapers: z.array(z.object({
-          filename: z.string(),
-          alttext: z.string()
-        })).optional(),
+        wallpapers: z
+          .array(
+            z.object({
+              filename: z.string(),
+              alttext: z.string(),
+            }),
+          )
+          .optional(),
 
         chromeThemes: z
-          .array(z.object({
-            name: z.string(),
-            imageUrl: z.string(),
-            url: z.string()
-          }))
+          .array(
+            z.object({
+              name: z.string(),
+              imageUrl: z.string(),
+              url: z.string(),
+            }),
+          )
           .optional(),
       }),
     }),
