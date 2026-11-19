@@ -122,16 +122,6 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Icons',
-          items: [
-            {
-              label: 'Atom Material Icons Plugin',
-              slug: 'docs/icons/atom-material-icons-plugin',
-            },
-            { label: 'Associations Editor', slug: 'docs/icons/associations-editor' },
-          ],
-        },
-        {
           label: 'Reference',
           items: [
             { label: 'Color Palette', slug: 'docs/reference/color-palette' },

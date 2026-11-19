@@ -15,10 +15,12 @@ https://www.material-theme.com/*  https://material-theme.com/:splat  301!
 /docs/configuration/ui-components-settings/      /docs/configuration/ui-component-settings/ 301
 /docs/configuration/main-settings/               /docs/configuration/settings/              301
 
-# Reference pages that never existed
-/docs/reference/file-icons/                      /docs/icons/associations-editor/           301
-/docs/reference/associations/                    /docs/icons/associations-editor/           301
-/docs/reference/folder-associations/             /docs/icons/associations-editor/           301
+# Icons docs moved to their own site
+/docs/icons/                                     https://a-file-icon-idea.netlify.app/      301
+/docs/icons/*                                    https://a-file-icon-idea.netlify.app/      301
+/docs/reference/file-icons/                      https://a-file-icon-idea.netlify.app/      301
+/docs/reference/associations/                    https://a-file-icon-idea.netlify.app/      301
+/docs/reference/folder-associations/             https://a-file-icon-idea.netlify.app/      301
 
 # Old settings sub-slugs (listed in the old settings.md)
 /docs/configuration/current-theme/               /docs/configuration/settings/              301

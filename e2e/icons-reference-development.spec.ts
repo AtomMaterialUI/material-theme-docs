@@ -1,8 +1,6 @@
 import { expect, test } from '@playwright/test';
 
 const pages = [
-  'icons/atom-material-icons-plugin',
-  'icons/associations-editor',
   'reference/color-palette',
   'reference/components',
   'reference/wizard',

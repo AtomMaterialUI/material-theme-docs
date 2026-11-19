@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
-import { docsPages, gone, otherPages, redirects } from './fixtures/old-urls';
+import { docsPages, externalRedirects, gone, otherPages, redirects } from './fixtures/old-urls';
 
 // maxRedirects: 0 lets us assert the 301 itself instead of just the final page.
 const noFollow = { maxRedirects: 0 };
@@ -34,6 +34,17 @@ test.describe('moved URLs redirect to a live page', () => {
       expect(response.status()).toBe(301);
       expect(new URL(response.headers().location, 'http://x').pathname).toBe(to);
       expect((await request.get(to, noFollow)).status()).toBe(200);
+    });
+  }
+});
+
+test.describe('icons docs redirect to their own site', () => {
+  for (const [from, to] of Object.entries(externalRedirects)) {
+    test(`301 ${from} -> ${to}`, async ({ request }) => {
+      const response = await request.get(from, noFollow);
+
+      expect(response.status()).toBe(301);
+      expect(response.headers().location).toBe(to);
     });
   }
 });

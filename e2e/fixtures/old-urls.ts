@@ -41,8 +41,6 @@ export const docsPages = [
   '/docs/eula/',
   '/docs/faq-troubleshooting/',
   '/docs/getting-started/',
-  '/docs/icons/associations-editor/',
-  '/docs/icons/atom-material-icons-plugin/',
   '/docs/introduction/',
   '/docs/other-products/',
   '/docs/pricing/',
@@ -56,15 +54,21 @@ export const docsPages = [
 
 export const otherPages = ['/', '/robots.txt'];
 
+export const externalRedirects: Record<string, string> = {
+  '/docs/icons/': 'https://a-file-icon-idea.netlify.app/',
+  '/docs/icons/atom-material-icons-plugin/': 'https://a-file-icon-idea.netlify.app/',
+  '/docs/icons/associations-editor/': 'https://a-file-icon-idea.netlify.app/',
+  '/docs/reference/file-icons/': 'https://a-file-icon-idea.netlify.app/',
+  '/docs/reference/associations/': 'https://a-file-icon-idea.netlify.app/',
+  '/docs/reference/folder-associations/': 'https://a-file-icon-idea.netlify.app/',
+};
+
 export const redirects: Record<string, string> = {
   '/docs/': '/docs/introduction/',
   '/sitemap.xml': '/sitemap-index.xml',
   '/docs/development/installation_/': '/docs/development/installation/',
   '/docs/configuration/ui-components-settings/': '/docs/configuration/ui-component-settings/',
   '/docs/configuration/main-settings/': '/docs/configuration/settings/',
-  '/docs/reference/file-icons/': '/docs/icons/associations-editor/',
-  '/docs/reference/associations/': '/docs/icons/associations-editor/',
-  '/docs/reference/folder-associations/': '/docs/icons/associations-editor/',
   '/docs/configuration/current-theme/': '/docs/configuration/settings/',
   '/docs/configuration/preview-theme-colors/': '/docs/configuration/settings/',
   '/docs/configuration/theme-selector/': '/docs/configuration/settings/',
@@ -99,7 +103,6 @@ export const gone = [
   '/download/blackFridayDiscount.pdf',
   '/docs/development/kitchen/',
   '/docs/configuration/',
-  '/docs/icons/',
   '/docs/reference/',
   '/docs/development/',
 ];
