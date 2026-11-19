@@ -1,0 +1,44 @@
+---
+// One Carbon Ads slot. Only layout overrides render it, so authors never place ads.
+// Several slots can exist in the DOM (sidebar, ribbon, hero) but only one is visible at a given
+// width; the script below loads Carbon into the first visible one, so a page never shows two ads.
+interface Props {
+  placement: 'sidebar' | 'ribbon' | 'hero';
+  class?: string;
+}
+
+const { placement, class: className } = Astro.props;
+---
+
+<div
+  class:list={['mt-carbon', className]}
+  data-carbon-slot={placement}
+></div>
+
+<script>
+  const slot = [
+    ...document.querySelectorAll<HTMLElement>('[data-carbon-slot]'),
+  ].find((el) => el.offsetParent !== null);
+
+  if (slot) {
+    const script = document.createElement('script');
+
+    script.async = true;
+    script.id = '_carbonads_js';
+    script.src =
+      '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=materialthemecom';
+    slot.append(script);
+  }
+</script>
+
+<style>
+  .mt-carbon {
+    margin-top: 1rem;
+    margin-inline-end: 1rem;
+    max-width: 330px;
+  }
+
+  .mt-carbon[data-carbon-slot='hero'] {
+    margin-inline: auto;
+  }
+</style>

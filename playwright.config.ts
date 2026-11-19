@@ -14,7 +14,8 @@ export default defineConfig({
   webServer: process.env.BASE_URL
     ? undefined
     : {
-        command: 'BROWSER=none pnpm exec netlify serve --offline --port 8888',
+        command:
+          'PUBLIC_GA_MEASUREMENT_ID=G-TEST123456 BROWSER=none pnpm exec netlify serve --offline --port 8888',
         url: baseURL,
         reuseExistingServer: !process.env.CI,
         timeout: 180_000,

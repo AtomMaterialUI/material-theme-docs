@@ -2,6 +2,8 @@
 // Keeps Starlight's footer (edit link, pagination), then adds the site footer and the floating theme picker.
 import Default from '@astrojs/starlight/components/Footer.astro';
 import { site, years } from '../../config/site';
+import { gaMeasurementId } from '../../config/analytics';
+import ConsentBanner from '../analytics/ConsentBanner.astro';
 import ThemeFab from '../theme/ThemeFab.astro';
 ---
 
@@ -48,13 +50,23 @@ import ThemeFab from '../theme/ThemeFab.astro';
     </span>
     <span>
       <a href="https://twitter.com/mallowigi">Elior Boukhobza</a>
-      {' & '}
-      <a href="https://twitter.com/crmag">Chris Magnussen</a>
     </span>
     <span>All rights reserved</span>
     <a href="/docs/eula/">EULA</a>
+
+    {gaMeasurementId && (
+      <button
+        type="button"
+        class="mt-cookie-settings"
+        data-mt-cookie-settings
+      >
+        Cookie settings
+      </button>
+    )}
   </p>
 </div>
+
+<ConsentBanner />
 
 <ThemeFab />
 
@@ -115,5 +127,14 @@ import ThemeFab from '../theme/ThemeFab.astro';
     margin: 2rem 0 0;
     padding-top: 1rem;
     border-top: 1px solid var(--sl-color-hairline);
+  }
+
+  .mt-cookie-settings {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: var(--sl-color-accent-high);
+    cursor: pointer;
   }
 </style>

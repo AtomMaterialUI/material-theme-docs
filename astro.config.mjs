@@ -161,6 +161,7 @@ export default defineConfig({
         ThemeProvider: './src/components/overrides/ThemeProvider.astro',
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',
         PageTitle: './src/components/overrides/PageTitle.astro',
+        PageSidebar: './src/components/overrides/PageSidebar.astro',
         Footer: './src/components/overrides/Footer.astro',
         Header: './src/components/overrides/Header.astro',
         SiteTitle: './src/components/overrides/SiteTitle.astro',

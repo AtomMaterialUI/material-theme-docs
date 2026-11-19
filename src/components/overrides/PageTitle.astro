@@ -1,12 +1,21 @@
 ---
 // The "ribbon": an accent band holding the page title and the front-matter description as subheading.
 // The band background itself is painted on the parent .content-panel in custom.css (`:has(.docs-header)`).
+// On mobile (and on pages without a TOC) it also holds the Carbon slot, right after the ribbon text.
 import Default from '@astrojs/starlight/components/PageTitle.astro';
+import CarbonAds from '../ads/CarbonAds.astro';
 
-const { description } = Astro.locals.starlightRoute.entry.data;
+const { entry, toc } = Astro.locals.starlightRoute;
+const { description } = entry.data;
 ---
 
 <div class="docs-header">
   <Default />
+
   {description && <p class="docs-subtitle">{description}</p>}
 </div>
+
+<CarbonAds
+  placement="ribbon"
+  class={toc ? 'lg:sl-hidden' : undefined}
+/>

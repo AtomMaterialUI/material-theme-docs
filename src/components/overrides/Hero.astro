@@ -1,6 +1,9 @@
 ---
 // Replaces Starlight's landing hero with the original site's: themed logo, headline, slogan,
-// description and a single call to action. The texts come from the page's front matter.
+// description and a single call to action, then the page's single Carbon slot.
+// The texts come from the page's front matter.
+import CarbonAds from '../ads/CarbonAds.astro';
+
 const { data } = Astro.locals.starlightRoute.entry;
 const { hero, description } = data;
 ---
@@ -27,6 +30,8 @@ const { hero, description } = data;
     </a>
   ))}
 </section>
+
+<CarbonAds placement="hero" />
 
 <style>
   .mt-hero {
