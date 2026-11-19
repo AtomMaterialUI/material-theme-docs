@@ -2,6 +2,289 @@
 title: What's new - Archives
 ---
 
+Release notes for versions older than v13. The screenshots from these releases are no longer hosted here.
+
+## What's New in Material Theme UI v12.1.0
+
+This version fixes a bunch of errors and usability issues, especially with the new **Peek** feature.
+
+### Addition of a **Custom Width** option
+
+Gives the ability to set a custom width for the Peek popup, restrained to the editor's width. This allows for a more
+comfortable reading experience, especially when working with long lines of code.
+
+### New defaults
+
+The previous default of 8 lines in the Peek popup is really small and seldom useful. After comparing with other IDEs, we
+decided to increase the default to 15 lines, which is a more comfortable size for most users.
+
+In addition, we changed the background color to use the *Contrast Color* of the current theme, and the border color to
+the *Highlight Color*, giving more contrast between the Peek Panels and the enclosing editor.
+
+### New shortcuts
+
+The previous shortcuts of `Shift + Click` or `Alt + Shift + Click` are conflicting with the usual purpose of `Shift`,
+which is to select text. As such, we've added new shortcuts for the Peek feature: `Alt + Click` for Peek Inline and
+`Alt + Ctrl + Click` for Peek Popup.
+
+### Omni Theme touches
+
+The **Omni Theme** was found lacking a few properties in its color scheme, in comparison with the other prebundled
+themes. We've ran a script to detect and fix the missing properties, and added a few more touches to make it more
+complete and visually appealing.
+
+### Random Theme Fixes
+
+We also (hopefully!) fixed a strange bug happening with the **Random Theme Switcher**, where the theme would suddenly
+change randomly, despite not having reach the timer.
+
+As always, happy coding!
+
+---
+
+## What's New in Material Theme UI v12.0.0
+
+This release introduces a bunch of new content, including six new themes and handy code navigation features. We've also
+added a new options page for managing **Color Schemes**, a new **Accent Color Picker**, a new **Theme Selector**, and
+other quality-of-life improvements.
+
+### New Themes
+
+We've added six new themes to the collection:
+
+- **Cobalt2**: A refined port of the popular Cobalt2 theme.
+- **Prism & Prism Light**: Clean and vibrant themes inspired by the Prism syntax highlighter.
+- **Horizon & Horizon Bright**: Reddish soothing themes with a warm and refined color palette.
+- **Omni**: A dusk theme with vibrant colors, ported from the theme of the same name.
+
+<div class="masonry">
+</div>
+
+### Peek
+
+Introducing **Peek**, a new way to explore and modify your code without losing context. Inspired by the VSCode feature
+of the same name, this feature allows you to peek at definitions inline, edit them, all in the comfort of your current
+file. You can configure the appearance and behavior of the inline editor, including rounded borders and double-escape to
+close.
+
+- **Peek (Editable Popup)**: Opens the definition in a sleek popup, allowing you to make quick edits without switching
+  files.
+- **Peek (Inline)**: Embeds the definition directly within your editor for a truly seamless experience.
+
+
+
+
+:::caution
+**Note**: This feature is currently in beta and free for everyone, but in the future it will be only available in the
+Premium Plan.
+:::
+
+### Accent Color Picker
+
+We've removed the plethora of **Accent Color Actions** and replaced them with a single, unified **Accent Color Picker**
+displaying the list of available swatches in a modernized, handy popup. This allows you for a quick and easy way to
+change your accent color without navigating through multiple menus.
+
+
+In addition, we've added a few more **predefined accent colors** to the list, such as **Aqua**, **Sand**, **Salmon**
+among others.
+
+### Color Scheme Overrides
+
+Thanks to the JetBrains Marketplace, you can download hundreds of themes and color schemes from a variety of sources.
+However, sometimes the color schemes have contrast issues, wrong colors, or simply don't match the overall appearance.
+JetBrains IDEs already allow you to override the colors of a color scheme. However, you can only override one scheme at
+a time, and if you have lots of color schemes, this can become easily tedious and not worth the hassle.
+
+As such, we've added a new settings page for overriding vendor color schemes on the fly, centralizing all the settings
+in one place. We've migrated some of the existing color scheme overrides to this new page, such as the **Global Default
+Font** and the **Automatically Reset Color Scheme**, and added a few more options for better control over your color
+schemes.
+
+- **Diff Colors Opacity**: You can now adjust the opacity of diff highlights in the Diff/Merge editor.
+- **Popups and Notifications**: Override the colors of popups and notifications from the Theme itself.
+- **VCS Gutter Indicators**: Replace the VCS gutter indicator colors with the Material schemes' colors.
+- **Accent Color Overrides**: Automatically align certain color scheme properties with the current **Accent Color**.
+
+
+
+:::caution
+**Note**: It's important to note that these overrides are affecting the color schemes, meaning that once applied, they
+can't be easily reverted unless you reset the color scheme to its default state. Bear that in mind if you're using
+customized color schemes!
+:::
+
+### Other Improvements
+
+- **New Logo**: We've replaced the static PNG logo with a nicer SVG version, which scales better and looks sharper on
+  high-resolution displays. It also features a slightly more pleasant border radius, embedding with its containing
+  environment.
+- **New Theme Selector**: We've replaced the static PNG screenshots of the themes with SVG icons representing the
+  theme's main colors. This allows us to add or edit themes more easily by automatically generating the previews.
+
+-----
+
+## 11.1.0
+
+### Features
+
+- **New Setting: Tab Glow (Premium)**: Adds a subtle glow effect beneath active tabs.
+- **Material Theme UI Toolbar Reorganization**:
+    - Actions are now logically categorized (e.g., *Tabs*, *Features*...).
+    - Added more setting toggles for quicker access.
+    - Added toggles to quickly switch the current **Material Style**.
+
+### Fixes
+
+- Fixed **Adaptive Theme** not updating correctly upon color scheme changes.
+- Fixed an issue where **StatusBar Widgets** would not reappear after removal until a restart.
+- Corrected spacing in the **New File** popup when using the M3 Style.
+- Fixed a bug where outlines were not always applied to text fields.
+
+### Other
+
+- Removed Legacy Widget.
+- Expanded translations.
+- Updated dependencies.
+
+## 11.0.0-beta.5
+
+### Fixes
+
+- Fixed a bug causing Font Scale to reset to maximum value.
+- Removed deprecated setting for Islands Layout since it is no longer possible to turn off Islands.
+- Renamed **Project Frame** to **Project Banner**.
+- Fixed **Show Project Banner Text** setting not working.
+- Corrected screenshot URL in Features Settings.
+- Fixed missing text in **Language Additions** settings.
+- Added a new **Full Window Gradient** setting in **Project Title Bar** settings.
+
+## 11.0.0-beta.4
+
+### Fixes
+
+- Reverted Tab Height refactor to resolve sizing issues.
+- Removed unnecessary Read Action in `MTListUI`.
+
+## 11.0.0-beta.3
+
+### Fixes
+
+- Restored the **Floating Action Button** setting to its enabled state.
+
+## 11.0.0-beta.2
+
+### Fixes
+
+- Made FAB Actions Editor context-aware.
+- Improved UI component scaling at higher zoom levels.
+- Reduced internal API usage.
+
+## 11.0.0-beta.1
+
+### Fixes
+
+- Reduced internal API usage.
+- Improved **Borderless** mode within the Islands Layout.
+
+----
+
+## What's New in Material Theme UI v11.0.0
+
+<div class="title">
+
+New year, new look! The **Material Theme UI** plugin continues to evolve, bringing a modernized experience to your IDE.
+This version introduces the **Material 3** style, offering a fresh, contemporary aesthetic to replace the classic **Material 2** look. We’ve
+also added support for the sleek **Google Sans** font (available separately) to further
+refine your workspace.
+
+</div>
+
+### Material 3 Style
+
+
+
+
+Want a preview? Explore the new **UI DSL Showcase** page in your settings.
+
+For fans of the classics: we’ve completely overhauled the original **Material Design** (*Material 1*). No longer just a
+legacy style, it is now a fully-featured customization option for those who prefer the traditional Material look.
+
+----
+
+Beyond the visual refresh, we’ve introduced several powerful features to enhance your workflow:
+
+## Customizable Floating Action Button (FAB)
+
+Access your most-used actions instantly with the new Floating Action Button. Position it anywhere in your IDE window and
+customize its triggered actions via the **Menus and Toolbars** settings.
+
+
+## Theme Ignores
+
+Sometimes external themes don’t align perfectly with your preferences. With the new **Theme Ignores** page, you can
+choose to bypass specific theme properties in favor of native IDE defaults, helping you resolve color clashes and UI
+inconsistencies.
+
+
+## Preview Theme Colors
+
+Gain full transparency into your active theme. This new tool provides a comprehensive table of all theme properties and
+their exact color values, eliminating the guesswork from customization.
+
+
+## Refined Spacing Settings
+
+Precision matters. We’ve expanded the **Spacing Settings** to grant you granular control over the size and padding of UI
+components, allowing you to tailor your IDE to your exact specifications.
+
+
+## Settings Overhaul
+
+We’ve refined every settings page to improve the user experience. This includes UX optimizations, fixing UI bugs (such
+as broken images or inconsistent disabled states), and overall polish to make navigation more intuitive.
+
+### Full Changelog
+
+### Features
+
+- **Contrast Mode by Default**: Enabled by default to provide a sharper, more defined UI out of the box.
+- **Material 3 Integration**: Material 3 is now the default style, succeeding Material 2.
+    - **Material 1** has been revitalized as a primary customization option.
+- **Floating Action Button (FAB)**: A customizable, draggable shortcut hub that persists across sessions.
+- **Theme Ignores**: A dedicated interface for managing and overriding external theme properties.
+- **UI Customization Enhancements**:
+    - New settings for **Custom Button Radius** and component borders.
+    - Improved **Rounded Tabs** with expanded customization options.
+    - Official support for the **Google Sans** font.
+- **Enhanced Spacing**: More granular options for fine-tuning the IDE layout.
+- **Database Integration**: New settings for database tables and improved plugin synergy.
+- **Live Color Preview**: A dedicated page to visualize every color property in your current theme.
+- **UI DSL Showcase**: A convenient way to preview various UI components and styles.
+
+### Fixes
+
+- Comprehensive cleanup and bug fixes across all settings pages.
+- Improved Contrast Mode stability, particularly with Islands and High Contrast themes.
+- Enhanced consistency and aesthetics for Accent Mode.
+- Resolved an issue preventing the plugin from loading for users on the free plan.
+- Optimized memory management during theme switching to prevent leaks.
+- Fixed opacity issues for inactive settings in the Islands layout.
+
+### Other
+
+- Updated Kotlin and other core dependencies for improved performance and stability.
+- Expanded and updated translations.
+- Refreshed UI properties and color schemes.
+
+**Note**: This version is actively being refined. If you encounter any bugs or have feedback, please report them to help
+us improve.
+
+Happy coding!
+
+----
+
+
 ## What's new in Material Theme UI v10.10.0
 
 This version includes a quick hotfix to fix some urgent issues regarding the screenshots and the tool window opacity. But we've also delivered small improvements for the Rounded Tabs.
@@ -10,7 +293,6 @@ This version includes a quick hotfix to fix some urgent issues regarding the scr
 
 This version includes two new settings to control the padding and the radius of the rounded tabs.
 
-<Figure content="/screens/archive/roundedTabsPadding.png" caption="Rounded Tabs Customization Options" />
 
 ### Other
 
@@ -28,7 +310,6 @@ New year, new version! This version fixes a few issues related to the **Theme Ra
 
 A new feature has been added to the **UI Components** settings, **Custom Search Everywhere**, allowing you to customize the UI of the search everywhere popup.
 
-<Figure content="/screens/archive/largerSearch.png" caption="Larger Search Everywhere" />
 
 This feature is available in the Free plan, but further customization is only available in the Premium plan:
 - Custom padding
@@ -55,13 +336,9 @@ The **Material Wallpaper** feature is now available for all themes, not only the
 
 Examples from a few themes from the Marketplace:
 
-<Figure content="/screens/wallpapers/darkviolet.png" caption="Relax Dark Violet Wallpaper" />
 
-<Figure content="/screens/wallpapers/onedark.png" caption="One Dark Islands Wallpaper" />
 
-<Figure content="/screens/wallpapers/sakura2.png" caption="Sakura Wallpaper" />
 
-<Figure content="/screens/wallpapers/shades.png" caption="Shades Of Purple Wallpaper" />
 
 :::caution
 **Note**: Enabling Wallpapers will prevent the **gradients** from being displayed on the Application Frame in the new Islands Layout!
@@ -73,9 +350,7 @@ Examples from a few themes from the Marketplace:
 
 Another option is the ability to control the size of the border for the Rounded Tabs.
 
-<Figure content="/screens/archive/minSize.png" caption="Min Size (1)" />
 
-<Figure content="/screens/archive/maxSize.png" caption="Max Size (4)" />
 
 ----
 
@@ -115,19 +390,12 @@ In addition, the _Project Title Frame_ is now integrated with the _Islands Layou
 
 ### Screenshots:
 
-<Figure content="/screens/archive/islandsV2.png" caption="New Islands Layout" />
 
-<Figure content="/screens/archive/withProjectFrame.png" caption="With Project Title Frame" />
 
-<Figure content="/screens/archive/islandsContrast.png" caption="Contrast Mode" />
 
-<Figure content="/screens/archive/customBackground.png" caption="Custom Background" />
 
-<Figure content="/screens/archive/withColorizedTitle.png" caption="With Colorized Title Bar" />
 
-<Figure content="/screens/archive/withBorder.png" caption="With Border" />
 
-<Figure content="/screens/archive/withCustomBorder.png" caption="With Custom Border" />
 
 ----
 
@@ -151,7 +419,6 @@ In addition, the _Project Title Frame_ is now integrated with the _Islands Layou
 - Customize Font and Font Size
 - New Macro: `{fileIcon}`: now you can display the file icon in the _Project Title Frame_.
 
-<Figure content="/screens/archive/projectTitleTweaks.png" caption="Project Title Bar Customizations" />
 
 #### Islands Layout's improvements
 
@@ -184,7 +451,6 @@ In addition, the _Project Title Frame_ is now integrated with the _Islands Layou
 
 A new button has been added to the **Favorite Themes Shuffle** tool window, to allow you to disable the selected theme on the fly, rather than having to open the settings to disable them.
 
-<Figure content="/screens/archive/disableThemes.png" caption="Disable Themes on the fly" />
 
 ## Other Fixes
 
@@ -202,7 +468,6 @@ A new button has been added to the **Favorite Themes Shuffle** tool window, to a
 
 You can now customize the opacity of the rounded tabs.
 
-<Figure content="/screens/archive/roundedTabsSettings.png" caption="Rounded Tabs Opacity Settings" />
 
 In addition, tabs using custom *File Colors* are now more opaque, providing a better visualization.
 
@@ -210,7 +475,6 @@ In addition, tabs using custom *File Colors* are now more opaque, providing a be
 
 A new pattern has been added to the **Project Title Frame**, `{subProject}` to reference a different sub-project when running in a **multi-project** setup.
 
-<Figure content="/screens/archive/subproject.png" caption="Sub-Project support in Project Title Frame" />
 
 > Note: Multi-project setups are available for all IDEs except IntelliJ IDEA, Rider and Android Studio. They are allowing you to open multiple projects in the same window, using the "Attach Project" feature at `File > Attach Project`.
 
@@ -254,7 +518,6 @@ As a result, the whole feature has been reworked to a different approach: **Favo
 
 In this implementation, rather than selecting a theme at random, the plugin will instead generate a "playlist" of themes from the selected favorite themes, and will switch to the next theme in the playlist at the specified interval, like a music playlist.
 
-<Figure content="/screens/archive/randomizerPlaylist.png" caption="Theme Randomizer Playlist" />
 
 This playlist will be displayed in the tool window that was used to display the next theme countdown. It will display the current selected theme, as well as buttons to switch to the next or previous theme in the playlist. There is also a button to shuffle the playlist manually.
 
@@ -268,7 +531,6 @@ These features are reserved for premium users, but will be available to all for 
 
 As the Material Theme UI contains quite a lot of themes, it can be challenging to choose one that fits your needs. This is why the plugin now comes with a **Theme Randomizer** feature, which will randomly switch the theme at a random interval of your choice.
 
-<Figure content="/screens/archive/randomizer.png" caption="Theme Randomizer" />
 
 From these settings you can select the themes you want to include in the randomization, as well as the _interval_ at which the theme will be changed. You can also customize the _weight_ of the theme, e.g., the rate at which the theme will be selected. The less the number, the less likely the theme will be selected.
 
@@ -278,7 +540,6 @@ Note: The randomizer will only switch between Dark or Light themes respectively.
 
 Also, there's a new _Tool Window_ which will display the remaining time before the next theme change. This allows you to understand how long you have before it switches.
 
-<Figure content="/screens/archive/countdown.png" caption="Next Change countdown" />
 
 :::caution
 Note: Changing anything in the settings will reset the countdown.
@@ -288,31 +549,25 @@ Note: Changing anything in the settings will reset the countdown.
 
 Since version 2025.2 JetBrains introduced a newer layout for the IDE, called **Islands Layout**. This layout, originally only present in Fleet, is now getting added to the main products, providing a more modern and flexible layout for the IDE.
 
-<Figure content="/screens/archive/islandsLayout.png" caption="Islands Layout" />
 
 However, this new layout is only available for the new themes, **Single Island** and **Multiple Islands**. Other themes will still be using the current layout (but this might change in the future).
 
 In consequence, the Material Theme UI allows you to enable this layout for any other theme, all the while providing you with customization options for this layout.
 
-<Figure content="/screens/archive/islands.png" caption="Islands Layout" />
 
 In the settings, you will find options that allow you to control the background color of the canvas, the spacing between the islands, the arc radius, and the gap between the islands and the tool windows.
 
-<Figure content="/screens/archive/islandsSettings.png" caption="Islands Settings" />
 
 Moreover, associated with other features, you can be creative to have the *Islands Layout* the way you want it to be.
 
 For example, you can use the **Contrast Mode** for a better contrast between the islands.
 
-<Figure content="/screens/archive/contrastIslands.png" caption="Islands with Contrast Mode" />
 
 You can also set a custom background color between the islands:
 
-<Figure content="/screens/archive/islandsBackground.png" caption="Islands with Background Color" />
 
 Finally, you can also use the **Background Image** feature to set a custom background image for the background.
 
-<Figure content="/screens/archive/islandsWithImage.png" caption="Islands with Background Image" />
 
 :::caution
 Note: This layout requires closing all projects when you change the settings.
@@ -322,7 +577,6 @@ Note: This layout requires closing all projects when you change the settings.
 
 A new setting has been added to the **UI Components**: **Rounded Buttons**. This setting will allow you to control the border radius of all buttons in the IDE, making them more rounded or less rounded, according to your tastes.
 
-<Figure content="/screens/archive/roundedButtons.png" caption="Rounded Buttons" />
 
 ----
 
@@ -334,9 +588,7 @@ The **Rounded Tabs** setting has been improved to provide a better contrast betw
 
 Now the selected tab sports a border with the accent color, to make it more distinguishable from the unselected tabs. Moreover, the tabs use the highlight color on hover, to make it more prominent.
 
-<Figure content="/screens/archive/roundedTabs.png" caption="Rounded Tabs" />
 
-<Figure content="/screens/archive/withTabHighlighter.png" caption="Rounded Tabs with Tab Indicators" />
 
 ### Fixes
 
@@ -375,7 +627,6 @@ As the New UI is now the default for all users, it's now become easier to add mo
 
 To celebrate that, we are introducing a new setting to customize the tabs' design: **Rounded Tabs**.
 
-<Figure content="/screens/archive/roundedTabs.png" caption="Rounded Tabs" />
 
 This feature mimics the new tab design introduced by Google in their navigator, _Google Chrome_, which makes the tabs more rounded and looking like pressed buttons.
 
@@ -413,15 +664,11 @@ As a follow-up to the feature introduced in version 9.2.0, **Use Original Tool W
 
 You can find this setting in the **Material Theme > UI Components Settings**
 
-<Figure content="/screens/archive/actionButtonsRadius.png" caption="Action Buttons Radius Settings" />
 
 Comparison:
 
-<Figure content="/screens/archive/fullRadius.png" caption="Full Rounded buttons" />
 
-<Figure content="/screens/archive/halfRadius.png" caption="Half Rounded buttons" />
 
-<Figure content="/screens/archive/noRadius.png" caption="Not Rounded buttons" />
 
 ### More Overlays
 
@@ -434,9 +681,7 @@ But there are people that do not mind the overlays, and as such, this setting wa
 - When **light popups** are opened
 - etc.
 
-<Figure content="/screens/archive/gitBranches.png" caption="Git Branch Overlays" />
 
-<Figure content="/screens/archive/dropdownOverlays.png" caption="Dropdown Overlays" />
 
 This setting is disabled by default to not get in the way of the users' workflow, but you can enable it in the **Material Theme > Features** settings.
 
@@ -463,7 +708,6 @@ This feature is the result of a particular demand by some users to restore the o
 
 As you may know, the plugin changed the look and feel of those buttons to look like the Material Design look and feel, by replacing them with a transparent circle of the accent color. However some users preferred the original look of the buttons, and as such, this feature was added to the plugin.
 
-<Figure content="/screens/archive/originalToolWindowButtons.png" caption="Original Tool Window Hover Buttons" />
 
 ### Other Bug fixes and improvements
 
@@ -495,7 +739,6 @@ However, version 9.0.0 restructured how settings are kept, and as a result a mig
 
 To help existing users with that, a new onboarding screen has been added to the plugin, which will guide you through the migration process.
 
-<Figure content="/screens/settingsv3/migrate.png" caption="Onboarding Screen" />
 
 This screen will only show us once and will trigger the migration process.
 
@@ -505,7 +748,6 @@ This screen will only show us once and will trigger the migration process.
 
 This setting will return the old loading icon from Material Design, which was removed at some point in the past.
 
-<Figure content="/screens/archive/loader.png" caption="Material Design Loading Icon" />
 
 **Note**: You will have to reset the IDE for the changes to take effect.
 
@@ -538,15 +780,11 @@ This is why the new settings page is now organized into different pages, each pa
 
 The new settings page is more organized, more intuitive, and using a different technology: `Kotlin UI DSL` rather than pure Swing. This makes it easier to maintain and to add new features in the future.
 
-<Figure content="/screens/settingsv3/mainSettings.png" caption="Main Settings v3" />
 
-<Figure content="/screens/settingsv3/themeSelector.png" caption="Theme Selector" />
 
-<Figure content="/screens/settingsv3/accentColors.png" caption="Accent Colors" />
 
 As a result of that change, the settings need to be migrated to a new format, as such, the new settings are to be found in a file named `material_theme_new.xml` as opposed as the previous `material_theme.xml`. Therefore, you will need to migrate your previous configuration before using the plugin. This is a one-time operation, and you will be prompted to do so when you first open the IDE after updating the plugin.
 
-<Figure content="/screens/settingsv3/migrate.png" caption="Migration Dialog" />
 
 Upon clicking migrate, your previous settings will be migrated to the new format, and you will be able to use the plugin as usual.
 
@@ -556,7 +794,6 @@ Upon clicking migrate, your previous settings will be migrated to the new format
 
 Perhaps the most controversial of the changes, is a new feature called **Centered Editor**. When enabled, it centers the code in the middle of the editor, as opposed as tucked to the left.
 
-<Figure content="/screens/features/centeredEditor.png" caption="Centered Editor" />
 
 This feature is based on the already available **Zen Mode** of the IDE, found in _Menu > View > Appearance > Zen Mode_. But, unlike Zen Mode, which also hides all tool windows and tabs, the Centered Editor only centers the code, leaving the rest of the UI intact.
 
@@ -570,17 +807,14 @@ You can find the setting under `Material Theme UI > Features > Centered Editor`
 
 Previously named **Project Frame**, the Project Title Bar sports more options than ever before. For one, it now allows you to control more elements of the screen, namely the _Tool Windows_ and the _Status Bar_!
 
-<Figure content="/screens/settingsv3/projectTitle.png" caption="Project Title Settings" />
 
 Such options allow you to colorize not only the title bar, but the tool windows and the status bar as well, giving you a more "framed" look of your IDE, similar to the famous VSCode "Peacock" extension.
 
-<Figure content="/screens/peacockMode.png" caption="Peacock Mode" />
 
 Moreover, a new widget has been added on the Title Bar displaying the same contents of the Project Frame, that you can toggle ON or OFF according to your tastes.
 
 You can also select from a list of presets for your Title Bar widget. Maybe more will be added in the future!
 
-<Figure content="/screens/archive/titleBarOptions.png" caption="Title Bar Widget" />
 
 ----
 
@@ -590,7 +824,6 @@ The **Adaptive Theme** is a new theme that adapts itself from the **color scheme
 
 You can also choose to override the colors you want from the Color Scheme Settings Page.
 
-<Figure content="/screens/settingsv3/adaptiveTheme.png" caption="Adaptive Theme" />
 
 ----
 
@@ -598,13 +831,11 @@ You can also choose to override the colors you want from the Color Scheme Settin
 
 You can now visualize your current theme colors in the Settings page under `Material Theme UI > Current Theme`.
 
-<Figure content="/screens/settingsv3/currentTheme.png" caption="Current Theme" />
 
 This page displays a matrix of the current theme colors, with the ability to copy the theme colors by clicking on a tile. And yes, this works for non-bundled themes too!
 
 The **Custom Theme** page has also been migrated to the new layout, with the option to assign a different set of colors for the **Light Custom Theme**.
 
-<Figure content="/screens/settingsv3/customTheme.png" caption="Custom Theme" />
 
 ---
 
@@ -612,7 +843,6 @@ The **Custom Theme** page has also been migrated to the new layout, with the opt
 
 The Theme Selector, previously only available inside the Wizard, is now available in the settings page as well. You can now preview the themes before applying them.
 
-<Figure content="/screens/settingsv3/themeSelector.png" caption="Theme Selector" />
 
 > Note: We are aware of the current performance issues with the Theme Selector, and we are working on it.
 
@@ -620,7 +850,6 @@ The Theme Selector, previously only available inside the Wizard, is now availabl
 
 The contrast settings are available in the `Material Theme UI > Contrast` page, just like before.
 
-<Figure content="/screens/settingsv3/contrastMode.png" caption="Contrast Settings" />
 
 In addition, you can now fine-tune the degree of contrast for the **High Contrast** mode, by adjusting the **Contrast Level** slider. (Only available for premium users).
 
@@ -630,7 +859,6 @@ In addition, you can now fine-tune the degree of contrast for the **High Contras
 
 Another highlight of that new version is the revamp of the Accent Mode.
 
-<Figure content="/screens/settingsv3/accentMode.png" caption="Accent Mode" />
 
 In the new Accent Mode, you will have much more options to control the look of the Accent Mode,
 such as the ability to add a second Accent Color, or to toggle which parts of the IDE you don't want to be affected by the Accent Color.
@@ -641,13 +869,11 @@ such as the ability to add a second Accent Color, or to toggle which parts of th
 
 Previously labeled "Compact Settings", the spacing settings have been moved to the `Material Theme UI > Spacing` page, where you can adjust the spacing of the UI elements.
 
-<Figure content="/screens/settingsv3/spacing.png" caption="Spacing Settings" />
 
 There, you can find the previously available compactness options, as well as two brand new settings: **Header Size** and **Status Bar Size**.
 
 Example of a bigger header and status bars:
 
-<Figure content="/screens/settingsv3/hugeHeaderStatusBar.png" caption="Big Header and Status Bar" />
 
 > Note: Increasing the header size also increases the icons size! Maybe in the future we'll separate the two.
 
@@ -659,19 +885,15 @@ New **Project Tree Indicators** have been added to the list:
 
 #### Right Border
 
-<Figure content="/screens/indicators/right.png" caption="Right Border" />
 
 #### Underline
 
-<Figure content="/screens/indicators/underline.png" caption="Underline" />
 
 #### Boxed
 
-<Figure content="/screens/indicators/boxed.png" caption="Boxed" />
 
 In addition, you can select to have a gradient instead of a solid color for the indicators.
 
-<Figure content="/screens/trees/gradient.png" caption="Gradient Indicators" />
 
 ---
 
@@ -679,7 +901,6 @@ In addition, you can select to have a gradient instead of a solid color for the 
 
 Previously only available in the Atom Material Icons plugin, you can now find the **Arrows Style** setting in the `Material Theme UI > Trees > Arrows Style` page.
 
-<Figure content="/screens/settingsv3/arrowsStyle.png" caption="Arrows Style" />
 
 > Note: This setting is only available for users NOT using the Atom Material Icons plugin in conjunction with the Material Theme UI plugin.
 
@@ -689,13 +910,11 @@ Previously only available in the Atom Material Icons plugin, you can now find th
 
 A new mode is available under `Material Theme UI > UI Components > Borderless Mode`. When enabled, it sets the "Border Color" to be the same color as the background, effectively "hiding" the borders from the UI components.
 
-<Figure content="/screens/settingsv3/borderless.png" caption="Borderless Mode" />
 
 ### Round Notifications
 
 Still on the **UI Components** page, you can now make the notifications round by enabling the **Round Notifications** setting.
 
-<Figure content="/screens/archive/roundNotifications.png" caption="Round Notifications" />
 
 ### Material Circular Loader
 
@@ -703,7 +922,6 @@ The **Material Circular Loader** is now available in the settings page under `Ma
 
 When enabled, it restores the previous circular loading icon, just like the one found in the Material Design guidelines.
 
-<Figure content="/screens/archive/loader.png" caption="Material Circular Loader" />
 
 ---
 
@@ -711,7 +929,6 @@ When enabled, it restores the previous circular loading icon, just like the one 
 
 From the `Material Theme UI > Features` page, alongside the Overlays feature, you can now fine-tune the transparency of the overlays.
 
-<Figure content="/screens/settingsv3/overlays.png" caption="Custom Overlay Transparency" />
 
 -----
 
@@ -719,7 +936,6 @@ From the `Material Theme UI > Features` page, alongside the Overlays feature, yo
 
 The Language Additions now allow you to disable specific languages rather than the whole feature.
 
-<Figure content="/screens/settingsv3/langAdditions.png" caption="Language Additions" />
 
 In addition, languages have much more available options than before, with more keywords added to the tray, allowing for more customization. Oh and **Rust** has been added to the available languages list!
 
@@ -788,7 +1004,6 @@ This version is another bug fix release, mostly focused on Windows and Linux iss
 
 This release introduces a new feature: **Animate Tool Windows**. This feature allows you to animate the **undocked** tool windows when they are opening/closing.
 
-<Figure content="/screens/features/animatedToolWindows.gif" caption="Animated Tool Windows" />
 
 It uses the registry feature behind the scenes, so it's available in the free plans. However, it is disabled on Linux as the animation is not smooth on this platform.
 
@@ -802,7 +1017,6 @@ Another highlight of this release is a new theme: **Material Space**.
 
 This theme is a dark blue and purple theme reminiscent of the cosmic space. It is based off the theme used in the Apollo GraphQL website, but with Material colors.
 
-<Figure content="/screens/archive/space.png" caption="Material Space" />
 
 ### Fixes
 
@@ -825,7 +1039,6 @@ There have been a few small updates to keep up with the changes all the while wo
 - Add animating tool windows
 - New feature: **Shadows**: Add shadows to the notifications and popups.
 
-<Figure content="/screens/ui/shadows.png" caption="Shadows" />
 
 ### Fixes
 
@@ -913,14 +1126,11 @@ as it needed a new implementation to fit with the new Title Bar.
 
 But the latest release brought it back, and therefore needed attention from the plugin as well.
 
-<Figure content="/screens/archive/themedProjectBar.png" caption="Themed Project Bar" />
 
 But that's not all! It also supports the **Colorize Title Bar** feature, making it blend with the colorized title bar (
 New UI only).
 
-<Figure content="/screens/archive/colorizedProjectBar.png" caption="Colorized Project Bar - Project 1" />
 
-<Figure content="/screens/archive/colorizedProjectBar2.png" caption="Colorized Project Bar - Project 2" />
 
 ---
 
@@ -1030,13 +1240,11 @@ For instance, you could want your projects, be it old or new, to have a specific
 project frame color, without having to
 change it for all projects through the application settings.
 
-<Figure content="/screens/archive/settingsMenu.png" caption="Settings Menu (Mac)" />
 
 Such capabilities already exist for other settings, through the **New Projects Setup**, but not for the Material Theme.
 Therefore, since this version (7.14.0),
 it is now possible, and will affect new projects automatically.
 
-<Figure content="/screens/archive/perprojectDefaults.png" caption="Per-Project Defaults" />
 
 **Note**: This will **NOT** affect existing projects!
 
@@ -1061,7 +1269,6 @@ Therefore, this version adds a new icon and description to the checker tooltip, 
 errors, but simply annotations used to paint
 language additions.
 
-<Figure content="/screens/archive/annotations.png" caption="Language Addition Annotations" />
 
 ---
 
@@ -1086,7 +1293,6 @@ Also, a new tab has been added to the Welcome Screen to quickly open the Wizard.
 This will certainly prove useful for people that have skipped the wizard on the first start,
 or for people that configured it a while ago and didn't get to see the newest additions.
 
-<Figure content="/screens/other/welcomeScreen.png" caption="Welcome Screen" />
 
 By the way, remember that EAP users can use the premium features for free!
 
@@ -1106,9 +1312,7 @@ This version finalizes the planned tab features for 2022 by introducing support 
 
 These are thin, almost transparent borders that can be added between tabs to ease the distinction between them.
 
-<Figure content="/screens/tabs/noTabSeparators.png" caption="Without Tab Separators" />
 
-<Figure content="/screens/tabs/tabSeparators.png" caption="With Tab Separators" />
 
 ----
 
@@ -1119,9 +1323,7 @@ The second brand-new feature of this release is a feature called "Focus Mode".
 Originally inspired by an extension with the same name, this feature has been added to the plugin's feature as well,
 with more customization options.
 
-<Figure content="/screens/archive/focusModeOceanic.png" caption="Focus Mode (Oceanic)" />
 
-<Figure content="/screens/archive/focusModeLighter.png" caption="Focus Mode (Lighter)" />
 
 What this feature does is to help you focus on the current part of the code you're editing, by "unhighlighting" the
 other parts surrounding it.
@@ -1133,9 +1335,7 @@ used to code the usual way.
 By default, the color of the unfocused parts is taken from the current theme, but you can decide to use your own color
 as well.
 
-<Figure content="/screens/archive/customFocusColor.png" caption="Custom Focus Color (black)" />
 
-<Figure content="/screens/archive/customFocusColorWhite.png" caption="Custom Focus Color (white)" />
 
 You can find this feature under the "Other Tweaks" tab.
 
@@ -1178,7 +1378,6 @@ think of:
 
 Besides, information about the external plugins licenses can be found on the About page.
 
-<Figure content="/screens/archive/licenses.png" caption="Material Theme Bundles Licences" />
 
 ---
 
@@ -1189,13 +1388,11 @@ Another long-awaited fix is the ability to change the _Project View Tree Font_ w
 This was something quite difficult to implement, as even within JetBrains, a restart was required upon changing the font
 size.
 
-<Figure content="/screens/archive/advancedSettingsRestart.png" caption="JetBrains' Advanced Settings" />
 
 Thankfully, with time comes experience, and we finally found a workaround for this issue, therefore giving the full
 ability to customize the _Project View_
 without a restart.
 
-<Figure content="/screens/treeChange.gif" caption="Tree Font Change" />
 
 ---
 
@@ -1291,7 +1488,6 @@ A small update to keep things going :)
 
 A small yet cool feature that makes your editor even cooler by animating the tab indicators!
 
-<Figure content="/screens/tabs/animatedtabs.gif" caption="Animated Tabs" />
 
 ### Other fixes
 
@@ -1358,7 +1554,6 @@ available <a href="http://dl.material-theme.com/newUI" download>here</a>. You ca
 The second highlight of this version is also related to the *New UI users only*, and is about an extension of
 the [Project Frame](/docs/configuration/project-title-bar-settings/): the ability to **Colorize the Title Bar**!
 
-<Figure content="/screens/archive/colorized.png" caption="Colorize title bar" />
 
 This was something that wasn't possible before, but the New UI introduced a flashy new "*title bar* component" to
 replace the original title bar (the same way
@@ -1391,7 +1586,6 @@ showcases a hand-picked list of useful
 plugins and remarkable themes for you to discover at a glance rather than navigating the whole sea of available plugins
 in the Marketplace.
 
-<Figure content="/screens/archive/recommendedPlugins.png" caption="Recommended Plugins" />
 
 Most of these plugins are UI-related, grouped into three sections:
 
@@ -1415,7 +1609,6 @@ This version introduces a new widget to the Status Bar, which displays the curre
 other projects via a menu. This is
 based on a similar widget available on the title bar in the new UI.
 
-<Figure content="/screens/archive/projectsWidget.png" caption="Recent Projects Widget" />
 
 ### Material Theme Bundles
 
@@ -1457,7 +1650,6 @@ This update expands the functionalities of the [Custom Theme](/docs/configuratio
 to specify a color scheme to your custom
 theme.
 
-<Figure content="/screens/archive/colorSchemeCustomTheme.png" caption="Custom Theme Color Scheme" />
 
 This is particularly useful if you have "Custom Color Schemes" and want to assign them to your own custom theme.
 
@@ -1496,13 +1688,9 @@ to [install the IDE language packs](https://blog.jetbrains.com/idea/2021/04/use-
 and
 the plugin will be automatically translated to the corresponding language.
 
-<Figure content="/screens/langs/japanese.png" caption="Settings - Japanese" />
 
-<Figure content="/screens/langs/korean.png" caption="Custom Theme - Korean" />
 
-<Figure content="/screens/langs/chinese.png" caption="Actions - Chinese" />
 
-<Figure content="/screens/langs/wizard.png" caption="Wizard - Chinese" />
 
 Of course, there could be some inconsistencies between the english texts and their asian counterparts.
 In such cases, we'd appreciate if you could report such inconsistencies, and perhaps provide better translations!
@@ -1525,9 +1713,7 @@ It sports the current theme name and icon, and you can open a menu with the list
 
 <div class="masonry">
 
-<Figure content="/screens/archive/newWidgets.png" caption="Material Theme + Accent Widget" />
 
-<Figure content="/screens/archive/widgetsMenu.png" caption="Theme Selection Widget" />
 
 </div>
 
@@ -1538,9 +1724,7 @@ It sports the current accent color, and displays the list of available predefine
 
 <div class="masonry">
 
-<Figure content="/screens/archive/newWidgets.png" caption="Material Theme + Accent Widgets" />
 
-<Figure content="/screens/archive/accentColorWidget.png" caption="Accent Color Widget" />
 
 </div>
 
@@ -1550,9 +1734,7 @@ You can still find the previous legacy widget:
 
 <div class="masonry">
 
-<Figure content="/screens/archive/widgetStatusbar.png" caption="Status Bar Widget" />
 
-<Figure content="/screens/archive/statusAccentWidget.png" caption="Accent Widget" />
 
 </div>
 
@@ -1673,7 +1855,6 @@ nor fix any bugs that might occur in the future.
 The Material Design components experienced a major overhaul to conform to the
 latest [Material Design specification](https://material.io/components).
 
-<Figure content="/screens/archive/dslShowcase.png" caption="New Components Showcase" />
 
 Here's a brief overview of the new components:
 
@@ -1719,7 +1900,6 @@ The search fields also underwent a redesign, becoming larger and bordered, but w
 is that they are usually encapsulated in
 a more complex UI, such as the "_Search Everywhere_" or "_Find in Files_" popups.
 
-<Figure content="/screens/archive/search.png" caption="New Search Fields" />
 
 They are also affected by the "*Compact Fields*" setting.
 
@@ -1824,13 +2004,9 @@ environmental themes".
 
 ##### Introducing Nature Material Themes!!!
 
-<Figure content="/screens/wizard/forest.png" caption="Forest Theme" />
 
-<Figure content="/screens/wizard/skyblue.png" caption="Sky Blue Theme" />
 
-<Figure content="/screens/wizard/volcano.png" caption="Volcano Theme" />
 
-<Figure content="/screens/wizard/sandybeach.png" caption="Sandy Beach Theme" />
 
 As said previously, these themes are completely new, and thus can be subject to a few modifications in the future,
 especially regarding contrast.
@@ -1844,7 +2020,6 @@ especially regarding contrast.
 Another theme we've been working on is the implementation of the
 famous [SynthWave '84](https://github.com/robb0wen/synthwave-vscode) from Robb Owen.
 
-<Figure content="/screens/wizard/synthwave.png" caption="SynthWave '84 Theme" />
 
 This theme is one of the most popular VSCode themes, especially thanks to it's _"Glowing Neons"_ feature, and I thought
 it would make a great theme for
@@ -1860,7 +2035,6 @@ for ways to make it possible!
 As part of the newest additions, the theme selection menus have been reorganized to group light and dark themes
 together.
 
-<Figure content="/screens/archive/themeGroups.png" caption="Theme Groups" />
 
 ----
 
@@ -1902,9 +2076,8 @@ following keywords:
 - `new`
 - `puts`
 
-<Figure content="/screens/archive/ruby-additions.png" caption="Ruby Additions" />
 
-**Note**: As usual, this feature is only available for premium users. \{:class='card-panel warn'\}
+**Note**: As usual, this feature is only available for premium users.
 
 ---
 
@@ -1912,7 +2085,7 @@ following keywords:
 
 This version is less about new features but more about project consolidation, bug squashing, code deprecation,
 documentation and migration to Kotlin. It's part
-of a long process to make the project more stable and maintainable. \{:class='title'\}
+of a long process to make the project more stable and maintainable.
 
 Here are a few new features though:
 
@@ -1928,7 +2101,6 @@ Therefore, from version 6.12.0 users can now decide to let the plugin **automati
 theme activation, i.e., at startup and
 whenever the theme is changed.
 
-<Figure content="/screens/archive/autoResetSettings.png" caption="Auto Reset Color Scheme" />
 
 This setting only affects the bundled themes, excluding the *Custom theme*.
 
@@ -1938,7 +2110,7 @@ custom modifications. Make sure to
 backup your custom changes before enabling the feature!
 :::
 
-This feature is available in the free plan. \{:class='card-panel'\}
+This feature is available in the free plan.
 
 ### Python Additions
 
@@ -2004,15 +2176,13 @@ find, thanks!
 
 ## What's new in Material Theme UI v6.10.0
 
-This release brings a lot of new features, mostly related to font customization. \{:class='title'\}
+This release brings a lot of new features, mostly related to font customization.
 
 ### Tabs Custom Font
 
 Continuing from the *Tab Font Size* feature, you will now be able to customize the font displayed in the editor tabs.
 
-<Figure content="/screens/archive/customTabFont.png" caption="Tab Font Settings" />
 
-<Figure content="/screens/archive/tabFont.png" caption="Custom Tab Font" />
 
 This font will be different from the one used for the whole IDE.
 
@@ -2022,9 +2192,7 @@ You can find the setting in the [_Tab Settings_](/docs/configuration/tab-setting
 
 Just like the tabs, you will now be able to customize the Trees' Font Family as well.
 
-<Figure content="/screens/archive/customTreeFont.png" caption="Tree Font Settings" />
 
-<Figure content="/screens/archive/treeFont.png" caption="Custom Tree Font" />
 
 Just like the _Tree Font Size_, you will need to close and reopen the project (or restart) to see the changes.
 
@@ -2043,14 +2211,11 @@ day!
 This setting provides a way to undo this by turning off the color schemes' defined font and use the Default Font
 instead.
 
-<Figure content="/screens/archive/useEditorDefaultFont.png" caption="Use Editor Default Font" />
 
 **Note**: Turning on this setting will immediately cause the current color scheme to be edited, as if you changed the
 color scheme font with the default one.
 Even if you turn it back on, the original color scheme font will not be restored, you will need
-to [restore the color scheme](https://www.jetbrains.com/help/idea/settings-code-style.html#scheme) to do so. \{:
-class='card-panel warn'\}
-
+to [restore the color scheme](https://www.jetbrains.com/help/idea/settings-code-style.html#scheme) to do so.
 ### Reset Color Scheme Action
 
 A new action has been added to the [Quick Actions Panel](/docs/configuration/quick-actions-panel/), giving you the
@@ -2167,7 +2332,6 @@ This version integrates the new [Project Icons](https://blog.jetbrains.com/idea/
 
 In the continuity in the development of the [Project Frame Feature](/docs/configuration/project-title-bar-settings/), a new capability has been added to allow you to view the [Custom Project Icon](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-5/#change_project_icons) in the toolbar.
 
-<Figure content="/screens/archive/projectIcons.png" caption="Project Icons" />
 
 This can prove very useful when having multiple projects open at once. Moreover, it can be activated on a per-project basis as well!
 
@@ -2224,7 +2388,6 @@ As a result, new customization capabilities were added to that feature to stand 
 
 Previously inside the **Features** tab, these settings are now located under a new tab, **Project Frame**.
 
-<Figure content="/screens/projectFrameTab.png" caption="Project Frame Settings" />
 
 Here's a quick recap of the new settings:
 
@@ -2237,7 +2400,6 @@ These are not much, but they signalize the beginning of a new set of improvement
 
 This is the second highlight of this release: the ability to override the global settings **on a per-project basis**.
 
-<Figure content="/screens/archive/perProject.png" caption="Per-Project Settings" />
 
 As you can see in this screenshot, the two projects have different settings for the **Active Tab** and the **Project Frame**. This will allow you to customize even more your IDE, now having different settings for each project.
 
@@ -2255,7 +2417,7 @@ Other settings, such as the current theme, the accent color or the compact setti
 
 And like always, this release also has its lot of bug fixes:
 - Improve Light themes by setting black borders to white
-- Fixes the \{0\} in the "What's new" menu
+- Fixes the {0} in the "What's new" menu
 - Change the _Highlight Color_ for the **Arc Dark Theme**
 
 ----
@@ -2282,7 +2444,6 @@ This version finally implements the so long waited **Sync Settings**!!! Now you 
 
 This was one of our most waited features since… forever, and it is finally here! You can finally share your Material Theme Settings and Custom Theme using the **Sync Settings** plugin.
 
-<Figure content="/screens/archive/syncSettings.png" caption="Sync Settings" />
 
 Please note however that this is highly depending on the Sync Settings implementation. There are still some discrepencies with how the Sync Settings should work, as you can show in this [YouTrack issue](https://youtrack.jetbrains.com/issue/IDEA-219788). But theoretically your Material Theme Settings should be shared across your stations.
 
@@ -2300,7 +2461,6 @@ However, this change might have caused some disagreements with the previous beha
 
 Therefore, I've decided to include a new setting to select your preferred style, **Inverted Selection Color**.
 
-<Figure content="/screens/archive/invertedSelectionColor.png" caption="Inverted Selection Color" />
 
 More information in the [Component Settings documentation](/docs/configuration/ui-component-settings/)
 
@@ -2451,9 +2611,7 @@ This version's features consists in the ability to [display an overlay](/docs/co
 
 Your IDE can now display **overlays** when modals are open, providing better focus to the information at hand.
 
-<Figure content="/screens/archive/modalOverlay.png" caption="Modals Overlay" />
 
-<Figure content="/screens/archive/settingsOverlay.png" caption="Settings Overlay" />
 
 These overlays show up in the following modal windows:
 - Alerts
@@ -2470,7 +2628,6 @@ Please open issues in the repository if you wish for more modals to be affected!
 
 A new option made its way to the tab settings section, which is the ability to make the current tab as bold.
 
-<Figure content="/screens/archive/activeBoldTab.png" caption="Active Tab as Bold" />
 
 Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-settings/#uppercase-tabs) has been stripped of its rather broken implementation of bold tabs, and is now only setting the tabs as ++Uppercase++, hence the new name.
 
@@ -2480,9 +2637,7 @@ Also, another older setting, [Uppercase Bold Tabs](/docs/configuration/tab-setti
 
 A small but notable change is the [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) now displaying as a dropdown list with different paddings, according to the [Compact Dropdown Lists](/docs/configuration/spacing-settings/) setting, the same way the other dropdowns do.
 
-<Figure content="/screens/archive/paddedRunConf.png" caption="Padded Run Configuration" />
 
-<Figure content="/screens/archive/compactRunConf.png" caption="Compact Run Configuration" />
 
 -----
 
@@ -2490,7 +2645,6 @@ A small but notable change is the [Run Configurations](https://www.jetbrains.com
 
 Another small but great improvement is the display of notifications ("toasts") after executing actions. This makes it easier to notice what exactly happened at a glance.
 
-<Figure content="/screens/archive/notification.png" caption="Example Notification" />
 
 ----
 
@@ -2543,9 +2697,7 @@ This version closes the gap with some leftover tasks, mainly about **UI Theme Pr
 
 The plugin continues its process to theme all parts of the IDE, even those that are currently non-themable. And one of those is the **Learn IDE** plugin's pane.
 
-<Figure content="/screens/archive/learnIDEunthemed.png" caption="Learn IDE Unthemed" />
 
-<Figure content="/screens/archive/learnIDEthemed.png" caption="Learn IDE Unthemed" />
 
 ----
 
@@ -2555,29 +2707,21 @@ The plugin continues its process to theme all parts of the IDE, even those that 
 
 Another non-themed part were the _inlay hints_ that can be displayed in different places of the editor.
 
-<Figure content="/screens/archive/inlayUnthemed.png" caption="Inlay Hints Unthemed" />
 
-<Figure content="/screens/archive/inlayThemed.png" caption="Inlay Hints Themed" />
 
-<Figure content="/screens/archive/inlayParamsUnthemed.png" caption="Inlay Parameters Unhemed" />
 
-<Figure content="/screens/archive/inlayParamsThemed.png" caption="Inlay Parameters Themed" />
 
 ### Problems Toolbar
 
 This is the small transparent toolbar that appears on the top right of the editor window to display the current file's problems. Although it looked like it was themed, the hovered buttons were not.
 
-<Figure content="/screens/archive/problemsUnthemed.png" caption="Problems Toolbar Unthemed" />
 
-<Figure content="/screens/archive/problemsThemed.png" caption="Problems Toolbar Themed" />
 
 ### Inline refactoring toolbar
 
 Last but not least, the _inline refactoring toolbar_ was themed as well.
 
-<Figure content="/screens/archive/inlineUnthemed.png" caption="Inline Refactoring Unthemed" />
 
-<Figure content="/screens/archive/inlineThemed.png" caption="Inline Refactoring Themed" />
 
 :::caution
 **NOTE:** Because these additions are on the color schemes, you will need to _Restore Color Schemes to default_ in case you edited them.
@@ -2589,7 +2733,6 @@ Last but not least, the _inline refactoring toolbar_ was themed as well.
 
 New settings have been added to the **Scrollbars** Color Scheme page to allow changing the color of the scrollbar track.
 
-<Figure content="/screens/scrollbars/scrollbarsTrack.png" caption="Scrollbars Track Colors" />
 
 ---
 
@@ -2597,7 +2740,6 @@ New settings have been added to the **Scrollbars** Color Scheme page to allow ch
 
 The Material Theme UI Landing Page have been improved to simplify __accessing the Marketplace__ to buy the plugin and __activating your License__.
 
-<Figure content="/screens/archive/landingPage.png" caption="Material Theme UI Landing Page" />
 
 ---
 
@@ -2669,11 +2811,9 @@ The new version of the Material Theme UI makes use of the new experimental featu
 
 This new layout, heavily reminding of VSCode, replaces the tool windows by larger stripes on the left and right side of the screen. It also strips the buttons of all texts, making the IDE feeling less cluttered.
 
-<Figure content="/screens/archive/stripedToolWindows.png" caption="Striped Tool Windows" />
 
 This feature is disabled by default, but you can go back to the old layout via the _Settings_ or the _Material UI Actions Panel_.
 
-<Figure content="/screens/archive/quickActionsPanel.png" caption="Quick Actions Panel" />
 
 ----
 
@@ -2685,7 +2825,6 @@ This is the beginning of a long refactor of such a useful feature, starting from
 
 In addition, the list of available additions has been greatly expanded for these languages, allowing users to configure almost everything.
 
-<Figure content="/screens/archive/javaScriptAdditions.png" caption="JavaScript Additions" />
 
 Here's the list of new additions:
 
@@ -2725,7 +2864,6 @@ Of course, the bundled color schemes have been extended to support those new add
 
 However, due to a limitation in JetBrains' syntax highlighting, some additions might not be highlighted as expected, as the language's highlighting will take precedence over the additions. To remedy that, a setting has been added in the Material Theme Settings, **Enforce Highlighting**, which would give the language additions higher precedence by making them appear as _Weak Warnings_.
 
-<Figure content="/screens/archive/enforceHighlighting.png" caption="Enforce Highlighting" />
 
 This, of course, has the side effect of adding a lot of "fake errors", therefore, it's disabled by default.
 
