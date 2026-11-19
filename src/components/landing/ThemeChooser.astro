@@ -136,11 +136,14 @@ const sections = [
     box-shadow: 0 0 0 3px var(--sl-color-accent-low);
   }
 
+  /* Break out of the narrow content column so the screenshot stays readable. */
   .screenshot {
     position: relative;
+    left: 50%;
     display: block;
-    max-width: 60rem;
-    margin: 1.5rem auto;
+    width: min(92vw, 80rem);
+    margin: 1.5rem 0;
+    transform: translateX(-50%);
     aspect-ratio: 1750 / 1024;
     background: url('/img/laptop.png') no-repeat center / 100% auto;
   }
