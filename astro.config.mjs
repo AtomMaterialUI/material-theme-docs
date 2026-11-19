@@ -44,7 +44,16 @@ export default defineConfig({
     starlight({
       title: 'Material Theme UI',
       customCss: ['./src/styles/custom.css'],
+      favicon: '/img/favicon.ico',
       head: [
+        {
+          tag: 'link',
+          attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32x32.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/favicon-16x16.png' },
+        },
         {
           tag: 'link',
           attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
