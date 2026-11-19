@@ -32,7 +32,6 @@ export default defineConfig({
         './src/components/content/Figure.astro',
         './src/components/content/Gallery.astro',
         './src/components/content/PaletteColors.astro',
-        './src/components/content/RecommendedPlugins.astro',
         './src/components/content/ThemeCard.astro',
         './src/components/content/ThemeCards.astro',
         './src/components/content/ThemeColors.astro',
@@ -45,7 +44,16 @@ export default defineConfig({
     starlight({
       title: 'Material Theme UI',
       customCss: ['./src/styles/custom.css'],
+      favicon: '/img/favicon.ico',
       head: [
+        {
+          tag: 'link',
+          attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32x32.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/favicon-16x16.png' },
+        },
         {
           tag: 'link',
           attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -118,14 +126,12 @@ export default defineConfig({
             { label: 'File Status Colors', slug: 'docs/configuration/file-status-colors' },
             { label: 'Scrollbars', slug: 'docs/configuration/scrollbars' },
             { label: 'Adaptive Theme', slug: 'docs/configuration/adaptive-theme' },
-            { label: 'Recommended Plugins', slug: 'docs/configuration/recommended-plugins' },
           ],
         },
         {
           label: 'Reference',
           items: [
             { label: 'Color Palette', slug: 'docs/reference/color-palette' },
-            { label: 'Components', slug: 'docs/reference/components' },
             { label: 'Wizard', slug: 'docs/reference/wizard' },
             { label: 'Chrome Themes', slug: 'docs/reference/chrome-themes' },
           ],
