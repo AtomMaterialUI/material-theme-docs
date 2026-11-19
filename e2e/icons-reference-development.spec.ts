@@ -1,11 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const pages = [
-  'reference/color-palette',
-  'reference/components',
-  'reference/wizard',
-  'reference/chrome-themes',
-];
+const pages = ['reference/color-palette', 'reference/wizard', 'reference/chrome-themes'];
 
 for (const slug of pages) {
   test(`page ${slug} renders and is in the sidebar`, async ({ page }) => {

@@ -15,12 +15,5 @@ export interface PaletteColor {
   tags?: string[];
 }
 
-export interface RecommendedPlugin {
-  title: string;
-  url: string;
-  description: string;
-}
-
 export const accentColors = readData<AccentColor[]>('accentColors.yml');
 export const colors = readData<PaletteColor[]>('colors.yml');
-export const recommendedPlugins = readData<RecommendedPlugin[]>('recommendedPlugins.yml');

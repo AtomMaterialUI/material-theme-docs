@@ -30,7 +30,6 @@ const pages = [
   'file-status-colors',
   'scrollbars',
   'adaptive-theme',
-  'recommended-plugins',
 ];
 
 for (const slug of pages) {
