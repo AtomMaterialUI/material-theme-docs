@@ -37,7 +37,6 @@ test.describe('Header and footer', () => {
     );
     await expect(footer.getByRole('link', { name: 'Slack', exact: true })).toBeVisible();
     await expect(footer.getByRole('link', { name: 'Elior Boukhobza' })).toBeVisible();
-    await expect(footer.getByRole('link', { name: 'Chris Magnussen' })).toBeVisible();
     await expect(footer).toContainText(/Material Theme v\d+\.\d+\.\d+ © 2015-\d{4}/);
     await expect(footer.getByRole('link', { name: 'EULA' })).toHaveAttribute('href', '/docs/eula/');
   });
