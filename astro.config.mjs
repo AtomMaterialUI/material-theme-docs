@@ -130,13 +130,6 @@ export default defineConfig({
             { label: 'Chrome Themes', slug: 'docs/reference/chrome-themes' },
           ],
         },
-        {
-          label: 'Development',
-          items: [
-            { label: 'Installation', slug: 'docs/development/installation' },
-            { label: 'External Themes', slug: 'docs/development/external-themes' },
-          ],
-        },
         { label: 'Analytics', slug: 'docs/analytics' },
         { label: 'FAQ/Troubleshooting', slug: 'docs/faq-troubleshooting' },
         { label: 'Other Products', slug: 'docs/other-products' },

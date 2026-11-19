@@ -5,8 +5,6 @@ const pages = [
   'reference/components',
   'reference/wizard',
   'reference/chrome-themes',
-  'development/installation',
-  'development/external-themes',
 ];
 
 for (const slug of pages) {

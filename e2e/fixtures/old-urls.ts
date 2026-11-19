@@ -37,7 +37,6 @@ export const docsPages = [
   '/docs/configuration/trees-settings/',
   '/docs/configuration/ui-component-settings/',
   '/docs/configuration/window-coloring/',
-  '/docs/development/external-themes/',
   '/docs/eula/',
   '/docs/faq-troubleshooting/',
   '/docs/getting-started/',
@@ -66,7 +65,6 @@ export const externalRedirects: Record<string, string> = {
 export const redirects: Record<string, string> = {
   '/docs/': '/docs/introduction/',
   '/sitemap.xml': '/sitemap-index.xml',
-  '/docs/development/installation_/': '/docs/development/installation/',
   '/docs/configuration/ui-components-settings/': '/docs/configuration/ui-component-settings/',
   '/docs/configuration/main-settings/': '/docs/configuration/settings/',
   '/docs/configuration/current-theme/': '/docs/configuration/settings/',
@@ -105,4 +103,6 @@ export const gone = [
   '/docs/configuration/',
   '/docs/reference/',
   '/docs/development/',
+  '/docs/development/installation/',
+  '/docs/development/external-themes/',
 ];
