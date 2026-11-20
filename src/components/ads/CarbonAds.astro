@@ -41,4 +41,43 @@ const { placement, class: className } = Astro.props;
   .mt-carbon[data-carbon-slot='hero'] {
     margin-inline: auto;
   }
+
+  /* Carbon injects #carbonads at runtime, so these styles must be global. */
+  .mt-carbon :global(#carbonads) {
+    background: var(--sl-color-bg-nav);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: var(--sl-color-text);
+    display: block;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    min-height: 126px;
+    padding: 1rem 1rem 1rem 160px;
+    text-align: left;
+  }
+
+  .mt-carbon :global(#carbonads a),
+  .mt-carbon :global(#carbonads a:hover) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .mt-carbon :global(#carbonads .carbon-img) {
+    float: left;
+    margin-inline: -150px 1rem;
+  }
+
+  .mt-carbon :global(#carbonads .carbon-img img) {
+    display: block;
+    height: auto;
+    max-width: 130px;
+  }
+
+  .mt-carbon :global(#carbonads .carbon-poweredby) {
+    display: block;
+    font-size: smaller;
+    opacity: 0.7;
+    padding-top: 0.75rem;
+  }
 </style>
