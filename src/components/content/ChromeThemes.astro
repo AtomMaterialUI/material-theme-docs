@@ -1,0 +1,52 @@
+---
+// Replaces _includes/chromethemes.html. Reads the page's `chromeThemes` front matter
+// (previously `gallery.themes`).
+const { chromeThemes = [] } = Astro.locals.starlightRoute.entry.data;
+---
+
+<div class="mt-chrome-themes not-content">
+  {chromeThemes.map((theme) => (
+    <a href={theme.url}>
+      <figure>
+        <img
+          src={`/img/chromethemes/${theme.imageUrl}_640.png`}
+          alt={theme.name}
+          loading="lazy"
+        />
+        <figcaption>{theme.name}</figcaption>
+      </figure>
+    </a>
+  ))}
+</div>
+
+<style>
+  .mt-chrome-themes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  figure {
+    margin: 0;
+    border: 1px solid var(--sl-color-hairline-light);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: var(--sl-color-gray-6);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    padding: 0.5rem 0.75rem;
+    color: var(--sl-color-white);
+  }
+</style>

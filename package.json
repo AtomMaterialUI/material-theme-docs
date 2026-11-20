@@ -1,52 +1,41 @@
 {
-  "name": "docs",
-  "version": "1.0.4",
-  "description": "",
-  "author": "mallowigi <heliosaian@gmail.com>",
+  "name": "material-theme-docs",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "npm run serve",
-    "jekyllify": "grunt default",
-    "generate-themes": "node scripts/generate-themes.js",
-    "test": "grunt build",
-    "serve": "browser-sync start --config browser-sync.js"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "serve": "netlify serve",
+    "test:e2e": "playwright test",
+    "lint": "oxlint",
+    "format": "oxfmt && prettier --write \"src/**/*.astro\"",
+    "format:check": "oxfmt --check && prettier --check \"src/**/*.astro\""
   },
-  "license": "ISC",
+  "dependencies": {
+    "@astrojs/mdx": "8.1.6",
+    "@astrojs/starlight": "^0.43.1",
+    "astro": "^7.3.6",
+    "astro-auto-import": "0.6.0",
+    "js-yaml": "5.5.0",
+    "sharp": "^0.35.3",
+    "starlight-links-validator": "0.27.0"
+  },
   "devDependencies": {
-    "autoprefixer": "10.4.19",
-    "babel-core": "6.26.3",
-    "babel-eslint": "10.1.0",
-    "babel-loader": "9.1.3",
-    "babel-preset-env": "1.7.0",
-    "babel-register": "6.26.0",
-    "browser-sync": "3.0.2",
-    "grunt": "1.6.1",
-    "grunt-autoprefixer": "3.0.4",
-    "grunt-babel": "8.0.0",
-    "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-imagemin": "4.0.0",
-    "grunt-contrib-sass": "2.0.0",
-    "grunt-contrib-uglify": "5.2.2",
-    "grunt-contrib-watch": "1.1.0",
-    "grunt-exec": "3.0.0",
-    "grunt-newer": "1.3.0",
-    "grunt-open": "0.2.4",
-    "grunt-replace": "2.0.2",
-    "grunt-sass": "3.1.0",
-    "grunt-string-replace": "1.3.3",
-    "http-proxy-middleware": "3.0.0",
-    "js-yaml": "4.1.0",
-    "load-grunt-tasks": "5.1.0",
-    "rimraf": "5.0.7",
-    "sass": "1.77.8",
-    "semver": "7.6.2",
-    "url-loader": "4.1.1"
+    "@astrojs/check": "latest",
+    "@playwright/test": "latest",
+    "@types/js-yaml": "4.0.9",
+    "netlify-cli": "latest",
+    "oxfmt": "0.79.0",
+    "oxlint": "1.94.0",
+    "prettier": "3.10.1",
+    "prettier-plugin-astro": "1.1.2",
+    "typescript": "^6.0.3"
   },
   "engines": {
-    "node": ">= 14.0.0",
-    "npm": ">= 6.0.0"
+    "node": ">=26"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+  "packageManager": "pnpm@10.26.1"
 }

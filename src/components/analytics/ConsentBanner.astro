@@ -1,0 +1,150 @@
+---
+// Cookie consent banner + the only place that loads GA4. Renders nothing without a GA measurement ID
+// (dev builds, or no ID configured), so there is nothing to consent to.
+// Analytics is loaded only after "Accept"; the choice lives in localStorage. See the script below.
+import { gaMeasurementId } from '../../config/analytics';
+---
+
+{gaMeasurementId && (
+  <div
+    class="mt-consent"
+    role="dialog"
+    aria-label="Cookie consent"
+    data-mt-consent
+    data-ga-id={gaMeasurementId}
+    hidden
+  >
+    <p>
+      We use Google Analytics cookies to understand how the docs are used.
+      Nothing is loaded unless you accept.
+    </p>
+    <div class="mt-consent-actions">
+      <button
+        type="button"
+        data-mt-consent-accept
+      >
+        Accept
+      </button>
+      <button
+        type="button"
+        data-mt-consent-decline
+      >
+        Decline
+      </button>
+    </div>
+  </div>
+)}
+
+<script>
+  const STORAGE_KEY = 'mt-analytics-consent';
+  const banner = document.querySelector<HTMLElement>('[data-mt-consent]');
+
+  if (banner) {
+    const id = banner.dataset.gaId!;
+    const w = window as unknown as Record<string, unknown> & {
+      dataLayer?: unknown[];
+    };
+
+    const loadAnalytics = () => {
+      if (document.getElementById('mt-gtag')) {
+        return;
+      }
+
+      w.dataLayer = w.dataLayer ?? [];
+
+      // gtag.js requires the `arguments` object itself, not an array.
+      function gtag(..._args: unknown[]) {
+        // oxlint-disable-next-line prefer-rest-params
+        w.dataLayer!.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', id);
+
+      const script = document.createElement('script');
+
+      script.id = 'mt-gtag';
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+      document.head.append(script);
+    };
+
+    const choose = (choice: 'granted' | 'denied') => {
+      localStorage.setItem(STORAGE_KEY, choice);
+      banner.hidden = true;
+
+      // GA's documented opt-out flag also switches off a tag already loaded on this page.
+      w[`ga-disable-${id}`] = choice === 'denied';
+
+      if (choice === 'granted') {
+        loadAnalytics();
+      }
+    };
+
+    banner
+      .querySelector('[data-mt-consent-accept]')!
+      .addEventListener('click', () => choose('granted'));
+    banner
+      .querySelector('[data-mt-consent-decline]')!
+      .addEventListener('click', () => choose('denied'));
+    document
+      .querySelector('[data-mt-cookie-settings]')
+      ?.addEventListener('click', () => {
+        banner.hidden = false;
+      });
+
+    const saved = localStorage.getItem(STORAGE_KEY);
+
+    if (saved === 'granted') {
+      loadAnalytics();
+    } else if (saved === null) {
+      banner.hidden = false;
+    }
+  }
+</script>
+
+<style>
+  .mt-consent {
+    position: fixed;
+    inset-inline: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    max-width: 28rem;
+    margin-inline: auto 0;
+    padding: 1rem;
+    background: var(--sl-color-bg-nav);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.35);
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+  }
+
+  .mt-consent[hidden] {
+    display: none;
+  }
+
+  .mt-consent p {
+    margin: 0 0 0.75rem;
+  }
+
+  .mt-consent-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .mt-consent button {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--sl-color-accent);
+    border-radius: 0.4rem;
+    background: transparent;
+    color: var(--sl-color-white);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .mt-consent button[data-mt-consent-accept] {
+    background: var(--sl-color-accent);
+    color: var(--mt-ribbon-fg);
+  }
+</style>

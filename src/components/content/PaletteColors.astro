@@ -1,0 +1,17 @@
+---
+// Replaces `{% for color in site.data.colors %}{% include color.html %}{% endfor %}` (Material palette).
+import { colors } from '../../data/site';
+import ColorSwatch from './ColorSwatch.astro';
+---
+
+<div class="not-content mt-palette-colors">
+  {colors.map((color) => (
+    <ColorSwatch color={color} />
+  ))}
+</div>
+
+<style>
+  .mt-palette-colors {
+    margin: 1rem 0;
+  }
+</style>

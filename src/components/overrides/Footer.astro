@@ -1,0 +1,140 @@
+---
+// Keeps Starlight's footer (edit link, pagination), then adds the site footer and the floating theme picker.
+import Default from '@astrojs/starlight/components/Footer.astro';
+import { site, years } from '../../config/site';
+import { gaMeasurementId } from '../../config/analytics';
+import ConsentBanner from '../analytics/ConsentBanner.astro';
+import ThemeFab from '../theme/ThemeFab.astro';
+---
+
+<Default />
+
+<div
+  class="mt-footer"
+  data-mt-footer
+>
+  <div class="mt-footer-cols">
+    <section>
+      <h2>Support Us</h2>
+      <p>
+        Thank you for using our plugins! If you liked the plugins, you can
+        support us on PayPal or OpenCollective.
+      </p>
+      <a
+        class="mt-btn"
+        href="/docs/support-us/"
+      >
+        Support
+      </a>
+    </section>
+
+    <section>
+      <h2>Join the Discussion</h2>
+      <p>
+        We have a Slack chat room set up where you can talk directly with us.
+        Come in and discuss new features, future goals, general problems or
+        questions, or anything else you can think of.
+      </p>
+      <a
+        class="mt-btn"
+        href={site.slack}
+      >
+        Slack
+      </a>
+    </section>
+  </div>
+
+  <p class="mt-footer-copyright">
+    <span>
+      Material Theme v{site.version} © {years}
+    </span>
+    <span>
+      <a href="https://twitter.com/mallowigi">Elior Boukhobza</a>
+    </span>
+    <span>All rights reserved</span>
+    <a href="/docs/eula/">EULA</a>
+
+    {gaMeasurementId && (
+      <button
+        type="button"
+        class="mt-cookie-settings"
+        data-mt-cookie-settings
+      >
+        Cookie settings
+      </button>
+    )}
+  </p>
+</div>
+
+<ConsentBanner />
+
+<ThemeFab />
+
+<style>
+  /* Full-bleed band in the "contrast" color, like the header and sidebar. */
+  .mt-footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background: var(--sl-color-bg-nav);
+    box-shadow: 0 0 0 100vmax var(--sl-color-bg-nav);
+    clip-path: inset(0 -100vmax);
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+    transition:
+      background-color 0.3s,
+      box-shadow 0.3s;
+  }
+
+  .mt-footer-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+  }
+
+  .mt-footer-cols section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mt-footer-cols p {
+    flex: 1;
+  }
+
+  .mt-footer h2 {
+    margin: 0 0 0.75rem;
+    font-size: var(--sl-text-lg);
+    font-weight: 400;
+    color: var(--sl-color-white);
+  }
+
+  .mt-footer p {
+    margin: 0 0 1rem;
+  }
+
+  .mt-footer a:not(.mt-btn) {
+    color: var(--sl-color-gray-2);
+  }
+
+  .mt-footer a:not(.mt-btn):hover {
+    color: var(--sl-color-accent);
+  }
+
+  .mt-footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sl-color-hairline);
+  }
+
+  .mt-cookie-settings {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: var(--sl-color-accent-high);
+    cursor: pointer;
+  }
+</style>

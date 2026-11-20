@@ -1,0 +1,31 @@
+---
+// Replaces the `{% for wallpaper in page.wallpapers %}` loop. Reads the page's `wallpapers` front matter.
+// Wallpaper filenames are full URLs (hosted on the image CDN), unlike gallery images.
+const { wallpapers = [] } = Astro.locals.starlightRoute.entry.data;
+---
+
+<div class="mt-wallpapers not-content">
+  {wallpapers.map((wallpaper) => (
+    <img
+      src={wallpaper.filename}
+      alt={wallpaper.alttext}
+      loading="lazy"
+    />
+  ))}
+</div>
+
+<style>
+  .mt-wallpapers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+</style>

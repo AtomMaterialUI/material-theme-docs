@@ -1,0 +1,61 @@
+---
+// Replaces _includes/figure.html. Authors pass the same `content` / `caption` the Liquid include took.
+interface Props {
+  content: string;
+  caption: string;
+}
+
+const { content, caption } = Astro.props;
+
+// The old include produced `/img//screens/...` because `content` started with a slash; collapse it.
+const src = `/img/${content}`.replace(/\/{2,}/g, '/');
+---
+
+<figure class="mt-figure not-content">
+  <a
+    href={src}
+    target="_blank"
+    rel="noopener"
+  >
+    <img
+      src={src}
+      alt={caption}
+      loading="lazy"
+    />
+  </a>
+
+  <figcaption>{caption}</figcaption>
+</figure>
+
+<style>
+  .mt-figure {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 2em auto;
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--mt-notif, var(--sl-color-bg-nav));
+    color: var(--sl-color-text);
+    box-shadow:
+      0 2px 5px 0 rgb(0 0 0 / 0.16),
+      0 2px 10px 0 rgb(0 0 0 / 0.12);
+  }
+
+  .mt-figure a {
+    display: block;
+  }
+
+  .mt-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  .mt-figure figcaption {
+    padding: 1em;
+    line-height: 1.2;
+    text-align: center;
+  }
+</style>

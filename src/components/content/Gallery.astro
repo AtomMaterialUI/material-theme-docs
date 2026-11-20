@@ -1,0 +1,206 @@
+---
+// Replaces _includes/gallery_lightbox.html: a masonry of figure cards that open in a small <dialog> lightbox.
+// Reads the page's `gallery` front matter (same shape as the Jekyll one), so authors just write <Gallery />.
+const { gallery = [] } = Astro.locals.starlightRoute.entry.data;
+const images = gallery.flatMap((group) => group.images);
+---
+
+<div
+  class="mt-masonry not-content"
+  data-mt-gallery
+>
+  {images.map((image, index) => (
+    <figure>
+      <a
+        href={`/img/${image.filename}`}
+        target="_blank"
+        data-index={index}
+      >
+        <img
+          src={`/img/${image.filename}`}
+          alt={image.alttext}
+          loading="lazy"
+        />
+      </a>
+
+      <figcaption>{image.alttext}</figcaption>
+    </figure>
+  ))}
+</div>
+
+<dialog
+  class="mt-lightbox"
+  data-mt-lightbox
+  aria-label="Image viewer"
+>
+  <button
+    class="close"
+    data-act="close"
+    aria-label="Close"
+  >
+    ✕
+  </button>
+  <button
+    class="nav prev"
+    data-act="-1"
+    aria-label="Previous"
+  >
+    ‹
+  </button>
+
+  <figure>
+    <img alt="" />
+    <figcaption></figcaption>
+  </figure>
+
+  <button
+    class="nav next"
+    data-act="1"
+    aria-label="Next"
+  >
+    ›
+  </button>
+</dialog>
+
+<script>
+  document
+    .querySelectorAll<HTMLElement>('[data-mt-gallery]')
+    .forEach((gallery) => {
+      const dialog = gallery.nextElementSibling as HTMLDialogElement;
+      const links = [
+        ...gallery.querySelectorAll<HTMLAnchorElement>('a[data-index]'),
+      ];
+      const image = dialog.querySelector('img')!;
+      const caption = dialog.querySelector('figcaption')!;
+      let current = 0;
+
+      const show = (index: number) => {
+        current = (index + links.length) % links.length;
+
+        const thumbnail = links[current].querySelector('img')!;
+
+        image.src = links[current].href;
+        image.alt = thumbnail.alt;
+        caption.textContent = `${thumbnail.alt} (${current + 1}/${links.length})`;
+      };
+
+      links.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          show(index);
+          dialog.showModal();
+        });
+      });
+
+      dialog.addEventListener('click', (event) => {
+        const target = event.target as HTMLElement;
+        const action = target.closest<HTMLElement>('[data-act]')?.dataset.act;
+
+        if (action === 'close' || target === dialog) {
+          dialog.close();
+        } else if (action) {
+          show(current + Number(action));
+        }
+      });
+
+      dialog.addEventListener('keydown', (event) => {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') {
+          return;
+        }
+
+        event.stopPropagation();
+        event.preventDefault();
+        show(current + (event.key === 'ArrowLeft' ? -1 : 1));
+      });
+    });
+</script>
+
+<style>
+  .mt-masonry {
+    columns: 3 14rem;
+    column-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .mt-masonry figure {
+    break-inside: avoid;
+    margin: 0 0 1rem;
+    border: 1px solid var(--sl-color-hairline-light);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: var(--sl-color-gray-6);
+  }
+
+  .mt-masonry img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+  }
+
+  .mt-masonry figcaption {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-white);
+  }
+
+  .mt-lightbox {
+    margin: auto;
+    inset: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    max-width: 95vw;
+    max-height: 95vh;
+    overflow: visible;
+  }
+
+  .mt-lightbox::backdrop {
+    background: rgb(0 0 0 / 0.85);
+  }
+
+  .mt-lightbox figure {
+    margin: 0;
+    text-align: center;
+  }
+
+  .mt-lightbox img {
+    display: block;
+    max-width: 85vw;
+    max-height: 85vh;
+    margin: auto;
+  }
+
+  .mt-lightbox figcaption {
+    margin-top: 0.5rem;
+    color: #fff;
+  }
+
+  .mt-lightbox button {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 50%;
+    background: rgb(0 0 0 / 0.5);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .close {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem !important;
+  }
+
+  .prev {
+    left: 1rem;
+    top: 50%;
+  }
+
+  .next {
+    right: 1rem;
+    top: 50%;
+  }
+</style>

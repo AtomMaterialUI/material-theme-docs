@@ -1,0 +1,72 @@
+---
+// Replaces Starlight's landing hero with the original site's: themed logo, headline, slogan,
+// description and a single call to action, then the page's single Carbon slot.
+// The texts come from the page's front matter.
+import CarbonAds from '../ads/CarbonAds.astro';
+
+const { data } = Astro.locals.starlightRoute.entry;
+const { hero, description } = data;
+---
+
+<section class="mt-hero not-content">
+  <div
+    class="mt-logo-img mt-hero-logo"
+    role="img"
+    aria-label="Material Theme UI logo"
+  ></div>
+
+  <h1 id="_top">{hero?.title ?? data.title}</h1>
+
+  {hero?.tagline && <p class="mt-hero-slogan">{hero.tagline}</p>}
+
+  {description && <p class="mt-hero-description">{description}</p>}
+
+  {hero?.actions.map((action) => (
+    <a
+      class="mt-btn mt-btn-large"
+      href={action.link}
+    >
+      {action.text}
+    </a>
+  ))}
+</section>
+
+<CarbonAds placement="hero" />
+
+<style>
+  .mt-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60rem;
+    margin: 2rem auto 4rem;
+    text-align: center;
+  }
+
+  .mt-hero-logo {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  h1 {
+    margin: 2rem 0 0;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--sl-color-white);
+  }
+
+  .mt-hero-slogan {
+    margin: 2rem 0 0;
+    font-size: clamp(1.4rem, 3.4vw, 2.2rem);
+    color: var(--sl-color-accent);
+  }
+
+  .mt-hero-description {
+    margin: 2rem 0;
+    font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+    line-height: 1.5;
+    color: var(--sl-color-gray-2);
+  }
+</style>

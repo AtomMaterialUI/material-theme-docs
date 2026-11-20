@@ -1,0 +1,65 @@
+---
+// Replaces Starlight's light/dark ThemeProvider. Renders in <head>, so the theme is on <html> before first paint.
+// Resolution order: ?theme= (class name or id) -> localStorage -> default.
+import { themes } from '../../data/themes';
+
+const map = Object.fromEntries(
+  themes.map((t) => [t.className, [t.id, !!t.light]]),
+);
+
+// language=JavaScript
+const script = `(() => {
+  const MAP = ${JSON.stringify(map)};
+  const KEY = 'material-theme';
+  const DEFAULT = 'oceanic';
+  const root = document.documentElement;
+  const resolve = (v) => {
+    if (!v) {
+      return null;
+    }
+    v = String(v).toLowerCase();
+    return Object.keys(MAP).find((k) => k.toLowerCase() === v || MAP[k][0].toLowerCase() === v) || null;
+  };
+
+  const apply = (id, persist) => {
+    id = resolve(id) || DEFAULT;
+    if (persist) {
+      root.classList.add('mt-theme-transition');
+      clearTimeout(window.__mtTransition);
+      window.__mtTransition = setTimeout(() => root.classList.remove('mt-theme-transition'), 400);
+    }
+
+    root.dataset.materialTheme = id;
+    root.dataset.theme = MAP[id][1] ? 'light' : 'dark';
+    if (persist) {
+      try {
+        localStorage.setItem(KEY, id);
+      } catch (e) {}
+    }
+
+    document.dispatchEvent(new CustomEvent('material-theme-change', {detail: id}));
+    return id;
+  };
+
+  let stored = null;
+  try {
+    stored = localStorage.getItem(KEY);
+  } catch (e) {}
+
+  apply(resolve(new URLSearchParams(location.search).get('theme')) || stored, false);
+
+  window.materialTheme = {
+    apply,
+    current: () => root.dataset.materialTheme
+  };
+})();`;
+---
+
+<link
+  rel="stylesheet"
+  href="/material-themes.css"
+/>
+<script
+  is:inline
+  set:html={script}
+/>

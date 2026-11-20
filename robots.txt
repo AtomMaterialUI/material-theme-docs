@@ -1,6 +1,0 @@
-# Algolia-Crawler-Verif: 55B27FBD2B7AB6BC
-
-User-agent: *
-Allow: /
-
-Sitemap: https://material-theme.com/sitemap.xml

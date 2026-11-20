@@ -184,6 +184,7 @@
     <inspection_tool class="JSUnusedLocalSymbols" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JSValidateJSDoc" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JSValidateTypes" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="JSXUnresolvedComponent" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="KarmaConfigFile" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="LessResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="LessUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />

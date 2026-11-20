@@ -1,0 +1,16 @@
+---
+// Keeps Starlight's table of contents, then adds the Carbon slot below the floating TOC card (desktop only).
+import Default from '@astrojs/starlight/components/PageSidebar.astro';
+import CarbonAds from '../ads/CarbonAds.astro';
+
+const { toc } = Astro.locals.starlightRoute;
+---
+
+<Default />
+
+{toc && (
+  <CarbonAds
+    placement="sidebar"
+    class="sl-hidden lg:sl-block"
+  />
+)}

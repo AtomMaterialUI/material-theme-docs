@@ -1,0 +1,76 @@
+---
+// Replaces the _features collection + feature.html: six tiles read from src/data/features.yml.
+import { readData } from '../../data/load';
+
+interface Feature {
+  title: string;
+  image: string;
+  text: string;
+}
+
+const features = readData<Feature[]>('features.yml');
+---
+
+<section class="not-content mt-features">
+  <h2>Features</h2>
+
+  <ul>
+    {features.map((feature) => (
+      <li>
+        <img
+          src={`/img/features/${feature.image}`}
+          alt=""
+          width="450"
+          height="253"
+          loading="lazy"
+        />
+        <h3>{feature.title}</h3>
+        <p>{feature.text}</p>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .mt-features h2 {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--sl-color-white);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    max-width: 60rem;
+    gap: 2rem 1.5rem;
+    padding: 0;
+    margin: 2rem auto;
+    list-style: none;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: auto;
+    height: 7rem;
+    margin: 0 auto;
+  }
+
+  h3 {
+    margin: 1rem 0 0.25rem;
+    font-size: var(--sl-text-lg);
+    font-weight: 500;
+    color: var(--sl-color-white);
+  }
+
+  p {
+    margin: 0;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+  }
+</style>
