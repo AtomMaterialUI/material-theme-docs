@@ -2,20 +2,21 @@
 // Cookie consent banner + the only place that loads GA4. Renders nothing without a GA measurement ID
 // (dev builds, or no ID configured), so there is nothing to consent to.
 // Analytics is loaded only after "Accept"; the choice lives in localStorage. See the script below.
-import { gaMeasurementId } from '../../config/analytics';
+import { gaMeasurementId, dySectionId } from '../../config/analytics';
 ---
 
-{gaMeasurementId && (
+{(gaMeasurementId || dySectionId) && (
   <div
     class="mt-consent"
     role="dialog"
     aria-label="Cookie consent"
     data-mt-consent
     data-ga-id={gaMeasurementId}
+    data-dy-id={dySectionId}
     hidden
   >
     <p>
-      We use Google Analytics cookies to understand how the docs are used.
+      We use Google Analytics and Dynamic Yield cookies to understand how the docs are used.
       Nothing is loaded unless you accept.
     </p>
     <div class="mt-consent-actions">
@@ -40,12 +41,13 @@ import { gaMeasurementId } from '../../config/analytics';
   const banner = document.querySelector<HTMLElement>('[data-mt-consent]');
 
   if (banner) {
-    const id = banner.dataset.gaId!;
+    const id = banner.dataset.gaId;
+    const dyId = banner.dataset.dyId;
     const w = window as unknown as Record<string, unknown> & {
       dataLayer?: unknown[];
     };
 
-    const loadAnalytics = () => {
+    const loadGa = (gaId: string) => {
       if (document.getElementById('mt-gtag')) {
         return;
       }
@@ -59,14 +61,48 @@ import { gaMeasurementId } from '../../config/analytics';
       }
 
       gtag('js', new Date());
-      gtag('config', id);
+      gtag('config', gaId);
 
       const script = document.createElement('script');
 
       script.id = 'mt-gtag';
       script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
       document.head.append(script);
+    };
+
+    const loadDy = (sectionId: string) => {
+      if (document.getElementById('mt-dy-dynamic')) {
+        return;
+      }
+
+      (w as { DY?: object }).DY = (w as { DY?: object }).DY ?? {};
+
+      for (const host of ['cdn', 'st', 'rcom']) {
+        const link = document.createElement('link');
+
+        link.rel = 'preconnect';
+        link.href = `https://${host}.dynamicyield.com`;
+        document.head.append(link);
+      }
+
+      for (const file of ['dynamic', 'static']) {
+        const script = document.createElement('script');
+
+        script.id = `mt-dy-${file}`;
+        script.src = `https://cdn.dynamicyield.com/api/${sectionId}/api_${file}.js`;
+        document.head.append(script);
+      }
+    };
+
+    const loadAnalytics = () => {
+      if (id) {
+        loadGa(id);
+      }
+
+      if (dyId) {
+        loadDy(dyId);
+      }
     };
 
     const choose = (choice: 'granted' | 'denied') => {
@@ -74,7 +110,9 @@ import { gaMeasurementId } from '../../config/analytics';
       banner.hidden = true;
 
       // GA's documented opt-out flag also switches off a tag already loaded on this page.
-      w[`ga-disable-${id}`] = choice === 'denied';
+      if (id) {
+        w[`ga-disable-${id}`] = choice === 'denied';
+      }
 
       if (choice === 'granted') {
         loadAnalytics();

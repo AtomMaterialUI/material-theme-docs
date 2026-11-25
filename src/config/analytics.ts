@@ -4,3 +4,6 @@ const id = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 
 export const gaMeasurementId: string | undefined =
   import.meta.env.PROD && typeof id === 'string' && /^G-[A-Z0-9]+$/.test(id) ? id : undefined;
+
+// Dynamic Yield section ID (public, it appears in the script URL). Production builds only.
+export const dySectionId: string | undefined = import.meta.env.PROD ? '8772999' : undefined;
