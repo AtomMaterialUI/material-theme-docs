@@ -2,6 +2,8 @@
 // Replaces Starlight's light/dark ThemeProvider. Renders in <head>, so the theme is on <html> before first paint.
 // Resolution order: ?theme= (class name or id) -> localStorage -> default.
 import { themes } from '../../data/themes';
+// Relative path: starlight-kbd 0.4.0's package exports for these components point at a missing folder.
+import KbdProvider from '../../../node_modules/starlight-kbd/components/KbdProvider.astro';
 
 const map = Object.fromEntries(
   themes.map((t) => [t.className, [t.id, !!t.light]]),
@@ -63,3 +65,4 @@ const script = `(() => {
   is:inline
   set:html={script}
 />
+<KbdProvider />

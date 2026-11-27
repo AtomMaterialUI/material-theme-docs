@@ -22,6 +22,7 @@
     "js-yaml": "5.5.0",
     "sharp": "^0.35.5",
     "starlight-heading-badges": "0.8.0",
+    "starlight-kbd": "0.4.0",
     "starlight-links-validator": "0.27.0"
   },
   "devDependencies": {

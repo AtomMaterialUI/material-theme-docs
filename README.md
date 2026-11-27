@@ -69,6 +69,13 @@ the heading and the table of contents, and follows the theme accent. Variants: `
 (also `note`, `success`, `caution`, `danger`). Add "New" to the headings of the latest release only, and remove it
 when the next release ships.
 
+### Keyboard shortcuts
+
+Write shortcuts with `<Kbd mac="Command+Shift+A" windows="Control+Shift+A" />` (auto-imported, no import needed).
+Keys are joined with `+`, chords are separated by spaces (`Shift Shift`). Readers pick their OS in the header picker,
+which defaults to their detected platform. The plugin's provider and picker are rendered from our `ThemeProvider` and
+`ThemeSelect` overrides. Release-note pages (changelog, archives, what's new) keep plain text.
+
 ## Deploy
 
 Netlify builds every push with `pnpm build` and publishes `dist/` (see `netlify.toml`). Pull requests get a deploy
