@@ -76,6 +76,19 @@ Keys are joined with `+`, chords are separated by spaces (`Shift Shift`). Reader
 which defaults to their detected platform. The plugin's provider and picker are rendered from our `ThemeProvider` and
 `ThemeSelect` overrides. Release-note pages (changelog, archives, what's new) keep plain text.
 
+### Lead paragraph
+
+Start a page with the intro paragraph wrapped in a `:::lead` block (styled in `src/styles/custom.css`):
+
+```md
+:::lead
+One or two sentences introducing the page.
+:::
+```
+
+`:::lead` is a small custom mdast plugin in `astro.config.mjs` (passed to the default `satteri()` processor), not a
+dependency. It turns the block into `<div class="lead">`.
+
 ## Deploy
 
 Netlify builds every push with `pnpm build` and publishes `dist/` (see `netlify.toml`). Pull requests get a deploy

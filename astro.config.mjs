@@ -2,11 +2,30 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import starlight from '@astrojs/starlight';
+import { satteri } from '@astrojs/markdown-satteri';
 import AutoImport from 'astro-auto-import';
 import { site } from './src/config/site';
 import starlightLinksValidator from 'starlight-links-validator';
 import starlightHeadingBadges from 'starlight-heading-badges';
 import starlightKbd from 'starlight-kbd';
+
+// `:::lead` renders the intro paragraph at the top of a page as `<div class="lead">`.
+/** @type {import('@astrojs/markdown-satteri').SatteriProcessorOptions['mdastPlugins']} */
+const mdastPlugins = [
+  {
+    name: 'lead-block',
+    containerDirective(node) {
+      if (node.name !== 'lead') {
+        return;
+      }
+      return /** @type {any} */ ({
+        type: 'paragraph',
+        data: { hName: 'div', hProperties: { class: 'lead' } },
+        children: [...node.children],
+      });
+    },
+  },
+];
 
 // Material themes that have a matching bundled Shiki theme (code blocks follow these 5 only);
 // every other theme falls back to github-dark/light by its light/dark type.
@@ -23,6 +42,7 @@ export default defineConfig({
   site: 'https://material-theme.com',
   trailingSlash: 'always',
   build: { format: 'directory' },
+  markdown: { processor: satteri({ mdastPlugins }) },
   integrations: [
     // Content components are available in every MDX page without import lines.
     // Order matters: AutoImport, then Starlight, then MDX (Expressive Code must precede MDX).

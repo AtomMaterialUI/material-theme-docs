@@ -23,8 +23,8 @@
   --sl-main-pad: 0;
 }
 
-/* Lead paragraph at the top of a page (the old `{:class='title'}`) */
-.sl-markdown-content :is(p.title, div.title > p) {
+/* Lead paragraph at the top of a page (`:::lead` block) */
+.sl-markdown-content .lead > p {
   font-size: var(--sl-text-lg);
   color: var(--sl-color-white);
 }
