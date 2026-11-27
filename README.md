@@ -62,6 +62,13 @@ Internal links must end with a slash and point to existing pages and anchors, or
 
 New components go in `src/components/content/` and must be added to the `AutoImport` list in `astro.config.mjs`.
 
+### Heading badges
+
+Flag a recent feature by adding `:badge[New]` to its heading, e.g. `### Splash Screens :badge[New]`. The badge shows in
+the heading and the table of contents, and follows the theme accent. Variants: `:badge[Premium]{variant=tip}`
+(also `note`, `success`, `caution`, `danger`). Add "New" to the headings of the latest release only, and remove it
+when the next release ships.
+
 ## Deploy
 
 Netlify builds every push with `pnpm build` and publishes `dist/` (see `netlify.toml`). Pull requests get a deploy
