@@ -1,6 +1,6 @@
 // The single place for site-wide constants. Bump `version` here on each plugin release.
 export const site = {
-  version: '14.2.0',
+  version: '14.3.0',
   firstYear: 2015,
   github: 'https://github.com/mallowigi/material-theme-issues',
   slack:
