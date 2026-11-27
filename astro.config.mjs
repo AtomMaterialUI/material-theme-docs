@@ -102,6 +102,7 @@ export default defineConfig({
             { label: 'Accent Mode', slug: 'docs/configuration/accent-mode' },
             { label: 'Peek', slug: 'docs/configuration/peek' },
             { label: 'Regions', slug: 'docs/configuration/regions' },
+            { label: 'Splash Screens', slug: 'docs/configuration/splash-screens' },
             { label: 'Window Coloring', slug: 'docs/configuration/window-coloring' },
             { label: 'Tab Settings', slug: 'docs/configuration/tab-settings' },
             { label: 'Spacing Settings', slug: 'docs/configuration/spacing-settings' },
