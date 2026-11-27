@@ -6,6 +6,7 @@ import AutoImport from 'astro-auto-import';
 import { site } from './src/config/site';
 import starlightLinksValidator from 'starlight-links-validator';
 import starlightHeadingBadges from 'starlight-heading-badges';
+import starlightKbd from 'starlight-kbd';
 
 // Material themes that have a matching bundled Shiki theme (code blocks follow these 5 only);
 // every other theme falls back to github-dark/light by its light/dark type.
@@ -27,6 +28,7 @@ export default defineConfig({
     // Order matters: AutoImport, then Starlight, then MDX (Expressive Code must precede MDX).
     AutoImport({
       imports: [
+        { 'starlight-kbd/components': ['Kbd'] },
         './src/components/content/AccentColors.astro',
         './src/components/content/ChromeThemes.astro',
         './src/components/content/ColorSwatch.astro',
@@ -147,7 +149,16 @@ export default defineConfig({
         { label: 'Support Us', slug: 'docs/support-us' },
         { label: 'EULA', slug: 'docs/eula' },
       ],
-      plugins: [starlightLinksValidator(), starlightHeadingBadges()],
+      plugins: [
+        starlightLinksValidator(),
+        starlightHeadingBadges(),
+        starlightKbd({
+          types: [
+            { id: 'mac', label: 'macOS', detector: 'apple' },
+            { id: 'windows', label: 'Windows/Linux', default: true },
+          ],
+        }),
+      ],
       components: {
         ThemeProvider: './src/components/overrides/ThemeProvider.astro',
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',

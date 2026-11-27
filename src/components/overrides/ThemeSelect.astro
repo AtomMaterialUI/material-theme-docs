@@ -1,4 +1,9 @@
 ---
-// Intentionally empty: removes Starlight's light/dark/auto select. The Material theme decides light vs dark,
+// Starlight's light/dark select is removed: the Material theme decides light vs dark,
 // and the picker is the floating button rendered by ThemeFab (see the Footer override).
+// This slot now hosts the keyboard type picker from starlight-kbd instead.
+// Relative path: starlight-kbd 0.4.0's package exports for these components point at a missing folder.
+import KbdPicker from '../../../node_modules/starlight-kbd/components/KbdPicker.astro';
 ---
+
+<KbdPicker />

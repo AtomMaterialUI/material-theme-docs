@@ -29,6 +29,9 @@ importers:
       starlight-heading-badges:
         specifier: 0.8.0
         version: 0.8.0(@astrojs/starlight@0.43.2(@astrojs/markdown-remark@7.3.10)(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))(typescript@6.0.3))
+      starlight-kbd:
+        specifier: 0.4.0
+        version: 0.4.0(@astrojs/starlight@0.43.2(@astrojs/markdown-remark@7.3.10)(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))(typescript@6.0.3))
       starlight-links-validator:
         specifier: 0.27.0
         version: 0.27.0(@astrojs/starlight@0.43.2(@astrojs/markdown-remark@7.3.10)(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))(typescript@6.0.3))(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))
@@ -5369,6 +5372,12 @@ packages:
     engines: {node: '>=22.12.0'}
     peerDependencies:
       '@astrojs/starlight': '>=0.41.0'
+
+  starlight-kbd@0.4.0:
+    resolution: {integrity: sha512-Uz/MimnPaRqHsv2EllVnkD78ab2k3SQbVls3VZ53nUMbPMjIzg0+evgicqxrF8ZukQSRdve5sykKlbBEdH4xzQ==}
+    engines: {node: '>=22.12.0'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.38.0'
 
   starlight-links-validator@0.27.0:
     resolution: {integrity: sha512-UvPl8L9hfWR+yWbLOEtljLmpJCGcM6AVseVy5IO9dmqdOjW4R+Y8FaYyVA5axCC8RvxM5xU7M1WTerpwU8rYbw==}
@@ -12338,6 +12347,10 @@ snapshots:
       unist-util-visit: 5.2.0
     transitivePeerDependencies:
       - supports-color
+
+  starlight-kbd@0.4.0(@astrojs/starlight@0.43.2(@astrojs/markdown-remark@7.3.10)(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))(typescript@6.0.3)):
+    dependencies:
+      '@astrojs/starlight': 0.43.2(@astrojs/markdown-remark@7.3.10)(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))(typescript@6.0.3)
 
   starlight-links-validator@0.27.0(@astrojs/starlight@0.43.2(@astrojs/markdown-remark@7.3.10)(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1))(typescript@6.0.3))(astro@7.4.13(@astrojs/markdown-remark@7.3.10)(@netlify/blobs@11.1.9)(@types/node@26.6.6)(esbuild@0.28.1)(yaml@2.9.1)):
     dependencies:
