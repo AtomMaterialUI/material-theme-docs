@@ -5,6 +5,7 @@ import starlight from '@astrojs/starlight';
 import AutoImport from 'astro-auto-import';
 import { site } from './src/config/site';
 import starlightLinksValidator from 'starlight-links-validator';
+import starlightHeadingBadges from 'starlight-heading-badges';
 
 // Material themes that have a matching bundled Shiki theme (code blocks follow these 5 only);
 // every other theme falls back to github-dark/light by its light/dark type.
@@ -146,7 +147,7 @@ export default defineConfig({
         { label: 'Support Us', slug: 'docs/support-us' },
         { label: 'EULA', slug: 'docs/eula' },
       ],
-      plugins: [starlightLinksValidator()],
+      plugins: [starlightLinksValidator(), starlightHeadingBadges()],
       components: {
         ThemeProvider: './src/components/overrides/ThemeProvider.astro',
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',
