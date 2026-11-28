@@ -10,6 +10,7 @@ export const collections = {
     loader: docsLoader(),
     schema: docsSchema({
       extend: z.object({
+        giscus: z.boolean().optional(),
         gallery: z
           .array(
             z.object({

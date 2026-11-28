@@ -89,6 +89,13 @@ One or two sentences introducing the page.
 `:::lead` is a small custom mdast plugin in `astro.config.mjs` (passed to the default `satteri()` processor), not a
 dependency. It turns the block into `<div class="lead">`.
 
+### Comments
+
+Every docs page ends with a GitHub Discussions thread through `starlight-giscus`, configured in `astro.config.mjs`.
+Comments are click-to-load: nothing is requested from giscus.app or github.com until the reader presses "Load
+comments" (`src/components/content/GiscusComments.astro`, rendered by our `Pagination` override). Opt a page out with
+`giscus: false` in its front matter. Splash pages never show comments.
+
 ## Deploy
 
 Netlify builds every push with `pnpm build` and publishes `dist/` (see `netlify.toml`). Pull requests get a deploy

@@ -1,0 +1,9 @@
+---
+// Starlight's prev/next links, preceded by the consent-friendly Giscus comments. The plugin's own
+// Pagination override would load giscus.app immediately, so we render our click-to-load version instead.
+import Default from '@astrojs/starlight/components/Pagination.astro';
+import GiscusComments from '../content/GiscusComments.astro';
+---
+
+<GiscusComments />
+<Default />
