@@ -1,0 +1,143 @@
+---
+// Giscus comments, loaded only after the reader presses "Load comments": nothing is requested from
+// giscus.app or github.com before that. The settings come from the starlight-giscus plugin options
+// (astro.config.mjs). Opt a page out with `giscus: false` in its front matter.
+import config from 'virtual:starlight-giscus-config';
+
+const { entry, lang } = Astro.locals.starlightRoute;
+const enabled = (entry.data.giscus ?? true) && entry.data.template !== 'splash';
+
+const theme =
+  typeof config.theme === 'object'
+    ? config.theme
+    : { light: config.theme, dark: config.theme };
+
+const settings = {
+  repo: config.repo,
+  repoId: config.repoId,
+  category: config.category,
+  categoryId: config.categoryId,
+  mapping: config.mapping,
+  reactions: config.reactions,
+  inputPosition: config.inputPosition,
+  lang,
+  theme,
+};
+---
+
+{enabled && (
+  <section
+    class="mt-comments"
+    data-mt-comments
+    data-settings={JSON.stringify(settings)}
+  >
+    <h2>Comments</h2>
+    <p>
+      Comments are hosted on GitHub Discussions through Giscus. Loading them
+      connects to giscus.app and github.com.
+    </p>
+    <button
+      type="button"
+      data-mt-comments-load
+    >
+      Load comments
+    </button>
+  </section>
+)}
+
+<script>
+  interface GiscusSettings {
+    repo: string;
+    repoId: string;
+    category: string;
+    categoryId: string;
+    mapping: string;
+    reactions: boolean;
+    inputPosition: string;
+    lang: string;
+    theme: { light?: string; dark?: string };
+  }
+
+  const section = document.querySelector<HTMLElement>('[data-mt-comments]');
+
+  if (section) {
+    const settings = JSON.parse(
+      section.dataset.settings ?? '{}',
+    ) as GiscusSettings;
+
+    const giscusTheme = () =>
+      document.documentElement.dataset.theme === 'light'
+        ? (settings.theme.light ?? 'light')
+        : (settings.theme.dark ?? 'dark');
+
+    const load = () => {
+      const script = document.createElement('script');
+
+      script.src = 'https://giscus.app/client.js';
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+
+      Object.entries({
+        repo: settings.repo,
+        'repo-id': settings.repoId,
+        category: settings.category,
+        'category-id': settings.categoryId,
+        mapping: settings.mapping,
+        strict: '1',
+        'reactions-enabled': settings.reactions ? '1' : '0',
+        'emit-metadata': '0',
+        'input-position': settings.inputPosition,
+        theme: giscusTheme(),
+        lang: settings.lang,
+        loading: 'lazy',
+      }).forEach(([key, value]) => script.setAttribute(`data-${key}`, value));
+
+      section.querySelector('p')?.remove();
+      section.querySelector('button')?.remove();
+      section.append(script);
+
+      // Keep the widget in step with the theme picker.
+      document.addEventListener('material-theme-change', () => {
+        document
+          .querySelector<HTMLIFrameElement>('iframe.giscus-frame')
+          ?.contentWindow?.postMessage(
+            { giscus: { setConfig: { theme: giscusTheme() } } },
+            'https://giscus.app',
+          );
+      });
+    };
+
+    section
+      .querySelector('[data-mt-comments-load]')
+      ?.addEventListener('click', load, { once: true });
+  }
+</script>
+
+<style>
+  .mt-comments {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-hairline);
+  }
+
+  .mt-comments h2 {
+    margin: 0 0 0.5rem;
+    font-size: var(--sl-text-xl);
+  }
+
+  .mt-comments p {
+    margin: 0 0 1rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+  }
+
+  .mt-comments button {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--sl-color-accent);
+    border-radius: 0.4rem;
+    background: var(--sl-color-accent);
+    color: var(--mt-ribbon-fg);
+    font: inherit;
+    cursor: pointer;
+  }
+</style>
