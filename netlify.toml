@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "26"
+
+# Giscus fetches /giscus/<theme>.css cross-origin
+[[headers]]
+  for = "/giscus/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

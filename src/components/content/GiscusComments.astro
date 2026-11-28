@@ -65,10 +65,16 @@ const settings = {
       section.dataset.settings ?? '{}',
     ) as GiscusSettings;
 
-    const giscusTheme = () =>
-      document.documentElement.dataset.theme === 'light'
-        ? (settings.theme.light ?? 'light')
-        : (settings.theme.dark ?? 'dark');
+    // Per-Material-theme stylesheet served by src/pages/giscus/[theme].css.ts
+    const giscusTheme = () => {
+      const name = document.documentElement.dataset.materialTheme;
+
+      return name
+        ? `${location.origin}/giscus/${name}.css`
+        : document.documentElement.dataset.theme === 'light'
+          ? (settings.theme.light ?? 'light')
+          : (settings.theme.dark ?? 'dark');
+    };
 
     const load = () => {
       const script = document.createElement('script');

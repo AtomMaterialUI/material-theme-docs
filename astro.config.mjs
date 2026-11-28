@@ -44,6 +44,8 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   markdown: { processor: satteri({ mdastPlugins }) },
+  // The dev server blocks cross-origin subresources; Giscus must fetch /giscus/<theme>.css.
+  security: { allowedDomains: [{ hostname: 'giscus.app', protocol: 'https' }] },
   integrations: [
     // Content components are available in every MDX page without import lines.
     // Order matters: AutoImport, then Starlight, then MDX (Expressive Code must precede MDX).
