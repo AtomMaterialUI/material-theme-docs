@@ -22,8 +22,8 @@ main {
   --color-fg-subtle: ${t.disabled};
   --color-canvas-default: transparent;
   --color-canvas-overlay: ${t.contrast};
-  --color-canvas-inset: transparent;
-  --color-canvas-subtle: transparent;
+  --color-canvas-inset: ${mix(t.text, 8, t.contrast)};
+  --color-canvas-subtle: ${t.contrast};
   --color-border-default: ${border};
   --color-border-muted: ${t.border};
   --color-neutral-muted: ${mix(t.text, 8, 'transparent')};
@@ -49,8 +49,8 @@ main {
   --color-btn-primary-hover-bg: ${mix(t.accent, 85, t.white)};
   --color-btn-primary-hover-border: ${t.border};
   --color-btn-primary-selected-bg: ${t.accent};
-  --color-btn-primary-disabled-text: ${t.disabled};
-  --color-btn-primary-disabled-bg: ${mix(t.accent, 50, 'transparent')};
+  --color-btn-primary-disabled-text: ${mix(t.selectFg, 70, 'transparent')};
+  --color-btn-primary-disabled-bg: ${mix(t.accent, 55, bg)};
   --color-btn-primary-disabled-border: ${t.border};
   --color-action-list-item-default-hover-bg: ${t.hl};
   --color-segmented-control-bg: ${t.button};
@@ -61,6 +61,26 @@ main {
 
 .gsc-pagination-button {
   background-color: var(--color-btn-bg);
+}
+
+.gsc-comment,
+.gsc-comment-box,
+.gsc-reply-box {
+  background-color: ${t.contrast};
+  border-radius: 8px;
+}
+
+.gsc-comment-box textarea,
+.gsc-reply-box textarea,
+.gsc-comment-box-textarea,
+.gsc-reply-box-textarea {
+  background-color: ${mix(t.text, 8, t.contrast)};
+  border-radius: 6px;
+}
+
+.gsc-comment-box-tabs .tab-selected,
+.gsc-comment-box-tabs button[aria-selected='true'] {
+  background-color: ${mix(t.text, 8, t.contrast)};
 }
 `;
 }

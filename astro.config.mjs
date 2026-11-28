@@ -44,8 +44,6 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   markdown: { processor: satteri({ mdastPlugins }) },
-  // The dev server blocks cross-origin subresources; Giscus must fetch /giscus/<theme>.css.
-  security: { allowedDomains: [{ hostname: 'giscus.app', protocol: 'https' }] },
   integrations: [
     // Content components are available in every MDX page without import lines.
     // Order matters: AutoImport, then Starlight, then MDX (Expressive Code must precede MDX).
@@ -74,11 +72,21 @@ export default defineConfig({
       head: [
         {
           tag: 'link',
-          attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32x32.png' },
+          attrs: {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: '/img/favicon-32x32.png',
+          },
         },
         {
           tag: 'link',
-          attrs: { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/favicon-16x16.png' },
+          attrs: {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: '/img/favicon-16x16.png',
+          },
         },
         {
           tag: 'link',
@@ -121,38 +129,98 @@ export default defineConfig({
           label: 'Configuration',
           items: [
             { label: 'Settings', slug: 'docs/configuration/settings' },
-            { label: 'Color Schemes', slug: 'docs/configuration/color-schemes' },
+            {
+              label: 'Color Schemes',
+              slug: 'docs/configuration/color-schemes',
+            },
             { label: 'License Info', slug: 'docs/configuration/license-info' },
             { label: 'Contrast Settings', slug: 'docs/configuration/contrast' },
             { label: 'Accents', slug: 'docs/configuration/accents' },
             { label: 'Accent Mode', slug: 'docs/configuration/accent-mode' },
             { label: 'Peek', slug: 'docs/configuration/peek' },
             { label: 'Regions', slug: 'docs/configuration/regions' },
-            { label: 'Splash Screens', slug: 'docs/configuration/splash-screens' },
-            { label: 'Window Coloring', slug: 'docs/configuration/window-coloring' },
+            {
+              label: 'Splash Screens',
+              slug: 'docs/configuration/splash-screens',
+            },
+            {
+              label: 'Window Coloring',
+              slug: 'docs/configuration/window-coloring',
+            },
             { label: 'Tab Settings', slug: 'docs/configuration/tab-settings' },
-            { label: 'Spacing Settings', slug: 'docs/configuration/spacing-settings' },
-            { label: 'Trees Settings', slug: 'docs/configuration/trees-settings' },
-            { label: 'UI Components Settings', slug: 'docs/configuration/ui-component-settings' },
-            { label: 'Features Settings', slug: 'docs/configuration/features-settings' },
+            {
+              label: 'Spacing Settings',
+              slug: 'docs/configuration/spacing-settings',
+            },
+            {
+              label: 'Trees Settings',
+              slug: 'docs/configuration/trees-settings',
+            },
+            {
+              label: 'UI Components Settings',
+              slug: 'docs/configuration/ui-component-settings',
+            },
+            {
+              label: 'Features Settings',
+              slug: 'docs/configuration/features-settings',
+            },
             {
               label: 'Project Title Bar Settings',
               slug: 'docs/configuration/project-title-bar-settings',
             },
-            { label: 'File Header Settings', slug: 'docs/configuration/file-header-settings' },
-            { label: 'Theme Color Overrides', slug: 'docs/configuration/theme-color-overrides' },
-            { label: 'Custom Themes', slug: 'docs/configuration/custom-themes' },
-            { label: 'Language Additions', slug: 'docs/configuration/language-additions' },
-            { label: 'Islands Settings', slug: 'docs/configuration/islands-settings' },
-            { label: 'Theme Ignores', slug: 'docs/configuration/theme-ignores' },
-            { label: 'Theme Randomizer', slug: 'docs/configuration/theme-randomizer' },
-            { label: 'Other Tweaks Settings', slug: 'docs/configuration/other-tweaks-settings' },
-            { label: 'Quick Actions Panel', slug: 'docs/configuration/quick-actions-panel' },
-            { label: 'Status Bar Widgets', slug: 'docs/configuration/status-bar-widgets' },
-            { label: 'Excluded Files Colors', slug: 'docs/configuration/excluded-files-colors' },
-            { label: 'File Status Colors', slug: 'docs/configuration/file-status-colors' },
+            {
+              label: 'File Header Settings',
+              slug: 'docs/configuration/file-header-settings',
+            },
+            {
+              label: 'Theme Color Overrides',
+              slug: 'docs/configuration/theme-color-overrides',
+            },
+            {
+              label: 'Custom Themes',
+              slug: 'docs/configuration/custom-themes',
+            },
+            {
+              label: 'Language Additions',
+              slug: 'docs/configuration/language-additions',
+            },
+            {
+              label: 'Islands Settings',
+              slug: 'docs/configuration/islands-settings',
+            },
+            {
+              label: 'Theme Ignores',
+              slug: 'docs/configuration/theme-ignores',
+            },
+            {
+              label: 'Theme Randomizer',
+              slug: 'docs/configuration/theme-randomizer',
+            },
+            {
+              label: 'Other Tweaks Settings',
+              slug: 'docs/configuration/other-tweaks-settings',
+            },
+            {
+              label: 'Quick Actions Panel',
+              slug: 'docs/configuration/quick-actions-panel',
+            },
+            {
+              label: 'Status Bar Widgets',
+              slug: 'docs/configuration/status-bar-widgets',
+            },
+            {
+              label: 'Excluded Files Colors',
+              slug: 'docs/configuration/excluded-files-colors',
+            },
+            {
+              label: 'File Status Colors',
+              slug: 'docs/configuration/file-status-colors',
+            },
             { label: 'Scrollbars', slug: 'docs/configuration/scrollbars' },
-            { label: 'Adaptive Theme', slug: 'docs/configuration/adaptive-theme' },
+            {
+              label: 'Adaptive Theme',
+              slug: 'docs/configuration/adaptive-theme',
+            },
           ],
         },
         {
@@ -168,7 +236,10 @@ export default defineConfig({
         { label: 'Other Products', slug: 'docs/other-products' },
         { label: 'Acknowledgements', slug: 'docs/acknowledgements' },
         { label: 'Pricing', slug: 'docs/pricing' },
-        { label: 'About Subscription Model', slug: 'docs/about-subscription-model' },
+        {
+          label: 'About Subscription Model',
+          slug: 'docs/about-subscription-model',
+        },
         { label: 'Support Us', slug: 'docs/support-us' },
         { label: 'EULA', slug: 'docs/eula' },
       ],
@@ -204,7 +275,11 @@ export default defineConfig({
         Hero: './src/components/overrides/Hero.astro',
       },
       expressiveCode: {
-        themes: /** @type {any} */ (['github-dark', 'github-light', ...Object.keys(CODE_THEMES)]),
+        themes: /** @type {any} */ ([
+          'github-dark',
+          'github-light',
+          ...Object.keys(CODE_THEMES),
+        ]),
         themeCssSelector: (theme) =>
           CODE_THEMES[theme.name]
             ? `[data-material-theme='${CODE_THEMES[theme.name]}']`
@@ -214,7 +289,8 @@ export default defineConfig({
           borderColor: 'var(--sl-color-hairline-light)',
           frames: {
             editorTabBarBackground: 'var(--sl-color-bg-nav)',
-            editorActiveTabBackground: 'var(--mt-code-bg, var(--sl-color-gray-6))',
+            editorActiveTabBackground:
+              'var(--mt-code-bg, var(--sl-color-gray-6))',
             editorActiveTabIndicatorTopColor: 'var(--sl-color-accent)',
             terminalTitlebarBackground: 'var(--sl-color-bg-nav)',
             terminalBackground: 'var(--mt-code-bg, var(--sl-color-gray-6))',
