@@ -8,6 +8,7 @@ import { site } from './src/config/site';
 import starlightLinksValidator from 'starlight-links-validator';
 import starlightHeadingBadges from 'starlight-heading-badges';
 import starlightKbd from 'starlight-kbd';
+import starlightGiscus from 'starlight-giscus';
 
 // `:::lead` renders the intro paragraph at the top of a page as `<div class="lead">`.
 /** @type {import('@astrojs/markdown-satteri').SatteriProcessorOptions['mdastPlugins']} */
@@ -178,8 +179,19 @@ export default defineConfig({
             { id: 'windows', label: 'Windows/Linux', default: true },
           ],
         }),
+        // Comments render through our click-to-load Pagination override; the plugin supplies the settings.
+        starlightGiscus({
+          repo: 'AtomMaterialUI/material-theme-docs',
+          repoId: 'MDEwOlJlcG9zaXRvcnkyNTQzNTExMjc=',
+          // Placeholder: switch to a dedicated "Docs Comments" category once it exists.
+          category: 'Announcements',
+          categoryId: 'DIC_kwDODykXF84CPOUw',
+          mapping: 'pathname',
+          theme: { light: 'noborder_light', dark: 'transparent_dark' },
+        }),
       ],
       components: {
+        Pagination: './src/components/overrides/Pagination.astro',
         ThemeProvider: './src/components/overrides/ThemeProvider.astro',
         ThemeSelect: './src/components/overrides/ThemeSelect.astro',
         PageTitle: './src/components/overrides/PageTitle.astro',
